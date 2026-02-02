@@ -1,0 +1,6 @@
+instance,algorithm,profit_closure,makespan_closure,score_dsp,time,status,gap,targets,seq_length_closure,violations_règles,rel_err_profit_vs_milp_closure
+scholl_sawyer30_n=30,MILP_full_profit,65.0,4.0,10.0,0.25000643730163574,Optimal,,1,"['C002', 'C016', 'C017', 'C018']",0,
+scholl_sawyer30_n=30,grasp_vnd,65.0,4.0,10.0,0.00618433952331543,Completed,0.00%,1,"['C002', 'C016', 'C017', 'C018']",0,0.0
+scholl_sawyer30_n=30,grasp_tabu,65.0,4.0,10.0,0.1336977481842041,Completed,0.00%,1,"['C002', 'C016', 'C017', 'C018']",0,0.0
+scholl_sawyer30_n=30,grasp_mns,65.0,4.0,10.0,0.002852201461791992,Completed,0.00%,1,"['C002', 'C016', 'C017', 'C018']",0,0.0
+scholl_sawyer30_n=30,dijkstra_closure_min,65.0,4.0,10.0,4.0,Completed,0.00%,1,"['C002', 'C016', 'C017', 'C018']",0,0.0

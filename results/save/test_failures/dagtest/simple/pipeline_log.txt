@@ -1,0 +1,9 @@
+--- Pipeline run 2025-11-29 23:14:54.072538 ---
+Instance: unknown
+Initial solution: ['N01', 'N03', 'N07', 'N12', 'N05', 'N02', 'N04', 'N08', 'N09', 'N06', 'N11', 'N13', 'N14', 'N17', 'N18', 'N10', 'N15', 'N16', 'N19', 'N21', 'N20', 'N22']
+Final state:
+  - Locked: {'N13'}
+  - Destroyed: set()
+  - Done: {'N02', 'N17', 'N08', 'N04', 'N03', 'N07', 'N09', 'N14', 'N20', 'N15', 'N12', 'N05', 'N10', 'N16', 'N11', 'N06', 'N18', 'N01', 'N22', 'N19', 'N21'}
+  - Notes: []
+Actions taken: [{'comp_id': 'N13', 'symptom': 'LOW_VALUE_BOTTLENECK', 'action': 'bypass', 'success': True, 'notes': 'Component N13 bypassed.'}]

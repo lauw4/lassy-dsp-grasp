@@ -1,0 +1,57 @@
+{
+  "meta": {
+    "run_id": "single_salbp_instance_n=1000_1_cut246_023935",
+    "start_time": "2025-09-15T00:39:35Z",
+    "expected_order": [
+      "load_instance",
+      "run_dijkstra",
+      "run_grasp",
+      "run_milp",
+      "aggregate"
+    ]
+  },
+  "steps": [
+    {
+      "name": "load_instance",
+      "timestamp": "2025-09-15T00:39:35Z",
+      "status": "ok",
+      "details": {
+        "instance": "salbp_instance_n=1000_1_cut246"
+      }
+    },
+    {
+      "name": "run_dijkstra",
+      "timestamp": "2025-09-15T00:39:38Z",
+      "status": "ok",
+      "details": {
+        "seq_len": 3
+      }
+    },
+    {
+      "name": "run_grasp",
+      "timestamp": "2025-09-15T00:39:38Z",
+      "status": "ok",
+      "details": {
+        "algorithms": 4
+      }
+    },
+    {
+      "name": "run_milp",
+      "timestamp": "2025-09-15T01:09:56Z",
+      "status": "TimeLimit",
+      "details": {
+        "gap": 18.14
+      }
+    },
+    {
+      "name": "aggregate",
+      "timestamp": "2025-09-15T01:09:56Z",
+      "status": "ok",
+      "details": {
+        "rows": 5
+      }
+    }
+  ],
+  "order_warnings": [],
+  "hash": "4930e3c63b61b454"
+}

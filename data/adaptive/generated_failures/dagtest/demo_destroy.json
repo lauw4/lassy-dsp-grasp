@@ -1,0 +1,23 @@
+[
+    {
+        "comp_id": "N05",
+        "op_type": "debond",
+        "tool_id": "hot_air",
+        "symptom": "NO_SEPARATION",
+        "signals": {
+            "force": 75.0,
+            "torque": 70.0,
+            "force_axial": 12.5,
+            "joint_opened": 0
+        },
+        "context": {
+            "value_piece": 2,
+            "no_destroy": false,
+            "alt_tools_available": []
+        },
+        "history": {
+            "failure_count": 0
+        },
+        "timestamp": "2025-11-08T09:00:00Z"
+    }
+]

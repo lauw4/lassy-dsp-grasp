@@ -1,0 +1,16 @@
+[
+  {
+    "comp_id": "C047",
+    "symptom": "ACCESS_BLOCKED",
+    "action": "bypass",
+    "success": false,
+    "notes": "Aucun chemin alternatif dans le graphe."
+  },
+  {
+    "comp_id": "C047",
+    "symptom": "ACCESS_BLOCKED",
+    "action": "bypass\u2192replan",
+    "success": true,
+    "notes": "Fallback succeeded"
+  }
+]

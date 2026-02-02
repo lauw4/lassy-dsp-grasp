@@ -1,0 +1,37 @@
+[
+  {
+    "comp_id": "G07",
+    "symptom": "OVER_TORQUE_NO_ADVANCE",
+    "action": "change_tool",
+    "success": true,
+    "notes": "Outil alternatif propos\u00e9."
+  },
+  {
+    "comp_id": "G13",
+    "symptom": "LOW_VALUE_BOTTLENECK",
+    "action": "destroy",
+    "success": true,
+    "notes": "Destruction autoris\u00e9e (cutoff percentile 20e)."
+  },
+  {
+    "comp_id": "G14",
+    "symptom": "ACCESS_BLOCKED",
+    "action": "bypass",
+    "success": true,
+    "notes": "Component G14 bypassed (skipped)."
+  },
+  {
+    "comp_id": "G15",
+    "symptom": "ACCESS_BLOCKED",
+    "action": "bypass",
+    "success": false,
+    "notes": "Aucun chemin alternatif dans le graphe."
+  },
+  {
+    "comp_id": "G15",
+    "symptom": "ACCESS_BLOCKED",
+    "action": "bypass\u2192destroy",
+    "success": true,
+    "notes": "Fallback succeeded"
+  }
+]

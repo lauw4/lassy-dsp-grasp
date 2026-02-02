@@ -1,0 +1,9 @@
+--- Pipeline run 2025-11-29 23:16:24.656888 ---
+Instance: unknown
+Initial solution: ['C000', 'C001', 'C004', 'C002', 'C003', 'C005', 'C006', 'C007', 'C008', 'C009', 'C010']
+Final state:
+  - Locked: {'C007', 'C004'}
+  - Destroyed: set()
+  - Done: {'C002', 'C000', 'C008', 'C003', 'C006', 'C009', 'C005', 'C001', 'C010'}
+  - Notes: ['Bypass impossible pour C004: aucun chemin alternatif', 'Aucun outil alternatif pour C004', 'Destruction interdite pour C007 : Profit=83.00 > seuil=22.00 (percentile 20e).', 'Bypass impossible pour C007: aucun chemin alternatif', 'Aucun outil alternatif pour C007']
+Actions taken: [{'comp_id': 'C004', 'symptom': 'ACCESS_BLOCKED', 'action': 'bypass', 'success': False, 'notes': 'Aucun chemin alternatif dans le graphe.'}, {'comp_id': 'C004', 'symptom': 'ACCESS_BLOCKED', 'action': 'bypass→replan', 'success': True, 'notes': 'Fallback succeeded'}, {'comp_id': 'C007', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy', 'success': False, 'notes': 'Destruction non autorisée : Profit=83.00 > seuil=22.00 (percentile 20e).'}, {'comp_id': 'C007', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy→replan', 'success': True, 'notes': 'Fallback succeeded'}]

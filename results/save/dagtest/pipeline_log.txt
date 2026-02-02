@@ -1,0 +1,9 @@
+--- Pipeline run 2025-11-22 22:51:55.989133 ---
+Instance: unknown
+Initial solution: ['N02', 'N06', 'N11', 'N17', 'N01', 'N03', 'N05', 'N10', 'N16', 'N04', 'N09', 'N20', 'N07', 'N08', 'N14', 'N12', 'N15', 'N19', 'N13', 'N18', 'N21', 'N22']
+Final state:
+  - Locked: {'N17', 'N07'}
+  - Destroyed: {'N21'}
+  - Done: {'N05', 'N10', 'N13', 'N14', 'N22', 'N12', 'N11', 'N09', 'N15', 'N04', 'N01', 'N18', 'N20', 'N06', 'N03', 'N08', 'N16', 'N19', 'N02'}
+  - Notes: ["Destruction interdite pour N07 : Flag 'no_destroy' actif (contexte ou graphe).", 'Bypass impossible pour N07: aucun chemin alternatif', 'Aucun outil alternatif pour N07']
+Actions taken: [{'comp_id': 'N06', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'change_tool', 'success': True, 'notes': 'Outil alternatif proposé.'}, {'comp_id': 'N17', 'symptom': 'ACCESS_BLOCKED', 'action': 'bypass', 'success': True, 'notes': 'Component N17 bypassed.'}, {'comp_id': 'N07', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy', 'success': False, 'notes': "Destruction non autorisée : Flag 'no_destroy' actif (contexte ou graphe)."}, {'comp_id': 'N07', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy→replan', 'success': True, 'notes': 'Fallback succeeded'}, {'comp_id': 'N21', 'symptom': 'LOW_VALUE_BOTTLENECK', 'action': 'destroy', 'success': True, 'notes': 'Destruction autorisée (cutoff percentile 20e).'}]

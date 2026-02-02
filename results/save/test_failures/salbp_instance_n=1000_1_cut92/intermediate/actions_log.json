@@ -1,0 +1,23 @@
+[
+  {
+    "comp_id": "C032",
+    "symptom": "ACCESS_BLOCKED",
+    "action": "bypass",
+    "success": false,
+    "notes": "Aucun chemin alternatif dans le graphe."
+  },
+  {
+    "comp_id": "C032",
+    "symptom": "ACCESS_BLOCKED",
+    "action": "bypass\u2192replan",
+    "success": true,
+    "notes": "Fallback succeeded"
+  },
+  {
+    "comp_id": "C048",
+    "symptom": "ACCESS_BLOCKED",
+    "action": "bypass",
+    "success": true,
+    "notes": "Component C048 bypassed."
+  }
+]

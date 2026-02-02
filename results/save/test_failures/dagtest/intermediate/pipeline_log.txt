@@ -1,0 +1,9 @@
+--- Pipeline run 2025-11-29 23:15:41.560219 ---
+Instance: unknown
+Initial solution: ['N02', 'N01', 'N04', 'N03', 'N06', 'N08', 'N07', 'N12', 'N11', 'N13', 'N18', 'N05', 'N17', 'N09', 'N14', 'N10', 'N15', 'N19', 'N16', 'N21', 'N20', 'N22']
+Final state:
+  - Locked: {'N14', 'N10'}
+  - Destroyed: set()
+  - Done: {'N01', 'N09', 'N16', 'N03', 'N12', 'N17', 'N19', 'N11', 'N06', 'N07', 'N05', 'N21', 'N18', 'N13', 'N15', 'N02', 'N22', 'N20', 'N08', 'N04'}
+  - Notes: ['Destruction interdite pour N14 : Profit=24.00 > seuil=18.00 (percentile 20e).', 'Bypass impossible pour N14: aucun chemin alternatif', 'Aucun outil alternatif pour N14', "Destruction interdite pour N10 : Flag 'no_destroy' actif (contexte ou graphe)."]
+Actions taken: [{'comp_id': 'N14', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy', 'success': False, 'notes': 'Destruction non autorisée : Profit=24.00 > seuil=18.00 (percentile 20e).'}, {'comp_id': 'N14', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy→replan', 'success': True, 'notes': 'Fallback succeeded'}, {'comp_id': 'N10', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy', 'success': False, 'notes': "Destruction non autorisée : Flag 'no_destroy' actif (contexte ou graphe)."}, {'comp_id': 'N10', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy→bypass', 'success': True, 'notes': 'Fallback succeeded'}]

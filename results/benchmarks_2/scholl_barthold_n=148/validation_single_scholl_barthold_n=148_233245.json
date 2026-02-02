@@ -1,0 +1,57 @@
+{
+  "meta": {
+    "run_id": "single_scholl_barthold_n=148_233245",
+    "start_time": "2025-09-14T21:32:45Z",
+    "expected_order": [
+      "load_instance",
+      "run_dijkstra",
+      "run_grasp",
+      "run_milp",
+      "aggregate"
+    ]
+  },
+  "steps": [
+    {
+      "name": "load_instance",
+      "timestamp": "2025-09-14T21:32:45Z",
+      "status": "ok",
+      "details": {
+        "instance": "scholl_barthold_n=148"
+      }
+    },
+    {
+      "name": "run_dijkstra",
+      "timestamp": "2025-09-14T21:32:49Z",
+      "status": "ok",
+      "details": {
+        "seq_len": 10
+      }
+    },
+    {
+      "name": "run_grasp",
+      "timestamp": "2025-09-14T21:32:49Z",
+      "status": "ok",
+      "details": {
+        "algorithms": 4
+      }
+    },
+    {
+      "name": "run_milp",
+      "timestamp": "2025-09-14T22:02:54Z",
+      "status": "TimeLimit",
+      "details": {
+        "gap": 1.72
+      }
+    },
+    {
+      "name": "aggregate",
+      "timestamp": "2025-09-14T22:02:54Z",
+      "status": "ok",
+      "details": {
+        "rows": 5
+      }
+    }
+  ],
+  "order_warnings": [],
+  "hash": "5914a9b69da41775"
+}

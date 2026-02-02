@@ -1,0 +1,47 @@
+2025-11-29 23:17:00,459 DSP ADAPTIVE PIPELINE - SALBP_INSTANCE_N=1000_1_CUT115
+2025-11-29 23:17:00,460 Loaded instance: salbp_instance_n=1000_1_cut115
+2025-11-29 23:17:00,477 Loaded failures: 3
+2025-11-29 23:17:00,477 [1/4] Loading instance and solving DSP...
+2025-11-29 23:17:00,504 Nodes: 115, Edges: 100, Targets: 1, Solution: 5 operations
+2025-11-29 23:17:00,505 Target(s) to achieve: ['C085']
+2025-11-29 23:17:00,505 Starting disassembly sequence (5 operations)...
+2025-11-29 23:17:00,505 [ 1/5] Disassembling C010... [OK]
+2025-11-29 23:17:00,505 [ 2/5] Disassembling C033... [OK]
+2025-11-29 23:17:00,505 [ 3/5] Disassembling C058... [OK]
+2025-11-29 23:17:00,505 [ 4/5] Disassembling C069... [OK]
+2025-11-29 23:17:00,505 [ 5/5] Disassembling C085... [OK]
+2025-11-29 23:17:00,505 [2/4] Failure scenario loaded: 3 failure(s)
+2025-11-29 23:17:00,506 [3/4] Executing adaptive scheduler...
+2025-11-29 23:17:00,526 [FUZZY] Symptom: LOW_VALUE_BOTTLENECK
+2025-11-29 23:17:00,526 [FUZZY] Inputs: force=30.0, torque=20.0, p_fail=50.0, context=0.0
+2025-11-29 23:17:00,526 [FUZZY] Score: 40.00
+2025-11-29 23:17:00,526 [FUZZY] Decision: bypass (confidence=100.0%)
+2025-11-29 23:17:00,526 [ACTION] bypass: success=True, notes=Component C033 bypassed.
+2025-11-29 23:17:00,572 [FUZZY] Symptom: ACCESS_BLOCKED
+2025-11-29 23:17:00,572 [FUZZY] Inputs: force=60.0, torque=40.0, p_fail=50.0, context=0.0
+2025-11-29 23:17:00,572 [FUZZY] Score: 40.00
+2025-11-29 23:17:00,572 [FUZZY] Decision: bypass (confidence=100.0%)
+2025-11-29 23:17:00,572 [ACTION] bypass: success=True, notes=Component C058 bypassed.
+2025-11-29 23:17:00,595 [FUZZY] Symptom: ACCESS_BLOCKED
+2025-11-29 23:17:00,595 [FUZZY] Inputs: force=60.0, torque=40.0, p_fail=50.0, context=0.0
+2025-11-29 23:17:00,595 [FUZZY] Score: 40.00
+2025-11-29 23:17:00,595 [FUZZY] Decision: bypass (confidence=100.0%)
+2025-11-29 23:17:00,596 [ACTION] bypass: success=True, notes=Component C069 bypassed.
+2025-11-29 23:17:00,596 Adaptive scheduler finished. Actions taken: 3
+2025-11-29 23:17:00,596 EXECUTION SUMMARY
+2025-11-29 23:17:00,596 Status: SUCCESS
+2025-11-29 23:17:00,596 Target components:
+2025-11-29 23:17:00,596 [OK] C085 - Successfully disassembled
+2025-11-29 23:17:00,596 Execution metrics:
+2025-11-29 23:17:00,596 Targets achieved: 1/1 (100.0%)
+2025-11-29 23:17:00,596 Failures handled: 3
+2025-11-29 23:17:00,596 Actions taken: 3
+2025-11-29 23:17:00,596 Components done: 2/5
+2025-11-29 23:17:00,596 Locked: 3 component(s)
+2025-11-29 23:17:00,596 Execution time: 0.14s
+2025-11-29 23:17:00,596 Actions breakdown:
+2025-11-29 23:17:00,596 [OK] C033     LOW_VALUE_BOTTLENECK -> bypass      
+2025-11-29 23:17:00,597 [OK] C058     ACCESS_BLOCKED       -> bypass      
+2025-11-29 23:17:00,597 [OK] C069     ACCESS_BLOCKED       -> bypass      
+2025-11-29 23:17:00,597 Detailed logs: results\save\test_failures\salbp_instance_n=1000_1_cut115\complex
+2025-11-29 23:17:00,599 Pipeline finished successfully

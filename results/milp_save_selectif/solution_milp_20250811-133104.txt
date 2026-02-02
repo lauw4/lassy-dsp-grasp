@@ -1,0 +1,295 @@
+=== Résultat MILP ===
+Instance : structured_graph_200_selectif
+Fichier : C:\Users\Waele\OneDrive\Documents\Etude\Cours\semestre_9\STAGE\IMT STAGE 5A\lassy-dsp-grasp\experiments\..\data\instances_milp\structured_graph_200_selectif.txt
+Critères : time_limit=7200s, gap≤3.00%
+
+=== Résumé CPLEX ===
+Version: 22.1.1.0 | 2022-11-27 | 9160aff4d; Mode: deterministic; Threads: 12
+Paramètres: TimeLimit=7200s; MIPGap≈3.00%
+Search: dynamic search.; Emphasis: balance optimality and feasibility.
+Résultats: Objective=25055.400000; BestBound=26042.800000; Time=2.50s; DetTicks=784.39
+
+Statut : Optimal
+Profit net = 25055.40
+Makespan   = 47475.00 s (13 h 11 min 15 s)
+
+Composants ciblés : 21, 151
+
+• Pièce 31 retirée à la position 1
+• Pièce 8 retirée à la position 2
+• Pièce 26 retirée à la position 3
+• Pièce 12 retirée à la position 4
+• Pièce 28 retirée à la position 5
+• Pièce 9 retirée à la position 6
+• Pièce 22 retirée à la position 7
+• Pièce 18 retirée à la position 8
+• Pièce 29 retirée à la position 9
+• Pièce 24 retirée à la position 10
+• Pièce 14 retirée à la position 11
+• Pièce 16 retirée à la position 12
+• Pièce 23 retirée à la position 13
+• Pièce 5 retirée à la position 14
+• Pièce 33 retirée à la position 15
+• Pièce 6 retirée à la position 16
+• Pièce 53 retirée à la position 17
+• Pièce 32 retirée à la position 18
+• Pièce 3 retirée à la position 19
+• Pièce 62 retirée à la position 20
+• Pièce 52 retirée à la position 21
+• Pièce 55 retirée à la position 22
+• Pièce 13 retirée à la position 23
+• Pièce 47 retirée à la position 24
+• Pièce 1 retirée à la position 25
+• Pièce 4 retirée à la position 26
+• Pièce 34 retirée à la position 27
+• Pièce 91 retirée à la position 28
+• Pièce 61 retirée à la position 29
+• Pièce 44 retirée à la position 30
+• Pièce 97 retirée à la position 31
+• Pièce 7 retirée à la position 32
+• Pièce 15 retirée à la position 33
+• Pièce 57 retirée à la position 34
+• Pièce 64 retirée à la position 35
+• Pièce 87 retirée à la position 36
+• Pièce 43 retirée à la position 37
+• Pièce 25 retirée à la position 38
+• Pièce 2 retirée à la position 39
+• Pièce 41 retirée à la position 40
+• Pièce 49 retirée à la position 41
+• Pièce 86 retirée à la position 42
+• Pièce 65 retirée à la position 43
+• Pièce 11 retirée à la position 44
+• Pièce 27 retirée à la position 47
+• Pièce 66 retirée à la position 48
+• Pièce 37 retirée à la position 49
+• Pièce 30 retirée à la position 53
+• Pièce 58 retirée à la position 55
+• Pièce 54 retirée à la position 58
+• Pièce 50 retirée à la position 59
+• Pièce 69 retirée à la position 60
+• Pièce 73 retirée à la position 61
+• Pièce 108 retirée à la position 62
+• Pièce 93 retirée à la position 63
+• Pièce 21 retirée à la position 64 [TARGET]
+• Pièce 20 retirée à la position 66
+• Pièce 46 retirée à la position 67
+• Pièce 42 retirée à la position 68
+• Pièce 38 retirée à la position 72
+• Pièce 10 retirée à la position 73
+• Pièce 98 retirée à la position 74
+• Pièce 39 retirée à la position 75
+• Pièce 51 retirée à la position 76
+• Pièce 60 retirée à la position 80
+• Pièce 78 retirée à la position 81
+• Pièce 127 retirée à la position 82
+• Pièce 72 retirée à la position 83
+• Pièce 89 retirée à la position 84
+• Pièce 200 retirée à la position 85
+• Pièce 56 retirée à la position 86
+• Pièce 199 retirée à la position 87
+• Pièce 40 retirée à la position 88
+• Pièce 79 retirée à la position 89
+• Pièce 94 retirée à la position 90
+• Pièce 17 retirée à la position 91
+• Pièce 82 retirée à la position 92
+• Pièce 59 retirée à la position 93
+• Pièce 68 retirée à la position 94
+• Pièce 63 retirée à la position 95
+• Pièce 19 retirée à la position 96
+• Pièce 67 retirée à la position 97
+• Pièce 48 retirée à la position 98
+• Pièce 35 retirée à la position 99
+• Pièce 36 retirée à la position 100
+• Pièce 74 retirée à la position 101
+• Pièce 88 retirée à la position 102
+• Pièce 92 retirée à la position 103
+• Pièce 119 retirée à la position 104
+• Pièce 90 retirée à la position 105
+• Pièce 99 retirée à la position 106
+• Pièce 123 retirée à la position 107
+• Pièce 95 retirée à la position 108
+• Pièce 114 retirée à la position 109
+• Pièce 96 retirée à la position 110
+• Pièce 130 retirée à la position 111
+• Pièce 117 retirée à la position 112
+• Pièce 71 retirée à la position 113
+• Pièce 45 retirée à la position 114
+• Pièce 76 retirée à la position 115
+• Pièce 110 retirée à la position 116
+• Pièce 85 retirée à la position 117
+• Pièce 125 retirée à la position 118
+• Pièce 118 retirée à la position 119
+• Pièce 80 retirée à la position 120
+• Pièce 131 retirée à la position 121
+• Pièce 102 retirée à la position 122
+• Pièce 129 retirée à la position 123
+• Pièce 70 retirée à la position 124
+• Pièce 83 retirée à la position 125
+• Pièce 115 retirée à la position 126
+• Pièce 120 retirée à la position 127
+• Pièce 75 retirée à la position 128
+• Pièce 100 retirée à la position 129
+• Pièce 77 retirée à la position 130
+• Pièce 104 retirée à la position 131
+• Pièce 132 retirée à la position 132
+• Pièce 126 retirée à la position 133
+• Pièce 81 retirée à la position 134
+• Pièce 111 retirée à la position 135
+• Pièce 84 retirée à la position 136
+• Pièce 113 retirée à la position 137
+• Pièce 107 retirée à la position 138
+• Pièce 128 retirée à la position 139
+• Pièce 144 retirée à la position 140
+• Pièce 165 retirée à la position 141
+• Pièce 141 retirée à la position 142
+• Pièce 139 retirée à la position 143
+• Pièce 122 retirée à la position 144
+• Pièce 101 retirée à la position 145
+• Pièce 121 retirée à la position 146
+• Pièce 150 retirée à la position 147
+• Pièce 105 retirée à la position 148
+• Pièce 151 retirée à la position 149 [TARGET]
+• Pièce 103 retirée à la position 150
+• Pièce 109 retirée à la position 151
+• Pièce 145 retirée à la position 152
+• Pièce 124 retirée à la position 153
+• Pièce 152 retirée à la position 154
+• Pièce 156 retirée à la position 155
+• Pièce 158 retirée à la position 156
+• Pièce 163 retirée à la position 157
+• Pièce 164 retirée à la position 158
+• Pièce 137 retirée à la position 159
+• Pièce 106 retirée à la position 160
+• Pièce 140 retirée à la position 161
+• Pièce 143 retirée à la position 162
+• Pièce 175 retirée à la position 163
+• Pièce 146 retirée à la position 164
+• Pièce 112 retirée à la position 165
+• Pièce 138 retirée à la position 166
+• Pièce 155 retirée à la position 167
+• Pièce 160 retirée à la position 168
+• Pièce 135 retirée à la position 169
+• Pièce 142 retirée à la position 170
+• Pièce 149 retirée à la position 171
+• Pièce 134 retirée à la position 172
+• Pièce 170 retirée à la position 173
+• Pièce 162 retirée à la position 174
+• Pièce 188 retirée à la position 175
+• Pièce 161 retirée à la position 176
+• Pièce 116 retirée à la position 177
+• Pièce 159 retirée à la position 178
+• Pièce 154 retirée à la position 179
+• Pièce 195 retirée à la position 180
+• Pièce 182 retirée à la position 181
+• Pièce 157 retirée à la position 182
+• Pièce 192 retirée à la position 183
+• Pièce 133 retirée à la position 184
+• Pièce 196 retirée à la position 185
+• Pièce 136 retirée à la position 186
+• Pièce 171 retirée à la position 187
+• Pièce 180 retirée à la position 188
+• Pièce 183 retirée à la position 189
+• Pièce 178 retirée à la position 190
+• Pièce 185 retirée à la position 191
+• Pièce 153 retirée à la position 192
+• Pièce 167 retirée à la position 193
+• Pièce 189 retirée à la position 194
+• Pièce 187 retirée à la position 195
+• Pièce 193 retirée à la position 196
+• Pièce 147 retirée à la position 197
+• Pièce 148 retirée à la position 198
+• Pièce 191 retirée à la position 199
+• Pièce 173 retirée à la position 200
+
+=== Contexte exécution ===
+Utilisation de CPLEX (limite: 7200s) (C:\Program Files\IBM\ILOG\CPLEX_Studio2211\cplex\bin\x64_win64\cplex.exe)
+
+=== Log CPLEX (gap 3.00%) ===
+
+Log started (V22.1.1.0) Mon Aug 11 11:30:49 2025
+
+New value for mixed integer optimality gap tolerance: 0.03
+Version identifier: 22.1.1.0 | 2022-11-27 | 9160aff4d
+CPXPARAM_TimeLimit                               7200
+CPXPARAM_MIP_Tolerances_MIPGap                   0.029999999999999999
+Tried aggregator 1 time.
+MIP Presolve eliminated 1825 rows and 498 columns.
+MIP Presolve modified 136 coefficients.
+Reduced MIP has 97578 rows, 39703 columns, and 9830866 nonzeros.
+Reduced MIP has 39703 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 3.56 sec. (3812.56 ticks)
+Found incumbent of value 6925.400000 after 9.17 sec. (9333.08 ticks)
+Probing fixed 380 vars, tightened 0 bounds.
+Probing time = 19.42 sec. (2885.74 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+MIP Presolve eliminated 910 rows and 380 columns.
+MIP Presolve modified 52 coefficients.
+Reduced MIP has 96668 rows, 39323 columns, and 9667658 nonzeros.
+Reduced MIP has 39323 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 3.41 sec. (4409.40 ticks)
+Probing fixed 90 vars, tightened 0 bounds.
+Probing time = 5.52 sec. (950.64 ticks)
+Clique table members: 4914817.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 12 threads.
+Root relaxation solution time = 1419.64 sec. (227016.15 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                         6925.4000    26042.8000           276.05%
+*     0+    0                        22634.4000    26042.8000            15.06%
+*     0+    0                        22991.9000    26042.8000            13.27%
+*     0+    0                        23388.0000    26042.8000            11.35%
+*     0+    0                        23651.6000    26042.8000            10.11%
+*     0+    0                        23967.7000    26042.8000             8.66%
+*     0+    0                        24214.8000    26042.8000             7.55%
+*     0+    0                        24460.6000    26042.8000             6.47%
+*     0+    0                        24751.1000    26042.8000             5.22%
+*     0+    0                        25055.4000    26042.8000             3.94%
+      0     0    26042.8000  4864    25055.4000    26042.8000    70030    3.94%
+
+Clique cuts applied:  13
+Zero-half cuts applied:  40
+
+Root node processing (before b&c):
+  Real time             = 7205.02 sec. (3200179.48 ticks)
+Parallel b&c, 12 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) = 7205.02 sec. (3200179.48 ticks)
+
+Solution pool: 10 solutions saved.
+
+MIP - Time limit exceeded, integer feasible:  Objective =  2.5055400000e+04
+Current MIP best bound =  2.6042800000e+04 (gap = 987.4, 3.94%)
+Solution time = 7205.03 sec.  Iterations = 273955  Nodes = 0 (1)
+Deterministic time = 3200179.59 ticks  (444.16 ticks/sec)
+
+MILP problem relaxed to LP with fixed integer variables using
+incumbent solution.
+Version identifier: 22.1.1.0 | 2022-11-27 | 9160aff4d
+CPXPARAM_TimeLimit                               7200
+CPXPARAM_MIP_Tolerances_MIPGap                   0.029999999999999999
+Parallel mode: deterministic, using up to 12 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting Barrier on 10 threads...
+ * Starting primal Simplex on 1 thread...
+Tried aggregator 1 time.
+LP Presolve eliminated 99403 rows and 40201 columns.
+All rows and columns eliminated.
+Presolve time = 1.69 sec. (473.02 ticks)
+
+Dual simplex solved model.
+
+
+Dual simplex - Optimal:  Objective =  2.5055400000e+04
+Solution time =    2.50 sec.  Iterations = 0 (0)
+Deterministic time = 784.39 ticks  (313.75 ticks/sec)
+
+
+Solution written to file 'Partial_Disassembly-pulp.sol'.

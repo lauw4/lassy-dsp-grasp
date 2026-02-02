@@ -1,0 +1,9 @@
+--- Pipeline run 2025-11-29 23:15:26.659934 ---
+Instance: unknown
+Initial solution: ['C014', 'C016', 'C031', 'C032', 'C059', 'C041', 'C063']
+Final state:
+  - Locked: {'C059'}
+  - Destroyed: set()
+  - Done: {'C031', 'C016', 'C063', 'C041', 'C032', 'C014'}
+  - Notes: []
+Actions taken: [{'comp_id': 'C059', 'symptom': 'ACCESS_BLOCKED', 'action': 'bypass', 'success': True, 'notes': 'Component C059 bypassed.'}]

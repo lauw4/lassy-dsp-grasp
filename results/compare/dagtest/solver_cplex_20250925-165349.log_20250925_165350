@@ -1,0 +1,83 @@
+
+Log started (V22.1.1.0) Thu Sep 25 16:53:49 2025
+
+New value for mixed integer optimality gap tolerance: 0.0001
+Version identifier: 22.1.1.0 | 2022-11-27 | 9160aff4d
+CPXPARAM_TimeLimit                               7200
+Tried aggregator 1 time.
+MIP Presolve eliminated 181 rows and 107 columns.
+MIP Presolve modified 13 coefficients.
+Reduced MIP has 1025 rows, 706 columns, and 14786 nonzeros.
+Reduced MIP has 706 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.02 sec. (7.05 ticks)
+Found incumbent of value 333.000000 after 0.05 sec. (16.52 ticks)
+Probing fixed 160 vars, tightened 0 bounds.
+Probing time = 0.02 sec. (6.25 ticks)
+Tried aggregator 1 time.
+MIP Presolve eliminated 234 rows and 160 columns.
+MIP Presolve modified 921 coefficients.
+Reduced MIP has 791 rows, 546 columns, and 9437 nonzeros.
+Reduced MIP has 546 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (5.88 ticks)
+Probing fixed 16 vars, tightened 0 bounds.
+Probing changed sense of 4 constraints.
+Probing time = 0.02 sec. (12.93 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+MIP Presolve eliminated 39 rows and 20 columns.
+MIP Presolve modified 260 coefficients.
+Reduced MIP has 752 rows, 526 columns, and 8786 nonzeros.
+Reduced MIP has 526 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.02 sec. (5.85 ticks)
+Probing fixed 6 vars, tightened 0 bounds.
+Probing time = 0.02 sec. (11.54 ticks)
+Clique table members: 6989.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 12 threads.
+Root relaxation solution time = 0.02 sec. (11.52 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                          333.0000      424.0000            27.33%
+*     0+    0                          377.0000      424.0000            12.47%
+      0     0      424.0000   110      377.0000      424.0000      239   12.47%
+*     0+    0                          424.0000      424.0000             0.00%
+      0     0        cutoff            424.0000      424.0000      239    0.00%
+Elapsed time = 0.27 sec. (246.86 ticks, tree = 0.01 MB, solutions = 3)
+
+Root node processing (before b&c):
+  Real time             =    0.27 sec. (246.89 ticks)
+Parallel b&c, 12 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.27 sec. (246.89 ticks)
+
+Solution pool: 3 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  4.2400000000e+02
+Solution time =    0.27 sec.  Iterations = 239  Nodes = 0
+Deterministic time = 246.89 ticks  (928.16 ticks/sec)
+
+MILP problem relaxed to LP with fixed integer variables using
+incumbent solution.
+Version identifier: 22.1.1.0 | 2022-11-27 | 9160aff4d
+CPXPARAM_TimeLimit                               7200
+Tried aggregator 1 time.
+LP Presolve eliminated 1206 rows and 813 columns.
+All rows and columns eliminated.
+Presolve time = 0.00 sec. (1.15 ticks)
+
+Dual simplex - Optimal:  Objective =  4.2400000000e+02
+Solution time =    0.00 sec.  Iterations = 0 (0)
+Deterministic time = 1.82 ticks  (1822.14 ticks/sec)
+
+
+Solution written to file 'Partial_Disassembly-pulp.sol'.
+
+
+
+

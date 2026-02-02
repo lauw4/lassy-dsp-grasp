@@ -1,0 +1,9 @@
+--- Pipeline run 2025-11-29 23:16:43.399479 ---
+Instance: unknown
+Initial solution: ['C000', 'C001', 'C004', 'C005', 'C014', 'C008', 'C019', 'C026', 'C034', 'C041', 'C046', 'C048', 'C058', 'C065', 'C067', 'C069']
+Final state:
+  - Locked: {'C008', 'C067'}
+  - Destroyed: {'C004'}
+  - Done: {'C001', 'C005', 'C034', 'C019', 'C069', 'C041', 'C000', 'C026', 'C046', 'C014', 'C058', 'C065', 'C048'}
+  - Notes: ['Destruction interdite pour C008 : Profit=46.00 > seuil=21.00 (percentile 20e).', 'Destruction interdite pour C067 : Profit=56.00 > seuil=21.00 (percentile 20e).', 'Bypass impossible pour C067: aucun chemin alternatif', 'Aucun outil alternatif pour C067']
+Actions taken: [{'comp_id': 'C004', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy', 'success': True, 'notes': 'Destruction autorisée (cutoff percentile 20e).'}, {'comp_id': 'C008', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy', 'success': False, 'notes': 'Destruction non autorisée : Profit=46.00 > seuil=21.00 (percentile 20e).'}, {'comp_id': 'C008', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy→bypass', 'success': True, 'notes': 'Fallback succeeded'}, {'comp_id': 'C067', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy', 'success': False, 'notes': 'Destruction non autorisée : Profit=56.00 > seuil=21.00 (percentile 20e).'}, {'comp_id': 'C067', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy→replan', 'success': True, 'notes': 'Fallback succeeded'}]

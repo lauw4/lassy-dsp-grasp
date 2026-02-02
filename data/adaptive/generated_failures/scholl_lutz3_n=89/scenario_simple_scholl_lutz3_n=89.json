@@ -1,0 +1,21 @@
+[
+  {
+    "comp_id": "C042",
+    "op_type": "unscrew",
+    "tool_id": "T_hex",
+    "symptom": "LOW_VALUE_BOTTLENECK",
+    "signals": {
+      "force": 30.0,
+      "torque": 20.0,
+      "low_value": 1
+    },
+    "context": {
+      "value_piece": 21,
+      "no_destroy": false,
+      "alt_paths": false
+    },
+    "history": {
+      "failure_count": 0
+    }
+  }
+]

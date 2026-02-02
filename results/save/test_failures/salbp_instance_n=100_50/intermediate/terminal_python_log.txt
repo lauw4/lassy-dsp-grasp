@@ -1,0 +1,57 @@
+2025-11-29 23:16:08,345 DSP ADAPTIVE PIPELINE - SALBP_INSTANCE_N=100_50
+2025-11-29 23:16:08,347 Loaded instance: salbp_instance_n=100_50
+2025-11-29 23:16:08,348 Loaded failures: 2
+2025-11-29 23:16:08,348 [1/4] Loading instance and solving DSP...
+2025-11-29 23:16:08,389 Nodes: 100, Edges: 122, Targets: 1, Solution: 19 operations
+2025-11-29 23:16:08,389 Target(s) to achieve: ['C054']
+2025-11-29 23:16:08,389 Starting disassembly sequence (19 operations)...
+2025-11-29 23:16:08,389 [ 1/19] Disassembling C003... [OK]
+2025-11-29 23:16:08,389 [ 2/19] Disassembling C000... [OK]
+2025-11-29 23:16:08,390 [ 3/19] Disassembling C010... [OK]
+2025-11-29 23:16:08,390 [ 4/19] Disassembling C001... [OK]
+2025-11-29 23:16:08,390 [ 5/19] Disassembling C002... [OK]
+2025-11-29 23:16:08,390 [ 6/19] Disassembling C016... [OK]
+2025-11-29 23:16:08,390 [ 7/19] Disassembling C024... [OK]
+2025-11-29 23:16:08,390 [ 8/19] Disassembling C028... [OK]
+2025-11-29 23:16:08,390 [ 9/19] Disassembling C031... [OK]
+2025-11-29 23:16:08,390 [10/19] Disassembling C009... [OK]
+2025-11-29 23:16:08,390 [11/19] Disassembling C033... [OK]
+2025-11-29 23:16:08,390 [12/19] Disassembling C027... [OK]
+2025-11-29 23:16:08,390 [13/19] Disassembling C017... [OK]
+2025-11-29 23:16:08,390 [14/19] Disassembling C014... [OK]
+2025-11-29 23:16:08,390 [15/19] Disassembling C032... [OK]
+2025-11-29 23:16:08,390 [16/19] Disassembling C023... [OK]
+2025-11-29 23:16:08,390 [17/19] Disassembling C025... [OK]
+2025-11-29 23:16:08,390 [18/19] Disassembling C043... [OK]
+2025-11-29 23:16:08,390 [19/19] Disassembling C054... [OK]
+2025-11-29 23:16:08,390 [2/4] Failure scenario loaded: 2 failure(s)
+2025-11-29 23:16:08,390 [3/4] Executing adaptive scheduler...
+2025-11-29 23:16:08,411 [FUZZY] Symptom: OVER_TORQUE_NO_ADVANCE
+2025-11-29 23:16:08,411 [FUZZY] Inputs: force=70.0, torque=80.0, p_fail=65.0, context=0.0
+2025-11-29 23:16:08,411 [FUZZY] Score: 65.47
+2025-11-29 23:16:08,411 [FUZZY] Decision: destroy (confidence=86.8%)
+2025-11-29 23:16:08,411 [ACTION] destroy: success=False, notes=Destruction non autorisée : Flag 'no_destroy' actif (contexte ou graphe).
+2025-11-29 23:16:08,489 [FUZZY] Symptom: LOW_VALUE_BOTTLENECK
+2025-11-29 23:16:08,489 [FUZZY] Inputs: force=30.0, torque=20.0, p_fail=50.0, context=0.0
+2025-11-29 23:16:08,489 [FUZZY] Score: 40.00
+2025-11-29 23:16:08,489 [FUZZY] Decision: bypass (confidence=100.0%)
+2025-11-29 23:16:08,490 [ACTION] bypass: success=False, notes=Aucun chemin alternatif dans le graphe.
+2025-11-29 23:16:08,513 Adaptive scheduler finished. Actions taken: 4
+2025-11-29 23:16:08,513 EXECUTION SUMMARY
+2025-11-29 23:16:08,513 Status: SUCCESS
+2025-11-29 23:16:08,513 Target components:
+2025-11-29 23:16:08,513 [OK] C054 - Successfully disassembled
+2025-11-29 23:16:08,513 Execution metrics:
+2025-11-29 23:16:08,513 Targets achieved: 1/1 (100.0%)
+2025-11-29 23:16:08,513 Failures handled: 2
+2025-11-29 23:16:08,513 Actions taken: 4
+2025-11-29 23:16:08,513 Components done: 17/19
+2025-11-29 23:16:08,513 Locked: 2 component(s)
+2025-11-29 23:16:08,513 Execution time: 0.17s
+2025-11-29 23:16:08,513 Actions breakdown:
+2025-11-29 23:16:08,513 [FAILED] C031     OVER_TORQUE_NO_ADVANCE -> destroy     
+2025-11-29 23:16:08,513 [OK] C031     OVER_TORQUE_NO_ADVANCE -> destroy\u2192replan
+2025-11-29 23:16:08,513 [FAILED] C025     LOW_VALUE_BOTTLENECK -> bypass      
+2025-11-29 23:16:08,514 [OK] C025     LOW_VALUE_BOTTLENECK -> bypass\u2192replan
+2025-11-29 23:16:08,514 Detailed logs: results\save\test_failures\salbp_instance_n=100_50\intermediate
+2025-11-29 23:16:08,516 Pipeline finished successfully

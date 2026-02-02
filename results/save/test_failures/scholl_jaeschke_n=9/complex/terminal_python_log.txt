@@ -1,0 +1,40 @@
+2025-11-29 23:16:23,070 DSP ADAPTIVE PIPELINE - SCHOLL_JAESCHKE_N=9
+2025-11-29 23:16:23,070 Loaded instance: scholl_jaeschke_n=9
+2025-11-29 23:16:23,070 Loaded failures: 1
+2025-11-29 23:16:23,070 [1/4] Loading instance and solving DSP...
+2025-11-29 23:16:23,073 Nodes: 9, Edges: 11, Targets: 1, Solution: 9 operations
+2025-11-29 23:16:23,083 Target(s) to achieve: ['C008']
+2025-11-29 23:16:23,083 Starting disassembly sequence (9 operations)...
+2025-11-29 23:16:23,083 [ 1/9] Disassembling C000... [OK]
+2025-11-29 23:16:23,083 [ 2/9] Disassembling C001... [OK]
+2025-11-29 23:16:23,083 [ 3/9] Disassembling C002... [OK]
+2025-11-29 23:16:23,083 [ 4/9] Disassembling C003... [OK]
+2025-11-29 23:16:23,083 [ 5/9] Disassembling C004... [OK]
+2025-11-29 23:16:23,083 [ 6/9] Disassembling C006... [OK]
+2025-11-29 23:16:23,083 [ 7/9] Disassembling C007... [OK]
+2025-11-29 23:16:23,083 [ 8/9] Disassembling C005... [OK]
+2025-11-29 23:16:23,083 [ 9/9] Disassembling C008... [OK]
+2025-11-29 23:16:23,083 [2/4] Failure scenario loaded: 1 failure(s)
+2025-11-29 23:16:23,083 [3/4] Executing adaptive scheduler...
+2025-11-29 23:16:23,099 [FUZZY] Symptom: OVER_TORQUE_NO_ADVANCE
+2025-11-29 23:16:23,099 [FUZZY] Inputs: force=70.0, torque=80.0, p_fail=85.0, context=0.0
+2025-11-29 23:16:23,099 [FUZZY] Score: 71.71
+2025-11-29 23:16:23,099 [FUZZY] Decision: destroy (confidence=59.1%)
+2025-11-29 23:16:23,099 [ACTION] destroy: success=False, notes=Destruction non autorisée : Flag 'no_destroy' actif (contexte ou graphe).
+2025-11-29 23:16:23,105 Adaptive scheduler finished. Actions taken: 2
+2025-11-29 23:16:23,105 EXECUTION SUMMARY
+2025-11-29 23:16:23,105 Status: SUCCESS
+2025-11-29 23:16:23,105 Target components:
+2025-11-29 23:16:23,105 [OK] C008 - Successfully disassembled
+2025-11-29 23:16:23,105 Execution metrics:
+2025-11-29 23:16:23,105 Targets achieved: 1/1 (100.0%)
+2025-11-29 23:16:23,105 Failures handled: 1
+2025-11-29 23:16:23,106 Actions taken: 2
+2025-11-29 23:16:23,106 Components done: 8/9
+2025-11-29 23:16:23,106 Locked: 1 component(s)
+2025-11-29 23:16:23,106 Execution time: 0.04s
+2025-11-29 23:16:23,106 Actions breakdown:
+2025-11-29 23:16:23,106 [FAILED] C005     OVER_TORQUE_NO_ADVANCE -> destroy     
+2025-11-29 23:16:23,107 [OK] C005     OVER_TORQUE_NO_ADVANCE -> destroy\u2192bypass
+2025-11-29 23:16:23,107 Detailed logs: results\save\test_failures\scholl_jaeschke_n=9\complex
+2025-11-29 23:16:23,110 Pipeline finished successfully

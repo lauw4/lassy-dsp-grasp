@@ -1,0 +1,9 @@
+--- Pipeline run 2025-11-29 23:17:03.769361 ---
+Instance: unknown
+Initial solution: ['C016', 'C014', 'C031', 'C059', 'C032', 'C063', 'C041']
+Final state:
+  - Locked: {'C032', 'C059'}
+  - Destroyed: set()
+  - Done: {'C014', 'C041', 'C031', 'C016'}
+  - Notes: ["Destruction interdite pour C059 : Flag 'no_destroy' actif (contexte ou graphe).", 'Bypass impossible pour C059: aucun chemin alternatif', 'Aucun outil alternatif pour C059']
+Actions taken: [{'comp_id': 'C059', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy', 'success': False, 'notes': "Destruction non autorisée : Flag 'no_destroy' actif (contexte ou graphe)."}, {'comp_id': 'C059', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy→replan', 'success': True, 'notes': 'Fallback succeeded'}, {'comp_id': 'C032', 'symptom': 'LOW_VALUE_BOTTLENECK', 'action': 'bypass', 'success': True, 'notes': 'Component C032 bypassed.'}]

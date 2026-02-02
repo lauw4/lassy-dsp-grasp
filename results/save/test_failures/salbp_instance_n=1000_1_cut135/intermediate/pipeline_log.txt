@@ -1,0 +1,9 @@
+--- Pipeline run 2025-11-29 23:16:16.820231 ---
+Instance: unknown
+Initial solution: ['C010', 'C020', 'C014', 'C016', 'C026', 'C027', 'C024', 'C032', 'C005', 'C018', 'C025', 'C048', 'C017', 'C004', 'C035', 'C042', 'C062', 'C012', 'C080', 'C111', 'C068', 'C090', 'C121', 'C038', 'C043']
+Final state:
+  - Locked: {'C026', 'C032'}
+  - Destroyed: set()
+  - Done: {'C043', 'C016', 'C035', 'C010', 'C080', 'C020', 'C004', 'C042', 'C068', 'C017', 'C038', 'C018', 'C090', 'C062', 'C024', 'C025', 'C005', 'C048', 'C027', 'C012', 'C014', 'C111', 'C121'}
+  - Notes: ['Destruction interdite pour C032 : Profit=24.00 > seuil=22.00 (percentile 20e).']
+Actions taken: [{'comp_id': 'C026', 'symptom': 'LOW_VALUE_BOTTLENECK', 'action': 'bypass', 'success': True, 'notes': 'Component C026 bypassed.'}, {'comp_id': 'C032', 'symptom': 'ACCESS_BLOCKED', 'action': 'destroy', 'success': False, 'notes': 'Destruction non autorisée : Profit=24.00 > seuil=22.00 (percentile 20e).'}, {'comp_id': 'C032', 'symptom': 'ACCESS_BLOCKED', 'action': 'destroy→bypass', 'success': True, 'notes': 'Fallback succeeded'}]

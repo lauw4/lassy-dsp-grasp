@@ -1,0 +1,9 @@
+--- Pipeline run 2025-11-29 23:15:52.232511 ---
+Instance: unknown
+Initial solution: ['C000', 'C008', 'C009', 'C014', 'C010', 'C004', 'C015', 'C029', 'C017', 'C001', 'C002', 'C003', 'C006', 'C023', 'C016', 'C005', 'C018', 'C019', 'C020', 'C007', 'C011', 'C012', 'C021', 'C013', 'C022', 'C024', 'C030', 'C026', 'C025', 'C028', 'C027', 'C031', 'C032', 'C033', 'C034', 'C052', 'C050', 'C051', 'C053', 'C054']
+Final state:
+  - Locked: {'C033', 'C050'}
+  - Destroyed: set()
+  - Done: {'C008', 'C000', 'C007', 'C018', 'C054', 'C015', 'C053', 'C009', 'C010', 'C051', 'C002', 'C005', 'C014', 'C032', 'C021', 'C029', 'C011', 'C028', 'C001', 'C024', 'C020', 'C017', 'C012', 'C026', 'C006', 'C023', 'C016', 'C052', 'C031', 'C013', 'C004', 'C030', 'C025', 'C027', 'C034', 'C022', 'C003', 'C019'}
+  - Notes: ['Bypass impossible pour C033: aucun chemin alternatif', 'Aucun outil alternatif pour C033', 'Destruction interdite pour C050 : Profit=55.00 > seuil=21.00 (percentile 20e).']
+Actions taken: [{'comp_id': 'C033', 'symptom': 'ACCESS_BLOCKED', 'action': 'bypass', 'success': False, 'notes': 'Aucun chemin alternatif dans le graphe.'}, {'comp_id': 'C033', 'symptom': 'ACCESS_BLOCKED', 'action': 'bypass→replan', 'success': True, 'notes': 'Fallback succeeded'}, {'comp_id': 'C050', 'symptom': 'ACCESS_BLOCKED', 'action': 'destroy', 'success': False, 'notes': 'Destruction non autorisée : Profit=55.00 > seuil=21.00 (percentile 20e).'}, {'comp_id': 'C050', 'symptom': 'ACCESS_BLOCKED', 'action': 'destroy→bypass', 'success': True, 'notes': 'Fallback succeeded'}]

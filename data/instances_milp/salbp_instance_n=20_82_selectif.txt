@@ -1,0 +1,135 @@
+# Components (V)
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20
+
+# Precedence arcs (E)
+1 11
+2 4
+2 5
+2 6
+3 4
+3 6
+3 7
+4 11
+5 8
+5 9
+5 10
+6 20
+7 12
+7 13
+7 18
+8 11
+9 11
+10 12
+10 13
+11 14
+11 15
+11 16
+11 17
+11 18
+13 19
+15 19
+15 20
+17 19
+17 20
+18 19
+
+# Target components (T)
+20
+
+# Revenues (r)
+1 23
+2 23
+3 25
+4 21
+5 20
+6 25
+7 23
+8 26
+9 30
+10 22
+11 27
+12 27
+13 24
+14 27
+15 20
+16 27
+17 24
+18 22
+19 26
+20 28
+
+# Costs (c)
+1 6
+2 4
+3 6
+4 9
+5 2
+6 9
+7 2
+8 7
+9 7
+10 4
+11 4
+12 4
+13 6
+14 1
+15 3
+16 3
+17 1
+18 5
+19 6
+20 6
+
+# Durations (p)
+1 374
+2 318
+3 153
+4 182
+5 168
+6 313
+7 159
+8 166
+9 55
+10 242
+11 76
+12 177
+13 166
+14 119
+15 150
+16 303
+17 138
+18 52
+19 48
+20 146
+
+orderrules
+1 11 au000 avant au010
+2 4 au001 avant au003
+2 5 au001 avant au004
+2 6 au001 avant au005
+3 4 au002 avant au003
+3 6 au002 avant au005
+3 7 au002 avant au006
+4 11 au003 avant au010
+5 8 au004 avant au007
+5 9 au004 avant au008
+5 10 au004 avant au009
+6 20 au005 avant au019
+7 12 au006 avant au011
+7 13 au006 avant au012
+7 18 au006 avant au017
+8 11 au007 avant au010
+9 11 au008 avant au010
+10 12 au009 avant au011
+10 13 au009 avant au012
+11 14 au010 avant au013
+11 15 au010 avant au014
+11 16 au010 avant au015
+11 17 au010 avant au016
+11 18 au010 avant au017
+13 19 au012 avant au018
+15 19 au014 avant au018
+15 20 au014 avant au019
+17 19 au016 avant au018
+17 20 au016 avant au019
+18 19 au017 avant au018

@@ -1,0 +1,40 @@
+[
+  {
+    "comp_id": "C031",
+    "op_type": "unscrew",
+    "tool_id": "T_hex",
+    "symptom": "OVER_TORQUE_NO_ADVANCE",
+    "signals": {
+      "force": 70.0,
+      "torque": 80.0,
+      "over_torque": 1
+    },
+    "context": {
+      "value_piece": 93,
+      "no_destroy": true,
+      "alt_paths": true
+    },
+    "history": {
+      "failure_count": 1
+    }
+  },
+  {
+    "comp_id": "C072",
+    "op_type": "unscrew",
+    "tool_id": "T_hex",
+    "symptom": "OVER_TORQUE_NO_ADVANCE",
+    "signals": {
+      "force": 70.0,
+      "torque": 80.0,
+      "over_torque": 1
+    },
+    "context": {
+      "value_piece": 99,
+      "no_destroy": false,
+      "alt_paths": true
+    },
+    "history": {
+      "failure_count": 2
+    }
+  }
+]

@@ -1,0 +1,47 @@
+2025-11-29 23:15:07,313 DSP ADAPTIVE PIPELINE - SCHOLL_WEE-MAG_N=75
+2025-11-29 23:15:07,314 Loaded instance: scholl_wee-mag_n=75
+2025-11-29 23:15:07,314 Loaded failures: 1
+2025-11-29 23:15:07,314 [1/4] Loading instance and solving DSP...
+2025-11-29 23:15:07,350 Nodes: 75, Edges: 87, Targets: 1, Solution: 16 operations
+2025-11-29 23:15:07,350 Target(s) to achieve: ['C069']
+2025-11-29 23:15:07,350 Starting disassembly sequence (16 operations)...
+2025-11-29 23:15:07,350 [ 1/16] Disassembling C000... [OK]
+2025-11-29 23:15:07,350 [ 2/16] Disassembling C001... [OK]
+2025-11-29 23:15:07,350 [ 3/16] Disassembling C004... [OK]
+2025-11-29 23:15:07,351 [ 4/16] Disassembling C014... [OK]
+2025-11-29 23:15:07,351 [ 5/16] Disassembling C005... [OK]
+2025-11-29 23:15:07,351 [ 6/16] Disassembling C008... [OK]
+2025-11-29 23:15:07,351 [ 7/16] Disassembling C019... [OK]
+2025-11-29 23:15:07,351 [ 8/16] Disassembling C026... [OK]
+2025-11-29 23:15:07,351 [ 9/16] Disassembling C034... [OK]
+2025-11-29 23:15:07,351 [10/16] Disassembling C041... [OK]
+2025-11-29 23:15:07,351 [11/16] Disassembling C046... [OK]
+2025-11-29 23:15:07,351 [12/16] Disassembling C048... [OK]
+2025-11-29 23:15:07,351 [13/16] Disassembling C058... [OK]
+2025-11-29 23:15:07,352 [14/16] Disassembling C065... [OK]
+2025-11-29 23:15:07,352 [15/16] Disassembling C067... [OK]
+2025-11-29 23:15:07,352 [16/16] Disassembling C069... [OK]
+2025-11-29 23:15:07,352 [2/4] Failure scenario loaded: 1 failure(s)
+2025-11-29 23:15:07,352 [3/4] Executing adaptive scheduler...
+2025-11-29 23:15:07,374 [FUZZY] Symptom: ACCESS_BLOCKED
+2025-11-29 23:15:07,374 [FUZZY] Inputs: force=60.0, torque=40.0, p_fail=60.0, context=0.0
+2025-11-29 23:15:07,374 [FUZZY] Score: 40.00
+2025-11-29 23:15:07,374 [FUZZY] Decision: bypass (confidence=100.0%)
+2025-11-29 23:15:07,374 [ACTION] bypass: success=False, notes=Aucun chemin alternatif dans le graphe.
+2025-11-29 23:15:07,400 Adaptive scheduler finished. Actions taken: 2
+2025-11-29 23:15:07,400 EXECUTION SUMMARY
+2025-11-29 23:15:07,400 Status: SUCCESS
+2025-11-29 23:15:07,400 Target components:
+2025-11-29 23:15:07,400 [OK] C069 - Successfully disassembled
+2025-11-29 23:15:07,400 Execution metrics:
+2025-11-29 23:15:07,400 Targets achieved: 1/1 (100.0%)
+2025-11-29 23:15:07,400 Failures handled: 1
+2025-11-29 23:15:07,400 Actions taken: 2
+2025-11-29 23:15:07,400 Components done: 15/16
+2025-11-29 23:15:07,400 Locked: 1 component(s)
+2025-11-29 23:15:07,400 Execution time: 0.09s
+2025-11-29 23:15:07,400 Actions breakdown:
+2025-11-29 23:15:07,400 [FAILED] C058     ACCESS_BLOCKED       -> bypass      
+2025-11-29 23:15:07,400 [OK] C058     ACCESS_BLOCKED       -> bypass\u2192replan
+2025-11-29 23:15:07,400 Detailed logs: results\save\test_failures\scholl_wee-mag_n=75\simple
+2025-11-29 23:15:07,428 Pipeline finished successfully

@@ -1,0 +1,54 @@
+{
+  "nodes": [
+    {
+      "id": "A",
+      "profit": 10,
+      "cost": 1,
+      "duration": 2,
+      "milp_index": 1
+    },
+    {
+      "id": "B",
+      "profit": 8,
+      "cost": 1,
+      "duration": 2,
+      "milp_index": 2
+    },
+    {
+      "id": "C",
+      "profit": 6,
+      "cost": 10,
+      "duration": 5,
+      "milp_index": 3
+    }
+  ],
+  "edges": [
+    [
+      "A",
+      "B"
+    ],
+    [
+      "B",
+      "C"
+    ]
+  ],
+  "targets": [
+    "C"
+  ],
+  "order_rules": [
+    {
+      "if": [
+        "A",
+        "B"
+      ],
+      "condition": "A avant B"
+    },
+    {
+      "if": [
+        "B",
+        "C"
+      ],
+      "condition": "B avant C"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "comp_id": "N12",
+    "op_type": "unscrew",
+    "tool_id": "T_hex",
+    "symptom": "ACCESS_BLOCKED",
+    "signals": {
+      "force": 46.2,
+      "torque": 35.1,
+      "access_blocked": 1
+    },
+    "context": {
+      "value_piece": 20,
+      "no_destroy": false,
+      "alt_paths": true
+    },
+    "history": {
+      "failure_count": 0
+    },
+    "timestamp": "2025-11-07T01:30:22.951514Z"
+  }
+]

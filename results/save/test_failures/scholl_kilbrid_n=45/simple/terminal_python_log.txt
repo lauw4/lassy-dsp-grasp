@@ -1,0 +1,73 @@
+2025-11-29 23:14:58,982 DSP ADAPTIVE PIPELINE - SCHOLL_KILBRID_N=45
+2025-11-29 23:14:58,984 Loaded instance: scholl_kilbrid_n=45
+2025-11-29 23:14:58,984 Loaded failures: 1
+2025-11-29 23:14:58,984 [1/4] Loading instance and solving DSP...
+2025-11-29 23:14:59,044 Nodes: 45, Edges: 62, Targets: 1, Solution: 42 operations
+2025-11-29 23:14:59,044 Target(s) to achieve: ['C044']
+2025-11-29 23:14:59,044 Starting disassembly sequence (42 operations)...
+2025-11-29 23:14:59,044 [ 1/42] Disassembling C038... [OK]
+2025-11-29 23:14:59,044 [ 2/42] Disassembling C001... [OK]
+2025-11-29 23:14:59,044 [ 3/42] Disassembling C010... [OK]
+2025-11-29 23:14:59,044 [ 4/42] Disassembling C003... [OK]
+2025-11-29 23:14:59,044 [ 5/42] Disassembling C005... [OK]
+2025-11-29 23:14:59,044 [ 6/42] Disassembling C011... [OK]
+2025-11-29 23:14:59,044 [ 7/42] Disassembling C007... [OK]
+2025-11-29 23:14:59,044 [ 8/42] Disassembling C000... [OK]
+2025-11-29 23:14:59,044 [ 9/42] Disassembling C012... [OK]
+2025-11-29 23:14:59,044 [10/42] Disassembling C002... [OK]
+2025-11-29 23:14:59,044 [11/42] Disassembling C006... [OK]
+2025-11-29 23:14:59,044 [12/42] Disassembling C009... [OK]
+2025-11-29 23:14:59,044 [13/42] Disassembling C013... [OK]
+2025-11-29 23:14:59,044 [14/42] Disassembling C030... [OK]
+2025-11-29 23:14:59,044 [15/42] Disassembling C029... [OK]
+2025-11-29 23:14:59,044 [16/42] Disassembling C014... [OK]
+2025-11-29 23:14:59,044 [17/42] Disassembling C024... [OK]
+2025-11-29 23:14:59,044 [18/42] Disassembling C004... [OK]
+2025-11-29 23:14:59,044 [19/42] Disassembling C022... [OK]
+2025-11-29 23:14:59,044 [20/42] Disassembling C017... [OK]
+2025-11-29 23:14:59,044 [21/42] Disassembling C023... [OK]
+2025-11-29 23:14:59,044 [22/42] Disassembling C016... [OK]
+2025-11-29 23:14:59,044 [23/42] Disassembling C028... [OK]
+2025-11-29 23:14:59,044 [24/42] Disassembling C015... [OK]
+2025-11-29 23:14:59,044 [25/42] Disassembling C008... [OK]
+2025-11-29 23:14:59,044 [26/42] Disassembling C031... [OK]
+2025-11-29 23:14:59,044 [27/42] Disassembling C025... [OK]
+2025-11-29 23:14:59,044 [28/42] Disassembling C026... [OK]
+2025-11-29 23:14:59,044 [29/42] Disassembling C018... [OK]
+2025-11-29 23:14:59,044 [30/42] Disassembling C019... [OK]
+2025-11-29 23:14:59,044 [31/42] Disassembling C020... [OK]
+2025-11-29 23:14:59,044 [32/42] Disassembling C021... [OK]
+2025-11-29 23:14:59,044 [33/42] Disassembling C027... [OK]
+2025-11-29 23:14:59,044 [34/42] Disassembling C032... [OK]
+2025-11-29 23:14:59,044 [35/42] Disassembling C034... [OK]
+2025-11-29 23:14:59,044 [36/42] Disassembling C033... [OK]
+2025-11-29 23:14:59,044 [37/42] Disassembling C035... [OK]
+2025-11-29 23:14:59,044 [38/42] Disassembling C037... [OK]
+2025-11-29 23:14:59,044 [39/42] Disassembling C039... [OK]
+2025-11-29 23:14:59,044 [40/42] Disassembling C040... [OK]
+2025-11-29 23:14:59,044 [41/42] Disassembling C041... [OK]
+2025-11-29 23:14:59,044 [42/42] Disassembling C044... [OK]
+2025-11-29 23:14:59,044 [2/4] Failure scenario loaded: 1 failure(s)
+2025-11-29 23:14:59,044 [3/4] Executing adaptive scheduler...
+2025-11-29 23:14:59,069 [FUZZY] Symptom: ACCESS_BLOCKED
+2025-11-29 23:14:59,069 [FUZZY] Inputs: force=60.0, torque=40.0, p_fail=70.0, context=0.0
+2025-11-29 23:14:59,069 [FUZZY] Score: 56.71
+2025-11-29 23:14:59,069 [FUZZY] Decision: destroy (confidence=74.3%)
+2025-11-29 23:14:59,069 [ACTION] destroy: success=False, notes=Destruction non autorisée : Profit=25.00 > seuil=21.00 (percentile 20e).
+2025-11-29 23:14:59,083 Adaptive scheduler finished. Actions taken: 2
+2025-11-29 23:14:59,083 EXECUTION SUMMARY
+2025-11-29 23:14:59,083 Status: SUCCESS
+2025-11-29 23:14:59,083 Target components:
+2025-11-29 23:14:59,083 [OK] C044 - Successfully disassembled
+2025-11-29 23:14:59,083 Execution metrics:
+2025-11-29 23:14:59,083 Targets achieved: 1/1 (100.0%)
+2025-11-29 23:14:59,083 Failures handled: 1
+2025-11-29 23:14:59,083 Actions taken: 2
+2025-11-29 23:14:59,083 Components done: 41/42
+2025-11-29 23:14:59,083 Locked: 1 component(s)
+2025-11-29 23:14:59,083 Execution time: 0.10s
+2025-11-29 23:14:59,083 Actions breakdown:
+2025-11-29 23:14:59,083 [FAILED] C027     ACCESS_BLOCKED       -> destroy     
+2025-11-29 23:14:59,083 [OK] C027     ACCESS_BLOCKED       -> destroy\u2192replan
+2025-11-29 23:14:59,083 Detailed logs: results\save\test_failures\scholl_kilbrid_n=45\simple
+2025-11-29 23:14:59,083 Pipeline finished successfully

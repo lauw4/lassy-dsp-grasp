@@ -1,0 +1,44 @@
+[
+  {
+    "comp_id": "N17",
+    "op_type": "debond",
+    "tool_id": "hot_air",
+    "symptom": "NO_SEPARATION",
+    "signals": {
+      "force_axial": 12.5,
+      "joint_opened": 0,
+      "force": 65.0,
+      "torque": 72.0
+    },
+    "context": {
+      "alt_tools_available": [
+        "thermal_blade"
+      ],
+      "value_piece": 17,
+      "no_destroy": false
+    },
+    "history": {
+      "failure_count": 0
+    },
+    "timestamp": "2025-11-06T10:00:00Z"
+  },
+  {
+    "comp_id": "N08",
+    "op_type": "unscrew",
+    "tool_id": "T_hex",
+    "symptom": "TIMEOUT",
+    "signals": {
+      "timeout": 1,
+      "force": 58.0,
+      "torque": 62.0
+    },
+    "context": {
+      "value_piece": 23,
+      "no_destroy": false
+    },
+    "history": {
+      "failure_count": 1
+    },
+    "timestamp": "2025-11-06T10:01:00Z"
+  }
+]

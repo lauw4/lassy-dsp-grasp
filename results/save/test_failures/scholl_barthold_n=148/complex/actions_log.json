@@ -1,0 +1,37 @@
+[
+  {
+    "comp_id": "C017",
+    "symptom": "OVER_TORQUE_NO_ADVANCE",
+    "action": "destroy",
+    "success": false,
+    "notes": "Destruction non autoris\u00e9e : Flag 'no_destroy' actif (contexte ou graphe)."
+  },
+  {
+    "comp_id": "C017",
+    "symptom": "OVER_TORQUE_NO_ADVANCE",
+    "action": "destroy\u2192bypass",
+    "success": true,
+    "notes": "Fallback succeeded"
+  },
+  {
+    "comp_id": "C036",
+    "symptom": "LOW_VALUE_BOTTLENECK",
+    "action": "bypass",
+    "success": false,
+    "notes": "Aucun chemin alternatif dans le graphe."
+  },
+  {
+    "comp_id": "C036",
+    "symptom": "LOW_VALUE_BOTTLENECK",
+    "action": "bypass\u2192replan",
+    "success": true,
+    "notes": "Fallback succeeded"
+  },
+  {
+    "comp_id": "C112",
+    "symptom": "LOW_VALUE_BOTTLENECK",
+    "action": "bypass",
+    "success": true,
+    "notes": "Component C112 bypassed."
+  }
+]

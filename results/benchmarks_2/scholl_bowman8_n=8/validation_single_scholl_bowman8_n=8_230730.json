@@ -1,0 +1,57 @@
+{
+  "meta": {
+    "run_id": "single_scholl_bowman8_n=8_230730",
+    "start_time": "2025-09-14T21:07:30Z",
+    "expected_order": [
+      "load_instance",
+      "run_dijkstra",
+      "run_grasp",
+      "run_milp",
+      "aggregate"
+    ]
+  },
+  "steps": [
+    {
+      "name": "load_instance",
+      "timestamp": "2025-09-14T21:07:30Z",
+      "status": "ok",
+      "details": {
+        "instance": "scholl_bowman8_n=8"
+      }
+    },
+    {
+      "name": "run_dijkstra",
+      "timestamp": "2025-09-14T21:07:31Z",
+      "status": "ok",
+      "details": {
+        "seq_len": 5
+      }
+    },
+    {
+      "name": "run_grasp",
+      "timestamp": "2025-09-14T21:07:31Z",
+      "status": "ok",
+      "details": {
+        "algorithms": 4
+      }
+    },
+    {
+      "name": "run_milp",
+      "timestamp": "2025-09-14T21:07:31Z",
+      "status": "Optimal",
+      "details": {
+        "gap": 0.0
+      }
+    },
+    {
+      "name": "aggregate",
+      "timestamp": "2025-09-14T21:07:31Z",
+      "status": "ok",
+      "details": {
+        "rows": 5
+      }
+    }
+  ],
+  "order_warnings": [],
+  "hash": "07f580a819eb0ef0"
+}

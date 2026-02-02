@@ -1,0 +1,38 @@
+2025-11-29 23:15:26,579 DSP ADAPTIVE PIPELINE - SALBP_INSTANCE_N=1000_1_CUT125
+2025-11-29 23:15:26,580 Loaded instance: salbp_instance_n=1000_1_cut125
+2025-11-29 23:15:26,581 Loaded failures: 1
+2025-11-29 23:15:26,581 [1/4] Loading instance and solving DSP...
+2025-11-29 23:15:26,608 Nodes: 125, Edges: 110, Targets: 2, Solution: 7 operations
+2025-11-29 23:15:26,608 Target(s) to achieve: ['C041', 'C063']
+2025-11-29 23:15:26,608 Starting disassembly sequence (7 operations)...
+2025-11-29 23:15:26,609 [ 1/7] Disassembling C014... [OK]
+2025-11-29 23:15:26,609 [ 2/7] Disassembling C016... [OK]
+2025-11-29 23:15:26,609 [ 3/7] Disassembling C031... [OK]
+2025-11-29 23:15:26,609 [ 4/7] Disassembling C032... [OK]
+2025-11-29 23:15:26,609 [ 5/7] Disassembling C059... [OK]
+2025-11-29 23:15:26,609 [ 6/7] Disassembling C041... [OK]
+2025-11-29 23:15:26,609 [ 7/7] Disassembling C063... [OK]
+2025-11-29 23:15:26,609 [2/4] Failure scenario loaded: 1 failure(s)
+2025-11-29 23:15:26,609 [3/4] Executing adaptive scheduler...
+2025-11-29 23:15:26,657 [FUZZY] Symptom: ACCESS_BLOCKED
+2025-11-29 23:15:26,657 [FUZZY] Inputs: force=60.0, torque=40.0, p_fail=50.0, context=0.0
+2025-11-29 23:15:26,657 [FUZZY] Score: 40.00
+2025-11-29 23:15:26,657 [FUZZY] Decision: bypass (confidence=100.0%)
+2025-11-29 23:15:26,658 [ACTION] bypass: success=True, notes=Component C059 bypassed.
+2025-11-29 23:15:26,658 Adaptive scheduler finished. Actions taken: 1
+2025-11-29 23:15:26,658 EXECUTION SUMMARY
+2025-11-29 23:15:26,658 Status: SUCCESS
+2025-11-29 23:15:26,658 Target components:
+2025-11-29 23:15:26,658 [OK] C041 - Successfully disassembled
+2025-11-29 23:15:26,658 [OK] C063 - Successfully disassembled
+2025-11-29 23:15:26,658 Execution metrics:
+2025-11-29 23:15:26,658 Targets achieved: 2/2 (100.0%)
+2025-11-29 23:15:26,658 Failures handled: 1
+2025-11-29 23:15:26,658 Actions taken: 1
+2025-11-29 23:15:26,658 Components done: 6/7
+2025-11-29 23:15:26,658 Locked: 1 component(s)
+2025-11-29 23:15:26,659 Execution time: 0.08s
+2025-11-29 23:15:26,659 Actions breakdown:
+2025-11-29 23:15:26,659 [OK] C059     ACCESS_BLOCKED       -> bypass      
+2025-11-29 23:15:26,659 Detailed logs: results\save\test_failures\salbp_instance_n=1000_1_cut125\simple
+2025-11-29 23:15:26,662 Pipeline finished successfully

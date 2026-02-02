@@ -1,0 +1,45 @@
+[
+  {
+    "comp_id": "N03",
+    "op_type": "unscrew",
+    "tool_id": "T_hex",
+    "symptom": "ACCESS_BLOCKED",
+    "signals": {
+      "force": 30.8,
+      "torque": 22.5,
+      "access_blocked": 1
+    },
+    "context": {
+      "value_piece": 20,
+      "no_destroy": false,
+      "alt_paths": true
+    },
+    "history": {
+      "failure_count": 0
+    },
+    "timestamp": "2025-11-07T01:30:22.956438Z"
+  },
+  {
+    "comp_id": "N28",
+    "op_type": "debond",
+    "tool_id": "hot_air",
+    "symptom": "NO_SEPARATION",
+    "signals": {
+      "force": 68.3,
+      "torque": 84.1,
+      "force_axial": 11.8,
+      "joint_opened": 0
+    },
+    "context": {
+      "value_piece": 20,
+      "no_destroy": false,
+      "alt_tools_available": [
+        "thermal_blade"
+      ]
+    },
+    "history": {
+      "failure_count": 1
+    },
+    "timestamp": "2025-11-07T01:31:22.956438Z"
+  }
+]

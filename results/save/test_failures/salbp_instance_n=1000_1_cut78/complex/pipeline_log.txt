@@ -1,0 +1,9 @@
+--- Pipeline run 2025-11-29 23:16:44.871178 ---
+Instance: unknown
+Initial solution: ['C014', 'C010', 'C033', 'C032', 'C009', 'C048', 'C068', 'C040']
+Final state:
+  - Locked: {'C032', 'C048'}
+  - Destroyed: set()
+  - Done: {'C040', 'C014', 'C010', 'C068', 'C009', 'C033'}
+  - Notes: ["Destruction interdite pour C032 : Flag 'no_destroy' actif (contexte ou graphe).", "Destruction interdite pour C048 : Flag 'no_destroy' actif (contexte ou graphe).", 'Bypass impossible pour C048: aucun chemin alternatif', 'Aucun outil alternatif pour C048']
+Actions taken: [{'comp_id': 'C032', 'symptom': 'ACCESS_BLOCKED', 'action': 'destroy', 'success': False, 'notes': "Destruction non autorisée : Flag 'no_destroy' actif (contexte ou graphe)."}, {'comp_id': 'C032', 'symptom': 'ACCESS_BLOCKED', 'action': 'destroy→bypass', 'success': True, 'notes': 'Fallback succeeded'}, {'comp_id': 'C048', 'symptom': 'ACCESS_BLOCKED', 'action': 'destroy', 'success': False, 'notes': "Destruction non autorisée : Flag 'no_destroy' actif (contexte ou graphe)."}]

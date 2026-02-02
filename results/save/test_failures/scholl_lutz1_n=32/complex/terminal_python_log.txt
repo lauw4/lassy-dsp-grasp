@@ -1,0 +1,76 @@
+2025-11-29 23:16:32,074 DSP ADAPTIVE PIPELINE - SCHOLL_LUTZ1_N=32
+2025-11-29 23:16:32,083 Loaded instance: scholl_lutz1_n=32
+2025-11-29 23:16:32,083 Loaded failures: 3
+2025-11-29 23:16:32,083 [1/4] Loading instance and solving DSP...
+2025-11-29 23:16:32,116 Nodes: 32, Edges: 38, Targets: 1, Solution: 32 operations
+2025-11-29 23:16:32,116 Target(s) to achieve: ['C031']
+2025-11-29 23:16:32,116 Starting disassembly sequence (32 operations)...
+2025-11-29 23:16:32,116 [ 1/32] Disassembling C003... [OK]
+2025-11-29 23:16:32,116 [ 2/32] Disassembling C000... [OK]
+2025-11-29 23:16:32,116 [ 3/32] Disassembling C002... [OK]
+2025-11-29 23:16:32,116 [ 4/32] Disassembling C001... [OK]
+2025-11-29 23:16:32,116 [ 5/32] Disassembling C004... [OK]
+2025-11-29 23:16:32,116 [ 6/32] Disassembling C005... [OK]
+2025-11-29 23:16:32,116 [ 7/32] Disassembling C007... [OK]
+2025-11-29 23:16:32,116 [ 8/32] Disassembling C006... [OK]
+2025-11-29 23:16:32,116 [ 9/32] Disassembling C008... [OK]
+2025-11-29 23:16:32,116 [10/32] Disassembling C010... [OK]
+2025-11-29 23:16:32,116 [11/32] Disassembling C009... [OK]
+2025-11-29 23:16:32,116 [12/32] Disassembling C011... [OK]
+2025-11-29 23:16:32,116 [13/32] Disassembling C012... [OK]
+2025-11-29 23:16:32,116 [14/32] Disassembling C014... [OK]
+2025-11-29 23:16:32,116 [15/32] Disassembling C013... [OK]
+2025-11-29 23:16:32,116 [16/32] Disassembling C016... [OK]
+2025-11-29 23:16:32,116 [17/32] Disassembling C015... [OK]
+2025-11-29 23:16:32,116 [18/32] Disassembling C018... [OK]
+2025-11-29 23:16:32,116 [19/32] Disassembling C019... [OK]
+2025-11-29 23:16:32,116 [20/32] Disassembling C017... [OK]
+2025-11-29 23:16:32,116 [21/32] Disassembling C020... [OK]
+2025-11-29 23:16:32,116 [22/32] Disassembling C021... [OK]
+2025-11-29 23:16:32,116 [23/32] Disassembling C024... [OK]
+2025-11-29 23:16:32,116 [24/32] Disassembling C023... [OK]
+2025-11-29 23:16:32,116 [25/32] Disassembling C025... [OK]
+2025-11-29 23:16:32,116 [26/32] Disassembling C026... [OK]
+2025-11-29 23:16:32,116 [27/32] Disassembling C027... [OK]
+2025-11-29 23:16:32,116 [28/32] Disassembling C028... [OK]
+2025-11-29 23:16:32,116 [29/32] Disassembling C029... [OK]
+2025-11-29 23:16:32,116 [30/32] Disassembling C022... [OK]
+2025-11-29 23:16:32,116 [31/32] Disassembling C030... [OK]
+2025-11-29 23:16:32,116 [32/32] Disassembling C031... [OK]
+2025-11-29 23:16:32,116 [2/4] Failure scenario loaded: 3 failure(s)
+2025-11-29 23:16:32,116 [3/4] Executing adaptive scheduler...
+2025-11-29 23:16:32,139 [FUZZY] Symptom: LOW_VALUE_BOTTLENECK
+2025-11-29 23:16:32,139 [FUZZY] Inputs: force=30.0, torque=20.0, p_fail=40.0, context=0.0
+2025-11-29 23:16:32,139 [FUZZY] Score: 40.00
+2025-11-29 23:16:32,139 [FUZZY] Decision: bypass (confidence=100.0%)
+2025-11-29 23:16:32,139 [ACTION] bypass: success=True, notes=Component C006 bypassed.
+2025-11-29 23:16:32,190 [FUZZY] Symptom: OVER_TORQUE_NO_ADVANCE
+2025-11-29 23:16:32,190 [FUZZY] Inputs: force=70.0, torque=80.0, p_fail=75.0, context=0.0
+2025-11-29 23:16:32,190 [FUZZY] Score: 70.67
+2025-11-29 23:16:32,190 [FUZZY] Decision: destroy (confidence=63.7%)
+2025-11-29 23:16:32,190 [ACTION] destroy: success=False, notes=Destruction non autorisée : Profit=38.00 > seuil=23.20 (percentile 20e).
+2025-11-29 23:16:32,234 [FUZZY] Symptom: ACCESS_BLOCKED
+2025-11-29 23:16:32,234 [FUZZY] Inputs: force=60.0, torque=40.0, p_fail=60.0, context=0.0
+2025-11-29 23:16:32,234 [FUZZY] Score: 40.00
+2025-11-29 23:16:32,235 [FUZZY] Decision: bypass (confidence=100.0%)
+2025-11-29 23:16:32,235 [ACTION] bypass: success=False, notes=Aucun chemin alternatif dans le graphe.
+2025-11-29 23:16:32,244 Adaptive scheduler finished. Actions taken: 5
+2025-11-29 23:16:32,244 EXECUTION SUMMARY
+2025-11-29 23:16:32,244 Status: SUCCESS
+2025-11-29 23:16:32,244 Target components:
+2025-11-29 23:16:32,244 [OK] C031 - Successfully disassembled
+2025-11-29 23:16:32,244 Execution metrics:
+2025-11-29 23:16:32,244 Targets achieved: 1/1 (100.0%)
+2025-11-29 23:16:32,244 Failures handled: 3
+2025-11-29 23:16:32,244 Actions taken: 5
+2025-11-29 23:16:32,244 Components done: 29/32
+2025-11-29 23:16:32,244 Locked: 3 component(s)
+2025-11-29 23:16:32,244 Execution time: 0.17s
+2025-11-29 23:16:32,245 Actions breakdown:
+2025-11-29 23:16:32,245 [OK] C006     LOW_VALUE_BOTTLENECK -> bypass      
+2025-11-29 23:16:32,245 [FAILED] C017     OVER_TORQUE_NO_ADVANCE -> destroy     
+2025-11-29 23:16:32,245 [OK] C017     OVER_TORQUE_NO_ADVANCE -> destroy\u2192replan
+2025-11-29 23:16:32,245 [FAILED] C027     ACCESS_BLOCKED       -> bypass      
+2025-11-29 23:16:32,245 [OK] C027     ACCESS_BLOCKED       -> bypass\u2192replan
+2025-11-29 23:16:32,245 Detailed logs: results\save\test_failures\scholl_lutz1_n=32\complex
+2025-11-29 23:16:32,248 Pipeline finished successfully

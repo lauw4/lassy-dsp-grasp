@@ -1,0 +1,64 @@
+[
+  {
+    "comp_id": "N04",
+    "op_type": "unscrew",
+    "tool_id": "T_extractor",
+    "symptom": "OVER_TORQUE_NO_ADVANCE",
+    "signals": {
+      "force": 76.9,
+      "torque": 80.1,
+      "torque_max": 96.1,
+      "torque_nominal": 40.0,
+      "angle_delta": 0.0
+    },
+    "context": {
+      "value_piece": 20,
+      "no_destroy": false,
+      "alt_tools_available": [
+        "T_hex"
+      ]
+    },
+    "history": {
+      "failure_count": 0
+    },
+    "timestamp": "2025-11-07T01:30:22.944605Z"
+  },
+  {
+    "comp_id": "N01",
+    "op_type": "unscrew",
+    "tool_id": "T_hex",
+    "symptom": "MANUAL_FLAG",
+    "signals": {
+      "force": 50.0,
+      "torque": 50.0,
+      "manual_required": 1
+    },
+    "context": {
+      "value_piece": 20,
+      "no_destroy": false
+    },
+    "history": {
+      "failure_count": 1
+    },
+    "timestamp": "2025-11-07T01:31:22.944605Z"
+  },
+  {
+    "comp_id": "N24",
+    "op_type": "unscrew",
+    "tool_id": "T_hex",
+    "symptom": "TIMEOUT",
+    "signals": {
+      "force": 50.0,
+      "torque": 50.0,
+      "timeout": 1
+    },
+    "context": {
+      "value_piece": 20,
+      "no_destroy": false
+    },
+    "history": {
+      "failure_count": 2
+    },
+    "timestamp": "2025-11-07T01:32:22.944605Z"
+  }
+]

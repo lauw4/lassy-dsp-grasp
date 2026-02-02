@@ -1,0 +1,26 @@
+2025-11-29 23:14:44,704 DSP ADAPTIVE PIPELINE - SCHOLL_MERTENS_N=7
+2025-11-29 23:14:44,705 Loaded instance: scholl_mertens_n=7
+2025-11-29 23:14:44,706 Loaded failures: 1
+2025-11-29 23:14:44,706 [1/4] Loading instance and solving DSP...
+2025-11-29 23:14:44,716 Nodes: 7, Edges: 6, Targets: 1, Solution: 4 operations
+2025-11-29 23:14:44,716 Target(s) to achieve: ['C005']
+2025-11-29 23:14:44,716 Starting disassembly sequence (4 operations)...
+2025-11-29 23:14:44,716 [ 1/4] Disassembling C000... [OK]
+2025-11-29 23:14:44,716 [ 2/4] Disassembling C001... [OK]
+2025-11-29 23:14:44,717 [ 3/4] Disassembling C004... [OK]
+2025-11-29 23:14:44,717 [ 4/4] Disassembling C005... [OK]
+2025-11-29 23:14:44,717 [2/4] Failure scenario loaded: 1 failure(s)
+2025-11-29 23:14:44,717 [3/4] Executing adaptive scheduler...
+2025-11-29 23:14:44,717 Adaptive scheduler finished. Actions taken: 0
+2025-11-29 23:14:44,717 EXECUTION SUMMARY
+2025-11-29 23:14:44,717 Status: SUCCESS
+2025-11-29 23:14:44,717 Target components:
+2025-11-29 23:14:44,717 [OK] C005 - Successfully disassembled
+2025-11-29 23:14:44,717 Execution metrics:
+2025-11-29 23:14:44,718 Targets achieved: 1/1 (100.0%)
+2025-11-29 23:14:44,718 Failures handled: 1
+2025-11-29 23:14:44,718 Actions taken: 0
+2025-11-29 23:14:44,718 Components done: 4/4
+2025-11-29 23:14:44,718 Execution time: 0.02s
+2025-11-29 23:14:44,718 Detailed logs: results\save\test_failures\scholl_mertens_n=7\simple
+2025-11-29 23:14:44,721 Pipeline finished successfully

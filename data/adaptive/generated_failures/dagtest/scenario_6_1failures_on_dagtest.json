@@ -1,0 +1,21 @@
+[
+  {
+    "comp_id": "N24",
+    "op_type": "unscrew",
+    "tool_id": "T_hex",
+    "symptom": "MANUAL_FLAG",
+    "signals": {
+      "force": 50.0,
+      "torque": 50.0,
+      "manual_required": 1
+    },
+    "context": {
+      "value_piece": 20,
+      "no_destroy": false
+    },
+    "history": {
+      "failure_count": 0
+    },
+    "timestamp": "2025-11-07T01:30:22.953052Z"
+  }
+]

@@ -1,0 +1,78 @@
+2025-11-29 23:15:13,831 DSP ADAPTIVE PIPELINE - SCHOLL_LUTZ3_N=89
+2025-11-29 23:15:13,832 Loaded instance: scholl_lutz3_n=89
+2025-11-29 23:15:13,833 Loaded failures: 1
+2025-11-29 23:15:13,833 [1/4] Loading instance and solving DSP...
+2025-11-29 23:15:13,907 Nodes: 89, Edges: 118, Targets: 3, Solution: 45 operations
+2025-11-29 23:15:13,907 Target(s) to achieve: ['C020', 'C040', 'C050']
+2025-11-29 23:15:13,907 Starting disassembly sequence (45 operations)...
+2025-11-29 23:15:13,907 [ 1/45] Disassembling C000... [OK]
+2025-11-29 23:15:13,907 [ 2/45] Disassembling C001... [OK]
+2025-11-29 23:15:13,907 [ 3/45] Disassembling C002... [OK]
+2025-11-29 23:15:13,907 [ 4/45] Disassembling C003... [OK]
+2025-11-29 23:15:13,907 [ 5/45] Disassembling C004... [OK]
+2025-11-29 23:15:13,907 [ 6/45] Disassembling C005... [OK]
+2025-11-29 23:15:13,908 [ 7/45] Disassembling C007... [OK]
+2025-11-29 23:15:13,908 [ 8/45] Disassembling C006... [OK]
+2025-11-29 23:15:13,908 [ 9/45] Disassembling C008... [OK]
+2025-11-29 23:15:13,909 [10/45] Disassembling C009... [OK]
+2025-11-29 23:15:13,909 [11/45] Disassembling C010... [OK]
+2025-11-29 23:15:13,909 [12/45] Disassembling C011... [OK]
+2025-11-29 23:15:13,909 [13/45] Disassembling C012... [OK]
+2025-11-29 23:15:13,909 [14/45] Disassembling C013... [OK]
+2025-11-29 23:15:13,909 [15/45] Disassembling C014... [OK]
+2025-11-29 23:15:13,909 [16/45] Disassembling C016... [OK]
+2025-11-29 23:15:13,909 [17/45] Disassembling C017... [OK]
+2025-11-29 23:15:13,909 [18/45] Disassembling C018... [OK]
+2025-11-29 23:15:13,909 [19/45] Disassembling C021... [OK]
+2025-11-29 23:15:13,909 [20/45] Disassembling C022... [OK]
+2025-11-29 23:15:13,909 [21/45] Disassembling C023... [OK]
+2025-11-29 23:15:13,909 [22/45] Disassembling C024... [OK]
+2025-11-29 23:15:13,909 [23/45] Disassembling C019... [OK]
+2025-11-29 23:15:13,909 [24/45] Disassembling C020... [OK]
+2025-11-29 23:15:13,909 [25/45] Disassembling C027... [OK]
+2025-11-29 23:15:13,909 [26/45] Disassembling C026... [OK]
+2025-11-29 23:15:13,909 [27/45] Disassembling C028... [OK]
+2025-11-29 23:15:13,909 [28/45] Disassembling C025... [OK]
+2025-11-29 23:15:13,909 [29/45] Disassembling C030... [OK]
+2025-11-29 23:15:13,909 [30/45] Disassembling C031... [OK]
+2025-11-29 23:15:13,909 [31/45] Disassembling C032... [OK]
+2025-11-29 23:15:13,909 [32/45] Disassembling C033... [OK]
+2025-11-29 23:15:13,909 [33/45] Disassembling C034... [OK]
+2025-11-29 23:15:13,909 [34/45] Disassembling C035... [OK]
+2025-11-29 23:15:13,909 [35/45] Disassembling C036... [OK]
+2025-11-29 23:15:13,909 [36/45] Disassembling C037... [OK]
+2025-11-29 23:15:13,909 [37/45] Disassembling C038... [OK]
+2025-11-29 23:15:13,909 [38/45] Disassembling C040... [OK]
+2025-11-29 23:15:13,909 [39/45] Disassembling C042... [OK]
+2025-11-29 23:15:13,909 [40/45] Disassembling C044... [OK]
+2025-11-29 23:15:13,909 [41/45] Disassembling C045... [OK]
+2025-11-29 23:15:13,909 [42/45] Disassembling C046... [OK]
+2025-11-29 23:15:13,909 [43/45] Disassembling C048... [OK]
+2025-11-29 23:15:13,909 [44/45] Disassembling C049... [OK]
+2025-11-29 23:15:13,909 [45/45] Disassembling C050... [OK]
+2025-11-29 23:15:13,909 [2/4] Failure scenario loaded: 1 failure(s)
+2025-11-29 23:15:13,909 [3/4] Executing adaptive scheduler...
+2025-11-29 23:15:13,931 [FUZZY] Symptom: LOW_VALUE_BOTTLENECK
+2025-11-29 23:15:13,931 [FUZZY] Inputs: force=30.0, torque=20.0, p_fail=40.0, context=0.0
+2025-11-29 23:15:13,931 [FUZZY] Score: 40.00
+2025-11-29 23:15:13,931 [FUZZY] Decision: bypass (confidence=100.0%)
+2025-11-29 23:15:13,931 [ACTION] bypass: success=False, notes=Aucun chemin alternatif dans le graphe.
+2025-11-29 23:15:13,976 Adaptive scheduler finished. Actions taken: 2
+2025-11-29 23:15:13,976 EXECUTION SUMMARY
+2025-11-29 23:15:13,976 Status: SUCCESS
+2025-11-29 23:15:13,976 Target components:
+2025-11-29 23:15:13,976 [OK] C020 - Successfully disassembled
+2025-11-29 23:15:13,976 [OK] C040 - Successfully disassembled
+2025-11-29 23:15:13,976 [OK] C050 - Successfully disassembled
+2025-11-29 23:15:13,976 Execution metrics:
+2025-11-29 23:15:13,976 Targets achieved: 3/3 (100.0%)
+2025-11-29 23:15:13,976 Failures handled: 1
+2025-11-29 23:15:13,976 Actions taken: 2
+2025-11-29 23:15:13,976 Components done: 44/45
+2025-11-29 23:15:13,976 Locked: 1 component(s)
+2025-11-29 23:15:13,976 Execution time: 0.15s
+2025-11-29 23:15:13,976 Actions breakdown:
+2025-11-29 23:15:13,976 [FAILED] C042     LOW_VALUE_BOTTLENECK -> bypass      
+2025-11-29 23:15:13,976 [OK] C042     LOW_VALUE_BOTTLENECK -> bypass\u2192replan
+2025-11-29 23:15:13,977 Detailed logs: results\save\test_failures\scholl_lutz3_n=89\simple
+2025-11-29 23:15:13,978 Pipeline finished successfully

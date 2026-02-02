@@ -1,0 +1,23 @@
+[
+  {
+    "comp_id": "C033",
+    "symptom": "LOW_VALUE_BOTTLENECK",
+    "action": "bypass",
+    "success": true,
+    "notes": "Component C033 bypassed."
+  },
+  {
+    "comp_id": "C058",
+    "symptom": "ACCESS_BLOCKED",
+    "action": "bypass",
+    "success": true,
+    "notes": "Component C058 bypassed."
+  },
+  {
+    "comp_id": "C069",
+    "symptom": "ACCESS_BLOCKED",
+    "action": "bypass",
+    "success": true,
+    "notes": "Component C069 bypassed."
+  }
+]

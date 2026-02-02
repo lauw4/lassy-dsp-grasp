@@ -1,0 +1,47 @@
+2025-11-29 23:15:25,157 DSP ADAPTIVE PIPELINE - SALBP_INSTANCE_N=1000_1_CUT124
+2025-11-29 23:15:25,159 Loaded instance: salbp_instance_n=1000_1_cut124
+2025-11-29 23:15:25,159 Loaded failures: 1
+2025-11-29 23:15:25,159 [1/4] Loading instance and solving DSP...
+2025-11-29 23:15:25,197 Nodes: 124, Edges: 109, Targets: 1, Solution: 16 operations
+2025-11-29 23:15:25,197 Target(s) to achieve: ['C100']
+2025-11-29 23:15:25,197 Starting disassembly sequence (16 operations)...
+2025-11-29 23:15:25,197 [ 1/16] Disassembling C005... [OK]
+2025-11-29 23:15:25,197 [ 2/16] Disassembling C010... [OK]
+2025-11-29 23:15:25,198 [ 3/16] Disassembling C016... [OK]
+2025-11-29 23:15:25,198 [ 4/16] Disassembling C018... [OK]
+2025-11-29 23:15:25,198 [ 5/16] Disassembling C025... [OK]
+2025-11-29 23:15:25,198 [ 6/16] Disassembling C004... [OK]
+2025-11-29 23:15:25,198 [ 7/16] Disassembling C024... [OK]
+2025-11-29 23:15:25,198 [ 8/16] Disassembling C020... [OK]
+2025-11-29 23:15:25,198 [ 9/16] Disassembling C026... [OK]
+2025-11-29 23:15:25,198 [10/16] Disassembling C017... [OK]
+2025-11-29 23:15:25,198 [11/16] Disassembling C035... [OK]
+2025-11-29 23:15:25,198 [12/16] Disassembling C027... [OK]
+2025-11-29 23:15:25,199 [13/16] Disassembling C042... [OK]
+2025-11-29 23:15:25,199 [14/16] Disassembling C062... [OK]
+2025-11-29 23:15:25,199 [15/16] Disassembling C077... [OK]
+2025-11-29 23:15:25,199 [16/16] Disassembling C100... [OK]
+2025-11-29 23:15:25,199 [2/4] Failure scenario loaded: 1 failure(s)
+2025-11-29 23:15:25,199 [3/4] Executing adaptive scheduler...
+2025-11-29 23:15:25,249 [FUZZY] Symptom: ACCESS_BLOCKED
+2025-11-29 23:15:25,249 [FUZZY] Inputs: force=60.0, torque=40.0, p_fail=70.0, context=0.0
+2025-11-29 23:15:25,249 [FUZZY] Score: 56.71
+2025-11-29 23:15:25,249 [FUZZY] Decision: destroy (confidence=74.3%)
+2025-11-29 23:15:25,250 [ACTION] destroy: success=False, notes=Destruction non autorisée : Flag 'no_destroy' actif (contexte ou graphe).
+2025-11-29 23:15:25,251 Adaptive scheduler finished. Actions taken: 2
+2025-11-29 23:15:25,251 EXECUTION SUMMARY
+2025-11-29 23:15:25,251 Status: SUCCESS
+2025-11-29 23:15:25,251 Target components:
+2025-11-29 23:15:25,251 [OK] C100 - Successfully disassembled
+2025-11-29 23:15:25,251 Execution metrics:
+2025-11-29 23:15:25,251 Targets achieved: 1/1 (100.0%)
+2025-11-29 23:15:25,251 Failures handled: 1
+2025-11-29 23:15:25,252 Actions taken: 2
+2025-11-29 23:15:25,252 Components done: 15/16
+2025-11-29 23:15:25,252 Locked: 1 component(s)
+2025-11-29 23:15:25,252 Execution time: 0.10s
+2025-11-29 23:15:25,252 Actions breakdown:
+2025-11-29 23:15:25,252 [FAILED] C077     ACCESS_BLOCKED       -> destroy     
+2025-11-29 23:15:25,252 [OK] C077     ACCESS_BLOCKED       -> destroy\u2192bypass
+2025-11-29 23:15:25,252 Detailed logs: results\save\test_failures\salbp_instance_n=1000_1_cut124\simple
+2025-11-29 23:15:25,255 Pipeline finished successfully

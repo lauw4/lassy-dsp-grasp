@@ -1,0 +1,60 @@
+[
+  {
+    "comp_id": "N02",
+    "op_type": "unscrew",
+    "tool_id": "T_hex",
+    "symptom": "ACCESS_BLOCKED",
+    "signals": {
+      "access_blocked": 1,
+      "force": 42.0,
+      "torque": 38.0
+    },
+    "context": {
+      "alt_paths": true,
+      "value_piece": 18,
+      "no_destroy": false
+    },
+    "history": {
+      "failure_count": 0
+    },
+    "timestamp": "2025-11-06T10:00:00Z"
+  },
+  {
+    "comp_id": "N20",
+    "op_type": "unscrew",
+    "tool_id": "T_hex",
+    "symptom": "TIMEOUT",
+    "signals": {
+      "timeout": 1,
+      "force": 75.0,
+      "torque": 82.0
+    },
+    "context": {
+      "value_piece": 22,
+      "no_destroy": false
+    },
+    "history": {
+      "failure_count": 1
+    },
+    "timestamp": "2025-11-06T10:01:00Z"
+  },
+  {
+    "comp_id": "N10",
+    "op_type": "unscrew",
+    "tool_id": "T_hex",
+    "symptom": "TIMEOUT",
+    "signals": {
+      "timeout": 1,
+      "force": 88.0,
+      "torque": 91.0
+    },
+    "context": {
+      "value_piece": 17,
+      "no_destroy": false
+    },
+    "history": {
+      "failure_count": 2
+    },
+    "timestamp": "2025-11-06T10:02:00Z"
+  }
+]

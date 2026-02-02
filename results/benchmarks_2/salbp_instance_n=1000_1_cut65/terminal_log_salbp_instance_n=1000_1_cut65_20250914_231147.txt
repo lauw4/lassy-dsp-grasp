@@ -1,0 +1,284 @@
+Instance: salbp_instance_n=1000_1_cut65
+Cibles: ['C055']
+ Exécution GRASP sur /home/robot/Desktop/lassy-dsp-grasp/data/instances_base/salbp_instance_n=1000_1_cut65.json
+[DIAG] grasp_vnd run 0: seq_brute=['C019', 'C036', 'C055']
+[DIAG] grasp_vnd run 0: profit=61.0, makespan=3.0, seq_filtered=['C019', 'C036', 'C055']
+[DIAG] grasp_vnd run 1: seq_brute=['C019', 'C036', 'C055']
+[DIAG] grasp_vnd run 1: profit=61.0, makespan=3.0, seq_filtered=['C019', 'C036', 'C055']
+[DIAG] grasp_vnd run 2: seq_brute=['C019', 'C036', 'C055']
+[DIAG] grasp_vnd run 2: profit=61.0, makespan=3.0, seq_filtered=['C019', 'C036', 'C055']
+[DIAG] grasp_vnd run 3: seq_brute=['C019', 'C036', 'C055']
+[DIAG] grasp_vnd run 3: profit=61.0, makespan=3.0, seq_filtered=['C019', 'C036', 'C055']
+[DIAG] grasp_vnd run 4: seq_brute=['C019', 'C036', 'C055']
+[DIAG] grasp_vnd run 4: profit=61.0, makespan=3.0, seq_filtered=['C019', 'C036', 'C055']
+[DIAG] grasp_vnd run 5: seq_brute=['C019', 'C036', 'C055']
+[DIAG] grasp_vnd run 5: profit=61.0, makespan=3.0, seq_filtered=['C019', 'C036', 'C055']
+[DIAG] grasp_vnd run 6: seq_brute=['C019', 'C036', 'C055']
+[DIAG] grasp_vnd run 6: profit=61.0, makespan=3.0, seq_filtered=['C019', 'C036', 'C055']
+[DIAG] grasp_vnd run 7: seq_brute=['C019', 'C036', 'C055']
+[DIAG] grasp_vnd run 7: profit=61.0, makespan=3.0, seq_filtered=['C019', 'C036', 'C055']
+[DIAG] grasp_vnd run 8: seq_brute=['C019', 'C036', 'C055']
+[DIAG] grasp_vnd run 8: profit=61.0, makespan=3.0, seq_filtered=['C019', 'C036', 'C055']
+[DIAG] grasp_vnd run 9: seq_brute=['C019', 'C036', 'C055']
+[DIAG] grasp_vnd run 9: profit=61.0, makespan=3.0, seq_filtered=['C019', 'C036', 'C055']
+[DIAG] grasp_tabu run 0: seq_brute=['C019', 'C036', 'C055']
+[DIAG] grasp_tabu run 0: profit=61.0, makespan=3.0, seq_filtered=['C019', 'C036', 'C055']
+[DIAG] grasp_tabu run 1: seq_brute=['C019', 'C036', 'C055']
+[DIAG] grasp_tabu run 1: profit=61.0, makespan=3.0, seq_filtered=['C019', 'C036', 'C055']
+[DIAG] grasp_tabu run 2: seq_brute=['C019', 'C036', 'C055']
+[DIAG] grasp_tabu run 2: profit=61.0, makespan=3.0, seq_filtered=['C019', 'C036', 'C055']
+[DIAG] grasp_tabu run 3: seq_brute=['C019', 'C036', 'C055']
+[DIAG] grasp_tabu run 3: profit=61.0, makespan=3.0, seq_filtered=['C019', 'C036', 'C055']
+[DIAG] grasp_tabu run 4: seq_brute=['C019', 'C036', 'C055']
+[DIAG] grasp_tabu run 4: profit=61.0, makespan=3.0, seq_filtered=['C019', 'C036', 'C055']
+[DIAG] grasp_tabu run 5: seq_brute=['C019', 'C036', 'C055']
+[DIAG] grasp_tabu run 5: profit=61.0, makespan=3.0, seq_filtered=['C019', 'C036', 'C055']
+[DIAG] grasp_tabu run 6: seq_brute=['C019', 'C036', 'C055']
+[DIAG] grasp_tabu run 6: profit=61.0, makespan=3.0, seq_filtered=['C019', 'C036', 'C055']
+[DIAG] grasp_tabu run 7: seq_brute=['C019', 'C036', 'C055']
+[DIAG] grasp_tabu run 7: profit=61.0, makespan=3.0, seq_filtered=['C019', 'C036', 'C055']
+[DIAG] grasp_tabu run 8: seq_brute=['C019', 'C036', 'C055']
+[DIAG] grasp_tabu run 8: profit=61.0, makespan=3.0, seq_filtered=['C019', 'C036', 'C055']
+[DIAG] grasp_tabu run 9: seq_brute=['C019', 'C036', 'C055']
+[DIAG] grasp_tabu run 9: profit=61.0, makespan=3.0, seq_filtered=['C019', 'C036', 'C055']
+[DIAG] grasp_mns run 0: seq_brute=['C019', 'C036', 'C055']
+[DIAG] grasp_mns run 0: profit=61.0, makespan=3.0, seq_filtered=['C019', 'C036', 'C055']
+[DIAG] grasp_mns run 1: seq_brute=['C019', 'C036', 'C055']
+[DIAG] grasp_mns run 1: profit=61.0, makespan=3.0, seq_filtered=['C019', 'C036', 'C055']
+[DIAG] grasp_mns run 2: seq_brute=['C019', 'C036', 'C055']
+[DIAG] grasp_mns run 2: profit=61.0, makespan=3.0, seq_filtered=['C019', 'C036', 'C055']
+[DIAG] grasp_mns run 3: seq_brute=['C019', 'C036', 'C055']
+[DIAG] grasp_mns run 3: profit=61.0, makespan=3.0, seq_filtered=['C019', 'C036', 'C055']
+[DIAG] grasp_mns run 4: seq_brute=['C019', 'C036', 'C055']
+[DIAG] grasp_mns run 4: profit=61.0, makespan=3.0, seq_filtered=['C019', 'C036', 'C055']
+[DIAG] grasp_mns run 5: seq_brute=['C019', 'C036', 'C055']
+[DIAG] grasp_mns run 5: profit=61.0, makespan=3.0, seq_filtered=['C019', 'C036', 'C055']
+[DIAG] grasp_mns run 6: seq_brute=['C019', 'C036', 'C055']
+[DIAG] grasp_mns run 6: profit=61.0, makespan=3.0, seq_filtered=['C019', 'C036', 'C055']
+[DIAG] grasp_mns run 7: seq_brute=['C019', 'C036', 'C055']
+[DIAG] grasp_mns run 7: profit=61.0, makespan=3.0, seq_filtered=['C019', 'C036', 'C055']
+[DIAG] grasp_mns run 8: seq_brute=['C019', 'C036', 'C055']
+[DIAG] grasp_mns run 8: profit=61.0, makespan=3.0, seq_filtered=['C019', 'C036', 'C055']
+[DIAG] grasp_mns run 9: seq_brute=['C019', 'C036', 'C055']
+[DIAG] grasp_mns run 9: profit=61.0, makespan=3.0, seq_filtered=['C019', 'C036', 'C055']
+Dijkstra DSP Exact - Mode: shortest_path
+   Cibles: ['C055']
+   Nœuds requis: 3/65
+→ Exécution MILP sur /home/robot/Desktop/lassy-dsp-grasp/data/instances_milp/salbp_instance_n=1000_1_cut65_selectif.txt (limite: 1800s, gap≤0.01000%)
+↳ Arrêt dès gap ≤ 0.01% ou au plus tard vers 23:41:46
+Utilisation de CPLEX (limite: 1800s) (/opt/ibm/ILOG/CPLEX_Studio2211/cplex/bin/x86-64_linux/cplex)
+[DEBUG STATUS] Parsing log file: results/solver_logs/cplex_n65_20250914-231146.log
+[DEBUG STATUS] Line 39: Found 'mip - integer optimal solution' -> Optimal
+[DIAG] extract_sequence - séquence brute extraite: [15, 19, 33, 17, 21, 20, 12, 13, 11, 18, 16, 6, 32, 37, 4, 14, 60, 28, 26, 34, 25, 3, 31, 1, 24, 64, 38, 47, 45, 36, 49, 22, 61, 53, 41, 42, 8, 30, 23, 29, 46, 40, 58, 48, 62, 35, 9, 39, 27, 43, 5, 65, 59, 54, 63, 51, 52, 2, 56, 7, 10, 57, 55, 44, 50]
+[DEBUG] Clés de grasp_results avant boucle: ['grasp_vnd', 'grasp_tabu', 'grasp_mns', 'dijkstra_closure_min']
+[DEBUG STATUS] Parsing log file: results/solver_logs/cplex_n65_20250914-231146.log
+[DEBUG STATUS] Line 39: Found 'mip - integer optimal solution' -> Optimal
+[DEBUG] milp_log_path: results/solver_logs/cplex_n65_20250914-231146.log
+[DEBUG] milp_status: Optimal
+[DEBUG] milp_gap: None
+[DEBUG] milp_best_integer: 1275.0
+[DEBUG] milp_profit: 1275.0
+[DEBUG] milp_makespan: 6570
+[DEBUG] milp_sequence: [15, 19, 33, 17, 21, 20, 12, 13, 11, 18, 16, 6, 32, 37, 4, 14, 60, 28, 26, 34, 25, 3, 31, 1, 24, 64, 38, 47, 45, 36, 49, 22, 61, 53, 41, 42, 8, 30, 23, 29, 46, 40, 58, 48, 62, 35, 9, 39, 27, 43, 5, 65, 59, 54, 63, 51, 52, 2, 56, 7, 10, 57, 55, 44, 50]
+[DEBUG] profit_closure final: 1275.0
+[DEBUG] makespan_closure final: 6570.0
+[DEBUG] best_integer_val final: 1275.0
+
+=== DIAGNOSTIC DIVERSITÉ GRASP ===
+[grasp_vnd] Séquence brute: ['C019', 'C036', 'C055']
+[grasp_vnd] Séquence filtrée: ['C019', 'C036', 'C055']
+[grasp_vnd] Score DSP: 6.0
+[grasp_tabu] Séquence brute: ['C019', 'C036', 'C055']
+[grasp_tabu] Séquence filtrée: ['C019', 'C036', 'C055']
+[grasp_tabu] Score DSP: 6.0
+[grasp_mns] Séquence brute: ['C019', 'C036', 'C055']
+[grasp_mns] Séquence filtrée: ['C019', 'C036', 'C055']
+[grasp_mns] Score DSP: 6.0
+[dijkstra_closure_min] Séquence brute: ['C019', 'C036', 'C055']
+[dijkstra_closure_min] Séquence filtrée: ['C019', 'C036', 'C055']
+[dijkstra_closure_min] Score DSP: 6.0
+
+Diversité séquences brutes (nombre unique): 1
+Diversité séquences filtrées (nombre unique): 1
+Scores DSP GRASP: [6.0, 6.0, 6.0, 6.0]
+=== FIN DIAGNOSTIC ===
+
+[DEBUG] Chemin fichier MILP utilisé : data/instances_milp/salbp_instance_n=1000_1_cut65_selectif.txt
+[DEBUG] milp_results['milp_sequence'] = [15, 19, 33, 17, 21, 20, 12, 13, 11, 18, 16, 6, 32, 37, 4, 14, 60, 28, 26, 34, 25, 3, 31, 1, 24, 64, 38, 47, 45, 36, 49, 22, 61, 53, 41, 42, 8, 30, 23, 29, 46, 40, 58, 48, 62, 35, 9, 39, 27, 43, 5, 65, 59, 54, 63, 51, 52, 2, 56, 7, 10, 57, 55, 44, 50]
+[DEBUG] milp_data = {'V': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65], 'E': [(5, 63), (6, 63), (11, 24), (11, 27), (11, 34), (12, 30), (13, 39), (14, 40), (15, 33), (17, 25), (17, 32), (18, 36), (18, 38), (19, 23), (19, 26), (20, 31), (20, 35), (20, 37), (21, 28), (22, 29), (25, 63), (26, 63), (27, 63), (28, 63), (31, 52), (32, 45), (32, 60), (33, 42), (33, 49), (33, 53), (33, 54), (34, 41), (34, 51), (34, 59), (35, 57), (36, 43), (37, 46), (37, 48), (37, 56), (38, 47), (38, 50), (38, 58), (39, 44), (39, 55), (43, 63), (46, 62), (47, 61), (47, 65), (60, 64)], 'T': [56], 'r': {1: 21, 2: 23, 3: 29, 4: 26, 5: 25, 6: 27, 7: 27, 8: 27, 9: 22, 10: 25, 11: 27, 12: 27, 13: 23, 14: 20, 15: 22, 16: 21, 17: 20, 18: 25, 19: 29, 20: 30, 21: 29, 22: 29, 23: 25, 24: 21, 25: 28, 26: 25, 27: 26, 28: 22, 29: 28, 30: 26, 31: 23, 32: 20, 33: 28, 34: 24, 35: 29, 36: 20, 37: 29, 38: 25, 39: 29, 40: 28, 41: 29, 42: 29, 43: 21, 44: 29, 45: 23, 46: 24, 47: 21, 48: 25, 49: 21, 50: 28, 51: 25, 52: 29, 53: 29, 54: 23, 55: 30, 56: 25, 57: 21, 58: 25, 59: 23, 60: 28, 61: 25, 62: 23, 63: 26, 64: 24, 65: 27}, 'c': {1: 9, 2: 7, 3: 10, 4: 2, 5: 10, 6: 7, 7: 1, 8: 2, 9: 5, 10: 1, 11: 2, 12: 2, 13: 8, 14: 6, 15: 2, 16: 8, 17: 5, 18: 2, 19: 2, 20: 10, 21: 2, 22: 7, 23: 4, 24: 8, 25: 4, 26: 7, 27: 2, 28: 8, 29: 5, 30: 6, 31: 6, 32: 5, 33: 10, 34: 7, 35: 2, 36: 9, 37: 4, 38: 10, 39: 2, 40: 5, 41: 10, 42: 10, 43: 4, 44: 9, 45: 6, 46: 1, 47: 8, 48: 5, 49: 4, 50: 10, 51: 4, 52: 5, 53: 8, 54: 4, 55: 4, 56: 9, 57: 6, 58: 10, 59: 3, 60: 9, 61: 3, 62: 1, 63: 8, 64: 10, 65: 3}, 'p': {1: 212, 2: 173, 3: 219, 4: 293, 5: 63, 6: 63, 7: 68, 8: 197, 9: 226, 10: 115, 11: 34, 12: 30, 13: 39, 14: 40, 15: 33, 16: 161, 17: 32, 18: 38, 19: 26, 20: 37, 21: 28, 22: 29, 23: 29, 24: 195, 25: 63, 26: 63, 27: 63, 28: 63, 29: 279, 30: 96, 31: 52, 32: 60, 33: 54, 34: 59, 35: 57, 36: 43, 37: 56, 38: 58, 39: 55, 40: 235, 41: 158, 42: 53, 43: 63, 44: 89, 45: 167, 46: 62, 47: 65, 48: 75, 49: 27, 50: 144, 51: 86, 52: 154, 53: 228, 54: 52, 55: 81, 56: 55, 57: 217, 58: 201, 59: 66, 60: 64, 61: 75, 62: 151, 63: 150, 64: 171, 65: 180}, 'C_max': None, 'label_map': {}}
+[DIAG] Séquence brute extraite de MILP: [15, 19, 33, 17, 21, 20, 12, 13, 11, 18, 16, 6, 32, 37, 4, 14, 60, 28, 26, 34, 25, 3, 31, 1, 24, 64, 38, 47, 45, 36, 49, 22, 61, 53, 41, 42, 8, 30, 23, 29, 46, 40, 58, 48, 62, 35, 9, 39, 27, 43, 5, 65, 59, 54, 63, 51, 52, 2, 56, 7, 10, 57, 55, 44, 50]
+[DIAG] Mapping indices MILP → labels:
+[DIAG] Liste des nœuds du graphe et mapping numérique :
+  C000 -> 1
+  C001 -> 2
+  C002 -> 3
+  C003 -> 4
+  C004 -> 5
+  C005 -> 6
+  C006 -> 7
+  C007 -> 8
+  C008 -> 9
+  C009 -> 10
+  C010 -> 11
+  C011 -> 12
+  C012 -> 13
+  C013 -> 14
+  C014 -> 15
+  C015 -> 16
+  C016 -> 17
+  C017 -> 18
+  C018 -> 19
+  C019 -> 20
+  C020 -> 21
+  C021 -> 22
+  C022 -> 23
+  C023 -> 24
+  C024 -> 25
+  C025 -> 26
+  C026 -> 27
+  C027 -> 28
+  C028 -> 29
+  C029 -> 30
+  C030 -> 31
+  C031 -> 32
+  C032 -> 33
+  C033 -> 34
+  C034 -> 35
+  C035 -> 36
+  C036 -> 37
+  C037 -> 38
+  C038 -> 39
+  C039 -> 40
+  C040 -> 41
+  C041 -> 42
+  C042 -> 43
+  C043 -> 44
+  C044 -> 45
+  C045 -> 46
+  C046 -> 47
+  C047 -> 48
+  C048 -> 49
+  C049 -> 50
+  C050 -> 51
+  C051 -> 52
+  C052 -> 53
+  C053 -> 54
+  C054 -> 55
+  C055 -> 56
+  C056 -> 57
+  C057 -> 58
+  C058 -> 59
+  C059 -> 60
+  C060 -> 61
+  C061 -> 62
+  C062 -> 63
+  C063 -> 64
+  C064 -> 65
+[MAPPING MILP] Indices → Labels:
+    15 -> C014
+    19 -> C018
+    33 -> C032
+    17 -> C016
+    21 -> C020
+    20 -> C019
+    12 -> C011
+    13 -> C012
+    11 -> C010
+    18 -> C017
+    16 -> C015
+    6 -> C005
+    32 -> C031
+    37 -> C036
+    4 -> C003
+    14 -> C013
+    60 -> C059
+    28 -> C027
+    26 -> C025
+    34 -> C033
+    25 -> C024
+    3 -> C002
+    31 -> C030
+    1 -> C000
+    24 -> C023
+    64 -> C063
+    38 -> C037
+    47 -> C046
+    45 -> C044
+    36 -> C035
+    49 -> C048
+    22 -> C021
+    61 -> C060
+    53 -> C052
+    41 -> C040
+    42 -> C041
+    8 -> C007
+    30 -> C029
+    23 -> C022
+    29 -> C028
+    46 -> C045
+    40 -> C039
+    58 -> C057
+    48 -> C047
+    62 -> C061
+    35 -> C034
+    9 -> C008
+    39 -> C038
+    27 -> C026
+    43 -> C042
+    5 -> C004
+    65 -> C064
+    59 -> C058
+    54 -> C053
+    63 -> C062
+    51 -> C050
+    52 -> C051
+    2 -> C001
+    56 -> C055
+    7 -> C006
+    10 -> C009
+    57 -> C056
+    55 -> C054
+    44 -> C043
+    50 -> C049
+[MAPPING MILP] Séquence finale pour profit: ['C019', 'C036', 'C055']
+[DIAG] Séquence MILP finale pour évaluation: ['C019', 'C036', 'C055']
+[DIAG] MILP profit_closure=61.0, makespan_closure=3.0, score_dsp=6.0
+[DIAG] PROFIT_CLOSURE MILP: 61.0
+[DIAG] MAKESPAN_CLOSURE MILP: 3.0
+[DIAG] SEQ_CLOSURE_LEN MILP: ['C019', 'C036', 'C055']
+[DEBUG STATUS] Parsing log file: results/solver_logs/cplex_n65_20250914-231146.log
+[DEBUG STATUS] Line 39: Found 'mip - integer optimal solution' -> Optimal
+[DIAG] Séquence grasp_vnd pour évaluation: ['C019', 'C036', 'C055']
+[DIAG] Séquence grasp_vnd filtrée (closure): ['C019', 'C036', 'C055']
+[DIAG] Mapping grasp_vnd: [20, 37, 56]
+[DIAG] grasp_vnd profit_closure=61.0, makespan_closure=3.0, score_dsp=6.0
+[DEBUG TABLEAU] grasp_vnd: profit_closure=61.0, makespan_closure=3.0, score_dsp=6.0, seq_length_closure=['C019', 'C036', 'C055']
+[DIAG] Séquence grasp_tabu pour évaluation: ['C019', 'C036', 'C055']
+[DIAG] Séquence grasp_tabu filtrée (closure): ['C019', 'C036', 'C055']
+[DIAG] Mapping grasp_tabu: [20, 37, 56]
+[DIAG] grasp_tabu profit_closure=61.0, makespan_closure=3.0, score_dsp=6.0
+[DEBUG TABLEAU] grasp_tabu: profit_closure=61.0, makespan_closure=3.0, score_dsp=6.0, seq_length_closure=['C019', 'C036', 'C055']
+[DIAG] Séquence grasp_mns pour évaluation: ['C019', 'C036', 'C055']
+[DIAG] Séquence grasp_mns filtrée (closure): ['C019', 'C036', 'C055']
+[DIAG] Mapping grasp_mns: [20, 37, 56]
+[DIAG] grasp_mns profit_closure=61.0, makespan_closure=3.0, score_dsp=6.0
+[DEBUG TABLEAU] grasp_mns: profit_closure=61.0, makespan_closure=3.0, score_dsp=6.0, seq_length_closure=['C019', 'C036', 'C055']
+[DIAG] Séquence dijkstra_closure_min pour évaluation: ['C019', 'C036', 'C055']
+[DIAG] Séquence dijkstra_closure_min filtrée (closure): ['C019', 'C036', 'C055']
+[DIAG] Mapping dijkstra_closure_min: [20, 37, 56]
+[DIAG] dijkstra_closure_min profit_closure=61.0, makespan_closure=3.0, score_dsp=6.0
+[DEBUG TABLEAU] dijkstra_closure_min: profit_closure=61.0, makespan_closure=3.0, score_dsp=6.0, seq_length_closure=['C019', 'C036', 'C055']
+[DEBUG AVANT NETTOYAGE] Nombre de lignes dans results: 5
+[DEBUG AVANT NETTOYAGE] MILP result[0]: profit_closure=61.0, makespan_closure=3.0
+[DEBUG FINAL] Nombre de lignes dans rows: 5
+[DEBUG FINAL] MILP row[0]: profit_closure=61.0, makespan_closure=3.0
+
+=== COMPARAISON GRASP vs MILP ===
+                     instance            algorithm  profit_closure  makespan_closure  score_dsp     time    status   gap  targets seq_length_closure  violations_règles  rel_err_profit_vs_milp_closure
+salbp_instance_n=1000_1_cut65     MILP_full_profit            61.0               3.0        6.0 0.477643   Optimal              1 [C019, C036, C055]                  0                             NaN
+salbp_instance_n=1000_1_cut65            grasp_vnd            61.0               3.0        6.0 0.010964 Completed 0.00%        1 [C019, C036, C055]                  0                             0.0
+salbp_instance_n=1000_1_cut65           grasp_tabu            61.0               3.0        6.0 0.137295 Completed 0.00%        1 [C019, C036, C055]                  0                             0.0
+salbp_instance_n=1000_1_cut65            grasp_mns            61.0               3.0        6.0 0.003550 Completed 0.00%        1 [C019, C036, C055]                  0                             0.0
+salbp_instance_n=1000_1_cut65 dijkstra_closure_min            61.0               3.0        6.0 3.000000 Completed 0.00%        1 [C019, C036, C055]                  0                             0.0
+
+Résultats sauvegardés dans: results/benchmarks_2/salbp_instance_n=1000_1_cut65/compare_salbp_instance_n=1000_1_cut65_20250914_231147.csv

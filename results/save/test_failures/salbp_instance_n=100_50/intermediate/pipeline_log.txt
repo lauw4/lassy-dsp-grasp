@@ -1,0 +1,9 @@
+--- Pipeline run 2025-11-29 23:16:08.514801 ---
+Instance: unknown
+Initial solution: ['C003', 'C000', 'C010', 'C001', 'C002', 'C016', 'C024', 'C028', 'C031', 'C009', 'C033', 'C027', 'C017', 'C014', 'C032', 'C023', 'C025', 'C043', 'C054']
+Final state:
+  - Locked: {'C031', 'C025'}
+  - Destroyed: set()
+  - Done: {'C010', 'C032', 'C033', 'C028', 'C000', 'C002', 'C024', 'C001', 'C017', 'C027', 'C023', 'C003', 'C016', 'C014', 'C009', 'C054', 'C043'}
+  - Notes: ["Destruction interdite pour C031 : Flag 'no_destroy' actif (contexte ou graphe).", 'Bypass impossible pour C031: aucun chemin alternatif', 'Aucun outil alternatif pour C031', 'Bypass impossible pour C025: aucun chemin alternatif', 'Aucun outil alternatif pour C025']
+Actions taken: [{'comp_id': 'C031', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy', 'success': False, 'notes': "Destruction non autorisée : Flag 'no_destroy' actif (contexte ou graphe)."}, {'comp_id': 'C031', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy→replan', 'success': True, 'notes': 'Fallback succeeded'}, {'comp_id': 'C025', 'symptom': 'LOW_VALUE_BOTTLENECK', 'action': 'bypass', 'success': False, 'notes': 'Aucun chemin alternatif dans le graphe.'}, {'comp_id': 'C025', 'symptom': 'LOW_VALUE_BOTTLENECK', 'action': 'bypass→replan', 'success': True, 'notes': 'Fallback succeeded'}]

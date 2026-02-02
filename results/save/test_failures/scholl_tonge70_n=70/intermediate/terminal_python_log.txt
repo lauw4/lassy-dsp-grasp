@@ -1,0 +1,79 @@
+2025-11-29 23:15:52,088 DSP ADAPTIVE PIPELINE - SCHOLL_TONGE70_N=70
+2025-11-29 23:15:52,088 Loaded instance: scholl_tonge70_n=70
+2025-11-29 23:15:52,089 Loaded failures: 2
+2025-11-29 23:15:52,089 [1/4] Loading instance and solving DSP...
+2025-11-29 23:15:52,147 Nodes: 70, Edges: 86, Targets: 2, Solution: 40 operations
+2025-11-29 23:15:52,147 Target(s) to achieve: ['C010', 'C054']
+2025-11-29 23:15:52,147 Starting disassembly sequence (40 operations)...
+2025-11-29 23:15:52,147 [ 1/40] Disassembling C000... [OK]
+2025-11-29 23:15:52,147 [ 2/40] Disassembling C008... [OK]
+2025-11-29 23:15:52,147 [ 3/40] Disassembling C009... [OK]
+2025-11-29 23:15:52,148 [ 4/40] Disassembling C014... [OK]
+2025-11-29 23:15:52,148 [ 5/40] Disassembling C010... [OK]
+2025-11-29 23:15:52,148 [ 6/40] Disassembling C004... [OK]
+2025-11-29 23:15:52,148 [ 7/40] Disassembling C015... [OK]
+2025-11-29 23:15:52,148 [ 8/40] Disassembling C029... [OK]
+2025-11-29 23:15:52,148 [ 9/40] Disassembling C017... [OK]
+2025-11-29 23:15:52,148 [10/40] Disassembling C001... [OK]
+2025-11-29 23:15:52,148 [11/40] Disassembling C002... [OK]
+2025-11-29 23:15:52,148 [12/40] Disassembling C003... [OK]
+2025-11-29 23:15:52,148 [13/40] Disassembling C006... [OK]
+2025-11-29 23:15:52,148 [14/40] Disassembling C023... [OK]
+2025-11-29 23:15:52,148 [15/40] Disassembling C016... [OK]
+2025-11-29 23:15:52,148 [16/40] Disassembling C005... [OK]
+2025-11-29 23:15:52,148 [17/40] Disassembling C018... [OK]
+2025-11-29 23:15:52,148 [18/40] Disassembling C019... [OK]
+2025-11-29 23:15:52,148 [19/40] Disassembling C020... [OK]
+2025-11-29 23:15:52,148 [20/40] Disassembling C007... [OK]
+2025-11-29 23:15:52,148 [21/40] Disassembling C011... [OK]
+2025-11-29 23:15:52,148 [22/40] Disassembling C012... [OK]
+2025-11-29 23:15:52,148 [23/40] Disassembling C021... [OK]
+2025-11-29 23:15:52,148 [24/40] Disassembling C013... [OK]
+2025-11-29 23:15:52,148 [25/40] Disassembling C022... [OK]
+2025-11-29 23:15:52,148 [26/40] Disassembling C024... [OK]
+2025-11-29 23:15:52,148 [27/40] Disassembling C030... [OK]
+2025-11-29 23:15:52,148 [28/40] Disassembling C026... [OK]
+2025-11-29 23:15:52,148 [29/40] Disassembling C025... [OK]
+2025-11-29 23:15:52,148 [30/40] Disassembling C028... [OK]
+2025-11-29 23:15:52,148 [31/40] Disassembling C027... [OK]
+2025-11-29 23:15:52,148 [32/40] Disassembling C031... [OK]
+2025-11-29 23:15:52,148 [33/40] Disassembling C032... [OK]
+2025-11-29 23:15:52,148 [34/40] Disassembling C033... [OK]
+2025-11-29 23:15:52,149 [35/40] Disassembling C034... [OK]
+2025-11-29 23:15:52,149 [36/40] Disassembling C052... [OK]
+2025-11-29 23:15:52,149 [37/40] Disassembling C050... [OK]
+2025-11-29 23:15:52,149 [38/40] Disassembling C051... [OK]
+2025-11-29 23:15:52,149 [39/40] Disassembling C053... [OK]
+2025-11-29 23:15:52,149 [40/40] Disassembling C054... [OK]
+2025-11-29 23:15:52,149 [2/4] Failure scenario loaded: 2 failure(s)
+2025-11-29 23:15:52,149 [3/4] Executing adaptive scheduler...
+2025-11-29 23:15:52,170 [FUZZY] Symptom: ACCESS_BLOCKED
+2025-11-29 23:15:52,170 [FUZZY] Inputs: force=60.0, torque=40.0, p_fail=60.0, context=0.0
+2025-11-29 23:15:52,170 [FUZZY] Score: 40.00
+2025-11-29 23:15:52,170 [FUZZY] Decision: bypass (confidence=100.0%)
+2025-11-29 23:15:52,170 [ACTION] bypass: success=False, notes=Aucun chemin alternatif dans le graphe.
+2025-11-29 23:15:52,229 [FUZZY] Symptom: ACCESS_BLOCKED
+2025-11-29 23:15:52,229 [FUZZY] Inputs: force=60.0, torque=40.0, p_fail=70.0, context=0.0
+2025-11-29 23:15:52,229 [FUZZY] Score: 56.71
+2025-11-29 23:15:52,229 [FUZZY] Decision: destroy (confidence=74.3%)
+2025-11-29 23:15:52,230 [ACTION] destroy: success=False, notes=Destruction non autorisée : Profit=55.00 > seuil=21.00 (percentile 20e).
+2025-11-29 23:15:52,230 Adaptive scheduler finished. Actions taken: 4
+2025-11-29 23:15:52,230 EXECUTION SUMMARY
+2025-11-29 23:15:52,230 Status: SUCCESS
+2025-11-29 23:15:52,230 Target components:
+2025-11-29 23:15:52,231 [OK] C010 - Successfully disassembled
+2025-11-29 23:15:52,231 [OK] C054 - Successfully disassembled
+2025-11-29 23:15:52,231 Execution metrics:
+2025-11-29 23:15:52,231 Targets achieved: 2/2 (100.0%)
+2025-11-29 23:15:52,231 Failures handled: 2
+2025-11-29 23:15:52,231 Actions taken: 4
+2025-11-29 23:15:52,231 Components done: 38/40
+2025-11-29 23:15:52,231 Locked: 2 component(s)
+2025-11-29 23:15:52,231 Execution time: 0.14s
+2025-11-29 23:15:52,231 Actions breakdown:
+2025-11-29 23:15:52,231 [FAILED] C033     ACCESS_BLOCKED       -> bypass      
+2025-11-29 23:15:52,231 [OK] C033     ACCESS_BLOCKED       -> bypass\u2192replan
+2025-11-29 23:15:52,231 [FAILED] C050     ACCESS_BLOCKED       -> destroy     
+2025-11-29 23:15:52,231 [OK] C050     ACCESS_BLOCKED       -> destroy\u2192bypass
+2025-11-29 23:15:52,231 Detailed logs: results\save\test_failures\scholl_tonge70_n=70\intermediate
+2025-11-29 23:15:52,234 Pipeline finished successfully

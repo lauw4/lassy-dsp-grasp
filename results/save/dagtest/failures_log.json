@@ -1,0 +1,94 @@
+[
+  {
+    "comp_id": "N06",
+    "op_type": "unscrew",
+    "tool_id": "T_hex",
+    "symptom": "OVER_TORQUE_NO_ADVANCE",
+    "signals": {
+      "force": 30.0,
+      "torque": 35.0,
+      "force_axial": 0,
+      "joint_opened": 0,
+      "timeout": 0
+    },
+    "context": {
+      "alt_tools_available": [
+        "T_torque"
+      ],
+      "value_piece": 50,
+      "no_destroy": false
+    },
+    "history": {
+      "failure_count": 0
+    },
+    "timestamp": "2025-11-06T10:00:00Z"
+  },
+  {
+    "comp_id": "N17",
+    "op_type": "debond",
+    "tool_id": "hot_air",
+    "symptom": "ACCESS_BLOCKED",
+    "signals": {
+      "force": 48.0,
+      "torque": 52.0,
+      "force_axial": 8.0,
+      "joint_opened": 0,
+      "timeout": 0
+    },
+    "context": {
+      "alt_tools_available": [],
+      "alt_paths": true,
+      "value_piece": 80,
+      "no_destroy": true
+    },
+    "history": {
+      "failure_count": 1
+    },
+    "timestamp": "2025-11-06T10:01:00Z"
+  },
+  {
+    "comp_id": "N21",
+    "op_type": "unscrew",
+    "tool_id": "T_hex",
+    "symptom": "LOW_VALUE_BOTTLENECK",
+    "signals": {
+      "force": 75.0,
+      "torque": 80.0,
+      "force_axial": 0,
+      "joint_opened": 0,
+      "timeout": 1
+    },
+    "context": {
+      "alt_tools_available": [],
+      "value_piece": 8,
+      "no_destroy": false
+    },
+    "history": {
+      "failure_count": 0
+    },
+    "timestamp": "2025-11-06T10:02:00Z"
+  },
+  {
+    "comp_id": "N07",
+    "op_type": "unscrew",
+    "tool_id": "T_hex",
+    "symptom": "OVER_TORQUE_NO_ADVANCE",
+    "signals": {
+      "force": 60.0,
+      "torque": 70.0,
+      "force_axial": 0,
+      "joint_opened": 0,
+      "timeout": 0
+    },
+    "context": {
+      "alt_tools_available": [],
+      "alt_paths": false,
+      "value_piece": 100,
+      "no_destroy": true
+    },
+    "history": {
+      "failure_count": 0
+    },
+    "timestamp": "2025-11-06T10:03:00Z"
+  }
+]

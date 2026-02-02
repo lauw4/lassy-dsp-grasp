@@ -1,0 +1,9 @@
+--- Pipeline run 2025-11-29 23:16:30.603564 ---
+Instance: unknown
+Initial solution: ['N02', 'N06', 'N11', 'N17', 'N01', 'N03', 'N05', 'N10', 'N04', 'N08', 'N09', 'N14', 'N16', 'N15', 'N07', 'N12', 'N13', 'N19', 'N20', 'N18', 'N21', 'N22']
+Final state:
+  - Locked: {'N20', 'N12'}
+  - Destroyed: set()
+  - Done: {'N19', 'N21', 'N01', 'N02', 'N11', 'N14', 'N06', 'N16', 'N17', 'N03', 'N04', 'N09', 'N15', 'N05', 'N13', 'N18', 'N10', 'N08', 'N22', 'N07'}
+  - Notes: ['Bypass impossible pour N12: aucun chemin alternatif', 'Aucun outil alternatif pour N12', 'Destruction interdite pour N20 : Profit=31.00 > seuil=18.00 (percentile 20e).']
+Actions taken: [{'comp_id': 'N12', 'symptom': 'ACCESS_BLOCKED', 'action': 'bypass', 'success': False, 'notes': 'Aucun chemin alternatif dans le graphe.'}, {'comp_id': 'N12', 'symptom': 'ACCESS_BLOCKED', 'action': 'bypass→replan', 'success': True, 'notes': 'Fallback succeeded'}, {'comp_id': 'N20', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy', 'success': False, 'notes': 'Destruction non autorisée : Profit=31.00 > seuil=18.00 (percentile 20e).'}, {'comp_id': 'N20', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy→bypass', 'success': True, 'notes': 'Fallback succeeded'}]

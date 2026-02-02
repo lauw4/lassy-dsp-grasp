@@ -1,0 +1,23 @@
+[
+  {
+    "comp_id": "C026",
+    "symptom": "LOW_VALUE_BOTTLENECK",
+    "action": "bypass",
+    "success": true,
+    "notes": "Component C026 bypassed."
+  },
+  {
+    "comp_id": "C032",
+    "symptom": "ACCESS_BLOCKED",
+    "action": "destroy",
+    "success": false,
+    "notes": "Destruction non autoris\u00e9e : Profit=24.00 > seuil=22.00 (percentile 20e)."
+  },
+  {
+    "comp_id": "C032",
+    "symptom": "ACCESS_BLOCKED",
+    "action": "destroy\u2192bypass",
+    "success": true,
+    "notes": "Fallback succeeded"
+  }
+]

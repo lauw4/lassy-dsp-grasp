@@ -1,0 +1,33 @@
+2025-11-29 22:24:01,525 DSP ADAPTIVE PIPELINE - SCHOLL_MANSOOR_N=11
+2025-11-29 22:24:01,525 Loaded instance: scholl_mansoor_n=11
+2025-11-29 22:24:01,525 Loaded failures: 0
+2025-11-29 22:24:01,525 [1/4] Loading instance and solving DSP...
+2025-11-29 22:24:01,529 Nodes: 11, Edges: 11, Targets: 1, Solution: 11 operations
+2025-11-29 22:24:01,529 Target(s) to achieve: ['C010']
+2025-11-29 22:24:01,529 Starting disassembly sequence (11 operations)...
+2025-11-29 22:24:01,529 [ 1/11] Disassembling C002... [OK]
+2025-11-29 22:24:01,529 [ 2/11] Disassembling C001... [OK]
+2025-11-29 22:24:01,529 [ 3/11] Disassembling C000... [OK]
+2025-11-29 22:24:01,529 [ 4/11] Disassembling C004... [OK]
+2025-11-29 22:24:01,529 [ 5/11] Disassembling C006... [OK]
+2025-11-29 22:24:01,529 [ 6/11] Disassembling C003... [OK]
+2025-11-29 22:24:01,529 [ 7/11] Disassembling C005... [OK]
+2025-11-29 22:24:01,529 [ 8/11] Disassembling C007... [OK]
+2025-11-29 22:24:01,529 [ 9/11] Disassembling C008... [OK]
+2025-11-29 22:24:01,529 [10/11] Disassembling C009... [OK]
+2025-11-29 22:24:01,529 [11/11] Disassembling C010... [OK]
+2025-11-29 22:24:01,529 [2/4] No failures (nominal execution)
+2025-11-29 22:24:01,529 [3/4] Executing adaptive scheduler...
+2025-11-29 22:24:01,529 Adaptive scheduler finished. Actions taken: 0
+2025-11-29 22:24:01,529 EXECUTION SUMMARY
+2025-11-29 22:24:01,529 Status: SUCCESS
+2025-11-29 22:24:01,529 Target components:
+2025-11-29 22:24:01,529 [OK] C010 - Successfully disassembled
+2025-11-29 22:24:01,529 Execution metrics:
+2025-11-29 22:24:01,529 Targets achieved: 1/1 (100.0%)
+2025-11-29 22:24:01,529 Failures handled: 0
+2025-11-29 22:24:01,529 Actions taken: 0
+2025-11-29 22:24:01,529 Components done: 11/11
+2025-11-29 22:24:01,529 Execution time: 0.00s
+2025-11-29 22:24:01,529 Detailed logs: results\save\test_nominal\scholl_mansoor_n=11
+2025-11-29 22:24:01,529 Pipeline finished successfully

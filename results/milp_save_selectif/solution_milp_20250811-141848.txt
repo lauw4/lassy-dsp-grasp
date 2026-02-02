@@ -1,0 +1,96 @@
+=== Résultat MILP ===
+Instance : joy_test_selectif
+Fichier : C:\Users\Waele\OneDrive\Documents\Etude\Cours\semestre_9\STAGE\IMT STAGE 5A\lassy-dsp-grasp\experiments\..\data\instances_milp\joy_test_selectif.txt
+Critères : time_limit=7200s, gap≤3.00%
+
+=== Résumé CPLEX ===
+Version: 22.1.1.0 | 2022-11-27 | 9160aff4d; Mode: deterministic; Threads: 12
+Paramètres: TimeLimit=7200s; MIPGap≈3.00%
+Search: dynamic search.; Emphasis: balance optimality and feasibility.
+Résultats: Objective=111.000000; Time=0.00s; DetTicks=0.10
+
+Statut : Optimal
+Profit net = 111.00
+Makespan   = 18.10 s (18.10 s)
+
+Composants ciblés : 7, 3
+
+• Pièce 4 retirée à la position 1
+• Pièce 2 retirée à la position 2
+• Pièce 6 retirée à la position 3
+• Pièce 8 retirée à la position 4
+• Pièce 1 retirée à la position 5
+• Pièce 3 retirée à la position 6 [TARGET]
+• Pièce 5 retirée à la position 7
+• Pièce 7 retirée à la position 8 [TARGET]
+• Pièce 10 retirée à la position 9
+• Pièce 9 retirée à la position 10
+
+=== Contexte exécution ===
+Utilisation de CPLEX (limite: 7200s) (C:\Program Files\IBM\ILOG\CPLEX_Studio2211\cplex\bin\x64_win64\cplex.exe)
+
+=== Log CPLEX (gap 3.00%) ===
+
+Log started (V22.1.1.0) Mon Aug 11 14:18:48 2025
+
+New value for mixed integer optimality gap tolerance: 0.03
+Version identifier: 22.1.1.0 | 2022-11-27 | 9160aff4d
+CPXPARAM_TimeLimit                               7200
+CPXPARAM_MIP_Tolerances_MIPGap                   0.029999999999999999
+Tried aggregator 1 time.
+MIP Presolve eliminated 20 rows and 19 columns.
+Reduced MIP has 83 rows, 92 columns, and 523 nonzeros.
+Reduced MIP has 92 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.33 ticks)
+Found incumbent of value 72.000000 after 0.00 sec. (0.41 ticks)
+Probing fixed 16 vars, tightened 0 bounds.
+Probing time = 0.00 sec. (0.33 ticks)
+Tried aggregator 1 time.
+MIP Presolve eliminated 14 rows and 16 columns.
+MIP Presolve modified 26 coefficients.
+Reduced MIP has 69 rows, 76 columns, and 390 nonzeros.
+Reduced MIP has 76 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.29 ticks)
+Probing time = 0.00 sec. (0.26 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 69 rows, 76 columns, and 390 nonzeros.
+Reduced MIP has 76 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.27 ticks)
+Probing time = 0.00 sec. (0.26 ticks)
+Clique table members: 317.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 12 threads.
+
+Root node processing (before b&c):
+  Real time             =    0.01 sec. (2.20 ticks)
+Parallel b&c, 12 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.01 sec. (2.20 ticks)
+
+Solution pool: 1 solution saved.
+
+MIP - Integer optimal solution:  Objective =  1.1100000000e+02
+Solution time =    0.01 sec.  Iterations = 0  Nodes = 0 (1)
+Deterministic time = 2.20 ticks  (146.60 ticks/sec)
+
+MILP problem relaxed to LP with fixed integer variables using
+incumbent solution.
+Version identifier: 22.1.1.0 | 2022-11-27 | 9160aff4d
+CPXPARAM_TimeLimit                               7200
+CPXPARAM_MIP_Tolerances_MIPGap                   0.029999999999999999
+Tried aggregator 1 time.
+LP Presolve eliminated 103 rows and 111 columns.
+All rows and columns eliminated.
+Presolve time = 0.00 sec. (0.07 ticks)
+
+Dual simplex - Optimal:  Objective =  1.1100000000e+02
+Solution time =    0.00 sec.  Iterations = 0 (0)
+Deterministic time = 0.10 ticks  (101.43 ticks/sec)
+
+
+Solution written to file 'Partial_Disassembly-pulp.sol'.

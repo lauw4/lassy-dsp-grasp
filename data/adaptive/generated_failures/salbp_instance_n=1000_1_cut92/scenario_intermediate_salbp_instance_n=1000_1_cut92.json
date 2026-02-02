@@ -1,0 +1,40 @@
+[
+  {
+    "comp_id": "C048",
+    "op_type": "unscrew",
+    "tool_id": "T_hex",
+    "symptom": "ACCESS_BLOCKED",
+    "signals": {
+      "force": 60.0,
+      "torque": 40.0,
+      "access_blocked": 1
+    },
+    "context": {
+      "value_piece": 73,
+      "no_destroy": true,
+      "alt_paths": true
+    },
+    "history": {
+      "failure_count": 1
+    }
+  },
+  {
+    "comp_id": "C032",
+    "op_type": "unscrew",
+    "tool_id": "T_hex",
+    "symptom": "ACCESS_BLOCKED",
+    "signals": {
+      "force": 60.0,
+      "torque": 40.0,
+      "access_blocked": 1
+    },
+    "context": {
+      "value_piece": 77,
+      "no_destroy": true,
+      "alt_paths": false
+    },
+    "history": {
+      "failure_count": 1
+    }
+  }
+]

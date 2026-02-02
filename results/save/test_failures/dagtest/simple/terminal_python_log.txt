@@ -1,0 +1,52 @@
+2025-11-29 23:14:54,021 DSP ADAPTIVE PIPELINE - DAGTEST
+2025-11-29 23:14:54,022 Loaded instance: dagtest
+2025-11-29 23:14:54,024 Loaded failures: 1
+2025-11-29 23:14:54,024 [1/4] Loading instance and solving DSP...
+2025-11-29 23:14:54,047 Nodes: 28, Edges: 41, Targets: 1, Solution: 22 operations
+2025-11-29 23:14:54,048 Target(s) to achieve: ['N22']
+2025-11-29 23:14:54,048 Starting disassembly sequence (22 operations)...
+2025-11-29 23:14:54,048 [ 1/22] Disassembling N01... [OK]
+2025-11-29 23:14:54,048 [ 2/22] Disassembling N03... [OK]
+2025-11-29 23:14:54,048 [ 3/22] Disassembling N07... [OK]
+2025-11-29 23:14:54,048 [ 4/22] Disassembling N12... [OK]
+2025-11-29 23:14:54,048 [ 5/22] Disassembling N05... [OK]
+2025-11-29 23:14:54,048 [ 6/22] Disassembling N02... [OK]
+2025-11-29 23:14:54,048 [ 7/22] Disassembling N04... [OK]
+2025-11-29 23:14:54,048 [ 8/22] Disassembling N08... [OK]
+2025-11-29 23:14:54,048 [ 9/22] Disassembling N09... [OK]
+2025-11-29 23:14:54,048 [10/22] Disassembling N06... [OK]
+2025-11-29 23:14:54,048 [11/22] Disassembling N11... [OK]
+2025-11-29 23:14:54,048 [12/22] Disassembling N13... [OK]
+2025-11-29 23:14:54,048 [13/22] Disassembling N14... [OK]
+2025-11-29 23:14:54,048 [14/22] Disassembling N17... [OK]
+2025-11-29 23:14:54,048 [15/22] Disassembling N18... [OK]
+2025-11-29 23:14:54,048 [16/22] Disassembling N10... [OK]
+2025-11-29 23:14:54,049 [17/22] Disassembling N15... [OK]
+2025-11-29 23:14:54,049 [18/22] Disassembling N16... [OK]
+2025-11-29 23:14:54,049 [19/22] Disassembling N19... [OK]
+2025-11-29 23:14:54,049 [20/22] Disassembling N21... [OK]
+2025-11-29 23:14:54,049 [21/22] Disassembling N20... [OK]
+2025-11-29 23:14:54,049 [22/22] Disassembling N22... [OK]
+2025-11-29 23:14:54,049 [2/4] Failure scenario loaded: 1 failure(s)
+2025-11-29 23:14:54,049 [3/4] Executing adaptive scheduler...
+2025-11-29 23:14:54,070 [FUZZY] Symptom: LOW_VALUE_BOTTLENECK
+2025-11-29 23:14:54,070 [FUZZY] Inputs: force=30.0, torque=20.0, p_fail=60.0, context=0.0
+2025-11-29 23:14:54,070 [FUZZY] Score: 40.00
+2025-11-29 23:14:54,070 [FUZZY] Decision: bypass (confidence=100.0%)
+2025-11-29 23:14:54,070 [ACTION] bypass: success=True, notes=Component N13 bypassed.
+2025-11-29 23:14:54,071 Adaptive scheduler finished. Actions taken: 1
+2025-11-29 23:14:54,071 EXECUTION SUMMARY
+2025-11-29 23:14:54,071 Status: SUCCESS
+2025-11-29 23:14:54,071 Target components:
+2025-11-29 23:14:54,071 [OK] N22 - Successfully disassembled
+2025-11-29 23:14:54,071 Execution metrics:
+2025-11-29 23:14:54,071 Targets achieved: 1/1 (100.0%)
+2025-11-29 23:14:54,071 Failures handled: 1
+2025-11-29 23:14:54,071 Actions taken: 1
+2025-11-29 23:14:54,071 Components done: 21/22
+2025-11-29 23:14:54,071 Locked: 1 component(s)
+2025-11-29 23:14:54,072 Execution time: 0.05s
+2025-11-29 23:14:54,072 Actions breakdown:
+2025-11-29 23:14:54,072 [OK] N13      LOW_VALUE_BOTTLENECK -> bypass      
+2025-11-29 23:14:54,072 Detailed logs: results\save\test_failures\dagtest\simple
+2025-11-29 23:14:54,074 Pipeline finished successfully

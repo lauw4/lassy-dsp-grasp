@@ -1,0 +1,9 @@
+--- Pipeline run 2025-11-29 23:16:21.521149 ---
+Instance: unknown
+Initial solution: ['C000', 'C001', 'C004', 'C005']
+Final state:
+  - Locked: {'C004'}
+  - Destroyed: set()
+  - Done: {'C005', 'C000', 'C001'}
+  - Notes: ['Bypass impossible pour C004: aucun chemin alternatif', 'Aucun outil alternatif pour C004']
+Actions taken: [{'comp_id': 'C004', 'symptom': 'ACCESS_BLOCKED', 'action': 'bypass', 'success': False, 'notes': 'Aucun chemin alternatif dans le graphe.'}, {'comp_id': 'C004', 'symptom': 'ACCESS_BLOCKED', 'action': 'bypass→replan', 'success': True, 'notes': 'Fallback succeeded'}]

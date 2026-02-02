@@ -1,0 +1,51 @@
+2025-11-29 23:15:49,088 DSP ADAPTIVE PIPELINE - SCHOLL_WARNECKE_N=58
+2025-11-29 23:15:49,090 Loaded instance: scholl_warnecke_n=58
+2025-11-29 23:15:49,091 Loaded failures: 2
+2025-11-29 23:15:49,091 [1/4] Loading instance and solving DSP...
+2025-11-29 23:15:49,128 Nodes: 58, Edges: 70, Targets: 1, Solution: 13 operations
+2025-11-29 23:15:49,128 Target(s) to achieve: ['C028']
+2025-11-29 23:15:49,128 Starting disassembly sequence (13 operations)...
+2025-11-29 23:15:49,128 [ 1/13] Disassembling C000... [OK]
+2025-11-29 23:15:49,128 [ 2/13] Disassembling C008... [OK]
+2025-11-29 23:15:49,128 [ 3/13] Disassembling C002... [OK]
+2025-11-29 23:15:49,129 [ 4/13] Disassembling C010... [OK]
+2025-11-29 23:15:49,129 [ 5/13] Disassembling C013... [OK]
+2025-11-29 23:15:49,129 [ 6/13] Disassembling C011... [OK]
+2025-11-29 23:15:49,129 [ 7/13] Disassembling C012... [OK]
+2025-11-29 23:15:49,129 [ 8/13] Disassembling C014... [OK]
+2025-11-29 23:15:49,129 [ 9/13] Disassembling C016... [OK]
+2025-11-29 23:15:49,129 [10/13] Disassembling C019... [OK]
+2025-11-29 23:15:49,129 [11/13] Disassembling C020... [OK]
+2025-11-29 23:15:49,129 [12/13] Disassembling C025... [OK]
+2025-11-29 23:15:49,129 [13/13] Disassembling C028... [OK]
+2025-11-29 23:15:49,129 [2/4] Failure scenario loaded: 2 failure(s)
+2025-11-29 23:15:49,129 [3/4] Executing adaptive scheduler...
+2025-11-29 23:15:49,153 [FUZZY] Symptom: OVER_TORQUE_NO_ADVANCE
+2025-11-29 23:15:49,153 [FUZZY] Inputs: force=70.0, torque=80.0, p_fail=75.0, context=0.0
+2025-11-29 23:15:49,153 [FUZZY] Score: 70.67
+2025-11-29 23:15:49,153 [FUZZY] Decision: destroy (confidence=63.7%)
+2025-11-29 23:15:49,154 [ACTION] destroy: success=False, notes=Destruction non autorisée : Profit=53.00 > seuil=21.00 (percentile 20e).
+2025-11-29 23:15:49,225 [FUZZY] Symptom: OVER_TORQUE_NO_ADVANCE
+2025-11-29 23:15:49,225 [FUZZY] Inputs: force=70.0, torque=80.0, p_fail=75.0, context=0.0
+2025-11-29 23:15:49,225 [FUZZY] Score: 70.67
+2025-11-29 23:15:49,225 [FUZZY] Decision: destroy (confidence=63.7%)
+2025-11-29 23:15:49,226 [ACTION] destroy: success=False, notes=Destruction non autorisée : Flag 'no_destroy' actif (contexte ou graphe).
+2025-11-29 23:15:49,237 Adaptive scheduler finished. Actions taken: 4
+2025-11-29 23:15:49,237 EXECUTION SUMMARY
+2025-11-29 23:15:49,237 Status: SUCCESS
+2025-11-29 23:15:49,237 Target components:
+2025-11-29 23:15:49,237 [OK] C028 - Successfully disassembled
+2025-11-29 23:15:49,237 Execution metrics:
+2025-11-29 23:15:49,237 Targets achieved: 1/1 (100.0%)
+2025-11-29 23:15:49,237 Failures handled: 2
+2025-11-29 23:15:49,237 Actions taken: 4
+2025-11-29 23:15:49,237 Components done: 11/13
+2025-11-29 23:15:49,237 Locked: 2 component(s)
+2025-11-29 23:15:49,237 Execution time: 0.15s
+2025-11-29 23:15:49,237 Actions breakdown:
+2025-11-29 23:15:49,237 [FAILED] C016     OVER_TORQUE_NO_ADVANCE -> destroy     
+2025-11-29 23:15:49,237 [OK] C016     OVER_TORQUE_NO_ADVANCE -> destroy\u2192replan
+2025-11-29 23:15:49,237 [FAILED] C025     OVER_TORQUE_NO_ADVANCE -> destroy     
+2025-11-29 23:15:49,238 [OK] C025     OVER_TORQUE_NO_ADVANCE -> destroy\u2192replan
+2025-11-29 23:15:49,238 Detailed logs: results\save\test_failures\scholl_warnecke_n=58\intermediate
+2025-11-29 23:15:49,241 Pipeline finished successfully

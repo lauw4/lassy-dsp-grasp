@@ -1,0 +1,6 @@
+instance,algorithm,profit_closure,makespan_closure,score_dsp,time,status,gap,targets,seq_length_closure,violations_règles,rel_err_profit_vs_milp_closure
+dagtest,MILP_full_profit,333.0,22.0,253.0,0.55179762840271,Optimal,,1,"['N02', 'N01', 'N05', 'N04', 'N03', 'N08', 'N09', 'N07', 'N13', 'N06', 'N10', 'N12', 'N11', 'N14', 'N15', 'N16', 'N18', 'N17', 'N19', 'N20', 'N21', 'N22']",0,
+dagtest,grasp_vnd,333.0,22.0,253.0,0.02141880989074707,Completed,0.00%,1,"['N02', 'N06', 'N11', 'N01', 'N17', 'N05', 'N10', 'N16', 'N03', 'N07', 'N04', 'N12', 'N09', 'N08', 'N14', 'N15', 'N13', 'N20', 'N19', 'N18', 'N21', 'N22']",0,0.0
+dagtest,grasp_tabu,333.0,22.0,253.0,0.3073160648345947,Completed,0.00%,1,"['N02', 'N06', 'N01', 'N11', 'N05', 'N03', 'N17', 'N04', 'N07', 'N10', 'N08', 'N16', 'N20', 'N12', 'N13', 'N09', 'N15', 'N14', 'N19', 'N18', 'N21', 'N22']",0,0.0
+dagtest,grasp_mns,333.0,22.0,253.0,0.012432575225830078,Completed,0.00%,1,"['N02', 'N06', 'N11', 'N01', 'N04', 'N03', 'N17', 'N08', 'N07', 'N12', 'N05', 'N13', 'N09', 'N10', 'N14', 'N16', 'N18', 'N20', 'N15', 'N19', 'N21', 'N22']",0,0.0
+dagtest,dijkstra_closure_min,91.0,6.0,21.0,6.0,Completed,72.67%,1,"['N01', 'N05', 'N10', 'N16', 'N20', 'N22']",0,0.7267267267267268

@@ -1,0 +1,16 @@
+[
+  {
+    "comp_id": "C011",
+    "symptom": "ACCESS_BLOCKED",
+    "action": "bypass",
+    "success": true,
+    "notes": "Component C011 bypassed."
+  },
+  {
+    "comp_id": "C018",
+    "symptom": "ACCESS_BLOCKED",
+    "action": "bypass",
+    "success": true,
+    "notes": "Component C018 bypassed."
+  }
+]

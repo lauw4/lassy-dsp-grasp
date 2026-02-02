@@ -1,0 +1,23 @@
+[
+  {
+    "comp_id": "C007",
+    "symptom": "LOW_VALUE_BOTTLENECK",
+    "action": "bypass",
+    "success": true,
+    "notes": "Component C007 bypassed."
+  },
+  {
+    "comp_id": "C046",
+    "symptom": "OVER_TORQUE_NO_ADVANCE",
+    "action": "destroy",
+    "success": false,
+    "notes": "Destruction non autoris\u00e9e : Profit=74.00 > seuil=21.40 (percentile 20e)."
+  },
+  {
+    "comp_id": "C046",
+    "symptom": "OVER_TORQUE_NO_ADVANCE",
+    "action": "destroy\u2192bypass",
+    "success": true,
+    "notes": "Fallback succeeded"
+  }
+]

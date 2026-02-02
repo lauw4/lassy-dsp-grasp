@@ -1,0 +1,84 @@
+
+Déroulement adaptatif sur l’instance d'exemple :
+
+Séquence initiale prévue :
+
+N01, N03, N05, N07, N12, N02, N04, N06, N11, N10, N08, N09, N13, N15, N14, N17, N18, N16, N19, N21, N20, N22
+Cible = N22
+---
+Déroulement réel avec adaptation :
+
+N01 — Retrait nominal, aucun problème.
+N03 — Retrait nominal, aucun problème.
+N05 — Retrait nominal, aucun problème.
+N07 :
+    - Échec détecté : Over torque (Cannot advance)
+    - Valeurs : force = 60.0, couple = 70.0, p_fail = 65%
+    - Décision fuzzy : destroy (score 54.8, confiance 65%)
+    - Action : destruction interdite (valeur récupérable élevée, no_destroy=True)
+    - Fallback enclenché : replanification sélective → N07 verrouillé, séquence adaptée pour contourner N07.
+
+---
+Nouvelle séquence après replan :
+N02, N04, N08, N06, N09, N14, N10, N11, N16, N13, N12, N15, N17, N19, N18, N20, N21, N22
+
+N02 — Retrait nominal, aucun problème.
+N04 — Retrait nominal, aucun problème.
+N08 — Retrait nominal, aucun problème.
+N06 :
+    - Échec détecté : Over torque (Cannot advance)
+    - Valeurs : force = 30.0, couple = 35.0, p_fail = 65%
+    - Décision fuzzy : change_tool (score 29.7, confiance 51%)
+    - Action : outil alternatif utilisé (“T_torque”) → Séquence poursuivie normalement.
+
+N09, N14, N10, N11, N16, N13, N12, N15 — Retrait nominal, aucun problème.
+
+N17 :
+	- Échec détecté : Acces blocked (Path blocked)
+	- Valeurs : force = 48.0, couple = 52.0, p_fail = 60%
+	- Décision fuzzy : bypass (score 40.0, confiance 99%)
+	- Action : noeud exclu, séquence adaptée → On contourne N17 et on continue.
+
+N19, N18, N20 — Retrait nominal, aucun problème.
+
+N21 :
+	- Échec détecté : Low  value (Bottleneck)
+	- Valeurs : force = 75.0, couple = 80.0, p_fail = 40%
+	- Décision fuzzy : destroy (score 62.5, confiance 98%)
+	- Action : destruction autorisée (profit = 8.00 ≤ seuil = 18.00) → Séquence modifiée, replanification selective lancée.
+
+N22 (cible) — Retrait final, objectif atteint.
+
+---
+Termes techniques utiles :
+
+p_fail:
+C’est l'estimation du risque d’échec pour retirer une pièce. 
+Elle dépend de la force, du couple, et historique. 
+Plus c’est haut, plus on s’attend à ce qu'il y a un echec.
+
+Décision fuzzy:
+Quand une action échoue, le système analyse la situation et choisit la meilleure réaction possible parmi plusieurs options.
+Pour cela, on utilise un raisonnement flou basé sur les valeurs mesurées. 
+
+Chaque option reçoit :
+
+- Un score (entre 0 et 100) : plus c’est haut, plus l’option est adaptée.
+
+- Une confiance (en %) : indique à quel point cette action est la meilleure par rapport aux autres.
+
+Change_tool:
+Changer l’outil utilisé pour un autre mieux adapté, si disponible et que l’outil actuel ne fonctionne pas.
+
+bypass:
+Contourner une pièce qui bloque ou est inaccessible. Le robot l’ignore et continue ailleurs.
+
+destroy:
+Détruire une pièce proprement, si c’est plus simple ou rentable.
+
+Profit de destruction:
+Valeur associée à un composant détruit, estimant le gain net par rapport à son maintien dans le système. 
+Si ce profit est inférieur à un seuil défini, la destruction est considérée comme rentable.
+
+Replanification sélective:
+Quand une pièce est détruite ou bloquée, le système relance l’algorithme pour adapter la fin de la séquence avec ce qu’il reste à faire.

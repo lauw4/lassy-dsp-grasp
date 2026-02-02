@@ -1,0 +1,41 @@
+2025-11-29 23:16:03,164 DSP ADAPTIVE PIPELINE - SALBP_INSTANCE_N=1000_1_CUT92
+2025-11-29 23:16:03,164 Loaded instance: salbp_instance_n=1000_1_cut92
+2025-11-29 23:16:03,164 Loaded failures: 2
+2025-11-29 23:16:03,164 [1/4] Loading instance and solving DSP...
+2025-11-29 23:16:03,187 Nodes: 92, Edges: 76, Targets: 1, Solution: 4 operations
+2025-11-29 23:16:03,187 Target(s) to achieve: ['C068']
+2025-11-29 23:16:03,187 Starting disassembly sequence (4 operations)...
+2025-11-29 23:16:03,187 [ 1/4] Disassembling C014... [OK]
+2025-11-29 23:16:03,187 [ 2/4] Disassembling C032... [OK]
+2025-11-29 23:16:03,187 [ 3/4] Disassembling C048... [OK]
+2025-11-29 23:16:03,187 [ 4/4] Disassembling C068... [OK]
+2025-11-29 23:16:03,187 [2/4] Failure scenario loaded: 2 failure(s)
+2025-11-29 23:16:03,187 [3/4] Executing adaptive scheduler...
+2025-11-29 23:16:03,209 [FUZZY] Symptom: ACCESS_BLOCKED
+2025-11-29 23:16:03,209 [FUZZY] Inputs: force=60.0, torque=40.0, p_fail=60.0, context=0.0
+2025-11-29 23:16:03,209 [FUZZY] Score: 40.00
+2025-11-29 23:16:03,209 [FUZZY] Decision: bypass (confidence=100.0%)
+2025-11-29 23:16:03,209 [ACTION] bypass: success=False, notes=Aucun chemin alternatif dans le graphe.
+2025-11-29 23:16:03,284 [FUZZY] Symptom: ACCESS_BLOCKED
+2025-11-29 23:16:03,284 [FUZZY] Inputs: force=60.0, torque=40.0, p_fail=60.0, context=0.0
+2025-11-29 23:16:03,284 [FUZZY] Score: 40.00
+2025-11-29 23:16:03,284 [FUZZY] Decision: bypass (confidence=100.0%)
+2025-11-29 23:16:03,284 [ACTION] bypass: success=True, notes=Component C048 bypassed.
+2025-11-29 23:16:03,284 Adaptive scheduler finished. Actions taken: 3
+2025-11-29 23:16:03,284 EXECUTION SUMMARY
+2025-11-29 23:16:03,284 Status: SUCCESS
+2025-11-29 23:16:03,284 Target components:
+2025-11-29 23:16:03,284 [OK] C068 - Successfully disassembled
+2025-11-29 23:16:03,284 Execution metrics:
+2025-11-29 23:16:03,284 Targets achieved: 1/1 (100.0%)
+2025-11-29 23:16:03,284 Failures handled: 2
+2025-11-29 23:16:03,284 Actions taken: 3
+2025-11-29 23:16:03,284 Components done: 2/4
+2025-11-29 23:16:03,284 Locked: 2 component(s)
+2025-11-29 23:16:03,284 Execution time: 0.13s
+2025-11-29 23:16:03,284 Actions breakdown:
+2025-11-29 23:16:03,284 [FAILED] C032     ACCESS_BLOCKED       -> bypass      
+2025-11-29 23:16:03,284 [OK] C032     ACCESS_BLOCKED       -> bypass\u2192replan
+2025-11-29 23:16:03,284 [OK] C048     ACCESS_BLOCKED       -> bypass      
+2025-11-29 23:16:03,284 Detailed logs: results\save\test_failures\salbp_instance_n=1000_1_cut92\intermediate
+2025-11-29 23:16:03,288 Pipeline finished successfully

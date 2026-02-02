@@ -1,0 +1,9 @@
+--- Pipeline run 2025-11-29 23:15:28.226918 ---
+Instance: unknown
+Initial solution: ['C018', 'C012', 'C038', 'C025', 'C005', 'C010', 'C014', 'C032', 'C016', 'C026', 'C020', 'C017', 'C043', 'C027', 'C035', 'C048', 'C068', 'C090', 'C024', 'C004', 'C042', 'C062', 'C080', 'C111', 'C121']
+Final state:
+  - Locked: set()
+  - Destroyed: {'C024'}
+  - Done: {'C004', 'C068', 'C020', 'C018', 'C038', 'C016', 'C012', 'C026', 'C005', 'C014', 'C035', 'C080', 'C042', 'C032', 'C027', 'C048', 'C017', 'C090', 'C025', 'C010', 'C111', 'C062', 'C121', 'C043'}
+  - Notes: []
+Actions taken: [{'comp_id': 'C024', 'symptom': 'ACCESS_BLOCKED', 'action': 'destroy', 'success': True, 'notes': 'Destruction autorisée (cutoff percentile 20e).'}]

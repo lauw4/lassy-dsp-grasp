@@ -1,0 +1,23 @@
+[
+  {
+    "comp_id": "C008",
+    "symptom": "ACCESS_BLOCKED",
+    "action": "bypass",
+    "success": true,
+    "notes": "Component C008 bypassed."
+  },
+  {
+    "comp_id": "C005",
+    "symptom": "LOW_VALUE_BOTTLENECK",
+    "action": "bypass",
+    "success": false,
+    "notes": "Aucun chemin alternatif dans le graphe."
+  },
+  {
+    "comp_id": "C005",
+    "symptom": "LOW_VALUE_BOTTLENECK",
+    "action": "bypass\u2192replan",
+    "success": true,
+    "notes": "Fallback succeeded"
+  }
+]

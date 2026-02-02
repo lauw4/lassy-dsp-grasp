@@ -1,0 +1,57 @@
+{
+  "meta": {
+    "run_id": "single_salbp_instance_n=1000_1_cut400_184444",
+    "start_time": "2025-09-15T16:44:44Z",
+    "expected_order": [
+      "load_instance",
+      "run_dijkstra",
+      "run_grasp",
+      "run_milp",
+      "aggregate"
+    ]
+  },
+  "steps": [
+    {
+      "name": "load_instance",
+      "timestamp": "2025-09-15T16:44:44Z",
+      "status": "ok",
+      "details": {
+        "instance": "salbp_instance_n=1000_1_cut400"
+      }
+    },
+    {
+      "name": "run_dijkstra",
+      "timestamp": "2025-09-15T16:44:48Z",
+      "status": "ok",
+      "details": {
+        "seq_len": 17
+      }
+    },
+    {
+      "name": "run_grasp",
+      "timestamp": "2025-09-15T16:44:48Z",
+      "status": "ok",
+      "details": {
+        "algorithms": 4
+      }
+    },
+    {
+      "name": "run_milp",
+      "timestamp": "2025-09-15T16:46:43Z",
+      "status": "Erreur: PuLP: Error while trying to execute /opt/ibm/ILOG/CPLEX_Studio2211/cplex/bin/x86-64_linux/cplex",
+      "details": {
+        "gap": null
+      }
+    },
+    {
+      "name": "aggregate",
+      "timestamp": "2025-09-15T16:46:44Z",
+      "status": "ok",
+      "details": {
+        "rows": 5
+      }
+    }
+  ],
+  "order_warnings": [],
+  "hash": "ce53c74a9a5316bb"
+}

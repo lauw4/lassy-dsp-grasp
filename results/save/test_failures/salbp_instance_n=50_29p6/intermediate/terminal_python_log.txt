@@ -1,0 +1,47 @@
+2025-11-29 23:15:47,626 DSP ADAPTIVE PIPELINE - SALBP_INSTANCE_N=50_29P6
+2025-11-29 23:15:47,626 Loaded instance: salbp_instance_n=50_29p6
+2025-11-29 23:15:47,629 Loaded failures: 2
+2025-11-29 23:15:47,629 [1/4] Loading instance and solving DSP...
+2025-11-29 23:15:47,648 Nodes: 50, Edges: 53, Targets: 2, Solution: 15 operations
+2025-11-29 23:15:47,648 Target(s) to achieve: ['C018', 'C044']
+2025-11-29 23:15:47,648 Starting disassembly sequence (15 operations)...
+2025-11-29 23:15:47,648 [ 1/15] Disassembling C002... [OK]
+2025-11-29 23:15:47,648 [ 2/15] Disassembling C006... [OK]
+2025-11-29 23:15:47,649 [ 3/15] Disassembling C013... [OK]
+2025-11-29 23:15:47,649 [ 4/15] Disassembling C001... [OK]
+2025-11-29 23:15:47,649 [ 5/15] Disassembling C004... [OK]
+2025-11-29 23:15:47,649 [ 6/15] Disassembling C009... [OK]
+2025-11-29 23:15:47,649 [ 7/15] Disassembling C018... [OK]
+2025-11-29 23:15:47,649 [ 8/15] Disassembling C015... [OK]
+2025-11-29 23:15:47,649 [ 9/15] Disassembling C012... [OK]
+2025-11-29 23:15:47,649 [10/15] Disassembling C025... [OK]
+2025-11-29 23:15:47,649 [11/15] Disassembling C031... [OK]
+2025-11-29 23:15:47,649 [12/15] Disassembling C020... [OK]
+2025-11-29 23:15:47,649 [13/15] Disassembling C029... [OK]
+2025-11-29 23:15:47,649 [14/15] Disassembling C037... [OK]
+2025-11-29 23:15:47,649 [15/15] Disassembling C044... [OK]
+2025-11-29 23:15:47,649 [2/4] Failure scenario loaded: 2 failure(s)
+2025-11-29 23:15:47,649 [3/4] Executing adaptive scheduler...
+2025-11-29 23:15:47,670 [FUZZY] Symptom: OVER_TORQUE_NO_ADVANCE
+2025-11-29 23:15:47,670 [FUZZY] Inputs: force=70.0, torque=80.0, p_fail=65.0, context=0.0
+2025-11-29 23:15:47,670 [FUZZY] Score: 65.47
+2025-11-29 23:15:47,671 [FUZZY] Decision: destroy (confidence=86.8%)
+2025-11-29 23:15:47,671 [ACTION] destroy: success=False, notes=Destruction non autorisée : Profit=90.00 > seuil=21.00 (percentile 20e).
+2025-11-29 23:15:47,671 Adaptive scheduler finished. Actions taken: 2
+2025-11-29 23:15:47,671 EXECUTION SUMMARY
+2025-11-29 23:15:47,671 Status: SUCCESS
+2025-11-29 23:15:47,671 Target components:
+2025-11-29 23:15:47,671 [OK] C018 - Successfully disassembled
+2025-11-29 23:15:47,671 [OK] C044 - Successfully disassembled
+2025-11-29 23:15:47,671 Execution metrics:
+2025-11-29 23:15:47,671 Targets achieved: 2/2 (100.0%)
+2025-11-29 23:15:47,671 Failures handled: 2
+2025-11-29 23:15:47,672 Actions taken: 2
+2025-11-29 23:15:47,672 Components done: 14/15
+2025-11-29 23:15:47,672 Locked: 1 component(s)
+2025-11-29 23:15:47,672 Execution time: 0.05s
+2025-11-29 23:15:47,672 Actions breakdown:
+2025-11-29 23:15:47,672 [FAILED] C012     OVER_TORQUE_NO_ADVANCE -> destroy     
+2025-11-29 23:15:47,672 [OK] C012     OVER_TORQUE_NO_ADVANCE -> destroy\u2192bypass
+2025-11-29 23:15:47,672 Detailed logs: results\save\test_failures\salbp_instance_n=50_29p6\intermediate
+2025-11-29 23:15:47,674 Pipeline finished successfully

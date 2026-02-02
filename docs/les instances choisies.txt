@@ -1,0 +1,32 @@
+les instances choisies : 
+scholl_mertens_n=7.json ! 
+scholl_jaeschke_n=9.json ! 
+scholl_mansoor_n=11.json !
+salbp_instance_n=20_90.json !
+scholl_roszieg_n=25.json !
+salbp_instance_n=1000_1_cut27.json !!
+dagtest.json !
+scholl_lutz1_n=32.json ! 
+scholl_gunther_n=35.json !!
+scholl_kilbrid_n=45.json !
+salbp_instance_n=50_29p6.json !!
+scholl_warnecke_n=58.json !
+salbp_instance_n=1000_1_cut65.json !
+scholl_tonge70_n=70.json !
+scholl_wee-mag_n=75.json !
+salbp_instance_n=1000_1_cut78.json !!!
+scholl_arc83_n=83.json !
+scholl_lutz2_n=89.json !!
+scholl_lutz3_n=89.json !!!
+salbp_instance_n=1000_1_cut92.json ! 
+scholl_mukherje_n=94.json !
+salbp_instance_n=1000_1_cut94.json !!
+salbp_instance_n=100_50.json !
+scholl_arc111_n=111.json !
+salbp_instance_n=1000_1_cut115.json !
+salbp_instance_n=1000_1_cut124.json !
+salbp_instance_n=1000_1_cut125.json !!
+salbp_instance_n=1000_1_cut135.json !!!
+salbp_instance_n=1000_1_cut148.json !
+scholl_barthold_n=148.json !
+ 

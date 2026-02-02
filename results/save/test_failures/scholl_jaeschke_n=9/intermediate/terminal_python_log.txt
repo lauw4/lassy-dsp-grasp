@@ -1,0 +1,39 @@
+2025-11-29 23:15:34,355 DSP ADAPTIVE PIPELINE - SCHOLL_JAESCHKE_N=9
+2025-11-29 23:15:34,355 Loaded instance: scholl_jaeschke_n=9
+2025-11-29 23:15:34,357 Loaded failures: 1
+2025-11-29 23:15:34,357 [1/4] Loading instance and solving DSP...
+2025-11-29 23:15:34,366 Nodes: 9, Edges: 11, Targets: 1, Solution: 9 operations
+2025-11-29 23:15:34,366 Target(s) to achieve: ['C008']
+2025-11-29 23:15:34,366 Starting disassembly sequence (9 operations)...
+2025-11-29 23:15:34,366 [ 1/9] Disassembling C000... [OK]
+2025-11-29 23:15:34,366 [ 2/9] Disassembling C002... [OK]
+2025-11-29 23:15:34,366 [ 3/9] Disassembling C001... [OK]
+2025-11-29 23:15:34,366 [ 4/9] Disassembling C003... [OK]
+2025-11-29 23:15:34,366 [ 5/9] Disassembling C004... [OK]
+2025-11-29 23:15:34,366 [ 6/9] Disassembling C006... [OK]
+2025-11-29 23:15:34,366 [ 7/9] Disassembling C005... [OK]
+2025-11-29 23:15:34,366 [ 8/9] Disassembling C007... [OK]
+2025-11-29 23:15:34,366 [ 9/9] Disassembling C008... [OK]
+2025-11-29 23:15:34,366 [2/4] Failure scenario loaded: 1 failure(s)
+2025-11-29 23:15:34,366 [3/4] Executing adaptive scheduler...
+2025-11-29 23:15:34,388 [FUZZY] Symptom: LOW_VALUE_BOTTLENECK
+2025-11-29 23:15:34,389 [FUZZY] Inputs: force=30.0, torque=20.0, p_fail=40.0, context=0.0
+2025-11-29 23:15:34,389 [FUZZY] Score: 40.00
+2025-11-29 23:15:34,389 [FUZZY] Decision: bypass (confidence=100.0%)
+2025-11-29 23:15:34,389 [ACTION] bypass: success=True, notes=Component C007 bypassed.
+2025-11-29 23:15:34,389 Adaptive scheduler finished. Actions taken: 1
+2025-11-29 23:15:34,389 EXECUTION SUMMARY
+2025-11-29 23:15:34,389 Status: SUCCESS
+2025-11-29 23:15:34,389 Target components:
+2025-11-29 23:15:34,389 [OK] C008 - Successfully disassembled
+2025-11-29 23:15:34,389 Execution metrics:
+2025-11-29 23:15:34,389 Targets achieved: 1/1 (100.0%)
+2025-11-29 23:15:34,389 Failures handled: 1
+2025-11-29 23:15:34,389 Actions taken: 1
+2025-11-29 23:15:34,389 Components done: 8/9
+2025-11-29 23:15:34,389 Locked: 1 component(s)
+2025-11-29 23:15:34,389 Execution time: 0.04s
+2025-11-29 23:15:34,389 Actions breakdown:
+2025-11-29 23:15:34,389 [OK] C007     LOW_VALUE_BOTTLENECK -> bypass      
+2025-11-29 23:15:34,389 Detailed logs: results\save\test_failures\scholl_jaeschke_n=9\intermediate
+2025-11-29 23:15:34,392 Pipeline finished successfully

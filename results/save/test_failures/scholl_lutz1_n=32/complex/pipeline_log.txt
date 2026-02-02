@@ -1,0 +1,9 @@
+--- Pipeline run 2025-11-29 23:16:32.245713 ---
+Instance: unknown
+Initial solution: ['C003', 'C000', 'C002', 'C001', 'C004', 'C005', 'C007', 'C006', 'C008', 'C010', 'C009', 'C011', 'C012', 'C014', 'C013', 'C016', 'C015', 'C018', 'C019', 'C017', 'C020', 'C021', 'C024', 'C023', 'C025', 'C026', 'C027', 'C028', 'C029', 'C022', 'C030', 'C031']
+Final state:
+  - Locked: {'C006', 'C017', 'C027'}
+  - Destroyed: set()
+  - Done: {'C029', 'C011', 'C002', 'C018', 'C022', 'C014', 'C003', 'C008', 'C001', 'C005', 'C028', 'C015', 'C030', 'C019', 'C025', 'C004', 'C021', 'C024', 'C031', 'C000', 'C010', 'C007', 'C012', 'C026', 'C023', 'C009', 'C016', 'C020', 'C013'}
+  - Notes: ['Destruction interdite pour C017 : Profit=38.00 > seuil=23.20 (percentile 20e).', 'Bypass impossible pour C017: aucun chemin alternatif', 'Aucun outil alternatif pour C017', 'Bypass impossible pour C027: aucun chemin alternatif', 'Aucun outil alternatif pour C027']
+Actions taken: [{'comp_id': 'C006', 'symptom': 'LOW_VALUE_BOTTLENECK', 'action': 'bypass', 'success': True, 'notes': 'Component C006 bypassed.'}, {'comp_id': 'C017', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy', 'success': False, 'notes': 'Destruction non autorisée : Profit=38.00 > seuil=23.20 (percentile 20e).'}, {'comp_id': 'C017', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy→replan', 'success': True, 'notes': 'Fallback succeeded'}, {'comp_id': 'C027', 'symptom': 'ACCESS_BLOCKED', 'action': 'bypass', 'success': False, 'notes': 'Aucun chemin alternatif dans le graphe.'}, {'comp_id': 'C027', 'symptom': 'ACCESS_BLOCKED', 'action': 'bypass→replan', 'success': True, 'notes': 'Fallback succeeded'}]

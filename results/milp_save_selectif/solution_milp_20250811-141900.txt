@@ -1,0 +1,123 @@
+=== Résultat MILP ===
+Instance : small_40_selectif
+Fichier : C:\Users\Waele\OneDrive\Documents\Etude\Cours\semestre_9\STAGE\IMT STAGE 5A\lassy-dsp-grasp\experiments\..\data\instances_milp\small_40_selectif.txt
+Critères : time_limit=7200s, gap≤3.00%
+
+=== Résumé CPLEX ===
+Version: 22.1.1.0 | 2022-11-27 | 9160aff4d; Mode: deterministic; Threads: 12
+Paramètres: TimeLimit=7200s; MIPGap≈3.00%
+Search: dynamic search.; Emphasis: balance optimality and feasibility.
+Résultats: Objective=5459.500000; Time=0.00s; DetTicks=4.66
+
+Statut : Optimal
+Profit net = 5459.50
+Makespan   = 10218.00 s (2 h 50 min 18 s)
+
+Composants ciblés : 2, 33
+
+• Pièce 9 retirée à la position 1
+• Pièce 8 retirée à la position 2
+• Pièce 6 retirée à la position 3
+• Pièce 18 retirée à la position 4
+• Pièce 2 retirée à la position 5 [TARGET]
+• Pièce 7 retirée à la position 6
+• Pièce 4 retirée à la position 7
+• Pièce 10 retirée à la position 8
+• Pièce 20 retirée à la position 9
+• Pièce 12 retirée à la position 10
+• Pièce 13 retirée à la position 11
+• Pièce 19 retirée à la position 12
+• Pièce 11 retirée à la position 13
+• Pièce 27 retirée à la position 14
+• Pièce 25 retirée à la position 15
+• Pièce 21 retirée à la position 16
+• Pièce 17 retirée à la position 17
+• Pièce 24 retirée à la position 18
+• Pièce 29 retirée à la position 19
+• Pièce 30 retirée à la position 20
+• Pièce 14 retirée à la position 21
+• Pièce 26 retirée à la position 22
+• Pièce 1 retirée à la position 23
+• Pièce 36 retirée à la position 24
+• Pièce 23 retirée à la position 25
+• Pièce 39 retirée à la position 26
+• Pièce 5 retirée à la position 27
+• Pièce 15 retirée à la position 28
+• Pièce 16 retirée à la position 29
+• Pièce 34 retirée à la position 30
+• Pièce 35 retirée à la position 31
+• Pièce 32 retirée à la position 32
+• Pièce 33 retirée à la position 33 [TARGET]
+• Pièce 38 retirée à la position 34
+• Pièce 3 retirée à la position 35
+• Pièce 22 retirée à la position 36
+• Pièce 28 retirée à la position 37
+• Pièce 40 retirée à la position 38
+• Pièce 37 retirée à la position 39
+• Pièce 31 retirée à la position 40
+
+=== Contexte exécution ===
+Utilisation de CPLEX (limite: 7200s) (C:\Program Files\IBM\ILOG\CPLEX_Studio2211\cplex\bin\x64_win64\cplex.exe)
+
+=== Log CPLEX (gap 3.00%) ===
+
+Log started (V22.1.1.0) Mon Aug 11 14:19:00 2025
+
+New value for mixed integer optimality gap tolerance: 0.03
+Version identifier: 22.1.1.0 | 2022-11-27 | 9160aff4d
+CPXPARAM_TimeLimit                               7200
+CPXPARAM_MIP_Tolerances_MIPGap                   0.029999999999999999
+Tried aggregator 1 time.
+MIP Presolve eliminated 156 rows and 63 columns.
+MIP Presolve modified 21 coefficients.
+Reduced MIP has 2327 rows, 1578 columns, and 49845 nonzeros.
+Reduced MIP has 1578 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.03 sec. (21.49 ticks)
+Found incumbent of value 2881.400000 after 0.05 sec. (52.04 ticks)
+Probing fixed 96 vars, tightened 0 bounds.
+Probing time = 0.03 sec. (18.26 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+MIP Presolve eliminated 156 rows and 96 columns.
+MIP Presolve modified 1849 coefficients.
+Reduced MIP has 2171 rows, 1482 columns, and 44589 nonzeros.
+Reduced MIP has 1482 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.02 sec. (26.10 ticks)
+Probing fixed 1 vars, tightened 0 bounds.
+Probing time = 0.02 sec. (9.80 ticks)
+Clique table members: 24780.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 12 threads.
+
+Root node processing (before b&c):
+  Real time             =    0.14 sec. (114.50 ticks)
+Parallel b&c, 12 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.14 sec. (114.50 ticks)
+
+Solution pool: 1 solution saved.
+
+MIP - Integer optimal solution:  Objective =  5.4595000000e+03
+Solution time =    0.14 sec.  Iterations = 0  Nodes = 0 (1)
+Deterministic time = 114.50 ticks  (812.09 ticks/sec)
+
+MILP problem relaxed to LP with fixed integer variables using
+incumbent solution.
+Version identifier: 22.1.1.0 | 2022-11-27 | 9160aff4d
+CPXPARAM_TimeLimit                               7200
+CPXPARAM_MIP_Tolerances_MIPGap                   0.029999999999999999
+Tried aggregator 1 time.
+LP Presolve eliminated 2483 rows and 1641 columns.
+All rows and columns eliminated.
+Presolve time = 0.00 sec. (3.04 ticks)
+
+Dual simplex - Optimal:  Objective =  5.4595000000e+03
+Solution time =    0.00 sec.  Iterations = 0 (0)
+Deterministic time = 4.66 ticks  (4655.39 ticks/sec)
+
+
+Solution written to file 'Partial_Disassembly-pulp.sol'.

@@ -1,0 +1,9 @@
+--- Pipeline run 2025-11-29 23:15:49.238286 ---
+Instance: unknown
+Initial solution: ['C000', 'C008', 'C002', 'C010', 'C013', 'C011', 'C012', 'C014', 'C016', 'C019', 'C020', 'C025', 'C028']
+Final state:
+  - Locked: {'C025', 'C016'}
+  - Destroyed: set()
+  - Done: {'C000', 'C010', 'C008', 'C012', 'C020', 'C019', 'C014', 'C028', 'C011', 'C013', 'C002'}
+  - Notes: ['Destruction interdite pour C016 : Profit=53.00 > seuil=21.00 (percentile 20e).', 'Bypass impossible pour C016: aucun chemin alternatif', 'Aucun outil alternatif pour C016', "Destruction interdite pour C025 : Flag 'no_destroy' actif (contexte ou graphe).", 'Bypass impossible pour C025: aucun chemin alternatif', 'Aucun outil alternatif pour C025']
+Actions taken: [{'comp_id': 'C016', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy', 'success': False, 'notes': 'Destruction non autorisée : Profit=53.00 > seuil=21.00 (percentile 20e).'}, {'comp_id': 'C016', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy→replan', 'success': True, 'notes': 'Fallback succeeded'}, {'comp_id': 'C025', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy', 'success': False, 'notes': "Destruction non autorisée : Flag 'no_destroy' actif (contexte ou graphe)."}, {'comp_id': 'C025', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy→replan', 'success': True, 'notes': 'Fallback succeeded'}]

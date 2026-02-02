@@ -1,0 +1,9 @@
+[
+  {
+    "comp_id": "C016",
+    "symptom": "LOW_VALUE_BOTTLENECK",
+    "action": "bypass",
+    "success": true,
+    "notes": "Component C016 bypassed."
+  }
+]

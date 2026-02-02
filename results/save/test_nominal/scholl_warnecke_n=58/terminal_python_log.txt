@@ -1,0 +1,35 @@
+2025-11-29 22:24:14,567 DSP ADAPTIVE PIPELINE - SCHOLL_WARNECKE_N=58
+2025-11-29 22:24:14,570 Loaded instance: scholl_warnecke_n=58
+2025-11-29 22:24:14,571 Loaded failures: 0
+2025-11-29 22:24:14,571 [1/4] Loading instance and solving DSP...
+2025-11-29 22:24:14,596 Nodes: 58, Edges: 70, Targets: 1, Solution: 13 operations
+2025-11-29 22:24:14,596 Target(s) to achieve: ['C028']
+2025-11-29 22:24:14,596 Starting disassembly sequence (13 operations)...
+2025-11-29 22:24:14,596 [ 1/13] Disassembling C000... [OK]
+2025-11-29 22:24:14,596 [ 2/13] Disassembling C011... [OK]
+2025-11-29 22:24:14,596 [ 3/13] Disassembling C002... [OK]
+2025-11-29 22:24:14,597 [ 4/13] Disassembling C008... [OK]
+2025-11-29 22:24:14,597 [ 5/13] Disassembling C010... [OK]
+2025-11-29 22:24:14,597 [ 6/13] Disassembling C014... [OK]
+2025-11-29 22:24:14,597 [ 7/13] Disassembling C013... [OK]
+2025-11-29 22:24:14,597 [ 8/13] Disassembling C012... [OK]
+2025-11-29 22:24:14,597 [ 9/13] Disassembling C016... [OK]
+2025-11-29 22:24:14,597 [10/13] Disassembling C019... [OK]
+2025-11-29 22:24:14,597 [11/13] Disassembling C020... [OK]
+2025-11-29 22:24:14,597 [12/13] Disassembling C025... [OK]
+2025-11-29 22:24:14,597 [13/13] Disassembling C028... [OK]
+2025-11-29 22:24:14,597 [2/4] No failures (nominal execution)
+2025-11-29 22:24:14,597 [3/4] Executing adaptive scheduler...
+2025-11-29 22:24:14,597 Adaptive scheduler finished. Actions taken: 0
+2025-11-29 22:24:14,597 EXECUTION SUMMARY
+2025-11-29 22:24:14,597 Status: SUCCESS
+2025-11-29 22:24:14,597 Target components:
+2025-11-29 22:24:14,597 [OK] C028 - Successfully disassembled
+2025-11-29 22:24:14,597 Execution metrics:
+2025-11-29 22:24:14,597 Targets achieved: 1/1 (100.0%)
+2025-11-29 22:24:14,597 Failures handled: 0
+2025-11-29 22:24:14,597 Actions taken: 0
+2025-11-29 22:24:14,597 Components done: 13/13
+2025-11-29 22:24:14,597 Execution time: 0.03s
+2025-11-29 22:24:14,597 Detailed logs: results\save\test_nominal\scholl_warnecke_n=58
+2025-11-29 22:24:14,598 Pipeline finished successfully

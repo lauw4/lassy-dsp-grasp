@@ -1,0 +1,40 @@
+[
+  {
+    "comp_id": "N11",
+    "op_type": "unscrew",
+    "tool_id": "T_hex",
+    "symptom": "TIMEOUT",
+    "signals": {
+      "force": 50.0,
+      "torque": 50.0,
+      "timeout": 1
+    },
+    "context": {
+      "value_piece": 20,
+      "no_destroy": false
+    },
+    "history": {
+      "failure_count": 0
+    },
+    "timestamp": "2025-11-07T01:30:22.949996Z"
+  },
+  {
+    "comp_id": "N09",
+    "op_type": "unscrew",
+    "tool_id": "T_hex",
+    "symptom": "TIMEOUT",
+    "signals": {
+      "force": 50.0,
+      "torque": 50.0,
+      "timeout": 1
+    },
+    "context": {
+      "value_piece": 20,
+      "no_destroy": false
+    },
+    "history": {
+      "failure_count": 1
+    },
+    "timestamp": "2025-11-07T01:31:22.949996Z"
+  }
+]

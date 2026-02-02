@@ -1,0 +1,190 @@
+Instance: salbp_instance_n=1000_1_cut67
+Cibles: ['C006']
+ Exécution GRASP sur /home/robot/Desktop/lassy-dsp-grasp/data/instances_base/salbp_instance_n=1000_1_cut67.json
+Erreur GRASP: Sample larger than population or is negative
+→ Exécution MILP sur /home/robot/Desktop/lassy-dsp-grasp/data/instances_milp/salbp_instance_n=1000_1_cut67_selectif.txt (limite: 1800s, gap≤0.01000%)
+↳ Arrêt dès gap ≤ 0.01% ou au plus tard vers 23:41:47
+Utilisation de CPLEX (limite: 1800s) (/opt/ibm/ILOG/CPLEX_Studio2211/cplex/bin/x86-64_linux/cplex)
+[DEBUG STATUS] Parsing log file: results/solver_logs/cplex_n67_20250914-231147.log
+[DEBUG STATUS] Line 39: Found 'mip - integer optimal solution' -> Optimal
+[DIAG] extract_sequence - séquence brute extraite: [11, 27, 17, 13, 16, 34, 20, 6, 15, 33, 18, 19, 38, 39, 14, 55, 36, 21, 32, 43, 28, 9, 47, 61, 31, 25, 41, 54, 60, 22, 5, 40, 2, 37, 10, 65, 53, 26, 50, 56, 46, 12, 67, 24, 59, 62, 48, 64, 58, 45, 30, 52, 35, 3, 49, 63, 51, 66, 23, 7, 29, 57, 44, 1, 8, 42, 4]
+[DEBUG] Clés de grasp_results avant boucle: []
+[DEBUG STATUS] Parsing log file: results/solver_logs/cplex_n67_20250914-231147.log
+[DEBUG STATUS] Line 39: Found 'mip - integer optimal solution' -> Optimal
+[DEBUG] milp_log_path: results/solver_logs/cplex_n67_20250914-231147.log
+[DEBUG] milp_status: Optimal
+[DEBUG] milp_gap: None
+[DEBUG] milp_best_integer: 1329.0
+[DEBUG] milp_profit: 1329.0
+[DEBUG] milp_makespan: 6677
+[DEBUG] milp_sequence: [11, 27, 17, 13, 16, 34, 20, 6, 15, 33, 18, 19, 38, 39, 14, 55, 36, 21, 32, 43, 28, 9, 47, 61, 31, 25, 41, 54, 60, 22, 5, 40, 2, 37, 10, 65, 53, 26, 50, 56, 46, 12, 67, 24, 59, 62, 48, 64, 58, 45, 30, 52, 35, 3, 49, 63, 51, 66, 23, 7, 29, 57, 44, 1, 8, 42, 4]
+[DEBUG] profit_closure final: 1329.0
+[DEBUG] makespan_closure final: 6677.0
+[DEBUG] best_integer_val final: 1329.0
+
+=== DIAGNOSTIC DIVERSITÉ GRASP ===
+
+Diversité séquences brutes (nombre unique): 0
+Diversité séquences filtrées (nombre unique): 0
+Scores DSP GRASP: []
+=== FIN DIAGNOSTIC ===
+
+[DEBUG] Chemin fichier MILP utilisé : data/instances_milp/salbp_instance_n=1000_1_cut67_selectif.txt
+[DEBUG] milp_results['milp_sequence'] = [11, 27, 17, 13, 16, 34, 20, 6, 15, 33, 18, 19, 38, 39, 14, 55, 36, 21, 32, 43, 28, 9, 47, 61, 31, 25, 41, 54, 60, 22, 5, 40, 2, 37, 10, 65, 53, 26, 50, 56, 46, 12, 67, 24, 59, 62, 48, 64, 58, 45, 30, 52, 35, 3, 49, 63, 51, 66, 23, 7, 29, 57, 44, 1, 8, 42, 4]
+[DEBUG] milp_data = {'V': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67], 'E': [(5, 63), (6, 63), (11, 24), (11, 27), (11, 34), (12, 30), (13, 39), (14, 40), (15, 33), (17, 25), (17, 32), (18, 36), (18, 38), (19, 23), (19, 26), (20, 31), (20, 35), (20, 37), (21, 28), (22, 29), (25, 63), (26, 63), (27, 63), (28, 63), (31, 52), (32, 45), (32, 60), (33, 42), (33, 49), (33, 53), (33, 54), (34, 41), (34, 51), (34, 59), (35, 57), (36, 43), (37, 46), (37, 48), (37, 56), (38, 47), (38, 50), (38, 58), (39, 44), (39, 55), (43, 63), (46, 62), (47, 61), (47, 65), (53, 66), (56, 67), (60, 64)], 'T': [7], 'r': {1: 21, 2: 23, 3: 26, 4: 22, 5: 24, 6: 29, 7: 29, 8: 25, 9: 20, 10: 30, 11: 20, 12: 25, 13: 24, 14: 26, 15: 27, 16: 30, 17: 26, 18: 23, 19: 25, 20: 29, 21: 22, 22: 20, 23: 23, 24: 21, 25: 30, 26: 23, 27: 29, 28: 26, 29: 29, 30: 29, 31: 20, 32: 26, 33: 26, 34: 30, 35: 24, 36: 30, 37: 29, 38: 23, 39: 28, 40: 20, 41: 26, 42: 28, 43: 25, 44: 26, 45: 20, 46: 24, 47: 23, 48: 21, 49: 29, 50: 25, 51: 21, 52: 23, 53: 30, 54: 26, 55: 24, 56: 29, 57: 21, 58: 27, 59: 26, 60: 20, 61: 25, 62: 21, 63: 21, 64: 25, 65: 26, 66: 20, 67: 30}, 'c': {1: 9, 2: 7, 3: 5, 4: 8, 5: 2, 6: 3, 7: 2, 8: 10, 9: 7, 10: 10, 11: 8, 12: 9, 13: 7, 14: 1, 15: 2, 16: 2, 17: 6, 18: 7, 19: 3, 20: 1, 21: 4, 22: 5, 23: 8, 24: 2, 25: 5, 26: 4, 27: 1, 28: 4, 29: 5, 30: 7, 31: 2, 32: 4, 33: 6, 34: 2, 35: 10, 36: 1, 37: 4, 38: 6, 39: 2, 40: 4, 41: 7, 42: 1, 43: 1, 44: 1, 45: 7, 46: 3, 47: 6, 48: 7, 49: 7, 50: 3, 51: 10, 52: 6, 53: 8, 54: 8, 55: 5, 56: 7, 57: 2, 58: 9, 59: 1, 60: 6, 61: 7, 62: 10, 63: 10, 64: 6, 65: 4, 66: 5, 67: 3}, 'p': {1: 212, 2: 173, 3: 219, 4: 293, 5: 63, 6: 63, 7: 68, 8: 197, 9: 226, 10: 115, 11: 34, 12: 30, 13: 39, 14: 40, 15: 33, 16: 161, 17: 32, 18: 38, 19: 26, 20: 37, 21: 28, 22: 29, 23: 29, 24: 195, 25: 63, 26: 63, 27: 63, 28: 63, 29: 279, 30: 96, 31: 52, 32: 60, 33: 54, 34: 59, 35: 57, 36: 43, 37: 56, 38: 58, 39: 55, 40: 235, 41: 158, 42: 53, 43: 63, 44: 89, 45: 167, 46: 62, 47: 65, 48: 75, 49: 27, 50: 144, 51: 86, 52: 154, 53: 66, 54: 52, 55: 81, 56: 67, 57: 217, 58: 201, 59: 66, 60: 64, 61: 75, 62: 151, 63: 150, 64: 171, 65: 180, 66: 139, 67: 118}, 'C_max': None, 'label_map': {}}
+[DIAG] Séquence brute extraite de MILP: [11, 27, 17, 13, 16, 34, 20, 6, 15, 33, 18, 19, 38, 39, 14, 55, 36, 21, 32, 43, 28, 9, 47, 61, 31, 25, 41, 54, 60, 22, 5, 40, 2, 37, 10, 65, 53, 26, 50, 56, 46, 12, 67, 24, 59, 62, 48, 64, 58, 45, 30, 52, 35, 3, 49, 63, 51, 66, 23, 7, 29, 57, 44, 1, 8, 42, 4]
+[DIAG] Mapping indices MILP → labels:
+[DIAG] Liste des nœuds du graphe et mapping numérique :
+  C000 -> 1
+  C001 -> 2
+  C002 -> 3
+  C003 -> 4
+  C004 -> 5
+  C005 -> 6
+  C006 -> 7
+  C007 -> 8
+  C008 -> 9
+  C009 -> 10
+  C010 -> 11
+  C011 -> 12
+  C012 -> 13
+  C013 -> 14
+  C014 -> 15
+  C015 -> 16
+  C016 -> 17
+  C017 -> 18
+  C018 -> 19
+  C019 -> 20
+  C020 -> 21
+  C021 -> 22
+  C022 -> 23
+  C023 -> 24
+  C024 -> 25
+  C025 -> 26
+  C026 -> 27
+  C027 -> 28
+  C028 -> 29
+  C029 -> 30
+  C030 -> 31
+  C031 -> 32
+  C032 -> 33
+  C033 -> 34
+  C034 -> 35
+  C035 -> 36
+  C036 -> 37
+  C037 -> 38
+  C038 -> 39
+  C039 -> 40
+  C040 -> 41
+  C041 -> 42
+  C042 -> 43
+  C043 -> 44
+  C044 -> 45
+  C045 -> 46
+  C046 -> 47
+  C047 -> 48
+  C048 -> 49
+  C049 -> 50
+  C050 -> 51
+  C051 -> 52
+  C052 -> 53
+  C053 -> 54
+  C054 -> 55
+  C055 -> 56
+  C056 -> 57
+  C057 -> 58
+  C058 -> 59
+  C059 -> 60
+  C060 -> 61
+  C061 -> 62
+  C062 -> 63
+  C063 -> 64
+  C064 -> 65
+  C065 -> 66
+  C066 -> 67
+[MAPPING MILP] Indices → Labels:
+    11 -> C010
+    27 -> C026
+    17 -> C016
+    13 -> C012
+    16 -> C015
+    34 -> C033
+    20 -> C019
+    6 -> C005
+    15 -> C014
+    33 -> C032
+    18 -> C017
+    19 -> C018
+    38 -> C037
+    39 -> C038
+    14 -> C013
+    55 -> C054
+    36 -> C035
+    21 -> C020
+    32 -> C031
+    43 -> C042
+    28 -> C027
+    9 -> C008
+    47 -> C046
+    61 -> C060
+    31 -> C030
+    25 -> C024
+    41 -> C040
+    54 -> C053
+    60 -> C059
+    22 -> C021
+    5 -> C004
+    40 -> C039
+    2 -> C001
+    37 -> C036
+    10 -> C009
+    65 -> C064
+    53 -> C052
+    26 -> C025
+    50 -> C049
+    56 -> C055
+    46 -> C045
+    12 -> C011
+    67 -> C066
+    24 -> C023
+    59 -> C058
+    62 -> C061
+    48 -> C047
+    64 -> C063
+    58 -> C057
+    45 -> C044
+    30 -> C029
+    52 -> C051
+    35 -> C034
+    3 -> C002
+    49 -> C048
+    63 -> C062
+    51 -> C050
+    66 -> C065
+    23 -> C022
+    7 -> C006
+    29 -> C028
+    57 -> C056
+    44 -> C043
+    1 -> C000
+    8 -> C007
+    42 -> C041
+    4 -> C003
+[MAPPING MILP] Séquence finale pour profit: ['C006']
+[DIAG] Séquence MILP finale pour évaluation: ['C006']
+[DIAG] MILP profit_closure=27.0, makespan_closure=1.0, score_dsp=1.0
+[DIAG] PROFIT_CLOSURE MILP: 27.0
+[DIAG] MAKESPAN_CLOSURE MILP: 1.0
+[DIAG] SEQ_CLOSURE_LEN MILP: ['C006']
+[DEBUG STATUS] Parsing log file: results/solver_logs/cplex_n67_20250914-231147.log
+[DEBUG STATUS] Line 39: Found 'mip - integer optimal solution' -> Optimal
+[DEBUG AVANT NETTOYAGE] Nombre de lignes dans results: 1
+[DEBUG AVANT NETTOYAGE] MILP result[0]: profit_closure=27.0, makespan_closure=1.0
+[DEBUG FINAL] Nombre de lignes dans rows: 1
+[DEBUG FINAL] MILP row[0]: profit_closure=27.0, makespan_closure=1.0
+
+=== COMPARAISON GRASP vs MILP ===
+                     instance        algorithm  profit_closure  makespan_closure  score_dsp     time  status gap  targets seq_length_closure  violations_règles  rel_err_profit_vs_milp_closure
+salbp_instance_n=1000_1_cut67 MILP_full_profit            27.0               1.0        1.0 0.490789 Optimal            1             [C006]                  0                             NaN
+
+Résultats sauvegardés dans: results/benchmarks_2/salbp_instance_n=1000_1_cut67/compare_salbp_instance_n=1000_1_cut67_20250914_231147.csv

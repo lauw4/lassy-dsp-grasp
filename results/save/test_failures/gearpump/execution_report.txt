@@ -1,0 +1,206 @@
+------
+ADAPTIVE DSP EXECUTION REPORT
+------
+
+INITIAL PLANNED SEQUENCE:
+----------------------------------------
+G06, G04, G02, G03, G01, G05, G08, G07, G09, G13, G17, G10, G14, G12, G11, G15, G16, G18, G19, G20
+Target = G20
+
+------
+EXECUTION WITH ADAPTATION:
+------
+
+G06 - OK
+G04 - OK
+G02 - OK
+G03 - OK
+G01 - OK
+G05 - OK
+G08 - OK
+------
+FAILURE ON G07
+------
+
+Symptom: OVER_TORQUE_NO_ADVANCE
+
+Sensor values:
+  - Force:  30.0
+  - Torque: 35.0
+  - P_fail: 65.0%
+
+Fuzzy decision:
+  - Action: change_tool
+  - Score:  29.72
+  - Confidence: 51.4%
+
+Result: Alternative tool suggested.
+G09 - OK
+------
+FAILURE ON G13
+------
+
+Symptom: LOW_VALUE_BOTTLENECK
+
+Sensor values:
+  - Force:  75.0
+  - Torque: 80.0
+  - P_fail: 40.0%
+
+Fuzzy decision:
+  - Action: destroy
+  - Score:  62.50
+  - Confidence: 97.8%
+
+Result: Destruction allowed (20th percentile cutoff).
+G17 - OK
+G10 - OK
+------
+FAILURE ON G14
+------
+
+Symptom: ACCESS_BLOCKED
+
+Sensor values:
+  - Force:  48.0
+  - Torque: 52.0
+  - P_fail: 60.0%
+
+Fuzzy decision:
+  - Action: bypass
+  - Score:  40.00
+  - Confidence: 100.0%
+
+Result: Component G14 bypassed (skipped).
+G12 - OK
+G11 - OK
+------
+FAILURE ON G15
+------
+
+Symptom: ACCESS_BLOCKED
+
+Sensor values:
+  - Force:  50.0
+  - Torque: 55.0
+  - P_fail: 50.0%
+
+Fuzzy decision:
+  - Action: bypass->destroy
+  - Score:  40.00
+  - Confidence: 100.0%
+
+Result: Fallback succeeded
+G16 - OK
+G18 - OK
+G19 - OK
+G20 - OK
+------
+EXECUTION METRICS:
+------
+
+Targets achieved: 1/1 (100.0%)
+Failures handled: 4
+Actions taken:    5
+Done:             17/20
+Destroyed:        2
+Skipped:          1
+------
+FINAL STATE
+------
+
+Done:      ['G01', 'G02', 'G03', 'G04', 'G05', 'G06', 'G07', 'G08', 'G09', 'G10', 'G11', 'G12', 'G16', 'G17', 'G18', 'G19', 'G20']
+Destroyed: ['G13', 'G15']
+Locked:    []
+Skipped:   ['G14']
+------
+ECONOMIC ANALYSIS
+------
+
+Nominal profit (planned):    473.00 units
+Adaptive profit (recovered): 443.00 units
+Profit loss:                 30.00 units (6.3%)
+Value lost (destroyed):      4.00 units
+Value skipped (bypassed):    30.00 units
+
+Component breakdown:
+  G06: profit=2, cost=1 -> net=1.00
+  G04: profit=2, cost=1 -> net=1.00
+  G02: profit=2, cost=1 -> net=1.00
+  G03: profit=3, cost=1 -> net=2.00
+  G01: profit=2, cost=1 -> net=1.00
+  G05: profit=3, cost=1 -> net=2.00
+  G08: profit=18, cost=3 -> net=15.00
+  G07: profit=20, cost=4 -> net=16.00
+  G09: profit=5, cost=1 -> net=4.00
+  G13: profit=2, cost=2 -> DESTROYED (lost 2 + paid 2)
+  G17: profit=12, cost=2 -> net=10.00
+  G10: profit=2, cost=5 -> net=-3.00
+  G14: profit=30, cost=4 -> SKIPPED (not recovered)
+  G12: profit=60, cost=7 -> net=53.00
+  G11: profit=45, cost=6 -> net=39.00
+  G15: profit=2, cost=8 -> DESTROYED (lost 2 + paid 8)
+  G16: profit=65, cost=7 -> net=58.00
+  G18: profit=80, cost=9 -> net=71.00
+  G19: profit=100, cost=10 -> net=90.00
+  G20: profit=100, cost=8 -> net=92.00
+------
+TIME ANALYSIS
+------
+
+Nominal time (planned):      29min 30s
+Adaptive time (actual):      27min 55s
+Time saved:                  1min 35s (5.4%)
+Time on destroyed (lost):    3min 15s
+Time saved (skipped):        1min 35s
+
+Component time breakdown:
+  G06: 50s
+  G04: 50s
+  G02: 50s
+  G03: 50s
+  G01: 50s
+  G05: 50s
+  G08: 85s
+  G07: 90s
+  G09: 60s
+  G13: 65s -> DESTROYED
+  G17: 70s
+  G10: 100s
+  G14: 95s -> SKIPPED (saved)
+  G12: 120s
+  G11: 110s
+  G15: 130s -> DESTROYED
+  G16: 125s
+  G18: 140s
+  G19: 150s
+  G20: 130s
+------
+GLOBAL SCORE
+------
+
+Nominal score:               151.77
+Adaptive score:              146.07
+Score loss:                  5.70 (3.8%)
+------
+GLOSSARY
+------
+
+p_fail:
+  Estimated failure risk. Higher = more likely to fail.
+
+Fuzzy decision:
+  AI-based analysis choosing best recovery action.
+  Score (0-100) and confidence (%) indicate decision quality.
+
+Actions:
+  - change_tool: Switch to alternative tool
+  - bypass: Skip inaccessible component
+  - destroy: Remove component by destruction
+  - replan: Recalculate sequence after changes
+
+States:
+  - done: Successfully removed components
+  - destroyed: Components removed by destruction
+  - locked: Components physically blocked (not removable)
+  - skipped: Components bypassed (not on current path)

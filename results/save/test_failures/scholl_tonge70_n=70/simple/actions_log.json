@@ -1,0 +1,9 @@
+[
+  {
+    "comp_id": "C017",
+    "symptom": "ACCESS_BLOCKED",
+    "action": "bypass",
+    "success": true,
+    "notes": "Component C017 bypassed."
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "comp_id": "C003",
+    "symptom": "LOW_VALUE_BOTTLENECK",
+    "action": "bypass",
+    "success": false,
+    "notes": "Aucun chemin alternatif dans le graphe."
+  },
+  {
+    "comp_id": "C003",
+    "symptom": "LOW_VALUE_BOTTLENECK",
+    "action": "bypass\u2192replan",
+    "success": true,
+    "notes": "Fallback succeeded"
+  }
+]

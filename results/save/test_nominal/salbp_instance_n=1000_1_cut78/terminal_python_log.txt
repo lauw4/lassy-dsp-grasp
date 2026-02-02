@@ -1,0 +1,32 @@
+2025-11-29 22:24:20,257 DSP ADAPTIVE PIPELINE - SALBP_INSTANCE_N=1000_1_CUT78
+2025-11-29 22:24:20,257 Loaded instance: salbp_instance_n=1000_1_cut78
+2025-11-29 22:24:20,257 Loaded failures: 0
+2025-11-29 22:24:20,258 [1/4] Loading instance and solving DSP...
+2025-11-29 22:24:20,280 Nodes: 78, Edges: 62, Targets: 3, Solution: 8 operations
+2025-11-29 22:24:20,280 Target(s) to achieve: ['C009', 'C040', 'C068']
+2025-11-29 22:24:20,280 Starting disassembly sequence (8 operations)...
+2025-11-29 22:24:20,280 [ 1/8] Disassembling C010... [OK]
+2025-11-29 22:24:20,280 [ 2/8] Disassembling C009... [OK]
+2025-11-29 22:24:20,280 [ 3/8] Disassembling C033... [OK]
+2025-11-29 22:24:20,280 [ 4/8] Disassembling C014... [OK]
+2025-11-29 22:24:20,280 [ 5/8] Disassembling C032... [OK]
+2025-11-29 22:24:20,280 [ 6/8] Disassembling C040... [OK]
+2025-11-29 22:24:20,280 [ 7/8] Disassembling C048... [OK]
+2025-11-29 22:24:20,280 [ 8/8] Disassembling C068... [OK]
+2025-11-29 22:24:20,280 [2/4] No failures (nominal execution)
+2025-11-29 22:24:20,280 [3/4] Executing adaptive scheduler...
+2025-11-29 22:24:20,280 Adaptive scheduler finished. Actions taken: 0
+2025-11-29 22:24:20,280 EXECUTION SUMMARY
+2025-11-29 22:24:20,280 Status: SUCCESS
+2025-11-29 22:24:20,280 Target components:
+2025-11-29 22:24:20,281 [OK] C009 - Successfully disassembled
+2025-11-29 22:24:20,281 [OK] C040 - Successfully disassembled
+2025-11-29 22:24:20,281 [OK] C068 - Successfully disassembled
+2025-11-29 22:24:20,281 Execution metrics:
+2025-11-29 22:24:20,281 Targets achieved: 3/3 (100.0%)
+2025-11-29 22:24:20,281 Failures handled: 0
+2025-11-29 22:24:20,281 Actions taken: 0
+2025-11-29 22:24:20,281 Components done: 8/8
+2025-11-29 22:24:20,281 Execution time: 0.02s
+2025-11-29 22:24:20,281 Detailed logs: results\save\test_nominal\salbp_instance_n=1000_1_cut78
+2025-11-29 22:24:20,283 Pipeline finished successfully

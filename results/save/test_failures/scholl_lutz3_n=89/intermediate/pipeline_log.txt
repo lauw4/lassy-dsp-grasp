@@ -1,0 +1,9 @@
+--- Pipeline run 2025-11-29 23:16:01.588645 ---
+Instance: unknown
+Initial solution: ['C000', 'C001', 'C002', 'C003', 'C005', 'C007', 'C004', 'C008', 'C010', 'C009', 'C006', 'C011', 'C012', 'C013', 'C014', 'C016', 'C017', 'C019', 'C018', 'C020', 'C027', 'C021', 'C022', 'C023', 'C024', 'C028', 'C026', 'C025', 'C030', 'C031', 'C032', 'C033', 'C034', 'C035', 'C036', 'C037', 'C038', 'C040', 'C042', 'C044', 'C045', 'C046', 'C048', 'C049', 'C050']
+Final state:
+  - Locked: {'C033', 'C042'}
+  - Destroyed: set()
+  - Done: {'C031', 'C017', 'C018', 'C006', 'C036', 'C046', 'C008', 'C010', 'C027', 'C023', 'C035', 'C037', 'C032', 'C007', 'C038', 'C001', 'C013', 'C020', 'C022', 'C026', 'C004', 'C049', 'C009', 'C012', 'C045', 'C024', 'C050', 'C000', 'C040', 'C021', 'C044', 'C016', 'C011', 'C028', 'C002', 'C003', 'C030', 'C048', 'C014', 'C025', 'C034', 'C019', 'C005'}
+  - Notes: ['Destruction interdite pour C042 : Profit=47.00 > seuil=21.00 (percentile 20e).', 'Bypass impossible pour C042: aucun chemin alternatif', 'Aucun outil alternatif pour C042']
+Actions taken: [{'comp_id': 'C033', 'symptom': 'LOW_VALUE_BOTTLENECK', 'action': 'bypass', 'success': True, 'notes': 'Component C033 bypassed.'}, {'comp_id': 'C042', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy', 'success': False, 'notes': 'Destruction non autorisée : Profit=47.00 > seuil=21.00 (percentile 20e).'}, {'comp_id': 'C042', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy→replan', 'success': True, 'notes': 'Fallback succeeded'}]

@@ -1,0 +1,9 @@
+--- Pipeline run 2025-11-29 23:15:43.112941 ---
+Instance: unknown
+Initial solution: ['C000', 'C002', 'C003', 'C004', 'C001', 'C005', 'C006', 'C008', 'C010', 'C009', 'C007', 'C011', 'C012', 'C014', 'C013', 'C016', 'C015', 'C018', 'C017', 'C019', 'C020', 'C023', 'C021', 'C022', 'C024', 'C025', 'C026', 'C027', 'C028', 'C029', 'C030', 'C031']
+Final state:
+  - Locked: {'C015', 'C013'}
+  - Destroyed: set()
+  - Done: {'C027', 'C029', 'C025', 'C012', 'C023', 'C005', 'C016', 'C031', 'C021', 'C024', 'C019', 'C008', 'C022', 'C017', 'C002', 'C007', 'C014', 'C009', 'C020', 'C001', 'C000', 'C030', 'C010', 'C028', 'C018', 'C026', 'C006', 'C004', 'C003', 'C011'}
+  - Notes: ['Bypass impossible pour C013: aucun chemin alternatif', 'Aucun outil alternatif pour C013', 'Bypass impossible pour C015: aucun chemin alternatif', 'Aucun outil alternatif pour C015']
+Actions taken: [{'comp_id': 'C013', 'symptom': 'LOW_VALUE_BOTTLENECK', 'action': 'bypass', 'success': False, 'notes': 'Aucun chemin alternatif dans le graphe.'}, {'comp_id': 'C013', 'symptom': 'LOW_VALUE_BOTTLENECK', 'action': 'bypass→replan', 'success': True, 'notes': 'Fallback succeeded'}, {'comp_id': 'C015', 'symptom': 'LOW_VALUE_BOTTLENECK', 'action': 'bypass', 'success': False, 'notes': 'Aucun chemin alternatif dans le graphe.'}, {'comp_id': 'C015', 'symptom': 'LOW_VALUE_BOTTLENECK', 'action': 'bypass→replan', 'success': True, 'notes': 'Fallback succeeded'}]

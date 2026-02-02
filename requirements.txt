@@ -8,3 +8,6 @@ argparse
 tqdm
 ipython
 jupyter
+pulp
+pytest
+scikit-fuzzy

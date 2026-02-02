@@ -1,0 +1,9 @@
+--- Pipeline run 2025-11-29 23:15:01.178953 ---
+Instance: unknown
+Initial solution: ['C002', 'C006', 'C001', 'C012', 'C020', 'C013', 'C018', 'C004', 'C009', 'C015', 'C029', 'C025', 'C031', 'C037', 'C044']
+Final state:
+  - Locked: {'C029'}
+  - Destroyed: set()
+  - Done: {'C001', 'C025', 'C020', 'C044', 'C009', 'C012', 'C018', 'C004', 'C002', 'C015', 'C013', 'C037', 'C006', 'C031'}
+  - Notes: ['Bypass impossible pour C029: aucun chemin alternatif', 'Aucun outil alternatif pour C029']
+Actions taken: [{'comp_id': 'C029', 'symptom': 'LOW_VALUE_BOTTLENECK', 'action': 'bypass', 'success': False, 'notes': 'Aucun chemin alternatif dans le graphe.'}, {'comp_id': 'C029', 'symptom': 'LOW_VALUE_BOTTLENECK', 'action': 'bypass→replan', 'success': True, 'notes': 'Fallback succeeded'}]

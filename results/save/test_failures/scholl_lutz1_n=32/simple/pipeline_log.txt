@@ -1,0 +1,9 @@
+--- Pipeline run 2025-11-29 23:14:55.523538 ---
+Instance: unknown
+Initial solution: ['C000', 'C002', 'C001', 'C003', 'C004', 'C005', 'C008', 'C007', 'C006', 'C010', 'C009', 'C011', 'C012', 'C013', 'C015', 'C014', 'C016', 'C018', 'C017', 'C019', 'C020', 'C023', 'C021', 'C022', 'C024', 'C025', 'C026', 'C027', 'C028', 'C029', 'C030', 'C031']
+Final state:
+  - Locked: {'C009'}
+  - Destroyed: set()
+  - Done: {'C016', 'C003', 'C012', 'C010', 'C019', 'C020', 'C018', 'C006', 'C024', 'C000', 'C007', 'C029', 'C022', 'C014', 'C011', 'C027', 'C031', 'C013', 'C023', 'C005', 'C001', 'C028', 'C008', 'C021', 'C025', 'C026', 'C017', 'C015', 'C004', 'C002', 'C030'}
+  - Notes: ['Destruction interdite pour C009 : Profit=87.00 > seuil=23.20 (percentile 20e).']
+Actions taken: [{'comp_id': 'C009', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy', 'success': False, 'notes': 'Destruction non autorisée : Profit=87.00 > seuil=23.20 (percentile 20e).'}, {'comp_id': 'C009', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy→bypass', 'success': True, 'notes': 'Fallback succeeded'}]

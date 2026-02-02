@@ -1,0 +1,6 @@
+instance,algorithm,profit_closure,makespan_closure,score_dsp,time,status,gap,targets,seq_length_closure,violations_règles,rel_err_profit_vs_milp_closure
+electronics_89,MILP_full_profit,119.0,8.0,36.0,3.964946746826172,Optimal,1.52%,2,"['EL004', 'EL007', 'EL067', 'EL039', 'EL070', 'EL005', 'EL023', 'EL080']",0,
+electronics_89,grasp_vnd,119.0,8.0,36.0,0.05472755432128906,Completed,0.00%,2,"['EL004', 'EL005', 'EL067', 'EL023', 'EL007', 'EL039', 'EL070', 'EL080']",0,0.0
+electronics_89,grasp_tabu,119.0,8.0,36.0,0.6723849773406982,Completed,0.00%,2,"['EL004', 'EL007', 'EL039', 'EL070', 'EL067', 'EL005', 'EL023', 'EL080']",0,0.0
+electronics_89,grasp_mns,119.0,8.0,36.0,0.014527559280395508,Completed,0.00%,2,"['EL067', 'EL007', 'EL004', 'EL039', 'EL005', 'EL070', 'EL080', 'EL023']",0,0.0
+electronics_89,dijkstra_closure_min,39.0,2.0,3.0,2.0,Completed,67.23%,2,"['EL005', 'EL023']",0,0.6722689075630253

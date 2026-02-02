@@ -1,0 +1,2 @@
+instance,algorithm,profit_closure,makespan_closure,score_dsp,time,status,gap,targets,seq_length_closure,violations_règles,rel_err_profit_vs_milp_closure
+scholl_barthol2_n=148,MILP_full_profit,21.0,1.0,1.0,505.72927737236023,Optimal,,1,['C093'],0,

@@ -1,0 +1,69 @@
+2025-11-29 22:24:24,734 DSP ADAPTIVE PIPELINE - SCHOLL_LUTZ3_N=89
+2025-11-29 22:24:24,737 Loaded instance: scholl_lutz3_n=89
+2025-11-29 22:24:24,737 Loaded failures: 0
+2025-11-29 22:24:24,737 [1/4] Loading instance and solving DSP...
+2025-11-29 22:24:24,806 Nodes: 89, Edges: 118, Targets: 3, Solution: 45 operations
+2025-11-29 22:24:24,806 Target(s) to achieve: ['C020', 'C040', 'C050']
+2025-11-29 22:24:24,806 Starting disassembly sequence (45 operations)...
+2025-11-29 22:24:24,806 [ 1/45] Disassembling C000... [OK]
+2025-11-29 22:24:24,806 [ 2/45] Disassembling C001... [OK]
+2025-11-29 22:24:24,806 [ 3/45] Disassembling C002... [OK]
+2025-11-29 22:24:24,806 [ 4/45] Disassembling C003... [OK]
+2025-11-29 22:24:24,806 [ 5/45] Disassembling C006... [OK]
+2025-11-29 22:24:24,806 [ 6/45] Disassembling C004... [OK]
+2025-11-29 22:24:24,806 [ 7/45] Disassembling C009... [OK]
+2025-11-29 22:24:24,806 [ 8/45] Disassembling C008... [OK]
+2025-11-29 22:24:24,806 [ 9/45] Disassembling C007... [OK]
+2025-11-29 22:24:24,806 [10/45] Disassembling C005... [OK]
+2025-11-29 22:24:24,806 [11/45] Disassembling C010... [OK]
+2025-11-29 22:24:24,806 [12/45] Disassembling C011... [OK]
+2025-11-29 22:24:24,806 [13/45] Disassembling C012... [OK]
+2025-11-29 22:24:24,806 [14/45] Disassembling C013... [OK]
+2025-11-29 22:24:24,806 [15/45] Disassembling C014... [OK]
+2025-11-29 22:24:24,806 [16/45] Disassembling C016... [OK]
+2025-11-29 22:24:24,806 [17/45] Disassembling C017... [OK]
+2025-11-29 22:24:24,806 [18/45] Disassembling C018... [OK]
+2025-11-29 22:24:24,806 [19/45] Disassembling C021... [OK]
+2025-11-29 22:24:24,806 [20/45] Disassembling C019... [OK]
+2025-11-29 22:24:24,806 [21/45] Disassembling C020... [OK]
+2025-11-29 22:24:24,806 [22/45] Disassembling C022... [OK]
+2025-11-29 22:24:24,806 [23/45] Disassembling C027... [OK]
+2025-11-29 22:24:24,807 [24/45] Disassembling C023... [OK]
+2025-11-29 22:24:24,807 [25/45] Disassembling C024... [OK]
+2025-11-29 22:24:24,807 [26/45] Disassembling C028... [OK]
+2025-11-29 22:24:24,807 [27/45] Disassembling C030... [OK]
+2025-11-29 22:24:24,807 [28/45] Disassembling C026... [OK]
+2025-11-29 22:24:24,807 [29/45] Disassembling C031... [OK]
+2025-11-29 22:24:24,807 [30/45] Disassembling C032... [OK]
+2025-11-29 22:24:24,807 [31/45] Disassembling C025... [OK]
+2025-11-29 22:24:24,807 [32/45] Disassembling C033... [OK]
+2025-11-29 22:24:24,807 [33/45] Disassembling C034... [OK]
+2025-11-29 22:24:24,807 [34/45] Disassembling C035... [OK]
+2025-11-29 22:24:24,807 [35/45] Disassembling C036... [OK]
+2025-11-29 22:24:24,807 [36/45] Disassembling C037... [OK]
+2025-11-29 22:24:24,807 [37/45] Disassembling C038... [OK]
+2025-11-29 22:24:24,807 [38/45] Disassembling C040... [OK]
+2025-11-29 22:24:24,807 [39/45] Disassembling C042... [OK]
+2025-11-29 22:24:24,807 [40/45] Disassembling C044... [OK]
+2025-11-29 22:24:24,807 [41/45] Disassembling C045... [OK]
+2025-11-29 22:24:24,807 [42/45] Disassembling C046... [OK]
+2025-11-29 22:24:24,807 [43/45] Disassembling C048... [OK]
+2025-11-29 22:24:24,807 [44/45] Disassembling C049... [OK]
+2025-11-29 22:24:24,807 [45/45] Disassembling C050... [OK]
+2025-11-29 22:24:24,807 [2/4] No failures (nominal execution)
+2025-11-29 22:24:24,807 [3/4] Executing adaptive scheduler...
+2025-11-29 22:24:24,807 Adaptive scheduler finished. Actions taken: 0
+2025-11-29 22:24:24,807 EXECUTION SUMMARY
+2025-11-29 22:24:24,807 Status: SUCCESS
+2025-11-29 22:24:24,807 Target components:
+2025-11-29 22:24:24,807 [OK] C020 - Successfully disassembled
+2025-11-29 22:24:24,808 [OK] C040 - Successfully disassembled
+2025-11-29 22:24:24,808 [OK] C050 - Successfully disassembled
+2025-11-29 22:24:24,808 Execution metrics:
+2025-11-29 22:24:24,808 Targets achieved: 3/3 (100.0%)
+2025-11-29 22:24:24,808 Failures handled: 0
+2025-11-29 22:24:24,808 Actions taken: 0
+2025-11-29 22:24:24,808 Components done: 45/45
+2025-11-29 22:24:24,808 Execution time: 0.07s
+2025-11-29 22:24:24,808 Detailed logs: results\save\test_nominal\scholl_lutz3_n=89
+2025-11-29 22:24:24,809 Pipeline finished successfully

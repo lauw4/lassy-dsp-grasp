@@ -1,0 +1,60 @@
+2025-11-29 23:15:41,447 DSP ADAPTIVE PIPELINE - DAGTEST
+2025-11-29 23:15:41,447 Loaded instance: dagtest
+2025-11-29 23:15:41,447 Loaded failures: 2
+2025-11-29 23:15:41,447 [1/4] Loading instance and solving DSP...
+2025-11-29 23:15:41,468 Nodes: 28, Edges: 41, Targets: 1, Solution: 22 operations
+2025-11-29 23:15:41,468 Target(s) to achieve: ['N22']
+2025-11-29 23:15:41,468 Starting disassembly sequence (22 operations)...
+2025-11-29 23:15:41,468 [ 1/22] Disassembling N02... [OK]
+2025-11-29 23:15:41,468 [ 2/22] Disassembling N01... [OK]
+2025-11-29 23:15:41,468 [ 3/22] Disassembling N04... [OK]
+2025-11-29 23:15:41,468 [ 4/22] Disassembling N03... [OK]
+2025-11-29 23:15:41,468 [ 5/22] Disassembling N06... [OK]
+2025-11-29 23:15:41,468 [ 6/22] Disassembling N08... [OK]
+2025-11-29 23:15:41,468 [ 7/22] Disassembling N07... [OK]
+2025-11-29 23:15:41,468 [ 8/22] Disassembling N12... [OK]
+2025-11-29 23:15:41,468 [ 9/22] Disassembling N11... [OK]
+2025-11-29 23:15:41,468 [10/22] Disassembling N13... [OK]
+2025-11-29 23:15:41,468 [11/22] Disassembling N18... [OK]
+2025-11-29 23:15:41,468 [12/22] Disassembling N05... [OK]
+2025-11-29 23:15:41,468 [13/22] Disassembling N17... [OK]
+2025-11-29 23:15:41,468 [14/22] Disassembling N09... [OK]
+2025-11-29 23:15:41,468 [15/22] Disassembling N14... [OK]
+2025-11-29 23:15:41,468 [16/22] Disassembling N10... [OK]
+2025-11-29 23:15:41,468 [17/22] Disassembling N15... [OK]
+2025-11-29 23:15:41,468 [18/22] Disassembling N19... [OK]
+2025-11-29 23:15:41,468 [19/22] Disassembling N16... [OK]
+2025-11-29 23:15:41,468 [20/22] Disassembling N21... [OK]
+2025-11-29 23:15:41,468 [21/22] Disassembling N20... [OK]
+2025-11-29 23:15:41,468 [22/22] Disassembling N22... [OK]
+2025-11-29 23:15:41,468 [2/4] Failure scenario loaded: 2 failure(s)
+2025-11-29 23:15:41,468 [3/4] Executing adaptive scheduler...
+2025-11-29 23:15:41,498 [FUZZY] Symptom: OVER_TORQUE_NO_ADVANCE
+2025-11-29 23:15:41,498 [FUZZY] Inputs: force=70.0, torque=80.0, p_fail=75.0, context=0.0
+2025-11-29 23:15:41,498 [FUZZY] Score: 70.67
+2025-11-29 23:15:41,498 [FUZZY] Decision: destroy (confidence=63.7%)
+2025-11-29 23:15:41,499 [ACTION] destroy: success=False, notes=Destruction non autorisée : Profit=24.00 > seuil=18.00 (percentile 20e).
+2025-11-29 23:15:41,550 [FUZZY] Symptom: OVER_TORQUE_NO_ADVANCE
+2025-11-29 23:15:41,550 [FUZZY] Inputs: force=70.0, torque=80.0, p_fail=65.0, context=0.0
+2025-11-29 23:15:41,550 [FUZZY] Score: 65.47
+2025-11-29 23:15:41,550 [FUZZY] Decision: destroy (confidence=86.8%)
+2025-11-29 23:15:41,550 [ACTION] destroy: success=False, notes=Destruction non autorisée : Flag 'no_destroy' actif (contexte ou graphe).
+2025-11-29 23:15:41,557 Adaptive scheduler finished. Actions taken: 4
+2025-11-29 23:15:41,557 EXECUTION SUMMARY
+2025-11-29 23:15:41,557 Status: SUCCESS
+2025-11-29 23:15:41,557 Target components:
+2025-11-29 23:15:41,557 [OK] N22 - Successfully disassembled
+2025-11-29 23:15:41,557 Execution metrics:
+2025-11-29 23:15:41,557 Targets achieved: 1/1 (100.0%)
+2025-11-29 23:15:41,557 Failures handled: 2
+2025-11-29 23:15:41,557 Actions taken: 4
+2025-11-29 23:15:41,557 Components done: 20/22
+2025-11-29 23:15:41,557 Locked: 2 component(s)
+2025-11-29 23:15:41,557 Execution time: 0.11s
+2025-11-29 23:15:41,557 Actions breakdown:
+2025-11-29 23:15:41,557 [FAILED] N14      OVER_TORQUE_NO_ADVANCE -> destroy     
+2025-11-29 23:15:41,557 [OK] N14      OVER_TORQUE_NO_ADVANCE -> destroy\u2192replan
+2025-11-29 23:15:41,558 [FAILED] N10      OVER_TORQUE_NO_ADVANCE -> destroy     
+2025-11-29 23:15:41,558 [OK] N10      OVER_TORQUE_NO_ADVANCE -> destroy\u2192bypass
+2025-11-29 23:15:41,558 Detailed logs: results\save\test_failures\dagtest\intermediate
+2025-11-29 23:15:41,562 Pipeline finished successfully

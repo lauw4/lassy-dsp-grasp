@@ -1,0 +1,37 @@
+[
+  {
+    "comp_id": "C050",
+    "symptom": "ACCESS_BLOCKED",
+    "action": "bypass",
+    "success": true,
+    "notes": "Component C050 bypassed."
+  },
+  {
+    "comp_id": "C058",
+    "symptom": "LOW_VALUE_BOTTLENECK",
+    "action": "bypass",
+    "success": false,
+    "notes": "Aucun chemin alternatif dans le graphe."
+  },
+  {
+    "comp_id": "C058",
+    "symptom": "LOW_VALUE_BOTTLENECK",
+    "action": "bypass\u2192replan",
+    "success": true,
+    "notes": "Fallback succeeded"
+  },
+  {
+    "comp_id": "C053",
+    "symptom": "ACCESS_BLOCKED",
+    "action": "destroy",
+    "success": false,
+    "notes": "Destruction non autoris\u00e9e : Profit=32.00 > seuil=22.00 (percentile 20e)."
+  },
+  {
+    "comp_id": "C053",
+    "symptom": "ACCESS_BLOCKED",
+    "action": "destroy\u2192replan",
+    "success": true,
+    "notes": "Fallback succeeded"
+  }
+]

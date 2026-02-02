@@ -1,0 +1,23 @@
+[
+  {
+    "comp_id": "C032",
+    "symptom": "ACCESS_BLOCKED",
+    "action": "destroy",
+    "success": false,
+    "notes": "Destruction non autoris\u00e9e : Flag 'no_destroy' actif (contexte ou graphe)."
+  },
+  {
+    "comp_id": "C032",
+    "symptom": "ACCESS_BLOCKED",
+    "action": "destroy\u2192bypass",
+    "success": true,
+    "notes": "Fallback succeeded"
+  },
+  {
+    "comp_id": "C048",
+    "symptom": "ACCESS_BLOCKED",
+    "action": "destroy",
+    "success": false,
+    "notes": "Destruction non autoris\u00e9e : Flag 'no_destroy' actif (contexte ou graphe)."
+  }
+]

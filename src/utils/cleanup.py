@@ -15,6 +15,6 @@ def cleanup_old_results(folder, keep_last=5):
         for f in files[keep_last:]:
             try:
                 f.unlink()
-                print(f"Supprimé :{f.name}")
+                print(f"Deleted: {f.name}")
             except Exception as e:
-                print(f"Erreur de suppression pour {f.name} :{e}")
+                print(f"Error deleting {f.name}: {e}")

@@ -1,0 +1,2 @@
+instance,algorithm,profit_closure,makespan_closure,score_dsp,time,status,gap,targets,seq_length_closure,violations_règles,rel_err_profit_vs_milp_closure
+salbp_instance_n=1000_1_cut92,MILP_full_profit,26.0,1.0,1.0,1.2196941375732422,Optimal,,1,['C006'],0,

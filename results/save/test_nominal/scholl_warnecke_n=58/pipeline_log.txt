@@ -1,0 +1,9 @@
+--- Pipeline run 2025-11-29 22:24:14.598923 ---
+Instance: unknown
+Initial solution: ['C000', 'C011', 'C002', 'C008', 'C010', 'C014', 'C013', 'C012', 'C016', 'C019', 'C020', 'C025', 'C028']
+Final state:
+  - Locked: set()
+  - Destroyed: set()
+  - Done: {'C016', 'C011', 'C028', 'C000', 'C025', 'C008', 'C019', 'C010', 'C014', 'C002', 'C013', 'C020', 'C012'}
+  - Notes: []
+Actions taken: []

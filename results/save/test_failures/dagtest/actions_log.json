@@ -1,0 +1,16 @@
+[
+  {
+    "comp_id": "N06",
+    "symptom": "OVER_TORQUE_NO_ADVANCE",
+    "action": "change_tool",
+    "success": true,
+    "notes": "Outil alternatif propos\u00e9."
+  },
+  {
+    "comp_id": "N07",
+    "symptom": "OVER_TORQUE_NO_ADVANCE",
+    "action": "destroy",
+    "success": false,
+    "notes": "Destruction non autoris\u00e9e : Flag 'no_destroy' actif (contexte ou graphe)."
+  }
+]

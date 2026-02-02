@@ -1,0 +1,55 @@
+2025-11-29 23:16:27,636 DSP ADAPTIVE PIPELINE - SCHOLL_ROSZIEG_N=25
+2025-11-29 23:16:27,636 Loaded instance: scholl_roszieg_n=25
+2025-11-29 23:16:27,641 Loaded failures: 2
+2025-11-29 23:16:27,641 [1/4] Loading instance and solving DSP...
+2025-11-29 23:16:27,658 Nodes: 25, Edges: 32, Targets: 1, Solution: 18 operations
+2025-11-29 23:16:27,658 Target(s) to achieve: ['C021']
+2025-11-29 23:16:27,658 Starting disassembly sequence (18 operations)...
+2025-11-29 23:16:27,660 [ 1/18] Disassembling C001... [OK]
+2025-11-29 23:16:27,660 [ 2/18] Disassembling C000... [OK]
+2025-11-29 23:16:27,660 [ 3/18] Disassembling C002... [OK]
+2025-11-29 23:16:27,660 [ 4/18] Disassembling C003... [OK]
+2025-11-29 23:16:27,660 [ 5/18] Disassembling C007... [OK]
+2025-11-29 23:16:27,660 [ 6/18] Disassembling C004... [OK]
+2025-11-29 23:16:27,660 [ 7/18] Disassembling C008... [OK]
+2025-11-29 23:16:27,660 [ 8/18] Disassembling C005... [OK]
+2025-11-29 23:16:27,660 [ 9/18] Disassembling C006... [OK]
+2025-11-29 23:16:27,660 [10/18] Disassembling C010... [OK]
+2025-11-29 23:16:27,660 [11/18] Disassembling C012... [OK]
+2025-11-29 23:16:27,660 [12/18] Disassembling C013... [OK]
+2025-11-29 23:16:27,660 [13/18] Disassembling C019... [OK]
+2025-11-29 23:16:27,660 [14/18] Disassembling C020... [OK]
+2025-11-29 23:16:27,660 [15/18] Disassembling C011... [OK]
+2025-11-29 23:16:27,660 [16/18] Disassembling C014... [OK]
+2025-11-29 23:16:27,660 [17/18] Disassembling C018... [OK]
+2025-11-29 23:16:27,660 [18/18] Disassembling C021... [OK]
+2025-11-29 23:16:27,660 [2/4] Failure scenario loaded: 2 failure(s)
+2025-11-29 23:16:27,660 [3/4] Executing adaptive scheduler...
+2025-11-29 23:16:27,680 [FUZZY] Symptom: LOW_VALUE_BOTTLENECK
+2025-11-29 23:16:27,681 [FUZZY] Inputs: force=30.0, torque=20.0, p_fail=60.0, context=0.0
+2025-11-29 23:16:27,681 [FUZZY] Score: 40.00
+2025-11-29 23:16:27,681 [FUZZY] Decision: bypass (confidence=100.0%)
+2025-11-29 23:16:27,681 [ACTION] bypass: success=True, notes=Component C008 bypassed.
+2025-11-29 23:16:27,728 [FUZZY] Symptom: OVER_TORQUE_NO_ADVANCE
+2025-11-29 23:16:27,728 [FUZZY] Inputs: force=70.0, torque=80.0, p_fail=65.0, context=0.0
+2025-11-29 23:16:27,728 [FUZZY] Score: 65.47
+2025-11-29 23:16:27,728 [FUZZY] Decision: destroy (confidence=86.8%)
+2025-11-29 23:16:27,730 [ACTION] destroy: success=False, notes=Destruction non autorisée : Flag 'no_destroy' actif (contexte ou graphe).
+2025-11-29 23:16:27,730 Adaptive scheduler finished. Actions taken: 3
+2025-11-29 23:16:27,730 EXECUTION SUMMARY
+2025-11-29 23:16:27,730 Status: SUCCESS
+2025-11-29 23:16:27,730 Target components:
+2025-11-29 23:16:27,730 [OK] C021 - Successfully disassembled
+2025-11-29 23:16:27,730 Execution metrics:
+2025-11-29 23:16:27,730 Targets achieved: 1/1 (100.0%)
+2025-11-29 23:16:27,730 Failures handled: 2
+2025-11-29 23:16:27,730 Actions taken: 3
+2025-11-29 23:16:27,730 Components done: 16/18
+2025-11-29 23:16:27,730 Locked: 2 component(s)
+2025-11-29 23:16:27,730 Execution time: 0.09s
+2025-11-29 23:16:27,730 Actions breakdown:
+2025-11-29 23:16:27,730 [OK] C008     LOW_VALUE_BOTTLENECK -> bypass      
+2025-11-29 23:16:27,730 [FAILED] C013     OVER_TORQUE_NO_ADVANCE -> destroy     
+2025-11-29 23:16:27,730 [OK] C013     OVER_TORQUE_NO_ADVANCE -> destroy\u2192bypass
+2025-11-29 23:16:27,730 Detailed logs: results\save\test_failures\scholl_roszieg_n=25\complex
+2025-11-29 23:16:27,730 Pipeline finished successfully

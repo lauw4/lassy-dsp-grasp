@@ -1,0 +1,54 @@
+2025-11-29 23:15:38,542 DSP ADAPTIVE PIPELINE - SCHOLL_ROSZIEG_N=25
+2025-11-29 23:15:38,546 Loaded instance: scholl_roszieg_n=25
+2025-11-29 23:15:38,546 Loaded failures: 2
+2025-11-29 23:15:38,546 [1/4] Loading instance and solving DSP...
+2025-11-29 23:15:38,566 Nodes: 25, Edges: 32, Targets: 1, Solution: 18 operations
+2025-11-29 23:15:38,566 Target(s) to achieve: ['C021']
+2025-11-29 23:15:38,566 Starting disassembly sequence (18 operations)...
+2025-11-29 23:15:38,566 [ 1/18] Disassembling C001... [OK]
+2025-11-29 23:15:38,566 [ 2/18] Disassembling C000... [OK]
+2025-11-29 23:15:38,566 [ 3/18] Disassembling C002... [OK]
+2025-11-29 23:15:38,566 [ 4/18] Disassembling C003... [OK]
+2025-11-29 23:15:38,566 [ 5/18] Disassembling C007... [OK]
+2025-11-29 23:15:38,566 [ 6/18] Disassembling C008... [OK]
+2025-11-29 23:15:38,566 [ 7/18] Disassembling C004... [OK]
+2025-11-29 23:15:38,566 [ 8/18] Disassembling C005... [OK]
+2025-11-29 23:15:38,566 [ 9/18] Disassembling C006... [OK]
+2025-11-29 23:15:38,566 [10/18] Disassembling C011... [OK]
+2025-11-29 23:15:38,566 [11/18] Disassembling C014... [OK]
+2025-11-29 23:15:38,566 [12/18] Disassembling C010... [OK]
+2025-11-29 23:15:38,566 [13/18] Disassembling C012... [OK]
+2025-11-29 23:15:38,566 [14/18] Disassembling C013... [OK]
+2025-11-29 23:15:38,566 [15/18] Disassembling C019... [OK]
+2025-11-29 23:15:38,566 [16/18] Disassembling C020... [OK]
+2025-11-29 23:15:38,566 [17/18] Disassembling C018... [OK]
+2025-11-29 23:15:38,566 [18/18] Disassembling C021... [OK]
+2025-11-29 23:15:38,566 [2/4] Failure scenario loaded: 2 failure(s)
+2025-11-29 23:15:38,566 [3/4] Executing adaptive scheduler...
+2025-11-29 23:15:38,590 [FUZZY] Symptom: ACCESS_BLOCKED
+2025-11-29 23:15:38,591 [FUZZY] Inputs: force=60.0, torque=40.0, p_fail=50.0, context=0.0
+2025-11-29 23:15:38,591 [FUZZY] Score: 40.00
+2025-11-29 23:15:38,591 [FUZZY] Decision: bypass (confidence=100.0%)
+2025-11-29 23:15:38,591 [ACTION] bypass: success=True, notes=Component C011 bypassed.
+2025-11-29 23:15:38,656 [FUZZY] Symptom: ACCESS_BLOCKED
+2025-11-29 23:15:38,656 [FUZZY] Inputs: force=60.0, torque=40.0, p_fail=50.0, context=0.0
+2025-11-29 23:15:38,656 [FUZZY] Score: 40.00
+2025-11-29 23:15:38,656 [FUZZY] Decision: bypass (confidence=100.0%)
+2025-11-29 23:15:38,656 [ACTION] bypass: success=True, notes=Component C018 bypassed.
+2025-11-29 23:15:38,656 Adaptive scheduler finished. Actions taken: 2
+2025-11-29 23:15:38,656 EXECUTION SUMMARY
+2025-11-29 23:15:38,656 Status: SUCCESS
+2025-11-29 23:15:38,656 Target components:
+2025-11-29 23:15:38,656 [OK] C021 - Successfully disassembled
+2025-11-29 23:15:38,657 Execution metrics:
+2025-11-29 23:15:38,657 Targets achieved: 1/1 (100.0%)
+2025-11-29 23:15:38,657 Failures handled: 2
+2025-11-29 23:15:38,657 Actions taken: 2
+2025-11-29 23:15:38,657 Components done: 16/18
+2025-11-29 23:15:38,657 Locked: 2 component(s)
+2025-11-29 23:15:38,657 Execution time: 0.11s
+2025-11-29 23:15:38,657 Actions breakdown:
+2025-11-29 23:15:38,657 [OK] C011     ACCESS_BLOCKED       -> bypass      
+2025-11-29 23:15:38,657 [OK] C018     ACCESS_BLOCKED       -> bypass      
+2025-11-29 23:15:38,657 Detailed logs: results\save\test_failures\scholl_roszieg_n=25\intermediate
+2025-11-29 23:15:38,660 Pipeline finished successfully

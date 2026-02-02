@@ -1,0 +1,9 @@
+--- Pipeline run 2025-11-29 23:15:29.851630 ---
+Instance: unknown
+Initial solution: ['C019', 'C034', 'C056', 'C071', 'C096', 'C106']
+Final state:
+  - Locked: {'C071'}
+  - Destroyed: set()
+  - Done: {'C019', 'C096', 'C106', 'C056', 'C034'}
+  - Notes: ['Destruction interdite pour C071 : Profit=27.00 > seuil=22.00 (percentile 20e).', 'Bypass impossible pour C071: aucun chemin alternatif', 'Aucun outil alternatif pour C071']
+Actions taken: [{'comp_id': 'C071', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy', 'success': False, 'notes': 'Destruction non autorisée : Profit=27.00 > seuil=22.00 (percentile 20e).'}, {'comp_id': 'C071', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy→replan', 'success': True, 'notes': 'Fallback succeeded'}]

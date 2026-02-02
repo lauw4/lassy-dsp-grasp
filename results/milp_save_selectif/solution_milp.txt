@@ -1,0 +1,17 @@
+=== Résultat MILP ===
+Statut : Optimal
+Profit net = 111.00
+Makespan   = 18.10
+
+Composants ciblés : 7, 10
+
+• Pièce 1 retirée à la position 1
+• Pièce 2 retirée à la position 2
+• Pièce 3 retirée à la position 3
+• Pièce 4 retirée à la position 4
+• Pièce 5 retirée à la position 5
+• Pièce 6 retirée à la position 6
+• Pièce 7 retirée à la position 7 [TARGET]
+• Pièce 8 retirée à la position 8
+• Pièce 10 retirée à la position 9 [TARGET]
+• Pièce 9 retirée à la position 10

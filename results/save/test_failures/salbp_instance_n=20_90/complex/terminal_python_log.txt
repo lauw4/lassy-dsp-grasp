@@ -1,0 +1,49 @@
+2025-11-29 23:16:26,149 DSP ADAPTIVE PIPELINE - SALBP_INSTANCE_N=20_90
+2025-11-29 23:16:26,150 Loaded instance: salbp_instance_n=20_90
+2025-11-29 23:16:26,150 Loaded failures: 2
+2025-11-29 23:16:26,150 [1/4] Loading instance and solving DSP...
+2025-11-29 23:16:26,165 Nodes: 20, Edges: 23, Targets: 1, Solution: 11 operations
+2025-11-29 23:16:26,165 Target(s) to achieve: ['C019']
+2025-11-29 23:16:26,166 Starting disassembly sequence (11 operations)...
+2025-11-29 23:16:26,166 [ 1/11] Disassembling C001... [OK]
+2025-11-29 23:16:26,166 [ 2/11] Disassembling C002... [OK]
+2025-11-29 23:16:26,166 [ 3/11] Disassembling C003... [OK]
+2025-11-29 23:16:26,166 [ 4/11] Disassembling C004... [OK]
+2025-11-29 23:16:26,166 [ 5/11] Disassembling C006... [OK]
+2025-11-29 23:16:26,166 [ 6/11] Disassembling C007... [OK]
+2025-11-29 23:16:26,166 [ 7/11] Disassembling C000... [OK]
+2025-11-29 23:16:26,166 [ 8/11] Disassembling C009... [OK]
+2025-11-29 23:16:26,166 [ 9/11] Disassembling C010... [OK]
+2025-11-29 23:16:26,166 [10/11] Disassembling C012... [OK]
+2025-11-29 23:16:26,166 [11/11] Disassembling C019... [OK]
+2025-11-29 23:16:26,166 [2/4] Failure scenario loaded: 2 failure(s)
+2025-11-29 23:16:26,166 [3/4] Executing adaptive scheduler...
+2025-11-29 23:16:26,187 [FUZZY] Symptom: OVER_TORQUE_NO_ADVANCE
+2025-11-29 23:16:26,187 [FUZZY] Inputs: force=70.0, torque=80.0, p_fail=85.0, context=0.0
+2025-11-29 23:16:26,187 [FUZZY] Score: 71.71
+2025-11-29 23:16:26,189 [FUZZY] Decision: destroy (confidence=59.1%)
+2025-11-29 23:16:26,189 [ACTION] destroy: success=False, notes=Destruction non autorisée : Profit=23.00 > seuil=22.00 (percentile 20e).
+2025-11-29 23:16:26,246 [FUZZY] Symptom: OVER_TORQUE_NO_ADVANCE
+2025-11-29 23:16:26,247 [FUZZY] Inputs: force=70.0, torque=80.0, p_fail=65.0, context=0.0
+2025-11-29 23:16:26,247 [FUZZY] Score: 65.47
+2025-11-29 23:16:26,247 [FUZZY] Decision: destroy (confidence=86.8%)
+2025-11-29 23:16:26,247 [ACTION] destroy: success=False, notes=Destruction non autorisée : Flag 'no_destroy' actif (contexte ou graphe).
+2025-11-29 23:16:26,248 Adaptive scheduler finished. Actions taken: 4
+2025-11-29 23:16:26,248 EXECUTION SUMMARY
+2025-11-29 23:16:26,248 Status: SUCCESS
+2025-11-29 23:16:26,248 Target components:
+2025-11-29 23:16:26,248 [OK] C019 - Successfully disassembled
+2025-11-29 23:16:26,248 Execution metrics:
+2025-11-29 23:16:26,248 Targets achieved: 1/1 (100.0%)
+2025-11-29 23:16:26,248 Failures handled: 2
+2025-11-29 23:16:26,249 Actions taken: 4
+2025-11-29 23:16:26,249 Components done: 9/11
+2025-11-29 23:16:26,249 Locked: 2 component(s)
+2025-11-29 23:16:26,249 Execution time: 0.10s
+2025-11-29 23:16:26,249 Actions breakdown:
+2025-11-29 23:16:26,249 [FAILED] C009     OVER_TORQUE_NO_ADVANCE -> destroy     
+2025-11-29 23:16:26,249 [OK] C009     OVER_TORQUE_NO_ADVANCE -> destroy\u2192replan
+2025-11-29 23:16:26,249 [FAILED] C012     OVER_TORQUE_NO_ADVANCE -> destroy     
+2025-11-29 23:16:26,249 [OK] C012     OVER_TORQUE_NO_ADVANCE -> destroy\u2192bypass
+2025-11-29 23:16:26,249 Detailed logs: results\save\test_failures\salbp_instance_n=20_90\complex
+2025-11-29 23:16:26,252 Pipeline finished successfully

@@ -1,0 +1,44 @@
+[
+  {
+    "comp_id": "C035",
+    "symptom": "ACCESS_BLOCKED",
+    "action": "destroy",
+    "success": false,
+    "notes": "Destruction non autoris\u00e9e : Profit=50.00 > seuil=21.00 (percentile 20e)."
+  },
+  {
+    "comp_id": "C035",
+    "symptom": "ACCESS_BLOCKED",
+    "action": "destroy\u2192replan",
+    "success": true,
+    "notes": "Fallback succeeded"
+  },
+  {
+    "comp_id": "C026",
+    "symptom": "OVER_TORQUE_NO_ADVANCE",
+    "action": "destroy",
+    "success": false,
+    "notes": "Destruction non autoris\u00e9e : Profit=54.00 > seuil=21.00 (percentile 20e)."
+  },
+  {
+    "comp_id": "C026",
+    "symptom": "OVER_TORQUE_NO_ADVANCE",
+    "action": "destroy\u2192replan",
+    "success": true,
+    "notes": "Fallback succeeded"
+  },
+  {
+    "comp_id": "C042",
+    "symptom": "OVER_TORQUE_NO_ADVANCE",
+    "action": "destroy",
+    "success": false,
+    "notes": "Destruction non autoris\u00e9e : Flag 'no_destroy' actif (contexte ou graphe)."
+  },
+  {
+    "comp_id": "C042",
+    "symptom": "OVER_TORQUE_NO_ADVANCE",
+    "action": "destroy\u2192bypass",
+    "success": true,
+    "notes": "Fallback succeeded"
+  }
+]

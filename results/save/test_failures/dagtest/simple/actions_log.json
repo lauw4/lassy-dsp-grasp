@@ -1,0 +1,9 @@
+[
+  {
+    "comp_id": "N13",
+    "symptom": "LOW_VALUE_BOTTLENECK",
+    "action": "bypass",
+    "success": true,
+    "notes": "Component N13 bypassed."
+  }
+]

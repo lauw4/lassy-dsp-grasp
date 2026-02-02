@@ -1,0 +1,120 @@
+2025-11-29 23:15:56,945 DSP ADAPTIVE PIPELINE - SCHOLL_ARC83_N=83
+2025-11-29 23:15:56,947 Loaded instance: scholl_arc83_n=83
+2025-11-29 23:15:56,948 Loaded failures: 2
+2025-11-29 23:15:56,948 [1/4] Loading instance and solving DSP...
+2025-11-29 23:15:57,108 Nodes: 83, Edges: 113, Targets: 1, Solution: 83 operations
+2025-11-29 23:15:57,108 Target(s) to achieve: ['C082']
+2025-11-29 23:15:57,108 Starting disassembly sequence (83 operations)...
+2025-11-29 23:15:57,108 [ 1/83] Disassembling C000... [OK]
+2025-11-29 23:15:57,108 [ 2/83] Disassembling C001... [OK]
+2025-11-29 23:15:57,108 [ 3/83] Disassembling C004... [OK]
+2025-11-29 23:15:57,108 [ 4/83] Disassembling C003... [OK]
+2025-11-29 23:15:57,108 [ 5/83] Disassembling C002... [OK]
+2025-11-29 23:15:57,108 [ 6/83] Disassembling C005... [OK]
+2025-11-29 23:15:57,108 [ 7/83] Disassembling C006... [OK]
+2025-11-29 23:15:57,108 [ 8/83] Disassembling C009... [OK]
+2025-11-29 23:15:57,108 [ 9/83] Disassembling C008... [OK]
+2025-11-29 23:15:57,108 [10/83] Disassembling C010... [OK]
+2025-11-29 23:15:57,109 [11/83] Disassembling C024... [OK]
+2025-11-29 23:15:57,109 [12/83] Disassembling C012... [OK]
+2025-11-29 23:15:57,109 [13/83] Disassembling C014... [OK]
+2025-11-29 23:15:57,109 [14/83] Disassembling C007... [OK]
+2025-11-29 23:15:57,109 [15/83] Disassembling C017... [OK]
+2025-11-29 23:15:57,109 [16/83] Disassembling C022... [OK]
+2025-11-29 23:15:57,109 [17/83] Disassembling C016... [OK]
+2025-11-29 23:15:57,109 [18/83] Disassembling C013... [OK]
+2025-11-29 23:15:57,109 [19/83] Disassembling C019... [OK]
+2025-11-29 23:15:57,109 [20/83] Disassembling C020... [OK]
+2025-11-29 23:15:57,109 [21/83] Disassembling C021... [OK]
+2025-11-29 23:15:57,109 [22/83] Disassembling C011... [OK]
+2025-11-29 23:15:57,109 [23/83] Disassembling C015... [OK]
+2025-11-29 23:15:57,109 [24/83] Disassembling C018... [OK]
+2025-11-29 23:15:57,109 [25/83] Disassembling C025... [OK]
+2025-11-29 23:15:57,109 [26/83] Disassembling C023... [OK]
+2025-11-29 23:15:57,109 [27/83] Disassembling C027... [OK]
+2025-11-29 23:15:57,109 [28/83] Disassembling C026... [OK]
+2025-11-29 23:15:57,109 [29/83] Disassembling C031... [OK]
+2025-11-29 23:15:57,109 [30/83] Disassembling C028... [OK]
+2025-11-29 23:15:57,109 [31/83] Disassembling C034... [OK]
+2025-11-29 23:15:57,109 [32/83] Disassembling C029... [OK]
+2025-11-29 23:15:57,109 [33/83] Disassembling C030... [OK]
+2025-11-29 23:15:57,109 [34/83] Disassembling C032... [OK]
+2025-11-29 23:15:57,109 [35/83] Disassembling C035... [OK]
+2025-11-29 23:15:57,109 [36/83] Disassembling C036... [OK]
+2025-11-29 23:15:57,109 [37/83] Disassembling C033... [OK]
+2025-11-29 23:15:57,109 [38/83] Disassembling C039... [OK]
+2025-11-29 23:15:57,109 [39/83] Disassembling C037... [OK]
+2025-11-29 23:15:57,109 [40/83] Disassembling C038... [OK]
+2025-11-29 23:15:57,109 [41/83] Disassembling C041... [OK]
+2025-11-29 23:15:57,109 [42/83] Disassembling C043... [OK]
+2025-11-29 23:15:57,109 [43/83] Disassembling C045... [OK]
+2025-11-29 23:15:57,110 [44/83] Disassembling C042... [OK]
+2025-11-29 23:15:57,110 [45/83] Disassembling C040... [OK]
+2025-11-29 23:15:57,110 [46/83] Disassembling C047... [OK]
+2025-11-29 23:15:57,110 [47/83] Disassembling C044... [OK]
+2025-11-29 23:15:57,110 [48/83] Disassembling C046... [OK]
+2025-11-29 23:15:57,110 [49/83] Disassembling C048... [OK]
+2025-11-29 23:15:57,110 [50/83] Disassembling C068... [OK]
+2025-11-29 23:15:57,110 [51/83] Disassembling C070... [OK]
+2025-11-29 23:15:57,110 [52/83] Disassembling C069... [OK]
+2025-11-29 23:15:57,110 [53/83] Disassembling C071... [OK]
+2025-11-29 23:15:57,110 [54/83] Disassembling C072... [OK]
+2025-11-29 23:15:57,110 [55/83] Disassembling C049... [OK]
+2025-11-29 23:15:57,110 [56/83] Disassembling C050... [OK]
+2025-11-29 23:15:57,110 [57/83] Disassembling C051... [OK]
+2025-11-29 23:15:57,110 [58/83] Disassembling C052... [OK]
+2025-11-29 23:15:57,110 [59/83] Disassembling C053... [OK]
+2025-11-29 23:15:57,110 [60/83] Disassembling C054... [OK]
+2025-11-29 23:15:57,110 [61/83] Disassembling C055... [OK]
+2025-11-29 23:15:57,110 [62/83] Disassembling C056... [OK]
+2025-11-29 23:15:57,110 [63/83] Disassembling C057... [OK]
+2025-11-29 23:15:57,110 [64/83] Disassembling C058... [OK]
+2025-11-29 23:15:57,110 [65/83] Disassembling C059... [OK]
+2025-11-29 23:15:57,110 [66/83] Disassembling C060... [OK]
+2025-11-29 23:15:57,110 [67/83] Disassembling C061... [OK]
+2025-11-29 23:15:57,110 [68/83] Disassembling C062... [OK]
+2025-11-29 23:15:57,110 [69/83] Disassembling C063... [OK]
+2025-11-29 23:15:57,110 [70/83] Disassembling C064... [OK]
+2025-11-29 23:15:57,110 [71/83] Disassembling C065... [OK]
+2025-11-29 23:15:57,110 [72/83] Disassembling C066... [OK]
+2025-11-29 23:15:57,110 [73/83] Disassembling C067... [OK]
+2025-11-29 23:15:57,110 [74/83] Disassembling C073... [OK]
+2025-11-29 23:15:57,111 [75/83] Disassembling C074... [OK]
+2025-11-29 23:15:57,111 [76/83] Disassembling C075... [OK]
+2025-11-29 23:15:57,111 [77/83] Disassembling C076... [OK]
+2025-11-29 23:15:57,111 [78/83] Disassembling C077... [OK]
+2025-11-29 23:15:57,111 [79/83] Disassembling C078... [OK]
+2025-11-29 23:15:57,111 [80/83] Disassembling C079... [OK]
+2025-11-29 23:15:57,111 [81/83] Disassembling C081... [OK]
+2025-11-29 23:15:57,111 [82/83] Disassembling C080... [OK]
+2025-11-29 23:15:57,111 [83/83] Disassembling C082... [OK]
+2025-11-29 23:15:57,111 [2/4] Failure scenario loaded: 2 failure(s)
+2025-11-29 23:15:57,111 [3/4] Executing adaptive scheduler...
+2025-11-29 23:15:57,132 [FUZZY] Symptom: LOW_VALUE_BOTTLENECK
+2025-11-29 23:15:57,132 [FUZZY] Inputs: force=30.0, torque=20.0, p_fail=60.0, context=0.0
+2025-11-29 23:15:57,132 [FUZZY] Score: 40.00
+2025-11-29 23:15:57,132 [FUZZY] Decision: bypass (confidence=100.0%)
+2025-11-29 23:15:57,133 [ACTION] bypass: success=True, notes=Component C007 bypassed.
+2025-11-29 23:15:57,179 [FUZZY] Symptom: OVER_TORQUE_NO_ADVANCE
+2025-11-29 23:15:57,179 [FUZZY] Inputs: force=70.0, torque=80.0, p_fail=75.0, context=0.0
+2025-11-29 23:15:57,179 [FUZZY] Score: 70.67
+2025-11-29 23:15:57,179 [FUZZY] Decision: destroy (confidence=63.7%)
+2025-11-29 23:15:57,180 [ACTION] destroy: success=False, notes=Destruction non autorisée : Profit=74.00 > seuil=21.40 (percentile 20e).
+2025-11-29 23:15:57,180 Adaptive scheduler finished. Actions taken: 3
+2025-11-29 23:15:57,180 EXECUTION SUMMARY
+2025-11-29 23:15:57,181 Status: SUCCESS
+2025-11-29 23:15:57,181 Target components:
+2025-11-29 23:15:57,181 [OK] C082 - Successfully disassembled
+2025-11-29 23:15:57,181 Execution metrics:
+2025-11-29 23:15:57,181 Targets achieved: 1/1 (100.0%)
+2025-11-29 23:15:57,181 Failures handled: 2
+2025-11-29 23:15:57,181 Actions taken: 3
+2025-11-29 23:15:57,181 Components done: 81/83
+2025-11-29 23:15:57,181 Locked: 2 component(s)
+2025-11-29 23:15:57,181 Execution time: 0.24s
+2025-11-29 23:15:57,181 Actions breakdown:
+2025-11-29 23:15:57,181 [OK] C007     LOW_VALUE_BOTTLENECK -> bypass      
+2025-11-29 23:15:57,181 [FAILED] C046     OVER_TORQUE_NO_ADVANCE -> destroy     
+2025-11-29 23:15:57,181 [OK] C046     OVER_TORQUE_NO_ADVANCE -> destroy\u2192bypass
+2025-11-29 23:15:57,181 Detailed logs: results\save\test_failures\scholl_arc83_n=83\intermediate
+2025-11-29 23:15:57,183 Pipeline finished successfully

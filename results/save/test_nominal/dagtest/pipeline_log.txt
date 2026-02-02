@@ -1,0 +1,9 @@
+--- Pipeline run 2025-11-29 22:24:07.345776 ---
+Instance: unknown
+Initial solution: ['N02', 'N01', 'N03', 'N06', 'N07', 'N05', 'N04', 'N11', 'N08', 'N13', 'N09', 'N10', 'N17', 'N15', 'N12', 'N18', 'N16', 'N14', 'N19', 'N21', 'N20', 'N22']
+Final state:
+  - Locked: set()
+  - Destroyed: set()
+  - Done: {'N05', 'N07', 'N13', 'N21', 'N10', 'N17', 'N16', 'N02', 'N09', 'N15', 'N20', 'N03', 'N22', 'N19', 'N08', 'N18', 'N12', 'N01', 'N06', 'N04', 'N11', 'N14'}
+  - Notes: []
+Actions taken: []

@@ -1,0 +1,36 @@
+2025-11-29 23:15:23,669 DSP ADAPTIVE PIPELINE - SALBP_INSTANCE_N=1000_1_CUT115
+2025-11-29 23:15:23,672 Loaded instance: salbp_instance_n=1000_1_cut115
+2025-11-29 23:15:23,673 Loaded failures: 1
+2025-11-29 23:15:23,673 [1/4] Loading instance and solving DSP...
+2025-11-29 23:15:23,700 Nodes: 115, Edges: 100, Targets: 1, Solution: 5 operations
+2025-11-29 23:15:23,700 Target(s) to achieve: ['C085']
+2025-11-29 23:15:23,700 Starting disassembly sequence (5 operations)...
+2025-11-29 23:15:23,700 [ 1/5] Disassembling C010... [OK]
+2025-11-29 23:15:23,700 [ 2/5] Disassembling C033... [OK]
+2025-11-29 23:15:23,700 [ 3/5] Disassembling C058... [OK]
+2025-11-29 23:15:23,700 [ 4/5] Disassembling C069... [OK]
+2025-11-29 23:15:23,700 [ 5/5] Disassembling C085... [OK]
+2025-11-29 23:15:23,700 [2/4] Failure scenario loaded: 1 failure(s)
+2025-11-29 23:15:23,700 [3/4] Executing adaptive scheduler...
+2025-11-29 23:15:23,720 [FUZZY] Symptom: OVER_TORQUE_NO_ADVANCE
+2025-11-29 23:15:23,720 [FUZZY] Inputs: force=70.0, torque=80.0, p_fail=85.0, context=0.0
+2025-11-29 23:15:23,720 [FUZZY] Score: 71.71
+2025-11-29 23:15:23,720 [FUZZY] Decision: destroy (confidence=59.1%)
+2025-11-29 23:15:23,721 [ACTION] destroy: success=False, notes=Destruction non autorisée : Flag 'no_destroy' actif (contexte ou graphe).
+2025-11-29 23:15:23,721 Adaptive scheduler finished. Actions taken: 2
+2025-11-29 23:15:23,721 EXECUTION SUMMARY
+2025-11-29 23:15:23,721 Status: SUCCESS
+2025-11-29 23:15:23,721 Target components:
+2025-11-29 23:15:23,721 [OK] C085 - Successfully disassembled
+2025-11-29 23:15:23,721 Execution metrics:
+2025-11-29 23:15:23,721 Targets achieved: 1/1 (100.0%)
+2025-11-29 23:15:23,721 Failures handled: 1
+2025-11-29 23:15:23,721 Actions taken: 2
+2025-11-29 23:15:23,723 Components done: 4/5
+2025-11-29 23:15:23,723 Locked: 1 component(s)
+2025-11-29 23:15:23,723 Execution time: 0.05s
+2025-11-29 23:15:23,723 Actions breakdown:
+2025-11-29 23:15:23,723 [FAILED] C058     OVER_TORQUE_NO_ADVANCE -> destroy     
+2025-11-29 23:15:23,723 [OK] C058     OVER_TORQUE_NO_ADVANCE -> destroy\u2192bypass
+2025-11-29 23:15:23,723 Detailed logs: results\save\test_failures\salbp_instance_n=1000_1_cut115\simple
+2025-11-29 23:15:23,725 Pipeline finished successfully

@@ -1,0 +1,46 @@
+[
+    {
+        "comp_id": "N07",
+        "op_type": "unscrew",
+        "tool_id": "T_hex",
+        "symptom": "OVER_TORQUE_NO_ADVANCE",
+        "signals": {
+            "force": 30.0,
+            "torque": 25.0,
+            "torque_max": 40.0,
+            "torque_nominal": 20.0,
+            "angle_delta": 0.0
+        },
+        "context": {
+            "value_piece": 12,
+            "no_destroy": false,
+            "alt_tools_available": [
+                "T_extractor"
+            ]
+        },
+        "history": {
+            "failure_count": 0
+        },
+        "timestamp": "2025-11-08T09:00:00Z"
+    },
+    {
+        "comp_id": "N12",
+        "op_type": "unscrew",
+        "tool_id": "T_hex",
+        "symptom": "ACCESS_BLOCKED",
+        "signals": {
+            "force": 42.0,
+            "torque": 38.0,
+            "access_blocked": 1
+        },
+        "context": {
+            "value_piece": 15,
+            "no_destroy": false,
+            "alt_paths": true
+        },
+        "history": {
+            "failure_count": 0
+        },
+        "timestamp": "2025-11-08T09:05:00Z"
+    }
+]

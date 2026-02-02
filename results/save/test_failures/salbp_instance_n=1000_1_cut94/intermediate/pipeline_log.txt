@@ -1,0 +1,9 @@
+--- Pipeline run 2025-11-29 23:16:06.827097 ---
+Instance: unknown
+Initial solution: ['C016', 'C031', 'C059', 'C074', 'C011', 'C076']
+Final state:
+  - Locked: {'C031'}
+  - Destroyed: set()
+  - Done: {'C016', 'C074', 'C059', 'C076', 'C011'}
+  - Notes: ["Destruction interdite pour C031 : Flag 'no_destroy' actif (contexte ou graphe)."]
+Actions taken: [{'comp_id': 'C031', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy', 'success': False, 'notes': "Destruction non autorisée : Flag 'no_destroy' actif (contexte ou graphe)."}, {'comp_id': 'C031', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy→bypass', 'success': True, 'notes': 'Fallback succeeded'}]

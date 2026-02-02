@@ -1,0 +1,9 @@
+[
+  {
+    "comp_id": "C024",
+    "symptom": "ACCESS_BLOCKED",
+    "action": "destroy",
+    "success": true,
+    "notes": "Destruction autoris\u00e9e (cutoff percentile 20e)."
+  }
+]

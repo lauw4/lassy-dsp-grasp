@@ -1,0 +1,61 @@
+[
+  {
+    "comp_id": "N21",
+    "op_type": "unscrew",
+    "tool_id": "T_hex",
+    "symptom": "ACCESS_BLOCKED",
+    "signals": {
+      "force": 35.5,
+      "torque": 31.2,
+      "access_blocked": 1
+    },
+    "context": {
+      "value_piece": 20,
+      "no_destroy": false,
+      "alt_paths": true
+    },
+    "history": {
+      "failure_count": 0
+    },
+    "timestamp": "2025-11-07T01:30:22.947637Z"
+  },
+  {
+    "comp_id": "N23",
+    "op_type": "unscrew",
+    "tool_id": "T_hex",
+    "symptom": "ACCESS_BLOCKED",
+    "signals": {
+      "force": 32.0,
+      "torque": 41.7,
+      "access_blocked": 1
+    },
+    "context": {
+      "value_piece": 20,
+      "no_destroy": false,
+      "alt_paths": true
+    },
+    "history": {
+      "failure_count": 1
+    },
+    "timestamp": "2025-11-07T01:31:22.947637Z"
+  },
+  {
+    "comp_id": "N18",
+    "op_type": "unscrew",
+    "tool_id": "T_hex",
+    "symptom": "LOW_VALUE_BOTTLENECK",
+    "signals": {
+      "force": 52.8,
+      "torque": 39.8,
+      "bottleneck_detected": 1
+    },
+    "context": {
+      "value_piece": 20,
+      "no_destroy": false
+    },
+    "history": {
+      "failure_count": 2
+    },
+    "timestamp": "2025-11-07T01:32:22.947637Z"
+  }
+]

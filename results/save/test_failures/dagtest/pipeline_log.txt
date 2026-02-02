@@ -1,0 +1,10 @@
+--- Pipeline run 2025-12-18 15:47:28.847807 ---
+Instance: unknown
+Initial solution: ['N01', 'N05', 'N02', 'N06', 'N10', 'N03', 'N04', 'N08', 'N07', 'N09', 'N11', 'N15', 'N14', 'N12', 'N17', 'N16', 'N20', 'N19', 'N13', 'N18', 'N21', 'N22']
+Final state:
+  - Locked: {'N11', 'N14', 'N13', 'N16', 'N07', 'N20', 'N18', 'N15', 'N17', 'N22', 'N19', 'N12', 'N09', 'N21'}
+  - Destroyed: set()
+  - Done: {'N10', 'N01', 'N03', 'N05', 'N08', 'N04', 'N06', 'N02'}
+  - Skipped: set()
+  - Notes: ["Destruction interdite pour N07 : Flag 'no_destroy' actif (contexte ou graphe).", 'Bypass impossible pour N07: aucun chemin alternatif', 'Aucun outil alternatif pour N07', 'Destruction interdite pour N07 : Destruction refusée : pièce protégée (no_destroy=true), approbation humaine requise.']
+Actions taken: [{'comp_id': 'N06', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'change_tool', 'success': True, 'notes': 'Outil alternatif proposé.'}, {'comp_id': 'N07', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy', 'success': False, 'notes': "Destruction non autorisée : Flag 'no_destroy' actif (contexte ou graphe)."}]

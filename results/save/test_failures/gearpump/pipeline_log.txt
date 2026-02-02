@@ -1,0 +1,10 @@
+--- Pipeline run 2026-01-14 16:55:34.212008 ---
+Instance: unknown
+Initial solution: ['G06', 'G04', 'G02', 'G03', 'G01', 'G05', 'G08', 'G07', 'G09', 'G13', 'G17', 'G10', 'G14', 'G12', 'G11', 'G15', 'G16', 'G18', 'G19', 'G20']
+Final state:
+  - Locked: set()
+  - Destroyed: {'G13', 'G15'}
+  - Done: {'G06', 'G20', 'G05', 'G16', 'G01', 'G03', 'G09', 'G17', 'G07', 'G11', 'G10', 'G12', 'G04', 'G18', 'G19', 'G02', 'G08'}
+  - Skipped: {'G14'}
+  - Notes: ['Bypass impossible pour G15: aucun chemin alternatif', 'Aucun outil alternatif pour G15']
+Actions taken: [{'comp_id': 'G07', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'change_tool', 'success': True, 'notes': 'Outil alternatif proposé.'}, {'comp_id': 'G13', 'symptom': 'LOW_VALUE_BOTTLENECK', 'action': 'destroy', 'success': True, 'notes': 'Destruction autorisée (cutoff percentile 20e).'}, {'comp_id': 'G14', 'symptom': 'ACCESS_BLOCKED', 'action': 'bypass', 'success': True, 'notes': 'Component G14 bypassed (skipped).'}, {'comp_id': 'G15', 'symptom': 'ACCESS_BLOCKED', 'action': 'bypass', 'success': False, 'notes': 'Aucun chemin alternatif dans le graphe.'}, {'comp_id': 'G15', 'symptom': 'ACCESS_BLOCKED', 'action': 'bypass→destroy', 'success': True, 'notes': 'Fallback succeeded'}]

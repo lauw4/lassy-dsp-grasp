@@ -1,0 +1,63 @@
+2025-11-29 22:24:17,431 DSP ADAPTIVE PIPELINE - SCHOLL_TONGE70_N=70
+2025-11-29 22:24:17,431 Loaded instance: scholl_tonge70_n=70
+2025-11-29 22:24:17,431 Loaded failures: 0
+2025-11-29 22:24:17,431 [1/4] Loading instance and solving DSP...
+2025-11-29 22:24:17,490 Nodes: 70, Edges: 86, Targets: 2, Solution: 40 operations
+2025-11-29 22:24:17,490 Target(s) to achieve: ['C010', 'C054']
+2025-11-29 22:24:17,490 Starting disassembly sequence (40 operations)...
+2025-11-29 22:24:17,490 [ 1/40] Disassembling C004... [OK]
+2025-11-29 22:24:17,490 [ 2/40] Disassembling C023... [OK]
+2025-11-29 22:24:17,490 [ 3/40] Disassembling C029... [OK]
+2025-11-29 22:24:17,490 [ 4/40] Disassembling C008... [OK]
+2025-11-29 22:24:17,490 [ 5/40] Disassembling C000... [OK]
+2025-11-29 22:24:17,490 [ 6/40] Disassembling C014... [OK]
+2025-11-29 22:24:17,490 [ 7/40] Disassembling C001... [OK]
+2025-11-29 22:24:17,490 [ 8/40] Disassembling C015... [OK]
+2025-11-29 22:24:17,490 [ 9/40] Disassembling C017... [OK]
+2025-11-29 22:24:17,490 [10/40] Disassembling C002... [OK]
+2025-11-29 22:24:17,490 [11/40] Disassembling C009... [OK]
+2025-11-29 22:24:17,490 [12/40] Disassembling C010... [OK]
+2025-11-29 22:24:17,490 [13/40] Disassembling C003... [OK]
+2025-11-29 22:24:17,490 [14/40] Disassembling C016... [OK]
+2025-11-29 22:24:17,490 [15/40] Disassembling C005... [OK]
+2025-11-29 22:24:17,490 [16/40] Disassembling C018... [OK]
+2025-11-29 22:24:17,490 [17/40] Disassembling C021... [OK]
+2025-11-29 22:24:17,490 [18/40] Disassembling C019... [OK]
+2025-11-29 22:24:17,490 [19/40] Disassembling C020... [OK]
+2025-11-29 22:24:17,490 [20/40] Disassembling C006... [OK]
+2025-11-29 22:24:17,490 [21/40] Disassembling C007... [OK]
+2025-11-29 22:24:17,490 [22/40] Disassembling C011... [OK]
+2025-11-29 22:24:17,490 [23/40] Disassembling C012... [OK]
+2025-11-29 22:24:17,490 [24/40] Disassembling C013... [OK]
+2025-11-29 22:24:17,490 [25/40] Disassembling C022... [OK]
+2025-11-29 22:24:17,490 [26/40] Disassembling C032... [OK]
+2025-11-29 22:24:17,490 [27/40] Disassembling C030... [OK]
+2025-11-29 22:24:17,490 [28/40] Disassembling C031... [OK]
+2025-11-29 22:24:17,490 [29/40] Disassembling C024... [OK]
+2025-11-29 22:24:17,490 [30/40] Disassembling C027... [OK]
+2025-11-29 22:24:17,490 [31/40] Disassembling C025... [OK]
+2025-11-29 22:24:17,490 [32/40] Disassembling C026... [OK]
+2025-11-29 22:24:17,490 [33/40] Disassembling C033... [OK]
+2025-11-29 22:24:17,490 [34/40] Disassembling C028... [OK]
+2025-11-29 22:24:17,490 [35/40] Disassembling C034... [OK]
+2025-11-29 22:24:17,490 [36/40] Disassembling C050... [OK]
+2025-11-29 22:24:17,490 [37/40] Disassembling C051... [OK]
+2025-11-29 22:24:17,490 [38/40] Disassembling C052... [OK]
+2025-11-29 22:24:17,490 [39/40] Disassembling C053... [OK]
+2025-11-29 22:24:17,490 [40/40] Disassembling C054... [OK]
+2025-11-29 22:24:17,490 [2/4] No failures (nominal execution)
+2025-11-29 22:24:17,490 [3/4] Executing adaptive scheduler...
+2025-11-29 22:24:17,490 Adaptive scheduler finished. Actions taken: 0
+2025-11-29 22:24:17,490 EXECUTION SUMMARY
+2025-11-29 22:24:17,490 Status: SUCCESS
+2025-11-29 22:24:17,490 Target components:
+2025-11-29 22:24:17,490 [OK] C010 - Successfully disassembled
+2025-11-29 22:24:17,490 [OK] C054 - Successfully disassembled
+2025-11-29 22:24:17,490 Execution metrics:
+2025-11-29 22:24:17,490 Targets achieved: 2/2 (100.0%)
+2025-11-29 22:24:17,490 Failures handled: 0
+2025-11-29 22:24:17,490 Actions taken: 0
+2025-11-29 22:24:17,490 Components done: 40/40
+2025-11-29 22:24:17,490 Execution time: 0.06s
+2025-11-29 22:24:17,490 Detailed logs: results\save\test_nominal\scholl_tonge70_n=70
+2025-11-29 22:24:17,490 Pipeline finished successfully

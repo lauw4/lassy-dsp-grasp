@@ -1,0 +1,61 @@
+2025-11-29 23:17:01,938 DSP ADAPTIVE PIPELINE - SALBP_INSTANCE_N=1000_1_CUT124
+2025-11-29 23:17:01,938 Loaded instance: salbp_instance_n=1000_1_cut124
+2025-11-29 23:17:01,938 Loaded failures: 3
+2025-11-29 23:17:01,938 [1/4] Loading instance and solving DSP...
+2025-11-29 23:17:01,977 Nodes: 124, Edges: 109, Targets: 1, Solution: 16 operations
+2025-11-29 23:17:01,977 Target(s) to achieve: ['C100']
+2025-11-29 23:17:01,977 Starting disassembly sequence (16 operations)...
+2025-11-29 23:17:01,977 [ 1/16] Disassembling C010... [OK]
+2025-11-29 23:17:01,977 [ 2/16] Disassembling C017... [OK]
+2025-11-29 23:17:01,977 [ 3/16] Disassembling C035... [OK]
+2025-11-29 23:17:01,977 [ 4/16] Disassembling C020... [OK]
+2025-11-29 23:17:01,977 [ 5/16] Disassembling C018... [OK]
+2025-11-29 23:17:01,977 [ 6/16] Disassembling C026... [OK]
+2025-11-29 23:17:01,977 [ 7/16] Disassembling C004... [OK]
+2025-11-29 23:17:01,977 [ 8/16] Disassembling C042... [OK]
+2025-11-29 23:17:01,977 [ 9/16] Disassembling C027... [OK]
+2025-11-29 23:17:01,977 [10/16] Disassembling C025... [OK]
+2025-11-29 23:17:01,977 [11/16] Disassembling C016... [OK]
+2025-11-29 23:17:01,977 [12/16] Disassembling C005... [OK]
+2025-11-29 23:17:01,977 [13/16] Disassembling C024... [OK]
+2025-11-29 23:17:01,977 [14/16] Disassembling C062... [OK]
+2025-11-29 23:17:01,977 [15/16] Disassembling C077... [OK]
+2025-11-29 23:17:01,977 [16/16] Disassembling C100... [OK]
+2025-11-29 23:17:01,977 [2/4] Failure scenario loaded: 3 failure(s)
+2025-11-29 23:17:01,977 [3/4] Executing adaptive scheduler...
+2025-11-29 23:17:02,030 [FUZZY] Symptom: ACCESS_BLOCKED
+2025-11-29 23:17:02,030 [FUZZY] Inputs: force=60.0, torque=40.0, p_fail=70.0, context=0.0
+2025-11-29 23:17:02,030 [FUZZY] Score: 56.71
+2025-11-29 23:17:02,030 [FUZZY] Decision: destroy (confidence=74.3%)
+2025-11-29 23:17:02,030 [ACTION] destroy: success=False, notes=Destruction non autorisée : Profit=50.00 > seuil=21.00 (percentile 20e).
+2025-11-29 23:17:02,089 [FUZZY] Symptom: OVER_TORQUE_NO_ADVANCE
+2025-11-29 23:17:02,089 [FUZZY] Inputs: force=70.0, torque=80.0, p_fail=75.0, context=0.0
+2025-11-29 23:17:02,089 [FUZZY] Score: 70.67
+2025-11-29 23:17:02,089 [FUZZY] Decision: destroy (confidence=63.7%)
+2025-11-29 23:17:02,090 [ACTION] destroy: success=False, notes=Destruction non autorisée : Profit=54.00 > seuil=21.00 (percentile 20e).
+2025-11-29 23:17:02,144 [FUZZY] Symptom: OVER_TORQUE_NO_ADVANCE
+2025-11-29 23:17:02,144 [FUZZY] Inputs: force=70.0, torque=80.0, p_fail=75.0, context=0.0
+2025-11-29 23:17:02,144 [FUZZY] Score: 70.67
+2025-11-29 23:17:02,144 [FUZZY] Decision: destroy (confidence=63.7%)
+2025-11-29 23:17:02,145 [ACTION] destroy: success=False, notes=Destruction non autorisée : Flag 'no_destroy' actif (contexte ou graphe).
+2025-11-29 23:17:02,145 Adaptive scheduler finished. Actions taken: 6
+2025-11-29 23:17:02,146 EXECUTION SUMMARY
+2025-11-29 23:17:02,146 Status: SUCCESS
+2025-11-29 23:17:02,146 Target components:
+2025-11-29 23:17:02,146 [OK] C100 - Successfully disassembled
+2025-11-29 23:17:02,146 Execution metrics:
+2025-11-29 23:17:02,146 Targets achieved: 1/1 (100.0%)
+2025-11-29 23:17:02,146 Failures handled: 3
+2025-11-29 23:17:02,146 Actions taken: 6
+2025-11-29 23:17:02,146 Components done: 13/16
+2025-11-29 23:17:02,146 Locked: 3 component(s)
+2025-11-29 23:17:02,146 Execution time: 0.21s
+2025-11-29 23:17:02,146 Actions breakdown:
+2025-11-29 23:17:02,146 [FAILED] C035     ACCESS_BLOCKED       -> destroy     
+2025-11-29 23:17:02,146 [OK] C035     ACCESS_BLOCKED       -> destroy\u2192replan
+2025-11-29 23:17:02,146 [FAILED] C026     OVER_TORQUE_NO_ADVANCE -> destroy     
+2025-11-29 23:17:02,146 [OK] C026     OVER_TORQUE_NO_ADVANCE -> destroy\u2192replan
+2025-11-29 23:17:02,146 [FAILED] C042     OVER_TORQUE_NO_ADVANCE -> destroy     
+2025-11-29 23:17:02,147 [OK] C042     OVER_TORQUE_NO_ADVANCE -> destroy\u2192bypass
+2025-11-29 23:17:02,147 Detailed logs: results\save\test_failures\salbp_instance_n=1000_1_cut124\complex
+2025-11-29 23:17:02,149 Pipeline finished successfully

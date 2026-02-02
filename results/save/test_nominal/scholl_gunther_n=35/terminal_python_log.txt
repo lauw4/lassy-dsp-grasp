@@ -1,0 +1,57 @@
+2025-11-29 22:24:10,144 DSP ADAPTIVE PIPELINE - SCHOLL_GUNTHER_N=35
+2025-11-29 22:24:10,145 Loaded instance: scholl_gunther_n=35
+2025-11-29 22:24:10,145 Loaded failures: 0
+2025-11-29 22:24:10,145 [1/4] Loading instance and solving DSP...
+2025-11-29 22:24:10,181 Nodes: 35, Edges: 45, Targets: 2, Solution: 34 operations
+2025-11-29 22:24:10,181 Target(s) to achieve: ['C028', 'C034']
+2025-11-29 22:24:10,181 Starting disassembly sequence (34 operations)...
+2025-11-29 22:24:10,181 [ 1/34] Disassembling C000... [OK]
+2025-11-29 22:24:10,181 [ 2/34] Disassembling C016... [OK]
+2025-11-29 22:24:10,181 [ 3/34] Disassembling C009... [OK]
+2025-11-29 22:24:10,181 [ 4/34] Disassembling C011... [OK]
+2025-11-29 22:24:10,181 [ 5/34] Disassembling C004... [OK]
+2025-11-29 22:24:10,181 [ 6/34] Disassembling C005... [OK]
+2025-11-29 22:24:10,181 [ 7/34] Disassembling C001... [OK]
+2025-11-29 22:24:10,181 [ 8/34] Disassembling C007... [OK]
+2025-11-29 22:24:10,181 [ 9/34] Disassembling C006... [OK]
+2025-11-29 22:24:10,181 [10/34] Disassembling C017... [OK]
+2025-11-29 22:24:10,181 [11/34] Disassembling C002... [OK]
+2025-11-29 22:24:10,181 [12/34] Disassembling C008... [OK]
+2025-11-29 22:24:10,181 [13/34] Disassembling C003... [OK]
+2025-11-29 22:24:10,181 [14/34] Disassembling C010... [OK]
+2025-11-29 22:24:10,181 [15/34] Disassembling C018... [OK]
+2025-11-29 22:24:10,182 [16/34] Disassembling C012... [OK]
+2025-11-29 22:24:10,182 [17/34] Disassembling C019... [OK]
+2025-11-29 22:24:10,182 [18/34] Disassembling C013... [OK]
+2025-11-29 22:24:10,182 [19/34] Disassembling C014... [OK]
+2025-11-29 22:24:10,182 [20/34] Disassembling C015... [OK]
+2025-11-29 22:24:10,182 [21/34] Disassembling C020... [OK]
+2025-11-29 22:24:10,182 [22/34] Disassembling C021... [OK]
+2025-11-29 22:24:10,182 [23/34] Disassembling C024... [OK]
+2025-11-29 22:24:10,182 [24/34] Disassembling C029... [OK]
+2025-11-29 22:24:10,182 [25/34] Disassembling C030... [OK]
+2025-11-29 22:24:10,182 [26/34] Disassembling C031... [OK]
+2025-11-29 22:24:10,182 [27/34] Disassembling C022... [OK]
+2025-11-29 22:24:10,182 [28/34] Disassembling C023... [OK]
+2025-11-29 22:24:10,182 [29/34] Disassembling C025... [OK]
+2025-11-29 22:24:10,182 [30/34] Disassembling C026... [OK]
+2025-11-29 22:24:10,182 [31/34] Disassembling C032... [OK]
+2025-11-29 22:24:10,182 [32/34] Disassembling C027... [OK]
+2025-11-29 22:24:10,182 [33/34] Disassembling C034... [OK]
+2025-11-29 22:24:10,182 [34/34] Disassembling C028... [OK]
+2025-11-29 22:24:10,182 [2/4] No failures (nominal execution)
+2025-11-29 22:24:10,182 [3/4] Executing adaptive scheduler...
+2025-11-29 22:24:10,182 Adaptive scheduler finished. Actions taken: 0
+2025-11-29 22:24:10,182 EXECUTION SUMMARY
+2025-11-29 22:24:10,182 Status: SUCCESS
+2025-11-29 22:24:10,182 Target components:
+2025-11-29 22:24:10,182 [OK] C028 - Successfully disassembled
+2025-11-29 22:24:10,183 [OK] C034 - Successfully disassembled
+2025-11-29 22:24:10,183 Execution metrics:
+2025-11-29 22:24:10,183 Targets achieved: 2/2 (100.0%)
+2025-11-29 22:24:10,183 Failures handled: 0
+2025-11-29 22:24:10,183 Actions taken: 0
+2025-11-29 22:24:10,183 Components done: 34/34
+2025-11-29 22:24:10,183 Execution time: 0.04s
+2025-11-29 22:24:10,183 Detailed logs: results\save\test_nominal\scholl_gunther_n=35
+2025-11-29 22:24:10,184 Pipeline finished successfully

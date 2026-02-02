@@ -1,0 +1,50 @@
+2025-11-29 23:15:20,239 DSP ADAPTIVE PIPELINE - SALBP_INSTANCE_N=100_50
+2025-11-29 23:15:20,240 Loaded instance: salbp_instance_n=100_50
+2025-11-29 23:15:20,241 Loaded failures: 1
+2025-11-29 23:15:20,241 [1/4] Loading instance and solving DSP...
+2025-11-29 23:15:20,283 Nodes: 100, Edges: 122, Targets: 1, Solution: 19 operations
+2025-11-29 23:15:20,284 Target(s) to achieve: ['C054']
+2025-11-29 23:15:20,284 Starting disassembly sequence (19 operations)...
+2025-11-29 23:15:20,284 [ 1/19] Disassembling C003... [OK]
+2025-11-29 23:15:20,284 [ 2/19] Disassembling C002... [OK]
+2025-11-29 23:15:20,285 [ 3/19] Disassembling C001... [OK]
+2025-11-29 23:15:20,285 [ 4/19] Disassembling C009... [OK]
+2025-11-29 23:15:20,285 [ 5/19] Disassembling C000... [OK]
+2025-11-29 23:15:20,285 [ 6/19] Disassembling C017... [OK]
+2025-11-29 23:15:20,285 [ 7/19] Disassembling C023... [OK]
+2025-11-29 23:15:20,285 [ 8/19] Disassembling C010... [OK]
+2025-11-29 23:15:20,285 [ 9/19] Disassembling C025... [OK]
+2025-11-29 23:15:20,285 [10/19] Disassembling C014... [OK]
+2025-11-29 23:15:20,285 [11/19] Disassembling C016... [OK]
+2025-11-29 23:15:20,285 [12/19] Disassembling C028... [OK]
+2025-11-29 23:15:20,285 [13/19] Disassembling C024... [OK]
+2025-11-29 23:15:20,285 [14/19] Disassembling C031... [OK]
+2025-11-29 23:15:20,285 [15/19] Disassembling C027... [OK]
+2025-11-29 23:15:20,285 [16/19] Disassembling C032... [OK]
+2025-11-29 23:15:20,285 [17/19] Disassembling C033... [OK]
+2025-11-29 23:15:20,285 [18/19] Disassembling C043... [OK]
+2025-11-29 23:15:20,285 [19/19] Disassembling C054... [OK]
+2025-11-29 23:15:20,285 [2/4] Failure scenario loaded: 1 failure(s)
+2025-11-29 23:15:20,285 [3/4] Executing adaptive scheduler...
+2025-11-29 23:15:20,306 [FUZZY] Symptom: ACCESS_BLOCKED
+2025-11-29 23:15:20,306 [FUZZY] Inputs: force=60.0, torque=40.0, p_fail=70.0, context=0.0
+2025-11-29 23:15:20,306 [FUZZY] Score: 56.71
+2025-11-29 23:15:20,306 [FUZZY] Decision: destroy (confidence=74.3%)
+2025-11-29 23:15:20,307 [ACTION] destroy: success=False, notes=Destruction non autorisée : Flag 'no_destroy' actif (contexte ou graphe).
+2025-11-29 23:15:20,361 Adaptive scheduler finished. Actions taken: 2
+2025-11-29 23:15:20,361 EXECUTION SUMMARY
+2025-11-29 23:15:20,361 Status: SUCCESS
+2025-11-29 23:15:20,361 Target components:
+2025-11-29 23:15:20,361 [OK] C054 - Successfully disassembled
+2025-11-29 23:15:20,361 Execution metrics:
+2025-11-29 23:15:20,361 Targets achieved: 1/1 (100.0%)
+2025-11-29 23:15:20,361 Failures handled: 1
+2025-11-29 23:15:20,361 Actions taken: 2
+2025-11-29 23:15:20,361 Components done: 18/19
+2025-11-29 23:15:20,361 Locked: 1 component(s)
+2025-11-29 23:15:20,361 Execution time: 0.12s
+2025-11-29 23:15:20,361 Actions breakdown:
+2025-11-29 23:15:20,362 [FAILED] C028     ACCESS_BLOCKED       -> destroy     
+2025-11-29 23:15:20,362 [OK] C028     ACCESS_BLOCKED       -> destroy\u2192replan
+2025-11-29 23:15:20,362 Detailed logs: results\save\test_failures\salbp_instance_n=100_50\simple
+2025-11-29 23:15:20,364 Pipeline finished successfully

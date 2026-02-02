@@ -1,0 +1,48 @@
+# Components (V)
+1 2 3 4 5 6 7
+
+# Precedence arcs (E)
+1 2
+1 4
+2 3
+2 5
+4 7
+5 6
+
+# Target components (T)
+7 3 6
+
+# Revenues (r)
+1 15
+2 29
+3 25
+4 28
+5 27
+6 26
+7 23
+
+# Costs (c)
+1 9
+2 2
+3 10
+4 10
+5 3
+6 3
+7 9
+
+# Durations (p)
+1 1
+2 5
+3 4
+4 3
+5 5
+6 6
+7 5
+
+orderrules
+1 2 au000 avant au001
+1 4 au000 avant au003
+2 3 au001 avant au002
+2 5 au001 avant au004
+4 7 au003 avant au006
+5 6 au004 avant au005

@@ -1,0 +1,9 @@
+--- Pipeline run 2025-11-29 23:15:55.565725 ---
+Instance: unknown
+Initial solution: ['C010', 'C009', 'C033', 'C040', 'C014', 'C032', 'C048', 'C068']
+Final state:
+  - Locked: set()
+  - Destroyed: {'C033'}
+  - Done: {'C010', 'C040', 'C009'}
+  - Notes: []
+Actions taken: [{'comp_id': 'C033', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy', 'success': True, 'notes': 'Destruction autorisée (cutoff percentile 20e).'}]

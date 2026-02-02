@@ -1,0 +1,78 @@
+2025-11-29 22:24:41,239 DSP ADAPTIVE PIPELINE - SCHOLL_BARTHOLD_N=148
+2025-11-29 22:24:41,240 Loaded instance: scholl_barthold_n=148
+2025-11-29 22:24:41,241 Loaded failures: 0
+2025-11-29 22:24:41,241 [1/4] Loading instance and solving DSP...
+2025-11-29 22:24:41,348 Nodes: 148, Edges: 175, Targets: 1, Solution: 56 operations
+2025-11-29 22:24:41,348 Target(s) to achieve: ['C125']
+2025-11-29 22:24:41,348 Starting disassembly sequence (56 operations)...
+2025-11-29 22:24:41,348 [ 1/56] Disassembling C058... [OK]
+2025-11-29 22:24:41,348 [ 2/56] Disassembling C055... [OK]
+2025-11-29 22:24:41,348 [ 3/56] Disassembling C031... [OK]
+2025-11-29 22:24:41,348 [ 4/56] Disassembling C073... [OK]
+2025-11-29 22:24:41,348 [ 5/56] Disassembling C000... [OK]
+2025-11-29 22:24:41,348 [ 6/56] Disassembling C072... [OK]
+2025-11-29 22:24:41,348 [ 7/56] Disassembling C074... [OK]
+2025-11-29 22:24:41,348 [ 8/56] Disassembling C033... [OK]
+2025-11-29 22:24:41,348 [ 9/56] Disassembling C032... [OK]
+2025-11-29 22:24:41,348 [10/56] Disassembling C001... [OK]
+2025-11-29 22:24:41,348 [11/56] Disassembling C034... [OK]
+2025-11-29 22:24:41,348 [12/56] Disassembling C002... [OK]
+2025-11-29 22:24:41,348 [13/56] Disassembling C003... [OK]
+2025-11-29 22:24:41,348 [14/56] Disassembling C007... [OK]
+2025-11-29 22:24:41,348 [15/56] Disassembling C005... [OK]
+2025-11-29 22:24:41,348 [16/56] Disassembling C008... [OK]
+2025-11-29 22:24:41,348 [17/56] Disassembling C004... [OK]
+2025-11-29 22:24:41,348 [18/56] Disassembling C009... [OK]
+2025-11-29 22:24:41,349 [19/56] Disassembling C006... [OK]
+2025-11-29 22:24:41,349 [20/56] Disassembling C013... [OK]
+2025-11-29 22:24:41,349 [21/56] Disassembling C014... [OK]
+2025-11-29 22:24:41,349 [22/56] Disassembling C015... [OK]
+2025-11-29 22:24:41,349 [23/56] Disassembling C016... [OK]
+2025-11-29 22:24:41,349 [24/56] Disassembling C018... [OK]
+2025-11-29 22:24:41,349 [25/56] Disassembling C017... [OK]
+2025-11-29 22:24:41,349 [26/56] Disassembling C019... [OK]
+2025-11-29 22:24:41,349 [27/56] Disassembling C022... [OK]
+2025-11-29 22:24:41,349 [28/56] Disassembling C021... [OK]
+2025-11-29 22:24:41,349 [29/56] Disassembling C023... [OK]
+2025-11-29 22:24:41,349 [30/56] Disassembling C020... [OK]
+2025-11-29 22:24:41,349 [31/56] Disassembling C026... [OK]
+2025-11-29 22:24:41,349 [32/56] Disassembling C027... [OK]
+2025-11-29 22:24:41,349 [33/56] Disassembling C025... [OK]
+2025-11-29 22:24:41,349 [34/56] Disassembling C024... [OK]
+2025-11-29 22:24:41,349 [35/56] Disassembling C028... [OK]
+2025-11-29 22:24:41,349 [36/56] Disassembling C030... [OK]
+2025-11-29 22:24:41,349 [37/56] Disassembling C035... [OK]
+2025-11-29 22:24:41,349 [38/56] Disassembling C036... [OK]
+2025-11-29 22:24:41,349 [39/56] Disassembling C044... [OK]
+2025-11-29 22:24:41,349 [40/56] Disassembling C037... [OK]
+2025-11-29 22:24:41,349 [41/56] Disassembling C045... [OK]
+2025-11-29 22:24:41,349 [42/56] Disassembling C038... [OK]
+2025-11-29 22:24:41,349 [43/56] Disassembling C046... [OK]
+2025-11-29 22:24:41,349 [44/56] Disassembling C039... [OK]
+2025-11-29 22:24:41,349 [45/56] Disassembling C053... [OK]
+2025-11-29 22:24:41,349 [46/56] Disassembling C089... [OK]
+2025-11-29 22:24:41,349 [47/56] Disassembling C110... [OK]
+2025-11-29 22:24:41,349 [48/56] Disassembling C111... [OK]
+2025-11-29 22:24:41,349 [49/56] Disassembling C112... [OK]
+2025-11-29 22:24:41,349 [50/56] Disassembling C115... [OK]
+2025-11-29 22:24:41,349 [51/56] Disassembling C119... [OK]
+2025-11-29 22:24:41,350 [52/56] Disassembling C120... [OK]
+2025-11-29 22:24:41,350 [53/56] Disassembling C116... [OK]
+2025-11-29 22:24:41,350 [54/56] Disassembling C121... [OK]
+2025-11-29 22:24:41,350 [55/56] Disassembling C117... [OK]
+2025-11-29 22:24:41,350 [56/56] Disassembling C125... [OK]
+2025-11-29 22:24:41,350 [2/4] No failures (nominal execution)
+2025-11-29 22:24:41,350 [3/4] Executing adaptive scheduler...
+2025-11-29 22:24:41,350 Adaptive scheduler finished. Actions taken: 0
+2025-11-29 22:24:41,350 EXECUTION SUMMARY
+2025-11-29 22:24:41,350 Status: SUCCESS
+2025-11-29 22:24:41,350 Target components:
+2025-11-29 22:24:41,350 [OK] C125 - Successfully disassembled
+2025-11-29 22:24:41,350 Execution metrics:
+2025-11-29 22:24:41,350 Targets achieved: 1/1 (100.0%)
+2025-11-29 22:24:41,350 Failures handled: 0
+2025-11-29 22:24:41,350 Actions taken: 0
+2025-11-29 22:24:41,350 Components done: 56/56
+2025-11-29 22:24:41,350 Execution time: 0.11s
+2025-11-29 22:24:41,350 Detailed logs: results\save\test_nominal\scholl_barthold_n=148
+2025-11-29 22:24:41,351 Pipeline finished successfully

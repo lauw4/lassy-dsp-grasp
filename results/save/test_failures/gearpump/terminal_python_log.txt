@@ -1,0 +1,99 @@
+2026-01-14 16:55:33,995 DSP ADAPTIVE PIPELINE - GEARPUMP
+2026-01-14 16:55:33,997 Loaded instance: gearpump
+2026-01-14 16:55:33,999 Loaded failures: 4
+2026-01-14 16:55:33,999 [1/4] Loading instance and solving DSP...
+2026-01-14 16:55:34,018 Nodes: 22, Edges: 26, Targets: 1, Solution: 20 operations
+2026-01-14 16:55:34,018 Target(s) to achieve: ['G20']
+2026-01-14 16:55:34,018 Starting disassembly sequence (20 operations)...
+2026-01-14 16:55:34,018 [ 1/20] Disassembling G06... [OK]
+2026-01-14 16:55:34,018 [ 2/20] Disassembling G04... [OK]
+2026-01-14 16:55:34,018 [ 3/20] Disassembling G02... [OK]
+2026-01-14 16:55:34,018 [ 4/20] Disassembling G03... [OK]
+2026-01-14 16:55:34,018 [ 5/20] Disassembling G01... [OK]
+2026-01-14 16:55:34,018 [ 6/20] Disassembling G05... [OK]
+2026-01-14 16:55:34,018 [ 7/20] Disassembling G08... [OK]
+2026-01-14 16:55:34,018 [ 8/20] Disassembling G07... [OK]
+2026-01-14 16:55:34,018 [ 9/20] Disassembling G09... [OK]
+2026-01-14 16:55:34,018 [10/20] Disassembling G13... [OK]
+2026-01-14 16:55:34,018 [11/20] Disassembling G17... [OK]
+2026-01-14 16:55:34,019 [12/20] Disassembling G10... [OK]
+2026-01-14 16:55:34,019 [13/20] Disassembling G14... [OK]
+2026-01-14 16:55:34,019 [14/20] Disassembling G12... [OK]
+2026-01-14 16:55:34,019 [15/20] Disassembling G11... [OK]
+2026-01-14 16:55:34,019 [16/20] Disassembling G15... [OK]
+2026-01-14 16:55:34,019 [17/20] Disassembling G16... [OK]
+2026-01-14 16:55:34,019 [18/20] Disassembling G18... [OK]
+2026-01-14 16:55:34,019 [19/20] Disassembling G19... [OK]
+2026-01-14 16:55:34,019 [20/20] Disassembling G20... [OK]
+2026-01-14 16:55:34,019 [2/4] Failure scenario loaded: 4 failure(s)
+2026-01-14 16:55:34,019 [3/4] Executing adaptive scheduler...
+2026-01-14 16:55:34,050 [FUZZY] Symptom: OVER_TORQUE_NO_ADVANCE
+2026-01-14 16:55:34,050 [FUZZY] Inputs: force=30.0, torque=35.0, p_fail=65.0, context=100.0
+2026-01-14 16:55:34,050 [FUZZY] Score: 29.72
+2026-01-14 16:55:34,050 [FUZZY] Decision: change_tool (confidence=51.4%)
+2026-01-14 16:55:34,050 [ACTION] change_tool: success=True, notes=Outil alternatif proposé.
+2026-01-14 16:55:34,097 [FUZZY] Symptom: LOW_VALUE_BOTTLENECK
+2026-01-14 16:55:34,097 [FUZZY] Inputs: force=75.0, torque=80.0, p_fail=40.0, context=0.0
+2026-01-14 16:55:34,097 [FUZZY] Score: 62.50
+2026-01-14 16:55:34,097 [FUZZY] Decision: destroy (confidence=97.8%)
+2026-01-14 16:55:34,104 [ACTION] destroy: success=True, notes=Destruction autorisée (cutoff percentile 20e).
+2026-01-14 16:55:34,104 [REPLAN] États avant replan:
+2026-01-14 16:55:34,104 [REPLAN]   done=['G01', 'G02', 'G03', 'G04', 'G05', 'G06', 'G07', 'G08', 'G09']
+2026-01-14 16:55:34,104 [REPLAN]   destroyed=['G13']
+2026-01-14 16:55:34,104 [REPLAN]   locked=[]
+2026-01-14 16:55:34,104 [REPLAN]   skipped=[]
+2026-01-14 16:55:34,115 [REPLAN] Nouvelle séquence: ['G17', 'G10', 'G14', 'G12', 'G16', 'G11', 'G15', 'G18', 'G19', 'G20']
+2026-01-14 16:55:34,137 [FUZZY] Symptom: ACCESS_BLOCKED
+2026-01-14 16:55:34,137 [FUZZY] Inputs: force=48.0, torque=52.0, p_fail=60.0, context=0.0
+2026-01-14 16:55:34,137 [FUZZY] Score: 40.00
+2026-01-14 16:55:34,137 [FUZZY] Decision: bypass (confidence=100.0%)
+2026-01-14 16:55:34,137 [FUZZY] BYPASS infaisable pour G14, alt_paths=False
+2026-01-14 16:55:34,137 [ACTION] bypass: success=True, notes=Component G14 bypassed (skipped).
+2026-01-14 16:55:34,157 [FUZZY] Symptom: ACCESS_BLOCKED
+2026-01-14 16:55:34,157 [FUZZY] Inputs: force=50.0, torque=55.0, p_fail=50.0, context=0.0
+2026-01-14 16:55:34,157 [FUZZY] Score: 40.00
+2026-01-14 16:55:34,157 [FUZZY] Decision: bypass (confidence=100.0%)
+2026-01-14 16:55:34,157 [FUZZY] BYPASS infaisable pour G15, alt_paths=False
+2026-01-14 16:55:34,157 [ACTION] bypass: success=False, notes=Aucun chemin alternatif dans le graphe.
+2026-01-14 16:55:34,158 [REPLAN] États avant replan:
+2026-01-14 16:55:34,158 [REPLAN]   done=['G01', 'G02', 'G03', 'G04', 'G05', 'G06', 'G07', 'G08', 'G09', 'G10', 'G11', 'G12', 'G16', 'G17']
+2026-01-14 16:55:34,159 [REPLAN]   destroyed=['G13', 'G15']
+2026-01-14 16:55:34,159 [REPLAN]   locked=[]
+2026-01-14 16:55:34,159 [REPLAN]   skipped=['G14']
+2026-01-14 16:55:34,165 [REPLAN] Nouvelle séquence: ['G18', 'G19', 'G20']
+2026-01-14 16:55:34,165 Adaptive scheduler finished. Actions taken: 5
+2026-01-14 16:55:34,165 EXECUTION SUMMARY
+2026-01-14 16:55:34,165 Status: SUCCESS
+2026-01-14 16:55:34,165 Target components:
+2026-01-14 16:55:34,165 [OK] G20 - Successfully disassembled
+2026-01-14 16:55:34,165 Execution metrics:
+2026-01-14 16:55:34,165 Targets achieved: 1/1 (100.0%)
+2026-01-14 16:55:34,165 Failures handled: 4
+2026-01-14 16:55:34,165 Actions taken: 5
+2026-01-14 16:55:34,165 Components done: 17/20
+2026-01-14 16:55:34,166 Destroyed: 2 component(s)
+2026-01-14 16:55:34,166 Algorithm runtime: 0.17s
+2026-01-14 16:55:34,166 ECONOMIC ANALYSIS:
+2026-01-14 16:55:34,166 Nominal profit (planned): 473.00 units
+2026-01-14 16:55:34,166 Adaptive profit (recovered): 443.00 units
+2026-01-14 16:55:34,166 Profit loss: 30.00 units (6.3%)
+2026-01-14 16:55:34,166 Value lost (destroyed): 4.00 units
+2026-01-14 16:55:34,166 Value skipped (bypassed): 30.00 units
+2026-01-14 16:55:34,166 TIME ANALYSIS:
+2026-01-14 16:55:34,166 Nominal time (planned): 29min 30s
+2026-01-14 16:55:34,166 Adaptive time (actual): 27min 55s
+2026-01-14 16:55:34,166 Time saved: 1min 35s (5.4%)
+2026-01-14 16:55:34,166 Time on destroyed (lost): 3min 15s
+2026-01-14 16:55:34,166 Time saved (skipped): 1min 35s
+2026-01-14 16:55:34,166 GLOBAL SCORE :
+2026-01-14 16:55:34,166 Nominal score: 151.77
+2026-01-14 16:55:34,166 Adaptive score: 146.07
+2026-01-14 16:55:34,167 Score loss: 5.70 (3.8%)
+2026-01-14 16:55:34,167 Actions breakdown:
+2026-01-14 16:55:34,167 [OK] G07      OVER_TORQUE_NO_ADVANCE -> change_tool 
+2026-01-14 16:55:34,167 [OK] G13      LOW_VALUE_BOTTLENECK -> destroy     
+2026-01-14 16:55:34,167 [OK] G14      ACCESS_BLOCKED       -> bypass      
+2026-01-14 16:55:34,167 [FAILED] G15      ACCESS_BLOCKED       -> bypass      
+2026-01-14 16:55:34,167 [OK] G15      ACCESS_BLOCKED       -> bypass\u2192destroy
+2026-01-14 16:55:34,167 Detailed logs: results\save\test_failures\gearpump
+2026-01-14 16:55:34,215 Pipeline finished successfully

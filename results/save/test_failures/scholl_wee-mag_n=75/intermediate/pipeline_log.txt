@@ -1,0 +1,9 @@
+--- Pipeline run 2025-11-29 23:15:53.708023 ---
+Instance: unknown
+Initial solution: ['C000', 'C001', 'C005', 'C004', 'C014', 'C008', 'C019', 'C026', 'C034', 'C041', 'C046', 'C048', 'C058', 'C065', 'C067', 'C069']
+Final state:
+  - Locked: {'C004', 'C041'}
+  - Destroyed: set()
+  - Done: {'C058', 'C008', 'C067', 'C026', 'C034', 'C069', 'C005', 'C048', 'C000', 'C014', 'C046', 'C065', 'C019', 'C001'}
+  - Notes: ['Bypass impossible pour C004: aucun chemin alternatif', 'Aucun outil alternatif pour C004', "Destruction interdite pour C041 : Flag 'no_destroy' actif (contexte ou graphe).", 'Bypass impossible pour C041: aucun chemin alternatif', 'Aucun outil alternatif pour C041']
+Actions taken: [{'comp_id': 'C004', 'symptom': 'ACCESS_BLOCKED', 'action': 'bypass', 'success': False, 'notes': 'Aucun chemin alternatif dans le graphe.'}, {'comp_id': 'C004', 'symptom': 'ACCESS_BLOCKED', 'action': 'bypass→replan', 'success': True, 'notes': 'Fallback succeeded'}, {'comp_id': 'C041', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy', 'success': False, 'notes': "Destruction non autorisée : Flag 'no_destroy' actif (contexte ou graphe)."}, {'comp_id': 'C041', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy→replan', 'success': True, 'notes': 'Fallback succeeded'}]

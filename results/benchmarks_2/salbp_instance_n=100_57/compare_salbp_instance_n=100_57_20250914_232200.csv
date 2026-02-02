@@ -1,0 +1,6 @@
+instance,algorithm,profit_closure,makespan_closure,score_dsp,time,status,gap,targets,seq_length_closure,violations_règles,rel_err_profit_vs_milp_closure
+salbp_instance_n=100_57,MILP_full_profit,281.0,16.0,136.0,40.78750777244568,Optimal,,2,"['C001', 'C000', 'C004', 'C005', 'C003', 'C002', 'C009', 'C006', 'C013', 'C023', 'C037', 'C043', 'C048', 'C056', 'C060', 'C074']",0,
+salbp_instance_n=100_57,grasp_vnd,281.0,16.0,136.0,0.018696069717407227,Completed,0.00%,2,"['C005', 'C006', 'C004', 'C003', 'C002', 'C000', 'C001', 'C013', 'C009', 'C023', 'C037', 'C043', 'C048', 'C056', 'C060', 'C074']",0,0.0
+salbp_instance_n=100_57,grasp_tabu,281.0,16.0,136.0,0.1894221305847168,Completed,0.00%,2,"['C003', 'C000', 'C001', 'C004', 'C002', 'C006', 'C013', 'C005', 'C009', 'C023', 'C037', 'C043', 'C048', 'C056', 'C060', 'C074']",0,0.0
+salbp_instance_n=100_57,grasp_mns,281.0,16.0,136.0,0.00638580322265625,Completed,0.00%,2,"['C005', 'C006', 'C003', 'C004', 'C000', 'C001', 'C002', 'C013', 'C009', 'C023', 'C037', 'C043', 'C048', 'C056', 'C060', 'C074']",0,0.0
+salbp_instance_n=100_57,dijkstra_closure_min,46.0,2.0,3.0,2.0,Completed,83.63%,2,"['C006', 'C013']",0,0.8362989323843416

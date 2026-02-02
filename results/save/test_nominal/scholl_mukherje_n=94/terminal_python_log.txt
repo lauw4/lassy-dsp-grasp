@@ -1,0 +1,109 @@
+2025-11-29 22:24:27,676 DSP ADAPTIVE PIPELINE - SCHOLL_MUKHERJE_N=94
+2025-11-29 22:24:27,677 Loaded instance: scholl_mukherje_n=94
+2025-11-29 22:24:27,677 Loaded failures: 0
+2025-11-29 22:24:27,677 [1/4] Loading instance and solving DSP...
+2025-11-29 22:24:27,856 Nodes: 94, Edges: 181, Targets: 1, Solution: 87 operations
+2025-11-29 22:24:27,856 Target(s) to achieve: ['C086']
+2025-11-29 22:24:27,856 Starting disassembly sequence (87 operations)...
+2025-11-29 22:24:27,856 [ 1/87] Disassembling C000... [OK]
+2025-11-29 22:24:27,856 [ 2/87] Disassembling C002... [OK]
+2025-11-29 22:24:27,856 [ 3/87] Disassembling C009... [OK]
+2025-11-29 22:24:27,856 [ 4/87] Disassembling C007... [OK]
+2025-11-29 22:24:27,856 [ 5/87] Disassembling C001... [OK]
+2025-11-29 22:24:27,857 [ 6/87] Disassembling C008... [OK]
+2025-11-29 22:24:27,857 [ 7/87] Disassembling C011... [OK]
+2025-11-29 22:24:27,857 [ 8/87] Disassembling C006... [OK]
+2025-11-29 22:24:27,857 [ 9/87] Disassembling C003... [OK]
+2025-11-29 22:24:27,857 [10/87] Disassembling C016... [OK]
+2025-11-29 22:24:27,857 [11/87] Disassembling C005... [OK]
+2025-11-29 22:24:27,857 [12/87] Disassembling C004... [OK]
+2025-11-29 22:24:27,857 [13/87] Disassembling C010... [OK]
+2025-11-29 22:24:27,857 [14/87] Disassembling C017... [OK]
+2025-11-29 22:24:27,857 [15/87] Disassembling C013... [OK]
+2025-11-29 22:24:27,857 [16/87] Disassembling C024... [OK]
+2025-11-29 22:24:27,857 [17/87] Disassembling C031... [OK]
+2025-11-29 22:24:27,857 [18/87] Disassembling C030... [OK]
+2025-11-29 22:24:27,857 [19/87] Disassembling C056... [OK]
+2025-11-29 22:24:27,857 [20/87] Disassembling C029... [OK]
+2025-11-29 22:24:27,857 [21/87] Disassembling C062... [OK]
+2025-11-29 22:24:27,857 [22/87] Disassembling C044... [OK]
+2025-11-29 22:24:27,857 [23/87] Disassembling C026... [OK]
+2025-11-29 22:24:27,857 [24/87] Disassembling C015... [OK]
+2025-11-29 22:24:27,857 [25/87] Disassembling C046... [OK]
+2025-11-29 22:24:27,857 [26/87] Disassembling C054... [OK]
+2025-11-29 22:24:27,857 [27/87] Disassembling C021... [OK]
+2025-11-29 22:24:27,857 [28/87] Disassembling C057... [OK]
+2025-11-29 22:24:27,857 [29/87] Disassembling C058... [OK]
+2025-11-29 22:24:27,857 [30/87] Disassembling C041... [OK]
+2025-11-29 22:24:27,857 [31/87] Disassembling C022... [OK]
+2025-11-29 22:24:27,857 [32/87] Disassembling C047... [OK]
+2025-11-29 22:24:27,857 [33/87] Disassembling C020... [OK]
+2025-11-29 22:24:27,857 [34/87] Disassembling C045... [OK]
+2025-11-29 22:24:27,857 [35/87] Disassembling C018... [OK]
+2025-11-29 22:24:27,857 [36/87] Disassembling C059... [OK]
+2025-11-29 22:24:27,857 [37/87] Disassembling C012... [OK]
+2025-11-29 22:24:27,858 [38/87] Disassembling C019... [OK]
+2025-11-29 22:24:27,858 [39/87] Disassembling C027... [OK]
+2025-11-29 22:24:27,858 [40/87] Disassembling C051... [OK]
+2025-11-29 22:24:27,858 [41/87] Disassembling C053... [OK]
+2025-11-29 22:24:27,858 [42/87] Disassembling C039... [OK]
+2025-11-29 22:24:27,858 [43/87] Disassembling C032... [OK]
+2025-11-29 22:24:27,858 [44/87] Disassembling C050... [OK]
+2025-11-29 22:24:27,858 [45/87] Disassembling C064... [OK]
+2025-11-29 22:24:27,858 [46/87] Disassembling C052... [OK]
+2025-11-29 22:24:27,858 [47/87] Disassembling C033... [OK]
+2025-11-29 22:24:27,858 [48/87] Disassembling C034... [OK]
+2025-11-29 22:24:27,858 [49/87] Disassembling C048... [OK]
+2025-11-29 22:24:27,858 [50/87] Disassembling C038... [OK]
+2025-11-29 22:24:27,858 [51/87] Disassembling C028... [OK]
+2025-11-29 22:24:27,858 [52/87] Disassembling C049... [OK]
+2025-11-29 22:24:27,858 [53/87] Disassembling C014... [OK]
+2025-11-29 22:24:27,858 [54/87] Disassembling C035... [OK]
+2025-11-29 22:24:27,858 [55/87] Disassembling C055... [OK]
+2025-11-29 22:24:27,858 [56/87] Disassembling C037... [OK]
+2025-11-29 22:24:27,858 [57/87] Disassembling C025... [OK]
+2025-11-29 22:24:27,858 [58/87] Disassembling C040... [OK]
+2025-11-29 22:24:27,858 [59/87] Disassembling C042... [OK]
+2025-11-29 22:24:27,858 [60/87] Disassembling C023... [OK]
+2025-11-29 22:24:27,858 [61/87] Disassembling C043... [OK]
+2025-11-29 22:24:27,858 [62/87] Disassembling C036... [OK]
+2025-11-29 22:24:27,858 [63/87] Disassembling C070... [OK]
+2025-11-29 22:24:27,858 [64/87] Disassembling C072... [OK]
+2025-11-29 22:24:27,858 [65/87] Disassembling C067... [OK]
+2025-11-29 22:24:27,858 [66/87] Disassembling C065... [OK]
+2025-11-29 22:24:27,858 [67/87] Disassembling C068... [OK]
+2025-11-29 22:24:27,858 [68/87] Disassembling C061... [OK]
+2025-11-29 22:24:27,859 [69/87] Disassembling C060... [OK]
+2025-11-29 22:24:27,859 [70/87] Disassembling C063... [OK]
+2025-11-29 22:24:27,859 [71/87] Disassembling C071... [OK]
+2025-11-29 22:24:27,859 [72/87] Disassembling C066... [OK]
+2025-11-29 22:24:27,859 [73/87] Disassembling C073... [OK]
+2025-11-29 22:24:27,859 [74/87] Disassembling C069... [OK]
+2025-11-29 22:24:27,859 [75/87] Disassembling C075... [OK]
+2025-11-29 22:24:27,859 [76/87] Disassembling C076... [OK]
+2025-11-29 22:24:27,859 [77/87] Disassembling C074... [OK]
+2025-11-29 22:24:27,859 [78/87] Disassembling C077... [OK]
+2025-11-29 22:24:27,859 [79/87] Disassembling C079... [OK]
+2025-11-29 22:24:27,859 [80/87] Disassembling C078... [OK]
+2025-11-29 22:24:27,859 [81/87] Disassembling C080... [OK]
+2025-11-29 22:24:27,859 [82/87] Disassembling C081... [OK]
+2025-11-29 22:24:27,859 [83/87] Disassembling C082... [OK]
+2025-11-29 22:24:27,859 [84/87] Disassembling C083... [OK]
+2025-11-29 22:24:27,859 [85/87] Disassembling C084... [OK]
+2025-11-29 22:24:27,859 [86/87] Disassembling C085... [OK]
+2025-11-29 22:24:27,859 [87/87] Disassembling C086... [OK]
+2025-11-29 22:24:27,859 [2/4] No failures (nominal execution)
+2025-11-29 22:24:27,859 [3/4] Executing adaptive scheduler...
+2025-11-29 22:24:27,859 Adaptive scheduler finished. Actions taken: 0
+2025-11-29 22:24:27,859 EXECUTION SUMMARY
+2025-11-29 22:24:27,859 Status: SUCCESS
+2025-11-29 22:24:27,859 Target components:
+2025-11-29 22:24:27,859 [OK] C086 - Successfully disassembled
+2025-11-29 22:24:27,859 Execution metrics:
+2025-11-29 22:24:27,860 Targets achieved: 1/1 (100.0%)
+2025-11-29 22:24:27,860 Failures handled: 0
+2025-11-29 22:24:27,860 Actions taken: 0
+2025-11-29 22:24:27,860 Components done: 87/87
+2025-11-29 22:24:27,860 Execution time: 0.18s
+2025-11-29 22:24:27,860 Detailed logs: results\save\test_nominal\scholl_mukherje_n=94
+2025-11-29 22:24:27,861 Pipeline finished successfully

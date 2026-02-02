@@ -1,0 +1,88 @@
+folder,scenario,instance,targets,solution_len,targets_achieved,targets_total,success_rate,status,actions,failures,exec_time
+scholl_mertens_n=7,simple,SCHOLL_MERTENS_N=7,['C005'],4,1,1,100.0,SUCCESS,0,1,0.02
+scholl_mertens_n=7,intermediate,SCHOLL_MERTENS_N=7,['C005'],4,1,1,100.0,SUCCESS,2,1,0.03
+scholl_mertens_n=7,complex,SCHOLL_MERTENS_N=7,['C005'],4,1,1,100.0,SUCCESS,2,1,0.04
+scholl_jaeschke_n=9,simple,SCHOLL_JAESCHKE_N=9,['C008'],9,1,1,100.0,SUCCESS,2,1,0.05
+scholl_jaeschke_n=9,intermediate,SCHOLL_JAESCHKE_N=9,['C008'],9,1,1,100.0,SUCCESS,1,1,0.04
+scholl_jaeschke_n=9,complex,SCHOLL_JAESCHKE_N=9,['C008'],9,1,1,100.0,SUCCESS,2,1,0.04
+scholl_mansoor_n=11,simple,SCHOLL_MANSOOR_N=11,['C010'],11,1,1,100.0,SUCCESS,2,1,0.05
+scholl_mansoor_n=11,intermediate,SCHOLL_MANSOOR_N=11,['C010'],11,1,1,100.0,SUCCESS,3,2,0.09
+scholl_mansoor_n=11,complex,SCHOLL_MANSOOR_N=11,['C010'],11,1,1,100.0,SUCCESS,4,2,0.1
+salbp_instance_n=20_90,simple,SALBP_INSTANCE_N=20_90,['C019'],11,1,1,100.0,SUCCESS,2,1,0.04
+salbp_instance_n=20_90,intermediate,SALBP_INSTANCE_N=20_90,['C019'],11,1,1,100.0,SUCCESS,1,2,0.04
+salbp_instance_n=20_90,complex,SALBP_INSTANCE_N=20_90,['C019'],11,1,1,100.0,SUCCESS,4,2,0.1
+scholl_roszieg_n=25,simple,SCHOLL_ROSZIEG_N=25,['C021'],18,1,1,100.0,SUCCESS,2,1,0.05
+scholl_roszieg_n=25,intermediate,SCHOLL_ROSZIEG_N=25,['C021'],18,1,1,100.0,SUCCESS,2,2,0.11
+scholl_roszieg_n=25,complex,SCHOLL_ROSZIEG_N=25,['C021'],18,1,1,100.0,SUCCESS,3,2,0.09
+dagtest,simple,DAGTEST,['N22'],22,1,1,100.0,SUCCESS,1,1,0.05
+dagtest,intermediate,DAGTEST,['N22'],22,1,1,100.0,SUCCESS,4,2,0.11
+dagtest,complex,DAGTEST,['N22'],22,1,1,100.0,SUCCESS,4,2,0.11
+scholl_lutz1_n=32,simple,SCHOLL_LUTZ1_N=32,['C031'],32,1,1,100.0,SUCCESS,2,1,0.06
+scholl_lutz1_n=32,intermediate,SCHOLL_LUTZ1_N=32,['C031'],32,1,1,100.0,SUCCESS,4,2,0.14
+scholl_lutz1_n=32,complex,SCHOLL_LUTZ1_N=32,['C031'],32,1,1,100.0,SUCCESS,5,3,0.17
+scholl_gunther_n=35,simple,SCHOLL_GUNTHER_N=35,['C028'],29,1,1,100.0,SUCCESS,2,1,0.07
+scholl_gunther_n=35,intermediate,SCHOLL_GUNTHER_N=35,['C028'],29,1,1,100.0,SUCCESS,4,2,0.12
+scholl_gunther_n=35,complex,SCHOLL_GUNTHER_N=35,['C028'],29,1,1,100.0,SUCCESS,4,3,0.18
+scholl_kilbrid_n=45,simple,SCHOLL_KILBRID_N=45,['C044'],42,1,1,100.0,SUCCESS,2,1,0.1
+scholl_kilbrid_n=45,intermediate,SCHOLL_KILBRID_N=45,['C044'],42,1,1,100.0,SUCCESS,3,2,0.16
+scholl_kilbrid_n=45,complex,SCHOLL_KILBRID_N=45,['C044'],42,1,1,100.0,SUCCESS,6,3,0.17
+salbp_instance_n=50_29p6,simple,SALBP_INSTANCE_N=50_29P6,"['C018', 'C044']",15,2,2,100.0,SUCCESS,2,1,0.07
+salbp_instance_n=50_29p6,intermediate,SALBP_INSTANCE_N=50_29P6,"['C018', 'C044']",15,2,2,100.0,SUCCESS,2,2,0.05
+salbp_instance_n=50_29p6,complex,SALBP_INSTANCE_N=50_29P6,"['C018', 'C044']",15,2,2,100.0,SUCCESS,2,3,0.05
+scholl_warnecke_n=58,simple,SCHOLL_WARNECKE_N=58,['C028'],13,1,1,100.0,SUCCESS,2,1,0.08
+scholl_warnecke_n=58,intermediate,SCHOLL_WARNECKE_N=58,['C028'],13,1,1,100.0,SUCCESS,4,2,0.15
+scholl_warnecke_n=58,complex,SCHOLL_WARNECKE_N=58,['C028'],13,1,1,100.0,SUCCESS,4,3,0.15
+salbp_instance_n=1000_1_cut65,simple,SALBP_INSTANCE_N=1000_1_CUT65,['C055'],3,1,1,100.0,SUCCESS,0,1,0.03
+salbp_instance_n=1000_1_cut65,intermediate,SALBP_INSTANCE_N=1000_1_CUT65,['C055'],3,1,1,100.0,SUCCESS,0,2,0.02
+salbp_instance_n=1000_1_cut65,complex,SALBP_INSTANCE_N=1000_1_CUT65,['C055'],3,1,1,100.0,SUCCESS,2,3,0.05
+scholl_tonge70_n=70,simple,SCHOLL_TONGE70_N=70,"['C010', 'C054']",40,2,2,100.0,SUCCESS,1,1,0.09
+scholl_tonge70_n=70,intermediate,SCHOLL_TONGE70_N=70,"['C010', 'C054']",40,2,2,100.0,SUCCESS,4,2,0.14
+scholl_tonge70_n=70,complex,SCHOLL_TONGE70_N=70,"['C010', 'C054']",40,2,2,100.0,SUCCESS,6,3,0.19
+scholl_wee-mag_n=75,simple,SCHOLL_WEE-MAG_N=75,['C069'],16,1,1,100.0,SUCCESS,2,1,0.09
+scholl_wee-mag_n=75,intermediate,SCHOLL_WEE-MAG_N=75,['C069'],16,1,1,100.0,SUCCESS,4,2,0.17
+scholl_wee-mag_n=75,complex,SCHOLL_WEE-MAG_N=75,['C069'],16,1,1,100.0,SUCCESS,5,3,0.26
+salbp_instance_n=1000_1_cut78,simple,SALBP_INSTANCE_N=1000_1_CUT78,"['C009', 'C040', 'C068']",8,3,3,100.0,SUCCESS,1,1,0.05
+salbp_instance_n=1000_1_cut78,intermediate,SALBP_INSTANCE_N=1000_1_CUT78,"['C009', 'C040', 'C068']",8,2,3,66.7,PARTIAL SUCCESS,1,2,0.09
+salbp_instance_n=1000_1_cut78,complex,SALBP_INSTANCE_N=1000_1_CUT78,"['C009', 'C040', 'C068']",8,3,3,100.0,SUCCESS,3,3,0.1
+scholl_arc83_n=83,simple,SCHOLL_ARC83_N=83,['C082'],83,1,1,100.0,SUCCESS,2,1,0.19
+scholl_arc83_n=83,intermediate,SCHOLL_ARC83_N=83,['C082'],83,1,1,100.0,SUCCESS,3,2,0.24
+scholl_arc83_n=83,complex,SCHOLL_ARC83_N=83,['C082'],83,1,1,100.0,SUCCESS,5,3,0.32
+scholl_lutz2_n=89,simple,SCHOLL_LUTZ2_N=89,"['C047', 'C087']",88,2,2,100.0,SUCCESS,1,1,0.2
+scholl_lutz2_n=89,intermediate,SCHOLL_LUTZ2_N=89,"['C047', 'C087']",88,2,2,100.0,SUCCESS,3,2,0.28
+scholl_lutz2_n=89,complex,SCHOLL_LUTZ2_N=89,"['C047', 'C087']",88,2,2,100.0,SUCCESS,4,3,0.28
+scholl_lutz3_n=89,simple,SCHOLL_LUTZ3_N=89,"['C020', 'C040', 'C050']",45,3,3,100.0,SUCCESS,2,1,0.15
+scholl_lutz3_n=89,intermediate,SCHOLL_LUTZ3_N=89,"['C020', 'C040', 'C050']",45,3,3,100.0,SUCCESS,3,2,0.18
+scholl_lutz3_n=89,complex,SCHOLL_LUTZ3_N=89,"['C020', 'C040', 'C050']",45,1,3,33.3,PARTIAL SUCCESS,4,3,0.18
+salbp_instance_n=1000_1_cut92,simple,SALBP_INSTANCE_N=1000_1_CUT92,['C068'],4,1,1,100.0,SUCCESS,2,1,0.05
+salbp_instance_n=1000_1_cut92,intermediate,SALBP_INSTANCE_N=1000_1_CUT92,['C068'],4,1,1,100.0,SUCCESS,3,2,0.13
+salbp_instance_n=1000_1_cut92,complex,SALBP_INSTANCE_N=1000_1_CUT92,['C068'],4,1,1,100.0,SUCCESS,0,3,0.03
+scholl_mukherje_n=94,simple,SCHOLL_MUKHERJE_N=94,['C086'],87,1,1,100.0,SUCCESS,2,1,0.28
+scholl_mukherje_n=94,intermediate,SCHOLL_MUKHERJE_N=94,['C086'],87,1,1,100.0,SUCCESS,4,2,0.43
+scholl_mukherje_n=94,complex,SCHOLL_MUKHERJE_N=94,['C086'],87,1,1,100.0,SUCCESS,5,3,0.36
+salbp_instance_n=1000_1_cut94,simple,SALBP_INSTANCE_N=1000_1_CUT94,"['C011', 'C076']",6,2,2,100.0,SUCCESS,0,1,0.03
+salbp_instance_n=1000_1_cut94,intermediate,SALBP_INSTANCE_N=1000_1_CUT94,"['C011', 'C076']",6,2,2,100.0,SUCCESS,2,2,0.05
+salbp_instance_n=1000_1_cut94,complex,SALBP_INSTANCE_N=1000_1_CUT94,"['C011', 'C076']",6,2,2,100.0,SUCCESS,2,3,0.11
+salbp_instance_n=100_50,simple,SALBP_INSTANCE_N=100_50,['C054'],19,1,1,100.0,SUCCESS,2,1,0.12
+salbp_instance_n=100_50,intermediate,SALBP_INSTANCE_N=100_50,['C054'],19,1,1,100.0,SUCCESS,4,2,0.17
+salbp_instance_n=100_50,complex,SALBP_INSTANCE_N=100_50,['C054'],19,1,1,100.0,SUCCESS,6,3,0.21
+scholl_arc111_n=111,simple,SCHOLL_ARC111_N=111,['C110'],111,1,1,100.0,SUCCESS,2,1,0.4
+scholl_arc111_n=111,intermediate,SCHOLL_ARC111_N=111,['C110'],111,1,1,100.0,SUCCESS,3,2,0.54
+scholl_arc111_n=111,complex,SCHOLL_ARC111_N=111,['C110'],111,1,1,100.0,SUCCESS,5,3,0.65
+salbp_instance_n=1000_1_cut115,simple,SALBP_INSTANCE_N=1000_1_CUT115,['C085'],5,1,1,100.0,SUCCESS,2,1,0.05
+salbp_instance_n=1000_1_cut115,intermediate,SALBP_INSTANCE_N=1000_1_CUT115,['C085'],5,1,1,100.0,SUCCESS,4,2,0.1
+salbp_instance_n=1000_1_cut115,complex,SALBP_INSTANCE_N=1000_1_CUT115,['C085'],5,1,1,100.0,SUCCESS,3,3,0.14
+salbp_instance_n=1000_1_cut124,simple,SALBP_INSTANCE_N=1000_1_CUT124,['C100'],16,1,1,100.0,SUCCESS,2,1,0.1
+salbp_instance_n=1000_1_cut124,intermediate,SALBP_INSTANCE_N=1000_1_CUT124,['C100'],16,1,1,100.0,SUCCESS,3,2,0.11
+salbp_instance_n=1000_1_cut124,complex,SALBP_INSTANCE_N=1000_1_CUT124,['C100'],16,1,1,100.0,SUCCESS,6,3,0.21
+salbp_instance_n=1000_1_cut125,simple,SALBP_INSTANCE_N=1000_1_CUT125,"['C041', 'C063']",7,2,2,100.0,SUCCESS,1,1,0.08
+salbp_instance_n=1000_1_cut125,intermediate,SALBP_INSTANCE_N=1000_1_CUT125,"['C041', 'C063']",7,2,2,100.0,SUCCESS,4,2,0.12
+salbp_instance_n=1000_1_cut125,complex,SALBP_INSTANCE_N=1000_1_CUT125,"['C041', 'C063']",7,1,2,50.0,PARTIAL SUCCESS,3,3,0.14
+salbp_instance_n=1000_1_cut135,simple,SALBP_INSTANCE_N=1000_1_CUT135,"['C043', 'C090', 'C121']",25,3,3,100.0,SUCCESS,1,1,0.14
+salbp_instance_n=1000_1_cut135,intermediate,SALBP_INSTANCE_N=1000_1_CUT135,"['C043', 'C090', 'C121']",25,3,3,100.0,SUCCESS,3,2,0.12
+salbp_instance_n=1000_1_cut135,complex,SALBP_INSTANCE_N=1000_1_CUT135,"['C043', 'C090', 'C121']",25,1,3,33.3,PARTIAL SUCCESS,2,3,0.12
+salbp_instance_n=1000_1_cut148,simple,SALBP_INSTANCE_N=1000_1_CUT148,['C106'],6,1,1,100.0,SUCCESS,2,1,0.13
+salbp_instance_n=1000_1_cut148,intermediate,SALBP_INSTANCE_N=1000_1_CUT148,['C106'],6,1,1,100.0,SUCCESS,4,2,0.14
+salbp_instance_n=1000_1_cut148,complex,SALBP_INSTANCE_N=1000_1_CUT148,['C106'],6,1,1,100.0,SUCCESS,5,3,0.18
+scholl_barthold_n=148,simple,SCHOLL_BARTHOLD_N=148,['C125'],56,1,1,100.0,SUCCESS,1,1,0.15
+scholl_barthold_n=148,intermediate,SCHOLL_BARTHOLD_N=148,['C125'],56,1,1,100.0,SUCCESS,2,2,0.16
+scholl_barthold_n=148,complex,SCHOLL_BARTHOLD_N=148,['C125'],56,1,1,100.0,SUCCESS,5,3,0.26

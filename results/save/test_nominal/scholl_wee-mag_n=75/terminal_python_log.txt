@@ -1,0 +1,38 @@
+2025-11-29 22:24:18,798 DSP ADAPTIVE PIPELINE - SCHOLL_WEE-MAG_N=75
+2025-11-29 22:24:18,798 Loaded instance: scholl_wee-mag_n=75
+2025-11-29 22:24:18,798 Loaded failures: 0
+2025-11-29 22:24:18,798 [1/4] Loading instance and solving DSP...
+2025-11-29 22:24:18,837 Nodes: 75, Edges: 87, Targets: 1, Solution: 16 operations
+2025-11-29 22:24:18,837 Target(s) to achieve: ['C069']
+2025-11-29 22:24:18,837 Starting disassembly sequence (16 operations)...
+2025-11-29 22:24:18,837 [ 1/16] Disassembling C000... [OK]
+2025-11-29 22:24:18,837 [ 2/16] Disassembling C005... [OK]
+2025-11-29 22:24:18,837 [ 3/16] Disassembling C001... [OK]
+2025-11-29 22:24:18,837 [ 4/16] Disassembling C004... [OK]
+2025-11-29 22:24:18,837 [ 5/16] Disassembling C014... [OK]
+2025-11-29 22:24:18,837 [ 6/16] Disassembling C008... [OK]
+2025-11-29 22:24:18,837 [ 7/16] Disassembling C019... [OK]
+2025-11-29 22:24:18,837 [ 8/16] Disassembling C026... [OK]
+2025-11-29 22:24:18,837 [ 9/16] Disassembling C034... [OK]
+2025-11-29 22:24:18,837 [10/16] Disassembling C041... [OK]
+2025-11-29 22:24:18,837 [11/16] Disassembling C046... [OK]
+2025-11-29 22:24:18,837 [12/16] Disassembling C048... [OK]
+2025-11-29 22:24:18,837 [13/16] Disassembling C058... [OK]
+2025-11-29 22:24:18,837 [14/16] Disassembling C065... [OK]
+2025-11-29 22:24:18,837 [15/16] Disassembling C067... [OK]
+2025-11-29 22:24:18,837 [16/16] Disassembling C069... [OK]
+2025-11-29 22:24:18,837 [2/4] No failures (nominal execution)
+2025-11-29 22:24:18,837 [3/4] Executing adaptive scheduler...
+2025-11-29 22:24:18,837 Adaptive scheduler finished. Actions taken: 0
+2025-11-29 22:24:18,837 EXECUTION SUMMARY
+2025-11-29 22:24:18,837 Status: SUCCESS
+2025-11-29 22:24:18,837 Target components:
+2025-11-29 22:24:18,837 [OK] C069 - Successfully disassembled
+2025-11-29 22:24:18,837 Execution metrics:
+2025-11-29 22:24:18,837 Targets achieved: 1/1 (100.0%)
+2025-11-29 22:24:18,837 Failures handled: 0
+2025-11-29 22:24:18,837 Actions taken: 0
+2025-11-29 22:24:18,837 Components done: 16/16
+2025-11-29 22:24:18,837 Execution time: 0.04s
+2025-11-29 22:24:18,837 Detailed logs: results\save\test_nominal\scholl_wee-mag_n=75
+2025-11-29 22:24:18,837 Pipeline finished successfully

@@ -1,0 +1,44 @@
+[
+  {
+    "comp_id": "C016",
+    "symptom": "OVER_TORQUE_NO_ADVANCE",
+    "action": "destroy",
+    "success": false,
+    "notes": "Destruction non autoris\u00e9e : Flag 'no_destroy' actif (contexte ou graphe)."
+  },
+  {
+    "comp_id": "C016",
+    "symptom": "OVER_TORQUE_NO_ADVANCE",
+    "action": "destroy\u2192bypass",
+    "success": true,
+    "notes": "Fallback succeeded"
+  },
+  {
+    "comp_id": "C027",
+    "symptom": "ACCESS_BLOCKED",
+    "action": "bypass",
+    "success": false,
+    "notes": "Aucun chemin alternatif dans le graphe."
+  },
+  {
+    "comp_id": "C027",
+    "symptom": "ACCESS_BLOCKED",
+    "action": "bypass\u2192replan",
+    "success": true,
+    "notes": "Fallback succeeded"
+  },
+  {
+    "comp_id": "C024",
+    "symptom": "OVER_TORQUE_NO_ADVANCE",
+    "action": "destroy",
+    "success": false,
+    "notes": "Destruction non autoris\u00e9e : Flag 'no_destroy' actif (contexte ou graphe)."
+  },
+  {
+    "comp_id": "C024",
+    "symptom": "OVER_TORQUE_NO_ADVANCE",
+    "action": "destroy\u2192replan",
+    "success": true,
+    "notes": "Fallback succeeded"
+  }
+]

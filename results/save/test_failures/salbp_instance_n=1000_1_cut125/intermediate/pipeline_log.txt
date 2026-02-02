@@ -1,0 +1,9 @@
+--- Pipeline run 2025-11-29 23:16:15.289762 ---
+Instance: unknown
+Initial solution: ['C014', 'C032', 'C041', 'C016', 'C031', 'C059', 'C063']
+Final state:
+  - Locked: {'C059', 'C031'}
+  - Destroyed: set()
+  - Done: {'C016', 'C041', 'C014', 'C032', 'C063'}
+  - Notes: ['Destruction interdite pour C031 : Profit=82.00 > seuil=22.00 (percentile 20e).', 'Bypass impossible pour C059: aucun chemin alternatif', 'Aucun outil alternatif pour C059']
+Actions taken: [{'comp_id': 'C031', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy', 'success': False, 'notes': 'Destruction non autorisée : Profit=82.00 > seuil=22.00 (percentile 20e).'}, {'comp_id': 'C031', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy→bypass', 'success': True, 'notes': 'Fallback succeeded'}, {'comp_id': 'C059', 'symptom': 'LOW_VALUE_BOTTLENECK', 'action': 'bypass', 'success': False, 'notes': 'Aucun chemin alternatif dans le graphe.'}, {'comp_id': 'C059', 'symptom': 'LOW_VALUE_BOTTLENECK', 'action': 'bypass→replan', 'success': True, 'notes': 'Fallback succeeded'}]

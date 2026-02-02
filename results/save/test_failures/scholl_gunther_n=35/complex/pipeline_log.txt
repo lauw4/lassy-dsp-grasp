@@ -1,0 +1,9 @@
+--- Pipeline run 2025-11-30 00:44:18.244700 ---
+Instance: unknown
+Initial solution: ['C016', 'C000', 'C004', 'C001', 'C005', 'C002', 'C003', 'C007', 'C008', 'C009', 'C006', 'C012', 'C013', 'C011', 'C017', 'C018', 'C019', 'C010', 'C014', 'C015', 'C020', 'C024', 'C021', 'C022', 'C023', 'C025', 'C026', 'C027', 'C028']
+Final state:
+  - Locked: {'C013', 'C021', 'C015'}
+  - Destroyed: set()
+  - Done: {'C010', 'C014', 'C018', 'C002', 'C023', 'C027', 'C009', 'C017', 'C004', 'C024', 'C020', 'C025', 'C000', 'C005', 'C008', 'C012', 'C019', 'C028', 'C011', 'C001', 'C026', 'C007', 'C003', 'C006', 'C022', 'C016'}
+  - Notes: ['Bypass impossible pour C015: aucun chemin alternatif', 'Aucun outil alternatif pour C015']
+Actions taken: [{'comp_id': 'C013', 'symptom': 'LOW_VALUE_BOTTLENECK', 'action': 'bypass', 'success': True, 'notes': 'Component C013 bypassed.'}, {'comp_id': 'C015', 'symptom': 'ACCESS_BLOCKED', 'action': 'bypass', 'success': False, 'notes': 'Aucun chemin alternatif dans le graphe.'}, {'comp_id': 'C015', 'symptom': 'ACCESS_BLOCKED', 'action': 'bypass→replan', 'success': True, 'notes': 'Fallback succeeded'}, {'comp_id': 'C021', 'symptom': 'ACCESS_BLOCKED', 'action': 'bypass', 'success': True, 'notes': 'Component C021 bypassed.'}]

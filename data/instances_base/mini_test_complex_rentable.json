@@ -1,0 +1,381 @@
+ {
+  "nodes": [
+    {
+      "id": "A",
+      "profit": 10,
+      "cost": 2,
+      "duration": 3,
+      "milp_index": 1
+    },
+    {
+      "id": "B",
+      "profit": 8,
+      "cost": 2,
+      "duration": 2,
+      "milp_index": 2
+    },
+    {
+      "id": "C",
+      "profit": 7,
+      "cost": 2,
+      "duration": 2,
+      "milp_index": 3
+    },
+    {
+      "id": "D",
+      "profit": 6,
+      "cost": 2,
+      "duration": 2,
+      "milp_index": 4
+    },
+    {
+      "id": "E",
+      "profit": 16,
+      "cost": 15,
+      "duration": 6,
+      "milp_index": 5
+    },
+    {
+      "id": "F",
+      "profit": 5,
+      "cost": 2,
+      "duration": 2,
+      "milp_index": 6
+    },
+    {
+      "id": "G",
+      "profit": 4,
+      "cost": 2,
+      "duration": 2,
+      "milp_index": 7
+    },
+    {
+      "id": "H",
+      "profit": 20,
+      "cost": 2,
+      "duration": 3,
+      "milp_index": 8
+    },
+    {
+      "id": "I",
+      "profit": 12,
+      "cost": 2,
+      "duration": 2,
+      "milp_index": 9
+    },
+    {
+      "id": "J",
+      "profit": 29,
+      "cost": 20,
+      "duration": 8,
+      "milp_index": 10
+    },
+    {
+      "id": "K",
+      "profit": 9,
+      "cost": 2,
+      "duration": 2,
+      "milp_index": 11
+    },
+    {
+      "id": "L",
+      "profit": 3,
+      "cost": 2,
+      "duration": 2,
+      "milp_index": 12
+    },
+    {
+      "id": "M",
+      "profit": 4,
+      "cost": 2,
+      "duration": 2,
+      "milp_index": 13
+    },
+    {
+      "id": "N",
+      "profit": 4,
+      "cost": 2,
+      "duration": 2,
+      "milp_index": 14
+    },
+    {
+      "id": "P",
+      "profit": 26,
+      "cost": 25,
+      "duration": 10,
+      "milp_index": 15
+    },
+    {
+      "id": "Q",
+      "profit": 15,
+      "cost": 2,
+      "duration": 2,
+      "milp_index": 16
+    },
+    {
+      "id": "O",
+      "profit": 8,
+      "cost": 3,
+      "duration": 2,
+      "milp_index": 17
+    }
+  ],
+  "edges": [
+    [
+      "A",
+      "B"
+    ],
+    [
+      "A",
+      "C"
+    ],
+    [
+      "B",
+      "D"
+    ],
+    [
+      "C",
+      "D"
+    ],
+    [
+      "D",
+      "F"
+    ],
+    [
+      "F",
+      "G"
+    ],
+    [
+      "G",
+      "H"
+    ],
+    [
+      "D",
+      "E"
+    ],
+    [
+      "E",
+      "H"
+    ],
+    [
+      "B",
+      "I"
+    ],
+    [
+      "I",
+      "J"
+    ],
+    [
+      "J",
+      "H"
+    ],
+    [
+      "C",
+      "K"
+    ],
+    [
+      "K",
+      "L"
+    ],
+    [
+      "L",
+      "M"
+    ],
+    [
+      "M",
+      "N"
+    ],
+    [
+      "N",
+      "H"
+    ],
+    [
+      "F",
+      "K"
+    ],
+    [
+      "E",
+      "L"
+    ],
+    [
+      "J",
+      "M"
+    ],
+    [
+      "A",
+      "Q"
+    ],
+    [
+      "Q",
+      "H"
+    ],
+    [
+      "B",
+      "P"
+    ],
+    [
+      "P",
+      "H"
+    ],
+    [
+      "C",
+      "O"
+    ],
+    [
+      "O",
+      "H"
+    ]
+  ],
+  "targets": [
+    "H"
+  ],
+  "order_rules": [
+    {
+      "if": [
+        "A",
+        "B"
+      ],
+      "condition": "A avant B"
+    },
+    {
+      "if": [
+        "A",
+        "C"
+      ],
+      "condition": "A avant C"
+    },
+    {
+      "if": [
+        "B",
+        "D"
+      ],
+      "condition": "B avant D"
+    },
+    {
+      "if": [
+        "C",
+        "D"
+      ],
+      "condition": "C avant D"
+    },
+    {
+      "if": [
+        "D",
+        "F"
+      ],
+      "condition": "D avant F"
+    },
+    {
+      "if": [
+        "F",
+        "G"
+      ],
+      "condition": "F avant G"
+    },
+    {
+      "if": [
+        "G",
+        "H"
+      ],
+      "condition": "G avant H"
+    },
+    {
+      "if": [
+        "D",
+        "E"
+      ],
+      "condition": "D avant E"
+    },
+    {
+      "if": [
+        "E",
+        "H"
+      ],
+      "condition": "E avant H"
+    },
+    {
+      "if": [
+        "B",
+        "I"
+      ],
+      "condition": "B avant I"
+    },
+    {
+      "if": [
+        "I",
+        "J"
+      ],
+      "condition": "I avant J"
+    },
+    {
+      "if": [
+        "J",
+        "H"
+      ],
+      "condition": "J avant H"
+    },
+    {
+      "if": [
+        "C",
+        "K"
+      ],
+      "condition": "C avant K"
+    },
+    {
+      "if": [
+        "K",
+        "L"
+      ],
+      "condition": "K avant L"
+    },
+    {
+      "if": [
+        "L",
+        "M"
+      ],
+      "condition": "L avant M"
+    },
+    {
+      "if": [
+        "M",
+        "N"
+      ],
+      "condition": "M avant N"
+    },
+    {
+      "if": [
+        "N",
+        "H"
+      ],
+      "condition": "N avant H"
+    },
+    {
+      "if": [
+        "A",
+        "Q"
+      ],
+      "condition": "A avant Q"
+    },
+    {
+      "if": [
+        "Q",
+        "H"
+      ],
+      "condition": "Q avant H"
+    },
+    {
+      "if": [
+        "B",
+        "P"
+      ],
+      "condition": "B avant P"
+    },
+    {
+      "if": [
+        "P",
+        "H"
+      ],
+      "condition": "P avant H"
+    }
+  ]
+}

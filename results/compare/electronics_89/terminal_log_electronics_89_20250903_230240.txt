@@ -1,0 +1,328 @@
+Instance: electronics_89
+Cibles: ['EL023', 'EL080']
+ Exécution GRASP sur C:\Users\Waele\OneDrive\Documents\Etude\Cours\semestre_9\STAGE\IMT STAGE 5A\lassy-dsp-grasp\data\instances_base\electronics_89.json
+[DIAG] grasp_vnd run 0: seq_brute=['EL004', 'EL005', 'EL067', 'EL023', 'EL007', 'EL039', 'EL070', 'EL080']
+[DIAG] grasp_vnd run 0: profit=119.0, makespan=8.0, seq_filtered=['EL004', 'EL005', 'EL067', 'EL023', 'EL007', 'EL039', 'EL070', 'EL080']
+[DIAG] grasp_vnd run 1: seq_brute=['EL005', 'EL007', 'EL023', 'EL067', 'EL004', 'EL039', 'EL070', 'EL080']
+[DIAG] grasp_vnd run 1: profit=119.0, makespan=8.0, seq_filtered=['EL005', 'EL007', 'EL023', 'EL067', 'EL004', 'EL039', 'EL070', 'EL080']
+[DIAG] grasp_vnd run 2: seq_brute=['EL067', 'EL007', 'EL004', 'EL005', 'EL039', 'EL070', 'EL080', 'EL023']
+[DIAG] grasp_vnd run 2: profit=119.0, makespan=8.0, seq_filtered=['EL067', 'EL007', 'EL004', 'EL005', 'EL039', 'EL070', 'EL080', 'EL023']
+[DIAG] grasp_vnd run 3: seq_brute=['EL005', 'EL004', 'EL007', 'EL023', 'EL067', 'EL039', 'EL070', 'EL080']
+[DIAG] grasp_vnd run 3: profit=119.0, makespan=8.0, seq_filtered=['EL005', 'EL004', 'EL007', 'EL023', 'EL067', 'EL039', 'EL070', 'EL080']
+[DIAG] grasp_vnd run 4: seq_brute=['EL004', 'EL067', 'EL007', 'EL039', 'EL070', 'EL080', 'EL005', 'EL023']
+[DIAG] grasp_vnd run 4: profit=119.0, makespan=8.0, seq_filtered=['EL004', 'EL067', 'EL007', 'EL039', 'EL070', 'EL080', 'EL005', 'EL023']
+[DIAG] grasp_vnd run 5: seq_brute=['EL067', 'EL004', 'EL007', 'EL039', 'EL070', 'EL005', 'EL023', 'EL080']
+[DIAG] grasp_vnd run 5: profit=119.0, makespan=8.0, seq_filtered=['EL067', 'EL004', 'EL007', 'EL039', 'EL070', 'EL005', 'EL023', 'EL080']
+[DIAG] grasp_vnd run 6: seq_brute=['EL004', 'EL005', 'EL023', 'EL007', 'EL067', 'EL039', 'EL070', 'EL080']
+[DIAG] grasp_vnd run 6: profit=119.0, makespan=8.0, seq_filtered=['EL004', 'EL005', 'EL023', 'EL007', 'EL067', 'EL039', 'EL070', 'EL080']
+[DIAG] grasp_vnd run 7: seq_brute=['EL007', 'EL067', 'EL004', 'EL005', 'EL023', 'EL039', 'EL070', 'EL080']
+[DIAG] grasp_vnd run 7: profit=119.0, makespan=8.0, seq_filtered=['EL007', 'EL067', 'EL004', 'EL005', 'EL023', 'EL039', 'EL070', 'EL080']
+[DIAG] grasp_vnd run 8: seq_brute=['EL067', 'EL005', 'EL023', 'EL007', 'EL004', 'EL039', 'EL070', 'EL080']
+[DIAG] grasp_vnd run 8: profit=119.0, makespan=8.0, seq_filtered=['EL067', 'EL005', 'EL023', 'EL007', 'EL004', 'EL039', 'EL070', 'EL080']
+[DIAG] grasp_vnd run 9: seq_brute=['EL067', 'EL004', 'EL005', 'EL007', 'EL039', 'EL023', 'EL070', 'EL080']
+[DIAG] grasp_vnd run 9: profit=119.0, makespan=8.0, seq_filtered=['EL067', 'EL004', 'EL005', 'EL007', 'EL039', 'EL023', 'EL070', 'EL080']
+[DIAG] grasp_tabu run 0: seq_brute=['EL004', 'EL007', 'EL039', 'EL070', 'EL067', 'EL005', 'EL023', 'EL080']
+[DIAG] grasp_tabu run 0: profit=119.0, makespan=8.0, seq_filtered=['EL004', 'EL007', 'EL039', 'EL070', 'EL067', 'EL005', 'EL023', 'EL080']
+[DIAG] grasp_tabu run 1: seq_brute=['EL067', 'EL004', 'EL005', 'EL007', 'EL023', 'EL039', 'EL070', 'EL080']
+[DIAG] grasp_tabu run 1: profit=119.0, makespan=8.0, seq_filtered=['EL067', 'EL004', 'EL005', 'EL007', 'EL023', 'EL039', 'EL070', 'EL080']
+[DIAG] grasp_tabu run 2: seq_brute=['EL005', 'EL067', 'EL007', 'EL004', 'EL023', 'EL039', 'EL070', 'EL080']
+[DIAG] grasp_tabu run 2: profit=119.0, makespan=8.0, seq_filtered=['EL005', 'EL067', 'EL007', 'EL004', 'EL023', 'EL039', 'EL070', 'EL080']
+[DIAG] grasp_tabu run 3: seq_brute=['EL004', 'EL005', 'EL067', 'EL007', 'EL039', 'EL070', 'EL023', 'EL080']
+[DIAG] grasp_tabu run 3: profit=119.0, makespan=8.0, seq_filtered=['EL004', 'EL005', 'EL067', 'EL007', 'EL039', 'EL070', 'EL023', 'EL080']
+[DIAG] grasp_tabu run 4: seq_brute=['EL007', 'EL067', 'EL005', 'EL004', 'EL039', 'EL023', 'EL070', 'EL080']
+[DIAG] grasp_tabu run 4: profit=119.0, makespan=8.0, seq_filtered=['EL007', 'EL067', 'EL005', 'EL004', 'EL039', 'EL023', 'EL070', 'EL080']
+[DIAG] grasp_tabu run 5: seq_brute=['EL004', 'EL067', 'EL007', 'EL039', 'EL005', 'EL023', 'EL070', 'EL080']
+[DIAG] grasp_tabu run 5: profit=119.0, makespan=8.0, seq_filtered=['EL004', 'EL067', 'EL007', 'EL039', 'EL005', 'EL023', 'EL070', 'EL080']
+[DIAG] grasp_tabu run 6: seq_brute=['EL007', 'EL005', 'EL067', 'EL023', 'EL004', 'EL039', 'EL070', 'EL080']
+[DIAG] grasp_tabu run 6: profit=119.0, makespan=8.0, seq_filtered=['EL007', 'EL005', 'EL067', 'EL023', 'EL004', 'EL039', 'EL070', 'EL080']
+[DIAG] grasp_tabu run 7: seq_brute=['EL067', 'EL007', 'EL004', 'EL039', 'EL005', 'EL023', 'EL070', 'EL080']
+[DIAG] grasp_tabu run 7: profit=119.0, makespan=8.0, seq_filtered=['EL067', 'EL007', 'EL004', 'EL039', 'EL005', 'EL023', 'EL070', 'EL080']
+[DIAG] grasp_tabu run 8: seq_brute=['EL004', 'EL067', 'EL007', 'EL005', 'EL039', 'EL023', 'EL070', 'EL080']
+[DIAG] grasp_tabu run 8: profit=119.0, makespan=8.0, seq_filtered=['EL004', 'EL067', 'EL007', 'EL005', 'EL039', 'EL023', 'EL070', 'EL080']
+[DIAG] grasp_tabu run 9: seq_brute=['EL067', 'EL005', 'EL007', 'EL004', 'EL023', 'EL039', 'EL070', 'EL080']
+[DIAG] grasp_tabu run 9: profit=119.0, makespan=8.0, seq_filtered=['EL067', 'EL005', 'EL007', 'EL004', 'EL023', 'EL039', 'EL070', 'EL080']
+[DIAG] grasp_mns run 0: seq_brute=['EL067', 'EL007', 'EL004', 'EL039', 'EL005', 'EL070', 'EL080', 'EL023']
+[DIAG] grasp_mns run 0: profit=119.0, makespan=8.0, seq_filtered=['EL067', 'EL007', 'EL004', 'EL039', 'EL005', 'EL070', 'EL080', 'EL023']
+[DIAG] grasp_mns run 1: seq_brute=['EL004', 'EL067', 'EL007', 'EL005', 'EL023', 'EL039', 'EL070', 'EL080']
+[DIAG] grasp_mns run 1: profit=119.0, makespan=8.0, seq_filtered=['EL004', 'EL067', 'EL007', 'EL005', 'EL023', 'EL039', 'EL070', 'EL080']
+[DIAG] grasp_mns run 2: seq_brute=['EL007', 'EL005', 'EL023', 'EL067', 'EL004', 'EL039', 'EL070', 'EL080']
+[DIAG] grasp_mns run 2: profit=119.0, makespan=8.0, seq_filtered=['EL007', 'EL005', 'EL023', 'EL067', 'EL004', 'EL039', 'EL070', 'EL080']
+[DIAG] grasp_mns run 3: seq_brute=['EL004', 'EL005', 'EL023', 'EL007', 'EL067', 'EL039', 'EL070', 'EL080']
+[DIAG] grasp_mns run 3: profit=119.0, makespan=8.0, seq_filtered=['EL004', 'EL005', 'EL023', 'EL007', 'EL067', 'EL039', 'EL070', 'EL080']
+[DIAG] grasp_mns run 4: seq_brute=['EL067', 'EL004', 'EL005', 'EL023', 'EL007', 'EL039', 'EL070', 'EL080']
+[DIAG] grasp_mns run 4: profit=119.0, makespan=8.0, seq_filtered=['EL067', 'EL004', 'EL005', 'EL023', 'EL007', 'EL039', 'EL070', 'EL080']
+[DIAG] grasp_mns run 5: seq_brute=['EL005', 'EL023', 'EL067', 'EL004', 'EL007', 'EL039', 'EL070', 'EL080']
+[DIAG] grasp_mns run 5: profit=119.0, makespan=8.0, seq_filtered=['EL005', 'EL023', 'EL067', 'EL004', 'EL007', 'EL039', 'EL070', 'EL080']
+[DIAG] grasp_mns run 6: seq_brute=['EL067', 'EL005', 'EL007', 'EL004', 'EL023', 'EL039', 'EL070', 'EL080']
+[DIAG] grasp_mns run 6: profit=119.0, makespan=8.0, seq_filtered=['EL067', 'EL005', 'EL007', 'EL004', 'EL023', 'EL039', 'EL070', 'EL080']
+[DIAG] grasp_mns run 7: seq_brute=['EL005', 'EL067', 'EL007', 'EL023', 'EL004', 'EL039', 'EL070', 'EL080']
+[DIAG] grasp_mns run 7: profit=119.0, makespan=8.0, seq_filtered=['EL005', 'EL067', 'EL007', 'EL023', 'EL004', 'EL039', 'EL070', 'EL080']
+[DIAG] grasp_mns run 8: seq_brute=['EL004', 'EL005', 'EL067', 'EL023', 'EL007', 'EL039', 'EL070', 'EL080']
+[DIAG] grasp_mns run 8: profit=119.0, makespan=8.0, seq_filtered=['EL004', 'EL005', 'EL067', 'EL023', 'EL007', 'EL039', 'EL070', 'EL080']
+[DIAG] grasp_mns run 9: seq_brute=['EL004', 'EL067', 'EL007', 'EL005', 'EL039', 'EL023', 'EL070', 'EL080']
+[DIAG] grasp_mns run 9: profit=119.0, makespan=8.0, seq_filtered=['EL004', 'EL067', 'EL007', 'EL005', 'EL039', 'EL023', 'EL070', 'EL080']
+Dijkstra DSP Exact - Mode: shortest_path
+   Cibles: ['EL023', 'EL080']
+   Nœuds requis: 8/89
+→ Exécution MILP sur C:\Users\Waele\OneDrive\Documents\Etude\Cours\semestre_9\STAGE\IMT STAGE 5A\lassy-dsp-grasp\data\instances_milp\electronics_89_selectif.txt (limite: 7200s, gap≤3.00000%)
+↳ Arrêt dès gap ≤ 3.00% ou au plus tard vers 01:02:37
+Utilisation de CPLEX (limite: 7200s) (C:\Program Files\IBM\ILOG\CPLEX_Studio2211\cplex\bin\x64_win64\cplex.exe)
+[DEBUG STATUS] Parsing log file: results\solver_logs\cplex_20250903-230237.log
+[DEBUG STATUS] Line 41: Found 'mip - integer optimal, tolerance' -> Optimal
+[DIAG] extract_sequence - séquence brute extraite: [3, 13, 5, 8, 60, 7, 2, 29, 56, 10, 11, 12, 68, 1, 14, 15, 18, 31, 21, 22, 25, 28, 30, 32, 33, 34, 35, 36, 40, 38, 39, 4, 41, 42, 45, 46, 47, 49, 66, 52, 53, 54, 71, 57, 59, 6, 27, 24, 58, 61, 16, 74, 76, 78, 85, 86, 87, 9, 70, 17, 20, 89, 51, 23, 81, 37, 44, 50, 62, 63, 64, 65, 67, 73, 77, 79, 80, 82, 83, 84, 88, 75, 72, 69, 48]
+[DEBUG] Clés de grasp_results avant boucle: ['grasp_vnd', 'grasp_tabu', 'grasp_mns', 'dijkstra_closure_min']
+[DEBUG STATUS] Parsing log file: results\solver_logs\cplex_20250903-230237.log
+[DEBUG STATUS] Line 41: Found 'mip - integer optimal, tolerance' -> Optimal
+[DEBUG] milp_log_path: results\solver_logs\cplex_20250903-230237.log
+[DEBUG] milp_status: Optimal
+[DEBUG] milp_gap: 1.52
+[DEBUG] milp_best_integer: 119.0
+[DEBUG] milp_profit: 1050.0
+[DEBUG] milp_makespan: 2248
+[DEBUG] milp_sequence: [3, 13, 5, 8, 60, 7, 2, 29, 56, 10, 11, 12, 68, 1, 14, 15, 18, 31, 21, 22, 25, 28, 30, 32, 33, 34, 35, 36, 40, 38, 39, 4, 41, 42, 45, 46, 47, 49, 66, 52, 53, 54, 71, 57, 59, 6, 27, 24, 58, 61, 16, 74, 76, 78, 85, 86, 87, 9, 70, 17, 20, 89, 51, 23, 81, 37, 44, 50, 62, 63, 64, 65, 67, 73, 77, 79, 80, 82, 83, 84, 88, 75, 72, 69, 48]
+[DEBUG] profit_closure final: 119.0
+[DEBUG] makespan_closure final: 2248.0
+[DEBUG] best_integer_val final: 119.0
+
+=== DIAGNOSTIC DIVERSITÉ GRASP ===
+[grasp_vnd] Séquence brute: ['EL004', 'EL005', 'EL067', 'EL023', 'EL007', 'EL039', 'EL070', 'EL080']
+[grasp_vnd] Séquence filtrée: ['EL004', 'EL005', 'EL067', 'EL023', 'EL007', 'EL039', 'EL070', 'EL080']
+[grasp_vnd] Score DSP: 36.0
+[grasp_tabu] Séquence brute: ['EL004', 'EL007', 'EL039', 'EL070', 'EL067', 'EL005', 'EL023', 'EL080']
+[grasp_tabu] Séquence filtrée: ['EL004', 'EL007', 'EL039', 'EL070', 'EL067', 'EL005', 'EL023', 'EL080']
+[grasp_tabu] Score DSP: 36.0
+[grasp_mns] Séquence brute: ['EL067', 'EL007', 'EL004', 'EL039', 'EL005', 'EL070', 'EL080', 'EL023']
+[grasp_mns] Séquence filtrée: ['EL067', 'EL007', 'EL004', 'EL039', 'EL005', 'EL070', 'EL080', 'EL023']
+[grasp_mns] Score DSP: 36.0
+[dijkstra_closure_min] Séquence brute: ['EL005', 'EL023']
+[dijkstra_closure_min] Séquence filtrée: ['EL005', 'EL023']
+[dijkstra_closure_min] Score DSP: 3.0
+
+Diversité séquences brutes (nombre unique): 4
+Diversité séquences filtrées (nombre unique): 4
+Scores DSP GRASP: [36.0, 36.0, 36.0, 3.0]
+=== FIN DIAGNOSTIC ===
+
+[DEBUG] Chemin fichier MILP utilisé : data/instances_milp/electronics_89_selectif.txt
+[DEBUG] milp_results['milp_sequence'] = [3, 13, 5, 8, 60, 7, 2, 29, 56, 10, 11, 12, 68, 1, 14, 15, 18, 31, 21, 22, 25, 28, 30, 32, 33, 34, 35, 36, 40, 38, 39, 4, 41, 42, 45, 46, 47, 49, 66, 52, 53, 54, 71, 57, 59, 6, 27, 24, 58, 61, 16, 74, 76, 78, 85, 86, 87, 9, 70, 17, 20, 89, 51, 23, 81, 37, 44, 50, 62, 63, 64, 65, 67, 73, 77, 79, 80, 82, 83, 84, 88, 75, 72, 69, 48]
+[DEBUG] milp_data = {'V': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89], 'E': [(1, 17), (1, 70), (1, 21), (1, 43), (2, 56), (2, 30), (2, 22), (2, 64), (3, 35), (3, 56), (3, 84), (3, 16), (4, 54), (4, 83), (4, 70), (4, 17), (5, 76), (5, 87), (5, 40), (5, 53), (6, 27), (6, 23), (6, 24), (6, 61), (6, 48), (6, 58), (7, 27), (7, 19), (7, 20), (7, 29), (7, 37), (7, 44), (7, 50), (7, 62), (7, 56), (8, 20), (8, 21), (8, 27), (8, 40), (8, 34), (8, 37), (10, 34), (10, 32), (10, 42), (11, 55), (11, 53), (11, 46), (12, 38), (12, 35), (12, 31), (13, 25), (13, 26), (13, 23), (13, 45), (13, 29), (13, 38), (13, 53), (13, 48), (13, 47), (14, 25), (14, 20), (14, 28), (18, 61), (18, 51), (18, 50), (22, 66), (22, 70), (22, 79), (23, 65), (23, 73), (23, 63), (24, 80), (24, 70), (24, 79), (25, 74), (25, 77), (25, 79), (27, 69), (27, 72), (27, 75), (29, 70), (29, 65), (29, 64), (31, 73), (31, 65), (31, 70), (39, 80), (39, 67), (39, 78), (40, 71), (40, 78), (40, 69), (45, 70), (45, 78), (45, 76), (47, 64), (47, 75), (47, 73), (49, 77), (49, 64), (49, 66), (52, 74), (52, 76), (52, 79), (56, 66), (56, 70), (56, 69), (62, 69), (62, 77), (62, 67), (66, 88), (66, 89), (66, 82), (68, 89), (68, 82), (68, 81), (70, 84), (70, 83), (70, 89), (71, 89), (71, 81), (71, 88), (76, 82), (76, 88), (76, 87)], 'T': [24, 81], 'r': {1: 22, 2: 22, 3: 24, 4: 26, 5: 27, 6: 30, 7: 5, 8: 27, 9: 26, 10: 10, 11: 18, 12: 17, 13: 23, 14: 21, 15: 17, 16: 16, 17: 7, 18: 15, 19: 9, 20: 17, 21: 28, 22: 22, 23: 16, 24: 17, 25: 14, 26: 7, 27: 5, 28: 6, 29: 21, 30: 12, 31: 5, 32: 17, 33: 30, 34: 9, 35: 12, 36: 23, 37: 17, 38: 30, 39: 22, 40: 10, 41: 21, 42: 14, 43: 5, 44: 20, 45: 18, 46: 11, 47: 19, 48: 16, 49: 16, 50: 27, 51: 24, 52: 22, 53: 17, 54: 24, 55: 8, 56: 22, 57: 11, 58: 19, 59: 13, 60: 10, 61: 10, 62: 18, 63: 14, 64: 16, 65: 24, 66: 6, 67: 12, 68: 16, 69: 17, 70: 28, 71: 20, 72: 25, 73: 25, 74: 14, 75: 18, 76: 17, 77: 24, 78: 8, 79: 28, 80: 21, 81: 19, 82: 22, 83: 19, 84: 22, 85: 29, 86: 11, 87: 12, 88: 19, 89: 9}, 'c': {1: 2, 2: 6, 3: 8, 4: 10, 5: 1, 6: 1, 7: 8, 8: 4, 9: 7, 10: 8, 11: 6, 12: 4, 13: 3, 14: 4, 15: 5, 16: 8, 17: 6, 18: 2, 19: 9, 20: 8, 21: 4, 22: 8, 23: 10, 24: 7, 25: 2, 26: 9, 27: 10, 28: 2, 29: 1, 30: 10, 31: 9, 32: 8, 33: 1, 34: 2, 35: 7, 36: 8, 37: 1, 38: 6, 39: 6, 40: 8, 41: 4, 42: 3, 43: 10, 44: 7, 45: 6, 46: 1, 47: 7, 48: 5, 49: 6, 50: 6, 51: 3, 52: 8, 53: 6, 54: 7, 55: 9, 56: 2, 57: 5, 58: 9, 59: 10, 60: 2, 61: 2, 62: 4, 63: 5, 64: 4, 65: 8, 66: 10, 67: 10, 68: 10, 69: 2, 70: 2, 71: 8, 72: 4, 73: 5, 74: 7, 75: 8, 76: 8, 77: 7, 78: 3, 79: 5, 80: 4, 81: 8, 82: 10, 83: 6, 84: 6, 85: 6, 86: 5, 87: 9, 88: 7, 89: 2}, 'p': {1: 43, 2: 64, 3: 16, 4: 17, 5: 53, 6: 58, 7: 56, 8: 37, 9: 2, 10: 42, 11: 46, 12: 31, 13: 47, 14: 28, 15: 4, 16: 3, 17: 2, 18: 50, 19: 4, 20: 3, 21: 3, 22: 79, 23: 63, 24: 79, 25: 79, 26: 3, 27: 75, 28: 5, 29: 64, 30: 2, 31: 70, 32: 1, 33: 2, 34: 5, 35: 3, 36: 4, 37: 2, 38: 2, 39: 78, 40: 69, 41: 2, 42: 5, 43: 5, 44: 4, 45: 76, 46: 4, 47: 73, 48: 2, 49: 66, 50: 5, 51: 2, 52: 79, 53: 1, 54: 4, 55: 4, 56: 69, 57: 4, 58: 2, 59: 2, 60: 3, 61: 1, 62: 67, 63: 3, 64: 3, 65: 5, 66: 82, 67: 5, 68: 81, 69: 1, 70: 89, 71: 88, 72: 4, 73: 2, 74: 2, 75: 1, 76: 87, 77: 1, 78: 4, 79: 2, 80: 2, 81: 1, 82: 4, 83: 4, 84: 4, 85: 2, 86: 1, 87: 5, 88: 4, 89: 3}, 'C_max': None, 'label_map': {}}
+[DIAG] Séquence brute extraite de MILP: [3, 13, 5, 8, 60, 7, 2, 29, 56, 10, 11, 12, 68, 1, 14, 15, 18, 31, 21, 22, 25, 28, 30, 32, 33, 34, 35, 36, 40, 38, 39, 4, 41, 42, 45, 46, 47, 49, 66, 52, 53, 54, 71, 57, 59, 6, 27, 24, 58, 61, 16, 74, 76, 78, 85, 86, 87, 9, 70, 17, 20, 89, 51, 23, 81, 37, 44, 50, 62, 63, 64, 65, 67, 73, 77, 79, 80, 82, 83, 84, 88, 75, 72, 69, 48]
+[DIAG] Mapping indices MILP → labels:
+[DIAG] Liste des nœuds du graphe et mapping numérique :
+  EL000 -> 1
+  EL001 -> 2
+  EL002 -> 3
+  EL003 -> 4
+  EL004 -> 5
+  EL005 -> 6
+  EL006 -> 7
+  EL007 -> 8
+  EL008 -> 9
+  EL009 -> 10
+  EL010 -> 11
+  EL011 -> 12
+  EL012 -> 13
+  EL013 -> 14
+  EL014 -> 15
+  EL015 -> 16
+  EL016 -> 17
+  EL017 -> 18
+  EL018 -> 19
+  EL019 -> 20
+  EL020 -> 21
+  EL021 -> 22
+  EL022 -> 23
+  EL023 -> 24
+  EL024 -> 25
+  EL025 -> 26
+  EL026 -> 27
+  EL027 -> 28
+  EL028 -> 29
+  EL029 -> 30
+  EL030 -> 31
+  EL031 -> 32
+  EL032 -> 33
+  EL033 -> 34
+  EL034 -> 35
+  EL035 -> 36
+  EL036 -> 37
+  EL037 -> 38
+  EL038 -> 39
+  EL039 -> 40
+  EL040 -> 41
+  EL041 -> 42
+  EL042 -> 43
+  EL043 -> 44
+  EL044 -> 45
+  EL045 -> 46
+  EL046 -> 47
+  EL047 -> 48
+  EL048 -> 49
+  EL049 -> 50
+  EL050 -> 51
+  EL051 -> 52
+  EL052 -> 53
+  EL053 -> 54
+  EL054 -> 55
+  EL055 -> 56
+  EL056 -> 57
+  EL057 -> 58
+  EL058 -> 59
+  EL059 -> 60
+  EL060 -> 61
+  EL061 -> 62
+  EL062 -> 63
+  EL063 -> 64
+  EL064 -> 65
+  EL065 -> 66
+  EL066 -> 67
+  EL067 -> 68
+  EL068 -> 69
+  EL069 -> 70
+  EL070 -> 71
+  EL071 -> 72
+  EL072 -> 73
+  EL073 -> 74
+  EL074 -> 75
+  EL075 -> 76
+  EL076 -> 77
+  EL077 -> 78
+  EL078 -> 79
+  EL079 -> 80
+  EL080 -> 81
+  EL081 -> 82
+  EL082 -> 83
+  EL083 -> 84
+  EL084 -> 85
+  EL085 -> 86
+  EL086 -> 87
+  EL087 -> 88
+  EL088 -> 89
+[MAPPING MILP] Indices → Labels:
+    3 -> EL002
+    13 -> EL012
+    5 -> EL004
+    8 -> EL007
+    60 -> EL059
+    7 -> EL006
+    2 -> EL001
+    29 -> EL028
+    56 -> EL055
+    10 -> EL009
+    11 -> EL010
+    12 -> EL011
+    68 -> EL067
+    1 -> EL000
+    14 -> EL013
+    15 -> EL014
+    18 -> EL017
+    31 -> EL030
+    21 -> EL020
+    22 -> EL021
+    25 -> EL024
+    28 -> EL027
+    30 -> EL029
+    32 -> EL031
+    33 -> EL032
+    34 -> EL033
+    35 -> EL034
+    36 -> EL035
+    40 -> EL039
+    38 -> EL037
+    39 -> EL038
+    4 -> EL003
+    41 -> EL040
+    42 -> EL041
+    45 -> EL044
+    46 -> EL045
+    47 -> EL046
+    49 -> EL048
+    66 -> EL065
+    52 -> EL051
+    53 -> EL052
+    54 -> EL053
+    71 -> EL070
+    57 -> EL056
+    59 -> EL058
+    6 -> EL005
+    27 -> EL026
+    24 -> EL023
+    58 -> EL057
+    61 -> EL060
+    16 -> EL015
+    74 -> EL073
+    76 -> EL075
+    78 -> EL077
+    85 -> EL084
+    86 -> EL085
+    87 -> EL086
+    9 -> EL008
+    70 -> EL069
+    17 -> EL016
+    20 -> EL019
+    89 -> EL088
+    51 -> EL050
+    23 -> EL022
+    81 -> EL080
+    37 -> EL036
+    44 -> EL043
+    50 -> EL049
+    62 -> EL061
+    63 -> EL062
+    64 -> EL063
+    65 -> EL064
+    67 -> EL066
+    73 -> EL072
+    77 -> EL076
+    79 -> EL078
+    80 -> EL079
+    82 -> EL081
+    83 -> EL082
+    84 -> EL083
+    88 -> EL087
+    75 -> EL074
+    72 -> EL071
+    69 -> EL068
+    48 -> EL047
+[MAPPING MILP] Séquence finale pour profit: ['EL004', 'EL007', 'EL067', 'EL039', 'EL070', 'EL005', 'EL023', 'EL080']
+[DIAG] Séquence MILP finale pour évaluation: ['EL004', 'EL007', 'EL067', 'EL039', 'EL070', 'EL005', 'EL023', 'EL080']
+[DIAG] MILP profit_closure=119.0, makespan_closure=8.0, score_dsp=36.0
+[DIAG] PROFIT_CLOSURE MILP: 119.0
+[DIAG] MAKESPAN_CLOSURE MILP: 8.0
+[DIAG] SEQ_CLOSURE_LEN MILP: ['EL004', 'EL007', 'EL067', 'EL039', 'EL070', 'EL005', 'EL023', 'EL080']
+[DEBUG STATUS] Parsing log file: results\solver_logs\cplex_20250903-230237.log
+[DEBUG STATUS] Line 41: Found 'mip - integer optimal, tolerance' -> Optimal
+[DIAG] Séquence grasp_vnd pour évaluation: ['EL004', 'EL005', 'EL067', 'EL023', 'EL007', 'EL039', 'EL070', 'EL080']
+[DIAG] Séquence grasp_vnd filtrée (closure): ['EL004', 'EL005', 'EL067', 'EL023', 'EL007', 'EL039', 'EL070', 'EL080']
+[DIAG] Mapping grasp_vnd: [5, 6, 68, 24, 8, 40, 71, 81]
+[DIAG] grasp_vnd profit_closure=119.0, makespan_closure=8.0, score_dsp=36.0
+[DEBUG TABLEAU] grasp_vnd: profit_closure=119.0, makespan_closure=8.0, score_dsp=36.0, seq_length_closure=['EL004', 'EL005', 'EL067', 'EL023', 'EL007', 'EL039', 'EL070', 'EL080']
+[DIAG] Séquence grasp_tabu pour évaluation: ['EL004', 'EL007', 'EL039', 'EL070', 'EL067', 'EL005', 'EL023', 'EL080']
+[DIAG] Séquence grasp_tabu filtrée (closure): ['EL004', 'EL007', 'EL039', 'EL070', 'EL067', 'EL005', 'EL023', 'EL080']
+[DIAG] Mapping grasp_tabu: [5, 8, 40, 71, 68, 6, 24, 81]
+[DIAG] grasp_tabu profit_closure=119.0, makespan_closure=8.0, score_dsp=36.0
+[DEBUG TABLEAU] grasp_tabu: profit_closure=119.0, makespan_closure=8.0, score_dsp=36.0, seq_length_closure=['EL004', 'EL007', 'EL039', 'EL070', 'EL067', 'EL005', 'EL023', 'EL080']
+[DIAG] Séquence grasp_mns pour évaluation: ['EL067', 'EL007', 'EL004', 'EL039', 'EL005', 'EL070', 'EL080', 'EL023']
+[DIAG] Séquence grasp_mns filtrée (closure): ['EL067', 'EL007', 'EL004', 'EL039', 'EL005', 'EL070', 'EL080', 'EL023']
+[DIAG] Mapping grasp_mns: [68, 8, 5, 40, 6, 71, 81, 24]
+[DIAG] grasp_mns profit_closure=119.0, makespan_closure=8.0, score_dsp=36.0
+[DEBUG TABLEAU] grasp_mns: profit_closure=119.0, makespan_closure=8.0, score_dsp=36.0, seq_length_closure=['EL067', 'EL007', 'EL004', 'EL039', 'EL005', 'EL070', 'EL080', 'EL023']
+[DIAG] Séquence dijkstra_closure_min pour évaluation: ['EL005', 'EL023']
+[DIAG] Séquence dijkstra_closure_min filtrée (closure): ['EL005', 'EL023']
+[DIAG] Mapping dijkstra_closure_min: [6, 24]
+[DIAG] dijkstra_closure_min profit_closure=39.0, makespan_closure=2.0, score_dsp=3.0
+[DEBUG TABLEAU] dijkstra_closure_min: profit_closure=39.0, makespan_closure=2.0, score_dsp=3.0, seq_length_closure=['EL005', 'EL023']
+[DEBUG AVANT NETTOYAGE] Nombre de lignes dans results: 5
+[DEBUG AVANT NETTOYAGE] MILP result[0]: profit_closure=119.0, makespan_closure=8.0
+[DEBUG FINAL] Nombre de lignes dans rows: 5
+[DEBUG FINAL] MILP row[0]: profit_closure=119.0, makespan_closure=8.0
+
+=== COMPARAISON GRASP vs MILP ===
+      instance            algorithm  profit_closure  makespan_closure  score_dsp     time    status    gap  targets                                       seq_length_closure  violations_règles  rel_err_profit_vs_milp_closure
+electronics_89     MILP_full_profit           119.0               8.0       36.0 3.964947   Optimal  1.52%        2 [EL004, EL007, EL067, EL039, EL070, EL005, EL023, EL080]                  0                             NaN
+electronics_89            grasp_vnd           119.0               8.0       36.0 0.054728 Completed  0.00%        2 [EL004, EL005, EL067, EL023, EL007, EL039, EL070, EL080]                  0                        0.000000
+electronics_89           grasp_tabu           119.0               8.0       36.0 0.672385 Completed  0.00%        2 [EL004, EL007, EL039, EL070, EL067, EL005, EL023, EL080]                  0                        0.000000
+electronics_89            grasp_mns           119.0               8.0       36.0 0.014528 Completed  0.00%        2 [EL067, EL007, EL004, EL039, EL005, EL070, EL080, EL023]                  0                        0.000000
+electronics_89 dijkstra_closure_min            39.0               2.0        3.0 2.000000 Completed 67.23%        2                                           [EL005, EL023]                  0                        0.672269
+
+Résultats sauvegardés dans: results/compare\electronics_89\compare_electronics_89_20250903_230240.csv

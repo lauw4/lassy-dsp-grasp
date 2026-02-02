@@ -1,0 +1,9 @@
+[
+  {
+    "comp_id": "C033",
+    "symptom": "OVER_TORQUE_NO_ADVANCE",
+    "action": "destroy",
+    "success": true,
+    "notes": "Destruction autoris\u00e9e (cutoff percentile 20e)."
+  }
+]

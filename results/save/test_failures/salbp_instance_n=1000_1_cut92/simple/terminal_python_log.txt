@@ -1,0 +1,35 @@
+2025-11-29 23:15:15,411 DSP ADAPTIVE PIPELINE - SALBP_INSTANCE_N=1000_1_CUT92
+2025-11-29 23:15:15,413 Loaded instance: salbp_instance_n=1000_1_cut92
+2025-11-29 23:15:15,414 Loaded failures: 1
+2025-11-29 23:15:15,414 [1/4] Loading instance and solving DSP...
+2025-11-29 23:15:15,436 Nodes: 92, Edges: 76, Targets: 1, Solution: 4 operations
+2025-11-29 23:15:15,437 Target(s) to achieve: ['C068']
+2025-11-29 23:15:15,437 Starting disassembly sequence (4 operations)...
+2025-11-29 23:15:15,437 [ 1/4] Disassembling C014... [OK]
+2025-11-29 23:15:15,437 [ 2/4] Disassembling C032... [OK]
+2025-11-29 23:15:15,437 [ 3/4] Disassembling C048... [OK]
+2025-11-29 23:15:15,437 [ 4/4] Disassembling C068... [OK]
+2025-11-29 23:15:15,437 [2/4] Failure scenario loaded: 1 failure(s)
+2025-11-29 23:15:15,437 [3/4] Executing adaptive scheduler...
+2025-11-29 23:15:15,458 [FUZZY] Symptom: OVER_TORQUE_NO_ADVANCE
+2025-11-29 23:15:15,458 [FUZZY] Inputs: force=70.0, torque=80.0, p_fail=85.0, context=0.0
+2025-11-29 23:15:15,458 [FUZZY] Score: 71.71
+2025-11-29 23:15:15,458 [FUZZY] Decision: destroy (confidence=59.1%)
+2025-11-29 23:15:15,459 [ACTION] destroy: success=False, notes=Destruction non autorisée : Flag 'no_destroy' actif (contexte ou graphe).
+2025-11-29 23:15:15,459 Adaptive scheduler finished. Actions taken: 2
+2025-11-29 23:15:15,459 EXECUTION SUMMARY
+2025-11-29 23:15:15,459 Status: SUCCESS
+2025-11-29 23:15:15,459 Target components:
+2025-11-29 23:15:15,459 [OK] C068 - Successfully disassembled
+2025-11-29 23:15:15,459 Execution metrics:
+2025-11-29 23:15:15,459 Targets achieved: 1/1 (100.0%)
+2025-11-29 23:15:15,459 Failures handled: 1
+2025-11-29 23:15:15,460 Actions taken: 2
+2025-11-29 23:15:15,460 Components done: 3/4
+2025-11-29 23:15:15,460 Locked: 1 component(s)
+2025-11-29 23:15:15,460 Execution time: 0.05s
+2025-11-29 23:15:15,460 Actions breakdown:
+2025-11-29 23:15:15,460 [FAILED] C048     OVER_TORQUE_NO_ADVANCE -> destroy     
+2025-11-29 23:15:15,460 [OK] C048     OVER_TORQUE_NO_ADVANCE -> destroy\u2192bypass
+2025-11-29 23:15:15,460 Detailed logs: results\save\test_failures\salbp_instance_n=1000_1_cut92\simple
+2025-11-29 23:15:15,462 Pipeline finished successfully

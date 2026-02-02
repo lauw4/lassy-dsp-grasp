@@ -1,0 +1,16 @@
+[
+  {
+    "comp_id": "C027",
+    "symptom": "ACCESS_BLOCKED",
+    "action": "destroy",
+    "success": false,
+    "notes": "Destruction non autoris\u00e9e : Profit=25.00 > seuil=21.00 (percentile 20e)."
+  },
+  {
+    "comp_id": "C027",
+    "symptom": "ACCESS_BLOCKED",
+    "action": "destroy\u2192replan",
+    "success": true,
+    "notes": "Fallback succeeded"
+  }
+]

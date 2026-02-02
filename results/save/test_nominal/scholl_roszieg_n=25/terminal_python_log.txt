@@ -1,0 +1,40 @@
+2025-11-29 22:24:04,416 DSP ADAPTIVE PIPELINE - SCHOLL_ROSZIEG_N=25
+2025-11-29 22:24:04,416 Loaded instance: scholl_roszieg_n=25
+2025-11-29 22:24:04,416 Loaded failures: 0
+2025-11-29 22:24:04,416 [1/4] Loading instance and solving DSP...
+2025-11-29 22:24:04,432 Nodes: 25, Edges: 32, Targets: 1, Solution: 18 operations
+2025-11-29 22:24:04,432 Target(s) to achieve: ['C021']
+2025-11-29 22:24:04,432 Starting disassembly sequence (18 operations)...
+2025-11-29 22:24:04,432 [ 1/18] Disassembling C000... [OK]
+2025-11-29 22:24:04,432 [ 2/18] Disassembling C001... [OK]
+2025-11-29 22:24:04,432 [ 3/18] Disassembling C002... [OK]
+2025-11-29 22:24:04,432 [ 4/18] Disassembling C003... [OK]
+2025-11-29 22:24:04,432 [ 5/18] Disassembling C004... [OK]
+2025-11-29 22:24:04,432 [ 6/18] Disassembling C007... [OK]
+2025-11-29 22:24:04,432 [ 7/18] Disassembling C005... [OK]
+2025-11-29 22:24:04,432 [ 8/18] Disassembling C008... [OK]
+2025-11-29 22:24:04,432 [ 9/18] Disassembling C006... [OK]
+2025-11-29 22:24:04,432 [10/18] Disassembling C010... [OK]
+2025-11-29 22:24:04,432 [11/18] Disassembling C012... [OK]
+2025-11-29 22:24:04,432 [12/18] Disassembling C011... [OK]
+2025-11-29 22:24:04,432 [13/18] Disassembling C013... [OK]
+2025-11-29 22:24:04,432 [14/18] Disassembling C018... [OK]
+2025-11-29 22:24:04,432 [15/18] Disassembling C014... [OK]
+2025-11-29 22:24:04,432 [16/18] Disassembling C019... [OK]
+2025-11-29 22:24:04,432 [17/18] Disassembling C020... [OK]
+2025-11-29 22:24:04,432 [18/18] Disassembling C021... [OK]
+2025-11-29 22:24:04,432 [2/4] No failures (nominal execution)
+2025-11-29 22:24:04,432 [3/4] Executing adaptive scheduler...
+2025-11-29 22:24:04,432 Adaptive scheduler finished. Actions taken: 0
+2025-11-29 22:24:04,432 EXECUTION SUMMARY
+2025-11-29 22:24:04,432 Status: SUCCESS
+2025-11-29 22:24:04,432 Target components:
+2025-11-29 22:24:04,432 [OK] C021 - Successfully disassembled
+2025-11-29 22:24:04,432 Execution metrics:
+2025-11-29 22:24:04,432 Targets achieved: 1/1 (100.0%)
+2025-11-29 22:24:04,432 Failures handled: 0
+2025-11-29 22:24:04,432 Actions taken: 0
+2025-11-29 22:24:04,432 Components done: 18/18
+2025-11-29 22:24:04,432 Execution time: 0.02s
+2025-11-29 22:24:04,432 Detailed logs: results\save\test_nominal\scholl_roszieg_n=25
+2025-11-29 22:24:04,432 Pipeline finished successfully

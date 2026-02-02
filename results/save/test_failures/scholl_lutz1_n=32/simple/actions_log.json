@@ -1,0 +1,16 @@
+[
+  {
+    "comp_id": "C009",
+    "symptom": "OVER_TORQUE_NO_ADVANCE",
+    "action": "destroy",
+    "success": false,
+    "notes": "Destruction non autoris\u00e9e : Profit=87.00 > seuil=23.20 (percentile 20e)."
+  },
+  {
+    "comp_id": "C009",
+    "symptom": "OVER_TORQUE_NO_ADVANCE",
+    "action": "destroy\u2192bypass",
+    "success": true,
+    "notes": "Fallback succeeded"
+  }
+]

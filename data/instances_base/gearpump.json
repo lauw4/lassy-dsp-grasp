@@ -1,0 +1,454 @@
+{
+    "nodes": [
+        {
+            "id": "G01",
+            "profit": 2,
+            "cost": 1,
+            "duration": 50,
+            "milp_index": 1
+        },
+        {
+            "id": "G02",
+            "profit": 2,
+            "cost": 1,
+            "duration": 50,
+            "milp_index": 2
+        },
+        {
+            "id": "G03",
+            "profit": 3,
+            "cost": 1,
+            "duration": 50,
+            "milp_index": 3
+        },
+        {
+            "id": "G04",
+            "profit": 2,
+            "cost": 1,
+            "duration": 50,
+            "milp_index": 4
+        },
+        {
+            "id": "G05",
+            "profit": 3,
+            "cost": 1,
+            "duration": 50,
+            "milp_index": 5
+        },
+        {
+            "id": "G06",
+            "profit": 2,
+            "cost": 1,
+            "duration": 50,
+            "milp_index": 6
+        },
+        {
+            "id": "G07",
+            "profit": 20,
+            "cost": 4,
+            "duration": 90,
+            "milp_index": 7
+        },
+        {
+            "id": "G08",
+            "profit": 18,
+            "cost": 3,
+            "duration": 85,
+            "milp_index": 8
+        },
+        {
+            "id": "G09",
+            "profit": 5,
+            "cost": 1,
+            "duration": 60,
+            "milp_index": 9,
+            "no_destroy": true
+        },
+        {
+            "id": "G10",
+            "profit": 2,
+            "cost": 5,
+            "duration": 100,
+            "milp_index": 10
+        },
+        {
+            "id": "G11",
+            "profit": 45,
+            "cost": 6,
+            "duration": 110,
+            "milp_index": 11
+        },
+        {
+            "id": "G12",
+            "profit": 60,
+            "cost": 7,
+            "duration": 120,
+            "milp_index": 12
+        },
+        {
+            "id": "G13",
+            "profit": 2,
+            "cost": 2,
+            "duration": 65,
+            "milp_index": 13
+        },
+        {
+            "id": "G14",
+            "profit": 30,
+            "cost": 4,
+            "duration": 95,
+            "milp_index": 14
+        },
+        {
+            "id": "G15",
+            "profit": 2,
+            "cost": 8,
+            "duration": 130,
+            "milp_index": 15
+        },
+        {
+            "id": "G16",
+            "profit": 65,
+            "cost": 7,
+            "duration": 125,
+            "milp_index": 16,
+            "no_destroy": true
+        },
+        {
+            "id": "G17",
+            "profit": 12,
+            "cost": 2,
+            "duration": 70,
+            "milp_index": 17
+        },
+        {
+            "id": "G18",
+            "profit": 80,
+            "cost": 9,
+            "duration": 140,
+            "milp_index": 18
+        },
+        {
+            "id": "G19",
+            "profit": 100,
+            "cost": 10,
+            "duration": 150,
+            "milp_index": 19,
+            "no_destroy": true
+        },
+        {
+            "id": "G20",
+            "profit": 100,
+            "cost": 8,
+            "duration": 130,
+            "milp_index": 20
+        },
+        {
+            "id": "G21",
+            "profit": 35,
+            "cost": 5,
+            "duration": 100,
+            "milp_index": 21
+        },
+        {
+            "id": "G22",
+            "profit": 40,
+            "cost": 6,
+            "duration": 110,
+            "milp_index": 22
+        }
+    ],
+    "edges": [
+        [
+            "G01",
+            "G07"
+        ],
+        [
+            "G02",
+            "G07"
+        ],
+        [
+            "G03",
+            "G07"
+        ],
+        [
+            "G04",
+            "G08"
+        ],
+        [
+            "G05",
+            "G08"
+        ],
+        [
+            "G06",
+            "G08"
+        ],
+        [
+            "G07",
+            "G09"
+        ],
+        [
+            "G07",
+            "G11"
+        ],
+        [
+            "G08",
+            "G10"
+        ],
+        [
+            "G10",
+            "G12"
+        ],
+        [
+            "G09",
+            "G13"
+        ],
+        [
+            "G09",
+            "G15"
+        ],
+        [
+            "G10",
+            "G14"
+        ],
+        [
+            "G11",
+            "G15"
+        ],
+        [
+            "G12",
+            "G15"
+        ],
+        [
+            "G12",
+            "G16"
+        ],
+        [
+            "G14",
+            "G16"
+        ],
+        [
+            "G13",
+            "G17"
+        ],
+        [
+            "G15",
+            "G18"
+        ],
+        [
+            "G16",
+            "G18"
+        ],
+        [
+            "G17",
+            "G18"
+        ],
+        [
+            "G17",
+            "G19"
+        ],
+        [
+            "G19",
+            "G20"
+        ],
+        [
+            "G18",
+            "G20"
+        ],
+        [
+            "G20",
+            "G21"
+        ],
+        [
+            "G20",
+            "G22"
+        ]
+    ],
+    "targets": [
+        "G20"
+    ],
+    "order_rules": [
+        {
+            "if": [
+                "G01",
+                "G07"
+            ],
+            "condition": "G01 avant G07"
+        },
+        {
+            "if": [
+                "G02",
+                "G07"
+            ],
+            "condition": "G02 avant G07"
+        },
+        {
+            "if": [
+                "G03",
+                "G07"
+            ],
+            "condition": "G03 avant G07"
+        },
+        {
+            "if": [
+                "G04",
+                "G08"
+            ],
+            "condition": "G04 avant G08"
+        },
+        {
+            "if": [
+                "G05",
+                "G08"
+            ],
+            "condition": "G05 avant G08"
+        },
+        {
+            "if": [
+                "G06",
+                "G08"
+            ],
+            "condition": "G06 avant G08"
+        },
+        {
+            "if": [
+                "G07",
+                "G09"
+            ],
+            "condition": "G07 avant G09"
+        },
+        {
+            "if": [
+                "G07",
+                "G11"
+            ],
+            "condition": "G07 avant G11"
+        },
+        {
+            "if": [
+                "G08",
+                "G10"
+            ],
+            "condition": "G08 avant G10"
+        },
+        {
+            "if": [
+                "G10",
+                "G12"
+            ],
+            "condition": "G10 avant G12"
+        },
+        {
+            "if": [
+                "G09",
+                "G13"
+            ],
+            "condition": "G09 avant G13"
+        },
+        {
+            "if": [
+                "G09",
+                "G15"
+            ],
+            "condition": "G09 avant G15"
+        },
+        {
+            "if": [
+                "G10",
+                "G14"
+            ],
+            "condition": "G10 avant G14"
+        },
+        {
+            "if": [
+                "G11",
+                "G15"
+            ],
+            "condition": "G11 avant G15"
+        },
+        {
+            "if": [
+                "G12",
+                "G15"
+            ],
+            "condition": "G12 avant G15"
+        },
+        {
+            "if": [
+                "G12",
+                "G16"
+            ],
+            "condition": "G12 avant G16"
+        },
+        {
+            "if": [
+                "G14",
+                "G16"
+            ],
+            "condition": "G14 avant G16"
+        },
+        {
+            "if": [
+                "G13",
+                "G17"
+            ],
+            "condition": "G13 avant G17"
+        },
+        {
+            "if": [
+                "G15",
+                "G18"
+            ],
+            "condition": "G15 avant G18"
+        },
+        {
+            "if": [
+                "G16",
+                "G18"
+            ],
+            "condition": "G16 avant G18"
+        },
+        {
+            "if": [
+                "G17",
+                "G18"
+            ],
+            "condition": "G17 avant G18"
+        },
+        {
+            "if": [
+                "G17",
+                "G19"
+            ],
+            "condition": "G17 avant G19"
+        },
+        {
+            "if": [
+                "G19",
+                "G20"
+            ],
+            "condition": "G19 avant G20"
+        },
+        {
+            "if": [
+                "G18",
+                "G20"
+            ],
+            "condition": "G18 avant G20"
+        },
+        {
+            "if": [
+                "G20",
+                "G21"
+            ],
+            "condition": "G20 avant G21"
+        },
+        {
+            "if": [
+                "G20",
+                "G22"
+            ],
+            "condition": "G20 avant G22"
+        }
+    ]
+}

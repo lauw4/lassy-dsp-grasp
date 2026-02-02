@@ -1,0 +1,44 @@
+2025-11-29 23:15:02,769 DSP ADAPTIVE PIPELINE - SCHOLL_WARNECKE_N=58
+2025-11-29 23:15:02,770 Loaded instance: scholl_warnecke_n=58
+2025-11-29 23:15:02,771 Loaded failures: 1
+2025-11-29 23:15:02,771 [1/4] Loading instance and solving DSP...
+2025-11-29 23:15:02,799 Nodes: 58, Edges: 70, Targets: 1, Solution: 13 operations
+2025-11-29 23:15:02,799 Target(s) to achieve: ['C028']
+2025-11-29 23:15:02,799 Starting disassembly sequence (13 operations)...
+2025-11-29 23:15:02,799 [ 1/13] Disassembling C011... [OK]
+2025-11-29 23:15:02,799 [ 2/13] Disassembling C000... [OK]
+2025-11-29 23:15:02,799 [ 3/13] Disassembling C002... [OK]
+2025-11-29 23:15:02,800 [ 4/13] Disassembling C008... [OK]
+2025-11-29 23:15:02,800 [ 5/13] Disassembling C010... [OK]
+2025-11-29 23:15:02,800 [ 6/13] Disassembling C012... [OK]
+2025-11-29 23:15:02,800 [ 7/13] Disassembling C013... [OK]
+2025-11-29 23:15:02,800 [ 8/13] Disassembling C014... [OK]
+2025-11-29 23:15:02,800 [ 9/13] Disassembling C016... [OK]
+2025-11-29 23:15:02,800 [10/13] Disassembling C019... [OK]
+2025-11-29 23:15:02,800 [11/13] Disassembling C020... [OK]
+2025-11-29 23:15:02,800 [12/13] Disassembling C025... [OK]
+2025-11-29 23:15:02,800 [13/13] Disassembling C028... [OK]
+2025-11-29 23:15:02,801 [2/4] Failure scenario loaded: 1 failure(s)
+2025-11-29 23:15:02,801 [3/4] Executing adaptive scheduler...
+2025-11-29 23:15:02,825 [FUZZY] Symptom: LOW_VALUE_BOTTLENECK
+2025-11-29 23:15:02,825 [FUZZY] Inputs: force=30.0, torque=20.0, p_fail=50.0, context=0.0
+2025-11-29 23:15:02,825 [FUZZY] Score: 40.00
+2025-11-29 23:15:02,825 [FUZZY] Decision: bypass (confidence=100.0%)
+2025-11-29 23:15:02,826 [ACTION] bypass: success=False, notes=Aucun chemin alternatif dans le graphe.
+2025-11-29 23:15:02,844 Adaptive scheduler finished. Actions taken: 2
+2025-11-29 23:15:02,844 EXECUTION SUMMARY
+2025-11-29 23:15:02,844 Status: SUCCESS
+2025-11-29 23:15:02,844 Target components:
+2025-11-29 23:15:02,844 [OK] C028 - Successfully disassembled
+2025-11-29 23:15:02,844 Execution metrics:
+2025-11-29 23:15:02,844 Targets achieved: 1/1 (100.0%)
+2025-11-29 23:15:02,844 Failures handled: 1
+2025-11-29 23:15:02,844 Actions taken: 2
+2025-11-29 23:15:02,844 Components done: 12/13
+2025-11-29 23:15:02,844 Locked: 1 component(s)
+2025-11-29 23:15:02,844 Execution time: 0.08s
+2025-11-29 23:15:02,844 Actions breakdown:
+2025-11-29 23:15:02,844 [FAILED] C014     LOW_VALUE_BOTTLENECK -> bypass      
+2025-11-29 23:15:02,844 [OK] C014     LOW_VALUE_BOTTLENECK -> bypass\u2192replan
+2025-11-29 23:15:02,844 Detailed logs: results\save\test_failures\scholl_warnecke_n=58\simple
+2025-11-29 23:15:02,848 Pipeline finished successfully

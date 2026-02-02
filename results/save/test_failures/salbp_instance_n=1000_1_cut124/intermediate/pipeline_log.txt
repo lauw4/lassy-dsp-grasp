@@ -1,0 +1,9 @@
+--- Pipeline run 2025-11-29 23:16:13.721395 ---
+Instance: unknown
+Initial solution: ['C018', 'C005', 'C025', 'C016', 'C004', 'C020', 'C024', 'C027', 'C017', 'C035', 'C042', 'C010', 'C026', 'C062', 'C077', 'C100']
+Final state:
+  - Locked: {'C077', 'C042'}
+  - Destroyed: set()
+  - Done: {'C010', 'C035', 'C016', 'C062', 'C025', 'C027', 'C018', 'C024', 'C017', 'C005', 'C100', 'C004', 'C026', 'C020'}
+  - Notes: ["Destruction interdite pour C077 : Flag 'no_destroy' actif (contexte ou graphe)."]
+Actions taken: [{'comp_id': 'C042', 'symptom': 'LOW_VALUE_BOTTLENECK', 'action': 'bypass', 'success': True, 'notes': 'Component C042 bypassed.'}, {'comp_id': 'C077', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy', 'success': False, 'notes': "Destruction non autorisée : Flag 'no_destroy' actif (contexte ou graphe)."}, {'comp_id': 'C077', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy→bypass', 'success': True, 'notes': 'Fallback succeeded'}]

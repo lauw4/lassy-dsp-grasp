@@ -1,0 +1,9 @@
+--- Pipeline run 2025-11-29 23:14:50.887989 ---
+Instance: unknown
+Initial solution: ['C001', 'C000', 'C002', 'C003', 'C007', 'C008', 'C004', 'C005', 'C006', 'C011', 'C014', 'C010', 'C012', 'C013', 'C018', 'C019', 'C020', 'C021']
+Final state:
+  - Locked: {'C012'}
+  - Destroyed: set()
+  - Done: {'C001', 'C007', 'C014', 'C021', 'C020', 'C003', 'C006', 'C019', 'C002', 'C004', 'C018', 'C005', 'C011', 'C010', 'C013', 'C008', 'C000'}
+  - Notes: ['Bypass impossible pour C012: aucun chemin alternatif', 'Aucun outil alternatif pour C012']
+Actions taken: [{'comp_id': 'C012', 'symptom': 'ACCESS_BLOCKED', 'action': 'bypass', 'success': False, 'notes': 'Aucun chemin alternatif dans le graphe.'}, {'comp_id': 'C012', 'symptom': 'ACCESS_BLOCKED', 'action': 'bypass→replan', 'success': True, 'notes': 'Fallback succeeded'}]

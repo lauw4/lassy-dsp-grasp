@@ -6,12 +6,12 @@ from datetime import datetime
 
 def save_multiple_runs(scores_dict, graph_name="example_graph", folder="results", mode="complet"):
     """
-    Sauvegarde plusieurs listes de scores (GRASP, VND, MNS) dans des fichiers séparés.
+    Save multiple score lists (GRASP, VND, MNS) to separate files.
 
     Args:
         scores_dict (dict): {method_name: [scores...]}
-        graph_name (str): Nom du graphe utilisé
-        folder (str): Dossier racine
+        graph_name (str): Name of the graph used
+        folder (str): Root folder
     """
     os.makedirs(os.path.join(folder, mode, graph_name), exist_ok=True)
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -21,18 +21,18 @@ def save_multiple_runs(scores_dict, graph_name="example_graph", folder="results"
         filename = f"scores_{method}_{timestamp}.csv"
         full_path = os.path.join(folder, mode, graph_name, filename)
         df.to_csv(full_path, index=False)
-        print(f" Sauvegardé :{full_path}")
+        print(f" Saved: {full_path}")
 
 def save_single_run(sequence, score_val, graph_name="example_graph", method="grasp", folder="results", mode="complet"):
     """
-    Sauvegarde un seul run (méthode, score, séquence).
+    Save a single run (method, score, sequence).
 
     Args:
-        sequence (list): Séquence obtenue
-        score_val (float): Score de la séquence
-        graph_name (str): Nom du graphe
-        method (str): Méthode utilisée
-        folder (str): Dossier de sauvegarde
+        sequence (list): Obtained sequence
+        score_val (float): Sequence score
+        graph_name (str): Graph name
+        method (str): Method used
+        folder (str): Save folder
     """
     os.makedirs(os.path.join(folder, mode, graph_name), exist_ok=True)
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -46,4 +46,4 @@ def save_single_run(sequence, score_val, graph_name="example_graph", method="gra
     filename = f"single_run_{method}_{timestamp}.csv"
     full_path = os.path.join(folder, mode, graph_name, filename)
     df.to_csv(full_path, index=False)
-    print(f" Run sauvegardé :{full_path}")
+    print(f" Run saved: {full_path}")

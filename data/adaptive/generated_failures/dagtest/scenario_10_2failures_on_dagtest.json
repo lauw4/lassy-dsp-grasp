@@ -1,0 +1,50 @@
+[
+  {
+    "comp_id": "N12",
+    "op_type": "unscrew",
+    "tool_id": "T_extractor",
+    "symptom": "OVER_TORQUE_NO_ADVANCE",
+    "signals": {
+      "force": 86.8,
+      "torque": 91.1,
+      "torque_max": 109.3,
+      "torque_nominal": 45.5,
+      "angle_delta": 0.0
+    },
+    "context": {
+      "value_piece": 20,
+      "no_destroy": false,
+      "alt_tools_available": [
+        "T_hex"
+      ]
+    },
+    "history": {
+      "failure_count": 0
+    },
+    "timestamp": "2025-11-07T01:30:22.958935Z"
+  },
+  {
+    "comp_id": "N07",
+    "op_type": "unscrew",
+    "tool_id": "T_extractor",
+    "symptom": "OVER_TORQUE_NO_ADVANCE",
+    "signals": {
+      "force": 87.1,
+      "torque": 76.6,
+      "torque_max": 91.9,
+      "torque_nominal": 38.3,
+      "angle_delta": 0.0
+    },
+    "context": {
+      "value_piece": 20,
+      "no_destroy": false,
+      "alt_tools_available": [
+        "T_hex"
+      ]
+    },
+    "history": {
+      "failure_count": 1
+    },
+    "timestamp": "2025-11-07T01:31:22.958935Z"
+  }
+]

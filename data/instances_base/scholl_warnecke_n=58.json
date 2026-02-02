@@ -1,0 +1,1187 @@
+{
+  "nodes": [
+    {
+      "id": "C000",
+      "profit": 22,
+      "cost": 6,
+      "duration": 10,
+      "milp_index": 1
+    },
+    {
+      "id": "C001",
+      "profit": 24,
+      "cost": 10,
+      "duration": 53,
+      "milp_index": 2
+    },
+    {
+      "id": "C002",
+      "profit": 22,
+      "cost": 2,
+      "duration": 41,
+      "milp_index": 3
+    },
+    {
+      "id": "C003",
+      "profit": 27,
+      "cost": 2,
+      "duration": 36,
+      "milp_index": 4
+    },
+    {
+      "id": "C004",
+      "profit": 26,
+      "cost": 3,
+      "duration": 35,
+      "milp_index": 5
+    },
+    {
+      "id": "C005",
+      "profit": 25,
+      "cost": 10,
+      "duration": 17,
+      "milp_index": 6
+    },
+    {
+      "id": "C006",
+      "profit": 29,
+      "cost": 7,
+      "duration": 34,
+      "milp_index": 7
+    },
+    {
+      "id": "C007",
+      "profit": 24,
+      "cost": 10,
+      "duration": 23,
+      "milp_index": 8
+    },
+    {
+      "id": "C008",
+      "profit": 20,
+      "cost": 5,
+      "duration": 14,
+      "milp_index": 9
+    },
+    {
+      "id": "C009",
+      "profit": 29,
+      "cost": 9,
+      "duration": 52,
+      "milp_index": 10
+    },
+    {
+      "id": "C010",
+      "profit": 29,
+      "cost": 6,
+      "duration": 33,
+      "milp_index": 11
+    },
+    {
+      "id": "C011",
+      "profit": 28,
+      "cost": 8,
+      "duration": 34,
+      "milp_index": 12
+    },
+    {
+      "id": "C012",
+      "profit": 26,
+      "cost": 9,
+      "duration": 12,
+      "milp_index": 13
+    },
+    {
+      "id": "C013",
+      "profit": 29,
+      "cost": 2,
+      "duration": 52,
+      "milp_index": 14
+    },
+    {
+      "id": "C014",
+      "profit": 28,
+      "cost": 4,
+      "duration": 12,
+      "milp_index": 15
+    },
+    {
+      "id": "C015",
+      "profit": 26,
+      "cost": 2,
+      "duration": 33,
+      "milp_index": 16
+    },
+    {
+      "id": "C016",
+      "profit": 28,
+      "cost": 6,
+      "duration": 44,
+      "milp_index": 17
+    },
+    {
+      "id": "C017",
+      "profit": 20,
+      "cost": 7,
+      "duration": 7,
+      "milp_index": 18
+    },
+    {
+      "id": "C018",
+      "profit": 25,
+      "cost": 10,
+      "duration": 15,
+      "milp_index": 19
+    },
+    {
+      "id": "C019",
+      "profit": 21,
+      "cost": 9,
+      "duration": 13,
+      "milp_index": 20
+    },
+    {
+      "id": "C020",
+      "profit": 21,
+      "cost": 3,
+      "duration": 29,
+      "milp_index": 21
+    },
+    {
+      "id": "C021",
+      "profit": 23,
+      "cost": 1,
+      "duration": 37,
+      "milp_index": 22
+    },
+    {
+      "id": "C022",
+      "profit": 21,
+      "cost": 5,
+      "duration": 43,
+      "milp_index": 23
+    },
+    {
+      "id": "C023",
+      "profit": 20,
+      "cost": 5,
+      "duration": 23,
+      "milp_index": 24
+    },
+    {
+      "id": "C024",
+      "profit": 25,
+      "cost": 8,
+      "duration": 24,
+      "milp_index": 25
+    },
+    {
+      "id": "C025",
+      "profit": 25,
+      "cost": 2,
+      "duration": 9,
+      "milp_index": 26
+    },
+    {
+      "id": "C026",
+      "profit": 23,
+      "cost": 8,
+      "duration": 16,
+      "milp_index": 27
+    },
+    {
+      "id": "C027",
+      "profit": 21,
+      "cost": 3,
+      "duration": 12,
+      "milp_index": 28
+    },
+    {
+      "id": "C028",
+      "profit": 24,
+      "cost": 9,
+      "duration": 26,
+      "milp_index": 29
+    },
+    {
+      "id": "C029",
+      "profit": 30,
+      "cost": 9,
+      "duration": 22,
+      "milp_index": 30
+    },
+    {
+      "id": "C030",
+      "profit": 22,
+      "cost": 5,
+      "duration": 51,
+      "milp_index": 31
+    },
+    {
+      "id": "C031",
+      "profit": 21,
+      "cost": 4,
+      "duration": 47,
+      "milp_index": 32
+    },
+    {
+      "id": "C032",
+      "profit": 20,
+      "cost": 3,
+      "duration": 34,
+      "milp_index": 33
+    },
+    {
+      "id": "C033",
+      "profit": 30,
+      "cost": 10,
+      "duration": 23,
+      "milp_index": 34
+    },
+    {
+      "id": "C034",
+      "profit": 26,
+      "cost": 3,
+      "duration": 12,
+      "milp_index": 35
+    },
+    {
+      "id": "C035",
+      "profit": 22,
+      "cost": 9,
+      "duration": 52,
+      "milp_index": 36
+    },
+    {
+      "id": "C036",
+      "profit": 26,
+      "cost": 8,
+      "duration": 12,
+      "milp_index": 37
+    },
+    {
+      "id": "C037",
+      "profit": 28,
+      "cost": 2,
+      "duration": 33,
+      "milp_index": 38
+    },
+    {
+      "id": "C038",
+      "profit": 29,
+      "cost": 1,
+      "duration": 44,
+      "milp_index": 39
+    },
+    {
+      "id": "C039",
+      "profit": 20,
+      "cost": 1,
+      "duration": 7,
+      "milp_index": 40
+    },
+    {
+      "id": "C040",
+      "profit": 21,
+      "cost": 2,
+      "duration": 15,
+      "milp_index": 41
+    },
+    {
+      "id": "C041",
+      "profit": 25,
+      "cost": 1,
+      "duration": 13,
+      "milp_index": 42
+    },
+    {
+      "id": "C042",
+      "profit": 28,
+      "cost": 4,
+      "duration": 29,
+      "milp_index": 43
+    },
+    {
+      "id": "C043",
+      "profit": 20,
+      "cost": 9,
+      "duration": 37,
+      "milp_index": 44
+    },
+    {
+      "id": "C044",
+      "profit": 24,
+      "cost": 3,
+      "duration": 43,
+      "milp_index": 45
+    },
+    {
+      "id": "C045",
+      "profit": 20,
+      "cost": 9,
+      "duration": 23,
+      "milp_index": 46
+    },
+    {
+      "id": "C046",
+      "profit": 27,
+      "cost": 10,
+      "duration": 24,
+      "milp_index": 47
+    },
+    {
+      "id": "C047",
+      "profit": 27,
+      "cost": 5,
+      "duration": 9,
+      "milp_index": 48
+    },
+    {
+      "id": "C048",
+      "profit": 20,
+      "cost": 9,
+      "duration": 16,
+      "milp_index": 49
+    },
+    {
+      "id": "C049",
+      "profit": 24,
+      "cost": 9,
+      "duration": 12,
+      "milp_index": 50
+    },
+    {
+      "id": "C050",
+      "profit": 29,
+      "cost": 2,
+      "duration": 26,
+      "milp_index": 51
+    },
+    {
+      "id": "C051",
+      "profit": 23,
+      "cost": 10,
+      "duration": 12,
+      "milp_index": 52
+    },
+    {
+      "id": "C052",
+      "profit": 22,
+      "cost": 6,
+      "duration": 52,
+      "milp_index": 53
+    },
+    {
+      "id": "C053",
+      "profit": 20,
+      "cost": 9,
+      "duration": 12,
+      "milp_index": 54
+    },
+    {
+      "id": "C054",
+      "profit": 29,
+      "cost": 7,
+      "duration": 33,
+      "milp_index": 55
+    },
+    {
+      "id": "C055",
+      "profit": 27,
+      "cost": 2,
+      "duration": 44,
+      "milp_index": 56
+    },
+    {
+      "id": "C056",
+      "profit": 26,
+      "cost": 4,
+      "duration": 7,
+      "milp_index": 57
+    },
+    {
+      "id": "C057",
+      "profit": 24,
+      "cost": 10,
+      "duration": 15,
+      "milp_index": 58
+    }
+  ],
+  "edges": [
+    [
+      "C000",
+      "C008"
+    ],
+    [
+      "C001",
+      "C024"
+    ],
+    [
+      "C002",
+      "C020"
+    ],
+    [
+      "C002",
+      "C021"
+    ],
+    [
+      "C003",
+      "C009"
+    ],
+    [
+      "C004",
+      "C035"
+    ],
+    [
+      "C005",
+      "C022"
+    ],
+    [
+      "C005",
+      "C023"
+    ],
+    [
+      "C006",
+      "C042"
+    ],
+    [
+      "C007",
+      "C043"
+    ],
+    [
+      "C008",
+      "C010"
+    ],
+    [
+      "C010",
+      "C012"
+    ],
+    [
+      "C010",
+      "C013"
+    ],
+    [
+      "C010",
+      "C014"
+    ],
+    [
+      "C011",
+      "C016"
+    ],
+    [
+      "C012",
+      "C016"
+    ],
+    [
+      "C013",
+      "C016"
+    ],
+    [
+      "C014",
+      "C016"
+    ],
+    [
+      "C015",
+      "C017"
+    ],
+    [
+      "C016",
+      "C019"
+    ],
+    [
+      "C017",
+      "C018"
+    ],
+    [
+      "C018",
+      "C022"
+    ],
+    [
+      "C019",
+      "C020"
+    ],
+    [
+      "C019",
+      "C024"
+    ],
+    [
+      "C020",
+      "C025"
+    ],
+    [
+      "C020",
+      "C043"
+    ],
+    [
+      "C021",
+      "C026"
+    ],
+    [
+      "C022",
+      "C030"
+    ],
+    [
+      "C023",
+      "C030"
+    ],
+    [
+      "C024",
+      "C037"
+    ],
+    [
+      "C025",
+      "C028"
+    ],
+    [
+      "C026",
+      "C029"
+    ],
+    [
+      "C027",
+      "C031"
+    ],
+    [
+      "C027",
+      "C032"
+    ],
+    [
+      "C028",
+      "C030"
+    ],
+    [
+      "C029",
+      "C033"
+    ],
+    [
+      "C030",
+      "C035"
+    ],
+    [
+      "C031",
+      "C044"
+    ],
+    [
+      "C032",
+      "C034"
+    ],
+    [
+      "C033",
+      "C035"
+    ],
+    [
+      "C034",
+      "C042"
+    ],
+    [
+      "C035",
+      "C036"
+    ],
+    [
+      "C035",
+      "C037"
+    ],
+    [
+      "C036",
+      "C038"
+    ],
+    [
+      "C036",
+      "C039"
+    ],
+    [
+      "C036",
+      "C040"
+    ],
+    [
+      "C037",
+      "C051"
+    ],
+    [
+      "C038",
+      "C042"
+    ],
+    [
+      "C039",
+      "C042"
+    ],
+    [
+      "C040",
+      "C041"
+    ],
+    [
+      "C041",
+      "C042"
+    ],
+    [
+      "C042",
+      "C044"
+    ],
+    [
+      "C043",
+      "C044"
+    ],
+    [
+      "C044",
+      "C045"
+    ],
+    [
+      "C044",
+      "C047"
+    ],
+    [
+      "C044",
+      "C048"
+    ],
+    [
+      "C045",
+      "C046"
+    ],
+    [
+      "C045",
+      "C049"
+    ],
+    [
+      "C046",
+      "C050"
+    ],
+    [
+      "C047",
+      "C054"
+    ],
+    [
+      "C048",
+      "C057"
+    ],
+    [
+      "C049",
+      "C057"
+    ],
+    [
+      "C050",
+      "C051"
+    ],
+    [
+      "C051",
+      "C052"
+    ],
+    [
+      "C052",
+      "C053"
+    ],
+    [
+      "C053",
+      "C054"
+    ],
+    [
+      "C053",
+      "C055"
+    ],
+    [
+      "C054",
+      "C056"
+    ],
+    [
+      "C055",
+      "C056"
+    ],
+    [
+      "C056",
+      "C057"
+    ]
+  ],
+  "targets": [
+    "C028"
+  ],
+  "order_rules": [
+    {
+      "if": [
+        "C000",
+        "C008"
+      ],
+      "condition": "C000 avant C008"
+    },
+    {
+      "if": [
+        "C001",
+        "C024"
+      ],
+      "condition": "C001 avant C024"
+    },
+    {
+      "if": [
+        "C002",
+        "C020"
+      ],
+      "condition": "C002 avant C020"
+    },
+    {
+      "if": [
+        "C002",
+        "C021"
+      ],
+      "condition": "C002 avant C021"
+    },
+    {
+      "if": [
+        "C003",
+        "C009"
+      ],
+      "condition": "C003 avant C009"
+    },
+    {
+      "if": [
+        "C004",
+        "C035"
+      ],
+      "condition": "C004 avant C035"
+    },
+    {
+      "if": [
+        "C005",
+        "C022"
+      ],
+      "condition": "C005 avant C022"
+    },
+    {
+      "if": [
+        "C005",
+        "C023"
+      ],
+      "condition": "C005 avant C023"
+    },
+    {
+      "if": [
+        "C006",
+        "C042"
+      ],
+      "condition": "C006 avant C042"
+    },
+    {
+      "if": [
+        "C007",
+        "C043"
+      ],
+      "condition": "C007 avant C043"
+    },
+    {
+      "if": [
+        "C008",
+        "C010"
+      ],
+      "condition": "C008 avant C010"
+    },
+    {
+      "if": [
+        "C010",
+        "C012"
+      ],
+      "condition": "C010 avant C012"
+    },
+    {
+      "if": [
+        "C010",
+        "C013"
+      ],
+      "condition": "C010 avant C013"
+    },
+    {
+      "if": [
+        "C010",
+        "C014"
+      ],
+      "condition": "C010 avant C014"
+    },
+    {
+      "if": [
+        "C011",
+        "C016"
+      ],
+      "condition": "C011 avant C016"
+    },
+    {
+      "if": [
+        "C012",
+        "C016"
+      ],
+      "condition": "C012 avant C016"
+    },
+    {
+      "if": [
+        "C013",
+        "C016"
+      ],
+      "condition": "C013 avant C016"
+    },
+    {
+      "if": [
+        "C014",
+        "C016"
+      ],
+      "condition": "C014 avant C016"
+    },
+    {
+      "if": [
+        "C015",
+        "C017"
+      ],
+      "condition": "C015 avant C017"
+    },
+    {
+      "if": [
+        "C016",
+        "C019"
+      ],
+      "condition": "C016 avant C019"
+    },
+    {
+      "if": [
+        "C017",
+        "C018"
+      ],
+      "condition": "C017 avant C018"
+    },
+    {
+      "if": [
+        "C018",
+        "C022"
+      ],
+      "condition": "C018 avant C022"
+    },
+    {
+      "if": [
+        "C019",
+        "C020"
+      ],
+      "condition": "C019 avant C020"
+    },
+    {
+      "if": [
+        "C019",
+        "C024"
+      ],
+      "condition": "C019 avant C024"
+    },
+    {
+      "if": [
+        "C020",
+        "C025"
+      ],
+      "condition": "C020 avant C025"
+    },
+    {
+      "if": [
+        "C020",
+        "C043"
+      ],
+      "condition": "C020 avant C043"
+    },
+    {
+      "if": [
+        "C021",
+        "C026"
+      ],
+      "condition": "C021 avant C026"
+    },
+    {
+      "if": [
+        "C022",
+        "C030"
+      ],
+      "condition": "C022 avant C030"
+    },
+    {
+      "if": [
+        "C023",
+        "C030"
+      ],
+      "condition": "C023 avant C030"
+    },
+    {
+      "if": [
+        "C024",
+        "C037"
+      ],
+      "condition": "C024 avant C037"
+    },
+    {
+      "if": [
+        "C025",
+        "C028"
+      ],
+      "condition": "C025 avant C028"
+    },
+    {
+      "if": [
+        "C026",
+        "C029"
+      ],
+      "condition": "C026 avant C029"
+    },
+    {
+      "if": [
+        "C027",
+        "C031"
+      ],
+      "condition": "C027 avant C031"
+    },
+    {
+      "if": [
+        "C027",
+        "C032"
+      ],
+      "condition": "C027 avant C032"
+    },
+    {
+      "if": [
+        "C028",
+        "C030"
+      ],
+      "condition": "C028 avant C030"
+    },
+    {
+      "if": [
+        "C029",
+        "C033"
+      ],
+      "condition": "C029 avant C033"
+    },
+    {
+      "if": [
+        "C030",
+        "C035"
+      ],
+      "condition": "C030 avant C035"
+    },
+    {
+      "if": [
+        "C031",
+        "C044"
+      ],
+      "condition": "C031 avant C044"
+    },
+    {
+      "if": [
+        "C032",
+        "C034"
+      ],
+      "condition": "C032 avant C034"
+    },
+    {
+      "if": [
+        "C033",
+        "C035"
+      ],
+      "condition": "C033 avant C035"
+    },
+    {
+      "if": [
+        "C034",
+        "C042"
+      ],
+      "condition": "C034 avant C042"
+    },
+    {
+      "if": [
+        "C035",
+        "C036"
+      ],
+      "condition": "C035 avant C036"
+    },
+    {
+      "if": [
+        "C035",
+        "C037"
+      ],
+      "condition": "C035 avant C037"
+    },
+    {
+      "if": [
+        "C036",
+        "C038"
+      ],
+      "condition": "C036 avant C038"
+    },
+    {
+      "if": [
+        "C036",
+        "C039"
+      ],
+      "condition": "C036 avant C039"
+    },
+    {
+      "if": [
+        "C036",
+        "C040"
+      ],
+      "condition": "C036 avant C040"
+    },
+    {
+      "if": [
+        "C037",
+        "C051"
+      ],
+      "condition": "C037 avant C051"
+    },
+    {
+      "if": [
+        "C038",
+        "C042"
+      ],
+      "condition": "C038 avant C042"
+    },
+    {
+      "if": [
+        "C039",
+        "C042"
+      ],
+      "condition": "C039 avant C042"
+    },
+    {
+      "if": [
+        "C040",
+        "C041"
+      ],
+      "condition": "C040 avant C041"
+    },
+    {
+      "if": [
+        "C041",
+        "C042"
+      ],
+      "condition": "C041 avant C042"
+    },
+    {
+      "if": [
+        "C042",
+        "C044"
+      ],
+      "condition": "C042 avant C044"
+    },
+    {
+      "if": [
+        "C043",
+        "C044"
+      ],
+      "condition": "C043 avant C044"
+    },
+    {
+      "if": [
+        "C044",
+        "C045"
+      ],
+      "condition": "C044 avant C045"
+    },
+    {
+      "if": [
+        "C044",
+        "C047"
+      ],
+      "condition": "C044 avant C047"
+    },
+    {
+      "if": [
+        "C044",
+        "C048"
+      ],
+      "condition": "C044 avant C048"
+    },
+    {
+      "if": [
+        "C045",
+        "C046"
+      ],
+      "condition": "C045 avant C046"
+    },
+    {
+      "if": [
+        "C045",
+        "C049"
+      ],
+      "condition": "C045 avant C049"
+    },
+    {
+      "if": [
+        "C046",
+        "C050"
+      ],
+      "condition": "C046 avant C050"
+    },
+    {
+      "if": [
+        "C047",
+        "C054"
+      ],
+      "condition": "C047 avant C054"
+    },
+    {
+      "if": [
+        "C048",
+        "C057"
+      ],
+      "condition": "C048 avant C057"
+    },
+    {
+      "if": [
+        "C049",
+        "C057"
+      ],
+      "condition": "C049 avant C057"
+    },
+    {
+      "if": [
+        "C050",
+        "C051"
+      ],
+      "condition": "C050 avant C051"
+    },
+    {
+      "if": [
+        "C051",
+        "C052"
+      ],
+      "condition": "C051 avant C052"
+    },
+    {
+      "if": [
+        "C052",
+        "C053"
+      ],
+      "condition": "C052 avant C053"
+    },
+    {
+      "if": [
+        "C053",
+        "C054"
+      ],
+      "condition": "C053 avant C054"
+    },
+    {
+      "if": [
+        "C053",
+        "C055"
+      ],
+      "condition": "C053 avant C055"
+    },
+    {
+      "if": [
+        "C054",
+        "C056"
+      ],
+      "condition": "C054 avant C056"
+    },
+    {
+      "if": [
+        "C055",
+        "C056"
+      ],
+      "condition": "C055 avant C056"
+    },
+    {
+      "if": [
+        "C056",
+        "C057"
+      ],
+      "condition": "C056 avant C057"
+    }
+  ]
+}

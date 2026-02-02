@@ -1,0 +1,41 @@
+2025-11-29 22:24:30,624 DSP ADAPTIVE PIPELINE - SALBP_INSTANCE_N=100_50
+2025-11-29 22:24:30,625 Loaded instance: salbp_instance_n=100_50
+2025-11-29 22:24:30,626 Loaded failures: 0
+2025-11-29 22:24:30,626 [1/4] Loading instance and solving DSP...
+2025-11-29 22:24:30,666 Nodes: 100, Edges: 122, Targets: 1, Solution: 19 operations
+2025-11-29 22:24:30,666 Target(s) to achieve: ['C054']
+2025-11-29 22:24:30,666 Starting disassembly sequence (19 operations)...
+2025-11-29 22:24:30,666 [ 1/19] Disassembling C001... [OK]
+2025-11-29 22:24:30,666 [ 2/19] Disassembling C000... [OK]
+2025-11-29 22:24:30,666 [ 3/19] Disassembling C002... [OK]
+2025-11-29 22:24:30,666 [ 4/19] Disassembling C009... [OK]
+2025-11-29 22:24:30,666 [ 5/19] Disassembling C010... [OK]
+2025-11-29 22:24:30,666 [ 6/19] Disassembling C016... [OK]
+2025-11-29 22:24:30,666 [ 7/19] Disassembling C027... [OK]
+2025-11-29 22:24:30,666 [ 8/19] Disassembling C024... [OK]
+2025-11-29 22:24:30,666 [ 9/19] Disassembling C028... [OK]
+2025-11-29 22:24:30,666 [10/19] Disassembling C032... [OK]
+2025-11-29 22:24:30,666 [11/19] Disassembling C017... [OK]
+2025-11-29 22:24:30,666 [12/19] Disassembling C033... [OK]
+2025-11-29 22:24:30,666 [13/19] Disassembling C023... [OK]
+2025-11-29 22:24:30,667 [14/19] Disassembling C014... [OK]
+2025-11-29 22:24:30,667 [15/19] Disassembling C003... [OK]
+2025-11-29 22:24:30,667 [16/19] Disassembling C031... [OK]
+2025-11-29 22:24:30,667 [17/19] Disassembling C025... [OK]
+2025-11-29 22:24:30,667 [18/19] Disassembling C043... [OK]
+2025-11-29 22:24:30,667 [19/19] Disassembling C054... [OK]
+2025-11-29 22:24:30,667 [2/4] No failures (nominal execution)
+2025-11-29 22:24:30,667 [3/4] Executing adaptive scheduler...
+2025-11-29 22:24:30,667 Adaptive scheduler finished. Actions taken: 0
+2025-11-29 22:24:30,667 EXECUTION SUMMARY
+2025-11-29 22:24:30,667 Status: SUCCESS
+2025-11-29 22:24:30,667 Target components:
+2025-11-29 22:24:30,667 [OK] C054 - Successfully disassembled
+2025-11-29 22:24:30,667 Execution metrics:
+2025-11-29 22:24:30,667 Targets achieved: 1/1 (100.0%)
+2025-11-29 22:24:30,667 Failures handled: 0
+2025-11-29 22:24:30,667 Actions taken: 0
+2025-11-29 22:24:30,667 Components done: 19/19
+2025-11-29 22:24:30,667 Execution time: 0.05s
+2025-11-29 22:24:30,667 Detailed logs: results\save\test_nominal\salbp_instance_n=100_50
+2025-11-29 22:24:30,669 Pipeline finished successfully

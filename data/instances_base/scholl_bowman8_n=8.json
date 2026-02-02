@@ -1,0 +1,155 @@
+{
+  "nodes": [
+    {
+      "id": "C000",
+      "profit": 26,
+      "cost": 3,
+      "duration": 11,
+      "milp_index": 1
+    },
+    {
+      "id": "C001",
+      "profit": 20,
+      "cost": 4,
+      "duration": 17,
+      "milp_index": 2
+    },
+    {
+      "id": "C002",
+      "profit": 22,
+      "cost": 10,
+      "duration": 9,
+      "milp_index": 3
+    },
+    {
+      "id": "C003",
+      "profit": 28,
+      "cost": 1,
+      "duration": 5,
+      "milp_index": 4
+    },
+    {
+      "id": "C004",
+      "profit": 25,
+      "cost": 4,
+      "duration": 8,
+      "milp_index": 5
+    },
+    {
+      "id": "C005",
+      "profit": 23,
+      "cost": 4,
+      "duration": 12,
+      "milp_index": 6
+    },
+    {
+      "id": "C006",
+      "profit": 26,
+      "cost": 6,
+      "duration": 10,
+      "milp_index": 7
+    },
+    {
+      "id": "C007",
+      "profit": 12,
+      "cost": 7,
+      "duration": 3,
+      "milp_index": 8
+    }
+  ],
+  "edges": [
+    [
+      "C000",
+      "C001"
+    ],
+    [
+      "C001",
+      "C002"
+    ],
+    [
+      "C001",
+      "C003"
+    ],
+    [
+      "C002",
+      "C004"
+    ],
+    [
+      "C002",
+      "C005"
+    ],
+    [
+      "C003",
+      "C005"
+    ],
+    [
+      "C004",
+      "C006"
+    ],
+    [
+      "C005",
+      "C007"
+    ]
+  ],
+  "targets": [
+    "C006"
+  ],
+  "order_rules": [
+    {
+      "if": [
+        "C000",
+        "C001"
+      ],
+      "condition": "C000 avant C001"
+    },
+    {
+      "if": [
+        "C001",
+        "C002"
+      ],
+      "condition": "C001 avant C002"
+    },
+    {
+      "if": [
+        "C001",
+        "C003"
+      ],
+      "condition": "C001 avant C003"
+    },
+    {
+      "if": [
+        "C002",
+        "C004"
+      ],
+      "condition": "C002 avant C004"
+    },
+    {
+      "if": [
+        "C002",
+        "C005"
+      ],
+      "condition": "C002 avant C005"
+    },
+    {
+      "if": [
+        "C003",
+        "C005"
+      ],
+      "condition": "C003 avant C005"
+    },
+    {
+      "if": [
+        "C004",
+        "C006"
+      ],
+      "condition": "C004 avant C006"
+    },
+    {
+      "if": [
+        "C005",
+        "C007"
+      ],
+      "condition": "C005 avant C007"
+    }
+  ]
+}

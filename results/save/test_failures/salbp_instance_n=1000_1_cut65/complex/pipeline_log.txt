@@ -1,0 +1,9 @@
+--- Pipeline run 2025-11-29 23:16:40.150178 ---
+Instance: unknown
+Initial solution: ['C019', 'C036', 'C055']
+Final state:
+  - Locked: {'C036'}
+  - Destroyed: set()
+  - Done: {'C055', 'C019'}
+  - Notes: ['Destruction interdite pour C036 : Profit=41.00 > seuil=22.00 (percentile 20e).']
+Actions taken: [{'comp_id': 'C036', 'symptom': 'ACCESS_BLOCKED', 'action': 'destroy', 'success': False, 'notes': 'Destruction non autorisée : Profit=41.00 > seuil=22.00 (percentile 20e).'}, {'comp_id': 'C036', 'symptom': 'ACCESS_BLOCKED', 'action': 'destroy→bypass', 'success': True, 'notes': 'Fallback succeeded'}]
