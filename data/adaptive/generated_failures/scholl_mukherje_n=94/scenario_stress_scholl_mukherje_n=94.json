@@ -1,0 +1,122 @@
+[
+  {
+    "comp_id": "C089",
+    "op_type": "unscrew",
+    "tool_id": "T_pneumatic",
+    "symptom": "LOW_VALUE_BOTTLENECK",
+    "signals": {
+      "force": 43.7,
+      "torque": 29.4,
+      "low_value": 1
+    },
+    "context": {
+      "value_piece": 22,
+      "no_destroy": false,
+      "alt_paths": true
+    },
+    "history": {
+      "failure_count": 1
+    }
+  },
+  {
+    "comp_id": "C088",
+    "op_type": "detach",
+    "tool_id": "T_pliers",
+    "symptom": "LOW_VALUE_BOTTLENECK",
+    "signals": {
+      "force": 29.9,
+      "torque": 12.7,
+      "low_value": 1
+    },
+    "context": {
+      "value_piece": 20,
+      "no_destroy": false,
+      "alt_paths": true
+    },
+    "history": {
+      "failure_count": 3
+    }
+  },
+  {
+    "comp_id": "C050",
+    "op_type": "detach",
+    "tool_id": "T_torx",
+    "symptom": "NO_SEPARATION",
+    "signals": {
+      "force": 75.8,
+      "torque": 45.9,
+      "joint_opened": 0
+    },
+    "context": {
+      "value_piece": 24,
+      "no_destroy": false,
+      "alt_paths": false,
+      "alt_tools_available": [
+        "T_electric"
+      ]
+    },
+    "history": {
+      "failure_count": 2
+    }
+  },
+  {
+    "comp_id": "C052",
+    "op_type": "cut",
+    "tool_id": "T_pliers",
+    "symptom": "ACCESS_BLOCKED",
+    "signals": {
+      "force": 72.7,
+      "torque": 33.5,
+      "access_blocked": 1
+    },
+    "context": {
+      "value_piece": 16,
+      "no_destroy": false,
+      "alt_paths": true
+    },
+    "history": {
+      "failure_count": 3
+    }
+  },
+  {
+    "comp_id": "C063",
+    "op_type": "detach",
+    "tool_id": "T_impact",
+    "symptom": "OVER_TORQUE_NO_ADVANCE",
+    "signals": {
+      "force": 91.6,
+      "torque": 66.4,
+      "over_torque": 1
+    },
+    "context": {
+      "value_piece": 34,
+      "no_destroy": false,
+      "alt_paths": false
+    },
+    "history": {
+      "failure_count": 0
+    }
+  },
+  {
+    "comp_id": "C079",
+    "op_type": "pull",
+    "tool_id": "T_pneumatic",
+    "symptom": "ACCESS_BLOCKED",
+    "signals": {
+      "force": 44.1,
+      "torque": 41.5,
+      "access_blocked": 1
+    },
+    "context": {
+      "value_piece": 26,
+      "no_destroy": false,
+      "alt_paths": true,
+      "alt_tools_available": [
+        "T_power"
+      ]
+    },
+    "history": {
+      "failure_count": 0
+    }
+  }
+]

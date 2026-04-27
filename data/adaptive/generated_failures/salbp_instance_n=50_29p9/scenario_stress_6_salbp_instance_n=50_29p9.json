@@ -1,0 +1,122 @@
+[
+  {
+    "comp_id": "C004",
+    "op_type": "cut",
+    "tool_id": "T_torx",
+    "symptom": "LOW_VALUE_BOTTLENECK",
+    "signals": {
+      "force": 26.0,
+      "torque": 35.3,
+      "low_value": 1
+    },
+    "context": {
+      "value_piece": 24,
+      "no_destroy": false,
+      "alt_paths": true,
+      "alt_tools_available": [
+        "T_impact"
+      ]
+    },
+    "history": {
+      "failure_count": 3
+    }
+  },
+  {
+    "comp_id": "C002",
+    "op_type": "pry",
+    "tool_id": "T_pliers",
+    "symptom": "LOW_VALUE_BOTTLENECK",
+    "signals": {
+      "force": 33.8,
+      "torque": 20.9,
+      "low_value": 1
+    },
+    "context": {
+      "value_piece": 33,
+      "no_destroy": false,
+      "alt_paths": false
+    },
+    "history": {
+      "failure_count": 3
+    }
+  },
+  {
+    "comp_id": "C006",
+    "op_type": "unscrew",
+    "tool_id": "T_torx",
+    "symptom": "OVER_TORQUE_NO_ADVANCE",
+    "signals": {
+      "force": 89.5,
+      "torque": 68.4,
+      "over_torque": 1
+    },
+    "context": {
+      "value_piece": 28,
+      "no_destroy": true,
+      "alt_paths": true
+    },
+    "history": {
+      "failure_count": 1
+    }
+  },
+  {
+    "comp_id": "C035",
+    "op_type": "cut",
+    "tool_id": "T_pneumatic",
+    "symptom": "LOW_VALUE_BOTTLENECK",
+    "signals": {
+      "force": 25.7,
+      "torque": 38.4,
+      "low_value": 1
+    },
+    "context": {
+      "value_piece": 28,
+      "no_destroy": false,
+      "alt_paths": true,
+      "alt_tools_available": [
+        "T_power"
+      ]
+    },
+    "history": {
+      "failure_count": 3
+    }
+  },
+  {
+    "comp_id": "C032",
+    "op_type": "pull",
+    "tool_id": "T_hex",
+    "symptom": "OVER_TORQUE_NO_ADVANCE",
+    "signals": {
+      "force": 71.4,
+      "torque": 78.4,
+      "over_torque": 1
+    },
+    "context": {
+      "value_piece": 33,
+      "no_destroy": true,
+      "alt_paths": false
+    },
+    "history": {
+      "failure_count": 1
+    }
+  },
+  {
+    "comp_id": "C000",
+    "op_type": "cut",
+    "tool_id": "T_hex",
+    "symptom": "ACCESS_BLOCKED",
+    "signals": {
+      "force": 78.8,
+      "torque": 38.2,
+      "access_blocked": 1
+    },
+    "context": {
+      "value_piece": 28,
+      "no_destroy": false,
+      "alt_paths": true
+    },
+    "history": {
+      "failure_count": 3
+    }
+  }
+]

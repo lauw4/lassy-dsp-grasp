@@ -1,0 +1,116 @@
+[
+  {
+    "comp_id": "C068",
+    "op_type": "cut",
+    "tool_id": "T_impact",
+    "symptom": "LOW_VALUE_BOTTLENECK",
+    "signals": {
+      "force": 37.5,
+      "torque": 27.1,
+      "low_value": 1
+    },
+    "context": {
+      "value_piece": 25,
+      "no_destroy": false,
+      "alt_paths": true
+    },
+    "history": {
+      "failure_count": 0
+    }
+  },
+  {
+    "comp_id": "C048",
+    "op_type": "detach",
+    "tool_id": "T_hex",
+    "symptom": "NO_SEPARATION",
+    "signals": {
+      "force": 82.4,
+      "torque": 31.8,
+      "joint_opened": 0
+    },
+    "context": {
+      "value_piece": 33,
+      "no_destroy": true,
+      "alt_paths": false
+    },
+    "history": {
+      "failure_count": 0
+    }
+  },
+  {
+    "comp_id": "C014",
+    "op_type": "unscrew",
+    "tool_id": "T_torx",
+    "symptom": "NO_SEPARATION",
+    "signals": {
+      "force": 83.0,
+      "torque": 45.4,
+      "joint_opened": 0
+    },
+    "context": {
+      "value_piece": 26,
+      "no_destroy": true,
+      "alt_paths": true
+    },
+    "history": {
+      "failure_count": 1
+    }
+  },
+  {
+    "comp_id": "C041",
+    "op_type": "cut",
+    "tool_id": "T_torx",
+    "symptom": "OVER_TORQUE_NO_ADVANCE",
+    "signals": {
+      "force": 81.9,
+      "torque": 97.4,
+      "over_torque": 1
+    },
+    "context": {
+      "value_piece": 29,
+      "no_destroy": true,
+      "alt_paths": true
+    },
+    "history": {
+      "failure_count": 0
+    }
+  },
+  {
+    "comp_id": "C032",
+    "op_type": "unscrew",
+    "tool_id": "T_pliers",
+    "symptom": "LOW_VALUE_BOTTLENECK",
+    "signals": {
+      "force": 26.9,
+      "torque": 30.8,
+      "low_value": 1
+    },
+    "context": {
+      "value_piece": 33,
+      "no_destroy": false,
+      "alt_paths": false
+    },
+    "history": {
+      "failure_count": 3
+    }
+  },
+  {
+    "comp_id": "C015",
+    "op_type": "cut",
+    "tool_id": "T_impact",
+    "symptom": "OVER_TORQUE_NO_ADVANCE",
+    "signals": {
+      "force": 56.2,
+      "torque": 98.8,
+      "over_torque": 1
+    },
+    "context": {
+      "value_piece": 33,
+      "no_destroy": false,
+      "alt_paths": false
+    },
+    "history": {
+      "failure_count": 2
+    }
+  }
+]

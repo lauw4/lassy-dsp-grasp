@@ -154,41 +154,35 @@ def insert_target_valid(sequence, G, target):
             return seq
     return sequence
 
+
 def mns_local_search(solution, G, neighborhoods, target_nodes=None):
-    from src.utils.metrics import score
+    from src.utils.metrics import score_obj1
     """
     Multi-Neighborhood Search (MNS): first-improvement local search.
-    
-    Reference: Santos et al. (2022), "Multi-neighborhood search for DSP."
-    
-    Applies multiple neighborhood operators in sequence. When any improvement
-    is found, restarts from the beginning of the neighborhood list.
+    Uses Objective 1 (maximize score_obj1).
     """
     current = solution[:]
     improved = True
     while improved:
         improved = False
-        best_score = score(current, G)
+        best_score = score_obj1(current, G)
         for fn in neighborhoods:
             candidate = fn(current, G, target_nodes)
-            s = score(candidate, G)
-            if s < best_score:
+            s = score_obj1(candidate, G)
+            if s > best_score:   # maximize
                 current = candidate
                 improved = True
                 break
     return current
 
 def tabu_search(solution, G, neighborhood_fn, max_iter=20, tabu_size=5, max_neighbors=10, target_nodes=None):
-    from src.utils.metrics import score
+    from src.utils.metrics import score_obj1
     """
-    Tabu Search for DSP.
-    
-    Reference: Santos et al. (2022), "Hybrid GRASP with Tabu Search for DSP."
-    Parameters tuned per Paschko et al. (2023).
+    Tabu Search for DSP. Uses Objective 1 (maximize score_obj1).
     """
     current = solution[:]
     best = current[:]
-    best_score = score(best, G)
+    best_score = score_obj1(best, G)
     tabu_list = deque(maxlen=tabu_size)
 
     for iter_num in range(max_iter):
@@ -201,30 +195,27 @@ def tabu_search(solution, G, neighborhood_fn, max_iter=20, tabu_size=5, max_neig
         if not candidates:
             break
 
-        next_sol = min(candidates, key=lambda s: score(s, G))
+        next_sol = max(candidates, key=lambda s: score_obj1(s, G))  # maximize
 
         tabu_list.append(next_sol)
         current = next_sol
 
-        s = score(current, G)
-        if s < best_score:
+        s = score_obj1(current, G)
+        if s > best_score:   # maximize
             best, best_score = current, s
     return best
 
 
 def multi_neighborhood_tabu_search(solution, G, neighborhoods, max_iter=20, tabu_size=7, max_neighbors=10,target_nodes=None):
-    from src.utils.metrics import score
+    from src.utils.metrics import score_obj1
     """
-    Multi-Neighborhood Tabu Search for DSP.
-    
-    Reference: Santos et al. (2022), "Hybrid GRASP with Tabu Search for DSP."
-    Alternates neighborhood operators at each iteration.
+    Multi-Neighborhood Tabu Search for DSP. Uses Objective 1 (maximize score_obj1).
     """
     if not neighborhoods:
         return solution
     current = solution[:]
     best = current[:]
-    best_score_value = score(best, G)
+    best_score_value = score_obj1(best, G)
     tabu_list = []
     
     for iteration in range(max_iter):
@@ -234,17 +225,17 @@ def multi_neighborhood_tabu_search(solution, G, neighborhoods, max_iter=20, tabu
             neighbor = current_neighborhood(current[:], G, target_nodes=target_nodes)
             neighbors.append(neighbor)
         best_neighbor = None
-        best_neighbor_score = float('inf')
+        best_neighbor_score = float('-inf')   # maximize
         
         for neighbor in neighbors:
             neighbor_hash = tuple(neighbor)
-            neighbor_score = score(neighbor, G)
-            # Aspiration criterion: accept tabu if better than global best
-            if neighbor_score < best_score_value:
+            neighbor_score = score_obj1(neighbor, G)
+            # Aspiration: accept tabu if better than global best
+            if neighbor_score > best_score_value:   # maximize
                 best_neighbor = neighbor
                 best_neighbor_score = neighbor_score
                 break
-            if neighbor_hash not in tabu_list and neighbor_score < best_neighbor_score:
+            if neighbor_hash not in tabu_list and neighbor_score > best_neighbor_score:  # maximize
                 best_neighbor = neighbor
                 best_neighbor_score = neighbor_score
         if best_neighbor is None:
@@ -252,7 +243,7 @@ def multi_neighborhood_tabu_search(solution, G, neighborhoods, max_iter=20, tabu
             
         current = best_neighbor[:]
         current_score = best_neighbor_score
-        if current_score < best_score_value:
+        if current_score > best_score_value:   # maximize
             best = current[:]
             best_score_value = current_score
             
@@ -263,14 +254,14 @@ def multi_neighborhood_tabu_search(solution, G, neighborhoods, max_iter=20, tabu
 
 
 def swap_selectif(seq, G, target_nodes=None):
-    from src.utils.metrics import score
-    """Swap operator for selective mode. Returns improved sequence."""
+    from src.utils.metrics import score_obj1
+    """Swap operator for selective mode. Uses Objective 1 (maximize)."""
     if not seq:
         return seq
     
     n = len(seq)
     best_seq = seq[:]
-    best_score = score(seq, G)
+    best_score = score_obj1(seq, G)
     
     for _ in range(10):
         i, j = random.sample(range(n), 2)
@@ -278,8 +269,8 @@ def swap_selectif(seq, G, target_nodes=None):
         new_seq[i], new_seq[j] = new_seq[j], new_seq[i]
         
         if is_valid(new_seq, G):
-            new_score = score(new_seq, G)
-            if new_score < best_score:
+            new_score = score_obj1(new_seq, G)
+            if new_score > best_score:   # maximize
                 return new_seq
     
     return best_seq

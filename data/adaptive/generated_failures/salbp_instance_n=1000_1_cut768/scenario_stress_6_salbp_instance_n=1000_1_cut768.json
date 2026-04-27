@@ -1,0 +1,122 @@
+[
+  {
+    "comp_id": "C046",
+    "op_type": "pull",
+    "tool_id": "T_impact",
+    "symptom": "OVER_TORQUE_NO_ADVANCE",
+    "signals": {
+      "force": 75.2,
+      "torque": 89.3,
+      "over_torque": 1
+    },
+    "context": {
+      "value_piece": 15,
+      "no_destroy": false,
+      "alt_paths": true
+    },
+    "history": {
+      "failure_count": 2
+    }
+  },
+  {
+    "comp_id": "C590",
+    "op_type": "pull",
+    "tool_id": "T_pneumatic",
+    "symptom": "NO_SEPARATION",
+    "signals": {
+      "force": 95.3,
+      "torque": 51.6,
+      "joint_opened": 0
+    },
+    "context": {
+      "value_piece": 25,
+      "no_destroy": false,
+      "alt_paths": true
+    },
+    "history": {
+      "failure_count": 0
+    }
+  },
+  {
+    "comp_id": "C381",
+    "op_type": "unscrew",
+    "tool_id": "T_impact",
+    "symptom": "ACCESS_BLOCKED",
+    "signals": {
+      "force": 46.0,
+      "torque": 57.2,
+      "access_blocked": 1
+    },
+    "context": {
+      "value_piece": 22,
+      "no_destroy": false,
+      "alt_paths": true,
+      "alt_tools_available": [
+        "T_power"
+      ]
+    },
+    "history": {
+      "failure_count": 1
+    }
+  },
+  {
+    "comp_id": "C517",
+    "op_type": "pry",
+    "tool_id": "T_pliers",
+    "symptom": "NO_SEPARATION",
+    "signals": {
+      "force": 98.0,
+      "torque": 35.3,
+      "joint_opened": 0
+    },
+    "context": {
+      "value_piece": 21,
+      "no_destroy": true,
+      "alt_paths": true
+    },
+    "history": {
+      "failure_count": 1
+    }
+  },
+  {
+    "comp_id": "C208",
+    "op_type": "pull",
+    "tool_id": "T_pneumatic",
+    "symptom": "NO_SEPARATION",
+    "signals": {
+      "force": 80.8,
+      "torque": 31.5,
+      "joint_opened": 0
+    },
+    "context": {
+      "value_piece": 23,
+      "no_destroy": true,
+      "alt_paths": false,
+      "alt_tools_available": [
+        "T_pneumatic"
+      ]
+    },
+    "history": {
+      "failure_count": 0
+    }
+  },
+  {
+    "comp_id": "C153",
+    "op_type": "unscrew",
+    "tool_id": "T_hex",
+    "symptom": "NO_SEPARATION",
+    "signals": {
+      "force": 88.8,
+      "torque": 65.6,
+      "joint_opened": 0
+    },
+    "context": {
+      "value_piece": 33,
+      "no_destroy": true,
+      "alt_paths": false
+    },
+    "history": {
+      "failure_count": 1
+    }
+  }
+]

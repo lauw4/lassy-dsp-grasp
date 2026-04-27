@@ -1,0 +1,116 @@
+[
+  {
+    "comp_id": "C043",
+    "op_type": "pry",
+    "tool_id": "T_impact",
+    "symptom": "ACCESS_BLOCKED",
+    "signals": {
+      "force": 72.6,
+      "torque": 48.0,
+      "access_blocked": 1
+    },
+    "context": {
+      "value_piece": 15,
+      "no_destroy": false,
+      "alt_paths": false
+    },
+    "history": {
+      "failure_count": 3
+    }
+  },
+  {
+    "comp_id": "C011",
+    "op_type": "detach",
+    "tool_id": "T_pliers",
+    "symptom": "ACCESS_BLOCKED",
+    "signals": {
+      "force": 43.6,
+      "torque": 35.0,
+      "access_blocked": 1
+    },
+    "context": {
+      "value_piece": 33,
+      "no_destroy": false,
+      "alt_paths": false
+    },
+    "history": {
+      "failure_count": 3
+    }
+  },
+  {
+    "comp_id": "C001",
+    "op_type": "cut",
+    "tool_id": "T_pliers",
+    "symptom": "NO_SEPARATION",
+    "signals": {
+      "force": 93.2,
+      "torque": 69.1,
+      "joint_opened": 0
+    },
+    "context": {
+      "value_piece": 33,
+      "no_destroy": false,
+      "alt_paths": false
+    },
+    "history": {
+      "failure_count": 0
+    }
+  },
+  {
+    "comp_id": "C069",
+    "op_type": "cut",
+    "tool_id": "T_pliers",
+    "symptom": "ACCESS_BLOCKED",
+    "signals": {
+      "force": 69.6,
+      "torque": 27.5,
+      "access_blocked": 1
+    },
+    "context": {
+      "value_piece": 15,
+      "no_destroy": false,
+      "alt_paths": true
+    },
+    "history": {
+      "failure_count": 3
+    }
+  },
+  {
+    "comp_id": "C082",
+    "op_type": "cut",
+    "tool_id": "T_hex",
+    "symptom": "LOW_VALUE_BOTTLENECK",
+    "signals": {
+      "force": 45.3,
+      "torque": 11.3,
+      "low_value": 1
+    },
+    "context": {
+      "value_piece": 33,
+      "no_destroy": false,
+      "alt_paths": false
+    },
+    "history": {
+      "failure_count": 0
+    }
+  },
+  {
+    "comp_id": "C081",
+    "op_type": "pry",
+    "tool_id": "T_pliers",
+    "symptom": "NO_SEPARATION",
+    "signals": {
+      "force": 95.0,
+      "torque": 61.1,
+      "joint_opened": 0
+    },
+    "context": {
+      "value_piece": 33,
+      "no_destroy": true,
+      "alt_paths": false
+    },
+    "history": {
+      "failure_count": 3
+    }
+  }
+]

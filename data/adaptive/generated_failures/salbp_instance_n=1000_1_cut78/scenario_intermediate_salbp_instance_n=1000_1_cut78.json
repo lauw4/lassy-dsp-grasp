@@ -12,7 +12,7 @@
     "context": {
       "value_piece": 79,
       "no_destroy": true,
-      "alt_paths": false
+      "alt_paths": true
     },
     "history": {
       "failure_count": 2

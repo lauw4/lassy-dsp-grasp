@@ -10,7 +10,7 @@
       "over_torque": 1
     },
     "context": {
-      "value_piece": 99,
+      "value_piece": 15,
       "no_destroy": false,
       "alt_paths": false
     },
@@ -31,7 +31,10 @@
     "context": {
       "value_piece": 32,
       "no_destroy": false,
-      "alt_paths": true
+      "alt_paths": true,
+      "alt_tools_available": [
+        "T_power"
+      ]
     },
     "history": {
       "failure_count": 1
@@ -50,7 +53,10 @@
     "context": {
       "value_piece": 85,
       "no_destroy": true,
-      "alt_paths": true
+      "alt_paths": true,
+      "alt_tools_available": [
+        "T_power"
+      ]
     },
     "history": {
       "failure_count": 0

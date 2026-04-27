@@ -1,0 +1,78 @@
+[
+  {
+    "comp_id": "C018",
+    "op_type": "detach",
+    "tool_id": "T_impact",
+    "symptom": "LOW_VALUE_BOTTLENECK",
+    "signals": {
+      "force": 39.7,
+      "torque": 21.8,
+      "low_value": 1
+    },
+    "context": {
+      "value_piece": 22,
+      "no_destroy": false,
+      "alt_paths": true
+    },
+    "history": {
+      "failure_count": 1
+    }
+  },
+  {
+    "comp_id": "C019",
+    "op_type": "detach",
+    "tool_id": "T_pliers",
+    "symptom": "OVER_TORQUE_NO_ADVANCE",
+    "signals": {
+      "force": 69.3,
+      "torque": 81.8,
+      "over_torque": 1
+    },
+    "context": {
+      "value_piece": 16,
+      "no_destroy": false,
+      "alt_paths": true
+    },
+    "history": {
+      "failure_count": 1
+    }
+  },
+  {
+    "comp_id": "C007",
+    "op_type": "pull",
+    "tool_id": "T_pneumatic",
+    "symptom": "LOW_VALUE_BOTTLENECK",
+    "signals": {
+      "force": 37.0,
+      "torque": 38.4,
+      "low_value": 1
+    },
+    "context": {
+      "value_piece": 24,
+      "no_destroy": true,
+      "alt_paths": true
+    },
+    "history": {
+      "failure_count": 2
+    }
+  },
+  {
+    "comp_id": "C022",
+    "op_type": "pry",
+    "tool_id": "T_pliers",
+    "symptom": "OVER_TORQUE_NO_ADVANCE",
+    "signals": {
+      "force": 52.0,
+      "torque": 77.9,
+      "over_torque": 1
+    },
+    "context": {
+      "value_piece": 16,
+      "no_destroy": false,
+      "alt_paths": true
+    },
+    "history": {
+      "failure_count": 1
+    }
+  }
+]

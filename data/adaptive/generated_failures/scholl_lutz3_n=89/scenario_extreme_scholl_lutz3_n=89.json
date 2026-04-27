@@ -1,0 +1,182 @@
+[
+  {
+    "comp_id": "C004",
+    "op_type": "detach",
+    "tool_id": "T_pneumatic",
+    "symptom": "OVER_TORQUE_NO_ADVANCE",
+    "signals": {
+      "force": 73.5,
+      "torque": 67.6,
+      "over_torque": 1
+    },
+    "context": {
+      "value_piece": 31,
+      "no_destroy": true,
+      "alt_paths": false
+    },
+    "history": {
+      "failure_count": 1
+    }
+  },
+  {
+    "comp_id": "C019",
+    "op_type": "pry",
+    "tool_id": "T_hex",
+    "symptom": "NO_SEPARATION",
+    "signals": {
+      "force": 98.0,
+      "torque": 32.6,
+      "joint_opened": 0
+    },
+    "context": {
+      "value_piece": 31,
+      "no_destroy": true,
+      "alt_paths": false
+    },
+    "history": {
+      "failure_count": 0
+    }
+  },
+  {
+    "comp_id": "C051",
+    "op_type": "cut",
+    "tool_id": "T_hex",
+    "symptom": "NO_SEPARATION",
+    "signals": {
+      "force": 84.4,
+      "torque": 40.5,
+      "joint_opened": 0
+    },
+    "context": {
+      "value_piece": 31,
+      "no_destroy": true,
+      "alt_paths": false
+    },
+    "history": {
+      "failure_count": 2
+    }
+  },
+  {
+    "comp_id": "C025",
+    "op_type": "unscrew",
+    "tool_id": "T_hex",
+    "symptom": "OVER_TORQUE_NO_ADVANCE",
+    "signals": {
+      "force": 93.9,
+      "torque": 60.9,
+      "over_torque": 1
+    },
+    "context": {
+      "value_piece": 31,
+      "no_destroy": true,
+      "alt_paths": false
+    },
+    "history": {
+      "failure_count": 0
+    }
+  },
+  {
+    "comp_id": "C014",
+    "op_type": "cut",
+    "tool_id": "T_torx",
+    "symptom": "LOW_VALUE_BOTTLENECK",
+    "signals": {
+      "force": 29.5,
+      "torque": 11.8,
+      "low_value": 1
+    },
+    "context": {
+      "value_piece": 31,
+      "no_destroy": true,
+      "alt_paths": false
+    },
+    "history": {
+      "failure_count": 0
+    }
+  },
+  {
+    "comp_id": "C028",
+    "op_type": "detach",
+    "tool_id": "T_impact",
+    "symptom": "ACCESS_BLOCKED",
+    "signals": {
+      "force": 52.4,
+      "torque": 50.0,
+      "access_blocked": 1
+    },
+    "context": {
+      "value_piece": 21,
+      "no_destroy": false,
+      "alt_paths": true
+    },
+    "history": {
+      "failure_count": 3
+    }
+  },
+  {
+    "comp_id": "C082",
+    "op_type": "unscrew",
+    "tool_id": "T_hex",
+    "symptom": "OVER_TORQUE_NO_ADVANCE",
+    "signals": {
+      "force": 65.1,
+      "torque": 69.2,
+      "over_torque": 1
+    },
+    "context": {
+      "value_piece": 20,
+      "no_destroy": false,
+      "alt_paths": true,
+      "alt_tools_available": [
+        "T_pneumatic"
+      ]
+    },
+    "history": {
+      "failure_count": 0
+    }
+  },
+  {
+    "comp_id": "C070",
+    "op_type": "unscrew",
+    "tool_id": "T_pneumatic",
+    "symptom": "OVER_TORQUE_NO_ADVANCE",
+    "signals": {
+      "force": 74.9,
+      "torque": 77.7,
+      "over_torque": 1
+    },
+    "context": {
+      "value_piece": 29,
+      "no_destroy": false,
+      "alt_paths": true,
+      "alt_tools_available": [
+        "T_pneumatic"
+      ]
+    },
+    "history": {
+      "failure_count": 1
+    }
+  },
+  {
+    "comp_id": "C038",
+    "op_type": "pull",
+    "tool_id": "T_torx",
+    "symptom": "LOW_VALUE_BOTTLENECK",
+    "signals": {
+      "force": 38.1,
+      "torque": 40.0,
+      "low_value": 1
+    },
+    "context": {
+      "value_piece": 22,
+      "no_destroy": false,
+      "alt_paths": false,
+      "alt_tools_available": [
+        "T_pneumatic"
+      ]
+    },
+    "history": {
+      "failure_count": 2
+    }
+  }
+]

@@ -1,0 +1,160 @@
+[
+  {
+    "comp_id": "C001",
+    "op_type": "cut",
+    "tool_id": "T_hex",
+    "symptom": "NO_SEPARATION",
+    "signals": {
+      "force": 94.9,
+      "torque": 66.8,
+      "joint_opened": 0
+    },
+    "context": {
+      "value_piece": 29,
+      "no_destroy": false,
+      "alt_paths": false,
+      "alt_tools_available": [
+        "T_pneumatic"
+      ]
+    },
+    "history": {
+      "failure_count": 2
+    }
+  },
+  {
+    "comp_id": "C016",
+    "op_type": "pull",
+    "tool_id": "T_torx",
+    "symptom": "LOW_VALUE_BOTTLENECK",
+    "signals": {
+      "force": 30.9,
+      "torque": 23.6,
+      "low_value": 1
+    },
+    "context": {
+      "value_piece": 24,
+      "no_destroy": false,
+      "alt_paths": true
+    },
+    "history": {
+      "failure_count": 1
+    }
+  },
+  {
+    "comp_id": "C056",
+    "op_type": "unscrew",
+    "tool_id": "T_pliers",
+    "symptom": "LOW_VALUE_BOTTLENECK",
+    "signals": {
+      "force": 47.8,
+      "torque": 35.4,
+      "low_value": 1
+    },
+    "context": {
+      "value_piece": 27,
+      "no_destroy": true,
+      "alt_paths": false,
+      "alt_tools_available": [
+        "T_alt"
+      ]
+    },
+    "history": {
+      "failure_count": 3
+    }
+  },
+  {
+    "comp_id": "C002",
+    "op_type": "pry",
+    "tool_id": "T_torx",
+    "symptom": "NO_SEPARATION",
+    "signals": {
+      "force": 77.6,
+      "torque": 46.0,
+      "joint_opened": 0
+    },
+    "context": {
+      "value_piece": 15,
+      "no_destroy": false,
+      "alt_paths": true
+    },
+    "history": {
+      "failure_count": 0
+    }
+  },
+  {
+    "comp_id": "C030",
+    "op_type": "unscrew",
+    "tool_id": "T_impact",
+    "symptom": "NO_SEPARATION",
+    "signals": {
+      "force": 82.5,
+      "torque": 39.8,
+      "joint_opened": 0
+    },
+    "context": {
+      "value_piece": 33,
+      "no_destroy": true,
+      "alt_paths": false
+    },
+    "history": {
+      "failure_count": 2
+    }
+  },
+  {
+    "comp_id": "C012",
+    "op_type": "pry",
+    "tool_id": "T_pliers",
+    "symptom": "LOW_VALUE_BOTTLENECK",
+    "signals": {
+      "force": 35.1,
+      "torque": 38.3,
+      "low_value": 1
+    },
+    "context": {
+      "value_piece": 15,
+      "no_destroy": false,
+      "alt_paths": true
+    },
+    "history": {
+      "failure_count": 1
+    }
+  },
+  {
+    "comp_id": "C083",
+    "op_type": "detach",
+    "tool_id": "T_pliers",
+    "symptom": "OVER_TORQUE_NO_ADVANCE",
+    "signals": {
+      "force": 79.8,
+      "torque": 95.6,
+      "over_torque": 1
+    },
+    "context": {
+      "value_piece": 15,
+      "no_destroy": false,
+      "alt_paths": true
+    },
+    "history": {
+      "failure_count": 3
+    }
+  },
+  {
+    "comp_id": "C055",
+    "op_type": "detach",
+    "tool_id": "T_pliers",
+    "symptom": "LOW_VALUE_BOTTLENECK",
+    "signals": {
+      "force": 37.2,
+      "torque": 17.4,
+      "low_value": 1
+    },
+    "context": {
+      "value_piece": 20,
+      "no_destroy": true,
+      "alt_paths": true
+    },
+    "history": {
+      "failure_count": 3
+    }
+  }
+]

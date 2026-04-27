@@ -10,7 +10,7 @@
       "access_blocked": 1
     },
     "context": {
-      "value_piece": 32,
+      "value_piece": 13,
       "no_destroy": false,
       "alt_paths": false
     },
@@ -29,7 +29,7 @@
       "over_torque": 1
     },
     "context": {
-      "value_piece": 83,
+      "value_piece": 13,
       "no_destroy": false,
       "alt_paths": false
     },

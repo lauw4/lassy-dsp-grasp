@@ -72,14 +72,14 @@ def load_data(file_path: str) -> Dict[str, Any]:
                     section = None
                 continue
             if section == 'V':
-                data['V'].extend([_parse_value(tok) for tok in re.split('[,;\s]+', line) if tok])
+                data['V'].extend([_parse_value(tok) for tok in re.split(r'[,;\s]+', line) if tok])
             elif section == 'E':
                 parts = [int(tok) for tok in line.split()]
                 if len(parts) != 2:
                     raise ValueError(f"Malformed arc: {line}")
                 data['E'].append(tuple(parts))
             elif section == 'T':
-                data['T'].extend([int(tok) for tok in re.split('[,;\s]+', line) if tok])
+                data['T'].extend([int(tok) for tok in re.split(r'[,;\s]+', line) if tok])
             elif section in {'r', 'c', 'p'}:
                 parts = line.split()
                 if len(parts) < 2:
@@ -126,19 +126,43 @@ def build_model(data: Dict[str, Any]) -> Tuple[pulp.LpProblem, Dict[str, Any]]:
     y = pulp.LpVariable.dicts('y', (V, K), cat='Binary')
     s = pulp.LpVariable('makespan', lowBound=0)
 
-    # Add trap penalty if present in data
-    trap_penalty = -20.0
-    traps = data.get('trap', {})  # Dictionary {i: bool}
-    # If data['trap'] doesn't exist, try to build it from nodes
-    if not traps:
-        traps = {}
-        # If data['nodes'] exists (enriched case from JSON)
-        for node in data.get('nodes', []):
-            nid = node.get('id')
-            if nid is not None:
-                traps[int(nid)] = node.get('trap', False)
-    model += pulp.lpSum((r[i] - c[i] + (trap_penalty if traps.get(i, False) else 0.0)) * x[i] for i in V), 'Net_profit'
+    # ── Objective 1 parameters (IWSPE 2026) ──────────────────────────
+    # max Σ(v_i·x_i) - λ·Σ W_i
+    # v_i = r_i - c_i  (net recovery margin)
+    # W_i = completion time of part i (linearised below)
+    # λ   = lambda_discount — auto-calibrated per instance (5 % of mean value rate)
+    #       so the time-discount scales with the instance's own value density.
+    if 'lambda_discount' in data and data['lambda_discount'] is not None:
+        lam = float(data['lambda_discount'])
+    else:
+        # Auto-calibrate: λ = 0.05 × Σmax(v_i,0) / Σp_i
+        _pos_vals = [max(r[i] - c[i], 0.0) for i in V]
+        _total_p  = sum(p[i] for i in V)
+        if _total_p > 0 and sum(_pos_vals) > 0:
+            lam = 0.05 * sum(_pos_vals) / _total_p
+        else:
+            lam = 0.05
+    data['lambda_discount'] = lam   # store so caller can read it back
+    B_max_eur = data.get('budget_max', None)
 
+    # Big-M = upper bound on completion time
+    M = sum(p[i] for i in V)
+
+    # ── W_i : completion-time variables for exact linearisation ──
+    W = pulp.LpVariable.dicts('W', V, lowBound=0)
+
+    # Net recovery margin v_i = r_i - c_i
+    v = {i: r[i] - c[i] for i in V}
+
+    # ── OBJECTIVE 1: Discounted Recovery Profit (NP-hard via 1|prec|ΣC_j) ──
+    # max Σ v_i·x_i  −  λ·Σ W_i
+    model += (
+        pulp.lpSum(v[i] * x[i] for i in V)
+        - lam * pulp.lpSum(W[i] for i in V),
+        'Obj1_Discounted_Recovery_Profit'
+    )
+
+    # ── Standard DSP constraints ────────────────────────────────
     for i in V:
         model += pulp.lpSum(y[i][k] for k in K) == x[i], f'assign_{i}'
     for k in K:
@@ -152,6 +176,28 @@ def build_model(data: Dict[str, Any]) -> Tuple[pulp.LpProblem, Dict[str, Any]]:
     if C_max is not None:
         model += s <= C_max, 'horizon_limit'
 
+    # ── Completion-time linearisation (W_i) ─────────────────────
+    # T_k = Σ_{k'=1}^{k} Σ_j p_j·y_{j,k'}  (cumulative time up to position k)
+    # W_i = C_i (completion time) when x_i=1, W_i=0 otherwise.
+    # Lower bound: W_i ≥ T_k − M·(1 − y_{i,k})  →  if y_{i,k}=1 then W_i ≥ T_k
+    # Upper bound: W_i ≤ T_k + M·(1 − y_{i,k})  →  if y_{i,k}=1 then W_i ≤ T_k
+    # Combined: W_i = T_k = C_i  (exact equality when y_{i,k}=1)
+    # W_i ≤ M·x_i                →  W_i = 0 if component not selected
+    # Since we MAXIMISE and subtract λ·ΣW_i, without upper bounds the solver
+    # would set all W_i=0 (valid lower-bound solution) — the upper bounds fix this.
+    for i in V:
+        model += W[i] <= M * x[i], f'W_zero_{i}'
+        for k in K:
+            T_k = pulp.lpSum(p[j] * y[j][kp] for j in V for kp in K if kp <= k)
+            model += W[i] >= T_k - M * (1 - y[i][k]), f'W_lb_{i}_{k}'
+            model += W[i] <= T_k + M * (1 - y[i][k]), f'W_ub_{i}_{k}'
+
+    # ── Budget constraint (EUR) ─────────────────────────────────
+    if B_max_eur is not None:
+        model += pulp.lpSum(
+            (c[i] + h * p[i]) * x[i] for i in V
+        ) <= B_max_eur, 'budget_eur'
+
     # Add order constraints (order_rules) if present in data
     order_rules = data.get('order_rules', [])
     label_to_num = {str(i): i for i in V}
@@ -160,23 +206,17 @@ def build_model(data: Dict[str, Any]) -> Tuple[pulp.LpProblem, Dict[str, Any]]:
         cond = rule.get('condition', '').lower()
         if len(rule_if) == 2:
             n1, n2 = rule_if[0], rule_if[1]
-            # Convert label -> number if needed
             n1_num = label_to_num.get(n1, n1) if not isinstance(n1, int) else n1
             n2_num = label_to_num.get(n2, n2) if not isinstance(n2, int) else n2
-            print(f"[DIAG] Adding order constraint: rule={rule}, n1={n1} -> {n1_num}, n2={n2} -> {n2_num}, condition={cond}")
             if n1_num in V and n2_num in V:
-                # 'avant' rule: n1 must be before n2
                 if 'avant' in cond:
                     for k in K:
-                        print(f"[DIAG] Constraint: {n1_num} before {n2_num} (rank {k}): sum(y[{n1_num}][<k]) >= y[{n2_num}][{k}]")
                         model += pulp.lpSum(y[n1_num][k_] for k_ in K if k_ < k) >= y[n2_num][k], f'order_avant_{n1_num}_{n2_num}_{k}_{idx}'
-                # 'apres' rule: n1 must be after n2
                 if 'apres' in cond:
                     for k in K:
-                        print(f"[DIAG] Constraint: {n1_num} after {n2_num} (rank {k}): sum(y[{n2_num}][<k]) >= y[{n1_num}][{k}]")
                         model += pulp.lpSum(y[n2_num][k_] for k_ in K if k_ < k) >= y[n1_num][k], f'order_apres_{n1_num}_{n2_num}_{k}_{idx}'
 
-    return model, {'x': x, 'y': y, 's': s}
+    return model, {'x': x, 'y': y, 's': s, 'W': W}
 
 # -- Resolution --------------------------------------------------------------
 
@@ -190,26 +230,37 @@ def solve_model(model: pulp.LpProblem, time_limit: Optional[int] = None, use_cpl
             # Operating system detection for CPLEX path
             if os.name == 'nt':  # Windows
                 cplex_path = "C:\\Program Files\\IBM\\ILOG\\CPLEX_Studio2211\\cplex\\bin\\x64_win64\\cplex.exe"
-            else:  # Linux/Unix
-                # Try several common locations on Linux
-                possible_paths = [
-                    "/opt/ibm/ILOG/CPLEX_Studio2211/cplex/bin/x86-64_linux/cplex",
-                    "/usr/local/bin/cplex",
-                    "/usr/bin/cplex",
-                    os.path.expanduser("~/cplex_studio/cplex/bin/x86-64_linux/cplex"),
-                    "cplex"  # If in PATH
-                ]
+            else:
+                import platform
+                possible_paths = []
+                if platform.system() == 'Darwin':  # macOS
+                    possible_paths = [
+                        "/Applications/CPLEX_Studio2211/cplex/bin/arm64_osx/cplex",   # macOS Apple Silicon
+                        "/Applications/CPLEX_Studio2211/cplex/bin/x86-64_osx/cplex",  # macOS Intel
+                        "/Applications/CPLEX_Studio221/cplex/bin/arm64_osx/cplex",
+                        "/Applications/CPLEX_Studio221/cplex/bin/x86-64_osx/cplex",
+                        os.path.expanduser("~/Applications/CPLEX_Studio2211/cplex/bin/arm64_osx/cplex"),
+                        "cplex",
+                    ]
+                else:  # Linux/Unix
+                    possible_paths = [
+                        "/opt/ibm/ILOG/CPLEX_Studio2211/cplex/bin/x86-64_linux/cplex",
+                        "/usr/local/bin/cplex",
+                        "/usr/bin/cplex",
+                        os.path.expanduser("~/cplex_studio/cplex/bin/x86-64_linux/cplex"),
+                        "cplex",
+                    ]
                 cplex_path = None
                 for path in possible_paths:
-                    if os.path.isfile(path) and os.access(path, os.X_OK):
-                        cplex_path = path
-                        break
-                    elif path == "cplex" and os.system("which cplex > /dev/null 2>&1") == 0:
+                    if path == "cplex" and os.system("which cplex > /dev/null 2>&1") == 0:
                         cplex_path = "cplex"
                         break
-                
+                    elif os.path.isfile(path) and os.access(path, os.X_OK):
+                        cplex_path = path
+                        break
+
                 if cplex_path is None:
-                    raise FileNotFoundError("CPLEX not found on this Linux system")
+                    raise FileNotFoundError(f"CPLEX not found ({platform.system()})")
             
             if not os.path.isfile(cplex_path) and cplex_path != "cplex":
                 raise FileNotFoundError(f"CPLEX not found at location: {cplex_path}")
@@ -252,7 +303,7 @@ def solve_model(model: pulp.LpProblem, time_limit: Optional[int] = None, use_cpl
     if solver is None:
         print(f"Using CBC{time_limit_msg}")
         if gap_limit is not None and gap_limit > 0:
-            solver = PULP_CBC_CMD(msg=True, timeLimit=time_limit, fracGap=gap_limit)
+            solver = PULP_CBC_CMD(msg=True, timeLimit=time_limit, gapRel=gap_limit)
         else:
             solver = PULP_CBC_CMD(msg=True, timeLimit=time_limit)
         solver_log_file = None

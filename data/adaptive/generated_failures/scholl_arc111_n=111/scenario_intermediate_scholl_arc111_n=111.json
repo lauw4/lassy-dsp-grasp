@@ -12,7 +12,7 @@
     "context": {
       "value_piece": 83,
       "no_destroy": false,
-      "alt_paths": false
+      "alt_paths": true
     },
     "history": {
       "failure_count": 2
@@ -31,7 +31,10 @@
     "context": {
       "value_piece": 46,
       "no_destroy": false,
-      "alt_paths": true
+      "alt_paths": true,
+      "alt_tools_available": [
+        "T_alt"
+      ]
     },
     "history": {
       "failure_count": 2

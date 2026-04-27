@@ -109,13 +109,17 @@ def _handle_failure(
         print(f"[{idx:2d}/{len(plan_effectif)}] Disassembling {comp}... ", end='', flush=True)
     
     # Build FailureEvent
+    ctx = dict(fail_dict.get('context', {}))
+    # Inject current runtime state so fuzzy decision can dynamically
+    # recompute alt_paths from the actual graph + overlay state
+    ctx['state'] = state
     fe = FailureEvent(
         comp_id=fail_dict['comp_id'],
         op_type=fail_dict['op_type'],
         tool_id=fail_dict.get('tool_id'),
         symptom=Symptom[fail_dict['symptom']],
         signals=fail_dict.get('signals', {}),
-        context=fail_dict.get('context', {}),
+        context=ctx,
         history=fail_dict.get('history', {}),
         timestamp=fail_dict.get('timestamp', '')
     )

@@ -13,7 +13,7 @@ import random
 import numpy as np
 import time
 import networkx as nx
-from src.utils.metrics import score_profit_net
+from src.utils.metrics import score_obj1
 from src.grasp.local_search import (
     swap_2,
     relocate,
@@ -50,25 +50,73 @@ def greedy_randomized_construction(G, alpha, target_nodes=None, needed_nodes=Non
     """
     Greedy randomized construction (Feo & Resende, 2020).
     
+    Uses managerial efficiency ratio (r-c-h·p)/p and EUR budget B_max.
+    Budget filtering skips optional nodes that exceed the remaining budget,
+    unless they are mandatory (predecessors of targets).
+    
     Args:
         alpha: Greediness (1=greedy, 0=random)
     Returns:
         Valid disassembly sequence.
     """
     remaining = set(needed_nodes) if needed_nodes else set(G.nodes())
+    mandatory = set(needed_nodes) if needed_nodes else set()
     sequence = []
     target_left = set(target_nodes) if target_nodes else set()
+
+    # Auto-calibrate λ if not already set on this graph
+    if 'lambda_discount' not in G.graph:
+        from src.utils.graph_io import auto_lambda
+        G.graph['lambda_discount'] = auto_lambda(G)
+    lam = G.graph['lambda_discount']
+    h   = G.graph.get('overhead_rate', 0.05)
+    B_max = G.graph.get('budget_max', None)
+    cumul_budget = 0.0
+    cumul_time   = 0.0    # tracks Σp_j for already-placed components (for Obj-1)
+
     while remaining:
         candidates = [n for n in remaining if all(pred in sequence for pred in G.predecessors(n))]
         if not candidates:
             return sequence
-        scores = [1.0 / (G.nodes[n].get("time", 1.0)) for n in candidates]
+
+        # ── Budget filtering: skip optional nodes that exceed B_max ──
+        if B_max is not None:
+            budget_ok = []
+            for n in candidates:
+                c_n = G.nodes[n].get("cost", 0.0)
+                p_n = G.nodes[n].get("time", G.nodes[n].get("duration", 1.0))
+                if cumul_budget + c_n + h * p_n <= B_max or n in mandatory:
+                    budget_ok.append(n)
+            if budget_ok:
+                candidates = budget_ok
+
+        # ── Greedy function: Obj-1 marginal contribution ──────────────
+        # Δ_n = (r_n - c_n) - λ·C_n   where C_n = cumul_time + p_n
+        # Efficiency ratio:  Δ_n / p_n   (SPT-style tie-breaking on p_n)
+        scores = []
+        for n in candidates:
+            r_n = G.nodes[n].get("profit", 0.0)
+            c_n = G.nodes[n].get("cost", 0.0)
+            p_n = G.nodes[n].get("time", G.nodes[n].get("duration", 1.0))
+            delta = (r_n - c_n) - lam * (cumul_time + p_n)
+            ratio = delta / max(p_n, 0.01)
+            scores.append(ratio)
+
         max_s, min_s = max(scores), min(scores)
-        threshold = min_s + alpha * (max_s - min_s)
-        rcl = [n for n, s in zip(candidates, scores) if s >= threshold]
+        if max_s == min_s:
+            rcl = candidates
+        else:
+            threshold = min_s + alpha * (max_s - min_s)
+            rcl = [n for n, s in zip(candidates, scores) if s >= threshold]
         chosen = random.choice(rcl)
         sequence.append(chosen)
         remaining.remove(chosen)
+
+        c_ch = G.nodes[chosen].get("cost", 0.0)
+        p_ch = G.nodes[chosen].get("time", G.nodes[chosen].get("duration", 1.0))
+        cumul_budget += c_ch + h * p_ch
+        cumul_time   += p_ch
+
     return sequence
 
 
@@ -130,7 +178,7 @@ def reactive_grasp(G, alpha_pool=(0.1, 0.3, 0.5, 0.7, 0.9), max_iterations=100, 
         if local_search_fn:
             solution = local_search_fn(solution, G)
         
-        s = score_profit_net(solution, G)
+        s = score_obj1(solution, G)
         history[alpha].append(s)
         
         if best_score == float('inf') or s > best_score:
@@ -139,7 +187,7 @@ def reactive_grasp(G, alpha_pool=(0.1, 0.3, 0.5, 0.7, 0.9), max_iterations=100, 
         else:
             no_improvement_count += 1
         
-        if early_stop and no_improvement_count >= 20:
+        if early_stop and no_improvement_count >= 30:
             break
         
         if (it + 1) % update_window == 0:
@@ -166,19 +214,21 @@ def grasp_with_vnd(G, alpha_pool=(0.1, 0.3, 0.5, 0.7, 0.9), max_iterations=100, 
         
         current = solution[:]
         graph_size = len(graph.nodes)
-        max_rounds = 2 if graph_size <= 50 else 3
-        restart_threshold = 3 if graph_size <= 50 else 5
+        # More passes for small instances (where MILP comparison matters most)
+        max_rounds = 4 if graph_size <= 30 else (3 if graph_size <= 80 else 2)
+        restart_threshold = 5 if graph_size <= 50 else 7
+        max_local_iters = 40 if graph_size <= 30 else (30 if graph_size <= 80 else 20)
         
         for round_num in range(max_rounds):
             improved_this_round = True
             stagnation = 0  
             local_iterations = 0 
             
-            while improved_this_round and stagnation < restart_threshold and local_iterations < 20:
+            while improved_this_round and stagnation < restart_threshold and local_iterations < max_local_iters:
                 improved_this_round = False
                 for neighborhood_fn in neighborhoods:
                     new_solution = neighborhood_fn(current, graph, target_nodes=target_nodes) 
-                    if score_profit_net(new_solution, graph) > score_profit_net(current, graph):
+                    if score_obj1(new_solution, graph) > score_obj1(current, graph):
                         current = new_solution
                         improved_this_round = True
                         stagnation = 0
@@ -456,7 +506,7 @@ def run_grasp(G, algorithm='vnd', mode='selectif', target_nodes=None, runs=1, **
     best_seq, best_s = None, float('-inf')
     for _ in range(runs):
         seq = algo_map[algorithm](G, target_nodes=target_nodes, **kwargs)
-        s = score_profit_net(seq, G)
+        s = score_obj1(seq, G)
         if s > best_s:
             best_seq, best_s = seq, s
     return best_seq, best_s

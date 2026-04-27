@@ -1,0 +1,81 @@
+[
+  {
+    "comp_id": "C001",
+    "op_type": "pry",
+    "tool_id": "T_pliers",
+    "symptom": "LOW_VALUE_BOTTLENECK",
+    "signals": {
+      "force": 29.8,
+      "torque": 19.1,
+      "low_value": 1
+    },
+    "context": {
+      "value_piece": 24,
+      "no_destroy": true,
+      "alt_paths": false
+    },
+    "history": {
+      "failure_count": 1
+    }
+  },
+  {
+    "comp_id": "C006",
+    "op_type": "unscrew",
+    "tool_id": "T_torx",
+    "symptom": "ACCESS_BLOCKED",
+    "signals": {
+      "force": 63.7,
+      "torque": 28.3,
+      "access_blocked": 1
+    },
+    "context": {
+      "value_piece": 29,
+      "no_destroy": false,
+      "alt_paths": true,
+      "alt_tools_available": [
+        "T_electric"
+      ]
+    },
+    "history": {
+      "failure_count": 1
+    }
+  },
+  {
+    "comp_id": "C003",
+    "op_type": "pry",
+    "tool_id": "T_hex",
+    "symptom": "OVER_TORQUE_NO_ADVANCE",
+    "signals": {
+      "force": 79.2,
+      "torque": 97.2,
+      "over_torque": 1
+    },
+    "context": {
+      "value_piece": 9,
+      "no_destroy": false,
+      "alt_paths": true
+    },
+    "history": {
+      "failure_count": 1
+    }
+  },
+  {
+    "comp_id": "C004",
+    "op_type": "cut",
+    "tool_id": "T_impact",
+    "symptom": "ACCESS_BLOCKED",
+    "signals": {
+      "force": 71.4,
+      "torque": 40.7,
+      "access_blocked": 1
+    },
+    "context": {
+      "value_piece": 9,
+      "no_destroy": false,
+      "alt_paths": false
+    },
+    "history": {
+      "failure_count": 3
+    }
+  }
+]

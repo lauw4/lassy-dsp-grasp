@@ -1,0 +1,78 @@
+[
+  {
+    "comp_id": "C035",
+    "op_type": "unscrew",
+    "tool_id": "T_hex",
+    "symptom": "NO_SEPARATION",
+    "signals": {
+      "force": 79.6,
+      "torque": 67.4,
+      "joint_opened": 0
+    },
+    "context": {
+      "value_piece": 20,
+      "no_destroy": true,
+      "alt_paths": true
+    },
+    "history": {
+      "failure_count": 3
+    }
+  },
+  {
+    "comp_id": "C074",
+    "op_type": "cut",
+    "tool_id": "T_torx",
+    "symptom": "NO_SEPARATION",
+    "signals": {
+      "force": 70.4,
+      "torque": 42.8,
+      "joint_opened": 0
+    },
+    "context": {
+      "value_piece": 27,
+      "no_destroy": true,
+      "alt_paths": true
+    },
+    "history": {
+      "failure_count": 0
+    }
+  },
+  {
+    "comp_id": "C125",
+    "op_type": "pull",
+    "tool_id": "T_pneumatic",
+    "symptom": "NO_SEPARATION",
+    "signals": {
+      "force": 82.6,
+      "torque": 49.5,
+      "joint_opened": 0
+    },
+    "context": {
+      "value_piece": 25,
+      "no_destroy": true,
+      "alt_paths": true
+    },
+    "history": {
+      "failure_count": 0
+    }
+  },
+  {
+    "comp_id": "C049",
+    "op_type": "detach",
+    "tool_id": "T_impact",
+    "symptom": "NO_SEPARATION",
+    "signals": {
+      "force": 84.3,
+      "torque": 64.4,
+      "joint_opened": 0
+    },
+    "context": {
+      "value_piece": 15,
+      "no_destroy": false,
+      "alt_paths": false
+    },
+    "history": {
+      "failure_count": 2
+    }
+  }
+]

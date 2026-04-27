@@ -31,7 +31,10 @@
     "context": {
       "value_piece": 67,
       "no_destroy": true,
-      "alt_paths": false
+      "alt_paths": true,
+      "alt_tools_available": [
+        "T_pneumatic"
+      ]
     },
     "history": {
       "failure_count": 0

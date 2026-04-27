@@ -1,0 +1,81 @@
+[
+  {
+    "comp_id": "C019",
+    "op_type": "pry",
+    "tool_id": "T_pliers",
+    "symptom": "ACCESS_BLOCKED",
+    "signals": {
+      "force": 72.9,
+      "torque": 39.0,
+      "access_blocked": 1
+    },
+    "context": {
+      "value_piece": 15,
+      "no_destroy": false,
+      "alt_paths": true
+    },
+    "history": {
+      "failure_count": 0
+    }
+  },
+  {
+    "comp_id": "C036",
+    "op_type": "unscrew",
+    "tool_id": "T_pliers",
+    "symptom": "ACCESS_BLOCKED",
+    "signals": {
+      "force": 40.1,
+      "torque": 35.2,
+      "access_blocked": 1
+    },
+    "context": {
+      "value_piece": 29,
+      "no_destroy": false,
+      "alt_paths": false,
+      "alt_tools_available": [
+        "T_electric"
+      ]
+    },
+    "history": {
+      "failure_count": 0
+    }
+  },
+  {
+    "comp_id": "C038",
+    "op_type": "detach",
+    "tool_id": "T_pliers",
+    "symptom": "NO_SEPARATION",
+    "signals": {
+      "force": 77.1,
+      "torque": 45.1,
+      "joint_opened": 0
+    },
+    "context": {
+      "value_piece": 33,
+      "no_destroy": true,
+      "alt_paths": false
+    },
+    "history": {
+      "failure_count": 1
+    }
+  },
+  {
+    "comp_id": "C055",
+    "op_type": "detach",
+    "tool_id": "T_hex",
+    "symptom": "NO_SEPARATION",
+    "signals": {
+      "force": 92.4,
+      "torque": 30.4,
+      "joint_opened": 0
+    },
+    "context": {
+      "value_piece": 15,
+      "no_destroy": false,
+      "alt_paths": false
+    },
+    "history": {
+      "failure_count": 1
+    }
+  }
+]

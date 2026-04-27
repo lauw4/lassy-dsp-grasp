@@ -1,0 +1,122 @@
+[
+  {
+    "comp_id": "C008",
+    "op_type": "pry",
+    "tool_id": "T_impact",
+    "symptom": "ACCESS_BLOCKED",
+    "signals": {
+      "force": 60.9,
+      "torque": 43.9,
+      "access_blocked": 1
+    },
+    "context": {
+      "value_piece": 20,
+      "no_destroy": false,
+      "alt_paths": true,
+      "alt_tools_available": [
+        "T_power"
+      ]
+    },
+    "history": {
+      "failure_count": 1
+    }
+  },
+  {
+    "comp_id": "C004",
+    "op_type": "cut",
+    "tool_id": "T_torx",
+    "symptom": "LOW_VALUE_BOTTLENECK",
+    "signals": {
+      "force": 39.9,
+      "torque": 33.2,
+      "low_value": 1
+    },
+    "context": {
+      "value_piece": 14,
+      "no_destroy": false,
+      "alt_paths": false
+    },
+    "history": {
+      "failure_count": 1
+    }
+  },
+  {
+    "comp_id": "C006",
+    "op_type": "pull",
+    "tool_id": "T_pliers",
+    "symptom": "OVER_TORQUE_NO_ADVANCE",
+    "signals": {
+      "force": 50.7,
+      "torque": 81.6,
+      "over_torque": 1
+    },
+    "context": {
+      "value_piece": 28,
+      "no_destroy": true,
+      "alt_paths": true
+    },
+    "history": {
+      "failure_count": 0
+    }
+  },
+  {
+    "comp_id": "C042",
+    "op_type": "pry",
+    "tool_id": "T_hex",
+    "symptom": "NO_SEPARATION",
+    "signals": {
+      "force": 80.2,
+      "torque": 50.8,
+      "joint_opened": 0
+    },
+    "context": {
+      "value_piece": 14,
+      "no_destroy": false,
+      "alt_paths": true
+    },
+    "history": {
+      "failure_count": 1
+    }
+  },
+  {
+    "comp_id": "C000",
+    "op_type": "pull",
+    "tool_id": "T_pliers",
+    "symptom": "ACCESS_BLOCKED",
+    "signals": {
+      "force": 77.1,
+      "torque": 56.2,
+      "access_blocked": 1
+    },
+    "context": {
+      "value_piece": 31,
+      "no_destroy": true,
+      "alt_paths": false
+    },
+    "history": {
+      "failure_count": 2
+    }
+  },
+  {
+    "comp_id": "C003",
+    "op_type": "pull",
+    "tool_id": "T_torx",
+    "symptom": "NO_SEPARATION",
+    "signals": {
+      "force": 95.8,
+      "torque": 45.0,
+      "joint_opened": 0
+    },
+    "context": {
+      "value_piece": 29,
+      "no_destroy": false,
+      "alt_paths": false,
+      "alt_tools_available": [
+        "T_electric"
+      ]
+    },
+    "history": {
+      "failure_count": 3
+    }
+  }
+]

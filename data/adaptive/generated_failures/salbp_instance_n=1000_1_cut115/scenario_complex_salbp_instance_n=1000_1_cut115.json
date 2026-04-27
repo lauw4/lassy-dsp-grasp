@@ -31,7 +31,10 @@
     "context": {
       "value_piece": 80,
       "no_destroy": false,
-      "alt_paths": true
+      "alt_paths": true,
+      "alt_tools_available": [
+        "T_power"
+      ]
     },
     "history": {
       "failure_count": 1
@@ -50,7 +53,10 @@
     "context": {
       "value_piece": 10,
       "no_destroy": false,
-      "alt_paths": true
+      "alt_paths": true,
+      "alt_tools_available": [
+        "T_impact"
+      ]
     },
     "history": {
       "failure_count": 0

@@ -10,9 +10,12 @@
       "access_blocked": 1
     },
     "context": {
-      "value_piece": 25,
-      "no_destroy": true,
-      "alt_paths": false
+      "value_piece": 13,
+      "no_destroy": false,
+      "alt_paths": false,
+      "alt_tools_available": [
+        "T_alt"
+      ]
     },
     "history": {
       "failure_count": 0
@@ -31,7 +34,7 @@
     "context": {
       "value_piece": 12,
       "no_destroy": true,
-      "alt_paths": false
+      "alt_paths": true
     },
     "history": {
       "failure_count": 2
@@ -50,7 +53,10 @@
     "context": {
       "value_piece": 63,
       "no_destroy": true,
-      "alt_paths": true
+      "alt_paths": true,
+      "alt_tools_available": [
+        "T_power"
+      ]
     },
     "history": {
       "failure_count": 0

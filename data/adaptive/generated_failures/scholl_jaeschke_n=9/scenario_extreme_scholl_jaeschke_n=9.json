@@ -1,0 +1,43 @@
+[
+  {
+    "comp_id": "C000",
+    "op_type": "pry",
+    "tool_id": "T_pliers",
+    "symptom": "LOW_VALUE_BOTTLENECK",
+    "signals": {
+      "force": 21.1,
+      "torque": 12.9,
+      "low_value": 1
+    },
+    "context": {
+      "value_piece": 25,
+      "no_destroy": true,
+      "alt_paths": false,
+      "alt_tools_available": [
+        "T_pneumatic"
+      ]
+    },
+    "history": {
+      "failure_count": 3
+    }
+  },
+  {
+    "comp_id": "C001",
+    "op_type": "detach",
+    "tool_id": "T_torx",
+    "symptom": "LOW_VALUE_BOTTLENECK",
+    "signals": {
+      "force": 49.1,
+      "torque": 19.1,
+      "low_value": 1
+    },
+    "context": {
+      "value_piece": 27,
+      "no_destroy": true,
+      "alt_paths": false
+    },
+    "history": {
+      "failure_count": 3
+    }
+  }
+]

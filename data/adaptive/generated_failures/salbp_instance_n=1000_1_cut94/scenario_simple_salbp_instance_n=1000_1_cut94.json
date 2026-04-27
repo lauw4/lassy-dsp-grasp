@@ -10,8 +10,8 @@
       "over_torque": 1
     },
     "context": {
-      "value_piece": 60,
-      "no_destroy": true,
+      "value_piece": 14,
+      "no_destroy": false,
       "alt_paths": false
     },
     "history": {

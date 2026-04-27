@@ -1,0 +1,119 @@
+[
+  {
+    "comp_id": "C058",
+    "op_type": "pry",
+    "tool_id": "T_impact",
+    "symptom": "ACCESS_BLOCKED",
+    "signals": {
+      "force": 64.7,
+      "torque": 28.2,
+      "access_blocked": 1
+    },
+    "context": {
+      "value_piece": 23,
+      "no_destroy": true,
+      "alt_paths": true
+    },
+    "history": {
+      "failure_count": 3
+    }
+  },
+  {
+    "comp_id": "C039",
+    "op_type": "detach",
+    "tool_id": "T_pliers",
+    "symptom": "NO_SEPARATION",
+    "signals": {
+      "force": 90.8,
+      "torque": 44.1,
+      "joint_opened": 0
+    },
+    "context": {
+      "value_piece": 28,
+      "no_destroy": false,
+      "alt_paths": true
+    },
+    "history": {
+      "failure_count": 1
+    }
+  },
+  {
+    "comp_id": "C139",
+    "op_type": "cut",
+    "tool_id": "T_pneumatic",
+    "symptom": "ACCESS_BLOCKED",
+    "signals": {
+      "force": 69.6,
+      "torque": 60.0,
+      "access_blocked": 1
+    },
+    "context": {
+      "value_piece": 30,
+      "no_destroy": false,
+      "alt_paths": true
+    },
+    "history": {
+      "failure_count": 0
+    }
+  },
+  {
+    "comp_id": "C027",
+    "op_type": "pull",
+    "tool_id": "T_impact",
+    "symptom": "NO_SEPARATION",
+    "signals": {
+      "force": 76.3,
+      "torque": 64.4,
+      "joint_opened": 0
+    },
+    "context": {
+      "value_piece": 25,
+      "no_destroy": false,
+      "alt_paths": true
+    },
+    "history": {
+      "failure_count": 3
+    }
+  },
+  {
+    "comp_id": "C120",
+    "op_type": "pull",
+    "tool_id": "T_torx",
+    "symptom": "LOW_VALUE_BOTTLENECK",
+    "signals": {
+      "force": 43.2,
+      "torque": 33.6,
+      "low_value": 1
+    },
+    "context": {
+      "value_piece": 29,
+      "no_destroy": false,
+      "alt_paths": true
+    },
+    "history": {
+      "failure_count": 1
+    }
+  },
+  {
+    "comp_id": "C065",
+    "op_type": "pry",
+    "tool_id": "T_impact",
+    "symptom": "OVER_TORQUE_NO_ADVANCE",
+    "signals": {
+      "force": 57.4,
+      "torque": 90.2,
+      "over_torque": 1
+    },
+    "context": {
+      "value_piece": 28,
+      "no_destroy": false,
+      "alt_paths": true,
+      "alt_tools_available": [
+        "T_electric"
+      ]
+    },
+    "history": {
+      "failure_count": 0
+    }
+  }
+]

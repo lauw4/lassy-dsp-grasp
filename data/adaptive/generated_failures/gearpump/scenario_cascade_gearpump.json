@@ -1,0 +1,100 @@
+[
+  {
+    "comp_id": "G01",
+    "op_type": "detach",
+    "tool_id": "T_hex",
+    "symptom": "OVER_TORQUE_NO_ADVANCE",
+    "signals": {
+      "force": 69.7,
+      "torque": 76.9,
+      "over_torque": 1
+    },
+    "context": {
+      "value_piece": 2,
+      "no_destroy": false,
+      "alt_paths": false
+    },
+    "history": {
+      "failure_count": 3
+    }
+  },
+  {
+    "comp_id": "G07",
+    "op_type": "pry",
+    "tool_id": "T_torx",
+    "symptom": "OVER_TORQUE_NO_ADVANCE",
+    "signals": {
+      "force": 72.3,
+      "torque": 76.0,
+      "over_torque": 1
+    },
+    "context": {
+      "value_piece": 20,
+      "no_destroy": false,
+      "alt_paths": true
+    },
+    "history": {
+      "failure_count": 0
+    }
+  },
+  {
+    "comp_id": "G09",
+    "op_type": "detach",
+    "tool_id": "T_pneumatic",
+    "symptom": "OVER_TORQUE_NO_ADVANCE",
+    "signals": {
+      "force": 85.5,
+      "torque": 74.1,
+      "over_torque": 1
+    },
+    "context": {
+      "value_piece": 3,
+      "no_destroy": false,
+      "alt_paths": true
+    },
+    "history": {
+      "failure_count": 3
+    }
+  },
+  {
+    "comp_id": "G13",
+    "op_type": "cut",
+    "tool_id": "T_torx",
+    "symptom": "NO_SEPARATION",
+    "signals": {
+      "force": 92.8,
+      "torque": 39.0,
+      "joint_opened": 0
+    },
+    "context": {
+      "value_piece": 2,
+      "no_destroy": false,
+      "alt_paths": true,
+      "alt_tools_available": [
+        "T_electric"
+      ]
+    },
+    "history": {
+      "failure_count": 1
+    }
+  },
+  {
+    "comp_id": "G17",
+    "op_type": "detach",
+    "tool_id": "T_pliers",
+    "symptom": "OVER_TORQUE_NO_ADVANCE",
+    "signals": {
+      "force": 90.1,
+      "torque": 78.9,
+      "over_torque": 1
+    },
+    "context": {
+      "value_piece": 12,
+      "no_destroy": false,
+      "alt_paths": false
+    },
+    "history": {
+      "failure_count": 2
+    }
+  }
+]

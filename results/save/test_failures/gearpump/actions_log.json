@@ -4,14 +4,14 @@
     "symptom": "OVER_TORQUE_NO_ADVANCE",
     "action": "change_tool",
     "success": true,
-    "notes": "Outil alternatif propos\u00e9."
+    "notes": "Alternative tool suggested."
   },
   {
     "comp_id": "G13",
     "symptom": "LOW_VALUE_BOTTLENECK",
     "action": "destroy",
     "success": true,
-    "notes": "Destruction autoris\u00e9e (cutoff percentile 20e)."
+    "notes": "Destruction allowed (cutoff percentile 20th)."
   },
   {
     "comp_id": "G14",
@@ -25,7 +25,7 @@
     "symptom": "ACCESS_BLOCKED",
     "action": "bypass",
     "success": false,
-    "notes": "Aucun chemin alternatif dans le graphe."
+    "notes": "No alternative path in graph."
   },
   {
     "comp_id": "G15",

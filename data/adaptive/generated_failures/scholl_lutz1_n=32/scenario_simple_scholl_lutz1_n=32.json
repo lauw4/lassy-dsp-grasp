@@ -12,7 +12,10 @@
     "context": {
       "value_piece": 87,
       "no_destroy": false,
-      "alt_paths": true
+      "alt_paths": true,
+      "alt_tools_available": [
+        "T_power"
+      ]
     },
     "history": {
       "failure_count": 1

@@ -1,0 +1,87 @@
+[
+  {
+    "comp_id": "C008",
+    "op_type": "unscrew",
+    "tool_id": "T_pneumatic",
+    "symptom": "OVER_TORQUE_NO_ADVANCE",
+    "signals": {
+      "force": 56.2,
+      "torque": 97.4,
+      "over_torque": 1
+    },
+    "context": {
+      "value_piece": 26,
+      "no_destroy": true,
+      "alt_paths": true,
+      "alt_tools_available": [
+        "T_pneumatic"
+      ]
+    },
+    "history": {
+      "failure_count": 1
+    }
+  },
+  {
+    "comp_id": "C013",
+    "op_type": "pull",
+    "tool_id": "T_pliers",
+    "symptom": "NO_SEPARATION",
+    "signals": {
+      "force": 87.1,
+      "torque": 31.7,
+      "joint_opened": 0
+    },
+    "context": {
+      "value_piece": 13,
+      "no_destroy": true,
+      "alt_paths": false
+    },
+    "history": {
+      "failure_count": 1
+    }
+  },
+  {
+    "comp_id": "C007",
+    "op_type": "pry",
+    "tool_id": "T_pneumatic",
+    "symptom": "OVER_TORQUE_NO_ADVANCE",
+    "signals": {
+      "force": 79.4,
+      "torque": 67.2,
+      "over_torque": 1
+    },
+    "context": {
+      "value_piece": 25,
+      "no_destroy": false,
+      "alt_paths": false,
+      "alt_tools_available": [
+        "T_pneumatic"
+      ]
+    },
+    "history": {
+      "failure_count": 2
+    }
+  },
+  {
+    "comp_id": "C023",
+    "op_type": "detach",
+    "tool_id": "T_impact",
+    "symptom": "NO_SEPARATION",
+    "signals": {
+      "force": 98.0,
+      "torque": 69.1,
+      "joint_opened": 0
+    },
+    "context": {
+      "value_piece": 24,
+      "no_destroy": false,
+      "alt_paths": true,
+      "alt_tools_available": [
+        "T_pneumatic"
+      ]
+    },
+    "history": {
+      "failure_count": 2
+    }
+  }
+]

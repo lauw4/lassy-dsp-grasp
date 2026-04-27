@@ -50,7 +50,10 @@
     "context": {
       "value_piece": 53,
       "no_destroy": true,
-      "alt_paths": false
+      "alt_paths": false,
+      "alt_tools_available": [
+        "T_alt"
+      ]
     },
     "history": {
       "failure_count": 1

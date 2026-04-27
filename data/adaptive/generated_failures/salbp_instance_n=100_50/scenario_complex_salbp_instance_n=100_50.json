@@ -12,7 +12,10 @@
     "context": {
       "value_piece": 14,
       "no_destroy": false,
-      "alt_paths": false
+      "alt_paths": false,
+      "alt_tools_available": [
+        "T_pneumatic"
+      ]
     },
     "history": {
       "failure_count": 0
@@ -29,8 +32,8 @@
       "over_torque": 1
     },
     "context": {
-      "value_piece": 40,
-      "no_destroy": true,
+      "value_piece": 13,
+      "no_destroy": false,
       "alt_paths": false
     },
     "history": {

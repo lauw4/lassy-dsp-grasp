@@ -10,9 +10,12 @@
       "low_value": 1
     },
     "context": {
-      "value_piece": 42,
+      "value_piece": 18,
       "no_destroy": false,
-      "alt_paths": false
+      "alt_paths": false,
+      "alt_tools_available": [
+        "T_power"
+      ]
     },
     "history": {
       "failure_count": 2
@@ -31,7 +34,7 @@
     "context": {
       "value_piece": 33,
       "no_destroy": false,
-      "alt_paths": false
+      "alt_paths": true
     },
     "history": {
       "failure_count": 2

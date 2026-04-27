@@ -1,0 +1,40 @@
+[
+  {
+    "comp_id": "C004",
+    "op_type": "detach",
+    "tool_id": "T_hex",
+    "symptom": "ACCESS_BLOCKED",
+    "signals": {
+      "force": 46.1,
+      "torque": 55.3,
+      "access_blocked": 1
+    },
+    "context": {
+      "value_piece": 16,
+      "no_destroy": false,
+      "alt_paths": false
+    },
+    "history": {
+      "failure_count": 1
+    }
+  },
+  {
+    "comp_id": "C000",
+    "op_type": "detach",
+    "tool_id": "T_pneumatic",
+    "symptom": "LOW_VALUE_BOTTLENECK",
+    "signals": {
+      "force": 45.8,
+      "torque": 18.6,
+      "low_value": 1
+    },
+    "context": {
+      "value_piece": 15,
+      "no_destroy": false,
+      "alt_paths": false
+    },
+    "history": {
+      "failure_count": 3
+    }
+  }
+]

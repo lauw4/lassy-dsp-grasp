@@ -11,7 +11,7 @@
     },
     "context": {
       "value_piece": 12,
-      "no_destroy": true,
+      "no_destroy": false,
       "alt_paths": false
     },
     "history": {
@@ -29,7 +29,7 @@
       "over_torque": 1
     },
     "context": {
-      "value_piece": 48,
+      "value_piece": 15,
       "no_destroy": false,
       "alt_paths": false
     },

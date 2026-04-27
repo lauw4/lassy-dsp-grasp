@@ -1,0 +1,43 @@
+[
+  {
+    "comp_id": "C002",
+    "op_type": "pull",
+    "tool_id": "T_impact",
+    "symptom": "OVER_TORQUE_NO_ADVANCE",
+    "signals": {
+      "force": 67.8,
+      "torque": 85.8,
+      "over_torque": 1
+    },
+    "context": {
+      "value_piece": 12,
+      "no_destroy": false,
+      "alt_paths": false
+    },
+    "history": {
+      "failure_count": 0
+    }
+  },
+  {
+    "comp_id": "C003",
+    "op_type": "detach",
+    "tool_id": "T_torx",
+    "symptom": "NO_SEPARATION",
+    "signals": {
+      "force": 86.9,
+      "torque": 66.6,
+      "joint_opened": 0
+    },
+    "context": {
+      "value_piece": 24,
+      "no_destroy": true,
+      "alt_paths": false,
+      "alt_tools_available": [
+        "T_electric"
+      ]
+    },
+    "history": {
+      "failure_count": 1
+    }
+  }
+]

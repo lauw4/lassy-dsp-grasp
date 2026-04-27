@@ -1,0 +1,78 @@
+[
+  {
+    "comp_id": "G21",
+    "op_type": "unscrew",
+    "tool_id": "T_hex",
+    "symptom": "OVER_TORQUE_NO_ADVANCE",
+    "signals": {
+      "force": 74.5,
+      "torque": 62.9,
+      "over_torque": 1
+    },
+    "context": {
+      "value_piece": 3,
+      "no_destroy": false,
+      "alt_paths": false
+    },
+    "history": {
+      "failure_count": 3
+    }
+  },
+  {
+    "comp_id": "G15",
+    "op_type": "cut",
+    "tool_id": "T_torx",
+    "symptom": "NO_SEPARATION",
+    "signals": {
+      "force": 77.4,
+      "torque": 31.1,
+      "joint_opened": 0
+    },
+    "context": {
+      "value_piece": 2,
+      "no_destroy": false,
+      "alt_paths": true
+    },
+    "history": {
+      "failure_count": 0
+    }
+  },
+  {
+    "comp_id": "G02",
+    "op_type": "cut",
+    "tool_id": "T_torx",
+    "symptom": "OVER_TORQUE_NO_ADVANCE",
+    "signals": {
+      "force": 93.7,
+      "torque": 65.9,
+      "over_torque": 1
+    },
+    "context": {
+      "value_piece": 3,
+      "no_destroy": false,
+      "alt_paths": false
+    },
+    "history": {
+      "failure_count": 1
+    }
+  },
+  {
+    "comp_id": "G04",
+    "op_type": "unscrew",
+    "tool_id": "T_impact",
+    "symptom": "OVER_TORQUE_NO_ADVANCE",
+    "signals": {
+      "force": 84.6,
+      "torque": 62.4,
+      "over_torque": 1
+    },
+    "context": {
+      "value_piece": 3,
+      "no_destroy": true,
+      "alt_paths": false
+    },
+    "history": {
+      "failure_count": 1
+    }
+  }
+]

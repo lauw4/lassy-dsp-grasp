@@ -12,7 +12,10 @@
     "context": {
       "value_piece": 20,
       "no_destroy": true,
-      "alt_paths": false
+      "alt_paths": true,
+      "alt_tools_available": [
+        "T_electric"
+      ]
     },
     "history": {
       "failure_count": 0
