@@ -1,0 +1,2 @@
+instance,n,lambda,grasp_best,grasp_avg,grasp_std,grasp_time_s,cplex_obj,cplex_status,cplex_time_s,cplex_intgap_pct,gap_grasp_vs_cplex,cpsat_obj,cpsat_bound,cpsat_status,cpsat_time_s,cpsat_intgap_pct,gap_grasp_vs_cpsat,milp_obj,milp_status,milp_time_s,gap_pct
+scholl_mertens_n=7,7,0.17162,103.1446,103.1446,0.0,0.0,102.8014,Optimal,0.01,0.42,-0.33,103.1476,103.1476,OPTIMAL,0.0,0.0,0.0,102.8014,Optimal,0.01,-0.33

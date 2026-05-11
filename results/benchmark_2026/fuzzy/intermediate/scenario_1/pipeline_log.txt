@@ -1,0 +1,10 @@
+--- Pipeline run 2026-05-08 22:26:36.280589 ---
+Instance: unknown
+Initial solution: ['N02', 'N06', 'N01', 'N04', 'N11', 'N05', 'N09', 'N10', 'N03', 'N16', 'N08', 'N17', 'N20', 'N15', 'N07', 'N13', 'N12', 'N14', 'N18', 'N19', 'N21', 'N22']
+Final state:
+  - Locked: {'N14'}
+  - Destroyed: set()
+  - Done: {'N15', 'N12', 'N13', 'N06', 'N11', 'N08', 'N02', 'N18', 'N20', 'N03', 'N01', 'N07', 'N04', 'N21', 'N16', 'N17', 'N09', 'N22', 'N05'}
+  - Skipped: {'N10'}
+  - Notes: ["Destruction forbidden for N10: Flag 'no_destroy' active (context or graph).", 'Destruction forbidden for N14: Profit=24.00 > threshold=18.00 (percentile 20th).', 'Bypass impossible for N14: no alternative path', 'No alternative tool for N14', 'Destruction forbidden for N14: Destruction refused: protected part (no_destroy=true), human approval required.']
+Actions taken: [{'comp_id': 'N10', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy', 'success': False, 'notes': "Destruction not allowed: Flag 'no_destroy' active (context or graph)."}, {'comp_id': 'N10', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy→bypass', 'success': True, 'notes': 'Fallback succeeded'}, {'comp_id': 'N14', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy', 'success': False, 'notes': 'Destruction not allowed: Profit=24.00 > threshold=18.00 (percentile 20th).'}, {'comp_id': 'N14', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy→replan', 'success': True, 'notes': 'Fallback succeeded'}]

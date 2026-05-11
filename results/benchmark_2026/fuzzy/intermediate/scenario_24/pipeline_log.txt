@@ -1,0 +1,10 @@
+--- Pipeline run 2026-05-08 22:26:49.423833 ---
+Instance: unknown
+Initial solution: ['C000', 'C001', 'C004', 'C005']
+Final state:
+  - Locked: set()
+  - Destroyed: set()
+  - Done: {'C005', 'C001', 'C000'}
+  - Skipped: {'C004'}
+  - Notes: []
+Actions taken: [{'comp_id': 'C004', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'bypass', 'success': True, 'notes': 'Component C004 bypassed (skipped).'}]

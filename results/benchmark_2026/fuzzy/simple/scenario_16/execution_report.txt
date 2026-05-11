@@ -1,0 +1,262 @@
+------
+ADAPTIVE DSP EXECUTION REPORT
+------
+
+INITIAL PLANNED SEQUENCE:
+----------------------------------------
+C031, C058, C000, C001, C002, C005, C055, C073, C008, C032, C006, C004, C003, C007, C009, C013, C014, C015, C016, C017, C018, C019, C022, C023, C021, C034, C020, C027, C033, C026, C025, C024, C028, C030, C035, C036, C037, C044, C074, C038, C039, C045, C046, C053, C072, C089, C110, C111, C112, C115, C116, C117, C119, C120, C121, C125
+Target = C125
+
+------
+EXECUTION WITH ADAPTATION:
+------
+
+C031 - OK
+C058 - OK
+C000 - OK
+C001 - OK
+C002 - OK
+C005 - OK
+C055 - OK
+C073 - OK
+C008 - OK
+C032 - OK
+C006 - OK
+C004 - OK
+C003 - OK
+C007 - OK
+C009 - OK
+C013 - OK
+C014 - OK
+C015 - OK
+C016 - OK
+C017 - OK
+C018 - OK
+C019 - OK
+C022 - OK
+C023 - OK
+C021 - OK
+C034 - OK
+C020 - OK
+C027 - OK
+C033 - OK
+C026 - OK
+C025 - OK
+------
+FAILURE ON C024
+------
+
+Symptom: ACCESS_BLOCKED
+
+Sensor values:
+  - Force:  60.0
+  - Torque: 40.0
+  - P_fail: 50.0%
+
+Fuzzy decision:
+  - Action: change_tool
+  - Score:  20.00
+  - Confidence: 100.0%
+
+Result: Alternative tool suggested.
+C028 - OK
+C030 - OK
+C035 - OK
+C036 - OK
+C037 - OK
+C044 - OK
+C074 - OK
+C038 - OK
+C039 - OK
+C045 - OK
+C046 - OK
+C053 - OK
+C072 - OK
+C089 - OK
+C110 - OK
+C111 - OK
+C112 - OK
+C115 - OK
+C116 - OK
+C117 - OK
+C119 - OK
+C120 - OK
+C121 - OK
+C125 - OK
+------
+EXECUTION METRICS:
+------
+
+Targets achieved: 1/1 (100.0%)
+Failures handled: 1
+Actions taken:    1
+Done:             56/56
+Destroyed:        0
+Skipped:          0
+------
+FINAL STATE
+------
+
+Done:      ['C000', 'C001', 'C002', 'C003', 'C004', 'C005', 'C006', 'C007', 'C008', 'C009', 'C013', 'C014', 'C015', 'C016', 'C017', 'C018', 'C019', 'C020', 'C021', 'C022', 'C023', 'C024', 'C025', 'C026', 'C027', 'C028', 'C030', 'C031', 'C032', 'C033', 'C034', 'C035', 'C036', 'C037', 'C038', 'C039', 'C044', 'C045', 'C046', 'C053', 'C055', 'C058', 'C072', 'C073', 'C074', 'C089', 'C110', 'C111', 'C112', 'C115', 'C116', 'C117', 'C119', 'C120', 'C121', 'C125']
+Destroyed: []
+Locked:    []
+Skipped:   []
+------
+ECONOMIC ANALYSIS
+------
+
+Nominal profit (planned):    1109.00 units
+Adaptive profit (recovered): 1109.00 units
+Profit loss:                 0.00 units (0.0%)
+
+Component breakdown:
+  C031: profit=25, cost=5 -> net=20.00
+  C058: profit=23, cost=5 -> net=18.00
+  C000: profit=25, cost=8 -> net=17.00
+  C001: profit=26, cost=1 -> net=25.00
+  C002: profit=21, cost=8 -> net=13.00
+  C005: profit=30, cost=6 -> net=24.00
+  C055: profit=23, cost=2 -> net=21.00
+  C073: profit=30, cost=1 -> net=29.00
+  C008: profit=24, cost=6 -> net=18.00
+  C032: profit=20, cost=10 -> net=10.00
+  C006: profit=25, cost=2 -> net=23.00
+  C004: profit=26, cost=10 -> net=16.00
+  C003: profit=30, cost=9 -> net=21.00
+  C007: profit=26, cost=4 -> net=22.00
+  C009: profit=29, cost=8 -> net=21.00
+  C013: profit=26, cost=4 -> net=22.00
+  C014: profit=25, cost=1 -> net=24.00
+  C015: profit=27, cost=8 -> net=19.00
+  C016: profit=27, cost=6 -> net=21.00
+  C017: profit=23, cost=9 -> net=14.00
+  C018: profit=20, cost=4 -> net=16.00
+  C019: profit=24, cost=8 -> net=16.00
+  C022: profit=29, cost=1 -> net=28.00
+  C023: profit=28, cost=6 -> net=22.00
+  C021: profit=23, cost=4 -> net=19.00
+  C034: profit=22, cost=6 -> net=16.00
+  C020: profit=24, cost=9 -> net=15.00
+  C027: profit=25, cost=3 -> net=22.00
+  C033: profit=21, cost=4 -> net=17.00
+  C026: profit=25, cost=6 -> net=19.00
+  C025: profit=25, cost=8 -> net=17.00
+  C024: profit=29, cost=10 -> net=19.00
+  C028: profit=30, cost=1 -> net=29.00
+  C030: profit=21, cost=10 -> net=11.00
+  C035: profit=28, cost=2 -> net=26.00
+  C036: profit=30, cost=8 -> net=22.00
+  C037: profit=28, cost=3 -> net=25.00
+  C044: profit=21, cost=10 -> net=11.00
+  C074: profit=26, cost=7 -> net=19.00
+  C038: profit=29, cost=10 -> net=19.00
+  C039: profit=28, cost=5 -> net=23.00
+  C045: profit=25, cost=7 -> net=18.00
+  C046: profit=20, cost=1 -> net=19.00
+  C053: profit=22, cost=5 -> net=17.00
+  C072: profit=26, cost=8 -> net=18.00
+  C089: profit=26, cost=8 -> net=18.00
+  C110: profit=28, cost=1 -> net=27.00
+  C111: profit=27, cost=7 -> net=20.00
+  C112: profit=20, cost=2 -> net=18.00
+  C115: profit=30, cost=3 -> net=27.00
+  C116: profit=22, cost=6 -> net=16.00
+  C117: profit=26, cost=5 -> net=21.00
+  C119: profit=20, cost=7 -> net=13.00
+  C120: profit=29, cost=10 -> net=19.00
+  C121: profit=26, cost=2 -> net=24.00
+  C125: profit=30, cost=5 -> net=25.00
+------
+TIME ANALYSIS
+------
+
+Nominal time (planned):      28min 34s
+Adaptive time (actual):      28min 34s
+Time overhead:               -0s (-0.0%)
+
+Component time breakdown:
+  C031: 10s
+  C058: 14s
+  C000: 16s
+  C001: 30s
+  C002: 7s
+  C005: 8s
+  C055: 28s
+  C073: 40s
+  C008: 32s
+  C032: 14s
+  C006: 39s
+  C004: 29s
+  C003: 47s
+  C007: 37s
+  C009: 29s
+  C013: 15s
+  C014: 53s
+  C015: 53s
+  C016: 8s
+  C017: 24s
+  C018: 24s
+  C019: 8s
+  C022: 14s
+  C023: 13s
+  C021: 8s
+  C034: 42s
+  C020: 7s
+  C027: 25s
+  C033: 41s
+  C026: 11s
+  C025: 25s
+  C024: 10s
+  C028: 11s
+  C030: 25s
+  C035: 47s
+  C036: 7s
+  C037: 80s
+  C044: 80s
+  C074: 101s
+  C038: 7s
+  C039: 41s
+  C045: 7s
+  C046: 41s
+  C053: 25s
+  C072: 40s
+  C089: 19s
+  C110: 23s
+  C111: 162s
+  C112: 11s
+  C115: 31s
+  C116: 32s
+  C117: 26s
+  C119: 31s
+  C120: 32s
+  C121: 26s
+  C125: 48s
+------
+GLOBAL SCORE
+------
+
+Nominal score:               363.95
+Adaptive score:              363.95
+Score loss:                  0.00 (0.0%)
+------
+GLOSSARY
+------
+
+p_fail:
+  Estimated failure risk. Higher = more likely to fail.
+
+Fuzzy decision:
+  AI-based analysis choosing best recovery action.
+  Score (0-100) and confidence (%) indicate decision quality.
+
+Actions:
+  - change_tool: Switch to alternative tool
+  - bypass: Skip inaccessible component
+  - destroy: Remove component by destruction
+  - replan: Recalculate sequence after changes
+
+States:
+  - done: Successfully removed components
+  - destroyed: Components removed by destruction
+  - locked: Components physically blocked (not removable)
+  - skipped: Components bypassed (not on current path)

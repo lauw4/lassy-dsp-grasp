@@ -1,0 +1,58 @@
+2026-05-08 22:26:48,907 DSP ADAPTIVE PIPELINE - SCHOLL_MANSOOR_N=11
+2026-05-08 22:26:48,908 Loaded instance: scholl_mansoor_n=11
+2026-05-08 22:26:48,908 Loaded failures: 2
+2026-05-08 22:26:48,908 [1/4] Loading instance and solving DSP...
+2026-05-08 22:26:48,925 Nodes: 11, Edges: 11, Targets: 1, Solution: 11 operations
+2026-05-08 22:26:48,925 Target(s) to achieve: ['C010']
+2026-05-08 22:26:48,925 Starting disassembly sequence (11 operations)...
+2026-05-08 22:26:48,925 [ 1/11] Disassembling C000... [OK]
+2026-05-08 22:26:48,925 [ 2/11] Disassembling C001... [OK]
+2026-05-08 22:26:48,925 [ 3/11] Disassembling C004... [OK]
+2026-05-08 22:26:48,925 [ 4/11] Disassembling C006... [OK]
+2026-05-08 22:26:48,925 [ 5/11] Disassembling C008... [OK]
+2026-05-08 22:26:48,925 [ 6/11] Disassembling C003... [OK]
+2026-05-08 22:26:48,925 [ 7/11] Disassembling C005... [OK]
+2026-05-08 22:26:48,925 [ 8/11] Disassembling C007... [OK]
+2026-05-08 22:26:48,925 [ 9/11] Disassembling C009... [OK]
+2026-05-08 22:26:48,925 [10/11] Disassembling C002... [OK]
+2026-05-08 22:26:48,925 [11/11] Disassembling C010... [OK]
+2026-05-08 22:26:48,925 [2/4] Failure scenario loaded: 2 failure(s)
+2026-05-08 22:26:48,925 [3/4] Executing adaptive scheduler...
+2026-05-08 22:26:48,943 [FUZZY] Symptom: ACCESS_BLOCKED
+2026-05-08 22:26:48,943 [FUZZY] Inputs: force=60.0, torque=40.0, p_fail=60.0, context=100.0
+2026-05-08 22:26:48,943 [FUZZY] Score: 20.00
+2026-05-08 22:26:48,943 [FUZZY] Decision: change_tool (confidence=100.0%)
+2026-05-08 22:26:48,943 [ACTION] change_tool: success=True, notes=Alternative tool suggested.
+2026-05-08 22:26:48,953 [FUZZY] Symptom: LOW_VALUE_BOTTLENECK
+2026-05-08 22:26:48,953 [FUZZY] Inputs: force=30.0, torque=20.0, p_fail=50.0, context=100.0
+2026-05-08 22:26:48,953 [FUZZY] Score: 20.00
+2026-05-08 22:26:48,953 [FUZZY] Decision: change_tool (confidence=100.0%)
+2026-05-08 22:26:48,953 [ACTION] change_tool: success=True, notes=Alternative tool suggested.
+2026-05-08 22:26:48,953 Adaptive scheduler finished. Actions taken: 2
+2026-05-08 22:26:48,953 EXECUTION SUMMARY
+2026-05-08 22:26:48,953 Status: SUCCESS
+2026-05-08 22:26:48,953 Target components:
+2026-05-08 22:26:48,953 [OK] C010 - Successfully disassembled
+2026-05-08 22:26:48,953 Execution metrics:
+2026-05-08 22:26:48,953 Targets achieved: 1/1 (100.0%)
+2026-05-08 22:26:48,953 Failures handled: 2
+2026-05-08 22:26:48,953 Actions taken: 2
+2026-05-08 22:26:48,953 Components done: 11/11
+2026-05-08 22:26:48,953 Algorithm runtime: 0.05s
+2026-05-08 22:26:48,953 ECONOMIC ANALYSIS:
+2026-05-08 22:26:48,953 Nominal profit (planned): 215.00 units
+2026-05-08 22:26:48,953 Adaptive profit (recovered): 215.00 units
+2026-05-08 22:26:48,953 Profit loss: 0.00 units (0.0%)
+2026-05-08 22:26:48,953 TIME ANALYSIS:
+2026-05-08 22:26:48,953 Nominal time (planned): 3min 5s
+2026-05-08 22:26:48,953 Adaptive time (actual): 3min 5s
+2026-05-08 22:26:48,953 Time overhead: -0s (-0.0%)
+2026-05-08 22:26:48,953 GLOBAL SCORE :
+2026-05-08 22:26:48,954 Nominal score: 71.05
+2026-05-08 22:26:48,954 Adaptive score: 71.05
+2026-05-08 22:26:48,954 Score loss: 0.00 (0.0%)
+2026-05-08 22:26:48,954 Actions breakdown:
+2026-05-08 22:26:48,954 [OK] C008     ACCESS_BLOCKED       -> change_tool 
+2026-05-08 22:26:48,954 [OK] C005     LOW_VALUE_BOTTLENECK -> change_tool 
+2026-05-08 22:26:48,954 Detailed logs: results/save/test_failures/scholl_mansoor_n=11/intermediate
+2026-05-08 22:26:48,954 Pipeline finished successfully

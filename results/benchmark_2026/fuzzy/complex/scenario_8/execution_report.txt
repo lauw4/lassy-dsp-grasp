@@ -1,0 +1,136 @@
+------
+ADAPTIVE DSP EXECUTION REPORT
+------
+
+INITIAL PLANNED SEQUENCE:
+----------------------------------------
+C010, C009, C033, C014, C032, C048, C068, C040
+Target = C009, C040, C068
+
+------
+EXECUTION WITH ADAPTATION:
+------
+
+C010 - OK
+C009 - OK
+C033 - OK
+C014 - OK
+------
+FAILURE ON C032
+------
+
+Symptom: ACCESS_BLOCKED
+
+Sensor values:
+  - Force:  60.0
+  - Torque: 40.0
+  - P_fail: 70.0%
+
+Fuzzy decision:
+  - Action: destroy->bypass
+  - Score:  56.71
+  - Confidence: 74.3%
+
+Result: Fallback succeeded
+------
+FAILURE ON C048
+------
+
+Symptom: ACCESS_BLOCKED
+
+Sensor values:
+  - Force:  60.0
+  - Torque: 40.0
+  - P_fail: 70.0%
+
+Fuzzy decision:
+  - Action: bypass->change_tool
+  - Score:  36.06
+  - Confidence: 80.3%
+
+Result: Fallback succeeded
+C068 - OK
+C040 - OK
+------
+EXECUTION METRICS:
+------
+
+Targets achieved: 3/3 (100.0%)
+Failures handled: 3
+Actions taken:    4
+Done:             7/8
+Destroyed:        0
+Skipped:          1
+------
+FINAL STATE
+------
+
+Done:      ['C009', 'C010', 'C014', 'C033', 'C040', 'C048', 'C068']
+Destroyed: []
+Locked:    []
+Skipped:   ['C032']
+------
+ECONOMIC ANALYSIS
+------
+
+Nominal profit (planned):    158.00 units
+Adaptive profit (recovered): 147.00 units
+Profit loss:                 11.00 units (7.0%)
+Value skipped (bypassed):    20.00 units
+
+Component breakdown:
+  C010: profit=29, cost=5 -> net=24.00
+  C009: profit=23, cost=8 -> net=15.00
+  C033: profit=25, cost=9 -> net=16.00
+  C014: profit=22, cost=2 -> net=20.00
+  C032: profit=20, cost=9 -> SKIPPED (not recovered)
+  C048: profit=28, cost=3 -> net=25.00
+  C068: profit=25, cost=4 -> net=21.00
+  C040: profit=28, cost=2 -> net=26.00
+------
+TIME ANALYSIS
+------
+
+Nominal time (planned):      17min 18s
+Adaptive time (actual):      14min 51s
+Time saved:                  2min 27s (14.2%)
+Time saved (skipped):        2min 27s
+
+Component time breakdown:
+  C010: 52s
+  C009: 115s
+  C033: 120s
+  C014: 266s
+  C032: 147s -> SKIPPED (saved)
+  C048: 27s
+  C068: 153s
+  C040: 158s
+------
+GLOBAL SCORE
+------
+
+Nominal score:               49.21
+Adaptive score:              46.03
+Score loss:                  3.18 (6.5%)
+------
+GLOSSARY
+------
+
+p_fail:
+  Estimated failure risk. Higher = more likely to fail.
+
+Fuzzy decision:
+  AI-based analysis choosing best recovery action.
+  Score (0-100) and confidence (%) indicate decision quality.
+
+Actions:
+  - change_tool: Switch to alternative tool
+  - bypass: Skip inaccessible component
+  - destroy: Remove component by destruction
+  - replan: Recalculate sequence after changes
+
+States:
+  - done: Successfully removed components
+  - destroyed: Components removed by destruction
+  - locked: Components physically blocked (not removable)
+  - skipped: Components bypassed (not on current path)

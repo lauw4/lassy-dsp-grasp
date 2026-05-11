@@ -1,0 +1,52 @@
+2026-05-08 22:26:32,395 DSP ADAPTIVE PIPELINE - SCHOLL_MANSOOR_N=11
+2026-05-08 22:26:32,396 Loaded instance: scholl_mansoor_n=11
+2026-05-08 22:26:32,396 Loaded failures: 1
+2026-05-08 22:26:32,396 [1/4] Loading instance and solving DSP...
+2026-05-08 22:26:32,415 Nodes: 11, Edges: 11, Targets: 1, Solution: 11 operations
+2026-05-08 22:26:32,415 Target(s) to achieve: ['C010']
+2026-05-08 22:26:32,415 Starting disassembly sequence (11 operations)...
+2026-05-08 22:26:32,415 [ 1/11] Disassembling C000... [OK]
+2026-05-08 22:26:32,415 [ 2/11] Disassembling C001... [OK]
+2026-05-08 22:26:32,415 [ 3/11] Disassembling C004... [OK]
+2026-05-08 22:26:32,415 [ 4/11] Disassembling C006... [OK]
+2026-05-08 22:26:32,415 [ 5/11] Disassembling C008... [OK]
+2026-05-08 22:26:32,415 [ 6/11] Disassembling C003... [OK]
+2026-05-08 22:26:32,415 [ 7/11] Disassembling C005... [OK]
+2026-05-08 22:26:32,415 [ 8/11] Disassembling C007... [OK]
+2026-05-08 22:26:32,415 [ 9/11] Disassembling C009... [OK]
+2026-05-08 22:26:32,415 [10/11] Disassembling C002... [OK]
+2026-05-08 22:26:32,415 [11/11] Disassembling C010... [OK]
+2026-05-08 22:26:32,415 [2/4] Failure scenario loaded: 1 failure(s)
+2026-05-08 22:26:32,415 [3/4] Executing adaptive scheduler...
+2026-05-08 22:26:32,432 [FUZZY] Symptom: LOW_VALUE_BOTTLENECK
+2026-05-08 22:26:32,432 [FUZZY] Inputs: force=30.0, torque=20.0, p_fail=40.0, context=100.0
+2026-05-08 22:26:32,432 [FUZZY] Score: 20.00
+2026-05-08 22:26:32,432 [FUZZY] Decision: change_tool (confidence=100.0%)
+2026-05-08 22:26:32,432 [ACTION] change_tool: success=True, notes=Alternative tool suggested.
+2026-05-08 22:26:32,433 Adaptive scheduler finished. Actions taken: 1
+2026-05-08 22:26:32,433 EXECUTION SUMMARY
+2026-05-08 22:26:32,433 Status: SUCCESS
+2026-05-08 22:26:32,433 Target components:
+2026-05-08 22:26:32,433 [OK] C010 - Successfully disassembled
+2026-05-08 22:26:32,433 Execution metrics:
+2026-05-08 22:26:32,433 Targets achieved: 1/1 (100.0%)
+2026-05-08 22:26:32,433 Failures handled: 1
+2026-05-08 22:26:32,433 Actions taken: 1
+2026-05-08 22:26:32,433 Components done: 11/11
+2026-05-08 22:26:32,433 Algorithm runtime: 0.04s
+2026-05-08 22:26:32,433 ECONOMIC ANALYSIS:
+2026-05-08 22:26:32,433 Nominal profit (planned): 215.00 units
+2026-05-08 22:26:32,433 Adaptive profit (recovered): 215.00 units
+2026-05-08 22:26:32,433 Profit loss: 0.00 units (0.0%)
+2026-05-08 22:26:32,433 TIME ANALYSIS:
+2026-05-08 22:26:32,433 Nominal time (planned): 3min 5s
+2026-05-08 22:26:32,433 Adaptive time (actual): 3min 5s
+2026-05-08 22:26:32,433 Time overhead: -0s (-0.0%)
+2026-05-08 22:26:32,433 GLOBAL SCORE :
+2026-05-08 22:26:32,433 Nominal score: 71.05
+2026-05-08 22:26:32,433 Adaptive score: 71.05
+2026-05-08 22:26:32,433 Score loss: 0.00 (0.0%)
+2026-05-08 22:26:32,433 Actions breakdown:
+2026-05-08 22:26:32,433 [OK] C003     LOW_VALUE_BOTTLENECK -> change_tool 
+2026-05-08 22:26:32,433 Detailed logs: results/save/test_failures/scholl_mansoor_n=11/simple
+2026-05-08 22:26:32,433 Pipeline finished successfully

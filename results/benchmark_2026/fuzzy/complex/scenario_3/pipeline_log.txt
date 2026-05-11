@@ -1,0 +1,10 @@
+--- Pipeline run 2026-05-08 22:26:54.394418 ---
+Instance: unknown
+Initial solution: ['C018', 'C010', 'C017', 'C035', 'C042', 'C020', 'C016', 'C027', 'C005', 'C026', 'C004', 'C024', 'C025', 'C062', 'C077', 'C100']
+Final state:
+  - Locked: set()
+  - Destroyed: set()
+  - Done: {'C005', 'C027', 'C004', 'C077', 'C017', 'C100', 'C010', 'C020', 'C025', 'C018', 'C026', 'C016', 'C062', 'C024'}
+  - Skipped: {'C035', 'C042'}
+  - Notes: ['Bypass impossible for C026: no alternative path']
+Actions taken: [{'comp_id': 'C035', 'symptom': 'ACCESS_BLOCKED', 'action': 'bypass', 'success': True, 'notes': 'Component C035 bypassed (skipped).'}, {'comp_id': 'C042', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'bypass', 'success': True, 'notes': 'Component C042 bypassed (skipped).'}, {'comp_id': 'C026', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'bypass', 'success': False, 'notes': 'No alternative path in graph.'}, {'comp_id': 'C026', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'bypass→change_tool', 'success': True, 'notes': 'Fallback succeeded'}]

@@ -1,0 +1,10 @@
+--- Pipeline run 2026-05-08 22:26:45.493865 ---
+Instance: unknown
+Initial solution: ['C016', 'C000', 'C001', 'C002', 'C004', 'C003', 'C005', 'C007', 'C006', 'C011', 'C009', 'C017', 'C013', 'C018', 'C014', 'C019', 'C015', 'C020', 'C024', 'C025', 'C008', 'C021', 'C022', 'C023', 'C026', 'C012', 'C010', 'C027', 'C028']
+Final state:
+  - Locked: set()
+  - Destroyed: set()
+  - Done: {'C011', 'C000', 'C003', 'C013', 'C015', 'C024', 'C026', 'C006', 'C027', 'C009', 'C023', 'C014', 'C010', 'C017', 'C025', 'C012', 'C028', 'C018', 'C020', 'C007', 'C004', 'C022', 'C001', 'C016', 'C008', 'C019', 'C021', 'C002'}
+  - Skipped: {'C005'}
+  - Notes: ['Destruction forbidden for C005: Profit=55.00 > threshold=14.60 (percentile 20th).']
+Actions taken: [{'comp_id': 'C005', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy', 'success': False, 'notes': 'Destruction not allowed: Profit=55.00 > threshold=14.60 (percentile 20th).'}, {'comp_id': 'C005', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy→bypass', 'success': True, 'notes': 'Fallback succeeded'}, {'comp_id': 'C010', 'symptom': 'ACCESS_BLOCKED', 'action': 'change_tool', 'success': True, 'notes': 'Alternative tool suggested.'}]

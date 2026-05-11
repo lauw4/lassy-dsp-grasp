@@ -1,0 +1,10 @@
+--- Pipeline run 2026-05-08 22:26:59.540951 ---
+Instance: unknown
+Initial solution: ['C001', 'C004', 'C009', 'C015', 'C025', 'C031', 'C002', 'C006', 'C012', 'C020', 'C029', 'C037', 'C044', 'C013', 'C018']
+Final state:
+  - Locked: set()
+  - Destroyed: set()
+  - Done: {'C031', 'C004', 'C018', 'C001', 'C012', 'C020', 'C009', 'C025', 'C006', 'C013', 'C002', 'C037', 'C029', 'C044'}
+  - Skipped: {'C015'}
+  - Notes: []
+Actions taken: [{'comp_id': 'C015', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'bypass', 'success': True, 'notes': 'Component C015 bypassed (skipped).'}]

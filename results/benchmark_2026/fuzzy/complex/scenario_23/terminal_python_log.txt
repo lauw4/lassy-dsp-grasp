@@ -1,0 +1,74 @@
+2026-05-08 22:27:06,229 DSP ADAPTIVE PIPELINE - SCHOLL_MANSOOR_N=11
+2026-05-08 22:27:06,229 Loaded instance: scholl_mansoor_n=11
+2026-05-08 22:27:06,230 Loaded failures: 2
+2026-05-08 22:27:06,230 [1/4] Loading instance and solving DSP...
+2026-05-08 22:27:06,252 Nodes: 11, Edges: 11, Targets: 1, Solution: 11 operations
+2026-05-08 22:27:06,252 Target(s) to achieve: ['C010']
+2026-05-08 22:27:06,252 Starting disassembly sequence (11 operations)...
+2026-05-08 22:27:06,252 [ 1/11] Disassembling C000... [OK]
+2026-05-08 22:27:06,252 [ 2/11] Disassembling C001... [OK]
+2026-05-08 22:27:06,252 [ 3/11] Disassembling C004... [OK]
+2026-05-08 22:27:06,253 [ 4/11] Disassembling C006... [OK]
+2026-05-08 22:27:06,253 [ 5/11] Disassembling C008... [OK]
+2026-05-08 22:27:06,253 [ 6/11] Disassembling C003... [OK]
+2026-05-08 22:27:06,253 [ 7/11] Disassembling C005... [OK]
+2026-05-08 22:27:06,253 [ 8/11] Disassembling C007... [OK]
+2026-05-08 22:27:06,253 [ 9/11] Disassembling C009... [OK]
+2026-05-08 22:27:06,253 [10/11] Disassembling C002... [OK]
+2026-05-08 22:27:06,253 [11/11] Disassembling C010... [OK]
+2026-05-08 22:27:06,253 [2/4] Failure scenario loaded: 2 failure(s)
+2026-05-08 22:27:06,253 [3/4] Executing adaptive scheduler...
+2026-05-08 22:27:06,270 [FUZZY] Symptom: ACCESS_BLOCKED
+2026-05-08 22:27:06,270 [FUZZY] Inputs: force=60.0, torque=40.0, p_fail=60.0, context=0.0
+2026-05-08 22:27:06,270 [FUZZY] Score: 40.00
+2026-05-08 22:27:06,270 [FUZZY] Decision: bypass (confidence=100.0%)
+2026-05-08 22:27:06,270 [ACTION] bypass: success=False, notes=No alternative path in graph.
+2026-05-08 22:27:06,270 [REPLAN] States before replan:
+2026-05-08 22:27:06,270 [REPLAN]   done=['C000', 'C001']
+2026-05-08 22:27:06,270 [REPLAN]   destroyed=['C004']
+2026-05-08 22:27:06,270 [REPLAN]   locked=[]
+2026-05-08 22:27:06,270 [REPLAN]   skipped=[]
+2026-05-08 22:27:06,294 [REPLAN] New sequence: ['C003', 'C005', 'C006', 'C008', 'C007', 'C009', 'C002', 'C010']
+2026-05-08 22:27:06,304 [FUZZY] Symptom: OVER_TORQUE_NO_ADVANCE
+2026-05-08 22:27:06,304 [FUZZY] Inputs: force=70.0, torque=80.0, p_fail=75.0, context=0.0
+2026-05-08 22:27:06,304 [FUZZY] Score: 70.67
+2026-05-08 22:27:06,304 [FUZZY] Decision: destroy (confidence=63.7%)
+2026-05-08 22:27:06,304 [ACTION] destroy: success=True, notes=Destruction allowed (cutoff percentile 20th).
+2026-05-08 22:27:06,304 [REPLAN] States before replan:
+2026-05-08 22:27:06,304 [REPLAN]   done=['C000', 'C001', 'C003', 'C005', 'C006', 'C008']
+2026-05-08 22:27:06,304 [REPLAN]   destroyed=['C004', 'C007']
+2026-05-08 22:27:06,304 [REPLAN]   locked=[]
+2026-05-08 22:27:06,304 [REPLAN]   skipped=[]
+2026-05-08 22:27:06,314 [REPLAN] New sequence: ['C009', 'C002', 'C010']
+2026-05-08 22:27:06,314 Adaptive scheduler finished. Actions taken: 3
+2026-05-08 22:27:06,314 EXECUTION SUMMARY
+2026-05-08 22:27:06,314 Status: SUCCESS
+2026-05-08 22:27:06,314 Target components:
+2026-05-08 22:27:06,314 [OK] C010 - Successfully disassembled
+2026-05-08 22:27:06,314 Execution metrics:
+2026-05-08 22:27:06,314 Targets achieved: 1/1 (100.0%)
+2026-05-08 22:27:06,314 Failures handled: 2
+2026-05-08 22:27:06,314 Actions taken: 3
+2026-05-08 22:27:06,314 Components done: 9/11
+2026-05-08 22:27:06,314 Destroyed: 2 component(s)
+2026-05-08 22:27:06,314 Algorithm runtime: 0.09s
+2026-05-08 22:27:06,314 ECONOMIC ANALYSIS:
+2026-05-08 22:27:06,314 Nominal profit (planned): 215.00 units
+2026-05-08 22:27:06,314 Adaptive profit (recovered): 172.00 units
+2026-05-08 22:27:06,314 Profit loss: 43.00 units (20.0%)
+2026-05-08 22:27:06,314 Value lost (destroyed): 43.00 units
+2026-05-08 22:27:06,314 TIME ANALYSIS:
+2026-05-08 22:27:06,314 Nominal time (planned): 3min 5s
+2026-05-08 22:27:06,314 Adaptive time (actual): 3min 5s
+2026-05-08 22:27:06,314 Time overhead: -0s (-0.0%)
+2026-05-08 22:27:06,314 Time on destroyed (lost): 20s
+2026-05-08 22:27:06,314 GLOBAL SCORE :
+2026-05-08 22:27:06,314 Nominal score: 71.05
+2026-05-08 22:27:06,314 Adaptive score: 60.45
+2026-05-08 22:27:06,314 Score loss: 10.60 (14.9%)
+2026-05-08 22:27:06,314 Actions breakdown:
+2026-05-08 22:27:06,314 [FAILED] C004     ACCESS_BLOCKED       -> bypass      
+2026-05-08 22:27:06,314 [OK] C004     ACCESS_BLOCKED       -> bypass→destroy
+2026-05-08 22:27:06,314 [OK] C007     OVER_TORQUE_NO_ADVANCE -> destroy     
+2026-05-08 22:27:06,314 Detailed logs: results/save/test_failures/scholl_mansoor_n=11/complex
+2026-05-08 22:27:06,315 Pipeline finished successfully

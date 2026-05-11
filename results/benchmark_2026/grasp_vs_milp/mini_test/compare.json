@@ -1,0 +1,44 @@
+{
+  "instance": "mini_test",
+  "targets": [
+    "C003"
+  ],
+  "grasp": {
+    "best_score": 10.64,
+    "avg_score": 10.64,
+    "std_score": 0.0,
+    "time_s": 0.0,
+    "sequence": [
+      "C001",
+      "C002",
+      "C003"
+    ]
+  },
+  "cplex": {
+    "objective": 10.64,
+    "status": "Optimal",
+    "time_s": 0.01,
+    "intgap_pct": null,
+    "sequence": [
+      1,
+      2,
+      3
+    ]
+  },
+  "cpsat": {
+    "objective": 10.64,
+    "bound": 10.64,
+    "status": "OPTIMAL",
+    "time_s": 0.0,
+    "intgap_pct": 0.0,
+    "sequence": [
+      1,
+      2,
+      3
+    ]
+  },
+  "comparison": {
+    "gap_grasp_vs_cplex_pct": -0.0,
+    "gap_grasp_vs_cpsat_pct": 0.0
+  }
+}

@@ -1,0 +1,10 @@
+--- Pipeline run 2026-05-08 22:26:35.728463 ---
+Instance: unknown
+Initial solution: ['C000', 'C004', 'C001', 'C014', 'C005', 'C008', 'C019', 'C026', 'C034', 'C041', 'C046', 'C048', 'C058', 'C065', 'C067', 'C069']
+Final state:
+  - Locked: set()
+  - Destroyed: set()
+  - Done: {'C065', 'C014', 'C034', 'C046', 'C001', 'C041', 'C067', 'C005', 'C019', 'C048', 'C000', 'C026', 'C008', 'C004', 'C058', 'C069'}
+  - Skipped: set()
+  - Notes: []
+Actions taken: [{'comp_id': 'C058', 'symptom': 'ACCESS_BLOCKED', 'action': 'change_tool', 'success': True, 'notes': 'Alternative tool suggested.'}]

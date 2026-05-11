@@ -1,0 +1,36 @@
+{
+  "timestamp": "2026-05-06T21:07:50.824031",
+  "instance": "dagtest",
+  "parameters": {
+    "GRASP_RUNS": 1,
+    "GRASP_ITERS": 150,
+    "GRASP_TIME": 900,
+    "EXACT_TIMELIM": 180,
+    "MILP_GAP": 0.01,
+    "MAX_N_MILP": 1000
+  },
+  "results": {
+    "instance": "dagtest",
+    "n": 28,
+    "lambda": 0.03527,
+    "grasp_best": 220.3434,
+    "grasp_avg": 220.3434,
+    "grasp_std": 0.0,
+    "grasp_time_s": 0.01,
+    "cplex_obj": 220.9181,
+    "cplex_status": "Optimal",
+    "cplex_time_s": 0.43,
+    "cplex_intgap_pct": 0.94,
+    "gap_grasp_vs_cplex": 0.26,
+    "cpsat_obj": 220.8257,
+    "cpsat_bound": 220.8257,
+    "cpsat_status": "OPTIMAL",
+    "cpsat_time_s": 0.23,
+    "cpsat_intgap_pct": 0.0,
+    "gap_grasp_vs_cpsat": 0.22,
+    "milp_obj": 220.9181,
+    "milp_status": "Optimal",
+    "milp_time_s": 0.43,
+    "gap_pct": 0.26
+  }
+}

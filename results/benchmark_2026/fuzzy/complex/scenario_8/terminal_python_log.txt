@@ -1,0 +1,61 @@
+2026-05-08 22:26:56,876 DSP ADAPTIVE PIPELINE - SALBP_INSTANCE_N=1000_1_CUT78
+2026-05-08 22:26:56,876 Loaded instance: salbp_instance_n=1000_1_cut78
+2026-05-08 22:26:56,876 Loaded failures: 3
+2026-05-08 22:26:56,876 [1/4] Loading instance and solving DSP...
+2026-05-08 22:26:56,898 Nodes: 78, Edges: 62, Targets: 3, Solution: 8 operations
+2026-05-08 22:26:56,898 Target(s) to achieve: ['C009', 'C040', 'C068']
+2026-05-08 22:26:56,898 Starting disassembly sequence (8 operations)...
+2026-05-08 22:26:56,898 [ 1/8] Disassembling C010... [OK]
+2026-05-08 22:26:56,898 [ 2/8] Disassembling C009... [OK]
+2026-05-08 22:26:56,898 [ 3/8] Disassembling C033... [OK]
+2026-05-08 22:26:56,898 [ 4/8] Disassembling C014... [OK]
+2026-05-08 22:26:56,898 [ 5/8] Disassembling C032... [OK]
+2026-05-08 22:26:56,898 [ 6/8] Disassembling C048... [OK]
+2026-05-08 22:26:56,898 [ 7/8] Disassembling C068... [OK]
+2026-05-08 22:26:56,898 [ 8/8] Disassembling C040... [OK]
+2026-05-08 22:26:56,898 [2/4] Failure scenario loaded: 3 failure(s)
+2026-05-08 22:26:56,898 [3/4] Executing adaptive scheduler...
+2026-05-08 22:26:56,916 [FUZZY] Symptom: ACCESS_BLOCKED
+2026-05-08 22:26:56,916 [FUZZY] Inputs: force=60.0, torque=40.0, p_fail=70.0, context=0.0
+2026-05-08 22:26:56,916 [FUZZY] Score: 56.71
+2026-05-08 22:26:56,916 [FUZZY] Decision: destroy (confidence=74.3%)
+2026-05-08 22:26:56,916 [ACTION] destroy: success=False, notes=Destruction not allowed: Flag 'no_destroy' active (context or graph).
+2026-05-08 22:26:56,927 [FUZZY] Symptom: ACCESS_BLOCKED
+2026-05-08 22:26:56,927 [FUZZY] Inputs: force=60.0, torque=40.0, p_fail=70.0, context=100.0
+2026-05-08 22:26:56,927 [FUZZY] Score: 36.06
+2026-05-08 22:26:56,927 [FUZZY] Decision: bypass (confidence=80.3%)
+2026-05-08 22:26:56,927 [ACTION] bypass: success=False, notes=No alternative path in graph.
+2026-05-08 22:26:56,927 Adaptive scheduler finished. Actions taken: 4
+2026-05-08 22:26:56,927 EXECUTION SUMMARY
+2026-05-08 22:26:56,927 Status: SUCCESS
+2026-05-08 22:26:56,927 Target components:
+2026-05-08 22:26:56,927 [OK] C009 - Successfully disassembled
+2026-05-08 22:26:56,927 [OK] C040 - Successfully disassembled
+2026-05-08 22:26:56,927 [OK] C068 - Successfully disassembled
+2026-05-08 22:26:56,927 Execution metrics:
+2026-05-08 22:26:56,927 Targets achieved: 3/3 (100.0%)
+2026-05-08 22:26:56,927 Failures handled: 3
+2026-05-08 22:26:56,927 Actions taken: 4
+2026-05-08 22:26:56,927 Components done: 7/8
+2026-05-08 22:26:56,927 Algorithm runtime: 0.05s
+2026-05-08 22:26:56,927 ECONOMIC ANALYSIS:
+2026-05-08 22:26:56,927 Nominal profit (planned): 158.00 units
+2026-05-08 22:26:56,927 Adaptive profit (recovered): 147.00 units
+2026-05-08 22:26:56,927 Profit loss: 11.00 units (7.0%)
+2026-05-08 22:26:56,927 Value skipped (bypassed): 20.00 units
+2026-05-08 22:26:56,927 TIME ANALYSIS:
+2026-05-08 22:26:56,927 Nominal time (planned): 17min 18s
+2026-05-08 22:26:56,927 Adaptive time (actual): 14min 51s
+2026-05-08 22:26:56,927 Time saved: 2min 27s (14.2%)
+2026-05-08 22:26:56,927 Time saved (skipped): 2min 27s
+2026-05-08 22:26:56,927 GLOBAL SCORE :
+2026-05-08 22:26:56,927 Nominal score: 49.21
+2026-05-08 22:26:56,927 Adaptive score: 46.03
+2026-05-08 22:26:56,927 Score loss: 3.18 (6.5%)
+2026-05-08 22:26:56,927 Actions breakdown:
+2026-05-08 22:26:56,927 [FAILED] C032     ACCESS_BLOCKED       -> destroy     
+2026-05-08 22:26:56,927 [OK] C032     ACCESS_BLOCKED       -> destroy→bypass
+2026-05-08 22:26:56,927 [FAILED] C048     ACCESS_BLOCKED       -> bypass      
+2026-05-08 22:26:56,927 [OK] C048     ACCESS_BLOCKED       -> bypass→change_tool
+2026-05-08 22:26:56,927 Detailed logs: results/save/test_failures/salbp_instance_n=1000_1_cut78/complex
+2026-05-08 22:26:56,928 Pipeline finished successfully

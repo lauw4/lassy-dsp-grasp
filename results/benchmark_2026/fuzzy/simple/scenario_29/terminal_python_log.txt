@@ -1,0 +1,57 @@
+2026-05-08 22:26:35,677 DSP ADAPTIVE PIPELINE - SCHOLL_WEE-MAG_N=75
+2026-05-08 22:26:35,677 Loaded instance: scholl_wee-mag_n=75
+2026-05-08 22:26:35,677 Loaded failures: 1
+2026-05-08 22:26:35,677 [1/4] Loading instance and solving DSP...
+2026-05-08 22:26:35,710 Nodes: 75, Edges: 87, Targets: 1, Solution: 16 operations
+2026-05-08 22:26:35,710 Target(s) to achieve: ['C069']
+2026-05-08 22:26:35,710 Starting disassembly sequence (16 operations)...
+2026-05-08 22:26:35,710 [ 1/16] Disassembling C000... [OK]
+2026-05-08 22:26:35,710 [ 2/16] Disassembling C004... [OK]
+2026-05-08 22:26:35,710 [ 3/16] Disassembling C001... [OK]
+2026-05-08 22:26:35,710 [ 4/16] Disassembling C014... [OK]
+2026-05-08 22:26:35,710 [ 5/16] Disassembling C005... [OK]
+2026-05-08 22:26:35,710 [ 6/16] Disassembling C008... [OK]
+2026-05-08 22:26:35,710 [ 7/16] Disassembling C019... [OK]
+2026-05-08 22:26:35,710 [ 8/16] Disassembling C026... [OK]
+2026-05-08 22:26:35,710 [ 9/16] Disassembling C034... [OK]
+2026-05-08 22:26:35,710 [10/16] Disassembling C041... [OK]
+2026-05-08 22:26:35,710 [11/16] Disassembling C046... [OK]
+2026-05-08 22:26:35,710 [12/16] Disassembling C048... [OK]
+2026-05-08 22:26:35,710 [13/16] Disassembling C058... [OK]
+2026-05-08 22:26:35,710 [14/16] Disassembling C065... [OK]
+2026-05-08 22:26:35,710 [15/16] Disassembling C067... [OK]
+2026-05-08 22:26:35,710 [16/16] Disassembling C069... [OK]
+2026-05-08 22:26:35,710 [2/4] Failure scenario loaded: 1 failure(s)
+2026-05-08 22:26:35,710 [3/4] Executing adaptive scheduler...
+2026-05-08 22:26:35,727 [FUZZY] Symptom: ACCESS_BLOCKED
+2026-05-08 22:26:35,727 [FUZZY] Inputs: force=60.0, torque=40.0, p_fail=60.0, context=100.0
+2026-05-08 22:26:35,727 [FUZZY] Score: 20.00
+2026-05-08 22:26:35,727 [FUZZY] Decision: change_tool (confidence=100.0%)
+2026-05-08 22:26:35,727 [ACTION] change_tool: success=True, notes=Alternative tool suggested.
+2026-05-08 22:26:35,727 Adaptive scheduler finished. Actions taken: 1
+2026-05-08 22:26:35,727 EXECUTION SUMMARY
+2026-05-08 22:26:35,727 Status: SUCCESS
+2026-05-08 22:26:35,727 Target components:
+2026-05-08 22:26:35,727 [OK] C069 - Successfully disassembled
+2026-05-08 22:26:35,727 Execution metrics:
+2026-05-08 22:26:35,727 Targets achieved: 1/1 (100.0%)
+2026-05-08 22:26:35,727 Failures handled: 1
+2026-05-08 22:26:35,727 Actions taken: 1
+2026-05-08 22:26:35,727 Components done: 16/16
+2026-05-08 22:26:35,727 Algorithm runtime: 0.05s
+2026-05-08 22:26:35,727 ECONOMIC ANALYSIS:
+2026-05-08 22:26:35,727 Nominal profit (planned): 316.00 units
+2026-05-08 22:26:35,727 Adaptive profit (recovered): 316.00 units
+2026-05-08 22:26:35,727 Profit loss: 0.00 units (0.0%)
+2026-05-08 22:26:35,728 TIME ANALYSIS:
+2026-05-08 22:26:35,728 Nominal time (planned): 5min 23s
+2026-05-08 22:26:35,728 Adaptive time (actual): 5min 23s
+2026-05-08 22:26:35,728 Time overhead: -0s (-0.0%)
+2026-05-08 22:26:35,728 GLOBAL SCORE :
+2026-05-08 22:26:35,728 Nominal score: 104.26
+2026-05-08 22:26:35,728 Adaptive score: 104.26
+2026-05-08 22:26:35,728 Score loss: 0.00 (0.0%)
+2026-05-08 22:26:35,728 Actions breakdown:
+2026-05-08 22:26:35,728 [OK] C058     ACCESS_BLOCKED       -> change_tool 
+2026-05-08 22:26:35,728 Detailed logs: results/save/test_failures/scholl_wee-mag_n=75/simple
+2026-05-08 22:26:35,728 Pipeline finished successfully

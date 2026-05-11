@@ -1,0 +1,81 @@
+2026-05-08 22:26:36,167 DSP ADAPTIVE PIPELINE - DAGTEST
+2026-05-08 22:26:36,167 Loaded instance: dagtest
+2026-05-08 22:26:36,168 Loaded failures: 2
+2026-05-08 22:26:36,168 [1/4] Loading instance and solving DSP...
+2026-05-08 22:26:36,241 Nodes: 28, Edges: 41, Targets: 1, Solution: 22 operations
+2026-05-08 22:26:36,241 Target(s) to achieve: ['N22']
+2026-05-08 22:26:36,241 Starting disassembly sequence (22 operations)...
+2026-05-08 22:26:36,241 [ 1/22] Disassembling N02... [OK]
+2026-05-08 22:26:36,241 [ 2/22] Disassembling N06... [OK]
+2026-05-08 22:26:36,241 [ 3/22] Disassembling N01... [OK]
+2026-05-08 22:26:36,241 [ 4/22] Disassembling N04... [OK]
+2026-05-08 22:26:36,241 [ 5/22] Disassembling N11... [OK]
+2026-05-08 22:26:36,241 [ 6/22] Disassembling N05... [OK]
+2026-05-08 22:26:36,241 [ 7/22] Disassembling N09... [OK]
+2026-05-08 22:26:36,241 [ 8/22] Disassembling N10... [OK]
+2026-05-08 22:26:36,241 [ 9/22] Disassembling N03... [OK]
+2026-05-08 22:26:36,241 [10/22] Disassembling N16... [OK]
+2026-05-08 22:26:36,241 [11/22] Disassembling N08... [OK]
+2026-05-08 22:26:36,241 [12/22] Disassembling N17... [OK]
+2026-05-08 22:26:36,241 [13/22] Disassembling N20... [OK]
+2026-05-08 22:26:36,241 [14/22] Disassembling N15... [OK]
+2026-05-08 22:26:36,241 [15/22] Disassembling N07... [OK]
+2026-05-08 22:26:36,241 [16/22] Disassembling N13... [OK]
+2026-05-08 22:26:36,241 [17/22] Disassembling N12... [OK]
+2026-05-08 22:26:36,241 [18/22] Disassembling N14... [OK]
+2026-05-08 22:26:36,241 [19/22] Disassembling N18... [OK]
+2026-05-08 22:26:36,241 [20/22] Disassembling N19... [OK]
+2026-05-08 22:26:36,241 [21/22] Disassembling N21... [OK]
+2026-05-08 22:26:36,241 [22/22] Disassembling N22... [OK]
+2026-05-08 22:26:36,241 [2/4] Failure scenario loaded: 2 failure(s)
+2026-05-08 22:26:36,241 [3/4] Executing adaptive scheduler...
+2026-05-08 22:26:36,258 [FUZZY] Symptom: OVER_TORQUE_NO_ADVANCE
+2026-05-08 22:26:36,258 [FUZZY] Inputs: force=70.0, torque=80.0, p_fail=65.0, context=0.0
+2026-05-08 22:26:36,258 [FUZZY] Score: 65.47
+2026-05-08 22:26:36,258 [FUZZY] Decision: destroy (confidence=86.8%)
+2026-05-08 22:26:36,258 [ACTION] destroy: success=False, notes=Destruction not allowed: Flag 'no_destroy' active (context or graph).
+2026-05-08 22:26:36,269 [FUZZY] Symptom: OVER_TORQUE_NO_ADVANCE
+2026-05-08 22:26:36,269 [FUZZY] Inputs: force=70.0, torque=80.0, p_fail=75.0, context=0.0
+2026-05-08 22:26:36,269 [FUZZY] Score: 70.67
+2026-05-08 22:26:36,269 [FUZZY] Decision: destroy (confidence=63.7%)
+2026-05-08 22:26:36,269 [ACTION] destroy: success=False, notes=Destruction not allowed: Profit=24.00 > threshold=18.00 (percentile 20th).
+2026-05-08 22:26:36,269 [REPLAN] Locking N14 before replan
+2026-05-08 22:26:36,269 [REPLAN] States before replan:
+2026-05-08 22:26:36,269 [REPLAN]   done=['N01', 'N02', 'N03', 'N04', 'N05', 'N06', 'N07', 'N08', 'N09', 'N11', 'N12', 'N13', 'N15', 'N16', 'N17', 'N20']
+2026-05-08 22:26:36,269 [REPLAN]   destroyed=[]
+2026-05-08 22:26:36,269 [REPLAN]   locked=['N14']
+2026-05-08 22:26:36,269 [REPLAN]   skipped=['N10']
+2026-05-08 22:26:36,279 [REPLAN] New sequence: ['N18', 'N21', 'N22']
+2026-05-08 22:26:36,279 Adaptive scheduler finished. Actions taken: 4
+2026-05-08 22:26:36,279 EXECUTION SUMMARY
+2026-05-08 22:26:36,279 Status: SUCCESS
+2026-05-08 22:26:36,279 Target components:
+2026-05-08 22:26:36,279 [OK] N22 - Successfully disassembled
+2026-05-08 22:26:36,279 Execution metrics:
+2026-05-08 22:26:36,279 Targets achieved: 1/1 (100.0%)
+2026-05-08 22:26:36,279 Failures handled: 2
+2026-05-08 22:26:36,279 Actions taken: 4
+2026-05-08 22:26:36,279 Components done: 19/22
+2026-05-08 22:26:36,279 Locked: 1 component(s)
+2026-05-08 22:26:36,279 Algorithm runtime: 0.11s
+2026-05-08 22:26:36,279 ECONOMIC ANALYSIS:
+2026-05-08 22:26:36,279 Nominal profit (planned): 333.00 units
+2026-05-08 22:26:36,279 Adaptive profit (recovered): 284.00 units
+2026-05-08 22:26:36,279 Profit loss: 49.00 units (14.7%)
+2026-05-08 22:26:36,279 Value skipped (bypassed): 22.00 units
+2026-05-08 22:26:36,280 TIME ANALYSIS:
+2026-05-08 22:26:36,280 Nominal time (planned): 36min 40s
+2026-05-08 22:26:36,280 Adaptive time (actual): 31min 5s
+2026-05-08 22:26:36,280 Time saved: 5min 35s (15.2%)
+2026-05-08 22:26:36,280 Time saved (skipped): 1min 50s
+2026-05-08 22:26:36,280 GLOBAL SCORE :
+2026-05-08 22:26:36,280 Nominal score: 103.67
+2026-05-08 22:26:36,280 Adaptive score: 88.45
+2026-05-08 22:26:36,280 Score loss: 15.22 (14.7%)
+2026-05-08 22:26:36,280 Actions breakdown:
+2026-05-08 22:26:36,280 [FAILED] N10      OVER_TORQUE_NO_ADVANCE -> destroy     
+2026-05-08 22:26:36,280 [OK] N10      OVER_TORQUE_NO_ADVANCE -> destroy→bypass
+2026-05-08 22:26:36,280 [FAILED] N14      OVER_TORQUE_NO_ADVANCE -> destroy     
+2026-05-08 22:26:36,280 [OK] N14      OVER_TORQUE_NO_ADVANCE -> destroy→replan
+2026-05-08 22:26:36,280 Detailed logs: results/save/test_failures/dagtest/intermediate
+2026-05-08 22:26:36,280 Pipeline finished successfully

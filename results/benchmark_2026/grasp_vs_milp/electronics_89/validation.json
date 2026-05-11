@@ -1,0 +1,36 @@
+{
+  "timestamp": "2026-05-07T02:22:30.679929",
+  "instance": "electronics_89",
+  "parameters": {
+    "GRASP_RUNS": 1,
+    "GRASP_ITERS": 150,
+    "GRASP_TIME": 900,
+    "EXACT_TIMELIM": 180,
+    "MILP_GAP": 0.01,
+    "MAX_N_MILP": 1000
+  },
+  "results": {
+    "instance": "electronics_89",
+    "n": 89,
+    "lambda": 0.02354,
+    "grasp_best": 274.3441,
+    "grasp_avg": 274.3441,
+    "grasp_std": 0.0,
+    "grasp_time_s": 0.13,
+    "cplex_obj": -1804.6767,
+    "cplex_status": "TimeLimit",
+    "cplex_time_s": 214.01,
+    "cplex_intgap_pct": 138.35,
+    "gap_grasp_vs_cplex": -115.2,
+    "cpsat_obj": 326.1425,
+    "cpsat_bound": 767.3215,
+    "cpsat_status": "FEASIBLE",
+    "cpsat_time_s": 180.05,
+    "cpsat_intgap_pct": 135.27,
+    "gap_grasp_vs_cpsat": 15.88,
+    "milp_obj": -1804.6767,
+    "milp_status": "TimeLimit",
+    "milp_time_s": 214.01,
+    "gap_pct": -115.2
+  }
+}

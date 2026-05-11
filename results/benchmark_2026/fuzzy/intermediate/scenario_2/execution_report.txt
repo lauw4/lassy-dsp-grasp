@@ -1,0 +1,127 @@
+------
+ADAPTIVE DSP EXECUTION REPORT
+------
+
+INITIAL PLANNED SEQUENCE:
+----------------------------------------
+C010, C033, C058, C069, C085
+Target = C085
+
+------
+EXECUTION WITH ADAPTATION:
+------
+
+C010 - OK
+------
+FAILURE ON C033
+------
+
+Symptom: OVER_TORQUE_NO_ADVANCE
+
+Sensor values:
+  - Force:  70.0
+  - Torque: 80.0
+  - P_fail: 65.0%
+
+Fuzzy decision:
+  - Action: destroy->bypass
+  - Score:  65.47
+  - Confidence: 86.8%
+
+Result: Fallback succeeded
+C058 - OK
+------
+FAILURE ON C069
+------
+
+Symptom: OVER_TORQUE_NO_ADVANCE
+
+Sensor values:
+  - Force:  70.0
+  - Torque: 80.0
+  - P_fail: 85.0%
+
+Fuzzy decision:
+  - Action: destroy->bypass
+  - Score:  71.71
+  - Confidence: 59.1%
+
+Result: Fallback succeeded
+C085 - OK
+------
+EXECUTION METRICS:
+------
+
+Targets achieved: 1/1 (100.0%)
+Failures handled: 2
+Actions taken:    4
+Done:             3/5
+Destroyed:        0
+Skipped:          2
+------
+FINAL STATE
+------
+
+Done:      ['C010', 'C058', 'C085']
+Destroyed: []
+Locked:    []
+Skipped:   ['C033', 'C069']
+------
+ECONOMIC ANALYSIS
+------
+
+Nominal profit (planned):    107.00 units
+Adaptive profit (recovered): 66.00 units
+Profit loss:                 41.00 units (38.3%)
+Value skipped (bypassed):    47.00 units
+
+Component breakdown:
+  C010: profit=26, cost=6 -> net=20.00
+  C033: profit=26, cost=2 -> SKIPPED (not recovered)
+  C058: profit=23, cost=1 -> net=22.00
+  C069: profit=21, cost=4 -> SKIPPED (not recovered)
+  C085: profit=30, cost=6 -> net=24.00
+------
+TIME ANALYSIS
+------
+
+Nominal time (planned):      8min 54s
+Adaptive time (actual):      4min 9s
+Time saved:                  4min 45s (53.4%)
+Time saved (skipped):        4min 45s
+
+Component time breakdown:
+  C010: 52s
+  C033: 120s -> SKIPPED (saved)
+  C058: 66s
+  C069: 165s -> SKIPPED (saved)
+  C085: 131s
+------
+GLOBAL SCORE
+------
+
+Nominal score:               33.89
+Adaptive score:              21.17
+Score loss:                  12.72 (37.5%)
+------
+GLOSSARY
+------
+
+p_fail:
+  Estimated failure risk. Higher = more likely to fail.
+
+Fuzzy decision:
+  AI-based analysis choosing best recovery action.
+  Score (0-100) and confidence (%) indicate decision quality.
+
+Actions:
+  - change_tool: Switch to alternative tool
+  - bypass: Skip inaccessible component
+  - destroy: Remove component by destruction
+  - replan: Recalculate sequence after changes
+
+States:
+  - done: Successfully removed components
+  - destroyed: Components removed by destruction
+  - locked: Components physically blocked (not removable)
+  - skipped: Components bypassed (not on current path)

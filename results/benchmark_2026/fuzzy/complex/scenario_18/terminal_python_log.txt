@@ -1,0 +1,53 @@
+2026-05-08 22:27:03,047 DSP ADAPTIVE PIPELINE - SCHOLL_JAESCHKE_N=9
+2026-05-08 22:27:03,047 Loaded instance: scholl_jaeschke_n=9
+2026-05-08 22:27:03,047 Loaded failures: 1
+2026-05-08 22:27:03,047 [1/4] Loading instance and solving DSP...
+2026-05-08 22:27:03,070 Nodes: 9, Edges: 11, Targets: 1, Solution: 9 operations
+2026-05-08 22:27:03,070 Target(s) to achieve: ['C008']
+2026-05-08 22:27:03,070 Starting disassembly sequence (9 operations)...
+2026-05-08 22:27:03,070 [ 1/9] Disassembling C000... [OK]
+2026-05-08 22:27:03,070 [ 2/9] Disassembling C001... [OK]
+2026-05-08 22:27:03,070 [ 3/9] Disassembling C002... [OK]
+2026-05-08 22:27:03,070 [ 4/9] Disassembling C003... [OK]
+2026-05-08 22:27:03,070 [ 5/9] Disassembling C006... [OK]
+2026-05-08 22:27:03,070 [ 6/9] Disassembling C004... [OK]
+2026-05-08 22:27:03,070 [ 7/9] Disassembling C007... [OK]
+2026-05-08 22:27:03,070 [ 8/9] Disassembling C005... [OK]
+2026-05-08 22:27:03,070 [ 9/9] Disassembling C008... [OK]
+2026-05-08 22:27:03,070 [2/4] Failure scenario loaded: 1 failure(s)
+2026-05-08 22:27:03,070 [3/4] Executing adaptive scheduler...
+2026-05-08 22:27:03,088 [FUZZY] Symptom: OVER_TORQUE_NO_ADVANCE
+2026-05-08 22:27:03,088 [FUZZY] Inputs: force=70.0, torque=80.0, p_fail=85.0, context=0.0
+2026-05-08 22:27:03,088 [FUZZY] Score: 71.71
+2026-05-08 22:27:03,088 [FUZZY] Decision: destroy (confidence=59.1%)
+2026-05-08 22:27:03,088 [ACTION] destroy: success=False, notes=Destruction not allowed: Flag 'no_destroy' active (context or graph).
+2026-05-08 22:27:03,088 Adaptive scheduler finished. Actions taken: 2
+2026-05-08 22:27:03,088 EXECUTION SUMMARY
+2026-05-08 22:27:03,088 Status: SUCCESS
+2026-05-08 22:27:03,088 Target components:
+2026-05-08 22:27:03,088 [OK] C008 - Successfully disassembled
+2026-05-08 22:27:03,088 Execution metrics:
+2026-05-08 22:27:03,088 Targets achieved: 1/1 (100.0%)
+2026-05-08 22:27:03,088 Failures handled: 1
+2026-05-08 22:27:03,089 Actions taken: 2
+2026-05-08 22:27:03,089 Components done: 8/9
+2026-05-08 22:27:03,089 Algorithm runtime: 0.04s
+2026-05-08 22:27:03,089 ECONOMIC ANALYSIS:
+2026-05-08 22:27:03,089 Nominal profit (planned): 145.00 units
+2026-05-08 22:27:03,089 Adaptive profit (recovered): 126.00 units
+2026-05-08 22:27:03,089 Profit loss: 19.00 units (13.1%)
+2026-05-08 22:27:03,089 Value skipped (bypassed): 21.00 units
+2026-05-08 22:27:03,089 TIME ANALYSIS:
+2026-05-08 22:27:03,089 Nominal time (planned): 37s
+2026-05-08 22:27:03,089 Adaptive time (actual): 32s
+2026-05-08 22:27:03,089 Time saved: 5s (13.5%)
+2026-05-08 22:27:03,089 Time saved (skipped): 5s
+2026-05-08 22:27:03,089 GLOBAL SCORE :
+2026-05-08 22:27:03,089 Nominal score: 48.21
+2026-05-08 22:27:03,089 Adaptive score: 41.89
+2026-05-08 22:27:03,089 Score loss: 6.32 (13.1%)
+2026-05-08 22:27:03,089 Actions breakdown:
+2026-05-08 22:27:03,089 [FAILED] C005     OVER_TORQUE_NO_ADVANCE -> destroy     
+2026-05-08 22:27:03,089 [OK] C005     OVER_TORQUE_NO_ADVANCE -> destroy→bypass
+2026-05-08 22:27:03,089 Detailed logs: results/save/test_failures/scholl_jaeschke_n=9/complex
+2026-05-08 22:27:03,089 Pipeline finished successfully

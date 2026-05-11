@@ -1,0 +1,57 @@
+2026-05-08 22:26:25,522 DSP ADAPTIVE PIPELINE - SALBP_INSTANCE_N=50_29P6
+2026-05-08 22:26:25,523 Loaded instance: salbp_instance_n=50_29p6
+2026-05-08 22:26:25,523 Loaded failures: 1
+2026-05-08 22:26:25,523 [1/4] Loading instance and solving DSP...
+2026-05-08 22:26:25,546 Nodes: 50, Edges: 53, Targets: 2, Solution: 15 operations
+2026-05-08 22:26:25,546 Target(s) to achieve: ['C018', 'C044']
+2026-05-08 22:26:25,546 Starting disassembly sequence (15 operations)...
+2026-05-08 22:26:25,546 [ 1/15] Disassembling C001... [OK]
+2026-05-08 22:26:25,546 [ 2/15] Disassembling C004... [OK]
+2026-05-08 22:26:25,546 [ 3/15] Disassembling C009... [OK]
+2026-05-08 22:26:25,546 [ 4/15] Disassembling C015... [OK]
+2026-05-08 22:26:25,546 [ 5/15] Disassembling C025... [OK]
+2026-05-08 22:26:25,546 [ 6/15] Disassembling C031... [OK]
+2026-05-08 22:26:25,546 [ 7/15] Disassembling C002... [OK]
+2026-05-08 22:26:25,546 [ 8/15] Disassembling C006... [OK]
+2026-05-08 22:26:25,546 [ 9/15] Disassembling C012... [OK]
+2026-05-08 22:26:25,546 [10/15] Disassembling C020... [OK]
+2026-05-08 22:26:25,546 [11/15] Disassembling C029... [OK]
+2026-05-08 22:26:25,546 [12/15] Disassembling C037... [OK]
+2026-05-08 22:26:25,546 [13/15] Disassembling C044... [OK]
+2026-05-08 22:26:25,546 [14/15] Disassembling C013... [OK]
+2026-05-08 22:26:25,546 [15/15] Disassembling C018... [OK]
+2026-05-08 22:26:25,546 [2/4] Failure scenario loaded: 1 failure(s)
+2026-05-08 22:26:25,546 [3/4] Executing adaptive scheduler...
+2026-05-08 22:26:25,563 [FUZZY] Symptom: LOW_VALUE_BOTTLENECK
+2026-05-08 22:26:25,563 [FUZZY] Inputs: force=30.0, torque=20.0, p_fail=60.0, context=100.0
+2026-05-08 22:26:25,564 [FUZZY] Score: 20.00
+2026-05-08 22:26:25,564 [FUZZY] Decision: change_tool (confidence=100.0%)
+2026-05-08 22:26:25,564 [ACTION] change_tool: success=True, notes=Alternative tool suggested.
+2026-05-08 22:26:25,564 Adaptive scheduler finished. Actions taken: 1
+2026-05-08 22:26:25,564 EXECUTION SUMMARY
+2026-05-08 22:26:25,564 Status: SUCCESS
+2026-05-08 22:26:25,564 Target components:
+2026-05-08 22:26:25,564 [OK] C018 - Successfully disassembled
+2026-05-08 22:26:25,564 [OK] C044 - Successfully disassembled
+2026-05-08 22:26:25,564 Execution metrics:
+2026-05-08 22:26:25,564 Targets achieved: 2/2 (100.0%)
+2026-05-08 22:26:25,564 Failures handled: 1
+2026-05-08 22:26:25,564 Actions taken: 1
+2026-05-08 22:26:25,564 Components done: 15/15
+2026-05-08 22:26:25,564 Algorithm runtime: 0.04s
+2026-05-08 22:26:25,564 ECONOMIC ANALYSIS:
+2026-05-08 22:26:25,564 Nominal profit (planned): 308.00 units
+2026-05-08 22:26:25,564 Adaptive profit (recovered): 308.00 units
+2026-05-08 22:26:25,564 Profit loss: 0.00 units (0.0%)
+2026-05-08 22:26:25,564 TIME ANALYSIS:
+2026-05-08 22:26:25,564 Nominal time (planned): 129min 4s
+2026-05-08 22:26:25,564 Adaptive time (actual): 129min 4s
+2026-05-08 22:26:25,564 Time overhead: -0s (-0.0%)
+2026-05-08 22:26:25,564 GLOBAL SCORE :
+2026-05-08 22:26:25,564 Nominal score: 76.85
+2026-05-08 22:26:25,564 Adaptive score: 76.85
+2026-05-08 22:26:25,564 Score loss: 0.00 (0.0%)
+2026-05-08 22:26:25,564 Actions breakdown:
+2026-05-08 22:26:25,564 [OK] C029     LOW_VALUE_BOTTLENECK -> change_tool 
+2026-05-08 22:26:25,564 Detailed logs: results/save/test_failures/salbp_instance_n=50_29p6/simple
+2026-05-08 22:26:25,565 Pipeline finished successfully

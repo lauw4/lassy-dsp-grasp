@@ -1,0 +1,60 @@
+2026-05-08 22:26:53,733 DSP ADAPTIVE PIPELINE - SALBP_INSTANCE_N=1000_1_CUT115
+2026-05-08 22:26:53,733 Loaded instance: salbp_instance_n=1000_1_cut115
+2026-05-08 22:26:53,734 Loaded failures: 3
+2026-05-08 22:26:53,734 [1/4] Loading instance and solving DSP...
+2026-05-08 22:26:53,749 Nodes: 115, Edges: 100, Targets: 1, Solution: 5 operations
+2026-05-08 22:26:53,749 Target(s) to achieve: ['C085']
+2026-05-08 22:26:53,749 Starting disassembly sequence (5 operations)...
+2026-05-08 22:26:53,749 [ 1/5] Disassembling C010... [OK]
+2026-05-08 22:26:53,749 [ 2/5] Disassembling C033... [OK]
+2026-05-08 22:26:53,749 [ 3/5] Disassembling C058... [OK]
+2026-05-08 22:26:53,749 [ 4/5] Disassembling C069... [OK]
+2026-05-08 22:26:53,749 [ 5/5] Disassembling C085... [OK]
+2026-05-08 22:26:53,749 [2/4] Failure scenario loaded: 3 failure(s)
+2026-05-08 22:26:53,749 [3/4] Executing adaptive scheduler...
+2026-05-08 22:26:53,766 [FUZZY] Symptom: LOW_VALUE_BOTTLENECK
+2026-05-08 22:26:53,766 [FUZZY] Inputs: force=30.0, torque=20.0, p_fail=50.0, context=100.0
+2026-05-08 22:26:53,766 [FUZZY] Score: 20.00
+2026-05-08 22:26:53,767 [FUZZY] Decision: change_tool (confidence=100.0%)
+2026-05-08 22:26:53,767 [ACTION] change_tool: success=True, notes=Alternative tool suggested.
+2026-05-08 22:26:53,777 [FUZZY] Symptom: ACCESS_BLOCKED
+2026-05-08 22:26:53,777 [FUZZY] Inputs: force=60.0, torque=40.0, p_fail=50.0, context=100.0
+2026-05-08 22:26:53,777 [FUZZY] Score: 20.00
+2026-05-08 22:26:53,777 [FUZZY] Decision: change_tool (confidence=100.0%)
+2026-05-08 22:26:53,777 [ACTION] change_tool: success=True, notes=Alternative tool suggested.
+2026-05-08 22:26:53,790 [FUZZY] Symptom: ACCESS_BLOCKED
+2026-05-08 22:26:53,791 [FUZZY] Inputs: force=60.0, torque=40.0, p_fail=50.0, context=0.0
+2026-05-08 22:26:53,791 [FUZZY] Score: 40.00
+2026-05-08 22:26:53,791 [FUZZY] Decision: bypass (confidence=100.0%)
+2026-05-08 22:26:53,791 [ACTION] bypass: success=True, notes=Component C069 bypassed (skipped).
+2026-05-08 22:26:53,791 Adaptive scheduler finished. Actions taken: 3
+2026-05-08 22:26:53,791 EXECUTION SUMMARY
+2026-05-08 22:26:53,791 Status: SUCCESS
+2026-05-08 22:26:53,791 Target components:
+2026-05-08 22:26:53,791 [OK] C085 - Successfully disassembled
+2026-05-08 22:26:53,791 Execution metrics:
+2026-05-08 22:26:53,791 Targets achieved: 1/1 (100.0%)
+2026-05-08 22:26:53,791 Failures handled: 3
+2026-05-08 22:26:53,791 Actions taken: 3
+2026-05-08 22:26:53,791 Components done: 4/5
+2026-05-08 22:26:53,791 Algorithm runtime: 0.06s
+2026-05-08 22:26:53,791 ECONOMIC ANALYSIS:
+2026-05-08 22:26:53,791 Nominal profit (planned): 107.00 units
+2026-05-08 22:26:53,791 Adaptive profit (recovered): 90.00 units
+2026-05-08 22:26:53,791 Profit loss: 17.00 units (15.9%)
+2026-05-08 22:26:53,791 Value skipped (bypassed): 21.00 units
+2026-05-08 22:26:53,791 TIME ANALYSIS:
+2026-05-08 22:26:53,791 Nominal time (planned): 8min 54s
+2026-05-08 22:26:53,791 Adaptive time (actual): 6min 9s
+2026-05-08 22:26:53,791 Time saved: 2min 45s (30.9%)
+2026-05-08 22:26:53,791 Time saved (skipped): 2min 45s
+2026-05-08 22:26:53,791 GLOBAL SCORE :
+2026-05-08 22:26:53,791 Nominal score: 33.89
+2026-05-08 22:26:53,791 Adaptive score: 28.77
+2026-05-08 22:26:53,791 Score loss: 5.12 (15.1%)
+2026-05-08 22:26:53,791 Actions breakdown:
+2026-05-08 22:26:53,791 [OK] C033     LOW_VALUE_BOTTLENECK -> change_tool 
+2026-05-08 22:26:53,791 [OK] C058     ACCESS_BLOCKED       -> change_tool 
+2026-05-08 22:26:53,791 [OK] C069     ACCESS_BLOCKED       -> bypass      
+2026-05-08 22:26:53,791 Detailed logs: results/save/test_failures/salbp_instance_n=1000_1_cut115/complex
+2026-05-08 22:26:53,792 Pipeline finished successfully

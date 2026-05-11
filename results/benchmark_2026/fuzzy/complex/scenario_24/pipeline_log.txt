@@ -1,0 +1,10 @@
+--- Pipeline run 2026-05-08 22:27:06.782338 ---
+Instance: unknown
+Initial solution: ['C000', 'C001', 'C004', 'C005']
+Final state:
+  - Locked: set()
+  - Destroyed: set()
+  - Done: {'C005', 'C000', 'C001', 'C004'}
+  - Skipped: set()
+  - Notes: []
+Actions taken: [{'comp_id': 'C004', 'symptom': 'ACCESS_BLOCKED', 'action': 'change_tool', 'success': True, 'notes': 'Alternative tool suggested.'}]

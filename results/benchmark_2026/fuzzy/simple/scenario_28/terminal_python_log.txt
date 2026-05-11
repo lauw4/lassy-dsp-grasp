@@ -1,0 +1,56 @@
+2026-05-08 22:26:35,193 DSP ADAPTIVE PIPELINE - SCHOLL_WARNECKE_N=58
+2026-05-08 22:26:35,193 Loaded instance: scholl_warnecke_n=58
+2026-05-08 22:26:35,193 Loaded failures: 1
+2026-05-08 22:26:35,193 [1/4] Loading instance and solving DSP...
+2026-05-08 22:26:35,219 Nodes: 58, Edges: 70, Targets: 1, Solution: 13 operations
+2026-05-08 22:26:35,219 Target(s) to achieve: ['C028']
+2026-05-08 22:26:35,219 Starting disassembly sequence (13 operations)...
+2026-05-08 22:26:35,219 [ 1/13] Disassembling C000... [OK]
+2026-05-08 22:26:35,219 [ 2/13] Disassembling C008... [OK]
+2026-05-08 22:26:35,219 [ 3/13] Disassembling C010... [OK]
+2026-05-08 22:26:35,219 [ 4/13] Disassembling C012... [OK]
+2026-05-08 22:26:35,219 [ 5/13] Disassembling C014... [OK]
+2026-05-08 22:26:35,219 [ 6/13] Disassembling C011... [OK]
+2026-05-08 22:26:35,219 [ 7/13] Disassembling C013... [OK]
+2026-05-08 22:26:35,219 [ 8/13] Disassembling C016... [OK]
+2026-05-08 22:26:35,219 [ 9/13] Disassembling C019... [OK]
+2026-05-08 22:26:35,219 [10/13] Disassembling C002... [OK]
+2026-05-08 22:26:35,219 [11/13] Disassembling C020... [OK]
+2026-05-08 22:26:35,219 [12/13] Disassembling C025... [OK]
+2026-05-08 22:26:35,219 [13/13] Disassembling C028... [OK]
+2026-05-08 22:26:35,219 [2/4] Failure scenario loaded: 1 failure(s)
+2026-05-08 22:26:35,219 [3/4] Executing adaptive scheduler...
+2026-05-08 22:26:35,236 [FUZZY] Symptom: LOW_VALUE_BOTTLENECK
+2026-05-08 22:26:35,236 [FUZZY] Inputs: force=30.0, torque=20.0, p_fail=50.0, context=0.0
+2026-05-08 22:26:35,236 [FUZZY] Score: 40.00
+2026-05-08 22:26:35,236 [FUZZY] Decision: bypass (confidence=100.0%)
+2026-05-08 22:26:35,237 [ACTION] bypass: success=True, notes=Component C014 bypassed (skipped).
+2026-05-08 22:26:35,237 Adaptive scheduler finished. Actions taken: 1
+2026-05-08 22:26:35,237 EXECUTION SUMMARY
+2026-05-08 22:26:35,237 Status: SUCCESS
+2026-05-08 22:26:35,237 Target components:
+2026-05-08 22:26:35,237 [OK] C028 - Successfully disassembled
+2026-05-08 22:26:35,237 Execution metrics:
+2026-05-08 22:26:35,237 Targets achieved: 1/1 (100.0%)
+2026-05-08 22:26:35,237 Failures handled: 1
+2026-05-08 22:26:35,237 Actions taken: 1
+2026-05-08 22:26:35,237 Components done: 12/13
+2026-05-08 22:26:35,237 Algorithm runtime: 0.04s
+2026-05-08 22:26:35,237 ECONOMIC ANALYSIS:
+2026-05-08 22:26:35,237 Nominal profit (planned): 252.00 units
+2026-05-08 22:26:35,237 Adaptive profit (recovered): 228.00 units
+2026-05-08 22:26:35,237 Profit loss: 24.00 units (9.5%)
+2026-05-08 22:26:35,237 Value skipped (bypassed): 28.00 units
+2026-05-08 22:26:35,237 TIME ANALYSIS:
+2026-05-08 22:26:35,237 Nominal time (planned): 5min 29s
+2026-05-08 22:26:35,237 Adaptive time (actual): 5min 17s
+2026-05-08 22:26:35,237 Time saved: 12s (3.6%)
+2026-05-08 22:26:35,237 Time saved (skipped): 12s
+2026-05-08 22:26:35,237 GLOBAL SCORE :
+2026-05-08 22:26:35,237 Nominal score: 82.90
+2026-05-08 22:26:35,237 Adaptive score: 74.94
+2026-05-08 22:26:35,237 Score loss: 7.96 (9.6%)
+2026-05-08 22:26:35,237 Actions breakdown:
+2026-05-08 22:26:35,237 [OK] C014     LOW_VALUE_BOTTLENECK -> bypass      
+2026-05-08 22:26:35,237 Detailed logs: results/save/test_failures/scholl_warnecke_n=58/simple
+2026-05-08 22:26:35,238 Pipeline finished successfully

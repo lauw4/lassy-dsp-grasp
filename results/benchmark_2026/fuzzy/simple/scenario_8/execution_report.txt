@@ -1,0 +1,120 @@
+------
+ADAPTIVE DSP EXECUTION REPORT
+------
+
+INITIAL PLANNED SEQUENCE:
+----------------------------------------
+C010, C009, C033, C014, C032, C048, C068, C040
+Target = C009, C040, C068
+
+------
+EXECUTION WITH ADAPTATION:
+------
+
+C010 - OK
+C009 - OK
+------
+FAILURE ON C033
+------
+
+Symptom: LOW_VALUE_BOTTLENECK
+
+Sensor values:
+  - Force:  30.0
+  - Torque: 20.0
+  - P_fail: 60.0%
+
+Fuzzy decision:
+  - Action: bypass
+  - Score:  40.00
+  - Confidence: 100.0%
+
+Result: Component C033 bypassed (skipped).
+C014 - OK
+C032 - OK
+C048 - OK
+C068 - OK
+C040 - OK
+------
+EXECUTION METRICS:
+------
+
+Targets achieved: 3/3 (100.0%)
+Failures handled: 1
+Actions taken:    1
+Done:             7/8
+Destroyed:        0
+Skipped:          1
+------
+FINAL STATE
+------
+
+Done:      ['C009', 'C010', 'C014', 'C032', 'C040', 'C048', 'C068']
+Destroyed: []
+Locked:    []
+Skipped:   ['C033']
+------
+ECONOMIC ANALYSIS
+------
+
+Nominal profit (planned):    158.00 units
+Adaptive profit (recovered): 142.00 units
+Profit loss:                 16.00 units (10.1%)
+Value skipped (bypassed):    25.00 units
+
+Component breakdown:
+  C010: profit=29, cost=5 -> net=24.00
+  C009: profit=23, cost=8 -> net=15.00
+  C033: profit=25, cost=9 -> SKIPPED (not recovered)
+  C014: profit=22, cost=2 -> net=20.00
+  C032: profit=20, cost=9 -> net=11.00
+  C048: profit=28, cost=3 -> net=25.00
+  C068: profit=25, cost=4 -> net=21.00
+  C040: profit=28, cost=2 -> net=26.00
+------
+TIME ANALYSIS
+------
+
+Nominal time (planned):      17min 18s
+Adaptive time (actual):      15min 18s
+Time saved:                  2min 0s (11.6%)
+Time saved (skipped):        2min 0s
+
+Component time breakdown:
+  C010: 52s
+  C009: 115s
+  C033: 120s -> SKIPPED (saved)
+  C014: 266s
+  C032: 147s
+  C048: 27s
+  C068: 153s
+  C040: 158s
+------
+GLOBAL SCORE
+------
+
+Nominal score:               49.21
+Adaptive score:              44.27
+Score loss:                  4.93 (10.0%)
+------
+GLOSSARY
+------
+
+p_fail:
+  Estimated failure risk. Higher = more likely to fail.
+
+Fuzzy decision:
+  AI-based analysis choosing best recovery action.
+  Score (0-100) and confidence (%) indicate decision quality.
+
+Actions:
+  - change_tool: Switch to alternative tool
+  - bypass: Skip inaccessible component
+  - destroy: Remove component by destruction
+  - replan: Recalculate sequence after changes
+
+States:
+  - done: Successfully removed components
+  - destroyed: Components removed by destruction
+  - locked: Components physically blocked (not removable)
+  - skipped: Components bypassed (not on current path)

@@ -1,0 +1,10 @@
+--- Pipeline run 2026-05-08 22:27:06.315145 ---
+Instance: unknown
+Initial solution: ['C000', 'C001', 'C004', 'C006', 'C008', 'C003', 'C005', 'C007', 'C009', 'C002', 'C010']
+Final state:
+  - Locked: set()
+  - Destroyed: {'C004', 'C007'}
+  - Done: {'C000', 'C006', 'C009', 'C002', 'C001', 'C005', 'C010', 'C008', 'C003'}
+  - Skipped: set()
+  - Notes: ['Bypass impossible for C004: no alternative path', 'No alternative tool for C004']
+Actions taken: [{'comp_id': 'C004', 'symptom': 'ACCESS_BLOCKED', 'action': 'bypass', 'success': False, 'notes': 'No alternative path in graph.'}, {'comp_id': 'C004', 'symptom': 'ACCESS_BLOCKED', 'action': 'bypass→destroy', 'success': True, 'notes': 'Fallback succeeded'}, {'comp_id': 'C007', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy', 'success': True, 'notes': 'Destruction allowed (cutoff percentile 20th).'}]

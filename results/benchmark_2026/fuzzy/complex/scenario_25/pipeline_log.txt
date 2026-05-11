@@ -1,0 +1,10 @@
+--- Pipeline run 2026-05-08 22:27:08.233359 ---
+Instance: unknown
+Initial solution: ['C000', 'C002', 'C007', 'C006', 'C004', 'C003', 'C008', 'C009', 'C015', 'C001', 'C017', 'C016', 'C005', 'C012', 'C018', 'C014', 'C010', 'C013', 'C023', 'C029', 'C028', 'C025', 'C031', 'C011', 'C026', 'C024', 'C019', 'C027', 'C046', 'C035', 'C049', 'C032', 'C043', 'C042', 'C021', 'C041', 'C044', 'C030', 'C045', 'C036', 'C022', 'C065', 'C068', 'C047', 'C037', 'C074', 'C033', 'C067', 'C034', 'C060', 'C064', 'C066', 'C062', 'C053', 'C056', 'C061', 'C069', 'C055', 'C057', 'C072', 'C054', 'C051', 'C058', 'C063', 'C071', 'C020', 'C059', 'C039', 'C038', 'C048', 'C040', 'C073', 'C050', 'C070', 'C052', 'C075', 'C076', 'C077', 'C079', 'C078', 'C080', 'C081', 'C082', 'C084', 'C083', 'C085', 'C086']
+Final state:
+  - Locked: set()
+  - Destroyed: {'C025'}
+  - Done: {'C032', 'C049', 'C077', 'C026', 'C056', 'C063', 'C011', 'C030', 'C024', 'C022', 'C075', 'C046', 'C051', 'C044', 'C015', 'C019', 'C083', 'C000', 'C047', 'C060', 'C073', 'C013', 'C020', 'C012', 'C038', 'C082', 'C068', 'C074', 'C017', 'C034', 'C033', 'C003', 'C085', 'C005', 'C070', 'C076', 'C069', 'C080', 'C062', 'C036', 'C002', 'C067', 'C050', 'C071', 'C028', 'C035', 'C048', 'C031', 'C016', 'C004', 'C001', 'C072', 'C018', 'C061', 'C058', 'C008', 'C043', 'C066', 'C086', 'C042', 'C057', 'C045', 'C059', 'C027', 'C064', 'C010', 'C084', 'C007', 'C014', 'C041', 'C054', 'C081', 'C021', 'C039', 'C029', 'C079', 'C052', 'C055', 'C009', 'C053', 'C023', 'C065', 'C037', 'C078', 'C006'}
+  - Skipped: {'C040'}
+  - Notes: []
+Actions taken: [{'comp_id': 'C025', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy', 'success': True, 'notes': 'Destruction allowed (cutoff percentile 20th).'}, {'comp_id': 'C022', 'symptom': 'LOW_VALUE_BOTTLENECK', 'action': 'change_tool', 'success': True, 'notes': 'Alternative tool suggested.'}, {'comp_id': 'C040', 'symptom': 'LOW_VALUE_BOTTLENECK', 'action': 'bypass', 'success': True, 'notes': 'Component C040 bypassed (skipped).'}]

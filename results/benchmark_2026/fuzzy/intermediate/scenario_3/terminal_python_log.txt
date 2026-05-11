@@ -1,0 +1,65 @@
+2026-05-08 22:26:37,210 DSP ADAPTIVE PIPELINE - SALBP_INSTANCE_N=1000_1_CUT124
+2026-05-08 22:26:37,210 Loaded instance: salbp_instance_n=1000_1_cut124
+2026-05-08 22:26:37,210 Loaded failures: 2
+2026-05-08 22:26:37,210 [1/4] Loading instance and solving DSP...
+2026-05-08 22:26:37,353 Nodes: 124, Edges: 109, Targets: 1, Solution: 16 operations
+2026-05-08 22:26:37,353 Target(s) to achieve: ['C100']
+2026-05-08 22:26:37,353 Starting disassembly sequence (16 operations)...
+2026-05-08 22:26:37,353 [ 1/16] Disassembling C018... [OK]
+2026-05-08 22:26:37,353 [ 2/16] Disassembling C010... [OK]
+2026-05-08 22:26:37,353 [ 3/16] Disassembling C020... [OK]
+2026-05-08 22:26:37,353 [ 4/16] Disassembling C017... [OK]
+2026-05-08 22:26:37,353 [ 5/16] Disassembling C035... [OK]
+2026-05-08 22:26:37,353 [ 6/16] Disassembling C027... [OK]
+2026-05-08 22:26:37,353 [ 7/16] Disassembling C042... [OK]
+2026-05-08 22:26:37,353 [ 8/16] Disassembling C004... [OK]
+2026-05-08 22:26:37,353 [ 9/16] Disassembling C016... [OK]
+2026-05-08 22:26:37,353 [10/16] Disassembling C005... [OK]
+2026-05-08 22:26:37,353 [11/16] Disassembling C024... [OK]
+2026-05-08 22:26:37,353 [12/16] Disassembling C025... [OK]
+2026-05-08 22:26:37,353 [13/16] Disassembling C026... [OK]
+2026-05-08 22:26:37,353 [14/16] Disassembling C062... [OK]
+2026-05-08 22:26:37,353 [15/16] Disassembling C077... [OK]
+2026-05-08 22:26:37,353 [16/16] Disassembling C100... [OK]
+2026-05-08 22:26:37,353 [2/4] Failure scenario loaded: 2 failure(s)
+2026-05-08 22:26:37,353 [3/4] Executing adaptive scheduler...
+2026-05-08 22:26:37,370 [FUZZY] Symptom: LOW_VALUE_BOTTLENECK
+2026-05-08 22:26:37,370 [FUZZY] Inputs: force=30.0, torque=20.0, p_fail=50.0, context=0.0
+2026-05-08 22:26:37,370 [FUZZY] Score: 40.00
+2026-05-08 22:26:37,370 [FUZZY] Decision: bypass (confidence=100.0%)
+2026-05-08 22:26:37,370 [ACTION] bypass: success=True, notes=Component C042 bypassed (skipped).
+2026-05-08 22:26:37,381 [FUZZY] Symptom: OVER_TORQUE_NO_ADVANCE
+2026-05-08 22:26:37,381 [FUZZY] Inputs: force=70.0, torque=80.0, p_fail=65.0, context=100.0
+2026-05-08 22:26:37,381 [FUZZY] Score: 42.04
+2026-05-08 22:26:37,381 [FUZZY] Decision: bypass (confidence=89.8%)
+2026-05-08 22:26:37,381 [ACTION] bypass: success=True, notes=Component C077 bypassed (skipped).
+2026-05-08 22:26:37,381 Adaptive scheduler finished. Actions taken: 2
+2026-05-08 22:26:37,381 EXECUTION SUMMARY
+2026-05-08 22:26:37,381 Status: SUCCESS
+2026-05-08 22:26:37,381 Target components:
+2026-05-08 22:26:37,381 [OK] C100 - Successfully disassembled
+2026-05-08 22:26:37,381 Execution metrics:
+2026-05-08 22:26:37,381 Targets achieved: 1/1 (100.0%)
+2026-05-08 22:26:37,381 Failures handled: 2
+2026-05-08 22:26:37,381 Actions taken: 2
+2026-05-08 22:26:37,381 Components done: 14/16
+2026-05-08 22:26:37,381 Algorithm runtime: 0.17s
+2026-05-08 22:26:37,381 ECONOMIC ANALYSIS:
+2026-05-08 22:26:37,381 Nominal profit (planned): 305.00 units
+2026-05-08 22:26:37,381 Adaptive profit (recovered): 271.00 units
+2026-05-08 22:26:37,381 Profit loss: 34.00 units (11.1%)
+2026-05-08 22:26:37,381 Value skipped (bypassed): 49.00 units
+2026-05-08 22:26:37,381 TIME ANALYSIS:
+2026-05-08 22:26:37,381 Nominal time (planned): 39min 40s
+2026-05-08 22:26:37,381 Adaptive time (actual): 34min 34s
+2026-05-08 22:26:37,381 Time saved: 5min 6s (12.9%)
+2026-05-08 22:26:37,381 Time saved (skipped): 5min 6s
+2026-05-08 22:26:37,381 GLOBAL SCORE :
+2026-05-08 22:26:37,381 Nominal score: 93.73
+2026-05-08 22:26:37,381 Adaptive score: 83.42
+2026-05-08 22:26:37,381 Score loss: 10.31 (11.0%)
+2026-05-08 22:26:37,381 Actions breakdown:
+2026-05-08 22:26:37,381 [OK] C042     LOW_VALUE_BOTTLENECK -> bypass      
+2026-05-08 22:26:37,381 [OK] C077     OVER_TORQUE_NO_ADVANCE -> bypass      
+2026-05-08 22:26:37,381 Detailed logs: results/save/test_failures/salbp_instance_n=1000_1_cut124/intermediate
+2026-05-08 22:26:37,382 Pipeline finished successfully

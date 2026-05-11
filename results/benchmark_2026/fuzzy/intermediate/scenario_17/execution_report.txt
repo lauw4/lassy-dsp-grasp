@@ -1,0 +1,199 @@
+------
+ADAPTIVE DSP EXECUTION REPORT
+------
+
+INITIAL PLANNED SEQUENCE:
+----------------------------------------
+C016, C000, C001, C002, C004, C003, C005, C007, C006, C011, C009, C017, C013, C018, C014, C019, C015, C020, C024, C025, C008, C021, C022, C023, C026, C012, C010, C027, C028
+Target = C028
+
+------
+EXECUTION WITH ADAPTATION:
+------
+
+C016 - OK
+C000 - OK
+C001 - OK
+C002 - OK
+C004 - OK
+C003 - OK
+------
+FAILURE ON C005
+------
+
+Symptom: OVER_TORQUE_NO_ADVANCE
+
+Sensor values:
+  - Force:  70.0
+  - Torque: 80.0
+  - P_fail: 85.0%
+
+Fuzzy decision:
+  - Action: destroy->bypass
+  - Score:  71.71
+  - Confidence: 59.1%
+
+Result: Fallback succeeded
+C007 - OK
+C006 - OK
+C011 - OK
+C009 - OK
+C017 - OK
+C013 - OK
+C018 - OK
+C014 - OK
+C019 - OK
+C015 - OK
+C020 - OK
+C024 - OK
+C025 - OK
+C008 - OK
+C021 - OK
+C022 - OK
+C023 - OK
+C026 - OK
+C012 - OK
+------
+FAILURE ON C010
+------
+
+Symptom: ACCESS_BLOCKED
+
+Sensor values:
+  - Force:  60.0
+  - Torque: 40.0
+  - P_fail: 50.0%
+
+Fuzzy decision:
+  - Action: change_tool
+  - Score:  20.00
+  - Confidence: 100.0%
+
+Result: Alternative tool suggested.
+C027 - OK
+C028 - OK
+------
+EXECUTION METRICS:
+------
+
+Targets achieved: 1/1 (100.0%)
+Failures handled: 2
+Actions taken:    3
+Done:             28/29
+Destroyed:        0
+Skipped:          1
+------
+FINAL STATE
+------
+
+Done:      ['C000', 'C001', 'C002', 'C003', 'C004', 'C006', 'C007', 'C008', 'C009', 'C010', 'C011', 'C012', 'C013', 'C014', 'C015', 'C016', 'C017', 'C018', 'C019', 'C020', 'C021', 'C022', 'C023', 'C024', 'C025', 'C026', 'C027', 'C028']
+Destroyed: []
+Locked:    []
+Skipped:   ['C005']
+------
+ECONOMIC ANALYSIS
+------
+
+Nominal profit (planned):    523.00 units
+Adaptive profit (recovered): 497.00 units
+Profit loss:                 26.00 units (5.0%)
+Value skipped (bypassed):    27.00 units
+
+Component breakdown:
+  C016: profit=11, cost=8 -> net=3.00
+  C000: profit=23, cost=10 -> net=13.00
+  C001: profit=19, cost=3 -> net=16.00
+  C002: profit=21, cost=9 -> net=12.00
+  C004: profit=25, cost=3 -> net=22.00
+  C003: profit=28, cost=6 -> net=22.00
+  C005: profit=27, cost=1 -> SKIPPED (not recovered)
+  C007: profit=28, cost=9 -> net=19.00
+  C006: profit=13, cost=7 -> net=6.00
+  C011: profit=26, cost=4 -> net=22.00
+  C009: profit=25, cost=8 -> net=17.00
+  C017: profit=11, cost=7 -> net=4.00
+  C013: profit=7, cost=5 -> net=2.00
+  C018: profit=29, cost=4 -> net=25.00
+  C014: profit=24, cost=6 -> net=18.00
+  C019: profit=21, cost=5 -> net=16.00
+  C015: profit=25, cost=6 -> net=19.00
+  C020: profit=29, cost=5 -> net=24.00
+  C024: profit=29, cost=2 -> net=27.00
+  C025: profit=21, cost=2 -> net=19.00
+  C008: profit=28, cost=3 -> net=25.00
+  C021: profit=29, cost=4 -> net=25.00
+  C022: profit=23, cost=5 -> net=18.00
+  C023: profit=24, cost=2 -> net=22.00
+  C026: profit=26, cost=1 -> net=25.00
+  C012: profit=23, cost=4 -> net=19.00
+  C010: profit=29, cost=10 -> net=19.00
+  C027: profit=30, cost=5 -> net=25.00
+  C028: profit=15, cost=2 -> net=13.00
+------
+TIME ANALYSIS
+------
+
+Nominal time (planned):      7min 8s
+Adaptive time (actual):      6min 54s
+Time saved:                  14s (3.3%)
+Time saved (skipped):        14s
+
+Component time breakdown:
+  C016: 2s
+  C000: 29s
+  C001: 3s
+  C002: 5s
+  C004: 6s
+  C003: 22s
+  C005: 14s -> SKIPPED (saved)
+  C007: 5s
+  C006: 2s
+  C011: 30s
+  C009: 30s
+  C017: 2s
+  C013: 2s
+  C018: 19s
+  C014: 19s
+  C019: 29s
+  C015: 29s
+  C020: 6s
+  C024: 5s
+  C025: 5s
+  C008: 22s
+  C021: 10s
+  C022: 16s
+  C023: 23s
+  C026: 5s
+  C012: 23s
+  C010: 23s
+  C027: 40s
+  C028: 2s
+------
+GLOBAL SCORE
+------
+
+Nominal score:               172.91
+Adaptive score:              164.29
+Score loss:                  8.62 (5.0%)
+------
+GLOSSARY
+------
+
+p_fail:
+  Estimated failure risk. Higher = more likely to fail.
+
+Fuzzy decision:
+  AI-based analysis choosing best recovery action.
+  Score (0-100) and confidence (%) indicate decision quality.
+
+Actions:
+  - change_tool: Switch to alternative tool
+  - bypass: Skip inaccessible component
+  - destroy: Remove component by destruction
+  - replan: Recalculate sequence after changes
+
+States:
+  - done: Successfully removed components
+  - destroyed: Components removed by destruction
+  - locked: Components physically blocked (not removable)
+  - skipped: Components bypassed (not on current path)

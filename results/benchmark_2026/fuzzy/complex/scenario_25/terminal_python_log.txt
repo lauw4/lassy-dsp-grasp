@@ -1,0 +1,151 @@
+2026-05-08 22:27:07,220 DSP ADAPTIVE PIPELINE - SCHOLL_MUKHERJE_N=94
+2026-05-08 22:27:07,220 Loaded instance: scholl_mukherje_n=94
+2026-05-08 22:27:07,221 Loaded failures: 3
+2026-05-08 22:27:07,221 [1/4] Loading instance and solving DSP...
+2026-05-08 22:27:07,876 Nodes: 94, Edges: 181, Targets: 1, Solution: 87 operations
+2026-05-08 22:27:07,876 Target(s) to achieve: ['C086']
+2026-05-08 22:27:07,876 Starting disassembly sequence (87 operations)...
+2026-05-08 22:27:07,876 [ 1/87] Disassembling C000... [OK]
+2026-05-08 22:27:07,876 [ 2/87] Disassembling C002... [OK]
+2026-05-08 22:27:07,876 [ 3/87] Disassembling C007... [OK]
+2026-05-08 22:27:07,876 [ 4/87] Disassembling C006... [OK]
+2026-05-08 22:27:07,876 [ 5/87] Disassembling C004... [OK]
+2026-05-08 22:27:07,876 [ 6/87] Disassembling C003... [OK]
+2026-05-08 22:27:07,876 [ 7/87] Disassembling C008... [OK]
+2026-05-08 22:27:07,876 [ 8/87] Disassembling C009... [OK]
+2026-05-08 22:27:07,876 [ 9/87] Disassembling C015... [OK]
+2026-05-08 22:27:07,876 [10/87] Disassembling C001... [OK]
+2026-05-08 22:27:07,876 [11/87] Disassembling C017... [OK]
+2026-05-08 22:27:07,876 [12/87] Disassembling C016... [OK]
+2026-05-08 22:27:07,876 [13/87] Disassembling C005... [OK]
+2026-05-08 22:27:07,876 [14/87] Disassembling C012... [OK]
+2026-05-08 22:27:07,876 [15/87] Disassembling C018... [OK]
+2026-05-08 22:27:07,876 [16/87] Disassembling C014... [OK]
+2026-05-08 22:27:07,876 [17/87] Disassembling C010... [OK]
+2026-05-08 22:27:07,876 [18/87] Disassembling C013... [OK]
+2026-05-08 22:27:07,876 [19/87] Disassembling C023... [OK]
+2026-05-08 22:27:07,876 [20/87] Disassembling C029... [OK]
+2026-05-08 22:27:07,876 [21/87] Disassembling C028... [OK]
+2026-05-08 22:27:07,876 [22/87] Disassembling C025... [OK]
+2026-05-08 22:27:07,876 [23/87] Disassembling C031... [OK]
+2026-05-08 22:27:07,876 [24/87] Disassembling C011... [OK]
+2026-05-08 22:27:07,876 [25/87] Disassembling C026... [OK]
+2026-05-08 22:27:07,876 [26/87] Disassembling C024... [OK]
+2026-05-08 22:27:07,876 [27/87] Disassembling C019... [OK]
+2026-05-08 22:27:07,876 [28/87] Disassembling C027... [OK]
+2026-05-08 22:27:07,876 [29/87] Disassembling C046... [OK]
+2026-05-08 22:27:07,876 [30/87] Disassembling C035... [OK]
+2026-05-08 22:27:07,876 [31/87] Disassembling C049... [OK]
+2026-05-08 22:27:07,876 [32/87] Disassembling C032... [OK]
+2026-05-08 22:27:07,876 [33/87] Disassembling C043... [OK]
+2026-05-08 22:27:07,876 [34/87] Disassembling C042... [OK]
+2026-05-08 22:27:07,876 [35/87] Disassembling C021... [OK]
+2026-05-08 22:27:07,876 [36/87] Disassembling C041... [OK]
+2026-05-08 22:27:07,876 [37/87] Disassembling C044... [OK]
+2026-05-08 22:27:07,876 [38/87] Disassembling C030... [OK]
+2026-05-08 22:27:07,876 [39/87] Disassembling C045... [OK]
+2026-05-08 22:27:07,876 [40/87] Disassembling C036... [OK]
+2026-05-08 22:27:07,876 [41/87] Disassembling C022... [OK]
+2026-05-08 22:27:07,876 [42/87] Disassembling C065... [OK]
+2026-05-08 22:27:07,876 [43/87] Disassembling C068... [OK]
+2026-05-08 22:27:07,876 [44/87] Disassembling C047... [OK]
+2026-05-08 22:27:07,876 [45/87] Disassembling C037... [OK]
+2026-05-08 22:27:07,876 [46/87] Disassembling C074... [OK]
+2026-05-08 22:27:07,876 [47/87] Disassembling C033... [OK]
+2026-05-08 22:27:07,876 [48/87] Disassembling C067... [OK]
+2026-05-08 22:27:07,876 [49/87] Disassembling C034... [OK]
+2026-05-08 22:27:07,876 [50/87] Disassembling C060... [OK]
+2026-05-08 22:27:07,876 [51/87] Disassembling C064... [OK]
+2026-05-08 22:27:07,876 [52/87] Disassembling C066... [OK]
+2026-05-08 22:27:07,876 [53/87] Disassembling C062... [OK]
+2026-05-08 22:27:07,876 [54/87] Disassembling C053... [OK]
+2026-05-08 22:27:07,876 [55/87] Disassembling C056... [OK]
+2026-05-08 22:27:07,876 [56/87] Disassembling C061... [OK]
+2026-05-08 22:27:07,876 [57/87] Disassembling C069... [OK]
+2026-05-08 22:27:07,876 [58/87] Disassembling C055... [OK]
+2026-05-08 22:27:07,876 [59/87] Disassembling C057... [OK]
+2026-05-08 22:27:07,876 [60/87] Disassembling C072... [OK]
+2026-05-08 22:27:07,876 [61/87] Disassembling C054... [OK]
+2026-05-08 22:27:07,876 [62/87] Disassembling C051... [OK]
+2026-05-08 22:27:07,876 [63/87] Disassembling C058... [OK]
+2026-05-08 22:27:07,876 [64/87] Disassembling C063... [OK]
+2026-05-08 22:27:07,876 [65/87] Disassembling C071... [OK]
+2026-05-08 22:27:07,876 [66/87] Disassembling C020... [OK]
+2026-05-08 22:27:07,876 [67/87] Disassembling C059... [OK]
+2026-05-08 22:27:07,876 [68/87] Disassembling C039... [OK]
+2026-05-08 22:27:07,876 [69/87] Disassembling C038... [OK]
+2026-05-08 22:27:07,876 [70/87] Disassembling C048... [OK]
+2026-05-08 22:27:07,876 [71/87] Disassembling C040... [OK]
+2026-05-08 22:27:07,876 [72/87] Disassembling C073... [OK]
+2026-05-08 22:27:07,876 [73/87] Disassembling C050... [OK]
+2026-05-08 22:27:07,876 [74/87] Disassembling C070... [OK]
+2026-05-08 22:27:07,876 [75/87] Disassembling C052... [OK]
+2026-05-08 22:27:07,877 [76/87] Disassembling C075... [OK]
+2026-05-08 22:27:07,877 [77/87] Disassembling C076... [OK]
+2026-05-08 22:27:07,877 [78/87] Disassembling C077... [OK]
+2026-05-08 22:27:07,877 [79/87] Disassembling C079... [OK]
+2026-05-08 22:27:07,877 [80/87] Disassembling C078... [OK]
+2026-05-08 22:27:07,877 [81/87] Disassembling C080... [OK]
+2026-05-08 22:27:07,877 [82/87] Disassembling C081... [OK]
+2026-05-08 22:27:07,877 [83/87] Disassembling C082... [OK]
+2026-05-08 22:27:07,877 [84/87] Disassembling C084... [OK]
+2026-05-08 22:27:07,877 [85/87] Disassembling C083... [OK]
+2026-05-08 22:27:07,877 [86/87] Disassembling C085... [OK]
+2026-05-08 22:27:07,877 [87/87] Disassembling C086... [OK]
+2026-05-08 22:27:07,877 [2/4] Failure scenario loaded: 3 failure(s)
+2026-05-08 22:27:07,877 [3/4] Executing adaptive scheduler...
+2026-05-08 22:27:07,894 [FUZZY] Symptom: OVER_TORQUE_NO_ADVANCE
+2026-05-08 22:27:07,894 [FUZZY] Inputs: force=70.0, torque=80.0, p_fail=75.0, context=0.0
+2026-05-08 22:27:07,894 [FUZZY] Score: 70.67
+2026-05-08 22:27:07,894 [FUZZY] Decision: destroy (confidence=63.7%)
+2026-05-08 22:27:07,894 [ACTION] destroy: success=True, notes=Destruction allowed (cutoff percentile 20th).
+2026-05-08 22:27:07,894 [REPLAN] States before replan:
+2026-05-08 22:27:07,894 [REPLAN]   done=['C000', 'C001', 'C002', 'C003', 'C004', 'C005', 'C006', 'C007', 'C008', 'C009', 'C010', 'C012', 'C013', 'C014', 'C015', 'C016', 'C017', 'C018', 'C023', 'C028', 'C029']
+2026-05-08 22:27:07,894 [REPLAN]   destroyed=['C025']
+2026-05-08 22:27:07,894 [REPLAN]   locked=[]
+2026-05-08 22:27:07,894 [REPLAN]   skipped=[]
+2026-05-08 22:27:08,208 [REPLAN] New sequence: ['C024', 'C031', 'C064', 'C026', 'C043', 'C027', 'C055', 'C032', 'C058', 'C049', 'C035', 'C021', 'C045', 'C057', 'C044', 'C022', 'C036', 'C020', 'C038', 'C059', 'C063', 'C067', 'C011', 'C060', 'C048', 'C066', 'C053', 'C039', 'C033', 'C037', 'C056', 'C061', 'C065', 'C047', 'C071', 'C054', 'C030', 'C041', 'C019', 'C073', 'C069', 'C068', 'C034', 'C046', 'C072', 'C051', 'C074', 'C062', 'C040', 'C070', 'C052', 'C075', 'C042', 'C076', 'C050', 'C077', 'C079', 'C078', 'C080', 'C081', 'C082', 'C084', 'C083', 'C085', 'C086']
+2026-05-08 22:27:08,218 [FUZZY] Symptom: LOW_VALUE_BOTTLENECK
+2026-05-08 22:27:08,218 [FUZZY] Inputs: force=30.0, torque=20.0, p_fail=60.0, context=100.0
+2026-05-08 22:27:08,218 [FUZZY] Score: 20.00
+2026-05-08 22:27:08,218 [FUZZY] Decision: change_tool (confidence=100.0%)
+2026-05-08 22:27:08,218 [ACTION] change_tool: success=True, notes=Alternative tool suggested.
+2026-05-08 22:27:08,232 [FUZZY] Symptom: LOW_VALUE_BOTTLENECK
+2026-05-08 22:27:08,232 [FUZZY] Inputs: force=30.0, torque=20.0, p_fail=40.0, context=0.0
+2026-05-08 22:27:08,232 [FUZZY] Score: 40.00
+2026-05-08 22:27:08,232 [FUZZY] Decision: bypass (confidence=100.0%)
+2026-05-08 22:27:08,232 [ACTION] bypass: success=True, notes=Component C040 bypassed (skipped).
+2026-05-08 22:27:08,232 Adaptive scheduler finished. Actions taken: 3
+2026-05-08 22:27:08,232 EXECUTION SUMMARY
+2026-05-08 22:27:08,232 Status: SUCCESS
+2026-05-08 22:27:08,232 Target components:
+2026-05-08 22:27:08,232 [OK] C086 - Successfully disassembled
+2026-05-08 22:27:08,232 Execution metrics:
+2026-05-08 22:27:08,232 Targets achieved: 1/1 (100.0%)
+2026-05-08 22:27:08,232 Failures handled: 3
+2026-05-08 22:27:08,232 Actions taken: 3
+2026-05-08 22:27:08,232 Components done: 85/87
+2026-05-08 22:27:08,232 Destroyed: 1 component(s)
+2026-05-08 22:27:08,232 Algorithm runtime: 1.01s
+2026-05-08 22:27:08,232 ECONOMIC ANALYSIS:
+2026-05-08 22:27:08,232 Nominal profit (planned): 1795.00 units
+2026-05-08 22:27:08,232 Adaptive profit (recovered): 1744.00 units
+2026-05-08 22:27:08,232 Profit loss: 51.00 units (2.8%)
+2026-05-08 22:27:08,232 Value lost (destroyed): 26.00 units
+2026-05-08 22:27:08,232 Value skipped (bypassed): 29.00 units
+2026-05-08 22:27:08,232 TIME ANALYSIS:
+2026-05-08 22:27:08,232 Nominal time (planned): 62min 4s
+2026-05-08 22:27:08,232 Adaptive time (actual): 61min 34s
+2026-05-08 22:27:08,232 Time saved: 30s (0.8%)
+2026-05-08 22:27:08,232 Time on destroyed (lost): 27s
+2026-05-08 22:27:08,232 Time saved (skipped): 30s
+2026-05-08 22:27:08,232 GLOBAL SCORE :
+2026-05-08 22:27:08,232 Nominal score: 585.92
+2026-05-08 22:27:08,232 Adaptive score: 571.44
+2026-05-08 22:27:08,232 Score loss: 14.48 (2.5%)
+2026-05-08 22:27:08,232 Actions breakdown:
+2026-05-08 22:27:08,232 [OK] C025     OVER_TORQUE_NO_ADVANCE -> destroy     
+2026-05-08 22:27:08,232 [OK] C022     LOW_VALUE_BOTTLENECK -> change_tool 
+2026-05-08 22:27:08,232 [OK] C040     LOW_VALUE_BOTTLENECK -> bypass      
+2026-05-08 22:27:08,232 Detailed logs: results/save/test_failures/scholl_mukherje_n=94/complex
+2026-05-08 22:27:08,233 Pipeline finished successfully

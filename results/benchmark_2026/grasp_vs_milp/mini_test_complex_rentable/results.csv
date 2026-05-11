@@ -1,0 +1,2 @@
+instance,n,lambda,grasp_best,grasp_avg,grasp_std,grasp_time_s,cplex_obj,cplex_status,cplex_time_s,cplex_intgap_pct,gap_grasp_vs_cplex,cpsat_obj,cpsat_bound,cpsat_status,cpsat_time_s,cpsat_intgap_pct,gap_grasp_vs_cpsat,milp_obj,milp_status,milp_time_s,gap_pct
+mini_test_complex_rentable,17,0.03109,51.9199,51.9199,0.0,0.0,52.5728,Optimal,0.1,0.11,1.24,52.5581,52.5581,OPTIMAL,0.01,0.0,1.21,52.5728,Optimal,0.1,1.24

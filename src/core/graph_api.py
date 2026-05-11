@@ -1,3 +1,8 @@
+import logging
+
+logger = logging.getLogger(__name__)
+
+
 class TargetBlockedException(Exception):
     """Exception raised when target is physically blocked by a locked component."""
     pass
@@ -61,22 +66,22 @@ def replan_with_overlay(state: dict[str, object]) -> list[str]:
             blocked_cascade.update(newly_blocked)
             remaining_nodes -= newly_blocked
             changed = True
-            print(f"[REPLAN] Cascade blocking: {newly_blocked}")
-    
-    print(f"[REPLAN] Initial locked: {locked}")
-    print(f"[REPLAN] Blocked after propagation: {blocked_cascade}")
+            logger.debug("[REPLAN] Cascade blocking: %s", newly_blocked)
+
+    logger.debug("[REPLAN] Initial locked: %s", locked)
+    logger.debug("[REPLAN] Blocked after propagation: %s", blocked_cascade)
 
     # Exclude locked nodes and their blocked descendants
     needed_nodes = [n for n in G.nodes if n not in blocked_cascade]
 
-    # Debug info (commented for production)
+    # Optional debug trace — uncomment any line below to inspect replan state.
+    # All locals (G, done, destroyed, locked, skipped, needed_nodes, forced_target, seqs)
+    # are in scope at this point or later in the function.
     # print("[REPLAN] Remaining nodes:", list(G.nodes))
-    # print("[REPLAN] Destroyed:", destroyed)
-    # print("[REPLAN] Locked:", locked)
-    # print("[REPLAN] Skipped:", skipped)
-    # print("[replan_with_overlay][DEBUG] Done nodes:", done)
-    # print("[replan_with_overlay][DEBUG] needed_nodes:", needed_nodes)
-    # print("[replan_with_overlay][DEBUG] Edges:", list(G.edges))
+    # print("[REPLAN] Destroyed / Locked / Skipped / Done:", destroyed, locked, skipped, done)
+    # print("[REPLAN] needed_nodes / Edges:", needed_nodes, list(G.edges))
+    # print(f"[REPLAN] User target forced for selective replanning: {forced_target}")
+    # print(f"[REPLAN] run_grasp result: {seqs}")
 
     # Strict determination of user target (robust DSP)
     user_targets = state.get('targets', None)
@@ -99,10 +104,8 @@ def replan_with_overlay(state: dict[str, object]) -> list[str]:
         raise TargetBlockedException(f"Target {forced_target} physically blocked by {locked}")
     
     # Force user target as sole goal, even if not a leaf
-    # print(f"[replan_with_overlay][DEBUG] User target forced for selective replanning: {forced_target}")
     try:
         seqs = constructive.run_grasp(G, algorithm='vnd', mode='selectif', target_nodes=[forced_target], runs=1, needed_nodes=needed_nodes)
-        # print(f"[replan_with_overlay][DEBUG] run_grasp result: {seqs}")
         # run_grasp returns (sequence, score) or [(sequence, score), ...]
         # We want to extract the sequence (list of ids)
         if isinstance(seqs, tuple) and len(seqs) == 2 and isinstance(seqs[0], list):

@@ -1,0 +1,60 @@
+2026-05-08 22:27:09,775 DSP ADAPTIVE PIPELINE - SCHOLL_WARNECKE_N=58
+2026-05-08 22:27:09,775 Loaded instance: scholl_warnecke_n=58
+2026-05-08 22:27:09,776 Loaded failures: 3
+2026-05-08 22:27:09,776 [1/4] Loading instance and solving DSP...
+2026-05-08 22:27:09,800 Nodes: 58, Edges: 70, Targets: 1, Solution: 13 operations
+2026-05-08 22:27:09,800 Target(s) to achieve: ['C028']
+2026-05-08 22:27:09,800 Starting disassembly sequence (13 operations)...
+2026-05-08 22:27:09,800 [ 1/13] Disassembling C000... [OK]
+2026-05-08 22:27:09,800 [ 2/13] Disassembling C008... [OK]
+2026-05-08 22:27:09,800 [ 3/13] Disassembling C010... [OK]
+2026-05-08 22:27:09,800 [ 4/13] Disassembling C012... [OK]
+2026-05-08 22:27:09,800 [ 5/13] Disassembling C014... [OK]
+2026-05-08 22:27:09,800 [ 6/13] Disassembling C011... [OK]
+2026-05-08 22:27:09,800 [ 7/13] Disassembling C013... [OK]
+2026-05-08 22:27:09,800 [ 8/13] Disassembling C016... [OK]
+2026-05-08 22:27:09,800 [ 9/13] Disassembling C019... [OK]
+2026-05-08 22:27:09,800 [10/13] Disassembling C002... [OK]
+2026-05-08 22:27:09,800 [11/13] Disassembling C020... [OK]
+2026-05-08 22:27:09,800 [12/13] Disassembling C025... [OK]
+2026-05-08 22:27:09,800 [13/13] Disassembling C028... [OK]
+2026-05-08 22:27:09,800 [2/4] Failure scenario loaded: 3 failure(s)
+2026-05-08 22:27:09,800 [3/4] Executing adaptive scheduler...
+2026-05-08 22:27:09,811 [FUZZY] Symptom: LOW_VALUE_BOTTLENECK
+2026-05-08 22:27:09,811 [FUZZY] Inputs: force=30.0, torque=20.0, p_fail=40.0, context=100.0
+2026-05-08 22:27:09,811 [FUZZY] Score: 20.00
+2026-05-08 22:27:09,811 [FUZZY] Decision: change_tool (confidence=100.0%)
+2026-05-08 22:27:09,811 [ACTION] change_tool: success=True, notes=Alternative tool suggested.
+2026-05-08 22:27:09,828 [FUZZY] Symptom: ACCESS_BLOCKED
+2026-05-08 22:27:09,828 [FUZZY] Inputs: force=60.0, torque=40.0, p_fail=60.0, context=100.0
+2026-05-08 22:27:09,828 [FUZZY] Score: 20.00
+2026-05-08 22:27:09,828 [FUZZY] Decision: change_tool (confidence=100.0%)
+2026-05-08 22:27:09,828 [ACTION] change_tool: success=True, notes=Alternative tool suggested.
+2026-05-08 22:27:09,828 Adaptive scheduler finished. Actions taken: 2
+2026-05-08 22:27:09,828 EXECUTION SUMMARY
+2026-05-08 22:27:09,828 Status: SUCCESS
+2026-05-08 22:27:09,828 Target components:
+2026-05-08 22:27:09,828 [OK] C028 - Successfully disassembled
+2026-05-08 22:27:09,828 Execution metrics:
+2026-05-08 22:27:09,828 Targets achieved: 1/1 (100.0%)
+2026-05-08 22:27:09,828 Failures handled: 3
+2026-05-08 22:27:09,828 Actions taken: 2
+2026-05-08 22:27:09,829 Components done: 13/13
+2026-05-08 22:27:09,829 Algorithm runtime: 0.05s
+2026-05-08 22:27:09,829 ECONOMIC ANALYSIS:
+2026-05-08 22:27:09,829 Nominal profit (planned): 252.00 units
+2026-05-08 22:27:09,829 Adaptive profit (recovered): 252.00 units
+2026-05-08 22:27:09,829 Profit loss: 0.00 units (0.0%)
+2026-05-08 22:27:09,829 TIME ANALYSIS:
+2026-05-08 22:27:09,829 Nominal time (planned): 5min 29s
+2026-05-08 22:27:09,829 Adaptive time (actual): 5min 29s
+2026-05-08 22:27:09,829 Time overhead: -0s (-0.0%)
+2026-05-08 22:27:09,829 GLOBAL SCORE :
+2026-05-08 22:27:09,829 Nominal score: 82.90
+2026-05-08 22:27:09,829 Adaptive score: 82.90
+2026-05-08 22:27:09,829 Score loss: 0.00 (0.0%)
+2026-05-08 22:27:09,829 Actions breakdown:
+2026-05-08 22:27:09,829 [OK] C012     LOW_VALUE_BOTTLENECK -> change_tool 
+2026-05-08 22:27:09,829 [OK] C016     ACCESS_BLOCKED       -> change_tool 
+2026-05-08 22:27:09,829 Detailed logs: results/save/test_failures/scholl_warnecke_n=58/complex
+2026-05-08 22:27:09,829 Pipeline finished successfully

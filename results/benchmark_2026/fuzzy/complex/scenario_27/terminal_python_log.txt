@@ -1,0 +1,98 @@
+2026-05-08 22:27:09,196 DSP ADAPTIVE PIPELINE - SCHOLL_TONGE70_N=70
+2026-05-08 22:27:09,196 Loaded instance: scholl_tonge70_n=70
+2026-05-08 22:27:09,197 Loaded failures: 3
+2026-05-08 22:27:09,197 [1/4] Loading instance and solving DSP...
+2026-05-08 22:27:09,295 Nodes: 70, Edges: 86, Targets: 2, Solution: 40 operations
+2026-05-08 22:27:09,295 Target(s) to achieve: ['C010', 'C054']
+2026-05-08 22:27:09,295 Starting disassembly sequence (40 operations)...
+2026-05-08 22:27:09,295 [ 1/40] Disassembling C004... [OK]
+2026-05-08 22:27:09,295 [ 2/40] Disassembling C029... [OK]
+2026-05-08 22:27:09,295 [ 3/40] Disassembling C023... [OK]
+2026-05-08 22:27:09,295 [ 4/40] Disassembling C000... [OK]
+2026-05-08 22:27:09,295 [ 5/40] Disassembling C008... [OK]
+2026-05-08 22:27:09,295 [ 6/40] Disassembling C014... [OK]
+2026-05-08 22:27:09,295 [ 7/40] Disassembling C001... [OK]
+2026-05-08 22:27:09,295 [ 8/40] Disassembling C002... [OK]
+2026-05-08 22:27:09,295 [ 9/40] Disassembling C003... [OK]
+2026-05-08 22:27:09,295 [10/40] Disassembling C006... [OK]
+2026-05-08 22:27:09,295 [11/40] Disassembling C015... [OK]
+2026-05-08 22:27:09,295 [12/40] Disassembling C016... [OK]
+2026-05-08 22:27:09,295 [13/40] Disassembling C017... [OK]
+2026-05-08 22:27:09,295 [14/40] Disassembling C018... [OK]
+2026-05-08 22:27:09,295 [15/40] Disassembling C021... [OK]
+2026-05-08 22:27:09,295 [16/40] Disassembling C019... [OK]
+2026-05-08 22:27:09,295 [17/40] Disassembling C020... [OK]
+2026-05-08 22:27:09,295 [18/40] Disassembling C009... [OK]
+2026-05-08 22:27:09,295 [19/40] Disassembling C010... [OK]
+2026-05-08 22:27:09,295 [20/40] Disassembling C005... [OK]
+2026-05-08 22:27:09,295 [21/40] Disassembling C007... [OK]
+2026-05-08 22:27:09,295 [22/40] Disassembling C011... [OK]
+2026-05-08 22:27:09,295 [23/40] Disassembling C012... [OK]
+2026-05-08 22:27:09,295 [24/40] Disassembling C013... [OK]
+2026-05-08 22:27:09,295 [25/40] Disassembling C022... [OK]
+2026-05-08 22:27:09,295 [26/40] Disassembling C032... [OK]
+2026-05-08 22:27:09,295 [27/40] Disassembling C030... [OK]
+2026-05-08 22:27:09,295 [28/40] Disassembling C024... [OK]
+2026-05-08 22:27:09,295 [29/40] Disassembling C025... [OK]
+2026-05-08 22:27:09,295 [30/40] Disassembling C033... [OK]
+2026-05-08 22:27:09,295 [31/40] Disassembling C027... [OK]
+2026-05-08 22:27:09,295 [32/40] Disassembling C026... [OK]
+2026-05-08 22:27:09,295 [33/40] Disassembling C031... [OK]
+2026-05-08 22:27:09,295 [34/40] Disassembling C028... [OK]
+2026-05-08 22:27:09,295 [35/40] Disassembling C034... [OK]
+2026-05-08 22:27:09,295 [36/40] Disassembling C052... [OK]
+2026-05-08 22:27:09,295 [37/40] Disassembling C050... [OK]
+2026-05-08 22:27:09,295 [38/40] Disassembling C051... [OK]
+2026-05-08 22:27:09,295 [39/40] Disassembling C053... [OK]
+2026-05-08 22:27:09,295 [40/40] Disassembling C054... [OK]
+2026-05-08 22:27:09,295 [2/4] Failure scenario loaded: 3 failure(s)
+2026-05-08 22:27:09,295 [3/4] Executing adaptive scheduler...
+2026-05-08 22:27:09,312 [FUZZY] Symptom: OVER_TORQUE_NO_ADVANCE
+2026-05-08 22:27:09,312 [FUZZY] Inputs: force=70.0, torque=80.0, p_fail=85.0, context=0.0
+2026-05-08 22:27:09,312 [FUZZY] Score: 71.71
+2026-05-08 22:27:09,312 [FUZZY] Decision: destroy (confidence=59.1%)
+2026-05-08 22:27:09,313 [ACTION] destroy: success=False, notes=Destruction not allowed: Profit=84.00 > threshold=21.00 (percentile 20th).
+2026-05-08 22:27:09,323 [FUZZY] Symptom: OVER_TORQUE_NO_ADVANCE
+2026-05-08 22:27:09,323 [FUZZY] Inputs: force=70.0, torque=80.0, p_fail=85.0, context=0.0
+2026-05-08 22:27:09,323 [FUZZY] Score: 71.71
+2026-05-08 22:27:09,323 [FUZZY] Decision: destroy (confidence=59.1%)
+2026-05-08 22:27:09,323 [ACTION] destroy: success=False, notes=Destruction not allowed: Flag 'no_destroy' active (context or graph).
+2026-05-08 22:27:09,336 [FUZZY] Symptom: LOW_VALUE_BOTTLENECK
+2026-05-08 22:27:09,336 [FUZZY] Inputs: force=30.0, torque=20.0, p_fail=50.0, context=100.0
+2026-05-08 22:27:09,336 [FUZZY] Score: 20.00
+2026-05-08 22:27:09,336 [FUZZY] Decision: change_tool (confidence=100.0%)
+2026-05-08 22:27:09,336 [ACTION] change_tool: success=True, notes=Alternative tool suggested.
+2026-05-08 22:27:09,336 Adaptive scheduler finished. Actions taken: 5
+2026-05-08 22:27:09,336 EXECUTION SUMMARY
+2026-05-08 22:27:09,336 Status: SUCCESS
+2026-05-08 22:27:09,336 Target components:
+2026-05-08 22:27:09,336 [OK] C010 - Successfully disassembled
+2026-05-08 22:27:09,336 [OK] C054 - Successfully disassembled
+2026-05-08 22:27:09,336 Execution metrics:
+2026-05-08 22:27:09,336 Targets achieved: 2/2 (100.0%)
+2026-05-08 22:27:09,336 Failures handled: 3
+2026-05-08 22:27:09,336 Actions taken: 5
+2026-05-08 22:27:09,336 Components done: 38/40
+2026-05-08 22:27:09,336 Algorithm runtime: 0.14s
+2026-05-08 22:27:09,336 ECONOMIC ANALYSIS:
+2026-05-08 22:27:09,336 Nominal profit (planned): 779.00 units
+2026-05-08 22:27:09,336 Adaptive profit (recovered): 729.00 units
+2026-05-08 22:27:09,337 Profit loss: 50.00 units (6.4%)
+2026-05-08 22:27:09,337 Value skipped (bypassed): 52.00 units
+2026-05-08 22:27:09,337 TIME ANALYSIS:
+2026-05-08 22:27:09,337 Nominal time (planned): 40min 24s
+2026-05-08 22:27:09,337 Adaptive time (actual): 36min 57s
+2026-05-08 22:27:09,337 Time saved: 3min 27s (8.5%)
+2026-05-08 22:27:09,337 Time saved (skipped): 3min 27s
+2026-05-08 22:27:09,337 GLOBAL SCORE :
+2026-05-08 22:27:09,337 Nominal score: 251.59
+2026-05-08 22:27:09,337 Adaptive score: 235.61
+2026-05-08 22:27:09,337 Score loss: 15.98 (6.4%)
+2026-05-08 22:27:09,337 Actions breakdown:
+2026-05-08 22:27:09,337 [FAILED] C012     OVER_TORQUE_NO_ADVANCE -> destroy     
+2026-05-08 22:27:09,337 [OK] C012     OVER_TORQUE_NO_ADVANCE -> destroy→bypass
+2026-05-08 22:27:09,337 [FAILED] C022     OVER_TORQUE_NO_ADVANCE -> destroy     
+2026-05-08 22:27:09,337 [OK] C022     OVER_TORQUE_NO_ADVANCE -> destroy→bypass
+2026-05-08 22:27:09,337 [OK] C030     LOW_VALUE_BOTTLENECK -> change_tool 
+2026-05-08 22:27:09,337 Detailed logs: results/save/test_failures/scholl_tonge70_n=70/complex
+2026-05-08 22:27:09,337 Pipeline finished successfully

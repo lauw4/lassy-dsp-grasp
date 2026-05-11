@@ -1,0 +1,84 @@
+2026-05-08 22:27:02,511 DSP ADAPTIVE PIPELINE - SCHOLL_GUNTHER_N=35
+2026-05-08 22:27:02,511 Loaded instance: scholl_gunther_n=35
+2026-05-08 22:27:02,511 Loaded failures: 3
+2026-05-08 22:27:02,511 [1/4] Loading instance and solving DSP...
+2026-05-08 22:27:02,566 Nodes: 35, Edges: 45, Targets: 1, Solution: 29 operations
+2026-05-08 22:27:02,566 Target(s) to achieve: ['C028']
+2026-05-08 22:27:02,566 Starting disassembly sequence (29 operations)...
+2026-05-08 22:27:02,566 [ 1/29] Disassembling C016... [OK]
+2026-05-08 22:27:02,566 [ 2/29] Disassembling C000... [OK]
+2026-05-08 22:27:02,566 [ 3/29] Disassembling C001... [OK]
+2026-05-08 22:27:02,566 [ 4/29] Disassembling C004... [OK]
+2026-05-08 22:27:02,566 [ 5/29] Disassembling C005... [OK]
+2026-05-08 22:27:02,566 [ 6/29] Disassembling C002... [OK]
+2026-05-08 22:27:02,566 [ 7/29] Disassembling C006... [OK]
+2026-05-08 22:27:02,566 [ 8/29] Disassembling C007... [OK]
+2026-05-08 22:27:02,566 [ 9/29] Disassembling C003... [OK]
+2026-05-08 22:27:02,566 [10/29] Disassembling C011... [OK]
+2026-05-08 22:27:02,566 [11/29] Disassembling C017... [OK]
+2026-05-08 22:27:02,566 [12/29] Disassembling C010... [OK]
+2026-05-08 22:27:02,566 [13/29] Disassembling C009... [OK]
+2026-05-08 22:27:02,566 [14/29] Disassembling C018... [OK]
+2026-05-08 22:27:02,566 [15/29] Disassembling C013... [OK]
+2026-05-08 22:27:02,566 [16/29] Disassembling C019... [OK]
+2026-05-08 22:27:02,566 [17/29] Disassembling C008... [OK]
+2026-05-08 22:27:02,566 [18/29] Disassembling C014... [OK]
+2026-05-08 22:27:02,566 [19/29] Disassembling C015... [OK]
+2026-05-08 22:27:02,566 [20/29] Disassembling C020... [OK]
+2026-05-08 22:27:02,566 [21/29] Disassembling C024... [OK]
+2026-05-08 22:27:02,566 [22/29] Disassembling C025... [OK]
+2026-05-08 22:27:02,566 [23/29] Disassembling C012... [OK]
+2026-05-08 22:27:02,566 [24/29] Disassembling C021... [OK]
+2026-05-08 22:27:02,566 [25/29] Disassembling C022... [OK]
+2026-05-08 22:27:02,566 [26/29] Disassembling C023... [OK]
+2026-05-08 22:27:02,566 [27/29] Disassembling C026... [OK]
+2026-05-08 22:27:02,566 [28/29] Disassembling C027... [OK]
+2026-05-08 22:27:02,566 [29/29] Disassembling C028... [OK]
+2026-05-08 22:27:02,566 [2/4] Failure scenario loaded: 3 failure(s)
+2026-05-08 22:27:02,566 [3/4] Executing adaptive scheduler...
+2026-05-08 22:27:02,577 [FUZZY] Symptom: LOW_VALUE_BOTTLENECK
+2026-05-08 22:27:02,577 [FUZZY] Inputs: force=30.0, torque=20.0, p_fail=50.0, context=0.0
+2026-05-08 22:27:02,577 [FUZZY] Score: 40.00
+2026-05-08 22:27:02,577 [FUZZY] Decision: bypass (confidence=100.0%)
+2026-05-08 22:27:02,577 [ACTION] bypass: success=True, notes=Component C013 bypassed (skipped).
+2026-05-08 22:27:02,594 [FUZZY] Symptom: ACCESS_BLOCKED
+2026-05-08 22:27:02,594 [FUZZY] Inputs: force=60.0, torque=40.0, p_fail=50.0, context=0.0
+2026-05-08 22:27:02,594 [FUZZY] Score: 40.00
+2026-05-08 22:27:02,594 [FUZZY] Decision: bypass (confidence=100.0%)
+2026-05-08 22:27:02,594 [ACTION] bypass: success=True, notes=Component C015 bypassed (skipped).
+2026-05-08 22:27:02,607 [FUZZY] Symptom: ACCESS_BLOCKED
+2026-05-08 22:27:02,607 [FUZZY] Inputs: force=60.0, torque=40.0, p_fail=50.0, context=0.0
+2026-05-08 22:27:02,607 [FUZZY] Score: 40.00
+2026-05-08 22:27:02,607 [FUZZY] Decision: bypass (confidence=100.0%)
+2026-05-08 22:27:02,607 [ACTION] bypass: success=True, notes=Component C021 bypassed (skipped).
+2026-05-08 22:27:02,607 Adaptive scheduler finished. Actions taken: 3
+2026-05-08 22:27:02,607 EXECUTION SUMMARY
+2026-05-08 22:27:02,607 Status: SUCCESS
+2026-05-08 22:27:02,607 Target components:
+2026-05-08 22:27:02,607 [OK] C028 - Successfully disassembled
+2026-05-08 22:27:02,607 Execution metrics:
+2026-05-08 22:27:02,607 Targets achieved: 1/1 (100.0%)
+2026-05-08 22:27:02,607 Failures handled: 3
+2026-05-08 22:27:02,607 Actions taken: 3
+2026-05-08 22:27:02,607 Components done: 26/29
+2026-05-08 22:27:02,607 Algorithm runtime: 0.10s
+2026-05-08 22:27:02,607 ECONOMIC ANALYSIS:
+2026-05-08 22:27:02,607 Nominal profit (planned): 523.00 units
+2026-05-08 22:27:02,607 Adaptive profit (recovered): 477.00 units
+2026-05-08 22:27:02,607 Profit loss: 46.00 units (8.8%)
+2026-05-08 22:27:02,608 Value skipped (bypassed): 61.00 units
+2026-05-08 22:27:02,608 TIME ANALYSIS:
+2026-05-08 22:27:02,608 Nominal time (planned): 7min 8s
+2026-05-08 22:27:02,608 Adaptive time (actual): 6min 27s
+2026-05-08 22:27:02,608 Time saved: 41s (9.6%)
+2026-05-08 22:27:02,608 Time saved (skipped): 41s
+2026-05-08 22:27:02,608 GLOBAL SCORE :
+2026-05-08 22:27:02,608 Nominal score: 172.91
+2026-05-08 22:27:02,608 Adaptive score: 157.71
+2026-05-08 22:27:02,608 Score loss: 15.20 (8.8%)
+2026-05-08 22:27:02,608 Actions breakdown:
+2026-05-08 22:27:02,608 [OK] C013     LOW_VALUE_BOTTLENECK -> bypass      
+2026-05-08 22:27:02,608 [OK] C015     ACCESS_BLOCKED       -> bypass      
+2026-05-08 22:27:02,608 [OK] C021     ACCESS_BLOCKED       -> bypass      
+2026-05-08 22:27:02,608 Detailed logs: results/save/test_failures/scholl_gunther_n=35/complex
+2026-05-08 22:27:02,608 Pipeline finished successfully

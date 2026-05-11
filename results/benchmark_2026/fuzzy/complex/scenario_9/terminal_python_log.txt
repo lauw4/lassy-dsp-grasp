@@ -1,0 +1,38 @@
+2026-05-08 22:26:57,368 DSP ADAPTIVE PIPELINE - SALBP_INSTANCE_N=1000_1_CUT92
+2026-05-08 22:26:57,369 Loaded instance: salbp_instance_n=1000_1_cut92
+2026-05-08 22:26:57,369 Loaded failures: 3
+2026-05-08 22:26:57,369 [1/4] Loading instance and solving DSP...
+2026-05-08 22:26:57,382 Nodes: 92, Edges: 76, Targets: 1, Solution: 4 operations
+2026-05-08 22:26:57,382 Target(s) to achieve: ['C068']
+2026-05-08 22:26:57,382 Starting disassembly sequence (4 operations)...
+2026-05-08 22:26:57,382 [ 1/4] Disassembling C014... [OK]
+2026-05-08 22:26:57,382 [ 2/4] Disassembling C032... [OK]
+2026-05-08 22:26:57,382 [ 3/4] Disassembling C048... [OK]
+2026-05-08 22:26:57,382 [ 4/4] Disassembling C068... [OK]
+2026-05-08 22:26:57,382 [2/4] Failure scenario loaded: 3 failure(s)
+2026-05-08 22:26:57,382 [3/4] Executing adaptive scheduler...
+2026-05-08 22:26:57,382 Adaptive scheduler finished. Actions taken: 0
+2026-05-08 22:26:57,382 EXECUTION SUMMARY
+2026-05-08 22:26:57,382 Status: SUCCESS
+2026-05-08 22:26:57,382 Target components:
+2026-05-08 22:26:57,382 [OK] C068 - Successfully disassembled
+2026-05-08 22:26:57,382 Execution metrics:
+2026-05-08 22:26:57,382 Targets achieved: 1/1 (100.0%)
+2026-05-08 22:26:57,383 Failures handled: 3
+2026-05-08 22:26:57,383 Actions taken: 0
+2026-05-08 22:26:57,383 Components done: 4/4
+2026-05-08 22:26:57,383 Algorithm runtime: 0.01s
+2026-05-08 22:26:57,383 ECONOMIC ANALYSIS:
+2026-05-08 22:26:57,383 Nominal profit (planned): 88.00 units
+2026-05-08 22:26:57,383 Adaptive profit (recovered): 88.00 units
+2026-05-08 22:26:57,383 Profit loss: 0.00 units (0.0%)
+2026-05-08 22:26:57,383 TIME ANALYSIS:
+2026-05-08 22:26:57,383 Nominal time (planned): 9min 53s
+2026-05-08 22:26:57,383 Adaptive time (actual): 9min 53s
+2026-05-08 22:26:57,383 Time overhead: -0s (-0.0%)
+2026-05-08 22:26:57,383 GLOBAL SCORE :
+2026-05-08 22:26:57,383 Nominal score: 27.36
+2026-05-08 22:26:57,383 Adaptive score: 27.36
+2026-05-08 22:26:57,383 Score loss: 0.00 (0.0%)
+2026-05-08 22:26:57,383 Detailed logs: results/save/test_failures/salbp_instance_n=1000_1_cut92/complex
+2026-05-08 22:26:57,383 Pipeline finished successfully

@@ -1,0 +1,2 @@
+instance,n,lambda,grasp_best,grasp_avg,grasp_std,grasp_time_s,cplex_obj,cplex_status,cplex_time_s,cplex_intgap_pct,gap_grasp_vs_cplex,cpsat_obj,cpsat_bound,cpsat_status,cpsat_time_s,cpsat_intgap_pct,gap_grasp_vs_cpsat,milp_obj,milp_status,milp_time_s,gap_pct
+scholl_roszieg_n=25,25,0.05589,180.6465,180.6465,0.0,0.01,181.429,Optimal,0.17,0.83,0.43,181.6791,181.6791,OPTIMAL,0.05,0.0,0.57,181.429,Optimal,0.17,0.43

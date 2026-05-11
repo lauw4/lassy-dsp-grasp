@@ -1,0 +1,10 @@
+--- Pipeline run 2026-05-08 22:26:38.972123 ---
+Instance: unknown
+Initial solution: ['C019', 'C034', 'C056', 'C071', 'C096', 'C106']
+Final state:
+  - Locked: set()
+  - Destroyed: {'C034'}
+  - Done: {'C106', 'C019', 'C056', 'C071'}
+  - Skipped: {'C096'}
+  - Notes: ['Bypass impossible for C034: no alternative path', 'No alternative tool for C034']
+Actions taken: [{'comp_id': 'C034', 'symptom': 'LOW_VALUE_BOTTLENECK', 'action': 'bypass', 'success': False, 'notes': 'No alternative path in graph.'}, {'comp_id': 'C034', 'symptom': 'LOW_VALUE_BOTTLENECK', 'action': 'bypass→destroy', 'success': True, 'notes': 'Fallback succeeded'}, {'comp_id': 'C096', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'bypass', 'success': True, 'notes': 'Component C096 bypassed (skipped).'}]

@@ -1,0 +1,2 @@
+instance,n,lambda,grasp_best,grasp_avg,grasp_std,grasp_time_s,cplex_obj,cplex_status,cplex_time_s,cplex_intgap_pct,gap_grasp_vs_cplex,cpsat_obj,cpsat_bound,cpsat_status,cpsat_time_s,cpsat_intgap_pct,gap_grasp_vs_cpsat,milp_obj,milp_status,milp_time_s,gap_pct
+scholl_buxey_n=29,29,0.04545,174.424,174.424,0.0,0.01,183.0134,Optimal,0.27,0.99,4.69,183.4486,183.4486,OPTIMAL,0.1,0.0,4.92,183.0134,Optimal,0.27,4.69

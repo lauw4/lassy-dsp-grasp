@@ -1,0 +1,10 @@
+--- Pipeline run 2026-05-08 22:26:52.727569 ---
+Instance: unknown
+Initial solution: ['C000', 'C004', 'C001', 'C014', 'C005', 'C008', 'C019', 'C026', 'C034', 'C041', 'C046', 'C048', 'C058', 'C065', 'C067', 'C069']
+Final state:
+  - Locked: set()
+  - Destroyed: set()
+  - Done: {'C008', 'C067', 'C034', 'C004', 'C065', 'C041', 'C048', 'C026', 'C069', 'C000', 'C019', 'C005', 'C014', 'C001', 'C046', 'C058'}
+  - Skipped: set()
+  - Notes: ['Bypass impossible for C041: no alternative path']
+Actions taken: [{'comp_id': 'C004', 'symptom': 'ACCESS_BLOCKED', 'action': 'change_tool', 'success': True, 'notes': 'Alternative tool suggested.'}, {'comp_id': 'C041', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'bypass', 'success': False, 'notes': 'No alternative path in graph.'}, {'comp_id': 'C041', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'bypass→change_tool', 'success': True, 'notes': 'Fallback succeeded'}]

@@ -1,0 +1,2 @@
+instance,n,lambda,grasp_best,grasp_avg,grasp_std,grasp_time_s,cplex_obj,cplex_status,cplex_time_s,cplex_intgap_pct,gap_grasp_vs_cplex,cpsat_obj,cpsat_bound,cpsat_status,cpsat_time_s,cpsat_intgap_pct,gap_grasp_vs_cpsat,milp_obj,milp_status,milp_time_s,gap_pct
+salbp_instance_n=100_38,100,0.01192,493.8296,493.8296,0.0,0.19,-930.0501,TimeLimit,180.86,220.13,-153.1,523.5873,1425.4432,FEASIBLE,180.11,172.25,5.68,-930.0501,TimeLimit,180.86,-153.1

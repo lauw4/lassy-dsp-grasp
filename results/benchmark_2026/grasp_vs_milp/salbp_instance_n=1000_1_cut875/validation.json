@@ -1,0 +1,36 @@
+{
+  "timestamp": "2026-05-08T14:46:10.126859",
+  "instance": "salbp_instance_n=1000_1_cut875",
+  "parameters": {
+    "GRASP_RUNS": 1,
+    "GRASP_ITERS": 150,
+    "GRASP_TIME": 900,
+    "EXACT_TIMELIM": 180,
+    "MILP_GAP": 0.01,
+    "MAX_N_MILP": 1000
+  },
+  "results": {
+    "instance": "salbp_instance_n=1000_1_cut875",
+    "n": 875,
+    "lambda": 0.00273,
+    "grasp_best": -4624.3541,
+    "grasp_avg": -4624.3541,
+    "grasp_std": 0.0,
+    "grasp_time_s": 42.7,
+    "cplex_obj": null,
+    "cplex_status": "TimeLimit",
+    "cplex_time_s": 750.16,
+    "cplex_intgap_pct": null,
+    "gap_grasp_vs_cplex": null,
+    "cpsat_obj": -4137.557,
+    "cpsat_bound": -1108.7401,
+    "cpsat_status": "FEASIBLE",
+    "cpsat_time_s": 180.07,
+    "cpsat_intgap_pct": 73.2,
+    "gap_grasp_vs_cpsat": 11.77,
+    "milp_obj": null,
+    "milp_status": "TimeLimit",
+    "milp_time_s": 750.16,
+    "gap_pct": null
+  }
+}

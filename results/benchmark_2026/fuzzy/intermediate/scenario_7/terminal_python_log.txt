@@ -1,0 +1,37 @@
+2026-05-08 22:26:39,415 DSP ADAPTIVE PIPELINE - SALBP_INSTANCE_N=1000_1_CUT65
+2026-05-08 22:26:39,415 Loaded instance: salbp_instance_n=1000_1_cut65
+2026-05-08 22:26:39,416 Loaded failures: 2
+2026-05-08 22:26:39,416 [1/4] Loading instance and solving DSP...
+2026-05-08 22:26:39,430 Nodes: 65, Edges: 49, Targets: 1, Solution: 3 operations
+2026-05-08 22:26:39,430 Target(s) to achieve: ['C055']
+2026-05-08 22:26:39,430 Starting disassembly sequence (3 operations)...
+2026-05-08 22:26:39,430 [ 1/3] Disassembling C019... [OK]
+2026-05-08 22:26:39,430 [ 2/3] Disassembling C036... [OK]
+2026-05-08 22:26:39,430 [ 3/3] Disassembling C055... [OK]
+2026-05-08 22:26:39,430 [2/4] Failure scenario loaded: 2 failure(s)
+2026-05-08 22:26:39,430 [3/4] Executing adaptive scheduler...
+2026-05-08 22:26:39,430 Adaptive scheduler finished. Actions taken: 0
+2026-05-08 22:26:39,430 EXECUTION SUMMARY
+2026-05-08 22:26:39,430 Status: SUCCESS
+2026-05-08 22:26:39,431 Target components:
+2026-05-08 22:26:39,431 [OK] C055 - Successfully disassembled
+2026-05-08 22:26:39,431 Execution metrics:
+2026-05-08 22:26:39,431 Targets achieved: 1/1 (100.0%)
+2026-05-08 22:26:39,431 Failures handled: 2
+2026-05-08 22:26:39,431 Actions taken: 0
+2026-05-08 22:26:39,431 Components done: 3/3
+2026-05-08 22:26:39,431 Algorithm runtime: 0.02s
+2026-05-08 22:26:39,431 ECONOMIC ANALYSIS:
+2026-05-08 22:26:39,431 Nominal profit (planned): 61.00 units
+2026-05-08 22:26:39,431 Adaptive profit (recovered): 61.00 units
+2026-05-08 22:26:39,431 Profit loss: 0.00 units (0.0%)
+2026-05-08 22:26:39,431 TIME ANALYSIS:
+2026-05-08 22:26:39,431 Nominal time (planned): 3min 47s
+2026-05-08 22:26:39,431 Adaptive time (actual): 3min 47s
+2026-05-08 22:26:39,431 Time overhead: -0s (-0.0%)
+2026-05-08 22:26:39,431 GLOBAL SCORE :
+2026-05-08 22:26:39,431 Nominal score: 19.58
+2026-05-08 22:26:39,431 Adaptive score: 19.58
+2026-05-08 22:26:39,431 Score loss: 0.00 (0.0%)
+2026-05-08 22:26:39,431 Detailed logs: results/save/test_failures/salbp_instance_n=1000_1_cut65/intermediate
+2026-05-08 22:26:39,431 Pipeline finished successfully

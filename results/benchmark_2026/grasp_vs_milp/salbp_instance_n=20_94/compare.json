@@ -1,0 +1,95 @@
+{
+  "instance": "salbp_instance_n=20_94",
+  "targets": [
+    "C020"
+  ],
+  "grasp": {
+    "best_score": 321.4983,
+    "avg_score": 321.4983,
+    "std_score": 0.0,
+    "time_s": 0.01,
+    "sequence": [
+      "C003",
+      "C001",
+      "C002",
+      "C006",
+      "C004",
+      "C005",
+      "C008",
+      "C009",
+      "C013",
+      "C014",
+      "C012",
+      "C007",
+      "C011",
+      "C017",
+      "C010",
+      "C016",
+      "C015",
+      "C019",
+      "C020",
+      "C018"
+    ]
+  },
+  "cplex": {
+    "objective": 321.8409,
+    "status": "Optimal",
+    "time_s": 0.16,
+    "intgap_pct": 0.34,
+    "sequence": [
+      3,
+      4,
+      1,
+      2,
+      5,
+      6,
+      8,
+      9,
+      14,
+      11,
+      13,
+      17,
+      7,
+      12,
+      10,
+      16,
+      15,
+      19,
+      18,
+      20
+    ]
+  },
+  "cpsat": {
+    "objective": 321.9755,
+    "bound": 321.9755,
+    "status": "OPTIMAL",
+    "time_s": 0.75,
+    "intgap_pct": 0.0,
+    "sequence": [
+      3,
+      1,
+      2,
+      5,
+      4,
+      6,
+      8,
+      9,
+      14,
+      11,
+      13,
+      7,
+      17,
+      12,
+      16,
+      10,
+      15,
+      19,
+      18,
+      20
+    ]
+  },
+  "comparison": {
+    "gap_grasp_vs_cplex_pct": 0.11,
+    "gap_grasp_vs_cpsat_pct": 0.15
+  }
+}

@@ -1,0 +1,59 @@
+2026-05-08 22:26:34,096 DSP ADAPTIVE PIPELINE - SCHOLL_ROSZIEG_N=25
+2026-05-08 22:26:34,097 Loaded instance: scholl_roszieg_n=25
+2026-05-08 22:26:34,097 Loaded failures: 1
+2026-05-08 22:26:34,097 [1/4] Loading instance and solving DSP...
+2026-05-08 22:26:34,166 Nodes: 25, Edges: 32, Targets: 1, Solution: 18 operations
+2026-05-08 22:26:34,166 Target(s) to achieve: ['C021']
+2026-05-08 22:26:34,166 Starting disassembly sequence (18 operations)...
+2026-05-08 22:26:34,166 [ 1/18] Disassembling C001... [OK]
+2026-05-08 22:26:34,166 [ 2/18] Disassembling C000... [OK]
+2026-05-08 22:26:34,166 [ 3/18] Disassembling C002... [OK]
+2026-05-08 22:26:34,166 [ 4/18] Disassembling C003... [OK]
+2026-05-08 22:26:34,166 [ 5/18] Disassembling C007... [OK]
+2026-05-08 22:26:34,166 [ 6/18] Disassembling C008... [OK]
+2026-05-08 22:26:34,166 [ 7/18] Disassembling C004... [OK]
+2026-05-08 22:26:34,166 [ 8/18] Disassembling C005... [OK]
+2026-05-08 22:26:34,166 [ 9/18] Disassembling C006... [OK]
+2026-05-08 22:26:34,166 [10/18] Disassembling C011... [OK]
+2026-05-08 22:26:34,166 [11/18] Disassembling C010... [OK]
+2026-05-08 22:26:34,166 [12/18] Disassembling C012... [OK]
+2026-05-08 22:26:34,166 [13/18] Disassembling C013... [OK]
+2026-05-08 22:26:34,166 [14/18] Disassembling C018... [OK]
+2026-05-08 22:26:34,166 [15/18] Disassembling C019... [OK]
+2026-05-08 22:26:34,166 [16/18] Disassembling C014... [OK]
+2026-05-08 22:26:34,166 [17/18] Disassembling C020... [OK]
+2026-05-08 22:26:34,166 [18/18] Disassembling C021... [OK]
+2026-05-08 22:26:34,166 [2/4] Failure scenario loaded: 1 failure(s)
+2026-05-08 22:26:34,166 [3/4] Executing adaptive scheduler...
+2026-05-08 22:26:34,183 [FUZZY] Symptom: ACCESS_BLOCKED
+2026-05-08 22:26:34,183 [FUZZY] Inputs: force=60.0, torque=40.0, p_fail=50.0, context=100.0
+2026-05-08 22:26:34,184 [FUZZY] Score: 20.00
+2026-05-08 22:26:34,184 [FUZZY] Decision: change_tool (confidence=100.0%)
+2026-05-08 22:26:34,184 [ACTION] change_tool: success=True, notes=Alternative tool suggested.
+2026-05-08 22:26:34,184 Adaptive scheduler finished. Actions taken: 1
+2026-05-08 22:26:34,184 EXECUTION SUMMARY
+2026-05-08 22:26:34,184 Status: SUCCESS
+2026-05-08 22:26:34,184 Target components:
+2026-05-08 22:26:34,184 [OK] C021 - Successfully disassembled
+2026-05-08 22:26:34,184 Execution metrics:
+2026-05-08 22:26:34,184 Targets achieved: 1/1 (100.0%)
+2026-05-08 22:26:34,184 Failures handled: 1
+2026-05-08 22:26:34,184 Actions taken: 1
+2026-05-08 22:26:34,184 Components done: 18/18
+2026-05-08 22:26:34,184 Algorithm runtime: 0.09s
+2026-05-08 22:26:34,184 ECONOMIC ANALYSIS:
+2026-05-08 22:26:34,184 Nominal profit (planned): 262.00 units
+2026-05-08 22:26:34,184 Adaptive profit (recovered): 262.00 units
+2026-05-08 22:26:34,184 Profit loss: 0.00 units (0.0%)
+2026-05-08 22:26:34,184 TIME ANALYSIS:
+2026-05-08 22:26:34,184 Nominal time (planned): 1min 28s
+2026-05-08 22:26:34,184 Adaptive time (actual): 1min 28s
+2026-05-08 22:26:34,184 Time overhead: -0s (-0.0%)
+2026-05-08 22:26:34,184 GLOBAL SCORE :
+2026-05-08 22:26:34,184 Nominal score: 87.04
+2026-05-08 22:26:34,184 Adaptive score: 87.04
+2026-05-08 22:26:34,184 Score loss: 0.00 (0.0%)
+2026-05-08 22:26:34,184 Actions breakdown:
+2026-05-08 22:26:34,184 [OK] C012     ACCESS_BLOCKED       -> change_tool 
+2026-05-08 22:26:34,184 Detailed logs: results/save/test_failures/scholl_roszieg_n=25/simple
+2026-05-08 22:26:34,185 Pipeline finished successfully

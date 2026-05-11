@@ -1,0 +1,72 @@
+2026-05-08 22:26:54,231 DSP ADAPTIVE PIPELINE - SALBP_INSTANCE_N=1000_1_CUT124
+2026-05-08 22:26:54,231 Loaded instance: salbp_instance_n=1000_1_cut124
+2026-05-08 22:26:54,232 Loaded failures: 3
+2026-05-08 22:26:54,232 [1/4] Loading instance and solving DSP...
+2026-05-08 22:26:54,352 Nodes: 124, Edges: 109, Targets: 1, Solution: 16 operations
+2026-05-08 22:26:54,352 Target(s) to achieve: ['C100']
+2026-05-08 22:26:54,352 Starting disassembly sequence (16 operations)...
+2026-05-08 22:26:54,352 [ 1/16] Disassembling C018... [OK]
+2026-05-08 22:26:54,352 [ 2/16] Disassembling C010... [OK]
+2026-05-08 22:26:54,352 [ 3/16] Disassembling C017... [OK]
+2026-05-08 22:26:54,352 [ 4/16] Disassembling C035... [OK]
+2026-05-08 22:26:54,352 [ 5/16] Disassembling C042... [OK]
+2026-05-08 22:26:54,352 [ 6/16] Disassembling C020... [OK]
+2026-05-08 22:26:54,352 [ 7/16] Disassembling C016... [OK]
+2026-05-08 22:26:54,352 [ 8/16] Disassembling C027... [OK]
+2026-05-08 22:26:54,352 [ 9/16] Disassembling C005... [OK]
+2026-05-08 22:26:54,352 [10/16] Disassembling C026... [OK]
+2026-05-08 22:26:54,352 [11/16] Disassembling C004... [OK]
+2026-05-08 22:26:54,352 [12/16] Disassembling C024... [OK]
+2026-05-08 22:26:54,352 [13/16] Disassembling C025... [OK]
+2026-05-08 22:26:54,352 [14/16] Disassembling C062... [OK]
+2026-05-08 22:26:54,352 [15/16] Disassembling C077... [OK]
+2026-05-08 22:26:54,352 [16/16] Disassembling C100... [OK]
+2026-05-08 22:26:54,352 [2/4] Failure scenario loaded: 3 failure(s)
+2026-05-08 22:26:54,352 [3/4] Executing adaptive scheduler...
+2026-05-08 22:26:54,369 [FUZZY] Symptom: ACCESS_BLOCKED
+2026-05-08 22:26:54,369 [FUZZY] Inputs: force=60.0, torque=40.0, p_fail=70.0, context=100.0
+2026-05-08 22:26:54,369 [FUZZY] Score: 36.06
+2026-05-08 22:26:54,369 [FUZZY] Decision: bypass (confidence=80.3%)
+2026-05-08 22:26:54,369 [ACTION] bypass: success=True, notes=Component C035 bypassed (skipped).
+2026-05-08 22:26:54,380 [FUZZY] Symptom: OVER_TORQUE_NO_ADVANCE
+2026-05-08 22:26:54,380 [FUZZY] Inputs: force=70.0, torque=80.0, p_fail=75.0, context=100.0
+2026-05-08 22:26:54,380 [FUZZY] Score: 45.25
+2026-05-08 22:26:54,380 [FUZZY] Decision: bypass (confidence=73.8%)
+2026-05-08 22:26:54,380 [ACTION] bypass: success=True, notes=Component C042 bypassed (skipped).
+2026-05-08 22:26:54,393 [FUZZY] Symptom: OVER_TORQUE_NO_ADVANCE
+2026-05-08 22:26:54,393 [FUZZY] Inputs: force=70.0, torque=80.0, p_fail=75.0, context=100.0
+2026-05-08 22:26:54,393 [FUZZY] Score: 45.25
+2026-05-08 22:26:54,393 [FUZZY] Decision: bypass (confidence=73.8%)
+2026-05-08 22:26:54,393 [ACTION] bypass: success=False, notes=No alternative path in graph.
+2026-05-08 22:26:54,393 Adaptive scheduler finished. Actions taken: 4
+2026-05-08 22:26:54,393 EXECUTION SUMMARY
+2026-05-08 22:26:54,393 Status: SUCCESS
+2026-05-08 22:26:54,393 Target components:
+2026-05-08 22:26:54,393 [OK] C100 - Successfully disassembled
+2026-05-08 22:26:54,393 Execution metrics:
+2026-05-08 22:26:54,393 Targets achieved: 1/1 (100.0%)
+2026-05-08 22:26:54,393 Failures handled: 3
+2026-05-08 22:26:54,393 Actions taken: 4
+2026-05-08 22:26:54,393 Components done: 14/16
+2026-05-08 22:26:54,393 Algorithm runtime: 0.16s
+2026-05-08 22:26:54,393 ECONOMIC ANALYSIS:
+2026-05-08 22:26:54,393 Nominal profit (planned): 305.00 units
+2026-05-08 22:26:54,393 Adaptive profit (recovered): 262.00 units
+2026-05-08 22:26:54,393 Profit loss: 43.00 units (14.1%)
+2026-05-08 22:26:54,393 Value skipped (bypassed): 58.00 units
+2026-05-08 22:26:54,393 TIME ANALYSIS:
+2026-05-08 22:26:54,393 Nominal time (planned): 39min 40s
+2026-05-08 22:26:54,393 Adaptive time (actual): 37min 26s
+2026-05-08 22:26:54,393 Time saved: 2min 14s (5.6%)
+2026-05-08 22:26:54,393 Time saved (skipped): 2min 14s
+2026-05-08 22:26:54,393 GLOBAL SCORE :
+2026-05-08 22:26:54,393 Nominal score: 93.73
+2026-05-08 22:26:54,393 Adaptive score: 79.85
+2026-05-08 22:26:54,393 Score loss: 13.89 (14.8%)
+2026-05-08 22:26:54,393 Actions breakdown:
+2026-05-08 22:26:54,393 [OK] C035     ACCESS_BLOCKED       -> bypass      
+2026-05-08 22:26:54,394 [OK] C042     OVER_TORQUE_NO_ADVANCE -> bypass      
+2026-05-08 22:26:54,394 [FAILED] C026     OVER_TORQUE_NO_ADVANCE -> bypass      
+2026-05-08 22:26:54,394 [OK] C026     OVER_TORQUE_NO_ADVANCE -> bypass→change_tool
+2026-05-08 22:26:54,394 Detailed logs: results/save/test_failures/salbp_instance_n=1000_1_cut124/complex
+2026-05-08 22:26:54,394 Pipeline finished successfully

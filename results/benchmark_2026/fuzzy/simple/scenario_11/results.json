@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-05-08T22:26:24.659998",
+  "instance": "salbp_instance_n=100_50",
+  "difficulty": "simple",
+  "scenario_id": "scenario_11",
+  "scenario_file": "scenario_simple_salbp_instance_n=100_50.json",
+  "status": "completed",
+  "return_code": 0
+}

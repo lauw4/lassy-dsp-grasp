@@ -1,0 +1,10 @@
+--- Pipeline run 2026-05-08 22:27:04.257898 ---
+Instance: unknown
+Initial solution: ['C001', 'C000', 'C004', 'C005', 'C006', 'C002', 'C008', 'C007', 'C010', 'C011', 'C012', 'C013', 'C009', 'C015', 'C017', 'C003', 'C014', 'C016', 'C018', 'C019', 'C020', 'C021', 'C024', 'C025', 'C026', 'C027', 'C028', 'C029', 'C030', 'C023', 'C022', 'C031']
+Final state:
+  - Locked: set()
+  - Destroyed: {'C027'}
+  - Done: {'C008', 'C001', 'C000', 'C011', 'C012', 'C016', 'C015', 'C019', 'C009', 'C002', 'C014', 'C026', 'C023', 'C018', 'C031', 'C022', 'C020', 'C017', 'C030', 'C003', 'C024', 'C021', 'C025', 'C007', 'C004', 'C013', 'C028', 'C005', 'C010', 'C029'}
+  - Skipped: {'C006'}
+  - Notes: ['Bypass impossible for C017: no alternative path', 'Bypass impossible for C027: no alternative path', 'No alternative tool for C027']
+Actions taken: [{'comp_id': 'C006', 'symptom': 'LOW_VALUE_BOTTLENECK', 'action': 'bypass', 'success': True, 'notes': 'Component C006 bypassed (skipped).'}, {'comp_id': 'C017', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'bypass', 'success': False, 'notes': 'No alternative path in graph.'}, {'comp_id': 'C017', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'bypass→change_tool', 'success': True, 'notes': 'Fallback succeeded'}, {'comp_id': 'C027', 'symptom': 'ACCESS_BLOCKED', 'action': 'bypass', 'success': False, 'notes': 'No alternative path in graph.'}, {'comp_id': 'C027', 'symptom': 'ACCESS_BLOCKED', 'action': 'bypass→destroy', 'success': True, 'notes': 'Fallback succeeded'}]

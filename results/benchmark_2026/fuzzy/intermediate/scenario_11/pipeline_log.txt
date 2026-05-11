@@ -1,0 +1,10 @@
+--- Pipeline run 2026-05-08 22:26:41.500935 ---
+Instance: unknown
+Initial solution: ['C000', 'C001', 'C010', 'C014', 'C016', 'C024', 'C028', 'C009', 'C017', 'C031', 'C027', 'C033', 'C023', 'C032', 'C003', 'C002', 'C025', 'C043', 'C054']
+Final state:
+  - Locked: set()
+  - Destroyed: {'C031'}
+  - Done: {'C043', 'C001', 'C025', 'C032', 'C027', 'C054', 'C014', 'C017', 'C000', 'C023', 'C010', 'C033', 'C009', 'C024', 'C002', 'C028', 'C016', 'C003'}
+  - Skipped: set()
+  - Notes: []
+Actions taken: [{'comp_id': 'C031', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy', 'success': True, 'notes': 'Destruction allowed (cutoff percentile 20th).'}, {'comp_id': 'C025', 'symptom': 'LOW_VALUE_BOTTLENECK', 'action': 'change_tool', 'success': True, 'notes': 'Alternative tool suggested.'}]

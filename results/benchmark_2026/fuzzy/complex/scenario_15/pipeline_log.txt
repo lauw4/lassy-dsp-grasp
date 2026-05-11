@@ -1,0 +1,10 @@
+--- Pipeline run 2026-05-08 22:27:01.457216 ---
+Instance: unknown
+Initial solution: ['C000', 'C001', 'C003', 'C002', 'C006', 'C010', 'C014', 'C005', 'C009', 'C013', 'C008', 'C024', 'C018', 'C023', 'C012', 'C019', 'C016', 'C027', 'C021', 'C017', 'C031', 'C035', 'C020', 'C022', 'C028', 'C037', 'C029', 'C032', 'C030', 'C038', 'C040', 'C004', 'C036', 'C044', 'C046', 'C048', 'C043', 'C034', 'C045', 'C039', 'C047', 'C026', 'C049', 'C050', 'C051', 'C052', 'C053', 'C054', 'C041', 'C055', 'C056', 'C057', 'C033', 'C058', 'C059', 'C060', 'C061', 'C062', 'C007', 'C063', 'C064', 'C065', 'C068', 'C042', 'C066', 'C067', 'C069', 'C071', 'C025', 'C011', 'C015', 'C070', 'C072', 'C073', 'C074', 'C075', 'C077', 'C076', 'C078', 'C079', 'C081', 'C080', 'C082']
+Final state:
+  - Locked: set()
+  - Destroyed: set()
+  - Done: {'C000', 'C077', 'C053', 'C005', 'C032', 'C011', 'C042', 'C074', 'C054', 'C018', 'C034', 'C030', 'C064', 'C081', 'C029', 'C012', 'C021', 'C072', 'C048', 'C043', 'C006', 'C056', 'C022', 'C060', 'C062', 'C014', 'C007', 'C082', 'C037', 'C015', 'C031', 'C016', 'C004', 'C002', 'C024', 'C071', 'C052', 'C008', 'C028', 'C026', 'C020', 'C076', 'C049', 'C013', 'C010', 'C075', 'C036', 'C023', 'C025', 'C057', 'C040', 'C073', 'C035', 'C039', 'C055', 'C063', 'C009', 'C045', 'C046', 'C065', 'C058', 'C038', 'C066', 'C067', 'C017', 'C061', 'C059', 'C051', 'C068', 'C003', 'C027', 'C033', 'C078', 'C070', 'C080', 'C047', 'C050', 'C001', 'C041', 'C019', 'C079', 'C044', 'C069'}
+  - Skipped: set()
+  - Notes: ['Bypass impossible for C039: no alternative path']
+Actions taken: [{'comp_id': 'C039', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'bypass', 'success': False, 'notes': 'No alternative path in graph.'}, {'comp_id': 'C039', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'bypass→change_tool', 'success': True, 'notes': 'Fallback succeeded'}, {'comp_id': 'C026', 'symptom': 'LOW_VALUE_BOTTLENECK', 'action': 'change_tool', 'success': True, 'notes': 'Alternative tool suggested.'}, {'comp_id': 'C070', 'symptom': 'LOW_VALUE_BOTTLENECK', 'action': 'change_tool', 'success': True, 'notes': 'Alternative tool suggested.'}]

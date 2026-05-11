@@ -1,0 +1,38 @@
+2026-05-08 22:26:32,873 DSP ADAPTIVE PIPELINE - SCHOLL_MERTENS_N=7
+2026-05-08 22:26:32,873 Loaded instance: scholl_mertens_n=7
+2026-05-08 22:26:32,874 Loaded failures: 1
+2026-05-08 22:26:32,874 [1/4] Loading instance and solving DSP...
+2026-05-08 22:26:32,883 Nodes: 7, Edges: 6, Targets: 1, Solution: 4 operations
+2026-05-08 22:26:32,883 Target(s) to achieve: ['C005']
+2026-05-08 22:26:32,883 Starting disassembly sequence (4 operations)...
+2026-05-08 22:26:32,883 [ 1/4] Disassembling C000... [OK]
+2026-05-08 22:26:32,883 [ 2/4] Disassembling C001... [OK]
+2026-05-08 22:26:32,883 [ 3/4] Disassembling C004... [OK]
+2026-05-08 22:26:32,883 [ 4/4] Disassembling C005... [OK]
+2026-05-08 22:26:32,883 [2/4] Failure scenario loaded: 1 failure(s)
+2026-05-08 22:26:32,883 [3/4] Executing adaptive scheduler...
+2026-05-08 22:26:32,883 Adaptive scheduler finished. Actions taken: 0
+2026-05-08 22:26:32,883 EXECUTION SUMMARY
+2026-05-08 22:26:32,883 Status: SUCCESS
+2026-05-08 22:26:32,883 Target components:
+2026-05-08 22:26:32,883 [OK] C005 - Successfully disassembled
+2026-05-08 22:26:32,883 Execution metrics:
+2026-05-08 22:26:32,883 Targets achieved: 1/1 (100.0%)
+2026-05-08 22:26:32,883 Failures handled: 1
+2026-05-08 22:26:32,883 Actions taken: 0
+2026-05-08 22:26:32,883 Components done: 4/4
+2026-05-08 22:26:32,883 Algorithm runtime: 0.01s
+2026-05-08 22:26:32,883 ECONOMIC ANALYSIS:
+2026-05-08 22:26:32,883 Nominal profit (planned): 80.00 units
+2026-05-08 22:26:32,883 Adaptive profit (recovered): 80.00 units
+2026-05-08 22:26:32,883 Profit loss: 0.00 units (0.0%)
+2026-05-08 22:26:32,883 TIME ANALYSIS:
+2026-05-08 22:26:32,883 Nominal time (planned): 17s
+2026-05-08 22:26:32,884 Adaptive time (actual): 17s
+2026-05-08 22:26:32,884 Time overhead: -0s (-0.0%)
+2026-05-08 22:26:32,884 GLOBAL SCORE :
+2026-05-08 22:26:32,884 Nominal score: 26.61
+2026-05-08 22:26:32,884 Adaptive score: 26.61
+2026-05-08 22:26:32,884 Score loss: 0.00 (0.0%)
+2026-05-08 22:26:32,884 Detailed logs: results/save/test_failures/scholl_mertens_n=7/simple
+2026-05-08 22:26:32,884 Pipeline finished successfully

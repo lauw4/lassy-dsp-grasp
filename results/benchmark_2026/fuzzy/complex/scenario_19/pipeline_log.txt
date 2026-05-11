@@ -1,0 +1,10 @@
+--- Pipeline run 2026-05-08 22:27:03.674661 ---
+Instance: unknown
+Initial solution: ['C038', 'C001', 'C000', 'C010', 'C006', 'C003', 'C007', 'C002', 'C004', 'C008', 'C011', 'C012', 'C013', 'C029', 'C031', 'C030', 'C016', 'C026', 'C028', 'C024', 'C014', 'C005', 'C023', 'C017', 'C022', 'C025', 'C015', 'C018', 'C032', 'C019', 'C035', 'C034', 'C009', 'C020', 'C021', 'C027', 'C033', 'C037', 'C039', 'C040', 'C041', 'C044']
+Final state:
+  - Locked: set()
+  - Destroyed: {'C021'}
+  - Done: {'C011', 'C013', 'C044', 'C005', 'C040', 'C041', 'C001', 'C006', 'C014', 'C025', 'C037', 'C002', 'C030', 'C035', 'C028', 'C024', 'C022', 'C019', 'C008', 'C020', 'C015', 'C016', 'C003', 'C026', 'C000', 'C032', 'C007', 'C029', 'C031', 'C039', 'C038', 'C033', 'C004', 'C012', 'C010', 'C023', 'C018', 'C017', 'C027'}
+  - Skipped: {'C009', 'C034'}
+  - Notes: []
+Actions taken: [{'comp_id': 'C034', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'bypass', 'success': True, 'notes': 'Component C034 bypassed (skipped).'}, {'comp_id': 'C009', 'symptom': 'LOW_VALUE_BOTTLENECK', 'action': 'bypass', 'success': True, 'notes': 'Component C009 bypassed (skipped).'}, {'comp_id': 'C021', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy', 'success': True, 'notes': 'Destruction allowed (cutoff percentile 20th).'}]

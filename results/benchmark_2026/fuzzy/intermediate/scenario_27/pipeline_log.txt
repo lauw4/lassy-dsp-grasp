@@ -1,0 +1,10 @@
+--- Pipeline run 2026-05-08 22:26:51.716203 ---
+Instance: unknown
+Initial solution: ['C004', 'C029', 'C000', 'C023', 'C008', 'C001', 'C002', 'C003', 'C006', 'C014', 'C015', 'C016', 'C017', 'C018', 'C021', 'C019', 'C020', 'C009', 'C010', 'C005', 'C007', 'C011', 'C012', 'C013', 'C022', 'C024', 'C025', 'C026', 'C027', 'C032', 'C028', 'C033', 'C030', 'C031', 'C034', 'C052', 'C050', 'C051', 'C053', 'C054']
+Final state:
+  - Locked: set()
+  - Destroyed: set()
+  - Done: {'C000', 'C052', 'C008', 'C018', 'C012', 'C030', 'C024', 'C004', 'C014', 'C005', 'C003', 'C013', 'C034', 'C016', 'C023', 'C025', 'C051', 'C007', 'C002', 'C022', 'C006', 'C021', 'C029', 'C054', 'C009', 'C027', 'C001', 'C053', 'C028', 'C026', 'C015', 'C017', 'C010', 'C011', 'C031', 'C032', 'C020', 'C019'}
+  - Skipped: {'C033', 'C050'}
+  - Notes: ['Destruction forbidden for C050: Profit=55.00 > threshold=21.00 (percentile 20th).']
+Actions taken: [{'comp_id': 'C033', 'symptom': 'ACCESS_BLOCKED', 'action': 'bypass', 'success': True, 'notes': 'Component C033 bypassed (skipped).'}, {'comp_id': 'C050', 'symptom': 'ACCESS_BLOCKED', 'action': 'destroy', 'success': False, 'notes': 'Destruction not allowed: Profit=55.00 > threshold=21.00 (percentile 20th).'}, {'comp_id': 'C050', 'symptom': 'ACCESS_BLOCKED', 'action': 'destroy→bypass', 'success': True, 'notes': 'Fallback succeeded'}]

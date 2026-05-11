@@ -1,0 +1,10 @@
+--- Pipeline run 2026-05-08 22:27:09.337709 ---
+Instance: unknown
+Initial solution: ['C004', 'C029', 'C023', 'C000', 'C008', 'C014', 'C001', 'C002', 'C003', 'C006', 'C015', 'C016', 'C017', 'C018', 'C021', 'C019', 'C020', 'C009', 'C010', 'C005', 'C007', 'C011', 'C012', 'C013', 'C022', 'C032', 'C030', 'C024', 'C025', 'C033', 'C027', 'C026', 'C031', 'C028', 'C034', 'C052', 'C050', 'C051', 'C053', 'C054']
+Final state:
+  - Locked: set()
+  - Destroyed: set()
+  - Done: {'C031', 'C001', 'C017', 'C003', 'C032', 'C004', 'C009', 'C025', 'C018', 'C020', 'C034', 'C016', 'C013', 'C053', 'C019', 'C028', 'C021', 'C005', 'C033', 'C026', 'C015', 'C011', 'C027', 'C006', 'C002', 'C008', 'C051', 'C054', 'C024', 'C030', 'C010', 'C029', 'C007', 'C052', 'C023', 'C050', 'C014', 'C000'}
+  - Skipped: {'C012', 'C022'}
+  - Notes: ['Destruction forbidden for C012: Profit=84.00 > threshold=21.00 (percentile 20th).', "Destruction forbidden for C022: Flag 'no_destroy' active (context or graph)."]
+Actions taken: [{'comp_id': 'C012', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy', 'success': False, 'notes': 'Destruction not allowed: Profit=84.00 > threshold=21.00 (percentile 20th).'}, {'comp_id': 'C012', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy→bypass', 'success': True, 'notes': 'Fallback succeeded'}, {'comp_id': 'C022', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy', 'success': False, 'notes': "Destruction not allowed: Flag 'no_destroy' active (context or graph)."}, {'comp_id': 'C022', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy→bypass', 'success': True, 'notes': 'Fallback succeeded'}, {'comp_id': 'C030', 'symptom': 'LOW_VALUE_BOTTLENECK', 'action': 'change_tool', 'success': True, 'notes': 'Alternative tool suggested.'}]

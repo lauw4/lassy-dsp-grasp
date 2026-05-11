@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-05-08T22:26:53.352481",
+  "instance": "dagtest",
+  "difficulty": "complex",
+  "scenario_id": "scenario_1",
+  "scenario_file": "scenario_complex_dagtest.json",
+  "status": "completed",
+  "return_code": 0
+}

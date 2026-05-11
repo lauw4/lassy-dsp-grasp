@@ -1,0 +1,10 @@
+--- Pipeline run 2026-05-08 22:26:53.291238 ---
+Instance: unknown
+Initial solution: ['N02', 'N06', 'N01', 'N05', 'N11', 'N10', 'N16', 'N04', 'N09', 'N15', 'N17', 'N20', 'N03', 'N08', 'N07', 'N13', 'N12', 'N14', 'N19', 'N18', 'N21', 'N22']
+Final state:
+  - Locked: {'N12'}
+  - Destroyed: set()
+  - Done: {'N07', 'N21', 'N04', 'N19', 'N08', 'N14', 'N17', 'N10', 'N15', 'N11', 'N05', 'N01', 'N09', 'N06', 'N22', 'N03', 'N02', 'N16', 'N13'}
+  - Skipped: {'N20'}
+  - Notes: ['Destruction forbidden for N20: Profit=31.00 > threshold=18.00 (percentile 20th).', 'Bypass impossible for N12: no alternative path', 'No alternative tool for N12', 'Destruction forbidden for N12: Profit=43.00 > threshold=18.00 (percentile 20th).']
+Actions taken: [{'comp_id': 'N20', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy', 'success': False, 'notes': 'Destruction not allowed: Profit=31.00 > threshold=18.00 (percentile 20th).'}, {'comp_id': 'N20', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy→bypass', 'success': True, 'notes': 'Fallback succeeded'}, {'comp_id': 'N12', 'symptom': 'ACCESS_BLOCKED', 'action': 'bypass', 'success': False, 'notes': 'No alternative path in graph.'}, {'comp_id': 'N12', 'symptom': 'ACCESS_BLOCKED', 'action': 'bypass→replan', 'success': True, 'notes': 'Fallback succeeded'}]

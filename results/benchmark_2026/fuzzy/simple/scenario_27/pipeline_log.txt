@@ -1,0 +1,10 @@
+--- Pipeline run 2026-05-08 22:26:34.755073 ---
+Instance: unknown
+Initial solution: ['C004', 'C023', 'C029', 'C000', 'C008', 'C001', 'C014', 'C002', 'C003', 'C006', 'C015', 'C016', 'C017', 'C018', 'C021', 'C019', 'C020', 'C009', 'C010', 'C005', 'C007', 'C011', 'C012', 'C013', 'C022', 'C032', 'C024', 'C033', 'C027', 'C025', 'C026', 'C030', 'C031', 'C028', 'C034', 'C052', 'C050', 'C051', 'C053', 'C054']
+Final state:
+  - Locked: set()
+  - Destroyed: set()
+  - Done: {'C029', 'C003', 'C016', 'C019', 'C011', 'C052', 'C013', 'C006', 'C001', 'C031', 'C008', 'C053', 'C024', 'C012', 'C015', 'C051', 'C009', 'C050', 'C000', 'C004', 'C033', 'C025', 'C034', 'C007', 'C027', 'C005', 'C022', 'C054', 'C010', 'C014', 'C020', 'C018', 'C032', 'C017', 'C030', 'C026', 'C023', 'C028', 'C002', 'C021'}
+  - Skipped: set()
+  - Notes: []
+Actions taken: [{'comp_id': 'C017', 'symptom': 'ACCESS_BLOCKED', 'action': 'change_tool', 'success': True, 'notes': 'Alternative tool suggested.'}]

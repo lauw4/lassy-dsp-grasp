@@ -1,13 +1,24 @@
-numpy
+# Core scientific stack — pin numpy<2 because skfuzzy 0.5.0 depends on
+# scipy.linalg which (until scipy 1.13+) was compiled against the NumPy 1.x
+# C ABI. A fresh `pip install` with NumPy 2.x will silently install scipy
+# wheels that crash at import. Until skfuzzy ships a NumPy 2 build, stay on 1.x.
+numpy<2
+scipy
 pandas
+packaging
 networkx
 matplotlib
 seaborn
-scipy
-argparse
+
+# MILP / scheduling solvers
+pulp           # CPLEX bridge (assumes CPLEX installed locally)
+ortools      # CP-SAT (Google OR-Tools) — added 2026-05-06 for IFAC 3-way benchmark
+
+# Fuzzy decision system (adaptive scheduler)
+scikit-fuzzy
+
+# Misc
 tqdm
 ipython
 jupyter
-pulp
 pytest
-scikit-fuzzy

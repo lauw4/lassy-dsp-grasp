@@ -1,0 +1,186 @@
+------
+ADAPTIVE DSP EXECUTION REPORT
+------
+
+INITIAL PLANNED SEQUENCE:
+----------------------------------------
+N02, N06, N01, N04, N11, N05, N09, N10, N03, N16, N08, N17, N20, N15, N07, N13, N12, N14, N18, N19, N21, N22
+Target = N22
+
+------
+EXECUTION WITH ADAPTATION:
+------
+
+N02 - OK
+N06 - OK
+N01 - OK
+N04 - OK
+N11 - OK
+N05 - OK
+N09 - OK
+------
+FAILURE ON N10
+------
+
+Symptom: OVER_TORQUE_NO_ADVANCE
+
+Sensor values:
+  - Force:  70.0
+  - Torque: 80.0
+  - P_fail: 65.0%
+
+Fuzzy decision:
+  - Action: destroy->bypass
+  - Score:  65.47
+  - Confidence: 86.8%
+
+Result: Fallback succeeded
+N03 - OK
+N16 - OK
+N08 - OK
+N17 - OK
+N20 - OK
+N15 - OK
+N07 - OK
+N13 - OK
+N12 - OK
+------
+FAILURE ON N14
+------
+
+Symptom: OVER_TORQUE_NO_ADVANCE
+
+Sensor values:
+  - Force:  70.0
+  - Torque: 80.0
+  - P_fail: 75.0%
+
+Fuzzy decision:
+  - Action: destroy->replan
+  - Score:  70.67
+  - Confidence: 63.7%
+
+Result: Fallback succeeded
+
+----------------------------------------
+SELECTIVE REPLANNING TRIGGERED
+----------------------------------------
+
+State at replan:
+  - Done:      ['N01', 'N02', 'N03', 'N04', 'N05', 'N06', 'N07', 'N08', 'N09', 'N11', 'N12', 'N13', 'N15', 'N16', 'N17', 'N20']
+  - Destroyed: []
+  - Locked:    ['N14']
+  - Skipped:   ['N10']
+
+New sequence after replan:
+  ['N18', 'N21', 'N22']
+N18 - OK
+N21 - OK
+N22 - OK
+------
+EXECUTION METRICS:
+------
+
+Targets achieved: 1/1 (100.0%)
+Failures handled: 2
+Actions taken:    4
+Done:             19/22
+Destroyed:        0
+Skipped:          1
+------
+FINAL STATE
+------
+
+Done:      ['N01', 'N02', 'N03', 'N04', 'N05', 'N06', 'N07', 'N08', 'N09', 'N11', 'N12', 'N13', 'N15', 'N16', 'N17', 'N18', 'N20', 'N21', 'N22']
+Destroyed: []
+Locked:    ['N14']
+Skipped:   ['N10']
+------
+ECONOMIC ANALYSIS
+------
+
+Nominal profit (planned):    333.00 units
+Adaptive profit (recovered): 284.00 units
+Profit loss:                 49.00 units (14.7%)
+Value skipped (bypassed):    22.00 units
+
+Component breakdown:
+  N02: profit=18, cost=4 -> net=14.00
+  N06: profit=17, cost=3 -> net=14.00
+  N01: profit=20, cost=5 -> net=15.00
+  N04: profit=19, cost=5 -> net=14.00
+  N11: profit=19, cost=5 -> net=14.00
+  N05: profit=21, cost=4 -> net=17.00
+  N09: profit=18, cost=4 -> net=14.00
+  N10: profit=22, cost=6 -> SKIPPED (not recovered)
+  N03: profit=22, cost=6 -> net=16.00
+  N16: profit=18, cost=4 -> net=14.00
+  N08: profit=20, cost=5 -> net=15.00
+  N17: profit=22, cost=6 -> net=16.00
+  N20: profit=17, cost=3 -> net=14.00
+  N15: profit=20, cost=5 -> net=15.00
+  N07: profit=23, cost=7 -> net=16.00
+  N13: profit=17, cost=3 -> net=14.00
+  N12: profit=21, cost=4 -> net=17.00
+  N18: profit=19, cost=5 -> net=14.00
+  N21: profit=23, cost=7 -> net=16.00
+  N22: profit=20, cost=5 -> net=15.00
+------
+TIME ANALYSIS
+------
+
+Nominal time (planned):      36min 40s
+Adaptive time (actual):      31min 5s
+Time saved:                  5min 35s (15.2%)
+Time saved (skipped):        1min 50s
+
+Component time breakdown:
+  N02: 90s
+  N06: 80s
+  N01: 100s
+  N04: 95s
+  N11: 95s
+  N05: 105s
+  N09: 90s
+  N10: 110s -> SKIPPED (saved)
+  N03: 110s
+  N16: 90s
+  N08: 100s
+  N17: 110s
+  N20: 80s
+  N15: 100s
+  N07: 120s
+  N13: 80s
+  N12: 105s
+  N18: 95s
+  N21: 120s
+  N22: 100s
+------
+GLOBAL SCORE
+------
+
+Nominal score:               103.67
+Adaptive score:              88.45
+Score loss:                  15.22 (14.7%)
+------
+GLOSSARY
+------
+
+p_fail:
+  Estimated failure risk. Higher = more likely to fail.
+
+Fuzzy decision:
+  AI-based analysis choosing best recovery action.
+  Score (0-100) and confidence (%) indicate decision quality.
+
+Actions:
+  - change_tool: Switch to alternative tool
+  - bypass: Skip inaccessible component
+  - destroy: Remove component by destruction
+  - replan: Recalculate sequence after changes
+
+States:
+  - done: Successfully removed components
+  - destroyed: Components removed by destruction
+  - locked: Components physically blocked (not removable)
+  - skipped: Components bypassed (not on current path)

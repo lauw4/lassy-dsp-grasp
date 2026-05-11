@@ -1,0 +1,10 @@
+--- Pipeline run 2026-05-08 22:26:38.462514 ---
+Instance: unknown
+Initial solution: ['C018', 'C010', 'C012', 'C017', 'C035', 'C038', 'C020', 'C005', 'C027', 'C043', 'C016', 'C014', 'C032', 'C048', 'C024', 'C004', 'C042', 'C026', 'C068', 'C090', 'C025', 'C062', 'C080', 'C111', 'C121']
+Final state:
+  - Locked: set()
+  - Destroyed: set()
+  - Done: {'C018', 'C062', 'C017', 'C121', 'C090', 'C048', 'C014', 'C012', 'C111', 'C038', 'C020', 'C005', 'C016', 'C004', 'C024', 'C025', 'C043', 'C010', 'C080', 'C026', 'C068', 'C042', 'C035', 'C027'}
+  - Skipped: {'C032'}
+  - Notes: []
+Actions taken: [{'comp_id': 'C032', 'symptom': 'ACCESS_BLOCKED', 'action': 'bypass', 'success': True, 'notes': 'Component C032 bypassed (skipped).'}, {'comp_id': 'C026', 'symptom': 'LOW_VALUE_BOTTLENECK', 'action': 'change_tool', 'success': True, 'notes': 'Alternative tool suggested.'}]

@@ -1,0 +1,67 @@
+2026-05-08 22:27:08,670 DSP ADAPTIVE PIPELINE - SCHOLL_ROSZIEG_N=25
+2026-05-08 22:27:08,670 Loaded instance: scholl_roszieg_n=25
+2026-05-08 22:27:08,671 Loaded failures: 2
+2026-05-08 22:27:08,671 [1/4] Loading instance and solving DSP...
+2026-05-08 22:27:08,727 Nodes: 25, Edges: 32, Targets: 1, Solution: 18 operations
+2026-05-08 22:27:08,727 Target(s) to achieve: ['C021']
+2026-05-08 22:27:08,727 Starting disassembly sequence (18 operations)...
+2026-05-08 22:27:08,727 [ 1/18] Disassembling C001... [OK]
+2026-05-08 22:27:08,727 [ 2/18] Disassembling C000... [OK]
+2026-05-08 22:27:08,727 [ 3/18] Disassembling C002... [OK]
+2026-05-08 22:27:08,727 [ 4/18] Disassembling C003... [OK]
+2026-05-08 22:27:08,727 [ 5/18] Disassembling C007... [OK]
+2026-05-08 22:27:08,727 [ 6/18] Disassembling C008... [OK]
+2026-05-08 22:27:08,727 [ 7/18] Disassembling C004... [OK]
+2026-05-08 22:27:08,727 [ 8/18] Disassembling C005... [OK]
+2026-05-08 22:27:08,727 [ 9/18] Disassembling C006... [OK]
+2026-05-08 22:27:08,727 [10/18] Disassembling C011... [OK]
+2026-05-08 22:27:08,727 [11/18] Disassembling C010... [OK]
+2026-05-08 22:27:08,727 [12/18] Disassembling C012... [OK]
+2026-05-08 22:27:08,727 [13/18] Disassembling C013... [OK]
+2026-05-08 22:27:08,727 [14/18] Disassembling C018... [OK]
+2026-05-08 22:27:08,727 [15/18] Disassembling C019... [OK]
+2026-05-08 22:27:08,728 [16/18] Disassembling C014... [OK]
+2026-05-08 22:27:08,728 [17/18] Disassembling C020... [OK]
+2026-05-08 22:27:08,728 [18/18] Disassembling C021... [OK]
+2026-05-08 22:27:08,728 [2/4] Failure scenario loaded: 2 failure(s)
+2026-05-08 22:27:08,728 [3/4] Executing adaptive scheduler...
+2026-05-08 22:27:08,738 [FUZZY] Symptom: LOW_VALUE_BOTTLENECK
+2026-05-08 22:27:08,738 [FUZZY] Inputs: force=30.0, torque=20.0, p_fail=60.0, context=100.0
+2026-05-08 22:27:08,738 [FUZZY] Score: 20.00
+2026-05-08 22:27:08,738 [FUZZY] Decision: change_tool (confidence=100.0%)
+2026-05-08 22:27:08,738 [ACTION] change_tool: success=True, notes=Alternative tool suggested.
+2026-05-08 22:27:08,755 [FUZZY] Symptom: OVER_TORQUE_NO_ADVANCE
+2026-05-08 22:27:08,755 [FUZZY] Inputs: force=70.0, torque=80.0, p_fail=65.0, context=100.0
+2026-05-08 22:27:08,755 [FUZZY] Score: 42.04
+2026-05-08 22:27:08,755 [FUZZY] Decision: bypass (confidence=89.8%)
+2026-05-08 22:27:08,755 [ACTION] bypass: success=True, notes=Component C013 bypassed (skipped).
+2026-05-08 22:27:08,755 Adaptive scheduler finished. Actions taken: 2
+2026-05-08 22:27:08,755 EXECUTION SUMMARY
+2026-05-08 22:27:08,755 Status: SUCCESS
+2026-05-08 22:27:08,755 Target components:
+2026-05-08 22:27:08,755 [OK] C021 - Successfully disassembled
+2026-05-08 22:27:08,755 Execution metrics:
+2026-05-08 22:27:08,755 Targets achieved: 1/1 (100.0%)
+2026-05-08 22:27:08,755 Failures handled: 2
+2026-05-08 22:27:08,755 Actions taken: 2
+2026-05-08 22:27:08,755 Components done: 17/18
+2026-05-08 22:27:08,755 Algorithm runtime: 0.09s
+2026-05-08 22:27:08,755 ECONOMIC ANALYSIS:
+2026-05-08 22:27:08,755 Nominal profit (planned): 262.00 units
+2026-05-08 22:27:08,755 Adaptive profit (recovered): 260.00 units
+2026-05-08 22:27:08,755 Profit loss: 2.00 units (0.8%)
+2026-05-08 22:27:08,755 Value skipped (bypassed): 5.00 units
+2026-05-08 22:27:08,755 TIME ANALYSIS:
+2026-05-08 22:27:08,755 Nominal time (planned): 1min 28s
+2026-05-08 22:27:08,755 Adaptive time (actual): 1min 25s
+2026-05-08 22:27:08,755 Time saved: 3s (3.4%)
+2026-05-08 22:27:08,755 Time saved (skipped): 3s
+2026-05-08 22:27:08,755 GLOBAL SCORE :
+2026-05-08 22:27:08,755 Nominal score: 87.04
+2026-05-08 22:27:08,755 Adaptive score: 86.38
+2026-05-08 22:27:08,755 Score loss: 0.66 (0.8%)
+2026-05-08 22:27:08,755 Actions breakdown:
+2026-05-08 22:27:08,755 [OK] C008     LOW_VALUE_BOTTLENECK -> change_tool 
+2026-05-08 22:27:08,755 [OK] C013     OVER_TORQUE_NO_ADVANCE -> bypass      
+2026-05-08 22:27:08,755 Detailed logs: results/save/test_failures/scholl_roszieg_n=25/complex
+2026-05-08 22:27:08,756 Pipeline finished successfully

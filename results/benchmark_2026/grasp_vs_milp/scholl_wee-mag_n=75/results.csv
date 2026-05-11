@@ -1,0 +1,2 @@
+instance,n,lambda,grasp_best,grasp_avg,grasp_std,grasp_time_s,cplex_obj,cplex_status,cplex_time_s,cplex_intgap_pct,gap_grasp_vs_cplex,cpsat_obj,cpsat_bound,cpsat_status,cpsat_time_s,cpsat_intgap_pct,gap_grasp_vs_cpsat,milp_obj,milp_status,milp_time_s,gap_pct
+scholl_wee-mag_n=75,75,0.03253,300.8738,300.8738,0.0,0.07,93.665,TimeLimit,180.43,583.57,-221.22,315.1025,880.5025,FEASIBLE,180.03,179.43,4.52,93.665,TimeLimit,180.43,-221.22

@@ -1,0 +1,10 @@
+--- Pipeline run 2026-05-08 22:26:35.237713 ---
+Instance: unknown
+Initial solution: ['C000', 'C008', 'C010', 'C012', 'C014', 'C011', 'C013', 'C016', 'C019', 'C002', 'C020', 'C025', 'C028']
+Final state:
+  - Locked: set()
+  - Destroyed: set()
+  - Done: {'C011', 'C008', 'C019', 'C028', 'C025', 'C000', 'C010', 'C013', 'C012', 'C002', 'C016', 'C020'}
+  - Skipped: {'C014'}
+  - Notes: []
+Actions taken: [{'comp_id': 'C014', 'symptom': 'LOW_VALUE_BOTTLENECK', 'action': 'bypass', 'success': True, 'notes': 'Component C014 bypassed (skipped).'}]

@@ -1,0 +1,114 @@
+------
+ADAPTIVE DSP EXECUTION REPORT
+------
+
+INITIAL PLANNED SEQUENCE:
+----------------------------------------
+C016, C031, C059, C074, C076, C011
+Target = C011, C076
+
+------
+EXECUTION WITH ADAPTATION:
+------
+
+C016 - OK
+------
+FAILURE ON C031
+------
+
+Symptom: OVER_TORQUE_NO_ADVANCE
+
+Sensor values:
+  - Force:  70.0
+  - Torque: 80.0
+  - P_fail: 75.0%
+
+Fuzzy decision:
+  - Action: destroy->bypass
+  - Score:  70.67
+  - Confidence: 63.7%
+
+Result: Fallback succeeded
+C059 - OK
+C074 - OK
+C076 - OK
+C011 - OK
+------
+EXECUTION METRICS:
+------
+
+Targets achieved: 2/2 (100.0%)
+Failures handled: 2
+Actions taken:    2
+Done:             5/6
+Destroyed:        0
+Skipped:          1
+------
+FINAL STATE
+------
+
+Done:      ['C011', 'C016', 'C059', 'C074', 'C076']
+Destroyed: []
+Locked:    []
+Skipped:   ['C031']
+------
+ECONOMIC ANALYSIS
+------
+
+Nominal profit (planned):    120.00 units
+Adaptive profit (recovered): 109.00 units
+Profit loss:                 11.00 units (9.2%)
+Value skipped (bypassed):    20.00 units
+
+Component breakdown:
+  C016: profit=28, cost=7 -> net=21.00
+  C031: profit=20, cost=9 -> SKIPPED (not recovered)
+  C059: profit=21, cost=8 -> net=13.00
+  C074: profit=27, cost=6 -> net=21.00
+  C076: profit=29, cost=3 -> net=26.00
+  C011: profit=30, cost=2 -> net=28.00
+------
+TIME ANALYSIS
+------
+
+Nominal time (planned):      16min 22s
+Adaptive time (actual):      13min 43s
+Time saved:                  2min 39s (16.2%)
+Time saved (skipped):        2min 39s
+
+Component time breakdown:
+  C016: 149s
+  C031: 159s -> SKIPPED (saved)
+  C059: 278s
+  C074: 60s
+  C076: 85s
+  C011: 251s
+------
+GLOBAL SCORE
+------
+
+Nominal score:               36.73
+Adaptive score:              33.59
+Score loss:                  3.14 (8.5%)
+------
+GLOSSARY
+------
+
+p_fail:
+  Estimated failure risk. Higher = more likely to fail.
+
+Fuzzy decision:
+  AI-based analysis choosing best recovery action.
+  Score (0-100) and confidence (%) indicate decision quality.
+
+Actions:
+  - change_tool: Switch to alternative tool
+  - bypass: Skip inaccessible component
+  - destroy: Remove component by destruction
+  - replan: Recalculate sequence after changes
+
+States:
+  - done: Successfully removed components
+  - destroyed: Components removed by destruction
+  - locked: Components physically blocked (not removable)
+  - skipped: Components bypassed (not on current path)

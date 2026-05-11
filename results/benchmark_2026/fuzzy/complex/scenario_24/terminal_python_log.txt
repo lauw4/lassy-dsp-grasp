@@ -1,0 +1,45 @@
+2026-05-08 22:27:06,754 DSP ADAPTIVE PIPELINE - SCHOLL_MERTENS_N=7
+2026-05-08 22:27:06,754 Loaded instance: scholl_mertens_n=7
+2026-05-08 22:27:06,755 Loaded failures: 1
+2026-05-08 22:27:06,755 [1/4] Loading instance and solving DSP...
+2026-05-08 22:27:06,764 Nodes: 7, Edges: 6, Targets: 1, Solution: 4 operations
+2026-05-08 22:27:06,764 Target(s) to achieve: ['C005']
+2026-05-08 22:27:06,764 Starting disassembly sequence (4 operations)...
+2026-05-08 22:27:06,764 [ 1/4] Disassembling C000... [OK]
+2026-05-08 22:27:06,764 [ 2/4] Disassembling C001... [OK]
+2026-05-08 22:27:06,764 [ 3/4] Disassembling C004... [OK]
+2026-05-08 22:27:06,764 [ 4/4] Disassembling C005... [OK]
+2026-05-08 22:27:06,764 [2/4] Failure scenario loaded: 1 failure(s)
+2026-05-08 22:27:06,764 [3/4] Executing adaptive scheduler...
+2026-05-08 22:27:06,781 [FUZZY] Symptom: ACCESS_BLOCKED
+2026-05-08 22:27:06,781 [FUZZY] Inputs: force=60.0, torque=40.0, p_fail=60.0, context=100.0
+2026-05-08 22:27:06,781 [FUZZY] Score: 20.00
+2026-05-08 22:27:06,781 [FUZZY] Decision: change_tool (confidence=100.0%)
+2026-05-08 22:27:06,781 [ACTION] change_tool: success=True, notes=Alternative tool suggested.
+2026-05-08 22:27:06,781 Adaptive scheduler finished. Actions taken: 1
+2026-05-08 22:27:06,781 EXECUTION SUMMARY
+2026-05-08 22:27:06,781 Status: SUCCESS
+2026-05-08 22:27:06,781 Target components:
+2026-05-08 22:27:06,781 [OK] C005 - Successfully disassembled
+2026-05-08 22:27:06,781 Execution metrics:
+2026-05-08 22:27:06,781 Targets achieved: 1/1 (100.0%)
+2026-05-08 22:27:06,781 Failures handled: 1
+2026-05-08 22:27:06,781 Actions taken: 1
+2026-05-08 22:27:06,781 Components done: 4/4
+2026-05-08 22:27:06,781 Algorithm runtime: 0.03s
+2026-05-08 22:27:06,781 ECONOMIC ANALYSIS:
+2026-05-08 22:27:06,781 Nominal profit (planned): 80.00 units
+2026-05-08 22:27:06,781 Adaptive profit (recovered): 80.00 units
+2026-05-08 22:27:06,781 Profit loss: 0.00 units (0.0%)
+2026-05-08 22:27:06,781 TIME ANALYSIS:
+2026-05-08 22:27:06,781 Nominal time (planned): 17s
+2026-05-08 22:27:06,781 Adaptive time (actual): 17s
+2026-05-08 22:27:06,781 Time overhead: -0s (-0.0%)
+2026-05-08 22:27:06,781 GLOBAL SCORE :
+2026-05-08 22:27:06,781 Nominal score: 26.61
+2026-05-08 22:27:06,781 Adaptive score: 26.61
+2026-05-08 22:27:06,782 Score loss: 0.00 (0.0%)
+2026-05-08 22:27:06,782 Actions breakdown:
+2026-05-08 22:27:06,782 [OK] C004     ACCESS_BLOCKED       -> change_tool 
+2026-05-08 22:27:06,782 Detailed logs: results/save/test_failures/scholl_mertens_n=7/complex
+2026-05-08 22:27:06,782 Pipeline finished successfully

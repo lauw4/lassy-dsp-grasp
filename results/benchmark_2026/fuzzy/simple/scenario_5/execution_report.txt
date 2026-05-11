@@ -1,0 +1,184 @@
+------
+ADAPTIVE DSP EXECUTION REPORT
+------
+
+INITIAL PLANNED SEQUENCE:
+----------------------------------------
+C018, C010, C016, C020, C012, C038, C017, C035, C042, C027, C043, C014, C032, C004, C048, C068, C026, C090, C025, C024, C005, C062, C080, C111, C121
+Target = C043, C090, C121
+
+------
+EXECUTION WITH ADAPTATION:
+------
+
+C018 - OK
+C010 - OK
+C016 - OK
+C020 - OK
+C012 - OK
+C038 - OK
+C017 - OK
+C035 - OK
+C042 - OK
+C027 - OK
+C043 - OK
+C014 - OK
+C032 - OK
+C004 - OK
+C048 - OK
+C068 - OK
+C026 - OK
+C090 - OK
+C025 - OK
+------
+FAILURE ON C024
+------
+
+Symptom: ACCESS_BLOCKED
+
+Sensor values:
+  - Force:  60.0
+  - Torque: 40.0
+  - P_fail: 70.0%
+
+Fuzzy decision:
+  - Action: destroy
+  - Score:  56.71
+  - Confidence: 74.3%
+
+Result: Destruction allowed (cutoff percentile 20th).
+
+----------------------------------------
+SELECTIVE REPLANNING TRIGGERED
+----------------------------------------
+
+State at replan:
+  - Done:      ['C004', 'C010', 'C012', 'C014', 'C016', 'C017', 'C018', 'C020', 'C025', 'C026', 'C027', 'C032', 'C035', 'C038', 'C042', 'C043', 'C048', 'C068', 'C090']
+  - Destroyed: ['C024']
+  - Locked:    []
+  - Skipped:   []
+
+New sequence after replan:
+  ['C005', 'C062', 'C080', 'C111', 'C121']
+C005 - OK
+C062 - OK
+C080 - OK
+C111 - OK
+C121 - OK
+------
+EXECUTION METRICS:
+------
+
+Targets achieved: 3/3 (100.0%)
+Failures handled: 1
+Actions taken:    1
+Done:             24/25
+Destroyed:        1
+Skipped:          0
+------
+FINAL STATE
+------
+
+Done:      ['C004', 'C005', 'C010', 'C012', 'C014', 'C016', 'C017', 'C018', 'C020', 'C025', 'C026', 'C027', 'C032', 'C035', 'C038', 'C042', 'C043', 'C048', 'C062', 'C068', 'C080', 'C090', 'C111', 'C121']
+Destroyed: ['C024']
+Locked:    []
+Skipped:   []
+------
+ECONOMIC ANALYSIS
+------
+
+Nominal profit (planned):    515.00 units
+Adaptive profit (recovered): 488.00 units
+Profit loss:                 27.00 units (5.2%)
+Value lost (destroyed):      27.00 units
+
+Component breakdown:
+  C018: profit=24, cost=8 -> net=16.00
+  C010: profit=25, cost=9 -> net=16.00
+  C016: profit=29, cost=8 -> net=21.00
+  C020: profit=28, cost=6 -> net=22.00
+  C012: profit=21, cost=5 -> net=16.00
+  C038: profit=23, cost=9 -> net=14.00
+  C017: profit=22, cost=3 -> net=19.00
+  C035: profit=28, cost=8 -> net=20.00
+  C042: profit=27, cost=9 -> net=18.00
+  C027: profit=24, cost=3 -> net=21.00
+  C043: profit=27, cost=9 -> net=18.00
+  C014: profit=28, cost=5 -> net=23.00
+  C032: profit=30, cost=4 -> net=26.00
+  C004: profit=26, cost=6 -> net=20.00
+  C048: profit=30, cost=3 -> net=27.00
+  C068: profit=26, cost=9 -> net=17.00
+  C026: profit=30, cost=1 -> net=29.00
+  C090: profit=24, cost=2 -> net=22.00
+  C025: profit=24, cost=7 -> net=17.00
+  C024: profit=27, cost=1 -> DESTROYED (lost 27 + paid 1)
+  C005: profit=27, cost=7 -> net=20.00
+  C062: profit=29, cost=8 -> net=21.00
+  C080: profit=26, cost=2 -> net=24.00
+  C111: profit=27, cost=8 -> net=19.00
+  C121: profit=30, cost=7 -> net=23.00
+------
+TIME ANALYSIS
+------
+
+Nominal time (planned):      58min 25s
+Adaptive time (actual):      58min 25s
+Time overhead:               -0s (-0.0%)
+Time on destroyed (lost):    3min 28s
+
+Component time breakdown:
+  C018: 34s
+  C010: 52s
+  C016: 149s
+  C020: 105s
+  C012: 158s
+  C038: 104s
+  C017: 202s
+  C035: 81s
+  C042: 53s
+  C027: 124s
+  C043: 89s
+  C014: 266s
+  C032: 147s
+  C004: 211s
+  C048: 27s
+  C068: 153s
+  C026: 237s
+  C090: 94s
+  C025: 270s
+  C024: 208s -> DESTROYED
+  C005: 156s
+  C062: 150s
+  C080: 243s
+  C111: 88s
+  C121: 104s
+------
+GLOBAL SCORE
+------
+
+Nominal score:               159.98
+Adaptive score:              152.01
+Score loss:                  7.97 (5.0%)
+------
+GLOSSARY
+------
+
+p_fail:
+  Estimated failure risk. Higher = more likely to fail.
+
+Fuzzy decision:
+  AI-based analysis choosing best recovery action.
+  Score (0-100) and confidence (%) indicate decision quality.
+
+Actions:
+  - change_tool: Switch to alternative tool
+  - bypass: Skip inaccessible component
+  - destroy: Remove component by destruction
+  - replan: Recalculate sequence after changes
+
+States:
+  - done: Successfully removed components
+  - destroyed: Components removed by destruction
+  - locked: Components physically blocked (not removable)
+  - skipped: Components bypassed (not on current path)

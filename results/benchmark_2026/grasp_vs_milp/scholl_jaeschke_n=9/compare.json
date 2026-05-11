@@ -1,0 +1,62 @@
+{
+  "instance": "scholl_jaeschke_n=9",
+  "targets": [
+    "C009"
+  ],
+  "grasp": {
+    "best_score": 113.5424,
+    "avg_score": 113.5424,
+    "std_score": 0.0,
+    "time_s": 0.0,
+    "sequence": [
+      "C001",
+      "C003",
+      "C002",
+      "C004",
+      "C005",
+      "C008",
+      "C006",
+      "C007",
+      "C009"
+    ]
+  },
+  "cplex": {
+    "objective": 113.5424,
+    "status": "Optimal",
+    "time_s": 0.01,
+    "intgap_pct": 0.11,
+    "sequence": [
+      1,
+      3,
+      2,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "cpsat": {
+    "objective": 113.5376,
+    "bound": 113.5376,
+    "status": "OPTIMAL",
+    "time_s": 0.0,
+    "intgap_pct": 0.0,
+    "sequence": [
+      1,
+      3,
+      2,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "comparison": {
+    "gap_grasp_vs_cplex_pct": -0.0,
+    "gap_grasp_vs_cpsat_pct": -0.0
+  }
+}

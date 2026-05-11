@@ -1,0 +1,10 @@
+--- Pipeline run 2026-05-08 22:26:46.589968 ---
+Instance: unknown
+Initial solution: ['C010', 'C038', 'C000', 'C006', 'C001', 'C007', 'C003', 'C002', 'C011', 'C012', 'C005', 'C013', 'C031', 'C029', 'C016', 'C030', 'C014', 'C026', 'C028', 'C017', 'C024', 'C025', 'C023', 'C015', 'C022', 'C018', 'C019', 'C032', 'C033', 'C035', 'C020', 'C004', 'C034', 'C021', 'C008', 'C027', 'C037', 'C039', 'C009', 'C040', 'C041', 'C044']
+Final state:
+  - Locked: set()
+  - Destroyed: set()
+  - Done: {'C044', 'C008', 'C003', 'C009', 'C024', 'C032', 'C019', 'C029', 'C004', 'C031', 'C040', 'C011', 'C030', 'C041', 'C016', 'C027', 'C006', 'C020', 'C002', 'C012', 'C025', 'C018', 'C023', 'C007', 'C039', 'C001', 'C021', 'C035', 'C014', 'C015', 'C028', 'C000', 'C013', 'C038', 'C034', 'C033', 'C026', 'C017', 'C005', 'C010', 'C022'}
+  - Skipped: {'C037'}
+  - Notes: []
+Actions taken: [{'comp_id': 'C014', 'symptom': 'ACCESS_BLOCKED', 'action': 'change_tool', 'success': True, 'notes': 'Alternative tool suggested.'}, {'comp_id': 'C037', 'symptom': 'LOW_VALUE_BOTTLENECK', 'action': 'bypass', 'success': True, 'notes': 'Component C037 bypassed (skipped).'}]

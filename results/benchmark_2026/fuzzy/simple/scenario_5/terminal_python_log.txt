@@ -1,0 +1,77 @@
+2026-05-08 22:26:21,570 DSP ADAPTIVE PIPELINE - SALBP_INSTANCE_N=1000_1_CUT135
+2026-05-08 22:26:21,571 Loaded instance: salbp_instance_n=1000_1_cut135
+2026-05-08 22:26:21,571 Loaded failures: 1
+2026-05-08 22:26:21,571 [1/4] Loading instance and solving DSP...
+2026-05-08 22:26:21,690 Nodes: 135, Edges: 120, Targets: 3, Solution: 25 operations
+2026-05-08 22:26:21,690 Target(s) to achieve: ['C043', 'C090', 'C121']
+2026-05-08 22:26:21,690 Starting disassembly sequence (25 operations)...
+2026-05-08 22:26:21,690 [ 1/25] Disassembling C018... [OK]
+2026-05-08 22:26:21,690 [ 2/25] Disassembling C010... [OK]
+2026-05-08 22:26:21,690 [ 3/25] Disassembling C016... [OK]
+2026-05-08 22:26:21,690 [ 4/25] Disassembling C020... [OK]
+2026-05-08 22:26:21,690 [ 5/25] Disassembling C012... [OK]
+2026-05-08 22:26:21,690 [ 6/25] Disassembling C038... [OK]
+2026-05-08 22:26:21,690 [ 7/25] Disassembling C017... [OK]
+2026-05-08 22:26:21,690 [ 8/25] Disassembling C035... [OK]
+2026-05-08 22:26:21,690 [ 9/25] Disassembling C042... [OK]
+2026-05-08 22:26:21,690 [10/25] Disassembling C027... [OK]
+2026-05-08 22:26:21,690 [11/25] Disassembling C043... [OK]
+2026-05-08 22:26:21,690 [12/25] Disassembling C014... [OK]
+2026-05-08 22:26:21,690 [13/25] Disassembling C032... [OK]
+2026-05-08 22:26:21,690 [14/25] Disassembling C004... [OK]
+2026-05-08 22:26:21,690 [15/25] Disassembling C048... [OK]
+2026-05-08 22:26:21,690 [16/25] Disassembling C068... [OK]
+2026-05-08 22:26:21,690 [17/25] Disassembling C026... [OK]
+2026-05-08 22:26:21,690 [18/25] Disassembling C090... [OK]
+2026-05-08 22:26:21,690 [19/25] Disassembling C025... [OK]
+2026-05-08 22:26:21,690 [20/25] Disassembling C024... [OK]
+2026-05-08 22:26:21,690 [21/25] Disassembling C005... [OK]
+2026-05-08 22:26:21,690 [22/25] Disassembling C062... [OK]
+2026-05-08 22:26:21,690 [23/25] Disassembling C080... [OK]
+2026-05-08 22:26:21,690 [24/25] Disassembling C111... [OK]
+2026-05-08 22:26:21,690 [25/25] Disassembling C121... [OK]
+2026-05-08 22:26:21,690 [2/4] Failure scenario loaded: 1 failure(s)
+2026-05-08 22:26:21,690 [3/4] Executing adaptive scheduler...
+2026-05-08 22:26:21,707 [FUZZY] Symptom: ACCESS_BLOCKED
+2026-05-08 22:26:21,707 [FUZZY] Inputs: force=60.0, torque=40.0, p_fail=70.0, context=0.0
+2026-05-08 22:26:21,707 [FUZZY] Score: 56.71
+2026-05-08 22:26:21,707 [FUZZY] Decision: destroy (confidence=74.3%)
+2026-05-08 22:26:21,707 [ACTION] destroy: success=True, notes=Destruction allowed (cutoff percentile 20th).
+2026-05-08 22:26:21,707 [REPLAN] States before replan:
+2026-05-08 22:26:21,707 [REPLAN]   done=['C004', 'C010', 'C012', 'C014', 'C016', 'C017', 'C018', 'C020', 'C025', 'C026', 'C027', 'C032', 'C035', 'C038', 'C042', 'C043', 'C048', 'C068', 'C090']
+2026-05-08 22:26:21,707 [REPLAN]   destroyed=['C024']
+2026-05-08 22:26:21,707 [REPLAN]   locked=[]
+2026-05-08 22:26:21,707 [REPLAN]   skipped=[]
+2026-05-08 22:26:21,723 [REPLAN] New sequence: ['C005', 'C062', 'C080', 'C111', 'C121']
+2026-05-08 22:26:21,723 Adaptive scheduler finished. Actions taken: 1
+2026-05-08 22:26:21,723 EXECUTION SUMMARY
+2026-05-08 22:26:21,723 Status: SUCCESS
+2026-05-08 22:26:21,723 Target components:
+2026-05-08 22:26:21,723 [OK] C043 - Successfully disassembled
+2026-05-08 22:26:21,723 [OK] C090 - Successfully disassembled
+2026-05-08 22:26:21,723 [OK] C121 - Successfully disassembled
+2026-05-08 22:26:21,723 Execution metrics:
+2026-05-08 22:26:21,723 Targets achieved: 3/3 (100.0%)
+2026-05-08 22:26:21,723 Failures handled: 1
+2026-05-08 22:26:21,723 Actions taken: 1
+2026-05-08 22:26:21,723 Components done: 24/25
+2026-05-08 22:26:21,723 Destroyed: 1 component(s)
+2026-05-08 22:26:21,723 Algorithm runtime: 0.15s
+2026-05-08 22:26:21,723 ECONOMIC ANALYSIS:
+2026-05-08 22:26:21,723 Nominal profit (planned): 515.00 units
+2026-05-08 22:26:21,723 Adaptive profit (recovered): 488.00 units
+2026-05-08 22:26:21,723 Profit loss: 27.00 units (5.2%)
+2026-05-08 22:26:21,723 Value lost (destroyed): 27.00 units
+2026-05-08 22:26:21,723 TIME ANALYSIS:
+2026-05-08 22:26:21,723 Nominal time (planned): 58min 25s
+2026-05-08 22:26:21,723 Adaptive time (actual): 58min 25s
+2026-05-08 22:26:21,723 Time overhead: -0s (-0.0%)
+2026-05-08 22:26:21,723 Time on destroyed (lost): 3min 28s
+2026-05-08 22:26:21,723 GLOBAL SCORE :
+2026-05-08 22:26:21,723 Nominal score: 159.98
+2026-05-08 22:26:21,723 Adaptive score: 152.01
+2026-05-08 22:26:21,723 Score loss: 7.97 (5.0%)
+2026-05-08 22:26:21,723 Actions breakdown:
+2026-05-08 22:26:21,723 [OK] C024     ACCESS_BLOCKED       -> destroy     
+2026-05-08 22:26:21,723 Detailed logs: results/save/test_failures/salbp_instance_n=1000_1_cut135/simple
+2026-05-08 22:26:21,725 Pipeline finished successfully

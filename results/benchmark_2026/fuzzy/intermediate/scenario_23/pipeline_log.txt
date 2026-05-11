@@ -1,0 +1,10 @@
+--- Pipeline run 2026-05-08 22:26:48.954394 ---
+Instance: unknown
+Initial solution: ['C000', 'C001', 'C004', 'C006', 'C008', 'C003', 'C005', 'C007', 'C009', 'C002', 'C010']
+Final state:
+  - Locked: set()
+  - Destroyed: set()
+  - Done: {'C002', 'C010', 'C006', 'C001', 'C004', 'C005', 'C000', 'C009', 'C008', 'C003', 'C007'}
+  - Skipped: set()
+  - Notes: []
+Actions taken: [{'comp_id': 'C008', 'symptom': 'ACCESS_BLOCKED', 'action': 'change_tool', 'success': True, 'notes': 'Alternative tool suggested.'}, {'comp_id': 'C005', 'symptom': 'LOW_VALUE_BOTTLENECK', 'action': 'change_tool', 'success': True, 'notes': 'Alternative tool suggested.'}]

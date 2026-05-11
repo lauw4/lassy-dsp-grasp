@@ -1,0 +1,358 @@
+------
+ADAPTIVE DSP EXECUTION REPORT
+------
+
+INITIAL PLANNED SEQUENCE:
+----------------------------------------
+C000, C001, C002, C003, C005, C010, C004, C009, C007, C006, C008, C011, C012, C013, C014, C016, C015, C017, C018, C019, C027, C021, C022, C023, C024, C028, C026, C025, C030, C031, C032, C033, C034, C035, C036, C037, C038, C039, C042, C043, C044, C045, C046, C048, C049, C041, C040, C050, C029, C051, C052, C069, C067, C068, C071, C079, C070, C020, C053, C054, C055, C056, C060, C065, C061, C063, C064, C062, C057, C058, C059, C066, C072, C047, C073, C075, C074, C076, C077, C078, C080, C084, C081, C082, C083, C085, C086, C087
+Target = C047, C087
+
+------
+EXECUTION WITH ADAPTATION:
+------
+
+C000 - OK
+C001 - OK
+C002 - OK
+C003 - OK
+C005 - OK
+C010 - OK
+C004 - OK
+C009 - OK
+C007 - OK
+C006 - OK
+C008 - OK
+C011 - OK
+C012 - OK
+C013 - OK
+C014 - OK
+------
+FAILURE ON C016
+------
+
+Symptom: LOW_VALUE_BOTTLENECK
+
+Sensor values:
+  - Force:  30.0
+  - Torque: 20.0
+  - P_fail: 60.0%
+
+Fuzzy decision:
+  - Action: change_tool
+  - Score:  20.00
+  - Confidence: 100.0%
+
+Result: Alternative tool suggested.
+C015 - OK
+C017 - OK
+C018 - OK
+C019 - OK
+C027 - OK
+C021 - OK
+C022 - OK
+C023 - OK
+C024 - OK
+C028 - OK
+C026 - OK
+C025 - OK
+C030 - OK
+C031 - OK
+C032 - OK
+C033 - OK
+C034 - OK
+C035 - OK
+C036 - OK
+C037 - OK
+C038 - OK
+C039 - OK
+C042 - OK
+C043 - OK
+C044 - OK
+C045 - OK
+C046 - OK
+C048 - OK
+C049 - OK
+C041 - OK
+C040 - OK
+C050 - OK
+C029 - OK
+C051 - OK
+C052 - OK
+C069 - OK
+C067 - OK
+C068 - OK
+C071 - OK
+C079 - OK
+C070 - OK
+C020 - OK
+C053 - OK
+C054 - OK
+C055 - OK
+C056 - OK
+C060 - OK
+C065 - OK
+C061 - OK
+C063 - OK
+C064 - OK
+C062 - OK
+C057 - OK
+C058 - OK
+C059 - OK
+C066 - OK
+C072 - OK
+C047 - OK
+C073 - OK
+C075 - OK
+C074 - OK
+C076 - OK
+C077 - OK
+C078 - OK
+C080 - OK
+C084 - OK
+C081 - OK
+C082 - OK
+C083 - OK
+C085 - OK
+C086 - OK
+C087 - OK
+------
+EXECUTION METRICS:
+------
+
+Targets achieved: 2/2 (100.0%)
+Failures handled: 1
+Actions taken:    1
+Done:             88/88
+Destroyed:        0
+Skipped:          0
+------
+FINAL STATE
+------
+
+Done:      ['C000', 'C001', 'C002', 'C003', 'C004', 'C005', 'C006', 'C007', 'C008', 'C009', 'C010', 'C011', 'C012', 'C013', 'C014', 'C015', 'C016', 'C017', 'C018', 'C019', 'C020', 'C021', 'C022', 'C023', 'C024', 'C025', 'C026', 'C027', 'C028', 'C029', 'C030', 'C031', 'C032', 'C033', 'C034', 'C035', 'C036', 'C037', 'C038', 'C039', 'C040', 'C041', 'C042', 'C043', 'C044', 'C045', 'C046', 'C047', 'C048', 'C049', 'C050', 'C051', 'C052', 'C053', 'C054', 'C055', 'C056', 'C057', 'C058', 'C059', 'C060', 'C061', 'C062', 'C063', 'C064', 'C065', 'C066', 'C067', 'C068', 'C069', 'C070', 'C071', 'C072', 'C073', 'C074', 'C075', 'C076', 'C077', 'C078', 'C079', 'C080', 'C081', 'C082', 'C083', 'C084', 'C085', 'C086', 'C087']
+Destroyed: []
+Locked:    []
+Skipped:   []
+------
+ECONOMIC ANALYSIS
+------
+
+Nominal profit (planned):    1493.00 units
+Adaptive profit (recovered): 1493.00 units
+Profit loss:                 0.00 units (0.0%)
+
+Component breakdown:
+  C000: profit=14, cost=6 -> net=8.00
+  C001: profit=11, cost=1 -> net=10.00
+  C002: profit=29, cost=3 -> net=26.00
+  C003: profit=30, cost=3 -> net=27.00
+  C005: profit=30, cost=2 -> net=28.00
+  C010: profit=8, cost=1 -> net=7.00
+  C004: profit=24, cost=8 -> net=16.00
+  C009: profit=29, cost=1 -> net=28.00
+  C007: profit=25, cost=2 -> net=23.00
+  C006: profit=27, cost=10 -> net=17.00
+  C008: profit=22, cost=5 -> net=17.00
+  C011: profit=12, cost=7 -> net=5.00
+  C012: profit=25, cost=8 -> net=17.00
+  C013: profit=21, cost=1 -> net=20.00
+  C014: profit=30, cost=10 -> net=20.00
+  C016: profit=25, cost=2 -> net=23.00
+  C015: profit=21, cost=2 -> net=19.00
+  C017: profit=29, cost=10 -> net=19.00
+  C018: profit=22, cost=1 -> net=21.00
+  C019: profit=23, cost=6 -> net=17.00
+  C027: profit=30, cost=1 -> net=29.00
+  C021: profit=12, cost=5 -> net=7.00
+  C022: profit=26, cost=3 -> net=23.00
+  C023: profit=20, cost=2 -> net=18.00
+  C024: profit=20, cost=5 -> net=15.00
+  C028: profit=28, cost=4 -> net=24.00
+  C026: profit=21, cost=3 -> net=18.00
+  C025: profit=29, cost=3 -> net=26.00
+  C030: profit=9, cost=2 -> net=7.00
+  C031: profit=11, cost=7 -> net=4.00
+  C032: profit=29, cost=1 -> net=28.00
+  C033: profit=26, cost=2 -> net=24.00
+  C034: profit=30, cost=1 -> net=29.00
+  C035: profit=26, cost=3 -> net=23.00
+  C036: profit=30, cost=3 -> net=27.00
+  C037: profit=22, cost=1 -> net=21.00
+  C038: profit=29, cost=2 -> net=27.00
+  C039: profit=24, cost=8 -> net=16.00
+  C042: profit=26, cost=10 -> net=16.00
+  C043: profit=28, cost=3 -> net=25.00
+  C044: profit=24, cost=9 -> net=15.00
+  C045: profit=23, cost=2 -> net=21.00
+  C046: profit=24, cost=3 -> net=21.00
+  C048: profit=21, cost=6 -> net=15.00
+  C049: profit=28, cost=2 -> net=26.00
+  C041: profit=13, cost=5 -> net=8.00
+  C040: profit=13, cost=6 -> net=7.00
+  C050: profit=7, cost=1 -> net=6.00
+  C029: profit=21, cost=2 -> net=19.00
+  C051: profit=12, cost=7 -> net=5.00
+  C052: profit=16, cost=9 -> net=7.00
+  C069: profit=21, cost=3 -> net=18.00
+  C067: profit=26, cost=10 -> net=16.00
+  C068: profit=20, cost=9 -> net=11.00
+  C071: profit=9, cost=2 -> net=7.00
+  C079: profit=20, cost=9 -> net=11.00
+  C070: profit=14, cost=3 -> net=11.00
+  C020: profit=7, cost=1 -> net=6.00
+  C053: profit=27, cost=4 -> net=23.00
+  C054: profit=27, cost=8 -> net=19.00
+  C055: profit=25, cost=2 -> net=23.00
+  C056: profit=29, cost=4 -> net=25.00
+  C060: profit=13, cost=10 -> net=3.00
+  C065: profit=24, cost=3 -> net=21.00
+  C061: profit=9, cost=1 -> net=8.00
+  C063: profit=29, cost=9 -> net=20.00
+  C064: profit=20, cost=6 -> net=14.00
+  C062: profit=30, cost=5 -> net=25.00
+  C057: profit=24, cost=5 -> net=19.00
+  C058: profit=28, cost=6 -> net=22.00
+  C059: profit=21, cost=6 -> net=15.00
+  C066: profit=20, cost=9 -> net=11.00
+  C072: profit=8, cost=6 -> net=2.00
+  C047: profit=29, cost=2 -> net=27.00
+  C073: profit=21, cost=2 -> net=19.00
+  C075: profit=28, cost=6 -> net=22.00
+  C074: profit=23, cost=1 -> net=22.00
+  C076: profit=21, cost=3 -> net=18.00
+  C077: profit=26, cost=9 -> net=17.00
+  C078: profit=24, cost=10 -> net=14.00
+  C080: profit=11, cost=5 -> net=6.00
+  C084: profit=24, cost=8 -> net=16.00
+  C081: profit=5, cost=4 -> net=1.00
+  C082: profit=23, cost=2 -> net=21.00
+  C083: profit=21, cost=10 -> net=11.00
+  C085: profit=21, cost=9 -> net=12.00
+  C086: profit=26, cost=8 -> net=18.00
+  C087: profit=22, cost=8 -> net=14.00
+------
+TIME ANALYSIS
+------
+
+Nominal time (planned):      7min 56s
+Adaptive time (actual):      7min 56s
+Time overhead:               -0s (-0.0%)
+
+Component time breakdown:
+  C000: 1s
+  C001: 2s
+  C002: 3s
+  C003: 4s
+  C005: 6s
+  C010: 1s
+  C004: 5s
+  C009: 10s
+  C007: 8s
+  C006: 7s
+  C008: 9s
+  C011: 2s
+  C012: 3s
+  C013: 4s
+  C014: 5s
+  C016: 7s
+  C015: 6s
+  C017: 8s
+  C018: 9s
+  C019: 10s
+  C027: 8s
+  C021: 2s
+  C022: 3s
+  C023: 4s
+  C024: 5s
+  C028: 9s
+  C026: 7s
+  C025: 6s
+  C030: 1s
+  C031: 2s
+  C032: 3s
+  C033: 4s
+  C034: 5s
+  C035: 6s
+  C036: 7s
+  C037: 8s
+  C038: 9s
+  C039: 10s
+  C042: 3s
+  C043: 4s
+  C044: 5s
+  C045: 6s
+  C046: 7s
+  C048: 9s
+  C049: 10s
+  C041: 2s
+  C040: 1s
+  C050: 1s
+  C029: 10s
+  C051: 2s
+  C052: 3s
+  C069: 10s
+  C067: 8s
+  C068: 9s
+  C071: 2s
+  C079: 10s
+  C070: 1s
+  C020: 1s
+  C053: 4s
+  C054: 5s
+  C055: 6s
+  C056: 7s
+  C060: 1s
+  C065: 6s
+  C061: 2s
+  C063: 4s
+  C064: 5s
+  C062: 3s
+  C057: 8s
+  C058: 9s
+  C059: 10s
+  C066: 7s
+  C072: 3s
+  C047: 8s
+  C073: 4s
+  C075: 6s
+  C074: 5s
+  C076: 7s
+  C077: 8s
+  C078: 9s
+  C080: 1s
+  C084: 5s
+  C081: 2s
+  C082: 3s
+  C083: 4s
+  C085: 6s
+  C086: 7s
+  C087: 8s
+------
+GLOBAL SCORE
+------
+
+Nominal score:               496.08
+Adaptive score:              496.08
+Score loss:                  0.00 (0.0%)
+------
+GLOSSARY
+------
+
+p_fail:
+  Estimated failure risk. Higher = more likely to fail.
+
+Fuzzy decision:
+  AI-based analysis choosing best recovery action.
+  Score (0-100) and confidence (%) indicate decision quality.
+
+Actions:
+  - change_tool: Switch to alternative tool
+  - bypass: Skip inaccessible component
+  - destroy: Remove component by destruction
+  - replan: Recalculate sequence after changes
+
+States:
+  - done: Successfully removed components
+  - destroyed: Components removed by destruction
+  - locked: Components physically blocked (not removable)
+  - skipped: Components bypassed (not on current path)

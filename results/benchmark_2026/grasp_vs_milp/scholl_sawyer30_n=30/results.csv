@@ -1,0 +1,2 @@
+instance,n,lambda,grasp_best,grasp_avg,grasp_std,grasp_time_s,cplex_obj,cplex_status,cplex_time_s,cplex_intgap_pct,gap_grasp_vs_cplex,cpsat_obj,cpsat_bound,cpsat_status,cpsat_time_s,cpsat_intgap_pct,gap_grasp_vs_cpsat,milp_obj,milp_status,milp_time_s,gap_pct
+scholl_sawyer30_n=30,30,0.05019,233.2706,233.2706,0.0,0.01,249.3321,TimeLimit,180.06,3.48,6.44,249.304,341.276,FEASIBLE,180.5,36.89,6.43,249.3321,TimeLimit,180.06,6.44

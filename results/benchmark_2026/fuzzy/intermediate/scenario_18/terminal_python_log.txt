@@ -1,0 +1,52 @@
+2026-05-08 22:26:45,933 DSP ADAPTIVE PIPELINE - SCHOLL_JAESCHKE_N=9
+2026-05-08 22:26:45,933 Loaded instance: scholl_jaeschke_n=9
+2026-05-08 22:26:45,933 Loaded failures: 1
+2026-05-08 22:26:45,933 [1/4] Loading instance and solving DSP...
+2026-05-08 22:26:45,956 Nodes: 9, Edges: 11, Targets: 1, Solution: 9 operations
+2026-05-08 22:26:45,956 Target(s) to achieve: ['C008']
+2026-05-08 22:26:45,956 Starting disassembly sequence (9 operations)...
+2026-05-08 22:26:45,956 [ 1/9] Disassembling C000... [OK]
+2026-05-08 22:26:45,956 [ 2/9] Disassembling C001... [OK]
+2026-05-08 22:26:45,956 [ 3/9] Disassembling C002... [OK]
+2026-05-08 22:26:45,956 [ 4/9] Disassembling C003... [OK]
+2026-05-08 22:26:45,956 [ 5/9] Disassembling C006... [OK]
+2026-05-08 22:26:45,956 [ 6/9] Disassembling C004... [OK]
+2026-05-08 22:26:45,956 [ 7/9] Disassembling C007... [OK]
+2026-05-08 22:26:45,956 [ 8/9] Disassembling C005... [OK]
+2026-05-08 22:26:45,956 [ 9/9] Disassembling C008... [OK]
+2026-05-08 22:26:45,956 [2/4] Failure scenario loaded: 1 failure(s)
+2026-05-08 22:26:45,956 [3/4] Executing adaptive scheduler...
+2026-05-08 22:26:45,967 [FUZZY] Symptom: LOW_VALUE_BOTTLENECK
+2026-05-08 22:26:45,967 [FUZZY] Inputs: force=30.0, torque=20.0, p_fail=40.0, context=0.0
+2026-05-08 22:26:45,967 [FUZZY] Score: 40.00
+2026-05-08 22:26:45,967 [FUZZY] Decision: bypass (confidence=100.0%)
+2026-05-08 22:26:45,967 [ACTION] bypass: success=True, notes=Component C007 bypassed (skipped).
+2026-05-08 22:26:45,967 Adaptive scheduler finished. Actions taken: 1
+2026-05-08 22:26:45,967 EXECUTION SUMMARY
+2026-05-08 22:26:45,967 Status: SUCCESS
+2026-05-08 22:26:45,967 Target components:
+2026-05-08 22:26:45,967 [OK] C008 - Successfully disassembled
+2026-05-08 22:26:45,967 Execution metrics:
+2026-05-08 22:26:45,967 Targets achieved: 1/1 (100.0%)
+2026-05-08 22:26:45,967 Failures handled: 1
+2026-05-08 22:26:45,967 Actions taken: 1
+2026-05-08 22:26:45,967 Components done: 8/9
+2026-05-08 22:26:45,967 Algorithm runtime: 0.03s
+2026-05-08 22:26:45,967 ECONOMIC ANALYSIS:
+2026-05-08 22:26:45,967 Nominal profit (planned): 145.00 units
+2026-05-08 22:26:45,967 Adaptive profit (recovered): 129.00 units
+2026-05-08 22:26:45,967 Profit loss: 16.00 units (11.0%)
+2026-05-08 22:26:45,967 Value skipped (bypassed): 20.00 units
+2026-05-08 22:26:45,967 TIME ANALYSIS:
+2026-05-08 22:26:45,967 Nominal time (planned): 37s
+2026-05-08 22:26:45,967 Adaptive time (actual): 33s
+2026-05-08 22:26:45,967 Time saved: 4s (10.8%)
+2026-05-08 22:26:45,967 Time saved (skipped): 4s
+2026-05-08 22:26:45,967 GLOBAL SCORE :
+2026-05-08 22:26:45,967 Nominal score: 48.21
+2026-05-08 22:26:45,967 Adaptive score: 42.89
+2026-05-08 22:26:45,967 Score loss: 5.32 (11.0%)
+2026-05-08 22:26:45,967 Actions breakdown:
+2026-05-08 22:26:45,967 [OK] C007     LOW_VALUE_BOTTLENECK -> bypass      
+2026-05-08 22:26:45,967 Detailed logs: results/save/test_failures/scholl_jaeschke_n=9/intermediate
+2026-05-08 22:26:45,968 Pipeline finished successfully

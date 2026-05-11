@@ -1,0 +1,36 @@
+{
+  "timestamp": "2026-05-06T21:04:23.114174",
+  "instance": "gearpump",
+  "parameters": {
+    "GRASP_RUNS": 1,
+    "GRASP_ITERS": 150,
+    "GRASP_TIME": 900,
+    "EXACT_TIMELIM": 180,
+    "MILP_GAP": 0.01,
+    "MAX_N_MILP": 1000
+  },
+  "results": {
+    "instance": "gearpump",
+    "n": 22,
+    "lambda": 0.05617,
+    "grasp_best": 354.3259,
+    "grasp_avg": 354.3259,
+    "grasp_std": 0.0,
+    "grasp_time_s": 0.01,
+    "cplex_obj": 357.3593,
+    "cplex_status": "Optimal",
+    "cplex_time_s": 0.09,
+    "cplex_intgap_pct": 0.8,
+    "gap_grasp_vs_cplex": 0.85,
+    "cpsat_obj": 357.2724,
+    "cpsat_bound": 357.2724,
+    "cpsat_status": "OPTIMAL",
+    "cpsat_time_s": 0.06,
+    "cpsat_intgap_pct": 0.0,
+    "gap_grasp_vs_cpsat": 0.82,
+    "milp_obj": 357.3593,
+    "milp_status": "Optimal",
+    "milp_time_s": 0.09,
+    "gap_pct": 0.85
+  }
+}

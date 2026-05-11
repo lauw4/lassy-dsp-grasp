@@ -1,0 +1,10 @@
+--- Pipeline run 2026-05-08 22:26:24.600232 ---
+Instance: unknown
+Initial solution: ['C001', 'C010', 'C014', 'C016', 'C024', 'C028', 'C000', 'C031', 'C009', 'C027', 'C017', 'C023', 'C033', 'C025', 'C032', 'C002', 'C003', 'C043', 'C054']
+Final state:
+  - Locked: set()
+  - Destroyed: set()
+  - Done: {'C024', 'C002', 'C032', 'C016', 'C017', 'C027', 'C054', 'C001', 'C003', 'C043', 'C000', 'C031', 'C009', 'C025', 'C033', 'C014', 'C010', 'C023'}
+  - Skipped: {'C028'}
+  - Notes: ["Destruction forbidden for C028: Flag 'no_destroy' active (context or graph)."]
+Actions taken: [{'comp_id': 'C028', 'symptom': 'ACCESS_BLOCKED', 'action': 'destroy', 'success': False, 'notes': "Destruction not allowed: Flag 'no_destroy' active (context or graph)."}, {'comp_id': 'C028', 'symptom': 'ACCESS_BLOCKED', 'action': 'destroy→bypass', 'success': True, 'notes': 'Fallback succeeded'}]

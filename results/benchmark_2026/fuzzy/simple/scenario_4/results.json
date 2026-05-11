@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-05-08T22:26:21.190023",
+  "instance": "salbp_instance_n=1000_1_cut125",
+  "difficulty": "simple",
+  "scenario_id": "scenario_4",
+  "scenario_file": "scenario_simple_salbp_instance_n=1000_1_cut125.json",
+  "status": "completed",
+  "return_code": 0
+}

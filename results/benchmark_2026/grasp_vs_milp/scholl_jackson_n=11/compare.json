@@ -1,0 +1,68 @@
+{
+  "instance": "scholl_jackson_n=11",
+  "targets": [
+    "C011"
+  ],
+  "grasp": {
+    "best_score": 127.0235,
+    "avg_score": 127.0235,
+    "std_score": 0.0,
+    "time_s": 0.0,
+    "sequence": [
+      "C001",
+      "C002",
+      "C003",
+      "C004",
+      "C005",
+      "C007",
+      "C009",
+      "C006",
+      "C008",
+      "C010",
+      "C011"
+    ]
+  },
+  "cplex": {
+    "objective": 127.5441,
+    "status": "Optimal",
+    "time_s": 0.02,
+    "intgap_pct": 0.11,
+    "sequence": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "cpsat": {
+    "objective": 127.5525,
+    "bound": 127.5525,
+    "status": "OPTIMAL",
+    "time_s": 0.01,
+    "intgap_pct": 0.0,
+    "sequence": [
+      1,
+      2,
+      4,
+      5,
+      3,
+      6,
+      7,
+      8,
+      10,
+      9,
+      11
+    ]
+  },
+  "comparison": {
+    "gap_grasp_vs_cplex_pct": 0.41,
+    "gap_grasp_vs_cpsat_pct": 0.41
+  }
+}

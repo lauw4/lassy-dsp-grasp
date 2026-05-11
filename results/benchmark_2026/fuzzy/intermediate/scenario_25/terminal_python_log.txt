@@ -1,0 +1,136 @@
+2026-05-08 22:26:49,866 DSP ADAPTIVE PIPELINE - SCHOLL_MUKHERJE_N=94
+2026-05-08 22:26:49,866 Loaded instance: scholl_mukherje_n=94
+2026-05-08 22:26:49,866 Loaded failures: 2
+2026-05-08 22:26:49,866 [1/4] Loading instance and solving DSP...
+2026-05-08 22:26:50,531 Nodes: 94, Edges: 181, Targets: 1, Solution: 87 operations
+2026-05-08 22:26:50,531 Target(s) to achieve: ['C086']
+2026-05-08 22:26:50,531 Starting disassembly sequence (87 operations)...
+2026-05-08 22:26:50,531 [ 1/87] Disassembling C000... [OK]
+2026-05-08 22:26:50,531 [ 2/87] Disassembling C001... [OK]
+2026-05-08 22:26:50,531 [ 3/87] Disassembling C009... [OK]
+2026-05-08 22:26:50,531 [ 4/87] Disassembling C016... [OK]
+2026-05-08 22:26:50,531 [ 5/87] Disassembling C008... [OK]
+2026-05-08 22:26:50,531 [ 6/87] Disassembling C003... [OK]
+2026-05-08 22:26:50,531 [ 7/87] Disassembling C002... [OK]
+2026-05-08 22:26:50,531 [ 8/87] Disassembling C005... [OK]
+2026-05-08 22:26:50,531 [ 9/87] Disassembling C014... [OK]
+2026-05-08 22:26:50,531 [10/87] Disassembling C004... [OK]
+2026-05-08 22:26:50,531 [11/87] Disassembling C017... [OK]
+2026-05-08 22:26:50,532 [12/87] Disassembling C015... [OK]
+2026-05-08 22:26:50,532 [13/87] Disassembling C012... [OK]
+2026-05-08 22:26:50,532 [14/87] Disassembling C018... [OK]
+2026-05-08 22:26:50,532 [15/87] Disassembling C010... [OK]
+2026-05-08 22:26:50,532 [16/87] Disassembling C013... [OK]
+2026-05-08 22:26:50,532 [17/87] Disassembling C021... [OK]
+2026-05-08 22:26:50,532 [18/87] Disassembling C037... [OK]
+2026-05-08 22:26:50,532 [19/87] Disassembling C023... [OK]
+2026-05-08 22:26:50,532 [20/87] Disassembling C027... [OK]
+2026-05-08 22:26:50,532 [21/87] Disassembling C007... [OK]
+2026-05-08 22:26:50,532 [22/87] Disassembling C024... [OK]
+2026-05-08 22:26:50,532 [23/87] Disassembling C031... [OK]
+2026-05-08 22:26:50,532 [24/87] Disassembling C032... [OK]
+2026-05-08 22:26:50,532 [25/87] Disassembling C030... [OK]
+2026-05-08 22:26:50,532 [26/87] Disassembling C020... [OK]
+2026-05-08 22:26:50,532 [27/87] Disassembling C038... [OK]
+2026-05-08 22:26:50,532 [28/87] Disassembling C045... [OK]
+2026-05-08 22:26:50,532 [29/87] Disassembling C064... [OK]
+2026-05-08 22:26:50,532 [30/87] Disassembling C025... [OK]
+2026-05-08 22:26:50,532 [31/87] Disassembling C029... [OK]
+2026-05-08 22:26:50,532 [32/87] Disassembling C040... [OK]
+2026-05-08 22:26:50,532 [33/87] Disassembling C011... [OK]
+2026-05-08 22:26:50,532 [34/87] Disassembling C058... [OK]
+2026-05-08 22:26:50,532 [35/87] Disassembling C022... [OK]
+2026-05-08 22:26:50,532 [36/87] Disassembling C047... [OK]
+2026-05-08 22:26:50,532 [37/87] Disassembling C035... [OK]
+2026-05-08 22:26:50,532 [38/87] Disassembling C051... [OK]
+2026-05-08 22:26:50,532 [39/87] Disassembling C042... [OK]
+2026-05-08 22:26:50,532 [40/87] Disassembling C059... [OK]
+2026-05-08 22:26:50,532 [41/87] Disassembling C044... [OK]
+2026-05-08 22:26:50,532 [42/87] Disassembling C050... [OK]
+2026-05-08 22:26:50,532 [43/87] Disassembling C036... [OK]
+2026-05-08 22:26:50,532 [44/87] Disassembling C043... [OK]
+2026-05-08 22:26:50,532 [45/87] Disassembling C049... [OK]
+2026-05-08 22:26:50,532 [46/87] Disassembling C028... [OK]
+2026-05-08 22:26:50,532 [47/87] Disassembling C006... [OK]
+2026-05-08 22:26:50,532 [48/87] Disassembling C066... [OK]
+2026-05-08 22:26:50,532 [49/87] Disassembling C056... [OK]
+2026-05-08 22:26:50,532 [50/87] Disassembling C019... [OK]
+2026-05-08 22:26:50,532 [51/87] Disassembling C063... [OK]
+2026-05-08 22:26:50,532 [52/87] Disassembling C065... [OK]
+2026-05-08 22:26:50,532 [53/87] Disassembling C071... [OK]
+2026-05-08 22:26:50,532 [54/87] Disassembling C072... [OK]
+2026-05-08 22:26:50,532 [55/87] Disassembling C070... [OK]
+2026-05-08 22:26:50,532 [56/87] Disassembling C046... [OK]
+2026-05-08 22:26:50,532 [57/87] Disassembling C062... [OK]
+2026-05-08 22:26:50,532 [58/87] Disassembling C034... [OK]
+2026-05-08 22:26:50,532 [59/87] Disassembling C052... [OK]
+2026-05-08 22:26:50,532 [60/87] Disassembling C039... [OK]
+2026-05-08 22:26:50,532 [61/87] Disassembling C048... [OK]
+2026-05-08 22:26:50,532 [62/87] Disassembling C033... [OK]
+2026-05-08 22:26:50,532 [63/87] Disassembling C069... [OK]
+2026-05-08 22:26:50,532 [64/87] Disassembling C075... [OK]
+2026-05-08 22:26:50,532 [65/87] Disassembling C060... [OK]
+2026-05-08 22:26:50,532 [66/87] Disassembling C026... [OK]
+2026-05-08 22:26:50,532 [67/87] Disassembling C041... [OK]
+2026-05-08 22:26:50,532 [68/87] Disassembling C073... [OK]
+2026-05-08 22:26:50,532 [69/87] Disassembling C067... [OK]
+2026-05-08 22:26:50,532 [70/87] Disassembling C068... [OK]
+2026-05-08 22:26:50,532 [71/87] Disassembling C055... [OK]
+2026-05-08 22:26:50,532 [72/87] Disassembling C057... [OK]
+2026-05-08 22:26:50,532 [73/87] Disassembling C053... [OK]
+2026-05-08 22:26:50,532 [74/87] Disassembling C054... [OK]
+2026-05-08 22:26:50,532 [75/87] Disassembling C061... [OK]
+2026-05-08 22:26:50,532 [76/87] Disassembling C076... [OK]
+2026-05-08 22:26:50,532 [77/87] Disassembling C074... [OK]
+2026-05-08 22:26:50,532 [78/87] Disassembling C077... [OK]
+2026-05-08 22:26:50,532 [79/87] Disassembling C079... [OK]
+2026-05-08 22:26:50,532 [80/87] Disassembling C078... [OK]
+2026-05-08 22:26:50,532 [81/87] Disassembling C080... [OK]
+2026-05-08 22:26:50,532 [82/87] Disassembling C081... [OK]
+2026-05-08 22:26:50,532 [83/87] Disassembling C082... [OK]
+2026-05-08 22:26:50,532 [84/87] Disassembling C084... [OK]
+2026-05-08 22:26:50,532 [85/87] Disassembling C083... [OK]
+2026-05-08 22:26:50,532 [86/87] Disassembling C085... [OK]
+2026-05-08 22:26:50,532 [87/87] Disassembling C086... [OK]
+2026-05-08 22:26:50,532 [2/4] Failure scenario loaded: 2 failure(s)
+2026-05-08 22:26:50,532 [3/4] Executing adaptive scheduler...
+2026-05-08 22:26:50,550 [FUZZY] Symptom: LOW_VALUE_BOTTLENECK
+2026-05-08 22:26:50,550 [FUZZY] Inputs: force=30.0, torque=20.0, p_fail=40.0, context=0.0
+2026-05-08 22:26:50,550 [FUZZY] Score: 40.00
+2026-05-08 22:26:50,550 [FUZZY] Decision: bypass (confidence=100.0%)
+2026-05-08 22:26:50,550 [ACTION] bypass: success=True, notes=Component C056 bypassed (skipped).
+2026-05-08 22:26:50,560 [FUZZY] Symptom: ACCESS_BLOCKED
+2026-05-08 22:26:50,560 [FUZZY] Inputs: force=60.0, torque=40.0, p_fail=70.0, context=100.0
+2026-05-08 22:26:50,560 [FUZZY] Score: 36.06
+2026-05-08 22:26:50,560 [FUZZY] Decision: bypass (confidence=80.3%)
+2026-05-08 22:26:50,560 [ACTION] bypass: success=True, notes=Component C046 bypassed (skipped).
+2026-05-08 22:26:50,560 Adaptive scheduler finished. Actions taken: 2
+2026-05-08 22:26:50,560 EXECUTION SUMMARY
+2026-05-08 22:26:50,560 Status: SUCCESS
+2026-05-08 22:26:50,560 Target components:
+2026-05-08 22:26:50,560 [OK] C086 - Successfully disassembled
+2026-05-08 22:26:50,560 Execution metrics:
+2026-05-08 22:26:50,560 Targets achieved: 1/1 (100.0%)
+2026-05-08 22:26:50,560 Failures handled: 2
+2026-05-08 22:26:50,560 Actions taken: 2
+2026-05-08 22:26:50,560 Components done: 85/87
+2026-05-08 22:26:50,560 Algorithm runtime: 0.69s
+2026-05-08 22:26:50,560 ECONOMIC ANALYSIS:
+2026-05-08 22:26:50,560 Nominal profit (planned): 1795.00 units
+2026-05-08 22:26:50,560 Adaptive profit (recovered): 1756.00 units
+2026-05-08 22:26:50,560 Profit loss: 39.00 units (2.2%)
+2026-05-08 22:26:50,560 Value skipped (bypassed): 58.00 units
+2026-05-08 22:26:50,561 TIME ANALYSIS:
+2026-05-08 22:26:50,561 Nominal time (planned): 62min 4s
+2026-05-08 22:26:50,561 Adaptive time (actual): 59min 14s
+2026-05-08 22:26:50,561 Time saved: 2min 50s (4.6%)
+2026-05-08 22:26:50,561 Time saved (skipped): 2min 50s
+2026-05-08 22:26:50,561 GLOBAL SCORE :
+2026-05-08 22:26:50,561 Nominal score: 585.92
+2026-05-08 22:26:50,561 Adaptive score: 573.49
+2026-05-08 22:26:50,561 Score loss: 12.43 (2.1%)
+2026-05-08 22:26:50,561 Actions breakdown:
+2026-05-08 22:26:50,561 [OK] C056     LOW_VALUE_BOTTLENECK -> bypass      
+2026-05-08 22:26:50,561 [OK] C046     ACCESS_BLOCKED       -> bypass      
+2026-05-08 22:26:50,561 Detailed logs: results/save/test_failures/scholl_mukherje_n=94/intermediate
+2026-05-08 22:26:50,562 Pipeline finished successfully

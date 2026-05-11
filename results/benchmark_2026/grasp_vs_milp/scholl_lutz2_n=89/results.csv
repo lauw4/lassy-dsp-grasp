@@ -1,0 +1,2 @@
+instance,n,lambda,grasp_best,grasp_avg,grasp_std,grasp_time_s,cplex_obj,cplex_status,cplex_time_s,cplex_intgap_pct,gap_grasp_vs_cplex,cpsat_obj,cpsat_bound,cpsat_status,cpsat_time_s,cpsat_intgap_pct,gap_grasp_vs_cpsat,milp_obj,milp_status,milp_time_s,gap_pct
+scholl_lutz2_n=89,89,0.01801,-1155.1053,-1155.1053,0.0,0.1,-970.5679,Optimal,3.27,0.36,19.01,-967.044,-967.044,OPTIMAL,0.68,0.0,19.45,-970.5679,Optimal,3.27,19.01

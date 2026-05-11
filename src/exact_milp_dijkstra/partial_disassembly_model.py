@@ -111,20 +111,35 @@ def load_data(file_path: str) -> Dict[str, Any]:
 
 # -- MILP model building ---------------------------------------------
 
-def build_model(data: Dict[str, Any]) -> Tuple[pulp.LpProblem, Dict[str, Any]]:
+def build_model(data: Dict[str, Any], use_time_aware: bool = False) -> Tuple[pulp.LpProblem, Dict[str, Any]]:
+    """Build the partial-disassembly MILP.
+
+    use_time_aware = False (default — Option B):
+        Selection-only variant.  Objective `max Σ v_i · x_i` — knapsack with
+        precedence, closes gap = 0 % on n ≤ 100 in seconds.  No y/s/sequence
+        variables are created so the model stays small even on n ≈ 1000.
+
+    use_time_aware = True:
+        Full IFAC slide-9 objective `max Σ v_i x_i − λ Σ C_i`.  Adds y[i,k]
+        position assignments, makespan, and the dormant Z_k machinery.
+        Empirically does NOT close gap beyond n ≈ 25-35 with off-the-shelf
+        solvers — kept for research extension only.  See
+        analysis_for_amine/notes_objectif_milp.md for the full study.
+    """
     V: List[int] = data['V']
     E: List[Tuple[int, int]] = data['E']
     T: List[int] = data['T']
     r, c, p = data['r'], data['c'], data['p']
     C_max: Optional[float] = data.get('C_max')
 
-    K: List[int] = list(range(1, len(V) + 1))
-
     model = pulp.LpProblem("Partial_Disassembly", pulp.LpMaximize)
 
     x = pulp.LpVariable.dicts('x', V, cat='Binary')
-    y = pulp.LpVariable.dicts('y', (V, K), cat='Binary')
-    s = pulp.LpVariable('makespan', lowBound=0)
+
+    # y[i,k] and the makespan variable s only exist when scheduling matters.
+    K: List[int] = list(range(1, len(V) + 1))
+    y = pulp.LpVariable.dicts('y', (V, K), cat='Binary') if use_time_aware else None
+    s = pulp.LpVariable('makespan', lowBound=0) if use_time_aware else None
 
     # ── Objective 1 parameters (IWSPE 2026) ──────────────────────────
     # max Σ(v_i·x_i) - λ·Σ W_i
@@ -143,54 +158,122 @@ def build_model(data: Dict[str, Any]) -> Tuple[pulp.LpProblem, Dict[str, Any]]:
         else:
             lam = 0.05
     data['lambda_discount'] = lam   # store so caller can read it back
+    # Budget constraint parameters (managerial extension — dormant unless
+    # budget_max is set on the instance; same h default as the GRASP side).
     B_max_eur = data.get('budget_max', None)
-
-    # Big-M = upper bound on completion time
-    M = sum(p[i] for i in V)
-
-    # ── W_i : completion-time variables for exact linearisation ──
-    W = pulp.LpVariable.dicts('W', V, lowBound=0)
+    h = data.get('overhead_rate', 0.05)
 
     # Net recovery margin v_i = r_i - c_i
     v = {i: r[i] - c[i] for i in V}
 
-    # ── OBJECTIVE 1: Discounted Recovery Profit (NP-hard via 1|prec|ΣC_j) ──
-    # max Σ v_i·x_i  −  λ·Σ W_i
-    model += (
-        pulp.lpSum(v[i] * x[i] for i in V)
-        - lam * pulp.lpSum(W[i] for i in V),
-        'Obj1_Discounted_Recovery_Profit'
-    )
-
-    # ── Standard DSP constraints ────────────────────────────────
-    for i in V:
-        model += pulp.lpSum(y[i][k] for k in K) == x[i], f'assign_{i}'
-    for k in K:
-        model += pulp.lpSum(y[i][k] for i in V) <= 1, f'serial_{k}'
+    # ── Selection constraints (always active) ───────────────────
+    # Precedence on x: selecting j forces selecting i for each (i,j) ∈ E.
+    # In the time-aware variant, this also tightens the LP relaxation.
     for (i, j) in E:
-        for k in K:
-            model += y[j][k] <= pulp.lpSum(y[i][k_] for k_ in K if k_ < k), f'prec_{i}_{j}_{k}'
+        model += x[j] <= x[i], f'x_prec_{i}_{j}'
     for i in T:
         model += x[i] == 1, f'target_{i}'
-    model += s >= pulp.lpSum(p[i] * y[i][k] for i in V for k in K), 'makespan_def'
-    if C_max is not None:
-        model += s <= C_max, 'horizon_limit'
 
-    # ── Completion-time linearisation (W_i) ─────────────────────
-    # T_k = Σ_{k'=1}^{k} Σ_j p_j·y_{j,k'}  (cumulative time up to position k)
-    # W_i = C_i (completion time) when x_i=1, W_i=0 otherwise.
-    # Lower bound: W_i ≥ T_k − M·(1 − y_{i,k})  →  if y_{i,k}=1 then W_i ≥ T_k
-    # Upper bound: W_i ≤ T_k + M·(1 − y_{i,k})  →  if y_{i,k}=1 then W_i ≤ T_k
-    # Combined: W_i = T_k = C_i  (exact equality when y_{i,k}=1)
-    # W_i ≤ M·x_i                →  W_i = 0 if component not selected
-    # Since we MAXIMISE and subtract λ·ΣW_i, without upper bounds the solver
-    # would set all W_i=0 (valid lower-bound solution) — the upper bounds fix this.
-    for i in V:
-        model += W[i] <= M * x[i], f'W_zero_{i}'
+    # ── Sequence/makespan constraints (only when scheduling matters) ──
+    if use_time_aware:
+        for i in V:
+            model += pulp.lpSum(y[i][k] for k in K) == x[i], f'assign_{i}'
         for k in K:
-            T_k = pulp.lpSum(p[j] * y[j][kp] for j in V for kp in K if kp <= k)
-            model += W[i] >= T_k - M * (1 - y[i][k]), f'W_lb_{i}_{k}'
-            model += W[i] <= T_k + M * (1 - y[i][k]), f'W_ub_{i}_{k}'
+            model += pulp.lpSum(y[i][k] for i in V) <= 1, f'serial_{k}'
+        for (i, j) in E:
+            for k in K:
+                model += y[j][k] <= pulp.lpSum(y[i][k_] for k_ in K if k_ < k), f'prec_{i}_{j}_{k}'
+        # Tightening: positions filled contiguously from k=1 (u_k ≤ u_{k-1}).
+        for k in K:
+            if k == 1:
+                continue
+            model += (
+                pulp.lpSum(y[i][k] for i in V)
+                <= pulp.lpSum(y[i][k - 1] for i in V),
+                f'u_monotone_{k}'
+            )
+        model += s >= pulp.lpSum(p[i] * y[i][k] for i in V for k in K), 'makespan_def'
+        if C_max is not None:
+            model += s <= C_max, 'horizon_limit'
+
+    # ── Time-aware machinery (Z_k = CT[k]·u_k via McCormick) ─────
+    # Active only when use_time_aware=True. Adds the cumulative-time
+    # variables CT[k], the linearised completion-time-per-position Z[k],
+    # and the precedence-based valid inequalities that tighten the LP.
+    # See analysis_for_amine/notes_objectif_milp.md for the formulation
+    # study and why this is hard to close beyond n ≈ 25-35.
+    if use_time_aware:
+        # --- CT[k]: cumulative processing time through position k ---
+        CT = pulp.LpVariable.dicts('CT', K, lowBound=0)
+        for k in K:
+            slot_time = pulp.lpSum(p[j] * y[j][k] for j in V)
+            if k == 1:
+                model += CT[k] == slot_time, f'CT_def_{k}'
+            else:
+                model += CT[k] == CT[k - 1] + slot_time, f'CT_def_{k}'
+
+        # --- Position-dependent upper bound on CT[k] ---
+        p_sorted_desc = sorted((p[j] for j in V), reverse=True)
+        M_lb = {}
+        cumul_p = 0.0
+        for idx, k in enumerate(K):
+            cumul_p += p_sorted_desc[idx] if idx < len(p_sorted_desc) else 0.0
+            M_lb[k] = cumul_p
+
+        # --- Z_k = CT[k]·u_k via McCormick envelope ---
+        Z = pulp.LpVariable.dicts('Z', K, lowBound=0)
+        for k in K:
+            u_k = pulp.lpSum(y[i][k] for i in V)
+            model += Z[k] >= CT[k] - M_lb[k] * (1 - u_k), f'Z_lb_{k}'
+            model += Z[k] <= M_lb[k] * u_k,                f'Z_ub_u_{k}'
+            model += Z[k] <= CT[k],                         f'Z_ub_ct_{k}'
+
+        # --- Precedence-based valid inequalities on Σ Z[k] ---
+        ancestors = {i: set() for i in V}
+        for (a, b) in E:
+            ancestors[b].add(a)
+        changed = True
+        while changed:
+            changed = False
+            for i in V:
+                new = set()
+                for a in ancestors[i]:
+                    new |= ancestors[a]
+                if not new.issubset(ancestors[i]):
+                    ancestors[i] |= new
+                    changed = True
+        min_ct = {i: sum(p[j] for j in ancestors[i]) + p[i] for i in V}
+        model += (
+            pulp.lpSum(Z[k] for k in K)
+            >= pulp.lpSum(min_ct[i] * x[i] for i in V),
+            'agg_pred_lb'
+        )
+        for k in K:
+            model += (
+                CT[k] >= pulp.lpSum(min_ct[i] * y[i][k] for i in V),
+                f'CT_pred_lb_{k}'
+            )
+            model += (
+                Z[k] >= pulp.lpSum(min_ct[i] * y[i][k] for i in V),
+                f'Z_pred_lb_{k}'
+            )
+
+    # ── OBJECTIVE ────────────────────────────────────────────────
+    # Selection-only variant: max Σ v_i · x_i (knapsack with precedence,
+    # LP-tight, closes on n ≤ 100 in seconds).
+    # Time-aware variant (slide 9): max Σ v_i · x_i − λ · Σ Z[k]
+    # (1|prec|ΣwjCj — NP-hard with weak LP, doesn't close beyond n ≈ 25-35).
+    if use_time_aware:
+        model += (
+            pulp.lpSum(v[i] * x[i] for i in V)
+            - lam * pulp.lpSum(Z[k] for k in K),
+            'Obj1_Discounted_Recovery_Profit'
+        )
+    else:
+        model += (
+            pulp.lpSum(v[i] * x[i] for i in V),
+            'Obj1_Net_Recovery_Profit'
+        )
 
     # ── Budget constraint (EUR) ─────────────────────────────────
     if B_max_eur is not None:
@@ -198,25 +281,26 @@ def build_model(data: Dict[str, Any]) -> Tuple[pulp.LpProblem, Dict[str, Any]]:
             (c[i] + h * p[i]) * x[i] for i in V
         ) <= B_max_eur, 'budget_eur'
 
-    # Add order constraints (order_rules) if present in data
+    # Add order constraints (order_rules) if present in data — sequence-only.
     order_rules = data.get('order_rules', [])
-    label_to_num = {str(i): i for i in V}
-    for idx, rule in enumerate(order_rules):
-        rule_if = rule.get('if', [])
-        cond = rule.get('condition', '').lower()
-        if len(rule_if) == 2:
-            n1, n2 = rule_if[0], rule_if[1]
-            n1_num = label_to_num.get(n1, n1) if not isinstance(n1, int) else n1
-            n2_num = label_to_num.get(n2, n2) if not isinstance(n2, int) else n2
-            if n1_num in V and n2_num in V:
-                if 'avant' in cond:
-                    for k in K:
-                        model += pulp.lpSum(y[n1_num][k_] for k_ in K if k_ < k) >= y[n2_num][k], f'order_avant_{n1_num}_{n2_num}_{k}_{idx}'
-                if 'apres' in cond:
-                    for k in K:
-                        model += pulp.lpSum(y[n2_num][k_] for k_ in K if k_ < k) >= y[n1_num][k], f'order_apres_{n1_num}_{n2_num}_{k}_{idx}'
+    if use_time_aware and order_rules:
+        label_to_num = {str(i): i for i in V}
+        for idx, rule in enumerate(order_rules):
+            rule_if = rule.get('if', [])
+            cond = rule.get('condition', '').lower()
+            if len(rule_if) == 2:
+                n1, n2 = rule_if[0], rule_if[1]
+                n1_num = label_to_num.get(n1, n1) if not isinstance(n1, int) else n1
+                n2_num = label_to_num.get(n2, n2) if not isinstance(n2, int) else n2
+                if n1_num in V and n2_num in V:
+                    if 'avant' in cond:
+                        for k in K:
+                            model += pulp.lpSum(y[n1_num][k_] for k_ in K if k_ < k) >= y[n2_num][k], f'order_avant_{n1_num}_{n2_num}_{k}_{idx}'
+                    if 'apres' in cond:
+                        for k in K:
+                            model += pulp.lpSum(y[n2_num][k_] for k_ in K if k_ < k) >= y[n1_num][k], f'order_apres_{n1_num}_{n2_num}_{k}_{idx}'
 
-    return model, {'x': x, 'y': y, 's': s, 'W': W}
+    return model, {'x': x, 'y': y, 's': s}
 
 # -- Resolution --------------------------------------------------------------
 
@@ -295,6 +379,10 @@ def solve_model(model: pulp.LpProblem, time_limit: Optional[int] = None, use_cpl
             cplex_options = [f"set logfile {solver_log_file}"]
             if gap_limit is not None and gap_limit > 0:
                 cplex_options.append(f"set mip tolerances mipgap {gap_limit}")
+            # CPLEX tuning: aggressive cuts + emphasis on proving optimality
+            cplex_options.append("set mip strategy variableselect 3")   # strong branching
+            cplex_options.append("set mip cuts all 2")                  # aggressive cuts
+            cplex_options.append("set emphasis mip 2")                  # emphasis optimality
 
             print(f"Using CPLEX{time_limit_msg} ({cplex_path})")
             solver = CPLEX_CMD(path=cplex_path, msg=True, timeLimit=time_limit, keepFiles=True, options=cplex_options)
@@ -341,100 +429,79 @@ def _parse_last_status_from_cplex_log(log_file: Optional[str]) -> str:
     """
     if not log_file or not os.path.exists(log_file):
         return "Unknown"
+    # Optional debug trace — to identify which branch matched, drop a print()
+    # before any `return ...` below. The matching pattern is described in the
+    # surrounding `# Priority N:` comment.
     try:
         with open(log_file, 'r', encoding='utf-8', errors='ignore') as f:
             text = f.read().lower()
             lines = text.splitlines()
-        
-        # print(f"[DEBUG STATUS] Parsing log file: {log_file}")
-        
+
         # Priority 1: TimeLimit - if log contains 'mip - time limit exceeded'
         if "mip - time limit exceeded" in text:
-            # print("[DEBUG STATUS] Found 'mip - time limit exceeded' -> TimeLimit")
             return "TimeLimit"
-        
+
         # Search MIP statuses from end (most recent first)
-        for i, line in enumerate(reversed(lines)):
+        for line in reversed(lines):
             l = line.strip().lower()
-            line_num = len(lines) - i
-            
+
             # Priority 2: MIP optimal statuses (the real statuses to consider)
             if "mip - integer optimal, tolerance" in l:
-                # print(f"[DEBUG STATUS] Line {line_num}: Found 'mip - integer optimal, tolerance' -> Optimal")
                 return "Optimal"
             if "mip - integer optimal solution" in l:
-                # print(f"[DEBUG STATUS] Line {line_num}: Found 'mip - integer optimal solution' -> Optimal")
-                return "Optimal" 
-            if "mip - integer optimal" in l and "tolerance" not in l:
-                # print(f"[DEBUG STATUS] Line {line_num}: Found 'mip - integer optimal' -> Optimal")
                 return "Optimal"
-            
+            if "mip - integer optimal" in l and "tolerance" not in l:
+                return "Optimal"
+
             # Priority 3: TimeLimit MIP patterns (more specific first)
             if "mip - time limit exceeded, integer feasible" in l:
-                # print(f"[DEBUG STATUS] Line {line_num}: Found 'mip - time limit exceeded, integer feasible' -> TimeLimit")
                 return "TimeLimit"
             if "mip - time limit exceeded" in l:
-                # print(f"[DEBUG STATUS] Line {line_num}: Found 'mip - time limit exceeded' -> TimeLimit")
                 return "TimeLimit"
-            
+
             # Priority 4: Other MIP patterns
             if "mip - integer infeasible" in l or "mip - no integer solution" in l:
-                # print(f"[DEBUG STATUS] Line {line_num}: Found MIP infeasible -> Infeasible")
                 return "Infeasible"
             if "mip - integer feasible" in l:
-                # print(f"[DEBUG STATUS] Line {line_num}: Found 'mip - integer feasible' -> Feasible")
                 return "Feasible"
-            
+
             # Priority 5: Generic patterns (fallback)
             if "integer optimal solution" in l:
-                # print(f"[DEBUG STATUS] Line {line_num}: Found 'integer optimal solution' -> Optimal")
                 return "Optimal"
-            
+
             # Priority 6: Solution status
             if "solution status" in l:
-                # print(f"[DEBUG STATUS] Line {line_num}: Found 'solution status': {l}")
                 if "optimal" in l:
-                    # print("[DEBUG STATUS] -> Optimal")
                     return "Optimal"
                 elif "infeasible" in l:
-                    # print("[DEBUG STATUS] -> Infeasible")
                     return "Infeasible"
                 elif "feasible" in l:
-                    # print("[DEBUG STATUS] -> Feasible")
                     return "Feasible"
-            
+
             # Priority 7: Generic TimeLimit patterns
             if "time limit exceeded, integer feasible" in l:
-                # print(f"[DEBUG STATUS] Line {line_num}: Found 'time limit exceeded, integer feasible' -> TimeLimit")
                 return "TimeLimit"
             if "time limit exceeded" in l:
-                # print(f"[DEBUG STATUS] Line {line_num}: Found 'time limit exceeded' -> TimeLimit")
                 return "TimeLimit"
             # Note: Avoid "timelimit" alone as it captures "CPXPARAM_TimeLimit"
-            
+
             # Priority 8: Gap tolerance
             if "gap tolerance" in l and "reached" in l:
-                # print(f"[DEBUG STATUS] Line {line_num}: Found 'gap tolerance reached' -> GapReached")
                 return "GapReached"
-            
+
             # IGNORE: "dual simplex - optimal" because it's just the LP resolution after MIP
             # This line appears systematically and does not indicate the actual MIP status
-        
+
         # Global fallback patterns (if no specific pattern found)
         if "time limit exceeded" in text:
-            # print("[DEBUG STATUS] Found 'time limit exceeded' in text -> TimeLimit")
             return "TimeLimit"
         if "gap tolerance" in text:
-            # print("[DEBUG STATUS] Found 'gap tolerance' in text -> GapReached")
             return "GapReached"
         if "integer feasible" in text:
-            # print("[DEBUG STATUS] Found 'integer feasible' in text -> Feasible")
             return "Feasible"
-        
-        # print("[DEBUG STATUS] No status found -> Unknown")
+
         return "Unknown"
-    except Exception as e:
-        # print(f"[DEBUG STATUS] Exception: {e} -> Unknown")
+    except Exception:
         return "Unknown"
 
 def _parse_best_integer_from_cplex_log(log_file: Optional[str], fallback_terminal_log: Optional[str] = None) -> Optional[float]:
@@ -587,25 +654,56 @@ def save_solution(output_path: str, model: pulp.LpProblem, data: Dict[str, Any],
 def extract_sequence(model: pulp.LpProblem, data: Dict[str, Any], vars: Dict[str, Any]) -> Tuple[List[int], float]:
     """Extract the ordered sequence of selected parts and compute the serial makespan.
 
-    Returns (sequence, estimated_makespan)
-    Note: the makespan returned here is the sum of p[i] for selected parts in order, consistent
-    with the 'serial line' assumption used in the comparison.
-    For the exact makespan as modeled, use the 's' variable from the model.
+    Returns (sequence, estimated_makespan).
+
+    If the model has y[i,k] (time-aware variant), the sequence is read from
+    those positional variables.  Otherwise (selection-only variant) we return
+    a topological order over the selected x's, which is a valid sequence
+    respecting precedence (and the order minimising completion times has to
+    be a topological order anyway).
     """
     V = data['V']
+    E = data['E']
     x = vars['x']
-    y = vars['y']
+    y = vars.get('y')
     p = data['p']
-    selected: List[Tuple[int,int]] = []
-    for i in V:
-        xi = x.get(i)
-        if xi and xi.value() is not None and xi.value() > 0.5:
-            # Find the associated rank k
+
+    selected = [i for i in V
+                if x.get(i) is not None
+                and x[i].value() is not None
+                and x[i].value() > 0.5]
+
+    if y is not None:
+        # Time-aware: positional variables tell us the order
+        ranked: List[Tuple[int, int]] = []
+        for i in selected:
             rang = next((k for k in y[i] if y[i][k].value() > 0.5), None)
             if rang is not None:
-                selected.append((i, rang))
-    selected.sort(key=lambda t: t[1])
-    seq = [i for i,_ in selected]
+                ranked.append((i, rang))
+        ranked.sort(key=lambda t: t[1])
+        seq = [i for i, _ in ranked]
+    else:
+        # Selection-only: topological sort on the selected sub-graph
+        sel_set = set(selected)
+        in_deg = {i: 0 for i in selected}
+        succs: Dict[int, List[int]] = {i: [] for i in selected}
+        for (a, b) in E:
+            if a in sel_set and b in sel_set:
+                in_deg[b] += 1
+                succs[a].append(b)
+        roots = [i for i, d in in_deg.items() if d == 0]
+        # Stable order by id for reproducibility
+        roots.sort()
+        seq = []
+        while roots:
+            i = roots.pop(0)
+            seq.append(i)
+            for j in succs[i]:
+                in_deg[j] -= 1
+                if in_deg[j] == 0:
+                    roots.append(j)
+            roots.sort()
+
     makespan_series = sum(p[i] for i in seq)
     print("[DIAG] extract_sequence - raw extracted sequence:", seq)
     return seq, makespan_series

@@ -1,0 +1,2 @@
+instance,n,lambda,grasp_best,grasp_avg,grasp_std,grasp_time_s,cplex_obj,cplex_status,cplex_time_s,cplex_intgap_pct,gap_grasp_vs_cplex,cpsat_obj,cpsat_bound,cpsat_status,cpsat_time_s,cpsat_intgap_pct,gap_grasp_vs_cpsat,milp_obj,milp_status,milp_time_s,gap_pct
+dagtest,28,0.03527,220.3434,220.3434,0.0,0.01,220.9181,Optimal,0.43,0.94,0.26,220.8257,220.8257,OPTIMAL,0.23,0.0,0.22,220.9181,Optimal,0.43,0.26

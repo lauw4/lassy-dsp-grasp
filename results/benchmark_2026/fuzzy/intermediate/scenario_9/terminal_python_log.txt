@@ -1,0 +1,53 @@
+2026-05-08 22:26:40,372 DSP ADAPTIVE PIPELINE - SALBP_INSTANCE_N=1000_1_CUT92
+2026-05-08 22:26:40,372 Loaded instance: salbp_instance_n=1000_1_cut92
+2026-05-08 22:26:40,373 Loaded failures: 2
+2026-05-08 22:26:40,373 [1/4] Loading instance and solving DSP...
+2026-05-08 22:26:40,385 Nodes: 92, Edges: 76, Targets: 1, Solution: 4 operations
+2026-05-08 22:26:40,385 Target(s) to achieve: ['C068']
+2026-05-08 22:26:40,385 Starting disassembly sequence (4 operations)...
+2026-05-08 22:26:40,385 [ 1/4] Disassembling C014... [OK]
+2026-05-08 22:26:40,385 [ 2/4] Disassembling C032... [OK]
+2026-05-08 22:26:40,385 [ 3/4] Disassembling C048... [OK]
+2026-05-08 22:26:40,385 [ 4/4] Disassembling C068... [OK]
+2026-05-08 22:26:40,385 [2/4] Failure scenario loaded: 2 failure(s)
+2026-05-08 22:26:40,385 [3/4] Executing adaptive scheduler...
+2026-05-08 22:26:40,403 [FUZZY] Symptom: ACCESS_BLOCKED
+2026-05-08 22:26:40,403 [FUZZY] Inputs: force=60.0, torque=40.0, p_fail=60.0, context=0.0
+2026-05-08 22:26:40,403 [FUZZY] Score: 40.00
+2026-05-08 22:26:40,403 [FUZZY] Decision: bypass (confidence=100.0%)
+2026-05-08 22:26:40,403 [ACTION] bypass: success=True, notes=Component C032 bypassed (skipped).
+2026-05-08 22:26:40,413 [FUZZY] Symptom: ACCESS_BLOCKED
+2026-05-08 22:26:40,413 [FUZZY] Inputs: force=60.0, torque=40.0, p_fail=60.0, context=0.0
+2026-05-08 22:26:40,413 [FUZZY] Score: 40.00
+2026-05-08 22:26:40,413 [FUZZY] Decision: bypass (confidence=100.0%)
+2026-05-08 22:26:40,413 [ACTION] bypass: success=True, notes=Component C048 bypassed (skipped).
+2026-05-08 22:26:40,414 Adaptive scheduler finished. Actions taken: 2
+2026-05-08 22:26:40,414 EXECUTION SUMMARY
+2026-05-08 22:26:40,414 Status: SUCCESS
+2026-05-08 22:26:40,414 Target components:
+2026-05-08 22:26:40,414 [OK] C068 - Successfully disassembled
+2026-05-08 22:26:40,414 Execution metrics:
+2026-05-08 22:26:40,414 Targets achieved: 1/1 (100.0%)
+2026-05-08 22:26:40,414 Failures handled: 2
+2026-05-08 22:26:40,414 Actions taken: 2
+2026-05-08 22:26:40,414 Components done: 2/4
+2026-05-08 22:26:40,414 Algorithm runtime: 0.04s
+2026-05-08 22:26:40,414 ECONOMIC ANALYSIS:
+2026-05-08 22:26:40,414 Nominal profit (planned): 88.00 units
+2026-05-08 22:26:40,414 Adaptive profit (recovered): 45.00 units
+2026-05-08 22:26:40,414 Profit loss: 43.00 units (48.9%)
+2026-05-08 22:26:40,414 Value skipped (bypassed): 53.00 units
+2026-05-08 22:26:40,414 TIME ANALYSIS:
+2026-05-08 22:26:40,414 Nominal time (planned): 9min 53s
+2026-05-08 22:26:40,414 Adaptive time (actual): 6min 59s
+2026-05-08 22:26:40,414 Time saved: 2min 54s (29.3%)
+2026-05-08 22:26:40,414 Time saved (skipped): 2min 54s
+2026-05-08 22:26:40,414 GLOBAL SCORE :
+2026-05-08 22:26:40,414 Nominal score: 27.36
+2026-05-08 22:26:40,414 Adaptive score: 13.60
+2026-05-08 22:26:40,414 Score loss: 13.75 (50.3%)
+2026-05-08 22:26:40,414 Actions breakdown:
+2026-05-08 22:26:40,414 [OK] C032     ACCESS_BLOCKED       -> bypass      
+2026-05-08 22:26:40,414 [OK] C048     ACCESS_BLOCKED       -> bypass      
+2026-05-08 22:26:40,414 Detailed logs: results/save/test_failures/salbp_instance_n=1000_1_cut92/intermediate
+2026-05-08 22:26:40,414 Pipeline finished successfully

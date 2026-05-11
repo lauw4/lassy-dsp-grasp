@@ -1,0 +1,10 @@
+--- Pipeline run 2026-05-08 22:26:36.767444 ---
+Instance: unknown
+Initial solution: ['C010', 'C033', 'C058', 'C069', 'C085']
+Final state:
+  - Locked: set()
+  - Destroyed: set()
+  - Done: {'C085', 'C058', 'C010'}
+  - Skipped: {'C069', 'C033'}
+  - Notes: ["Destruction forbidden for C033: Flag 'no_destroy' active (context or graph).", 'Destruction forbidden for C069: Profit=71.00 > threshold=22.00 (percentile 20th).']
+Actions taken: [{'comp_id': 'C033', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy', 'success': False, 'notes': "Destruction not allowed: Flag 'no_destroy' active (context or graph)."}, {'comp_id': 'C033', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy→bypass', 'success': True, 'notes': 'Fallback succeeded'}, {'comp_id': 'C069', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy', 'success': False, 'notes': 'Destruction not allowed: Profit=71.00 > threshold=22.00 (percentile 20th).'}, {'comp_id': 'C069', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy→bypass', 'success': True, 'notes': 'Fallback succeeded'}]

@@ -1,0 +1,2 @@
+instance,n,lambda,grasp_best,grasp_avg,grasp_std,grasp_time_s,cplex_obj,cplex_status,cplex_time_s,cplex_intgap_pct,gap_grasp_vs_cplex,cpsat_obj,cpsat_bound,cpsat_status,cpsat_time_s,cpsat_intgap_pct,gap_grasp_vs_cpsat,milp_obj,milp_status,milp_time_s,gap_pct
+scholl_bowman8_n=8,8,0.15543,116.3946,116.3946,0.0,0.0,116.3946,Optimal,0.05,0.42,0.0,116.3994,116.3994,OPTIMAL,0.01,0.0,0.0,116.3946,Optimal,0.05,0.0

@@ -1,0 +1,10 @@
+--- Pipeline run 2026-05-08 22:26:55.458846 ---
+Instance: unknown
+Initial solution: ['C018', 'C010', 'C020', 'C027', 'C012', 'C017', 'C035', 'C042', 'C038', 'C014', 'C016', 'C032', 'C005', 'C048', 'C004', 'C026', 'C043', 'C068', 'C090', 'C024', 'C025', 'C062', 'C080', 'C111', 'C121']
+Final state:
+  - Locked: set()
+  - Destroyed: set()
+  - Done: {'C024', 'C111', 'C026', 'C121', 'C035', 'C012', 'C068', 'C020', 'C043', 'C025', 'C038', 'C005', 'C027', 'C014', 'C032', 'C004', 'C080', 'C010', 'C017', 'C048', 'C090', 'C018', 'C042', 'C016'}
+  - Skipped: {'C062'}
+  - Notes: ["Destruction forbidden for C062: Flag 'no_destroy' active (context or graph)."]
+Actions taken: [{'comp_id': 'C025', 'symptom': 'ACCESS_BLOCKED', 'action': 'change_tool', 'success': True, 'notes': 'Alternative tool suggested.'}, {'comp_id': 'C062', 'symptom': 'ACCESS_BLOCKED', 'action': 'destroy', 'success': False, 'notes': "Destruction not allowed: Flag 'no_destroy' active (context or graph)."}, {'comp_id': 'C062', 'symptom': 'ACCESS_BLOCKED', 'action': 'destroy→bypass', 'success': True, 'notes': 'Fallback succeeded'}]

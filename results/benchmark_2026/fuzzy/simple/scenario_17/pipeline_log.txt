@@ -1,0 +1,10 @@
+--- Pipeline run 2026-05-08 22:26:28.793251 ---
+Instance: unknown
+Initial solution: ['C016', 'C000', 'C001', 'C004', 'C002', 'C005', 'C007', 'C006', 'C003', 'C011', 'C017', 'C009', 'C018', 'C019', 'C013', 'C014', 'C015', 'C008', 'C020', 'C024', 'C021', 'C022', 'C012', 'C025', 'C023', 'C026', 'C010', 'C027', 'C028']
+Final state:
+  - Locked: set()
+  - Destroyed: set()
+  - Done: {'C008', 'C002', 'C006', 'C019', 'C023', 'C028', 'C010', 'C003', 'C015', 'C012', 'C014', 'C022', 'C013', 'C001', 'C005', 'C020', 'C007', 'C021', 'C017', 'C025', 'C011', 'C027', 'C004', 'C000', 'C026', 'C009', 'C018', 'C016'}
+  - Skipped: {'C024'}
+  - Notes: ["Destruction forbidden for C024: Flag 'no_destroy' active (context or graph)."]
+Actions taken: [{'comp_id': 'C024', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy', 'success': False, 'notes': "Destruction not allowed: Flag 'no_destroy' active (context or graph)."}, {'comp_id': 'C024', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy→bypass', 'success': True, 'notes': 'Fallback succeeded'}]

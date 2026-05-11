@@ -1,0 +1,36 @@
+{
+  "timestamp": "2026-05-07T07:51:17.598282",
+  "instance": "structured_graph_100",
+  "parameters": {
+    "GRASP_RUNS": 1,
+    "GRASP_ITERS": 150,
+    "GRASP_TIME": 900,
+    "EXACT_TIMELIM": 180,
+    "MILP_GAP": 0.01,
+    "MAX_N_MILP": 1000
+  },
+  "results": {
+    "instance": "structured_graph_100",
+    "n": 100,
+    "lambda": 0.01215,
+    "grasp_best": 182.7996,
+    "grasp_avg": 182.7996,
+    "grasp_std": 0.0,
+    "grasp_time_s": 0.24,
+    "cplex_obj": null,
+    "cplex_status": "TimeLimit",
+    "cplex_time_s": 361.42,
+    "cplex_intgap_pct": null,
+    "gap_grasp_vs_cplex": null,
+    "cpsat_obj": 208.8832,
+    "cpsat_bound": 756.7428,
+    "cpsat_status": "FEASIBLE",
+    "cpsat_time_s": 180.11,
+    "cpsat_intgap_pct": 262.28,
+    "gap_grasp_vs_cpsat": 12.49,
+    "milp_obj": null,
+    "milp_status": "TimeLimit",
+    "milp_time_s": 361.42,
+    "gap_pct": null
+  }
+}

@@ -1,0 +1,10 @@
+--- Pipeline run 2026-05-08 22:26:37.874164 ---
+Instance: unknown
+Initial solution: ['C016', 'C014', 'C032', 'C041', 'C031', 'C059', 'C063']
+Final state:
+  - Locked: set()
+  - Destroyed: set()
+  - Done: {'C063', 'C014', 'C041', 'C016', 'C032'}
+  - Skipped: {'C031', 'C059'}
+  - Notes: ['Destruction forbidden for C031: Profit=82.00 > threshold=22.00 (percentile 20th).']
+Actions taken: [{'comp_id': 'C031', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy', 'success': False, 'notes': 'Destruction not allowed: Profit=82.00 > threshold=22.00 (percentile 20th).'}, {'comp_id': 'C031', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy→bypass', 'success': True, 'notes': 'Fallback succeeded'}, {'comp_id': 'C059', 'symptom': 'LOW_VALUE_BOTTLENECK', 'action': 'bypass', 'success': True, 'notes': 'Component C059 bypassed (skipped).'}]

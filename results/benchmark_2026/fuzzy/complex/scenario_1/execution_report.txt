@@ -1,0 +1,186 @@
+------
+ADAPTIVE DSP EXECUTION REPORT
+------
+
+INITIAL PLANNED SEQUENCE:
+----------------------------------------
+N02, N06, N01, N05, N11, N10, N16, N04, N09, N15, N17, N20, N03, N08, N07, N13, N12, N14, N19, N18, N21, N22
+Target = N22
+
+------
+EXECUTION WITH ADAPTATION:
+------
+
+N02 - OK
+N06 - OK
+N01 - OK
+N05 - OK
+N11 - OK
+N10 - OK
+N16 - OK
+N04 - OK
+N09 - OK
+N15 - OK
+N17 - OK
+------
+FAILURE ON N20
+------
+
+Symptom: OVER_TORQUE_NO_ADVANCE
+
+Sensor values:
+  - Force:  70.0
+  - Torque: 80.0
+  - P_fail: 85.0%
+
+Fuzzy decision:
+  - Action: destroy->bypass
+  - Score:  71.71
+  - Confidence: 59.1%
+
+Result: Fallback succeeded
+N03 - OK
+N08 - OK
+N07 - OK
+N13 - OK
+------
+FAILURE ON N12
+------
+
+Symptom: ACCESS_BLOCKED
+
+Sensor values:
+  - Force:  60.0
+  - Torque: 40.0
+  - P_fail: 60.0%
+
+Fuzzy decision:
+  - Action: bypass->replan
+  - Score:  40.00
+  - Confidence: 100.0%
+
+Result: Fallback succeeded
+
+----------------------------------------
+SELECTIVE REPLANNING TRIGGERED
+----------------------------------------
+
+State at replan:
+  - Done:      ['N01', 'N02', 'N03', 'N04', 'N05', 'N06', 'N07', 'N08', 'N09', 'N10', 'N11', 'N13', 'N15', 'N16', 'N17']
+  - Destroyed: []
+  - Locked:    ['N12']
+  - Skipped:   ['N20']
+
+New sequence after replan:
+  ['N14', 'N19', 'N21', 'N22']
+N14 - OK
+N19 - OK
+N21 - OK
+N22 - OK
+------
+EXECUTION METRICS:
+------
+
+Targets achieved: 1/1 (100.0%)
+Failures handled: 2
+Actions taken:    4
+Done:             19/22
+Destroyed:        0
+Skipped:          1
+------
+FINAL STATE
+------
+
+Done:      ['N01', 'N02', 'N03', 'N04', 'N05', 'N06', 'N07', 'N08', 'N09', 'N10', 'N11', 'N13', 'N14', 'N15', 'N16', 'N17', 'N19', 'N21', 'N22']
+Destroyed: []
+Locked:    ['N12']
+Skipped:   ['N20']
+------
+ECONOMIC ANALYSIS
+------
+
+Nominal profit (planned):    333.00 units
+Adaptive profit (recovered): 288.00 units
+Profit loss:                 45.00 units (13.5%)
+Value skipped (bypassed):    17.00 units
+
+Component breakdown:
+  N02: profit=18, cost=4 -> net=14.00
+  N06: profit=17, cost=3 -> net=14.00
+  N01: profit=20, cost=5 -> net=15.00
+  N05: profit=21, cost=4 -> net=17.00
+  N11: profit=19, cost=5 -> net=14.00
+  N10: profit=22, cost=6 -> net=16.00
+  N16: profit=18, cost=4 -> net=14.00
+  N04: profit=19, cost=5 -> net=14.00
+  N09: profit=18, cost=4 -> net=14.00
+  N15: profit=20, cost=5 -> net=15.00
+  N17: profit=22, cost=6 -> net=16.00
+  N20: profit=17, cost=3 -> SKIPPED (not recovered)
+  N03: profit=22, cost=6 -> net=16.00
+  N08: profit=20, cost=5 -> net=15.00
+  N07: profit=23, cost=7 -> net=16.00
+  N13: profit=17, cost=3 -> net=14.00
+  N14: profit=23, cost=7 -> net=16.00
+  N19: profit=21, cost=4 -> net=17.00
+  N21: profit=23, cost=7 -> net=16.00
+  N22: profit=20, cost=5 -> net=15.00
+------
+TIME ANALYSIS
+------
+
+Nominal time (planned):      36min 40s
+Adaptive time (actual):      32min 0s
+Time saved:                  4min 40s (12.7%)
+Time saved (skipped):        1min 20s
+
+Component time breakdown:
+  N02: 90s
+  N06: 80s
+  N01: 100s
+  N05: 105s
+  N11: 95s
+  N10: 110s
+  N16: 90s
+  N04: 95s
+  N09: 90s
+  N15: 100s
+  N17: 110s
+  N20: 80s -> SKIPPED (saved)
+  N03: 110s
+  N08: 100s
+  N07: 120s
+  N13: 80s
+  N14: 120s
+  N19: 105s
+  N21: 120s
+  N22: 100s
+------
+GLOBAL SCORE
+------
+
+Nominal score:               103.67
+Adaptive score:              89.60
+Score loss:                  14.07 (13.6%)
+------
+GLOSSARY
+------
+
+p_fail:
+  Estimated failure risk. Higher = more likely to fail.
+
+Fuzzy decision:
+  AI-based analysis choosing best recovery action.
+  Score (0-100) and confidence (%) indicate decision quality.
+
+Actions:
+  - change_tool: Switch to alternative tool
+  - bypass: Skip inaccessible component
+  - destroy: Remove component by destruction
+  - replan: Recalculate sequence after changes
+
+States:
+  - done: Successfully removed components
+  - destroyed: Components removed by destruction
+  - locked: Components physically blocked (not removable)
+  - skipped: Components bypassed (not on current path)

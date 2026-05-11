@@ -1,0 +1,10 @@
+--- Pipeline run 2026-05-08 22:26:58.574421 ---
+Instance: unknown
+Initial solution: ['C001', 'C010', 'C014', 'C016', 'C028', 'C024', 'C009', 'C031', 'C000', 'C017', 'C033', 'C023', 'C025', 'C027', 'C003', 'C032', 'C002', 'C043', 'C054']
+Final state:
+  - Locked: set()
+  - Destroyed: {'C024'}
+  - Done: {'C025', 'C014', 'C009', 'C001', 'C023', 'C043', 'C054', 'C002', 'C028', 'C017', 'C031', 'C000', 'C027', 'C032', 'C033', 'C010', 'C003'}
+  - Skipped: {'C016'}
+  - Notes: ["Destruction forbidden for C016: Flag 'no_destroy' active (context or graph)."]
+Actions taken: [{'comp_id': 'C016', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy', 'success': False, 'notes': "Destruction not allowed: Flag 'no_destroy' active (context or graph)."}, {'comp_id': 'C016', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy→bypass', 'success': True, 'notes': 'Fallback succeeded'}, {'comp_id': 'C024', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy', 'success': True, 'notes': 'Destruction allowed (cutoff percentile 20th).'}, {'comp_id': 'C027', 'symptom': 'ACCESS_BLOCKED', 'action': 'change_tool', 'success': True, 'notes': 'Alternative tool suggested.'}]

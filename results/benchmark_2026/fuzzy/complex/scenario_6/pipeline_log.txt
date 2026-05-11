@@ -1,0 +1,10 @@
+--- Pipeline run 2026-05-08 22:26:55.962610 ---
+Instance: unknown
+Initial solution: ['C019', 'C034', 'C056', 'C071', 'C096', 'C106']
+Final state:
+  - Locked: set()
+  - Destroyed: set()
+  - Done: {'C019', 'C106', 'C056', 'C034'}
+  - Skipped: {'C071', 'C096'}
+  - Notes: ['Bypass impossible for C034: no alternative path', "Destruction forbidden for C071: Flag 'no_destroy' active (context or graph)."]
+Actions taken: [{'comp_id': 'C034', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'bypass', 'success': False, 'notes': 'No alternative path in graph.'}, {'comp_id': 'C034', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'bypass→change_tool', 'success': True, 'notes': 'Fallback succeeded'}, {'comp_id': 'C071', 'symptom': 'ACCESS_BLOCKED', 'action': 'destroy', 'success': False, 'notes': "Destruction not allowed: Flag 'no_destroy' active (context or graph)."}, {'comp_id': 'C071', 'symptom': 'ACCESS_BLOCKED', 'action': 'destroy→bypass', 'success': True, 'notes': 'Fallback succeeded'}, {'comp_id': 'C096', 'symptom': 'LOW_VALUE_BOTTLENECK', 'action': 'bypass', 'success': True, 'notes': 'Component C096 bypassed (skipped).'}]

@@ -1,0 +1,81 @@
+2026-05-08 22:26:47,031 DSP ADAPTIVE PIPELINE - SCHOLL_LUTZ1_N=32
+2026-05-08 22:26:47,031 Loaded instance: scholl_lutz1_n=32
+2026-05-08 22:26:47,031 Loaded failures: 2
+2026-05-08 22:26:47,031 [1/4] Loading instance and solving DSP...
+2026-05-08 22:26:47,104 Nodes: 32, Edges: 38, Targets: 1, Solution: 32 operations
+2026-05-08 22:26:47,104 Target(s) to achieve: ['C031']
+2026-05-08 22:26:47,104 Starting disassembly sequence (32 operations)...
+2026-05-08 22:26:47,104 [ 1/32] Disassembling C001... [OK]
+2026-05-08 22:26:47,104 [ 2/32] Disassembling C000... [OK]
+2026-05-08 22:26:47,104 [ 3/32] Disassembling C004... [OK]
+2026-05-08 22:26:47,104 [ 4/32] Disassembling C005... [OK]
+2026-05-08 22:26:47,104 [ 5/32] Disassembling C006... [OK]
+2026-05-08 22:26:47,104 [ 6/32] Disassembling C007... [OK]
+2026-05-08 22:26:47,104 [ 7/32] Disassembling C002... [OK]
+2026-05-08 22:26:47,104 [ 8/32] Disassembling C008... [OK]
+2026-05-08 22:26:47,104 [ 9/32] Disassembling C010... [OK]
+2026-05-08 22:26:47,104 [10/32] Disassembling C011... [OK]
+2026-05-08 22:26:47,104 [11/32] Disassembling C012... [OK]
+2026-05-08 22:26:47,104 [12/32] Disassembling C013... [OK]
+2026-05-08 22:26:47,104 [13/32] Disassembling C009... [OK]
+2026-05-08 22:26:47,104 [14/32] Disassembling C015... [OK]
+2026-05-08 22:26:47,104 [15/32] Disassembling C017... [OK]
+2026-05-08 22:26:47,104 [16/32] Disassembling C003... [OK]
+2026-05-08 22:26:47,104 [17/32] Disassembling C014... [OK]
+2026-05-08 22:26:47,104 [18/32] Disassembling C016... [OK]
+2026-05-08 22:26:47,104 [19/32] Disassembling C018... [OK]
+2026-05-08 22:26:47,104 [20/32] Disassembling C019... [OK]
+2026-05-08 22:26:47,104 [21/32] Disassembling C020... [OK]
+2026-05-08 22:26:47,104 [22/32] Disassembling C023... [OK]
+2026-05-08 22:26:47,104 [23/32] Disassembling C021... [OK]
+2026-05-08 22:26:47,104 [24/32] Disassembling C024... [OK]
+2026-05-08 22:26:47,104 [25/32] Disassembling C025... [OK]
+2026-05-08 22:26:47,104 [26/32] Disassembling C026... [OK]
+2026-05-08 22:26:47,104 [27/32] Disassembling C027... [OK]
+2026-05-08 22:26:47,104 [28/32] Disassembling C028... [OK]
+2026-05-08 22:26:47,104 [29/32] Disassembling C029... [OK]
+2026-05-08 22:26:47,104 [30/32] Disassembling C022... [OK]
+2026-05-08 22:26:47,104 [31/32] Disassembling C030... [OK]
+2026-05-08 22:26:47,104 [32/32] Disassembling C031... [OK]
+2026-05-08 22:26:47,104 [2/4] Failure scenario loaded: 2 failure(s)
+2026-05-08 22:26:47,104 [3/4] Executing adaptive scheduler...
+2026-05-08 22:26:47,122 [FUZZY] Symptom: LOW_VALUE_BOTTLENECK
+2026-05-08 22:26:47,122 [FUZZY] Inputs: force=30.0, torque=20.0, p_fail=60.0, context=0.0
+2026-05-08 22:26:47,122 [FUZZY] Score: 40.00
+2026-05-08 22:26:47,122 [FUZZY] Decision: bypass (confidence=100.0%)
+2026-05-08 22:26:47,122 [ACTION] bypass: success=True, notes=Component C013 bypassed (skipped).
+2026-05-08 22:26:47,132 [FUZZY] Symptom: LOW_VALUE_BOTTLENECK
+2026-05-08 22:26:47,132 [FUZZY] Inputs: force=30.0, torque=20.0, p_fail=60.0, context=100.0
+2026-05-08 22:26:47,132 [FUZZY] Score: 20.00
+2026-05-08 22:26:47,132 [FUZZY] Decision: change_tool (confidence=100.0%)
+2026-05-08 22:26:47,132 [ACTION] change_tool: success=True, notes=Alternative tool suggested.
+2026-05-08 22:26:47,132 Adaptive scheduler finished. Actions taken: 2
+2026-05-08 22:26:47,133 EXECUTION SUMMARY
+2026-05-08 22:26:47,133 Status: SUCCESS
+2026-05-08 22:26:47,133 Target components:
+2026-05-08 22:26:47,133 [OK] C031 - Successfully disassembled
+2026-05-08 22:26:47,133 Execution metrics:
+2026-05-08 22:26:47,133 Targets achieved: 1/1 (100.0%)
+2026-05-08 22:26:47,133 Failures handled: 2
+2026-05-08 22:26:47,133 Actions taken: 2
+2026-05-08 22:26:47,133 Components done: 31/32
+2026-05-08 22:26:47,133 Algorithm runtime: 0.10s
+2026-05-08 22:26:47,133 ECONOMIC ANALYSIS:
+2026-05-08 22:26:47,133 Nominal profit (planned): 631.00 units
+2026-05-08 22:26:47,133 Adaptive profit (recovered): 614.00 units
+2026-05-08 22:26:47,133 Profit loss: 17.00 units (2.7%)
+2026-05-08 22:26:47,133 Value skipped (bypassed): 25.00 units
+2026-05-08 22:26:47,133 TIME ANALYSIS:
+2026-05-08 22:26:47,133 Nominal time (planned): 235min 40s
+2026-05-08 22:26:47,133 Adaptive time (actual): 232min 18s
+2026-05-08 22:26:47,133 Time saved: 3min 22s (1.4%)
+2026-05-08 22:26:47,133 Time saved (skipped): 3min 22s
+2026-05-08 22:26:47,133 GLOBAL SCORE :
+2026-05-08 22:26:47,133 Nominal score: 163.20
+2026-05-08 22:26:47,133 Adaptive score: 158.21
+2026-05-08 22:26:47,133 Score loss: 4.99 (3.1%)
+2026-05-08 22:26:47,133 Actions breakdown:
+2026-05-08 22:26:47,133 [OK] C013     LOW_VALUE_BOTTLENECK -> bypass      
+2026-05-08 22:26:47,133 [OK] C015     LOW_VALUE_BOTTLENECK -> change_tool 
+2026-05-08 22:26:47,133 Detailed logs: results/save/test_failures/scholl_lutz1_n=32/intermediate
+2026-05-08 22:26:47,134 Pipeline finished successfully

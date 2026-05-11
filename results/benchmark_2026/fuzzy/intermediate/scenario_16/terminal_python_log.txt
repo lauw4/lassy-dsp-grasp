@@ -1,0 +1,100 @@
+2026-05-08 22:26:44,730 DSP ADAPTIVE PIPELINE - SCHOLL_BARTHOLD_N=148
+2026-05-08 22:26:44,731 Loaded instance: scholl_barthold_n=148
+2026-05-08 22:26:44,731 Loaded failures: 2
+2026-05-08 22:26:44,731 [1/4] Loading instance and solving DSP...
+2026-05-08 22:26:44,866 Nodes: 148, Edges: 175, Targets: 1, Solution: 56 operations
+2026-05-08 22:26:44,866 Target(s) to achieve: ['C125']
+2026-05-08 22:26:44,867 Starting disassembly sequence (56 operations)...
+2026-05-08 22:26:44,867 [ 1/56] Disassembling C031... [OK]
+2026-05-08 22:26:44,867 [ 2/56] Disassembling C000... [OK]
+2026-05-08 22:26:44,867 [ 3/56] Disassembling C058... [OK]
+2026-05-08 22:26:44,867 [ 4/56] Disassembling C001... [OK]
+2026-05-08 22:26:44,867 [ 5/56] Disassembling C002... [OK]
+2026-05-08 22:26:44,867 [ 6/56] Disassembling C005... [OK]
+2026-05-08 22:26:44,867 [ 7/56] Disassembling C073... [OK]
+2026-05-08 22:26:44,867 [ 8/56] Disassembling C032... [OK]
+2026-05-08 22:26:44,867 [ 9/56] Disassembling C055... [OK]
+2026-05-08 22:26:44,867 [10/56] Disassembling C004... [OK]
+2026-05-08 22:26:44,867 [11/56] Disassembling C072... [OK]
+2026-05-08 22:26:44,867 [12/56] Disassembling C008... [OK]
+2026-05-08 22:26:44,867 [13/56] Disassembling C006... [OK]
+2026-05-08 22:26:44,867 [14/56] Disassembling C033... [OK]
+2026-05-08 22:26:44,867 [15/56] Disassembling C003... [OK]
+2026-05-08 22:26:44,867 [16/56] Disassembling C007... [OK]
+2026-05-08 22:26:44,867 [17/56] Disassembling C009... [OK]
+2026-05-08 22:26:44,867 [18/56] Disassembling C013... [OK]
+2026-05-08 22:26:44,867 [19/56] Disassembling C014... [OK]
+2026-05-08 22:26:44,867 [20/56] Disassembling C015... [OK]
+2026-05-08 22:26:44,867 [21/56] Disassembling C016... [OK]
+2026-05-08 22:26:44,867 [22/56] Disassembling C018... [OK]
+2026-05-08 22:26:44,867 [23/56] Disassembling C034... [OK]
+2026-05-08 22:26:44,867 [24/56] Disassembling C017... [OK]
+2026-05-08 22:26:44,867 [25/56] Disassembling C019... [OK]
+2026-05-08 22:26:44,867 [26/56] Disassembling C022... [OK]
+2026-05-08 22:26:44,867 [27/56] Disassembling C021... [OK]
+2026-05-08 22:26:44,867 [28/56] Disassembling C023... [OK]
+2026-05-08 22:26:44,867 [29/56] Disassembling C020... [OK]
+2026-05-08 22:26:44,867 [30/56] Disassembling C027... [OK]
+2026-05-08 22:26:44,867 [31/56] Disassembling C025... [OK]
+2026-05-08 22:26:44,867 [32/56] Disassembling C026... [OK]
+2026-05-08 22:26:44,867 [33/56] Disassembling C024... [OK]
+2026-05-08 22:26:44,867 [34/56] Disassembling C028... [OK]
+2026-05-08 22:26:44,867 [35/56] Disassembling C030... [OK]
+2026-05-08 22:26:44,867 [36/56] Disassembling C035... [OK]
+2026-05-08 22:26:44,867 [37/56] Disassembling C036... [OK]
+2026-05-08 22:26:44,867 [38/56] Disassembling C037... [OK]
+2026-05-08 22:26:44,867 [39/56] Disassembling C044... [OK]
+2026-05-08 22:26:44,867 [40/56] Disassembling C038... [OK]
+2026-05-08 22:26:44,867 [41/56] Disassembling C039... [OK]
+2026-05-08 22:26:44,867 [42/56] Disassembling C045... [OK]
+2026-05-08 22:26:44,867 [43/56] Disassembling C046... [OK]
+2026-05-08 22:26:44,867 [44/56] Disassembling C074... [OK]
+2026-05-08 22:26:44,867 [45/56] Disassembling C053... [OK]
+2026-05-08 22:26:44,867 [46/56] Disassembling C089... [OK]
+2026-05-08 22:26:44,867 [47/56] Disassembling C110... [OK]
+2026-05-08 22:26:44,867 [48/56] Disassembling C111... [OK]
+2026-05-08 22:26:44,867 [49/56] Disassembling C112... [OK]
+2026-05-08 22:26:44,867 [50/56] Disassembling C115... [OK]
+2026-05-08 22:26:44,867 [51/56] Disassembling C116... [OK]
+2026-05-08 22:26:44,867 [52/56] Disassembling C117... [OK]
+2026-05-08 22:26:44,867 [53/56] Disassembling C119... [OK]
+2026-05-08 22:26:44,867 [54/56] Disassembling C120... [OK]
+2026-05-08 22:26:44,867 [55/56] Disassembling C121... [OK]
+2026-05-08 22:26:44,867 [56/56] Disassembling C125... [OK]
+2026-05-08 22:26:44,867 [2/4] Failure scenario loaded: 2 failure(s)
+2026-05-08 22:26:44,867 [3/4] Executing adaptive scheduler...
+2026-05-08 22:26:44,884 [FUZZY] Symptom: OVER_TORQUE_NO_ADVANCE
+2026-05-08 22:26:44,884 [FUZZY] Inputs: force=70.0, torque=80.0, p_fail=65.0, context=0.0
+2026-05-08 22:26:44,884 [FUZZY] Score: 65.47
+2026-05-08 22:26:44,884 [FUZZY] Decision: destroy (confidence=86.8%)
+2026-05-08 22:26:44,885 [ACTION] destroy: success=False, notes=Destruction not allowed: Flag 'no_destroy' active (context or graph).
+2026-05-08 22:26:44,885 Adaptive scheduler finished. Actions taken: 2
+2026-05-08 22:26:44,885 EXECUTION SUMMARY
+2026-05-08 22:26:44,885 Status: SUCCESS
+2026-05-08 22:26:44,885 Target components:
+2026-05-08 22:26:44,885 [OK] C125 - Successfully disassembled
+2026-05-08 22:26:44,885 Execution metrics:
+2026-05-08 22:26:44,885 Targets achieved: 1/1 (100.0%)
+2026-05-08 22:26:44,885 Failures handled: 2
+2026-05-08 22:26:44,885 Actions taken: 2
+2026-05-08 22:26:44,885 Components done: 55/56
+2026-05-08 22:26:44,885 Algorithm runtime: 0.15s
+2026-05-08 22:26:44,885 ECONOMIC ANALYSIS:
+2026-05-08 22:26:44,885 Nominal profit (planned): 1109.00 units
+2026-05-08 22:26:44,885 Adaptive profit (recovered): 1091.00 units
+2026-05-08 22:26:44,885 Profit loss: 18.00 units (1.6%)
+2026-05-08 22:26:44,885 Value skipped (bypassed): 20.00 units
+2026-05-08 22:26:44,885 TIME ANALYSIS:
+2026-05-08 22:26:44,885 Nominal time (planned): 28min 34s
+2026-05-08 22:26:44,885 Adaptive time (actual): 28min 23s
+2026-05-08 22:26:44,885 Time saved: 11s (0.6%)
+2026-05-08 22:26:44,885 Time saved (skipped): 11s
+2026-05-08 22:26:44,885 GLOBAL SCORE :
+2026-05-08 22:26:44,885 Nominal score: 363.95
+2026-05-08 22:26:44,885 Adaptive score: 357.99
+2026-05-08 22:26:44,885 Score loss: 5.96 (1.6%)
+2026-05-08 22:26:44,885 Actions breakdown:
+2026-05-08 22:26:44,885 [FAILED] C112     OVER_TORQUE_NO_ADVANCE -> destroy     
+2026-05-08 22:26:44,885 [OK] C112     OVER_TORQUE_NO_ADVANCE -> destroy→bypass
+2026-05-08 22:26:44,885 Detailed logs: results/save/test_failures/scholl_barthold_n=148/intermediate
+2026-05-08 22:26:44,886 Pipeline finished successfully

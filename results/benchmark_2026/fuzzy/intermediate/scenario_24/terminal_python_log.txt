@@ -1,0 +1,47 @@
+2026-05-08 22:26:49,395 DSP ADAPTIVE PIPELINE - SCHOLL_MERTENS_N=7
+2026-05-08 22:26:49,395 Loaded instance: scholl_mertens_n=7
+2026-05-08 22:26:49,395 Loaded failures: 1
+2026-05-08 22:26:49,395 [1/4] Loading instance and solving DSP...
+2026-05-08 22:26:49,405 Nodes: 7, Edges: 6, Targets: 1, Solution: 4 operations
+2026-05-08 22:26:49,405 Target(s) to achieve: ['C005']
+2026-05-08 22:26:49,405 Starting disassembly sequence (4 operations)...
+2026-05-08 22:26:49,405 [ 1/4] Disassembling C000... [OK]
+2026-05-08 22:26:49,405 [ 2/4] Disassembling C001... [OK]
+2026-05-08 22:26:49,405 [ 3/4] Disassembling C004... [OK]
+2026-05-08 22:26:49,405 [ 4/4] Disassembling C005... [OK]
+2026-05-08 22:26:49,405 [2/4] Failure scenario loaded: 1 failure(s)
+2026-05-08 22:26:49,405 [3/4] Executing adaptive scheduler...
+2026-05-08 22:26:49,423 [FUZZY] Symptom: OVER_TORQUE_NO_ADVANCE
+2026-05-08 22:26:49,423 [FUZZY] Inputs: force=70.0, torque=80.0, p_fail=85.0, context=100.0
+2026-05-08 22:26:49,423 [FUZZY] Score: 49.60
+2026-05-08 22:26:49,423 [FUZZY] Decision: bypass (confidence=52.0%)
+2026-05-08 22:26:49,423 [ACTION] bypass: success=True, notes=Component C004 bypassed (skipped).
+2026-05-08 22:26:49,423 Adaptive scheduler finished. Actions taken: 1
+2026-05-08 22:26:49,423 EXECUTION SUMMARY
+2026-05-08 22:26:49,423 Status: SUCCESS
+2026-05-08 22:26:49,423 Target components:
+2026-05-08 22:26:49,423 [OK] C005 - Successfully disassembled
+2026-05-08 22:26:49,423 Execution metrics:
+2026-05-08 22:26:49,423 Targets achieved: 1/1 (100.0%)
+2026-05-08 22:26:49,423 Failures handled: 1
+2026-05-08 22:26:49,423 Actions taken: 1
+2026-05-08 22:26:49,423 Components done: 3/4
+2026-05-08 22:26:49,423 Algorithm runtime: 0.03s
+2026-05-08 22:26:49,423 ECONOMIC ANALYSIS:
+2026-05-08 22:26:49,423 Nominal profit (planned): 80.00 units
+2026-05-08 22:26:49,423 Adaptive profit (recovered): 56.00 units
+2026-05-08 22:26:49,423 Profit loss: 24.00 units (30.0%)
+2026-05-08 22:26:49,423 Value skipped (bypassed): 27.00 units
+2026-05-08 22:26:49,423 TIME ANALYSIS:
+2026-05-08 22:26:49,423 Nominal time (planned): 17s
+2026-05-08 22:26:49,423 Adaptive time (actual): 12s
+2026-05-08 22:26:49,423 Time saved: 5s (29.4%)
+2026-05-08 22:26:49,423 Time saved (skipped): 5s
+2026-05-08 22:26:49,423 GLOBAL SCORE :
+2026-05-08 22:26:49,423 Nominal score: 26.61
+2026-05-08 22:26:49,423 Adaptive score: 18.63
+2026-05-08 22:26:49,423 Score loss: 7.98 (30.0%)
+2026-05-08 22:26:49,423 Actions breakdown:
+2026-05-08 22:26:49,423 [OK] C004     OVER_TORQUE_NO_ADVANCE -> bypass      
+2026-05-08 22:26:49,423 Detailed logs: results/save/test_failures/scholl_mertens_n=7/intermediate
+2026-05-08 22:26:49,424 Pipeline finished successfully

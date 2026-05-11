@@ -1,0 +1,90 @@
+------
+ADAPTIVE DSP EXECUTION REPORT
+------
+
+INITIAL PLANNED SEQUENCE:
+----------------------------------------
+C014, C032, C048, C068
+Target = C068
+
+------
+EXECUTION WITH ADAPTATION:
+------
+
+C014 - OK
+C032 - OK
+C048 - OK
+C068 - OK
+------
+EXECUTION METRICS:
+------
+
+Targets achieved: 1/1 (100.0%)
+Failures handled: 3
+Actions taken:    0
+Done:             4/4
+Destroyed:        0
+Skipped:          0
+------
+FINAL STATE
+------
+
+Done:      ['C014', 'C032', 'C048', 'C068']
+Destroyed: []
+Locked:    []
+Skipped:   []
+------
+ECONOMIC ANALYSIS
+------
+
+Nominal profit (planned):    88.00 units
+Adaptive profit (recovered): 88.00 units
+Profit loss:                 0.00 units (0.0%)
+
+Component breakdown:
+  C014: profit=26, cost=2 -> net=24.00
+  C032: profit=26, cost=6 -> net=20.00
+  C048: profit=27, cost=4 -> net=23.00
+  C068: profit=25, cost=4 -> net=21.00
+------
+TIME ANALYSIS
+------
+
+Nominal time (planned):      9min 53s
+Adaptive time (actual):      9min 53s
+Time overhead:               -0s (-0.0%)
+
+Component time breakdown:
+  C014: 266s
+  C032: 147s
+  C048: 27s
+  C068: 153s
+------
+GLOBAL SCORE
+------
+
+Nominal score:               27.36
+Adaptive score:              27.36
+Score loss:                  0.00 (0.0%)
+------
+GLOSSARY
+------
+
+p_fail:
+  Estimated failure risk. Higher = more likely to fail.
+
+Fuzzy decision:
+  AI-based analysis choosing best recovery action.
+  Score (0-100) and confidence (%) indicate decision quality.
+
+Actions:
+  - change_tool: Switch to alternative tool
+  - bypass: Skip inaccessible component
+  - destroy: Remove component by destruction
+  - replan: Recalculate sequence after changes
+
+States:
+  - done: Successfully removed components
+  - destroyed: Components removed by destruction
+  - locked: Components physically blocked (not removable)
+  - skipped: Components bypassed (not on current path)

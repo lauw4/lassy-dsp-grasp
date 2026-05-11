@@ -1,0 +1,2 @@
+instance,n,lambda,grasp_best,grasp_avg,grasp_std,grasp_time_s,cplex_obj,cplex_status,cplex_time_s,cplex_intgap_pct,gap_grasp_vs_cplex,cpsat_obj,cpsat_bound,cpsat_status,cpsat_time_s,cpsat_intgap_pct,gap_grasp_vs_cpsat,milp_obj,milp_status,milp_time_s,gap_pct
+scholl_mukherje_n=94,94,0.01515,-1777.0235,-1777.0235,0.0,0.19,-1688.9147,Optimal,6.4,0.66,5.22,-1700.0704,-1700.0704,OPTIMAL,136.58,0.0,4.53,-1688.9147,Optimal,6.4,5.22

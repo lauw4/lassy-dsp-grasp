@@ -1,0 +1,68 @@
+{
+  "instance": "scholl_mansoor_n=11",
+  "targets": [
+    "C011"
+  ],
+  "grasp": {
+    "best_score": 168.7283,
+    "avg_score": 168.7283,
+    "std_score": 0.0,
+    "time_s": 0.0,
+    "sequence": [
+      "C001",
+      "C002",
+      "C004",
+      "C005",
+      "C007",
+      "C006",
+      "C008",
+      "C003",
+      "C009",
+      "C010",
+      "C011"
+    ]
+  },
+  "cplex": {
+    "objective": 168.9152,
+    "status": "Optimal",
+    "time_s": 0.02,
+    "intgap_pct": 0.11,
+    "sequence": [
+      1,
+      2,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      3,
+      10,
+      11
+    ]
+  },
+  "cpsat": {
+    "objective": 168.9045,
+    "bound": 168.9045,
+    "status": "OPTIMAL",
+    "time_s": 0.01,
+    "intgap_pct": 0.0,
+    "sequence": [
+      1,
+      2,
+      4,
+      5,
+      6,
+      7,
+      9,
+      8,
+      10,
+      3,
+      11
+    ]
+  },
+  "comparison": {
+    "gap_grasp_vs_cplex_pct": 0.11,
+    "gap_grasp_vs_cpsat_pct": 0.1
+  }
+}

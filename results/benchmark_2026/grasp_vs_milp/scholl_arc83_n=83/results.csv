@@ -1,0 +1,2 @@
+instance,n,lambda,grasp_best,grasp_avg,grasp_std,grasp_time_s,cplex_obj,cplex_status,cplex_time_s,cplex_intgap_pct,gap_grasp_vs_cplex,cpsat_obj,cpsat_bound,cpsat_status,cpsat_time_s,cpsat_intgap_pct,gap_grasp_vs_cpsat,milp_obj,milp_status,milp_time_s,gap_pct
+scholl_arc83_n=83,83,0.01016,154.6664,154.6664,0.0,0.08,222.7659,Optimal,30.83,0.91,30.57,217.612,217.612,OPTIMAL,4.15,0.0,28.93,222.7659,Optimal,30.83,30.57

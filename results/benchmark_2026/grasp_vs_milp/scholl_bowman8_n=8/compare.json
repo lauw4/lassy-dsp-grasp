@@ -1,0 +1,56 @@
+{
+  "instance": "scholl_bowman8_n=8",
+  "targets": [
+    "C007"
+  ],
+  "grasp": {
+    "best_score": 116.3946,
+    "avg_score": 116.3946,
+    "std_score": 0.0,
+    "time_s": 0.0,
+    "sequence": [
+      "C001",
+      "C002",
+      "C004",
+      "C003",
+      "C005",
+      "C006",
+      "C007"
+    ]
+  },
+  "cplex": {
+    "objective": 116.3946,
+    "status": "Optimal",
+    "time_s": 0.05,
+    "intgap_pct": 0.42,
+    "sequence": [
+      1,
+      2,
+      4,
+      3,
+      5,
+      6,
+      7
+    ]
+  },
+  "cpsat": {
+    "objective": 116.3994,
+    "bound": 116.3994,
+    "status": "OPTIMAL",
+    "time_s": 0.01,
+    "intgap_pct": 0.0,
+    "sequence": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  "comparison": {
+    "gap_grasp_vs_cplex_pct": 0.0,
+    "gap_grasp_vs_cpsat_pct": 0.0
+  }
+}

@@ -1,0 +1,61 @@
+2026-05-08 22:26:39,872 DSP ADAPTIVE PIPELINE - SALBP_INSTANCE_N=1000_1_CUT78
+2026-05-08 22:26:39,873 Loaded instance: salbp_instance_n=1000_1_cut78
+2026-05-08 22:26:39,873 Loaded failures: 2
+2026-05-08 22:26:39,873 [1/4] Loading instance and solving DSP...
+2026-05-08 22:26:39,899 Nodes: 78, Edges: 62, Targets: 3, Solution: 8 operations
+2026-05-08 22:26:39,899 Target(s) to achieve: ['C009', 'C040', 'C068']
+2026-05-08 22:26:39,899 Starting disassembly sequence (8 operations)...
+2026-05-08 22:26:39,899 [ 1/8] Disassembling C010... [OK]
+2026-05-08 22:26:39,899 [ 2/8] Disassembling C009... [OK]
+2026-05-08 22:26:39,899 [ 3/8] Disassembling C033... [OK]
+2026-05-08 22:26:39,899 [ 4/8] Disassembling C014... [OK]
+2026-05-08 22:26:39,899 [ 5/8] Disassembling C032... [OK]
+2026-05-08 22:26:39,899 [ 6/8] Disassembling C048... [OK]
+2026-05-08 22:26:39,899 [ 7/8] Disassembling C068... [OK]
+2026-05-08 22:26:39,899 [ 8/8] Disassembling C040... [OK]
+2026-05-08 22:26:39,899 [2/4] Failure scenario loaded: 2 failure(s)
+2026-05-08 22:26:39,899 [3/4] Executing adaptive scheduler...
+2026-05-08 22:26:39,917 [FUZZY] Symptom: OVER_TORQUE_NO_ADVANCE
+2026-05-08 22:26:39,917 [FUZZY] Inputs: force=70.0, torque=80.0, p_fail=75.0, context=0.0
+2026-05-08 22:26:39,917 [FUZZY] Score: 70.67
+2026-05-08 22:26:39,917 [FUZZY] Decision: destroy (confidence=63.7%)
+2026-05-08 22:26:39,917 [ACTION] destroy: success=True, notes=Destruction allowed (cutoff percentile 20th).
+2026-05-08 22:26:39,917 [REPLAN] States before replan:
+2026-05-08 22:26:39,917 [REPLAN]   done=['C009', 'C010']
+2026-05-08 22:26:39,917 [REPLAN]   destroyed=['C033']
+2026-05-08 22:26:39,917 [REPLAN]   locked=[]
+2026-05-08 22:26:39,917 [REPLAN]   skipped=[]
+2026-05-08 22:26:39,932 [REPLAN] New sequence: ['C040']
+2026-05-08 22:26:39,932 Adaptive scheduler finished. Actions taken: 1
+2026-05-08 22:26:39,932 EXECUTION SUMMARY
+2026-05-08 22:26:39,932 Status: PARTIAL SUCCESS
+2026-05-08 22:26:39,932 Target components:
+2026-05-08 22:26:39,932 [OK] C009 - Successfully disassembled
+2026-05-08 22:26:39,932 [OK] C040 - Successfully disassembled
+2026-05-08 22:26:39,932 [FAILED] C068 - NOT ACHIEVED
+2026-05-08 22:26:39,932 Execution metrics:
+2026-05-08 22:26:39,932 Targets achieved: 2/3 (66.7%)
+2026-05-08 22:26:39,932 Failures handled: 2
+2026-05-08 22:26:39,932 Actions taken: 1
+2026-05-08 22:26:39,932 Components done: 3/8
+2026-05-08 22:26:39,932 Destroyed: 1 component(s)
+2026-05-08 22:26:39,932 Algorithm runtime: 0.06s
+2026-05-08 22:26:39,932 ECONOMIC ANALYSIS:
+2026-05-08 22:26:39,932 Nominal profit (planned): 158.00 units
+2026-05-08 22:26:39,932 Adaptive profit (recovered): 56.00 units
+2026-05-08 22:26:39,932 Profit loss: 102.00 units (64.6%)
+2026-05-08 22:26:39,932 Value lost (destroyed): 25.00 units
+2026-05-08 22:26:39,932 TIME ANALYSIS:
+2026-05-08 22:26:39,932 Nominal time (planned): 17min 18s
+2026-05-08 22:26:39,932 Adaptive time (actual): 7min 25s
+2026-05-08 22:26:39,932 Time saved: 9min 53s (57.1%)
+2026-05-08 22:26:39,932 Time on destroyed (lost): 2min 0s
+2026-05-08 22:26:39,932 GLOBAL SCORE :
+2026-05-08 22:26:39,932 Nominal score: 49.21
+2026-05-08 22:26:39,932 Adaptive score: 20.58
+2026-05-08 22:26:39,932 Score loss: 28.62 (58.2%)
+2026-05-08 22:26:39,932 Actions breakdown:
+2026-05-08 22:26:39,932 [OK] C033     OVER_TORQUE_NO_ADVANCE -> destroy     
+2026-05-08 22:26:39,932 Detailed logs: results/save/test_failures/salbp_instance_n=1000_1_cut78/intermediate
+2026-05-08 22:26:39,933 Some targets were not achieved.
+2026-05-08 22:26:39,933 Pipeline finished successfully

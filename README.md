@@ -1,6 +1,11 @@
-# LAsSy-DSP: Adaptive Disassembly Sequence Planning
+# LAsSy-DSP
 
-GRASP-based metaheuristics and adaptive fuzzy decision system for the Disassembly Sequence Planning (DSP) problem.
+**Reactive Disassembly Sequence Planning under Uncertain Component Conditions**
+
+A two-block framework for end-of-life disassembly:
+
+1. **Offline planner** — GRASP + Variable Neighborhood Descent (VND) builds a precedence-feasible sequence that maximises net recovery profit on directed acyclic product graphs, with both complete and selective disassembly modes. CPLEX (MILP) and CP-SAT (OR-Tools) serve as exact baselines.
+2. **Online adaptive layer** — a Mamdani fuzzy decision system monitors process signals (force, torque, p_fail, context) and triggers one of four local actions (bypass, tool change, controlled destruction, local replanning) when execution deviates from the plan.
 
 ## Installation
 
@@ -8,101 +13,97 @@ GRASP-based metaheuristics and adaptive fuzzy decision system for the Disassembl
 pip install -r requirements.txt
 ```
 
-Requirements: Python 3.8+, NetworkX, NumPy, scikit-fuzzy, PuLP, ...  
-Optional: IBM CPLEX (for MILP baseline)
+Optional: IBM CPLEX (for the MILP baseline) and Google OR-Tools (`ortools`, for CP-SAT).
 
 ## Usage
 
-### GRASP + Adaptive Pipeline 
+Single instance with optional failure scenario:
 
 ```bash
-python run_pipeline.py --instance dagtest
+python run_pipeline.py --instance gearpump
 python run_pipeline.py --instance dagtest --failures demo_mixed --verbose
 ```
 
-### Benchmark GRASP vs Milp
+Full GRASP vs CPLEX vs CP-SAT benchmark on all instances:
 
 ```bash
-python run_all.py
-python run_all.py --mode selectif --n_runs 10
-python experiments/compare_grasp_milp_dijkstra.py --instance scholl_lutz1_n=32.json
+PYTHONPATH=. python experiments/run_benchmark_scholl_salbp.py
 ```
 
-### API
+Fuzzy adaptation benchmark (87 failure scenarios across simple / intermediate / complex difficulty). The launcher reads `data/adaptive/scenarios_list.csv` and writes per-scenario logs plus the aggregated `RESUME_FUZZY_DETAILED.csv`:
 
-```python
-from src.utils.graph_io import load_adaptive_graph
-from src.grasp.constructive import run_grasp
-
-G, _, _ = load_adaptive_graph("data/instances_base/scholl_lutz1_n=32.json")
-sequence, score = run_grasp(G, algorithm='vnd', mode='selectif', target_nodes=['C001'])
+```bash
+python fuzzy_test_launcher.py
 ```
 
-## Project Structure
+Regenerate the per-scenario CSV from existing logs (without re-running the benchmark):
+
+```bash
+python fuzzy_test_launcher.py --resume
+```
+
+## Project layout
 
 ```
 src/
-├── grasp/                   # GRASP metaheuristics (constructive.py, local_search.py)
-├── adaptive/                # Fuzzy decision system: fuzzy_decision.py (Mamdani), scheduler.py, actions.py
-├── exact_milp_dijkstra/     # Baselines: partial_disassembly_model.py (MILP), dijkstra.py
-└── utils/                   # graph_io.py (load JSON), metrics.py (scoring functions)
-
-data/
-├── instances_base/          # DSP instances in JSON format (nodes, edges, targets)
-├── instances_milp/          # Converted instances for MILP solver (.txt format)
-└── adaptive/
-    └── generated_failures/  # Failure scenarios for adaptive pipeline testing
+├── grasp/                 GRASP constructor and VND local search
+├── adaptive/              Fuzzy Mamdani decision system, scheduler, actions
+├── exact_milp_dijkstra/   MILP formulation (CPLEX, time-aware objective)
+├── exact_cpsat/           CP-SAT formulation (OR-Tools, IntervalVar + NoOverlap)
+├── core/                  Shared data structures
+└── utils/                 Graph I/O, metrics, scoring
 
 experiments/
-├── compare_grasp_milp_dijkstra.py  # Compare GRASP vs MILP vs Dijkstra on instances
-├── run_complete_benchmark.py       # Full benchmark on all instances
-├── convert_scholl_to_dsp.py        # Convert Scholl SALBP instances to DSP format
-└── json_to_txt.py                  # Convert JSON instances to MILP text format
+├── run_benchmark_scholl_salbp.py    3-way benchmark (GRASP / CPLEX / CP-SAT)
+├── convert_salbp_to_dsp.py          SALBP → DSP instance conversion
+├── convert_scholl_to_dsp.py         Scholl SALBP → DSP instance conversion
+├── generate_stress_scenarios.py     Failure scenario generation (3 difficulty levels)
+├── generate_stress_for_originals.py Failure scenarios for legacy instances
+└── json_to_txt.py                   JSON → MILP .txt format conversion
 
-results/
-├── benchmark_otto/          # Benchmark results on Otto and Scholl instances
-├── benchmarks_2/            # Benchmark results on Otto and Scholl instances
-├── compare/                 # GRASP vs MILP comparison outputs (CSV, logs)
-├── grasp_selectif/          # GRASP selective mode results
-├── grasp_complet/           # GRASP complete mode results
-├── milp_save_selectif/      # MILP solver logs and solutions
-├── batch/                   # Batch run outputs
-└── save/                    # Adaptive pipeline outputs (dagtest, test_failures, test_nominal)
+tests/                               pytest suite for the fuzzy layer
+
+data/
+├── instances_milp/                  DSP instances in MILP .txt format
+├── instances_base/                  DSP instances in JSON format
+└── adaptive/
+    ├── scenarios_list.csv           List of the 87 failure scenarios to run
+    └── generated_failures/          Per-instance failure JSON files referenced by the list
+
+results/benchmark_2026/
+├── grasp_vs_milp/
+│   ├── RESUME_GRASP_MILP.csv                  Aggregated 3-way benchmark results
+│   ├── benchmark_grasp_vs_exact_results.xlsx  Multi-sheet Excel of the same data
+│   └── <instance>/                            Per-instance details (results.csv, terminal.log, validation.json)
+└── fuzzy/
+    ├── RESUME_FUZZY_DETAILED.csv                  Per-scenario fuzzy metrics (18 columns)
+    ├── benchmark_fuzzy_detailed_results.xlsx      Multi-sheet Excel of the same data
+    └── {simple,intermediate,complex}/scenario_<k>/  Per-scenario logs and reports
 ```
 
-## Algorithms
-
-| Algorithm | Description |
-|-----------|-------------|
-| GRASP | Greedy Randomized Adaptive Search Procedure |
-| GRASP+VND | Variable Neighborhood Descent |
-| GRASP+MNS | Multi-Neighborhood Search |
-| GRASP+TABU | Tabu Search |
-| MILP | Mixed-Integer Linear Programming (baseline) |
-| Dijkstra | Shortest path on precedence closure (baseline) |
-
-## Adaptive Actions
+## Adaptive actions
 
 | Action | Description |
-|--------|-------------|
-| change_tool | Switch to alternative tool |
-| bypass | Skip via alternative path |
-| destroy | Destructive removal |
-| replan | Full sequence re-optimization |
+|---|---|
+| `bypass` | Skip a non-critical component via an alternative path |
+| `change_tool` | Switch to an alternative tool and retry |
+| `destroy` | Controlled destructive removal when economic conditions allow |
+| `replan` | Local replanning on the residual graph |
 
-## Failure Scenarios
+## Failure scenarios
 
-The adaptive pipeline is tested with failure scenarios at three difficulty levels:
+| Difficulty | Failure location | What is tested |
+|---|---|---|
+| Simple | Non-critical node, alternative path available | Basic bypass |
+| Intermediate | Moderately important node | Adaptation under constraints |
+| Complex | Critical node on every path to a target | Maximum adaptation: fallback, local replan, controlled destruction |
 
-| Level | Description | Characteristics |
-|-------|-------------|-----------------|
-| **Simple** | Failure on non-critical component | - Leaf nodes or secondary branches<br>- Alternative paths available<br>- Easy bypass/workaround<br>- Tests basic robustness |
-| **Intermediate** | Failure on moderately important component | - Not a bottleneck but requires adaptation<br>- May force less optimal paths<br>- Tests adaptive capabilities under constraints |
-| **Complex** | Failure on critical component | - Cut nodes / mandatory passage points<br>- No alternative paths<br>- May block target access<br>- Tests maximum adaptation capacity (fallback, local replan) |
+## Citing
 
-Failure scenarios are generated automatically based on graph topology to ensure each difficulty level represents a meaningful robustness challenge. See `data/adaptive/generated_failures/` for examples.
+If you use this code, please cite:
 
+- W. El Morabit, M.-A. Abdous, F. Lucas, G. Bluvstein, F.-A. Brunnenkant, L. Streibel. *Reactive Disassembly Sequence Planning under Uncertain Component Conditions.* IFAC World Congress, 2026.
 
-IMT NE
+## Acknowledgements
 
-
+LAsSy project (*Learning Assistance Systems for Efficient Disassembly*), funded by the German-French Academy for the Industry of the Future.

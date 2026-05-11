@@ -1,0 +1,10 @@
+--- Pipeline run 2026-05-08 22:27:02.071921 ---
+Instance: unknown
+Initial solution: ['C031', 'C000', 'C058', 'C032', 'C055', 'C001', 'C002', 'C005', 'C006', 'C073', 'C072', 'C033', 'C003', 'C007', 'C008', 'C009', 'C004', 'C013', 'C014', 'C015', 'C016', 'C034', 'C018', 'C017', 'C019', 'C022', 'C023', 'C021', 'C020', 'C024', 'C025', 'C026', 'C027', 'C028', 'C030', 'C035', 'C036', 'C037', 'C044', 'C038', 'C039', 'C074', 'C045', 'C046', 'C053', 'C089', 'C110', 'C111', 'C112', 'C115', 'C116', 'C117', 'C119', 'C120', 'C121', 'C125']
+Final state:
+  - Locked: set()
+  - Destroyed: {'C036'}
+  - Done: {'C018', 'C000', 'C008', 'C023', 'C014', 'C039', 'C116', 'C030', 'C016', 'C028', 'C020', 'C037', 'C026', 'C003', 'C021', 'C111', 'C058', 'C002', 'C007', 'C074', 'C034', 'C013', 'C044', 'C125', 'C015', 'C045', 'C033', 'C073', 'C024', 'C001', 'C027', 'C004', 'C038', 'C121', 'C089', 'C022', 'C053', 'C005', 'C117', 'C072', 'C119', 'C019', 'C055', 'C035', 'C032', 'C025', 'C046', 'C031', 'C110', 'C009', 'C115', 'C120', 'C006'}
+  - Skipped: {'C112', 'C017'}
+  - Notes: ["Destruction forbidden for C017: Flag 'no_destroy' active (context or graph).", 'Bypass impossible for C036: no alternative path', 'No alternative tool for C036']
+Actions taken: [{'comp_id': 'C017', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy', 'success': False, 'notes': "Destruction not allowed: Flag 'no_destroy' active (context or graph)."}, {'comp_id': 'C017', 'symptom': 'OVER_TORQUE_NO_ADVANCE', 'action': 'destroy→bypass', 'success': True, 'notes': 'Fallback succeeded'}, {'comp_id': 'C036', 'symptom': 'LOW_VALUE_BOTTLENECK', 'action': 'bypass', 'success': False, 'notes': 'No alternative path in graph.'}, {'comp_id': 'C036', 'symptom': 'LOW_VALUE_BOTTLENECK', 'action': 'bypass→destroy', 'success': True, 'notes': 'Fallback succeeded'}, {'comp_id': 'C112', 'symptom': 'LOW_VALUE_BOTTLENECK', 'action': 'bypass', 'success': True, 'notes': 'Component C112 bypassed (skipped).'}]

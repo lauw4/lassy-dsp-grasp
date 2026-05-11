@@ -1,0 +1,72 @@
+2026-05-08 22:26:52,154 DSP ADAPTIVE PIPELINE - SCHOLL_WARNECKE_N=58
+2026-05-08 22:26:52,154 Loaded instance: scholl_warnecke_n=58
+2026-05-08 22:26:52,154 Loaded failures: 2
+2026-05-08 22:26:52,154 [1/4] Loading instance and solving DSP...
+2026-05-08 22:26:52,179 Nodes: 58, Edges: 70, Targets: 1, Solution: 13 operations
+2026-05-08 22:26:52,179 Target(s) to achieve: ['C028']
+2026-05-08 22:26:52,179 Starting disassembly sequence (13 operations)...
+2026-05-08 22:26:52,179 [ 1/13] Disassembling C000... [OK]
+2026-05-08 22:26:52,179 [ 2/13] Disassembling C008... [OK]
+2026-05-08 22:26:52,179 [ 3/13] Disassembling C010... [OK]
+2026-05-08 22:26:52,179 [ 4/13] Disassembling C012... [OK]
+2026-05-08 22:26:52,179 [ 5/13] Disassembling C014... [OK]
+2026-05-08 22:26:52,179 [ 6/13] Disassembling C011... [OK]
+2026-05-08 22:26:52,179 [ 7/13] Disassembling C013... [OK]
+2026-05-08 22:26:52,179 [ 8/13] Disassembling C016... [OK]
+2026-05-08 22:26:52,179 [ 9/13] Disassembling C019... [OK]
+2026-05-08 22:26:52,179 [10/13] Disassembling C002... [OK]
+2026-05-08 22:26:52,179 [11/13] Disassembling C020... [OK]
+2026-05-08 22:26:52,179 [12/13] Disassembling C025... [OK]
+2026-05-08 22:26:52,179 [13/13] Disassembling C028... [OK]
+2026-05-08 22:26:52,179 [2/4] Failure scenario loaded: 2 failure(s)
+2026-05-08 22:26:52,179 [3/4] Executing adaptive scheduler...
+2026-05-08 22:26:52,190 [FUZZY] Symptom: OVER_TORQUE_NO_ADVANCE
+2026-05-08 22:26:52,190 [FUZZY] Inputs: force=70.0, torque=80.0, p_fail=75.0, context=0.0
+2026-05-08 22:26:52,190 [FUZZY] Score: 70.67
+2026-05-08 22:26:52,190 [FUZZY] Decision: destroy (confidence=63.7%)
+2026-05-08 22:26:52,190 [ACTION] destroy: success=True, notes=Destruction allowed (cutoff percentile 20th).
+2026-05-08 22:26:52,190 [REPLAN] States before replan:
+2026-05-08 22:26:52,190 [REPLAN]   done=['C000', 'C008', 'C010', 'C011', 'C012', 'C013', 'C014']
+2026-05-08 22:26:52,190 [REPLAN]   destroyed=['C016']
+2026-05-08 22:26:52,190 [REPLAN]   locked=[]
+2026-05-08 22:26:52,190 [REPLAN]   skipped=[]
+2026-05-08 22:26:52,207 [REPLAN] New sequence: ['C019', 'C002', 'C020', 'C025', 'C028']
+2026-05-08 22:26:52,223 [FUZZY] Symptom: OVER_TORQUE_NO_ADVANCE
+2026-05-08 22:26:52,223 [FUZZY] Inputs: force=70.0, torque=80.0, p_fail=75.0, context=0.0
+2026-05-08 22:26:52,223 [FUZZY] Score: 70.67
+2026-05-08 22:26:52,223 [FUZZY] Decision: destroy (confidence=63.7%)
+2026-05-08 22:26:52,224 [ACTION] destroy: success=False, notes=Destruction not allowed: Flag 'no_destroy' active (context or graph).
+2026-05-08 22:26:52,224 Adaptive scheduler finished. Actions taken: 3
+2026-05-08 22:26:52,224 EXECUTION SUMMARY
+2026-05-08 22:26:52,224 Status: SUCCESS
+2026-05-08 22:26:52,224 Target components:
+2026-05-08 22:26:52,224 [OK] C028 - Successfully disassembled
+2026-05-08 22:26:52,224 Execution metrics:
+2026-05-08 22:26:52,224 Targets achieved: 1/1 (100.0%)
+2026-05-08 22:26:52,224 Failures handled: 2
+2026-05-08 22:26:52,224 Actions taken: 3
+2026-05-08 22:26:52,224 Components done: 11/13
+2026-05-08 22:26:52,224 Destroyed: 1 component(s)
+2026-05-08 22:26:52,224 Algorithm runtime: 0.07s
+2026-05-08 22:26:52,224 ECONOMIC ANALYSIS:
+2026-05-08 22:26:52,224 Nominal profit (planned): 252.00 units
+2026-05-08 22:26:52,224 Adaptive profit (recovered): 201.00 units
+2026-05-08 22:26:52,224 Profit loss: 51.00 units (20.2%)
+2026-05-08 22:26:52,224 Value lost (destroyed): 28.00 units
+2026-05-08 22:26:52,224 Value skipped (bypassed): 25.00 units
+2026-05-08 22:26:52,224 TIME ANALYSIS:
+2026-05-08 22:26:52,224 Nominal time (planned): 5min 29s
+2026-05-08 22:26:52,224 Adaptive time (actual): 5min 20s
+2026-05-08 22:26:52,224 Time saved: 9s (2.7%)
+2026-05-08 22:26:52,224 Time on destroyed (lost): 44s
+2026-05-08 22:26:52,224 Time saved (skipped): 9s
+2026-05-08 22:26:52,224 GLOBAL SCORE :
+2026-05-08 22:26:52,224 Nominal score: 82.90
+2026-05-08 22:26:52,224 Adaptive score: 68.08
+2026-05-08 22:26:52,224 Score loss: 14.82 (17.9%)
+2026-05-08 22:26:52,224 Actions breakdown:
+2026-05-08 22:26:52,224 [OK] C016     OVER_TORQUE_NO_ADVANCE -> destroy     
+2026-05-08 22:26:52,224 [FAILED] C025     OVER_TORQUE_NO_ADVANCE -> destroy     
+2026-05-08 22:26:52,224 [OK] C025     OVER_TORQUE_NO_ADVANCE -> destroy→bypass
+2026-05-08 22:26:52,224 Detailed logs: results/save/test_failures/scholl_warnecke_n=58/intermediate
+2026-05-08 22:26:52,225 Pipeline finished successfully
